@@ -133,8 +133,14 @@
   @media (prefers-reduced-motion: reduce) { .map-box .edge.agentic { animation: none; stroke-dasharray: none; } }
   .zoom { margin-left: auto; display: inline-flex; gap: 0.3rem; }
   .zoom button { padding: 0.2rem 0.6rem; font-size: 0.85rem; min-width: 2rem; }
-  .mode-list { margin: 0.9rem 0 0; padding-left: 1.1rem; font-size: 0.9rem; line-height: 1.6; max-width: 48rem; columns: 2; column-gap: 2rem; }
-  @media (max-width: 700px) { .mode-list { columns: 1; } }
+  .operable-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr); gap: 1.5rem 2.5rem; align-items: start; }
+  @media (max-width: 900px) { .operable-grid { grid-template-columns: 1fr; } }
+  .mode-list { margin: 0; padding: 0; list-style: none; font-size: 0.9rem; line-height: 1.5; max-height: 34rem; overflow: auto; border-top: 1px solid var(--line); }
+  .mode-list li { padding: 0.7rem 0; border-bottom: 1px solid var(--line); display: grid; gap: 0.25rem; }
+  .mode-list .why { color: var(--fg); font-size: 0.88rem; }
+  .mode-list .attrs { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); overflow-wrap: anywhere; }
+  .mode-list .head { display: flex; flex-wrap: wrap; gap: 0.3rem 0.6rem; align-items: baseline; }
+  .mode-list .head .muted { font-size: 0.82rem; }
   .bar { cursor: pointer; }
   .bar:hover span:first-child, .bar.active span:first-child { color: var(--accent); }
   .button { display: inline-block; font-family: var(--display); font-weight: 500; font-size: 0.95rem; color: var(--bg); background: var(--fg); padding: 0.75rem 1.1rem; border-radius: 3px; text-decoration: none; }
@@ -204,7 +210,7 @@
 <header class="top"><a class="mark" href="index.html">← The Agentic State</a><span class="muted" style="font-family:var(--display);font-size:0.85rem">Worked example</span></header>
 <section id="statement" class="hero">
   <h1>General housing allowance, Kela, Finland</h1>
-  <p class="lede" id="lede">We read <a href="#sources">public documents</a> and composed the processes of the general housing allowance: the benefit Finland pays to low-income households towards their housing costs, administered by Kela, the national social insurance institution. We used public data only. That gives high confidence for the steps citizens see, and somewhat lower confidence for the steps inside Kela.</p>
+  <p class="lede" id="lede">By reading <a href="#sources">official documents</a>, we mapped the processes of the general housing allowance: the benefit Finland pays to low-income households towards their housing costs, administered by Kela, the national social insurance institution. For this demo we used public documents only. That gives high confidence for the steps citizens see and somewhat lower confidence for the steps inside Kela; access to internal documents would raise it.</p>
 </section>
 
 <section id="map">
@@ -224,8 +230,10 @@
 <section id="operable">
   <div class="sec-head"><div class="eyebrow">2 · Agent-operable</div><h2>What an agent could run today</h2>
     <p class="prose" id="operable-lede"></p></div>
-  <div class="bars" id="bars-mode" style="max-width:40rem"></div>
-  <ul class="mode-list" id="mode-list" hidden></ul>
+  <div class="operable-grid">
+    <div class="bars" id="bars-mode"></div>
+    <ul class="mode-list" id="mode-list"></ul>
+  </div>
   <p class="prose muted" style="margin-top:1.4rem;font-size:0.95rem">These are classifications, not measurements. For each step the model judged, from the rules and passages behind it, whether an agent could execute it, prepare it, or must leave it to people. Nobody has run an agent on this process yet. Two tests would turn the estimate into a measurement: a Kela process owner correcting the map, and an agent processing synthetic cases against Kela's own calculator.</p>
 </section>
 
@@ -358,7 +366,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
     });
     svg += `</svg>`;
     const box = document.getElementById('map-box'); box.innerHTML = svg;
-    box.querySelectorAll('.node').forEach(el => { const h = () => { if (moved) return; select(el.dataset.id); }; el.addEventListener('click', h); el.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); h(); } }); });
+    box.querySelectorAll('.node').forEach(el => { el.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); select(el.dataset.id); } }); });
   }
 
   const modeColour = n => css(palettes.agent_mode[n.agent_mode] || '--muted');
@@ -399,10 +407,11 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   };
   mapBox.addEventListener('wheel', e => { e.preventDefault(); zoomAt(Math.exp(e.deltaY * 0.0015), e.clientX, e.clientY); }, { passive: false });
   let drag = null;
-  mapBox.addEventListener('pointerdown', e => { drag = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y }; moved = false; mapBox.setPointerCapture(e.pointerId); });
+  mapBox.addEventListener('pointerdown', e => { if (e.button !== 0 && e.pointerType === 'mouse') return; drag = { x: e.clientX, y: e.clientY, vx: view.x, vy: view.y }; moved = false; });
+  mapBox.addEventListener('click', e => { if (moved) return; const g = e.target.closest('.node'); if (g) select(g.dataset.id); });
   mapBox.addEventListener('pointermove', e => { if (!drag) return; const { scale } = metrics(); const dx = e.clientX - drag.x, dy = e.clientY - drag.y; if (Math.abs(dx) + Math.abs(dy) > 4) moved = true; view.x = drag.vx - dx / scale; view.y = drag.vy - dy / scale; applyView(); });
   const endDrag = () => { drag = null; setTimeout(() => { moved = false; }, 0); };
-  mapBox.addEventListener('pointerup', endDrag); mapBox.addEventListener('pointercancel', endDrag);
+  mapBox.addEventListener('pointerup', endDrag); mapBox.addEventListener('pointercancel', endDrag); mapBox.addEventListener('pointerleave', endDrag);
   const centre = () => { const r = mapBox.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; };
   document.getElementById('zoom-in').addEventListener('click', () => zoomAt(0.75, ...centre()));
   document.getElementById('zoom-out').addEventListener('click', () => zoomAt(1.33, ...centre()));
@@ -411,17 +420,21 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
   // ---------- agent-operable ----------
-  document.getElementById('operable-lede').textContent = `Of the ${report.nodes} steps, ${am.agent_can_execute || 0} could be executed by an agent (rules, register lookups, notifications), ${am.agent_prepares_human_decides || 0} prepared by an agent for a caseworker to decide, and ${am.human_only || 0} stay with people. Click a bar to list the steps.`;
+  document.getElementById('operable-lede').textContent = `Of the ${report.nodes} steps, ${am.agent_can_execute || 0} could be executed by an agent (rules, register lookups, notifications), ${am.agent_prepares_human_decides || 0} prepared by an agent for a caseworker to decide, and ${am.human_only || 0} stay with people. Choose a group to see each step, why it was classified that way, and what it works with.`;
   const bars = (el, counts, pal) => { const total = Object.values(counts).reduce((a, b) => a + b, 0) || 1; el.innerHTML = Object.entries(counts).map(([k, v]) => `<div class="bar" data-k="${esc(k)}" role="button" tabindex="0"><span>${esc(label(k))}</span><span class="track"><span class="fill" style="--c:${css(pal[k] || '--muted')};width:${100 * v / total}%"></span></span><span class="n">${v}</span></div>`).join(''); };
   bars(document.getElementById('bars-mode'), report.nodes_by_agent_mode, palettes.agent_mode);
   const modeList = document.getElementById('mode-list');
   document.querySelectorAll('#bars-mode .bar').forEach(b => { const show = () => {
-    const k = b.dataset.k; const on = b.classList.contains('active');
+    const k = b.dataset.k;
     document.querySelectorAll('#bars-mode .bar').forEach(x => x.classList.remove('active'));
-    if (on) { modeList.hidden = true; return; }
-    b.classList.add('active'); modeList.hidden = false;
-    modeList.innerHTML = map.nodes.filter(n => n.agent_mode === k).map(n => `<li><strong style="font-weight:500">${esc(n.name)}</strong> <span class="muted">· ${esc(actors[n.actor_id]?.name || n.actor_id)} · ${esc(label(n.automation_class))}</span></li>`).join('');
+    b.classList.add('active');
+    const names = (ids, dict) => ids.map(i => dict[i]?.name || i).join(', ');
+    modeList.innerHTML = map.nodes.filter(n => n.agent_mode === k).map(n => {
+      const attrs = [n.inputs.length ? `in: ${esc(names(n.inputs, dobj))}` : '', n.outputs.length ? `out: ${esc(names(n.outputs, dobj))}` : '', n.rule_ids.length ? `${n.rule_ids.length} rule${n.rule_ids.length > 1 ? 's' : ''}: ${esc(names(n.rule_ids, rules))}` : '', n.data_source_ids.length ? `data: ${esc(names(n.data_source_ids, dsrc))}` : '', n.time_limit ? `deadline: ${esc(n.time_limit)}` : '', `confidence ${n.confidence.toFixed(2)}`].filter(Boolean).join(' · ');
+      return `<li><div class="head"><strong style="font-weight:500">${esc(n.name)}</strong><span class="muted">${esc(actors[n.actor_id]?.name || n.actor_id)} · ${esc(label(n.automation_class))} · ${esc(n.visibility)}</span></div><div class="why">${esc(n.agent_mode_reason || n.description)}</div><div class="attrs">${attrs}</div></li>`;
+    }).join('');
   }; b.addEventListener('click', show); b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } }); });
+  document.querySelector('#bars-mode .bar[data-k="agent_can_execute"]')?.click();
   document.getElementById('sources-list').innerHTML = manifest.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> <span class="muted">· ${esc(s.publisher)}</span></li>`).join('');
   document.getElementById('footer').textContent = `Map built with ${report.model} on 28 October 2026. Nothing on this page has been validated by Kela yet.`;
 

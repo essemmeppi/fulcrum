@@ -227,7 +227,6 @@ const DATA = {"nodes": [{"id": "S_APPLY", "name": "Household needs support for h
   const esc = s => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
   const fmt = n => Number(n).toLocaleString('en-GB');
 
-  document.getElementById('proof').innerHTML = `<span><b>${report.sources_count}</b> public documents in</span><span><b>${fmt(report.facts_verified)}</b> verified facts</span><span><b>${report.nodes}</b> steps, <b>${report.rules}</b> rules out</span><span>every one traced to its passage</span>`;
   document.getElementById('example-link').href = example_url || '#';
 
   // ---------- network: one process of the service, bigger shapes ----------
