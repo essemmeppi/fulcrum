@@ -1,7 +1,8 @@
-"""Render a map into the guided landing page and a Mermaid flowchart.
+"""Render the two pages from a map.
 
-  site/template.html  +  maps/<svc>/{map,report,facts}.json  +  corpus/<svc>/manifest.json
-      -> site/<svc>.html   (self-contained: data embedded as JSON)
+  templates/landing.html, templates/example.html + maps/<svc>/*.json + corpus/<svc>/manifest.json
+      -> docs/index.html, docs/<svc>.html   (standalone, self-contained: the only copy in the repo)
+      -> build/index.html, build/<svc>.html  (fragments for the artifact host; gitignored)
       -> maps/<svc>/map.mmd
 
 Usage:
@@ -45,7 +46,8 @@ def mermaid(pm: dict) -> str:
 
 LANDING_EXAMPLE_URL = "https://claude.ai/artifact/Ny89PLSUukS65dgaFZQqwr"
 LANDING_URL = "https://claude.ai/artifact/1QtqzmiNniqopWiHWX3UhF"
-DOCS = ROOT.parent / "docs"  # standalone pages for GitHub Pages (serve from main /docs)
+DOCS = ROOT.parent / "docs"  # the pages, standalone, for GitHub Pages (serve from main /docs)
+BUILD = ROOT / "build"  # fragments for the claude.ai artifact host (gitignored)
 
 SKELETON_HEAD = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
                  '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
@@ -95,8 +97,9 @@ def render_landing(service_dir: Path) -> Path:
         "example_step": ex_step, "example_rule": ex_rule, "example_url": LANDING_EXAMPLE_URL,
     }
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    html = (ROOT / "site" / "landing_template.html").read_text().replace("/*__DATA__*/null", payload)
-    out = ROOT / "site" / "index.html"
+    html = (ROOT / "templates" / "landing.html").read_text().replace("/*__DATA__*/null", payload)
+    BUILD.mkdir(exist_ok=True)
+    out = BUILD / "index.html"
     out.write_text(html)
     print(f"Wrote {out} ({len(html)//1024} KB)")
     write_standalone(html, "index.html")
@@ -129,9 +132,10 @@ def render(service_dir: Path) -> Path:
         "rejected_examples": rejected[:5],
     }
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    template = (ROOT / "site" / "template.html").read_text()
+    template = (ROOT / "templates" / "example.html").read_text()
     html = template.replace("/*__DATA__*/null", payload)
-    out = ROOT / "site" / f"{sid}.html"
+    BUILD.mkdir(exist_ok=True)
+    out = BUILD / f"{sid}.html"
     out.write_text(html)
     write_standalone(html, f"{sid}.html")
     (maps_dir / "map.mmd").write_text(mermaid(pm))
