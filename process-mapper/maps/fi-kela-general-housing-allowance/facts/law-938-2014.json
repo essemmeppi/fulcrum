@@ -1,0 +1,1587 @@
+{
+  "source_id": "law-938-2014",
+  "facts": [
+    {
+      "id": "law-938-2014:F1",
+      "kind": "procedural_rule",
+      "statement": "The purpose of the General Housing Allowance Act is to reduce a household's housing costs by paying housing allowance from state funds.",
+      "quote": "Tämän lain tarkoituksena on alentaa ruokakunnan asumismenoja maksamalla valtion varoista asumistukea.",
+      "locator": "1 § Lain tarkoitus"
+    },
+    {
+      "id": "law-938-2014:F2",
+      "kind": "eligibility",
+      "statement": "Only a person residing in Finland is considered a permanent member of the household.",
+      "quote": "Ruokakuntaan pysyvästi kuuluvaksi katsotaan vain Suomessa asuva henkilö.",
+      "locator": "2 § Suomessa asuminen"
+    },
+    {
+      "id": "law-938-2014:F3",
+      "kind": "procedural_rule",
+      "statement": "Whether the Act applies is decided under the Act on the application of residence-based social security legislation (1573/1993).",
+      "quote": "Tämän lain soveltaminen ratkaistaan asumiseen perustuvan sosiaaliturvalainsäädännön soveltamisesta annetun lain \n (1573/1993) \n mukaan.",
+      "locator": "2 § Suomessa asuminen"
+    },
+    {
+      "id": "law-938-2014:F4",
+      "kind": "actor",
+      "statement": "The Ministry of Social Affairs and Health is responsible for the general management, steering and development of housing allowance activities.",
+      "quote": "Asumistukitoiminnan yleinen johto, ohjaus ja kehittäminen kuuluvat sosiaali- ja terveysministeriölle.",
+      "locator": "3 § Lain toimeenpano"
+    },
+    {
+      "id": "law-938-2014:F5",
+      "kind": "actor",
+      "statement": "The Social Insurance Institution (Kela) carries out all other tasks under the Act.",
+      "quote": "Muut tämän lain mukaiset tehtävät hoitaa Kansaneläkelaitos.",
+      "locator": "3 § Lain toimeenpano"
+    },
+    {
+      "id": "law-938-2014:F6",
+      "kind": "procedural_rule",
+      "statement": "Operating costs from implementing the Act are counted as Kela's operating costs.",
+      "quote": "Tämän lain toimeenpanosta aiheutuvat toimintamenot luetaan Kansaneläkelaitoksen toimintamenoiksi.",
+      "locator": "3 § Lain toimeenpano"
+    },
+    {
+      "id": "law-938-2014:F7",
+      "kind": "eligibility",
+      "statement": "Persons permanently living in the same dwelling belong to the same household.",
+      "quote": "Samassa asunnossa pysyvästi asuvat henkilöt kuuluvat samaan ruokakuntaan.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F8",
+      "kind": "exception",
+      "statement": "Persons who occupy part of the dwelling under a separate rental or equivalent occupancy agreement belong to a different household.",
+      "quote": "Eri ruokakuntaan kuuluvat henkilöt, jotka hallitsevat osaa asunnosta erillisen vuokrasopimuksen tai sitä vastaavan hallintasopimuksen perusteella",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F9",
+      "kind": "exception",
+      "statement": "Persons placed in the household's care under a care agreement due to illness or disability belong to a different household.",
+      "quote": "tai jotka on hoitosopimuksella sairauden tai vamman perusteella sijoitettu ruokakunnan hoidettaviksi.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F10",
+      "kind": "actor",
+      "statement": "In the Act, 'recipient of housing allowance' means all members of the household.",
+      "quote": "Tässä laissa asumistuen saajalla tarkoitetaan kaikkia ruokakunnan jäseniä.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F11",
+      "kind": "eligibility",
+      "statement": "Married or cohabiting spouses living in the same dwelling, their minor children and relatives in direct ascending or descending line always belong to the same household.",
+      "quote": "Samaan ruokakuntaan kuuluvat aina samassa asunnossa asuvat aviopuolisot tai avopuolisot, heidän alaikäiset lapsensa sekä keskenään suoraan etenevässä tai takenevassa polvessa olevat sukulaiset.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F12",
+      "kind": "eligibility",
+      "statement": "Adopted children and privately placed children under section 81 of the Child Welfare Act are treated as such relatives for household membership.",
+      "quote": "Tässä momentissa tarkoitettuihin sukulaisiin rinnastetaan myös ottolapset ja lastensuojelulain \n (417/2007) 81 §:ssä \n tarkoitetut yksityisesti sijoitetut lapset.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F13",
+      "kind": "exception",
+      "statement": "Spouses living apart due to a breakdown of the relationship and without a common household are not counted in the same household.",
+      "quote": "Jos aviopuolisot asuvat välien rikkoutumisen vuoksi erillään eikä heillä ole yhteistä taloutta, heitä ei lueta samaan ruokakuntaan kuuluviksi.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F14",
+      "kind": "exception",
+      "statement": "A student entitled to the housing supplement under section 14 of the Study Grant Act does not belong to the household, unless the housing supplement was granted for a dwelling in another locality.",
+      "quote": "Edellä 1 momentissa tarkoitettuun ruokakuntaan ei kuulu opiskelija, joka opintotukilain \n (65/1994) 14 §:n \n mukaan on oikeutettu asumislisään, paitsi jos asumislisä on myönnetty opiskelijan toisella paikkakunnalla olevaa asuntoa varten",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F15",
+      "kind": "exception",
+      "statement": "A student receiving study support from a foreign state or an equivalent benefit does not belong to the household.",
+      "quote": "eikä opiskelija, joka saa vieraan valtion opintotukea tai vastaavaa etuutta.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F16",
+      "kind": "actor",
+      "statement": "The household is represented by the dwelling holder or their spouse, a person authorised by a communal household, or the person in whose name the separate rental or occupancy agreement is.",
+      "quote": "Ruokakuntaa edustaa asunnonhaltija tai hänen puolisonsa, yhteisöruokakunnan valtuuttama henkilö taikka se, jonka nimissä erillinen vuokrasopimus tai sitä vastaava hallintasopimus on.",
+      "locator": "4 § Ruokakunta"
+    },
+    {
+      "id": "law-938-2014:F17",
+      "kind": "eligibility",
+      "statement": "Cohabiting partners are two persons living continuously in a common household in marriage-like conditions.",
+      "quote": "Tässä laissa avopuolisoilla tarkoitetaan kahta henkilöä, jotka elävät avoliitossa eli jatkuvasti yhteisessä taloudessa avioliitonomaisissa olosuhteissa.",
+      "locator": "5 § Avopuoliso"
+    },
+    {
+      "id": "law-938-2014:F18",
+      "kind": "eligibility",
+      "statement": "A child is a household member under 18 years of age.",
+      "quote": "Tässä laissa lapsella tarkoitetaan ruokakuntaan kuuluvaa alle 18-vuotiasta henkilöä.",
+      "locator": "6 § Lapsi"
+    },
+    {
+      "id": "law-938-2014:F19",
+      "kind": "eligibility",
+      "statement": "Housing allowance can be granted for housing costs of a rental, right-of-occupancy or owner-occupied dwelling located in Finland that is the household's permanent home.",
+      "quote": "Asumistukea voidaan myöntää ruokakunnan Suomessa sijaitsevan vakinaiseksi asunnoksi katsottavan vuokra-asunnon, asumisoikeusasunnon tai omistusasunnon asumismenoista.",
+      "locator": "7 § Asunto"
+    },
+    {
+      "id": "law-938-2014:F20",
+      "kind": "eligibility",
+      "statement": "The dwelling must be fit for use as a dwelling and officially designated as a dwelling or otherwise intended for permanent residential use.",
+      "quote": "Asunnon pitää olla kelvollinen asuntona käytettäväksi ja viralliselta käyttötarkoitukseltaan asunnoksi tai muutoin vakinaiseen asuinkäyttöön tarkoitettu.",
+      "locator": "7 § Asunto"
+    },
+    {
+      "id": "law-938-2014:F21",
+      "kind": "eligibility",
+      "statement": "A rental dwelling is one occupied under a lease under the Act on Residential Leases (481/1995).",
+      "quote": "Vuokra-asunnolla tarkoitetaan asuntoa, jonka hallinta perustuu asuinhuoneiston vuokrauksesta annetun lain \n (481/1995) \n mukaiseen vuokrasopimukseen.",
+      "locator": "7 § Asunto"
+    },
+    {
+      "id": "law-938-2014:F22",
+      "kind": "procedural_rule",
+      "statement": "Rules on rental dwellings also apply to right-of-occupancy dwellings unless otherwise provided.",
+      "quote": "Mitä tässä laissa säädetään vuokra-asunnosta, sovelletaan myös asumisoikeusasunnoista annetussa laissa \n (650/1990) \n tarkoitettuun asumisoikeusasuntoon, jollei jäljempänä toisin säädetä.",
+      "locator": "7 § Asunto"
+    },
+    {
+      "id": "law-938-2014:F23",
+      "kind": "eligibility",
+      "statement": "Owner-occupied dwellings comprise share dwellings (in housing company or housing cooperative buildings) and other owner-occupied dwellings.",
+      "quote": "Omistusasuntoja ovat osakeasunnot ja muut omistusasunnot. Osakeasunnoilla tarkoitetaan asunto-osakeyhtiön tai asunto-osuuskunnan omistamassa talossa sijaitsevaa omistusasuntoa.",
+      "locator": "7 § Asunto"
+    },
+    {
+      "id": "law-938-2014:F24",
+      "kind": "calculation",
+      "statement": "Housing allowance is 80% of acceptable housing costs (section 9), capped at maximum housing costs (section 10), minus the income-based basic deductible (section 16).",
+      "quote": "Ruokakunnalla on oikeus saada asumistukea 80 prosenttia siitä 9 §:ssä säädettyjen hyväksyttävien, mutta enintään 10 §:ssä tarkoitettujen enimmäismääräisten asumismenojen määrästä, josta on vähennetty ruokakunnan tulojen mukaan määräytyvä 16 §:ssä tarkoitettu perusomavastuuosuus.",
+      "locator": "8 § Oikeus asumistukeen"
+    },
+    {
+      "id": "law-938-2014:F25",
+      "kind": "exception",
+      "statement": "(Earlier version) Housing allowance is not granted to a student entitled to a free dormitory place from the educational institution unless for a special reason they cannot accept it.",
+      "quote": "opiskelijalle, jolla on oikeus maksuttomaan asuntolapaikkaan oppilaitoksen puolesta, ellei hän erityisestä syystä voi ottaa asuntolapaikkaa vastaan;",
+      "locator": "8 § Oikeus asumistukeen"
+    },
+    {
+      "id": "law-938-2014:F26",
+      "kind": "exception",
+      "statement": "Housing allowance is not granted to a renting student entitled to the housing supplement under the Study Grant Act, unless the student is counted in an allowance-receiving household under section 4(4).",
+      "quote": "vuokralla asuvalle opiskelijalle, joka opintotukilain 14 §:n mukaan on oikeutettu asumislisään, paitsi jos opiskelija tämän lain 4 §:n 4 momentin mukaan luetaan asumistukea saavaan ruokakuntaan",
+      "locator": "8 § Oikeus asumistukeen"
+    },
+    {
+      "id": "law-938-2014:F27",
+      "kind": "exception",
+      "statement": "Housing allowance is not granted to a student receiving foreign study support or equivalent benefit, or entitled to free housing from the educational institution.",
+      "quote": "taikka opiskelijalle, joka saa vieraan valtion opintotukea tai vastaavaa etuutta tai jolla on oikeus maksuttomaan asuntoon oppilaitoksen puolesta;",
+      "locator": "8 § Oikeus asumistukeen"
+    },
+    {
+      "id": "law-938-2014:F28",
+      "kind": "exception",
+      "statement": "Housing allowance is not granted to a two-person household of married or cohabiting spouses where a member is entitled to pensioner's housing allowance under section 8 of Act 571/2007.",
+      "quote": "kahden henkilön avio- tai avopuolisoista muodostuvalle ruokakunnalle, johon kuuluvalla on oikeus eläkkeensaajan asumistuesta annetun lain \n (571/2007) 8 §:n \n perusteella eläkkeensaajan asumistuen saamiseen",
+      "locator": "8 § Oikeus asumistukeen"
+    },
+    {
+      "id": "law-938-2014:F29",
+      "kind": "exception",
+      "statement": "Housing allowance is not granted to a household whose only or all members are entitled to pensioner's housing allowance.",
+      "quote": "ruokakunnalle, jonka ainoalla tai kaikilla jäsenillä on oikeus 2 kohdassa mainittuun eläkkeensaajan asumistukeen.",
+      "locator": "8 § Oikeus asumistukeen"
+    },
+    {
+      "id": "law-938-2014:F30",
+      "kind": "calculation",
+      "statement": "For a household in a rental dwelling, acceptable housing costs are rent plus separately paid water charges and heating costs.",
+      "quote": "Vuokra-asunnossa asuvan ruokakunnan asumismenoiksi hyväksytään vuokra ja erikseen maksettavat vesimaksut ja lämmityskustannukset.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F31",
+      "kind": "calculation",
+      "statement": "Separately paid water charges are counted at 17 euros per person per month.",
+      "quote": "Erikseen maksettavina vesimaksuina otetaan huomioon 17 euroa henkilöä kohden kuukaudessa",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F32",
+      "kind": "calculation",
+      "statement": "Separately paid heating costs are counted at 38 euros per month for a one-person household, plus 13 euros per each additional person.",
+      "quote": "lämmityskustannuksina 38 euroa kuukaudessa yhden hengen ruokakunnassa. Jos ruokakuntaan kuuluu useampi kuin yksi henkilö, lämmityskustannuksiin lisätään 13 euroa jokaista lisähenkilöä kohden.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F33",
+      "kind": "calculation",
+      "statement": "For an owner-occupied dwelling, acceptable housing costs are maintenance and financing costs.",
+      "quote": "Omistusasunnossa asuvan ruokakunnan asumismenoiksi hyväksytään asunnon hoito- ja rahoitusmenot.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F34",
+      "kind": "calculation",
+      "statement": "For a share dwelling, maintenance costs are the maintenance charge plus separately paid water and heating costs, counted at the flat rates for rental dwellings.",
+      "quote": "Osakeasunnon hoitomenoiksi hyväksytään vastike sekä erikseen maksettavat vesimaksut ja lämmityskustannukset. Vesimaksut ja lämmityskustannukset otetaan huomioon 1 momentin mukaisina.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F35",
+      "kind": "calculation",
+      "statement": "For other owner-occupied dwellings (not share dwellings), maintenance costs are counted at flat monthly amounts: 89 € (1 person), 107 € (2), 135 € (3), 159 € (4).",
+      "quote": "Huomioon otettava hoitomeno euroa/kk ... 89 ... 107 ... 135 ... 159",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F36",
+      "kind": "calculation",
+      "statement": "For households of more than four persons, the flat maintenance costs of other owner-occupied dwellings are increased by 49 euros per member above four.",
+      "quote": "Jos ruokakuntaan kuuluu enemmän kuin neljä henkilöä, muun omistusasunnon hoitomenoja korotetaan 49 euroa jokaista neljä henkilöä ylittävää ruokakunnan jäsentä kohden.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F37",
+      "kind": "calculation",
+      "statement": "Heating costs and flat maintenance costs are increased by 4% in Etelä-Savo, Pohjois-Savo and Pohjois-Karjala, and by 8% in Pohjois-Pohjanmaa, Kainuu and Lapland.",
+      "quote": "korotetaan neljä prosenttia Etelä-Savon, Pohjois-Savon ja Pohjois-Karjalan maakunnissa ja kahdeksan prosenttia Pohjois-Pohjanmaan, Kainuun ja Lapin maakunnissa.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F38",
+      "kind": "calculation",
+      "statement": "Financing costs for an owner-occupied dwelling are 73% of the monthly interest on personal loans taken to acquire or renovate the dwelling.",
+      "quote": "Omistusasunnossa asuvan ruokakunnan rahoitusmenoiksi hyväksytään asunnon hankkimiseksi ja perusparantamiseksi otettujen henkilökohtaisten lainojen kuukausittaisista koroista 73 prosenttia.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F39",
+      "kind": "calculation",
+      "statement": "For a right-of-occupancy dwelling, 73% of the monthly interest on personal loans taken to acquire the right of occupancy is accepted as a cost.",
+      "quote": "Asumisoikeusasunnon menoiksi hyväksytään 73 prosenttia asumisoikeuden hankkimiseksi otettujen henkilökohtaisten lainojen kuukausittaisista koroista.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F40",
+      "kind": "eligibility",
+      "statement": "Loans whose interest is accepted must be granted by the state, a municipality, a parish or a publicly supervised credit institution.",
+      "quote": "Edellä mainittujen lainojen on oltava valtion, kunnan, seurakunnan tai julkisen valvonnan alaisen luottotoimintaa harjoittavan laitoksen myöntämiä.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F41",
+      "kind": "calculation",
+      "statement": "For a share dwelling, maintenance costs are capped at 30% and financing costs at 70% of the household's maximum housing costs.",
+      "quote": "otetaan huomioon enimmäishoitomenoina enintään määrä, joka on 30 prosenttia 10 §:ssä tarkoitetuista ruokakunnan enimmäisasumismenoista ja enimmäisrahoitusmenoina enintään määrä, joka on 70 prosenttia ruokakunnan enimmäisasumismenoista.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F42",
+      "kind": "calculation",
+      "statement": "If share-dwelling maintenance costs exceed the maximum, 73% of the excess is counted as acceptable financing costs.",
+      "quote": "Jos hoitomenot ylittävät enimmäishoitomenot, ylimenevästä osasta otetaan huomioon 73 prosenttia asunnon hyväksyttävinä rahoitusmenoina.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F43",
+      "kind": "calculation",
+      "statement": "If a renting household has a subtenant, the rent paid by the subtenant is deducted from the household's housing costs.",
+      "quote": "Jos vuokralla asuvalla ruokakunnalla on alivuokralainen, vähennetään ruokakunnan tässä pykälässä tarkoitetuista asumismenoista alivuokralaisen maksaman vuokran määrä.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F44",
+      "kind": "calculation",
+      "statement": "For an owner-occupier household, subtenant rent is deducted first from maintenance costs and any remainder from financing costs.",
+      "quote": "Omistusasunnossa asuvalla ruokakunnalla vähennetään alivuokralaisen maksama vuokra hoitomenoista ja mahdollinen jäljelle jäävä määrä rahoitusmenoista.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F45",
+      "kind": "calculation",
+      "statement": "If a student excluded from the household under section 4(4) lives in the same dwelling, the household's housing costs are the share corresponding to the number of household members, unless another basis is accepted for a special reason.",
+      "quote": "Jos samassa asunnossa asuu 4 §:n 4 momentissa tarkoitettu opiskelija, luetaan asumistukea määrättäessä ruokakunnan asumismenoiksi ruokakunnan jäsenten lukumäärää vastaava osuus asunnon asumismenoista, jollei erityisestä syystä hyväksytä muuta jakoperustetta.",
+      "locator": "9 § Hyväksyttävät asumismenot"
+    },
+    {
+      "id": "law-938-2014:F46",
+      "kind": "calculation",
+      "statement": "Acceptable housing costs are taken into account only up to monthly maximum amounts by household size and municipality group.",
+      "quote": "Ruokakunnan 9 §:n mukaan hyväksyttävistä asumismenoista otetaan huomioon enintään seuraavat euromäärät kuukaudessa:",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F47",
+      "kind": "calculation",
+      "statement": "Maximum monthly housing costs for a 1-person household: 508 € (group I), 492 € (II), 390 € (III), 344 € (IV).",
+      "quote": "508 \n \n \n 492 \n \n \n 390 \n \n \n 344",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F48",
+      "kind": "calculation",
+      "statement": "Maximum monthly housing costs for a 2-person household: 735 € (I), 706 € (II), 570 € (III), 501 € (IV).",
+      "quote": "735 \n \n \n 706 \n \n \n 570 \n \n \n 501",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F49",
+      "kind": "calculation",
+      "statement": "Maximum monthly housing costs for a 3-person household: 937 € (I), 890 € (II), 723 € (III), 641 € (IV).",
+      "quote": "937 \n \n \n 890 \n \n \n 723 \n \n \n 641",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F50",
+      "kind": "calculation",
+      "statement": "Maximum monthly housing costs for a 4-person household: 1,095 € (I), 1,038 € (II), 856 € (III), 764 € (IV).",
+      "quote": "1 095 \n \n \n 1 038 \n \n \n 856 \n \n \n 764",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F51",
+      "kind": "calculation",
+      "statement": "For households over four persons, maximum housing costs increase per additional member by 137 € (I), 130 € (II), 117 € (III) and 112 € (IV).",
+      "quote": "korotetaan I kuntaryhmässä 137 euroa, II kuntaryhmässä 130 euroa, III kuntaryhmässä 117 euroa ja IV kuntaryhmässä 112 euroa jokaista neljä henkilöä ylittävää ruokakunnan jäsentä kohden.",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F52",
+      "kind": "calculation",
+      "statement": "Municipality group I consists of Helsinki.",
+      "quote": "I kuntaryhmään kuuluu: Helsinki;",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F53",
+      "kind": "calculation",
+      "statement": "Municipality group II consists of Espoo, Kauniainen and Vantaa.",
+      "quote": "II kuntaryhmään kuuluvat: Espoo, Kauniainen ja Vantaa;",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F54",
+      "kind": "calculation",
+      "statement": "Municipality group III consists of 30 named cities including Tampere, Turku, Oulu, Jyväskylä, Kuopio, Lahti and others.",
+      "quote": "III kuntaryhmään kuuluvat: Hyvinkää, Hämeenlinna, Joensuu, Jyväskylä, Järvenpää, Kajaani, Kerava, Kirkkonummi, Kouvola, Kuopio, Lahti, Lappeenranta, Lohja, Mikkeli, Nokia, Nurmijärvi, Oulu, Pori, Porvoo, Raisio, Riihimäki, Rovaniemi, Seinäjoki, Sipoo, Siuntio, Tampere, Turku, Tuusula, Vaasa ja Vihti;",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F55",
+      "kind": "calculation",
+      "statement": "Municipality group IV consists of all other municipalities.",
+      "quote": "IV kuntaryhmään kuuluvat muut kuin 1–3 kohdassa mainitut kunnat.",
+      "locator": "10 § Enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F56",
+      "kind": "exception",
+      "statement": "If the household includes a disabled person with especially large space needs due to aids, assistance or care, maximum housing costs are determined as if the household had one more person.",
+      "quote": "Jos ruokakuntaan kuuluu vammainen henkilö, jonka tilantarve tarvittavien apuvälineiden tai vammaisen henkilön avustamisen tai hoidon vuoksi on erityisen suuri, otetaan enimmäisasumismenot huomioon yhtä henkilöä suuremman henkilöluvun mukaan kuin mitä ruokakunnan koko on.",
+      "locator": "11 § Vammaisen henkilön enimmäisasumismenot"
+    },
+    {
+      "id": "law-938-2014:F57",
+      "kind": "calculation",
+      "statement": "Monthly income counted is household members' continuous or annually recurring gross income, excluding privileged income under section 15.",
+      "quote": "Asumistukea laskettaessa kuukausitulona otetaan huomioon ruokakunnan jäsenen jatkuvat tai vuosittain toistuvasti saamat bruttotulot lukuun ottamatta 15 §:ssä tarkoitettuja etuoikeutettuja tuloja.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F58",
+      "kind": "calculation",
+      "statement": "Inheritance, gifts, occasional capital gains and similar occasional income are not counted, nor children's income (except that of the applicant and spouse).",
+      "quote": "Tuloina ei oteta huomioon perintöä, lahjaa, satunnaista myyntivoittoa ja niihin verrattavia satunnaisia tuloja eikä lasten tuloja, lukuun ottamatta tuen hakijan ja hänen puolisonsa tuloja.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F59",
+      "kind": "calculation",
+      "statement": "Monthly income may be estimated at no less than the labour market subsidy amount unless it is shown the person cannot earn such income.",
+      "quote": "Kuukausituloksi voidaan arvioida vähintään työmarkkinatuen suuruinen tulo, jollei voida osoittaa, että henkilöllä ei ole mahdollisuutta hankkia vastaavan suuruista tuloa.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F60",
+      "kind": "data_source",
+      "statement": "If no reliable income information is available, taxable income confirmed in the latest taxation may be used, increased by the percentages set annually by the Tax Administration in its withholding decisions.",
+      "quote": "Jos tuloista ei saada luotettavaa selvitystä, voidaan tuloina ottaa huomioon viimeksi toimitetussa verotuksessa vahvistetut veronalaiset tulot korotettuna niillä prosenttimäärillä, jotka Verohallinto vuosittain antamissaan päätöksissä ennakkoperinnän laskemisperusteista määrää.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F61",
+      "kind": "calculation",
+      "statement": "Income of entrepreneurs, farmers and grant recipients is counted according to the work income confirmed under the Self-Employed Persons' Pensions Act and the Farmers' Pensions Act.",
+      "quote": "yrittäjänä, maatalousyrittäjänä sekä apurahan saajana saatu tulo otetaan huomioon yrittäjän eläkelain \n (1272/2006) \n ja maatalousyrittäjän eläkelain \n (1280/2006) \n perusteella vahvistetun työtulon mukaisena",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F62",
+      "kind": "calculation",
+      "statement": "Forestry income is counted as the confirmed average annual forest yield multiplied by the forest area.",
+      "quote": "metsätalouden tulona otetaan huomioon varojen arvostamisesta verotuksessa annetun lain \n (1142/2005) 7 §:n \n 3 momentin mukaan vahvistettu metsän keskimääräinen vuotuinen tuotto kerrottuna metsän pinta-alalla.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F63",
+      "kind": "calculation",
+      "statement": "Interest and dividend income is counted if a member's personal interest and dividend income together exceed 10 euros per month.",
+      "quote": "Korko- ja osinkotulot otetaan tuloina huomioon, jos ruokakunnan jäsenen henkilökohtaiset korko- ja osinkotulot yhteensä ylittävät 10 euroa kuukaudessa.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F64",
+      "kind": "calculation",
+      "statement": "Maintenance charges and costs paid by the landlord are deducted from rental income, with maintenance costs deducted at most up to the maximum maintenance costs in section 9.",
+      "quote": "Vuokratulosta vähennetään vuokranantajan maksamat vastike ja hoitomenot. Hoitomenot vähennetään kuitenkin enintään 9 §:ssä tarkoitettujen enimmäishoitomenojen suuruisina.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F65",
+      "kind": "eligibility",
+      "statement": "Housing allowance is not granted if household members' combined continuous monthly income exceeds the level at which no allowance is paid regardless of housing costs.",
+      "quote": "Asumistukea ei myönnetä, jos ruokakuntaan kuuluvien henkilöiden jatkuvien kuukausitulojen yhteismäärää ylittää määrän, jolla asumistukea ei enää makseta ruokakunnalle riippumatta asumismenojen suuruudesta.",
+      "locator": "12 § Asumistuessa huomioon otettavat tulot"
+    },
+    {
+      "id": "law-938-2014:F66",
+      "kind": "calculation",
+      "statement": "300 euros per month is deducted from each household member's combined wage income and entrepreneur/farmer/grant work income when calculating the allowance.",
+      "quote": "Ruokakunnan jäsenen yhteenlasketuista palkkatuloista ja 12 §:n 4 momentin 1 kohdan mukaisista tuloista vähennetään 300 euroa kuukaudessa asumistuen määrää laskettaessa.",
+      "locator": "13 § Ansiotulovähennys"
+    },
+    {
+      "id": "law-938-2014:F67",
+      "kind": "deadline",
+      "statement": "Continuous income is income that continues for at least three months from the date the allowance is granted or reviewed.",
+      "quote": "Jatkuvana tulona pidetään vähintään kolmen kuukauden ajan tuen myöntämis- tai tarkistamisajankohdasta jatkuvaa tuloa.",
+      "locator": "14 § Jatkuva tulo"
+    },
+    {
+      "id": "law-938-2014:F68",
+      "kind": "calculation",
+      "statement": "If income varies during the three months, continuous monthly income is calculated as an average based on the income the household is estimated to receive during the year.",
+      "quote": "Jos tulot vaihtelevat 1 momentissa tarkoitetun kolmen kuukauden aikana, jatkuva kuukausitulo lasketaan keskiarvotulona sen tulon perusteella, jota ruokakunnan arvioidaan saavan vuoden aikana.",
+      "locator": "14 § Jatkuva tulo"
+    },
+    {
+      "id": "law-938-2014:F69",
+      "kind": "calculation",
+      "statement": "Child benefit, maternity grant and disability benefits are not counted as income.",
+      "quote": "lapsilisälain \n (796/1992) \n mukaista lapsilisää;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F70",
+      "kind": "calculation",
+      "statement": "Maternity grant under the Maternity Grant Act is not counted as income.",
+      "quote": "äitiysavustuslain \n (477/1993) \n mukaista äitiysavustusta;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F71",
+      "kind": "calculation",
+      "statement": "Benefits under the Act on Disability Benefits are not counted as income.",
+      "quote": "vammaisetuuksista annetun lain \n (570/2007) \n mukaisia etuuksia;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F72",
+      "kind": "calculation",
+      "statement": "Medical and examination costs paid under accident insurance, conscript's allowance, and front-veteran's supplements are not counted as income.",
+      "quote": "tapaturmavakuutuksen perusteella suoritettavia sairaanhoito- ja tutkimuskuluja;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F73",
+      "kind": "calculation",
+      "statement": "In one version, study support under the Study Grant Act is excluded from income except study money (opintoraha); in the other version all study support is excluded.",
+      "quote": "mukaista opintotukea opintorahaa lukuun ottamatta;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F74",
+      "kind": "calculation",
+      "statement": "Social assistance (toimeentulotuki), Kela rehabilitation maintenance allowance, and expense compensation under public employment services are not counted as income.",
+      "quote": "toimeentulotuesta annetun lain \n (1412/1997) \n mukaista toimeentulotukea tai muuta etuutta;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F75",
+      "kind": "calculation",
+      "statement": "Grants and similar subsidies not paid to secure livelihood are not counted as income.",
+      "quote": "muita kuin toimeentulon turvaamiseksi maksettuja apurahoja ja muita vastaavia avustuksia;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F76",
+      "kind": "calculation",
+      "statement": "Cost reimbursements for family care and family day care, military injury compensation, child's pensions paid as survivors' pension, and special-cost compensation for impairment are not counted as income.",
+      "quote": "perhe-eläkkeenä maksettavia lapseneläkkeitä;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F77",
+      "kind": "calculation",
+      "statement": "National pension child increase, child maintenance paid under a court decision or confirmed written agreement, and maintenance allowance under the Maintenance Security Act are not counted as income.",
+      "quote": "lapsen elatusapua, joka suoritetaan tuomioistuimen päätöksen tai vahvistetun kirjallisen sopimuksen perusteella ja elatustukilain \n (580/2008) \n mukaista elatustukea;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F78",
+      "kind": "calculation",
+      "statement": "Disability allowance (haittaraha) under work accident legislation, travel allowances, travel and medical cost reimbursements are not counted as income.",
+      "quote": "matkapäivärahoja, matkakustannusten korvauksia ja sairaanhoitokustannusten korvauksia sekä niihin rinnastettavia erityisistä kustannuksista saatuja korvauksia;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F79",
+      "kind": "calculation",
+      "statement": "Care fee under the Act on Support for Informal Care is not counted as income.",
+      "quote": "omaishoidon tuesta annetussa laissa \n (937/2005) \n tarkoitettua hoitopalkkiota;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F80",
+      "kind": "calculation",
+      "statement": "Rental income received from a subtenant under section 9(8) and share of an estate's yield are not counted as income.",
+      "quote": "9 §:n 8 momentissa tarkoitetulta alivuokralaiselta saatuja vuokratuloja;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F81",
+      "kind": "calculation",
+      "statement": "A share of the yield of a deceased person's estate is not counted as income.",
+      "quote": "osuutta kuolinpesän tuotosta;",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F82",
+      "kind": "calculation",
+      "statement": "Foreign benefits or income corresponding to the listed privileged items are also not counted as income.",
+      "quote": "1–22 kohdassa mainittuja etuuksia tai tuloja vastaavia ulkomailta maksettavia etuuksia tai tuloja.",
+      "locator": "15 § Etuoikeutetut tulot"
+    },
+    {
+      "id": "law-938-2014:F83",
+      "kind": "calculation",
+      "statement": "The basic deductible is 42% of counted income minus the income level entitling to full allowance.",
+      "quote": "Perusomavastuuosuus on 42 prosenttia asumistuessa huomioon otettavista tuloista, joista on vähennetty täysimääräiseen tukeen oikeuttavan tulon määrä.",
+      "locator": "16 § Perusomavastuuosuus"
+    },
+    {
+      "id": "law-938-2014:F84",
+      "kind": "calculation",
+      "statement": "The income entitling to full allowance is 555 euros plus 92 euros per adult and 205 euros per child in the household.",
+      "quote": "Täysimääräiseen tukeen oikeuttava tulo on 555 euroa lisättynä 92 eurolla jokaista ruokakuntaan kuuluvaa aikuista ja 205 eurolla jokaista ruokakuntaan kuuluvaa lasta kohden.",
+      "locator": "16 § Perusomavastuuosuus"
+    },
+    {
+      "id": "law-938-2014:F85",
+      "kind": "calculation",
+      "statement": "A basic deductible of less than 10 euros is disregarded.",
+      "quote": "Jos perusomavastuuosuus on vähemmän kuin 10 euroa, sitä ei oteta huomioon.",
+      "locator": "16 § Perusomavastuuosuus"
+    },
+    {
+      "id": "law-938-2014:F86",
+      "kind": "calculation",
+      "statement": "When determining the basic deductible, the household is always considered to include at least one adult.",
+      "quote": "Perusomavastuuosuutta määrättäessä ruokakuntaan katsotaan aina kuuluvan vähintään yksi aikuinen.",
+      "locator": "16 § Perusomavastuuosuus"
+    },
+    {
+      "id": "law-938-2014:F87",
+      "kind": "step",
+      "statement": "The household applies for housing allowance from Kela.",
+      "quote": "Asumistukea haetaan Kansaneläkelaitokselta.",
+      "locator": "17 § Asumistuen hakeminen"
+    },
+    {
+      "id": "law-938-2014:F88",
+      "kind": "channel",
+      "statement": "Kela establishes the procedures and forms needed to implement the Act.",
+      "quote": "Kansaneläkelaitos vahvistaa tämän lain toimeenpanossa tarvittavat menettelyt ja lomakkeet.",
+      "locator": "17 § Asumistuen hakeminen"
+    },
+    {
+      "id": "law-938-2014:F89",
+      "kind": "deadline",
+      "statement": "Housing allowance is granted retroactively for at most the month preceding the application, if eligibility conditions were already met then.",
+      "quote": "Asumistuki myönnetään takautuvasti enintään hakemista edeltävältä kuukaudelta, jos tuen saamisen edellytykset ovat jo tuolloin täyttyneet.",
+      "locator": "18 § Takautuva hakuaika"
+    },
+    {
+      "id": "law-938-2014:F90",
+      "kind": "deadline",
+      "statement": "The same one-month retroactivity applies when the allowance is increased under section 27.",
+      "quote": "Samoin menetellään korotettaessa asumistukea 27 §:n perusteella.",
+      "locator": "18 § Takautuva hakuaika"
+    },
+    {
+      "id": "law-938-2014:F91",
+      "kind": "input",
+      "statement": "The application must state identity information of the applicant and other household members.",
+      "quote": "hakijan ja muiden ruokakuntaan kuuluvien henkilöllisyystiedot;",
+      "locator": "19 § Asumistuen hakijan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F92",
+      "kind": "input",
+      "statement": "The application must state the housing costs and the information needed to determine them.",
+      "quote": "asumismenot ja niiden määrittämiseksi tarvittavat tiedot;",
+      "locator": "19 § Asumistuen hakijan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F93",
+      "kind": "input",
+      "statement": "The application must state the section 12 income of all household members.",
+      "quote": "tiedot kaikkien ruokakuntaan kuuluvien henkilöiden 12 §:ssä tarkoitetuista tuloista.",
+      "locator": "19 § Asumistuen hakijan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F94",
+      "kind": "procedural_rule",
+      "statement": "The applicant must also give Kela any other information necessary to decide the application and pay the allowance.",
+      "quote": "Asumistuen hakijan on annettava Kansaneläkelaitokselle myös muut hakemuksen ratkaisemiseksi ja asumistuen maksamiseksi välttämättömät tiedot.",
+      "locator": "19 § Asumistuen hakijan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F95",
+      "kind": "procedural_rule",
+      "statement": "The housing allowance recipient is obliged to report specified changes in circumstances to Kela (Kansaneläkelaitos).",
+      "quote": "Asumistuen saajan on ilmoitettava Kansaneläkelaitokselle:",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F96",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela a marriage and the dissolution of a marriage.",
+      "quote": "avioliiton solmimisesta ja avioliiton purkautumisesta;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F97",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela entering into and ending a cohabitation (avoliitto).",
+      "quote": "avoliittoon menemisestä ja avoliiton päättymisestä;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F98",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela a change in the number of household members and in the composition of the household.",
+      "quote": "ruokakuntaan kuuluvien henkilöiden lukumäärän ja ruokakunnan kokoonpanon muuttumisesta;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F99",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela the household moving out of the dwelling or changing dwelling.",
+      "quote": "ruokakunnan asunnosta pois muutosta ja asunnon vaihtumisesta;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F100",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela a decrease in the household's housing costs of at least 50 euros per month.",
+      "quote": "ruokakunnan asumismenojen alentumisesta vähintään 50 euroa kuukaudessa;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F101",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela an increase in the household's continuous monthly income of at least 400 euros per month.",
+      "quote": "ruokakunnan jatkuvien kuukausitulojen nousemisesta vähintään 400 euroa kuukaudessa;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F102",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela when a household member becomes entitled to housing allowance for pensioners.",
+      "quote": "ruokakuntaan kuuluvalle henkilölle syntyvästä oikeudesta eläkkeensaajan asumistuesta annetun lain mukaiseen asumistukeen;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F103",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela taking in a subtenant or ceasing to have a subtenant.",
+      "quote": "alivuokralaisen ottamisesta ja alivuokralaisen pitämisestä luopumisesta;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F104",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela a change in the form of tenure of the household's dwelling.",
+      "quote": "ruokakunnan käytössä olevan asunnon hallintamuodon muuttumisesta;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F105",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report to Kela a household member moving abroad or staying abroad.",
+      "quote": "ruokakuntaan kuuluvan henkilön ulkomaille muutosta ja ulkomailla oleskelusta.",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F106",
+      "kind": "procedural_rule",
+      "statement": "In the alternative version of § 20, the recipient must report to Kela when a household member becomes entitled to the housing supplement under the Study Grants Act.",
+      "quote": "ruokakuntaan kuuluvalle henkilölle syntyvästä oikeudesta opintotukilain mukaiseen asumislisään;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F107",
+      "kind": "procedural_rule",
+      "statement": "In the alternative version of § 20, the recipient must report to Kela the end of the housing supplement entitlement of a student living in the same dwelling.",
+      "quote": "samassa asunnossa asuvan opiskelijan asumislisäoikeuden päättymisestä;",
+      "locator": "20 § Asumistuen saajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F108",
+      "kind": "procedural_rule",
+      "statement": "Kela may decide a housing allowance application on the basis of the information available to it if the applicant refuses to provide the information needed or a reasonably requested clarification.",
+      "quote": "Asumistukea koskeva hakemus voidaan ratkaista Kansaneläkelaitoksen käytettävissä olevien tietojen perusteella, jos hakija kieltäytyy antamasta 19 ja 20 §:ssä tarkoitettuja hakemuksen ratkaisemiseksi tarvittavia tietoja tai esittämästä selvitystä, joka häneltä voidaan kohtuudella vaatia.",
+      "locator": "21 § Hakemuksen ratkaiseminen käytettävissä olevien tietojen perusteella"
+    },
+    {
+      "id": "law-938-2014:F109",
+      "kind": "output",
+      "statement": "The applicant is given a written decision on granting, rejecting, revising, terminating and recovering housing allowance.",
+      "quote": "Asumistuen hakijalle annetaan kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä.",
+      "locator": "22 § Asumistukea koskeva päätös"
+    },
+    {
+      "id": "law-938-2014:F110",
+      "kind": "output",
+      "statement": "The applicant must also be given a written decision when housing allowance is paid to the landlord without the recipient's authorization under § 25(2).",
+      "quote": "Hakijalle on annettava kirjallinen päätös myös silloin, kun asumistuki maksetaan vuokranantajalle 25 §:n 2 momentin perusteella.",
+      "locator": "22 § Asumistukea koskeva päätös"
+    },
+    {
+      "id": "law-938-2014:F111",
+      "kind": "procedural_rule",
+      "statement": "Decisions under the General Housing Allowance Act are issued free of charge.",
+      "quote": "Tämän lain mukaiset päätökset annetaan maksutta.",
+      "locator": "22 § Asumistukea koskeva päätös"
+    },
+    {
+      "id": "law-938-2014:F112",
+      "kind": "procedural_rule",
+      "statement": "A housing allowance application must be processed without undue delay.",
+      "quote": "Hakemus on käsiteltävä ilman aiheetonta viivytystä.",
+      "locator": "23 § Asumistukihakemuksen käsittely"
+    },
+    {
+      "id": "law-938-2014:F113",
+      "kind": "deadline",
+      "statement": "Kela must issue the housing allowance decision at the latest on the 30th calendar day after the application arrives.",
+      "quote": "Kansaneläkelaitoksen on annettava asumistukea koskeva päätös viimeistään kolmantenakymmenentenä kalenteripäivänä hakemuksen saapumisesta.",
+      "locator": "23 § Asumistukihakemuksen käsittely"
+    },
+    {
+      "id": "law-938-2014:F114",
+      "kind": "step",
+      "statement": "If the decision cannot be given within 30 days because the application is incomplete, Kela must take steps to clarify the matter within that 30-day period.",
+      "quote": "Jos päätöstä ei hakemuksen puutteellisuuden vuoksi voida antaa 2 momentin mukaisessa määräajassa, Kansaneläkelaitoksen on mainitun määräajan kuluessa ryhdyttävä toimiin asian selvittämiseksi.",
+      "locator": "23 § Asumistukihakemuksen käsittely"
+    },
+    {
+      "id": "law-938-2014:F115",
+      "kind": "deadline",
+      "statement": "For an incomplete application, Kela must issue the decision at the latest on the 14th calendar day after it has received the information needed to decide.",
+      "quote": "Päätös on tällöin annettava viimeistään neljäntenätoista kalenteripäivänä sen jälkeen, kun Kansaneläkelaitos on saanut käyttöönsä asian ratkaisemiseksi tarvittavat tiedot.",
+      "locator": "23 § Asumistukihakemuksen käsittely"
+    },
+    {
+      "id": "law-938-2014:F116",
+      "kind": "eligibility",
+      "statement": "Housing allowance is granted to the household (ruokakunta).",
+      "quote": "Asumistuki myönnetään ruokakunnalle.",
+      "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+    },
+    {
+      "id": "law-938-2014:F117",
+      "kind": "step",
+      "statement": "The housing allowance decision is notified to the applicant.",
+      "quote": "Päätös annetaan tiedoksi hakijalle.",
+      "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+    },
+    {
+      "id": "law-938-2014:F118",
+      "kind": "deadline",
+      "statement": "Housing allowance is paid on the first or second business day of each calendar month.",
+      "quote": "Asumistuki maksetaan kunkin kalenterikuukauden ensimmäisenä tai toisena arkipäivänä",
+      "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+    },
+    {
+      "id": "law-938-2014:F119",
+      "kind": "input",
+      "statement": "Housing allowance is paid to a bank account located in the European Union, notified by the household representative or a person authorized by them.",
+      "quote": "ruokakunnan edustajan tai hänen valtuuttamansa ilmoittamalle Euroopan unionissa sijaitsevalle tilille.",
+      "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+    },
+    {
+      "id": "law-938-2014:F120",
+      "kind": "exception",
+      "statement": "A single instalment may be paid in another way if payment to an account is not possible or the recipient presents a special reason for another payment method.",
+      "quote": "Yksittäinen tukierä voidaan kuitenkin maksaa muullakin tavalla, jos tilille maksaminen ei ole mahdollista tai jos asumistuen saaja esittää muulle maksutavalle erityisen syyn.",
+      "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+    },
+    {
+      "id": "law-938-2014:F121",
+      "kind": "calculation",
+      "statement": "If the housing allowance amount payable would be less than 15 euros, it is not paid.",
+      "quote": "Jos maksettava asumistuen määrä olisi pienempi kuin 15 euroa, tukea ei makseta.",
+      "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+    },
+    {
+      "id": "law-938-2014:F122",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance can be paid directly to the landlord with the recipient's authorization.",
+      "quote": "Asumistuki voidaan maksaa suoraan vuokranantajalle asumistuen saajan valtuutuksella.",
+      "locator": "25 § Asumistuen maksaminen vuokranantajalle ja vuokranantajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F123",
+      "kind": "exception",
+      "statement": "Kela may decide to pay housing allowance directly to the landlord without the recipient's authorization if the recipient has entirely failed to pay rent for at least two consecutive months.",
+      "quote": "Kansaneläkelaitos voi päättää, että asumistuki maksetaan suoraan vuokranantajalle ilman asumistuensaajan valtuutusta, jos asumistuen saaja on laiminlyönyt vähintään kahden peräkkäisen kuukauden vuokran maksamisen kokonaan.",
+      "locator": "25 § Asumistuen maksaminen vuokranantajalle ja vuokranantajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F124",
+      "kind": "procedural_rule",
+      "statement": "When assessing the failure to pay rent, the recipient's circumstances are taken into account.",
+      "quote": "Laiminlyöntiä arvioitaessa otetaan huomioon tuensaajan olosuhteet.",
+      "locator": "25 § Asumistuen maksaminen vuokranantajalle ja vuokranantajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F125",
+      "kind": "step",
+      "statement": "Direct payment to the landlord is stopped at the tenant's request once the grounds for paying the landlord no longer exist.",
+      "quote": "Asumistuen maksaminen suoraan vuokranantajalle lopetetaan vuokralaisen pyynnöstä, kun perustetta vuokranantajalle maksamiselle ei enää ole.",
+      "locator": "25 § Asumistuen maksaminen vuokranantajalle ja vuokranantajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F126",
+      "kind": "procedural_rule",
+      "statement": "When allowance is paid to the landlord, the landlord must, upon learning of it, notify Kela if the recipient's right to occupy the dwelling ends or the recipient moves out.",
+      "quote": "Kun asumistuki maksetaan vuokranantajalle, vuokranantaja on saatuaan asiasta tiedon velvollinen ilmoittamaan Kansaneläkelaitokselle, jos tuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai hän muuttaa pois asunnosta",
+      "locator": "25 § Asumistuen maksaminen vuokranantajalle ja vuokranantajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F127",
+      "kind": "input",
+      "statement": "The landlord's notification must state the date the tenant's right of occupancy ends and the date of moving out.",
+      "quote": "Ilmoituksessa tulee mainita vuokralaisen hallintaoikeuden päättymisajankohta ja asunnosta pois muuttamisen ajankohta.",
+      "locator": "25 § Asumistuen maksaminen vuokranantajalle ja vuokranantajan ilmoitusvelvollisuus"
+    },
+    {
+      "id": "law-938-2014:F128",
+      "kind": "calculation",
+      "statement": "Retroactively granted general housing allowance may be withheld by Kela to the extent of pensioners' housing allowance Kela paid for the same period to the recipient or a household member.",
+      "quote": "Takautuvasti myönnetty asumistuki voidaan pidättää Kansaneläkelaitokselle sen maksamaa eläkkeensaajan asumistuesta annetun lain mukaista asumistukea vastaavalta osin",
+      "locator": "26 § Takautuvan asumistuen pidättäminen Kansaneläkelaitokselle"
+    },
+    {
+      "id": "law-938-2014:F129",
+      "kind": "deadline",
+      "statement": "The housing allowance amount is reviewed when one year has passed since the start of the allowance or the previous review.",
+      "quote": "Asumistuen määrä tarkistetaan, kun tuen alkamisesta tai edellisestä tarkistamisesta on kulunut vuosi.",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F130",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance must be revised if the household's continuous monthly income has risen by at least 400 euros or fallen by at least 200 euros.",
+      "quote": "ruokakunnan jatkuvat kuukausitulot ovat nousseet vähintään 400 euroa tai alentuneet vähintään 200 euroa;",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F131",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance must be revised if the housing costs paid by the household change by at least 50 euros per month.",
+      "quote": "9 §:ssä tarkoitetut ruokakunnan maksamat asumismenot muuttuvat vähintään 50 euroa kuukaudessa;",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F132",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance must be revised if the household changes dwelling or the form of tenure changes.",
+      "quote": "ruokakunta vaihtaa asuntoa tai asunnon hallintamuoto muuttuu;",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F133",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance must be revised if the number of household members or household composition changes permanently, or the household takes in or gives up a subtenant.",
+      "quote": "ruokakuntaan kuuluvien henkilöiden lukumäärä tai ruokakunnan kokoonpano muuttuu pysyvästi, ruokakunta ottaa alivuokralaisen tai luopuu alivuokralaisen pitämisestä.",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F134",
+      "kind": "procedural_rule",
+      "statement": "In the alternative version of § 27, housing allowance must be revised if a household member in the same dwelling becomes entitled to the student housing supplement, or a student's right to the housing supplement ends.",
+      "quote": "jos ruokakuntaan kuuluva, samassa asunnossa asuva henkilö aloittaa opinnot, joiden perusteella hän on oikeutettu opintotukilain mukaiseen asumislisään ... taikka jos samassa asunnossa asuvan 4 §:n 4 momentissa tarkoitetun opiskelijan oikeus asumislisään päättyy.",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F135",
+      "kind": "exception",
+      "statement": "If the allowance would decrease, it is not revised on the basis of an increase in housing costs unless continuous monthly income has also risen by at least 400 euros.",
+      "quote": "Jos asumistuki alenisi, asumistuen määrää ei kuitenkaan 2 momentin 2 kohdassa tarkoitetussa tapauksessa tarkisteta asumismenojen nousun perusteella, ellei myös jatkuvissa kuukausituloissa ole tapahtunut 2 momentin 1 kohdassa tarkoitettua nousua.",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F136",
+      "kind": "procedural_rule",
+      "statement": "Kela may revise housing allowance without an application if all grounds for the revision are available to Kela.",
+      "quote": "Asumistuki voidaan tarkistaa ilman hakemusta, jos kaikki tarkistamisen perusteet ovat Kansaneläkelaitoksen käytettävissä.",
+      "locator": "27 § Asumistuen tarkistamisen edellytykset"
+    },
+    {
+      "id": "law-938-2014:F137",
+      "kind": "deadline",
+      "statement": "A revision due to an income change takes effect from the start of the month following the month from whose 1st day the income change is in force.",
+      "quote": "1 kohdan perusteella sitä kuukautta seuraavan kuukauden alusta, jonka 1 päivästä mainitussa kohdassa tarkoitettu tulojen muutos on voimassa;",
+      "locator": "28 § Tarkistamisen ajankohta"
+    },
+    {
+      "id": "law-938-2014:F138",
+      "kind": "deadline",
+      "statement": "A revision due to a change in housing costs or a change of dwelling/tenure takes effect from the start of the month for which the changed or new housing costs are paid for the whole month.",
+      "quote": "2 ja 3 kohdan perusteella sen kuukauden alusta, josta muuttuneita tai uusia asumismenoja maksetaan koko kuukaudelta;",
+      "locator": "28 § Tarkistamisen ajankohta"
+    },
+    {
+      "id": "law-938-2014:F139",
+      "kind": "deadline",
+      "statement": "A revision due to a change in household size/composition or subtenancy takes effect from the start of the month from whose 1st day the change is in force.",
+      "quote": "4 kohdan perusteella sen kuukauden alusta, jonka 1 päivästä mainitussa kohdassa tarkoitettu olosuhteiden muutos on voimassa.",
+      "locator": "28 § Tarkistamisen ajankohta"
+    },
+    {
+      "id": "law-938-2014:F140",
+      "kind": "deadline",
+      "statement": "In the alternative version, a revision due to the student housing supplement takes effect from the start of the month the supplement right begins, or from the start of the month following the month it ends.",
+      "quote": "5 kohdan nojalla sen kuukauden alusta, josta oikeus asumislisään alkaa tai sitä kuukautta seuraavan kuukauden alusta, jona oikeus asumislisään päättyy.",
+      "locator": "28 § Tarkistamisen ajankohta"
+    },
+    {
+      "id": "law-938-2014:F141",
+      "kind": "step",
+      "statement": "If the household requests termination, housing allowance is terminated from the start of the month in which a § 27 revision would take effect.",
+      "quote": "sen kuukauden alusta, jolloin 27 §:ssä tarkoitettu tarkistus tulisi voimaan, jos ruokakunta pyytää asumistukensa lakkauttamista;",
+      "locator": "29 § Asumistuen lakkauttaminen"
+    },
+    {
+      "id": "law-938-2014:F142",
+      "kind": "step",
+      "statement": "If the household moves out of the dwelling for which allowance was granted, the allowance is terminated from the start of the month following the move, unless it is revised due to a change of dwelling.",
+      "quote": "muuttoa seuraavan kuukauden alusta, jos ruokakunta muuttaa pois asunnosta, johon asumistukea on myönnetty, jollei asumistukea tarkisteta 27 §:n 2 momentin 3 kohdan perusteella;",
+      "locator": "29 § Asumistuen lakkauttaminen"
+    },
+    {
+      "id": "law-938-2014:F143",
+      "kind": "step",
+      "statement": "Housing allowance is terminated from the start of the month from which the household is no longer entitled under § 8.",
+      "quote": "sen kuukauden alusta, josta ruokakunnalla ei 8 §:n mukaan enää ole oikeutta asumistukeen;",
+      "locator": "29 § Asumistuen lakkauttaminen"
+    },
+    {
+      "id": "law-938-2014:F144",
+      "kind": "step",
+      "statement": "Housing allowance is terminated from the start of the month from which the housing costs paid by the household cease.",
+      "quote": "sen kuukauden alusta, josta lukien ruokakunnan maksamat 9 §:ssä tarkoitetut asumismenot lakkaavat;",
+      "locator": "29 § Asumistuen lakkauttaminen"
+    },
+    {
+      "id": "law-938-2014:F145",
+      "kind": "step",
+      "statement": "If the household does not provide the information needed for the annual review within a reasonable time after Kela's request, the allowance is terminated from the start of the month the annual review would take effect.",
+      "quote": "sen kuukauden alusta, josta 27 §:n 1 momentissa tarkoitettu tarkistus tulisi voimaan, jos ruokakunta ei Kansaneläkelaitoksen kehotuksesta kohtuullisessa ajassa anna asumistuen tarkistamiseksi tarvittavia tietoja;",
+      "locator": "29 § Asumistuen lakkauttaminen"
+    },
+    {
+      "id": "law-938-2014:F146",
+      "kind": "deadline",
+      "statement": "In one version of § 29, if the household lives somewhere other than the subsidized dwelling, the allowance is terminated at the latest from the start of the fourth month, unless revised due to a change of dwelling.",
+      "quote": "viimeistään neljännen kuukauden alusta, jos ruokakunta asuu muualla kuin asunnossa, jonka asumismenoihin tukea on myönnetty, jollei tukea tarkisteta 27 §:n 2 momentin 3 kohdan perusteella.",
+      "locator": "29 § Asumistuen lakkauttaminen"
+    },
+    {
+      "id": "law-938-2014:F147",
+      "kind": "procedural_rule",
+      "statement": "Payment of housing allowance may be temporarily suspended in part or in full if there is good reason to assume the recipient is not entitled to it or part of it.",
+      "quote": "Asumistuen maksaminen voidaan väliaikaisesti keskeyttää osittain tai kokonaan, jos on perusteltua syytä olettaa, että asumistuen saajalla ei olosuhteiden muuttumisen vuoksi tai muusta syystä ole oikeutta tukeen tai osaan siitä.",
+      "locator": "30 § Asumistuen väliaikainen keskeyttäminen tai sen määrän vähentäminen"
+    },
+    {
+      "id": "law-938-2014:F148",
+      "kind": "procedural_rule",
+      "statement": "If the recipient does not submit requested additional information after suspension, the matter is decided by a final decision based on the information available to Kela.",
+      "quote": "Jos asumistuen saaja ei toimita pyydettyä lisäselvitystä, asia ratkaistaan lopullisella päätöksellä niiden selvitysten perusteella, jotka ovat Kansaneläkelaitoksen käytettävissä.",
+      "locator": "30 § Asumistuen väliaikainen keskeyttäminen tai sen määrän vähentäminen"
+    },
+    {
+      "id": "law-938-2014:F149",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance paid without grounds or in too large an amount must be recovered.",
+      "quote": "Jos asumistukea on maksettu aiheetta tai määrältään liian suurena, liikaa maksettu tuki on perittävä takaisin.",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F150",
+      "kind": "exception",
+      "statement": "Recovery may be waived wholly or partly if deemed reasonable and the overpayment was not caused by fraud of the recipient or representative, or if the overpaid amount is minor.",
+      "quote": "Takaisinperinnästä voidaan luopua joko kokonaan tai osittain, jos se katsotaan kohtuulliseksi eikä aiheeton maksaminen ole johtunut etuuden saajan tai hänen edustajansa vilpillisestä menettelystä tai jos aiheettomasti maksettu määrä on vähäinen.",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F151",
+      "kind": "exception",
+      "statement": "After a recovery decision, recovery may be waived entirely if continuing is no longer appropriate given the recipient's financial situation or would cause unreasonable costs relative to the outstanding amount.",
+      "quote": "Takaisinperinnästä voidaan luopua kokonaan takaisinperintää koskevan päätöksen antamisen jälkeen myös, jos takaisinperintää ei asumistuen saajan taloudellinen tilanne huomioon ottaen ole enää tarkoituksenmukaista jatkaa tai jos perinnän jatkamisesta aiheutuisi perimättä olevaan asumistuen määrään nähden kohtuuttomat kustannukset.",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F152",
+      "kind": "calculation",
+      "statement": "The amount to be recovered may be offset against housing allowance or a comparable benefit later paid by Kela.",
+      "quote": "Takaisin perittävä määrä voidaan kuitata Kansaneläkelaitoksen myöhemmin maksamasta asumistuesta tai siihen rinnastettavasta muusta etuudesta.",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F153",
+      "kind": "exception",
+      "statement": "Without the recipient's consent, offsetting may only target benefits under this Act or comparable benefits.",
+      "quote": "Ilman asumistuen saajan suostumusta kuittaaminen voidaan kuitenkin kohdistaa vain tämän lain mukaiseen tai siihen rinnastettavaan muuhun etuuteen.",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F154",
+      "kind": "procedural_rule",
+      "statement": "Unduly paid allowance may be recovered from the landlord if paid for a period when the landlord had no right to collect rent, if the landlord neglected the § 25 notification duty, or knowingly drew allowance the recipient was no longer entitled to.",
+      "quote": "Perusteettomasti maksettu tuki voidaan periä takaisin myös vuokranantajalta, jos vuokranantajalle on maksettu asumistukea ajalta, jolta hänellä ei ole oikeutta enää periä vuokraa tai jos vuokranantaja on laiminlyönyt 25 §:ssä tarkoitetun ilmoitusvelvollisuutensa",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F155",
+      "kind": "procedural_rule",
+      "statement": "A final (legally binding) recovery decision can be enforced like a final court judgment.",
+      "quote": "Takaisinperintää koskeva lainvoimainen päätös saadaan panna täytäntöön kuten lainvoimainen tuomio.",
+      "locator": "31 § Asumistuen takaisinperiminen"
+    },
+    {
+      "id": "law-938-2014:F156",
+      "kind": "procedural_rule",
+      "statement": "Overpaid allowance may be recovered from the applicant, the applicant's spouse or cohabiting partner, or another adult household member during the overpayment who has committed to joint liability.",
+      "quote": "Liikaa maksettua tukea voidaan periä takaisin hakijalta, tämän avio- tai avopuolisolta taikka muulta ruokakuntaan liikamaksun aikana kuuluneelta täysi-ikäiseltä henkilöltä, joka on sitoutunut yhteisvastuuseen liikaa maksetun tuen takaisinmaksusta.",
+      "locator": "32 § Tuen takaisinperiminen ruokakunnan jäseniltä"
+    },
+    {
+      "id": "law-938-2014:F157",
+      "kind": "procedural_rule",
+      "statement": "Overpaid allowance is recovered primarily from the applicant.",
+      "quote": "Tuki peritään ensisijaisesti tuen hakijalta.",
+      "locator": "32 § Tuen takaisinperiminen ruokakunnan jäseniltä"
+    },
+    {
+      "id": "law-938-2014:F158",
+      "kind": "output",
+      "statement": "An appealable decision is issued on recovery; a person other than the applicant from whom recovery is sought receives a separate decision.",
+      "quote": "Takaisinperinnästä annetaan valituskelpoinen päätös. Kun liikaa maksettua tukea peritään muulta kuin hakijalta, tälle annetaan erikseen oma päätös takaisinperinnästä.",
+      "locator": "32 § Tuen takaisinperiminen ruokakunnan jäseniltä"
+    },
+    {
+      "id": "law-938-2014:F159",
+      "kind": "deadline",
+      "statement": "A recovery decision must be made within five years of the payment date of the allowance.",
+      "quote": "Päätös aiheettomasti maksetun asumistuen takaisinperinnästä on tehtävä viiden vuoden kuluessa asumistuen maksupäivästä lukien.",
+      "locator": "33 § Takaisinperittävän saatavan vanhentuminen"
+    },
+    {
+      "id": "law-938-2014:F160",
+      "kind": "deadline",
+      "statement": "A claim confirmed by a recovery decision expires five years after the decision unless the limitation is interrupted; interruption starts a new five-year period.",
+      "quote": "Takaisinperintäpäätöksellä vahvistettu saatava vanhentuu viiden vuoden kuluttua päätöksen antamisesta, jollei vanhentumista ole sitä ennen katkaistu. ... Vanhentumisen katkaisemisesta alkaa kulua uusi viiden vuoden vanhentumisaika.",
+      "locator": "33 § Takaisinperittävän saatavan vanhentuminen"
+    },
+    {
+      "id": "law-938-2014:F161",
+      "kind": "actor",
+      "statement": "The Social Security Appeal Board and the Insurance Court are the appellate bodies.",
+      "quote": "Muutoksenhakua varten on sosiaaliturvan muutoksenhakulautakunta ja vakuutusoikeus.",
+      "locator": "34 § Muutoksenhakuoikeus"
+    },
+    {
+      "id": "law-938-2014:F162",
+      "kind": "appeal",
+      "statement": "A person dissatisfied with a Kela decision may appeal to the Social Security Appeal Board by written appeal.",
+      "quote": "Kansaneläkelaitoksen tämän lain nojalla antamaan päätökseen tyytymätön saa hakea siihen muutosta sosiaaliturvan muutoksenhakulautakunnalta kirjallisella valituksella.",
+      "locator": "34 § Muutoksenhakuoikeus"
+    },
+    {
+      "id": "law-938-2014:F163",
+      "kind": "appeal",
+      "statement": "The Social Security Appeal Board's decision may be appealed to the Insurance Court; the Insurance Court's decision cannot be appealed.",
+      "quote": "Sosiaaliturvan muutoksenhakulautakunnan päätökseen saa hakea muutosta valittamalla vakuutusoikeuteen ... Vakuutusoikeuden päätökseen ei saa hakea muutosta valittamalla.",
+      "locator": "34 § Muutoksenhakuoikeus"
+    },
+    {
+      "id": "law-938-2014:F164",
+      "kind": "procedural_rule",
+      "statement": "Kela's decision must be complied with despite an appeal until the matter is resolved by a final decision.",
+      "quote": "Kansaneläkelaitoksen päätöstä on muutoksenhausta huolimatta noudatettava, kunnes asia on lainvoimaisella päätöksellä ratkaistu.",
+      "locator": "34 § Muutoksenhakuoikeus"
+    },
+    {
+      "id": "law-938-2014:F165",
+      "kind": "exception",
+      "statement": "Kela decisions issued as interim decisions or on direct payment to the landlord under § 25(2) cannot be appealed.",
+      "quote": "Kansaneläkelaitoksen antamaan päätökseen ei saa hakea muutosta valittamalla, jos päätös on annettu väliaikaisena tai 25 §:n 2 momentin perusteella.",
+      "locator": "34 § Muutoksenhakuoikeus"
+    },
+    {
+      "id": "law-938-2014:F166",
+      "kind": "deadline",
+      "statement": "The appeal must be submitted to Kela at the latest 30 days after the day the party is deemed to have received the decision.",
+      "quote": "Valituskirjelmä on toimitettava Kansaneläkelaitokselle viimeistään 30 päivänä sen päivän jälkeen, jona asianosaisen katsotaan saaneen päätöksestä tiedon.",
+      "locator": "35 § Muutoksenhakuaika"
+    },
+    {
+      "id": "law-938-2014:F167",
+      "kind": "procedural_rule",
+      "statement": "The party is deemed to have received the decision on the seventh day after it was posted to the address they gave, unless otherwise shown.",
+      "quote": "Asianosaisen katsotaan saaneen päätöksestä tiedon seitsemäntenä päivänä sen päivän jälkeen, jona päätös on postitettu hänen ilmoittamaansa osoitteeseen, jos muutoksenhaun yhteydessä ei muuta näytetä.",
+      "locator": "35 § Muutoksenhakuaika"
+    },
+    {
+      "id": "law-938-2014:F168",
+      "kind": "step",
+      "statement": "If Kela accepts all demands in an appeal, it must issue a rectification decision, which may itself be appealed.",
+      "quote": "Jos Kansaneläkelaitos hyväksyy kaikilta osin sille toimitetussa valituksessa esitetyt vaatimukset, sen on annettava asiasta oikaisupäätös. Oikaisupäätökseen saa hakea muutosta siten kuin 34 §:ssä säädetään.",
+      "locator": "36 § Itseoikaisu"
+    },
+    {
+      "id": "law-938-2014:F169",
+      "kind": "deadline",
+      "statement": "If Kela does not rectify, it must forward the appeal and its statement to the appellate body within 30 days of the end of the appeal period.",
+      "quote": "Jos Kansaneläkelaitos ei oikaise valituksen kohteena olevaa päätöstä 1 momentissa säädetyin tavoin, sen on 30 päivän kuluessa valitusajan päättymisestä toimitettava valituskirjelmä ja lausuntonsa asianomaisen muutoksenhakuelimen käsiteltäväksi.",
+      "locator": "36 § Itseoikaisu"
+    },
+    {
+      "id": "law-938-2014:F170",
+      "kind": "step",
+      "statement": "Kela may then partially rectify its earlier decision by an interim decision insofar as it accepts the appeal demand, and must notify the appellate body promptly if the appeal was already forwarded.",
+      "quote": "Kansaneläkelaitos voi tällöin väliaikaisella päätöksellä oikaista aikaisemman päätöksensä siltä osin kuin se hyväksyy valituksessa esitetyn vaatimuksen. Jos valitus on jo toimitettu asianomaiselle muutoksenhakuelimelle, väliaikaisesta päätöksestä on ilmoitettava sille viipymättä.",
+      "locator": "36 § Itseoikaisu"
+    },
+    {
+      "id": "law-938-2014:F171",
+      "kind": "exception",
+      "statement": "The 30-day forwarding deadline may be exceeded if obtaining additional information requires it; the appellant must then be informed promptly.",
+      "quote": "Edellä 2 momentissa säädetystä määräajasta voidaan poiketa, jos valituksen johdosta tarvittavan lisäselvityksen hankkiminen sitä edellyttää. Lisäselvityksen hankkimisesta on tällöin viipymättä ilmoitettava valittajalle.",
+      "locator": "36 § Itseoikaisu"
+    },
+    {
+      "id": "law-938-2014:F172",
+      "kind": "deadline",
+      "statement": "The appeal and Kela's statement must always reach the appellate body within 60 days of the end of the appeal period.",
+      "quote": "Valituskirjelmä ja lausunto on kuitenkin aina toimitettava asianomaiselle muutoksenhakuelimelle viimeistään 60 päivän kuluessa valitusajan päättymisestä.",
+      "locator": "36 § Itseoikaisu"
+    },
+    {
+      "id": "law-938-2014:F173",
+      "kind": "exception",
+      "statement": "A late appeal may be examined if there was a weighty reason for the delay.",
+      "quote": "valitus voidaan ottaa tutkittavaksi, jos myöhästymiseen on ollut painava syy.",
+      "locator": "37 § Muutoksenhakuajan jälkeen tullut valitus"
+    },
+    {
+      "id": "law-938-2014:F174",
+      "kind": "procedural_rule",
+      "statement": "Kela may annul its decision and re-decide if it is based on clearly erroneous or incomplete evidence, obviously wrong application of law, or a procedural error.",
+      "quote": "Jos Kansaneläkelaitoksen päätös perustuu selvästi virheelliseen tai puutteelliseen selvitykseen tai ilmeisen väärään lain soveltamiseen taikka päätöstä tehtäessä on tapahtunut menettelyvirhe, Kansaneläkelaitos voi poistaa virheellisen päätöksensä ja ratkaista asian uudelleen.",
+      "locator": "38 § Asiavirheen korjaaminen"
+    },
+    {
+      "id": "law-938-2014:F175",
+      "kind": "procedural_rule",
+      "statement": "Correcting a decision to the party's detriment requires the party's consent, unless the error is obvious and caused by the party's own conduct.",
+      "quote": "Päätöksen korjaaminen asianosaisen vahingoksi edellyttää, että asianosainen suostuu päätöksen korjaamiseen. Asianosaisen suostumusta ei kuitenkaan tarvita, jos virhe on ilmeinen ja se on aiheutunut asianosaisen omasta menettelystä.",
+      "locator": "38 § Asiavirheen korjaaminen"
+    },
+    {
+      "id": "law-938-2014:F176",
+      "kind": "procedural_rule",
+      "statement": "If new evidence arises concerning a refused or to-be-increased allowance, Kela must re-examine the matter and may grant or increase it despite an earlier final decision; the decision is appealable.",
+      "quote": "Jos asiassa, jossa on kysymys evätyn asumistuen myöntämisestä tai myönnetyn asumistuen lisäämisestä, ilmenee uutta selvitystä, Kansaneläkelaitoksen on tutkittava asia uudelleen.",
+      "locator": "39 § Lainvoimaisen päätöksen oikaisu"
+    },
+    {
+      "id": "law-938-2014:F177",
+      "kind": "appeal",
+      "statement": "The Social Security Appeal Board may, at the request of a party or Kela, annul a final Kela decision based on wrong or incomplete evidence or manifestly unlawful, and order re-processing, after hearing the parties; its decision cannot be appealed.",
+      "quote": "sosiaaliturvan muutoksenhakulautakunta voi asianosaisen tai Kansaneläkelaitoksen vaatimuksesta poistaa päätöksen ja määrätä asian uudelleen käsiteltäväksi. Sosiaaliturvan muutoksenhakulautakunnan on varattava asianosaisille tilaisuus tulla kuulluksi ennen asian ratkaisemista.",
+      "locator": "40 § Lainvoimaisen päätöksen poistaminen"
+    },
+    {
+      "id": "law-938-2014:F178",
+      "kind": "appeal",
+      "statement": "The Insurance Court may annul final decisions of the Appeal Board or Insurance Court on request of a party or Kela, after hearing the parties.",
+      "quote": "vakuutusoikeus voi asianosaisen tai Kansaneläkelaitoksen vaatimuksesta poistaa päätöksen ja määrätä asian uudelleen käsiteltäväksi. Vakuutusoikeuden on varattava asianosaisille tilaisuus tulla kuulluksi ennen asian ratkaisemista.",
+      "locator": "40 § Lainvoimaisen päätöksen poistaminen"
+    },
+    {
+      "id": "law-938-2014:F179",
+      "kind": "procedural_rule",
+      "statement": "When Kela requests annulment of a decision, it may suspend payment or pay according to its request until the matter is re-decided.",
+      "quote": "Jos Kansaneläkelaitos tekee päätöksen poistamista koskevan vaatimuksen, se voi keskeyttää etuuden maksamisen tai maksaa sen vaatimuksensa mukaisena siihen asti, kunnes asia on uudelleen ratkaistu.",
+      "locator": "40 § Lainvoimaisen päätöksen poistaminen"
+    },
+    {
+      "id": "law-938-2014:F180",
+      "kind": "deadline",
+      "statement": "Annulment must be applied for within five years of the decision becoming final; for especially weighty reasons a later application may be accepted.",
+      "quote": "Päätöksen poistamista on haettava viiden vuoden kuluessa siitä, kun päätös sai lainvoiman. Erityisen painavista syistä päätös voidaan poistaa määräajan jälkeenkin tehdystä hakemuksesta.",
+      "locator": "40 § Lainvoimaisen päätöksen poistaminen"
+    },
+    {
+      "id": "law-938-2014:F181",
+      "kind": "procedural_rule",
+      "statement": "If a benefit preventing housing allowance payment (§ 8(2)) is retroactively granted to the recipient or a household member after the decision, Kela may re-decide without annulling the decision or obtaining consent.",
+      "quote": "Kansaneläkelaitos voi ilman päätöksen poistamista tai asianosaisen suostumusta ratkaista asian uudelleen.",
+      "locator": "41 § Asian uudelleen ratkaiseminen etuuden myöntämisen johdosta"
+    },
+    {
+      "id": "law-938-2014:F182",
+      "kind": "procedural_rule",
+      "statement": "In the alternative version of § 41, Kela may re-decide without the party's consent but after hearing the party.",
+      "quote": "Kansaneläkelaitos voi ilman asianosaisen suostumusta asianosaista kuultuaan ratkaista asian uudelleen.",
+      "locator": "41 § Asian uudelleen ratkaiseminen etuuden myöntämisen johdosta"
+    },
+    {
+      "id": "law-938-2014:F183",
+      "kind": "data_source",
+      "statement": "Kela and the appellate body may obtain on request, free of charge and notwithstanding secrecy, information necessary to decide housing allowance from state and municipal authorities and other public-law bodies.",
+      "quote": "valtion ja kunnan viranomaiselta sekä muulta julkisoikeudelliselta yhteisöltä;",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F184",
+      "kind": "data_source",
+      "statement": "Kela may obtain necessary information from the Finnish Centre for Pensions, pension and insurance institutions and other pension/compensation payers.",
+      "quote": "Eläketurvakeskukselta, eläke- ja vakuutuslaitokselta sekä muulta eläkkeen tai muun korvauksen myöntäjältä tai maksajalta;",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F185",
+      "kind": "data_source",
+      "statement": "Kela may obtain necessary information from the Patient Insurance Centre and the Motor Insurers' Centre.",
+      "quote": "potilasvakuutus- ja liikennevakuutuskeskukselta;",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F186",
+      "kind": "data_source",
+      "statement": "Kela may obtain necessary information from employers, unemployment funds and workplace funds.",
+      "quote": "työnantajalta, työttömyyskassalta tai työpaikkakassalta;",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F187",
+      "kind": "data_source",
+      "statement": "Kela may obtain necessary information from landlords and housing or real-estate companies.",
+      "quote": "vuokranantajalta sekä asunto-osake- tai kiinteistöyhtiöltä;",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F188",
+      "kind": "data_source",
+      "statement": "Kela may obtain necessary information from healthcare units, social service providers and other care institutions.",
+      "quote": "terveydenhuollon toimintayksiköltä sekä sosiaalipalvelun tuottajalta ja muulta hoitolaitokselta.",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F189",
+      "kind": "data_source",
+      "statement": "Kela may obtain information from financial institutions on the applicant/recipient and household members only if sufficient information is not otherwise available, there is good reason to doubt the information given, and the person has not consented.",
+      "quote": "rahalaitoksilta koskien asumistuenhakijaa tai -saajaa sekä muita ruokakuntaan kuuluvia, jollei riittäviä tietoja ja selvityksiä muutoin saada ja on perusteltua syytä epäillä asumistuen hakijan tai saajan antamien tietojen riittävyyttä tai luotettavuutta eikä hän ole antanut suostumustaan tietojen saamiseen.",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F190",
+      "kind": "procedural_rule",
+      "statement": "A request for information from financial institutions must be made in writing, and the applicant or recipient must be informed before the request is made.",
+      "quote": "Pyyntö tietojen saamiseksi tulee esittää kirjallisena. Ennen pyynnön esittämistä hakijalle tai saajalle on annettava siitä tieto.",
+      "locator": "42 § Tiedot asumistuen ratkaisemista varten"
+    },
+    {
+      "id": "law-938-2014:F191",
+      "kind": "data_source",
+      "statement": "Kela may obtain free of charge, notwithstanding secrecy, building and dwelling data and changes to them from population register authorities for implementing housing allowance and planning and monitoring the system.",
+      "quote": "Kansaneläkelaitoksella on oikeus saada salassapitosäännösten ja muiden tiedon saantia koskevien rajoitusten estämättä maksutta asumistuen täytäntöönpanoa ja tukijärjestelmän suunnittelua ja seurantaa varten väestörekisteriviranomaisilta tarpeelliset rakennus- ja huoneistotiedot ja niissä tapahtuneet muutokset.",
+      "locator": "43 § Tiedot väestörekisteriviranomaiselta"
+    },
+    {
+      "id": "law-938-2014:F192",
+      "kind": "data_source",
+      "statement": "Kela has the right to obtain, free of charge and notwithstanding secrecy provisions, data from the Criminal Sanctions Agency (Rikosseuraamuslaitos) units on the start of a sentence, a person's release, and the start and interruption of probationary release, for implementing housing allowance.",
+      "quote": "Kansaneläkelaitoksella on oikeus saada salassapitosäännösten ja muiden tiedon saantia koskevien rajoitusten estämättä maksutta asumistuen täytäntöönpanoa varten tiedot Rikosseuraamuslaitoksen yksiköltä rangaistuksen alkamisesta, henkilön vapautumisesta sekä koevapauden alkamisesta ja keskeyttämisestä.",
+      "locator": "44 § Tiedot vankeusrangaistuksesta"
+    },
+    {
+      "id": "law-938-2014:F193",
+      "kind": "actor",
+      "statement": "The Criminal Sanctions Agency (Rikosseuraamuslaitos) is a data provider to Kela for housing allowance implementation.",
+      "quote": "tiedot Rikosseuraamuslaitoksen yksiköltä rangaistuksen alkamisesta, henkilön vapautumisesta",
+      "locator": "44 § Tiedot vankeusrangaistuksesta"
+    },
+    {
+      "id": "law-938-2014:F194",
+      "kind": "procedural_rule",
+      "statement": "When handling an individual housing allowance case, Kela may use information it obtained for its other statutory tasks if it is evident that the information affects the housing allowance, the information must by law be taken into account in the decision, and Kela would otherwise have the right to obtain it separately.",
+      "quote": "Kansaneläkelaitoksella on oikeus käyttää tämän lain mukaista asumistukea koskevaa yksittäistapausta käsitellessään muiden sille säädettyjen tehtävien hoitamista varten saamiaan tietoja, jos on ilmeistä, että ne vaikuttavat tämän lain mukaiseen asumistukeen ja tiedot on lain mukaan otettava huomioon päätöksenteossa ja Kansaneläkelaitoksella olisi oikeus saada tiedot muutoinkin erikseen.",
+      "locator": "45 § Muuta etuutta varten saatujen tietojen käyttäminen"
+    },
+    {
+      "id": "law-938-2014:F195",
+      "kind": "data_source",
+      "statement": "Kela has the right to obtain the confidential information referred to in 42 § subsection 1 and in 43 and 44 § via a technical access connection (teknisen käyttöyhteyden avulla).",
+      "quote": "oikeus saada mainitussa momentissa säädetyin edellytyksin teknisen käyttöyhteyden avulla tämän lain 42 §:n 1 momentissa sekä 43 ja 44 §:ssä tarkoitettuja salassa pidettäviä tietoja.",
+      "locator": "46 § Tekninen käyttöyhteys"
+    },
+    {
+      "id": "law-938-2014:F196",
+      "kind": "procedural_rule",
+      "statement": "Via the technical access connection, confidential information may be retrieved without the consent of the person whose interests the secrecy protects.",
+      "quote": "Tämän pykälän perusteella avatun teknisen käyttöyhteyden avulla saa hakea myös salassa pidettäviä tietoja ilman sen suostumusta, jonka etujen suojaamiseksi salassapitovelvollisuus on säädetty.",
+      "locator": "46 § Tekninen käyttöyhteys"
+    },
+    {
+      "id": "law-938-2014:F197",
+      "kind": "procedural_rule",
+      "statement": "Before a technical access connection is opened, the party requesting the information must present an account that data protection is properly ensured.",
+      "quote": "Ennen teknisen käyttöyhteyden avaamista tietoja pyytävän on esitettävä selvitys siitä, että tietojen suojauksesta huolehditaan asianmukaisesti.",
+      "locator": "46 § Tekninen käyttöyhteys"
+    },
+    {
+      "id": "law-938-2014:F198",
+      "kind": "procedural_rule",
+      "statement": "Notwithstanding secrecy, Kela may disclose information based on housing allowance implementation to the ministry, the Tax Administration, and statutory social security institutions whose benefits are affected by housing allowance, for investigating crimes and misuse.",
+      "quote": "antaa rikosten ja väärinkäytösten selvittämiseksi tämän lain toimeenpanoon perustuvia tietoja ministeriölle, Verohallinnolle sekä sellaiselle lakisääteistä sosiaaliturvajärjestelmää hoitavalle laitokselle tai yhteisölle, jonka hoidettavaksi kuuluvaan sosiaaliturvaetuuteen tämän lain mukainen asumistuki vaikuttaa.",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F199",
+      "kind": "actor",
+      "statement": "The Tax Administration (Verohallinto) is a recipient of housing allowance data disclosed by Kela for investigating crimes and misuse.",
+      "quote": "tietoja ministeriölle, Verohallinnolle",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F200",
+      "kind": "procedural_rule",
+      "statement": "Kela may also disclose information to police and prosecution authorities to the extent necessary for investigating or prosecuting crimes.",
+      "quote": "Kansaneläkelaitoksella on 1 momentissa tarkoitettu oikeus antaa tietoja myös poliisi- ja syyttäjäviranomaiselle siltä osin kuin tiedot ovat välttämättömiä rikosten selvittämistä tai syytteeseen panoa varten.",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F201",
+      "kind": "input",
+      "statement": "Information Kela may disclose about a housing allowance recipient includes personal identity code and other identification data.",
+      "quote": "henkilötunnus ja muut yksilöintitiedot;",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F202",
+      "kind": "input",
+      "statement": "Information Kela may disclose about a housing allowance recipient includes data on benefits and compensations paid and their bases.",
+      "quote": "tiedot maksetuista etuuksista ja korvauksista sekä niiden perusteista; sekä",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F203",
+      "kind": "input",
+      "statement": "Kela may also disclose other comparable information necessary for data matching and other one-off control measures to investigate crimes and misuse targeting social security.",
+      "quote": "muut näihin rinnastettavat tiedot, jotka ovat välttämättömiä sosiaaliturvaan kohdistuvien rikosten ja väärinkäytösten selvittämiseksi tehtävää henkilötietojen yhdistämistä ja muuta kertaluonteista valvontatointa varten.",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F204",
+      "kind": "exception",
+      "statement": "Kela may not disclose health information or information describing the grounds for a person's need for social welfare.",
+      "quote": "Kansaneläkelaitos ei kuitenkaan saa antaa terveydentilaa koskevia tietoja tai tietoja, jotka on tarkoitettu kuvaamaan henkilön sosiaalihuollon tarpeen perusteita.",
+      "locator": "47 § Tietojen antaminen viranomaisille"
+    },
+    {
+      "id": "law-938-2014:F205",
+      "kind": "data_source",
+      "statement": "The Ministry of Social Affairs and Health has the right to obtain data on housing allowance recipients from Kela's decision-making and payment registers to the extent needed for its housing allowance planning and development tasks.",
+      "quote": "Sosiaali- ja terveysministeriöllä on oikeus saada käyttöönsä Kansaneläkelaitoksen päätöksenteko- ja maksatusrekisterissä olevia asumistuen saajia koskevia tietoja siltä osin kuin ne ovat tarpeen sosiaali- ja terveysministeriölle kuuluvien asumistuen suunnittelu- ja kehittämistehtävien hoitamiseksi.",
+      "locator": "48 § Sosiaali- ja terveysministeriön oikeus saada tietoja"
+    },
+    {
+      "id": "law-938-2014:F206",
+      "kind": "procedural_rule",
+      "statement": "The Ministry of Social Affairs and Health may also obtain from Kela's registers data on dwellings' financing form and floor area and other data it deems necessary for developing and monitoring the housing allowance system.",
+      "quote": "Lisäksi sosiaali- ja terveysministeriöllä on oikeus saada edellä mainituista rekistereistä asuntojen rahoitusmuotoa ja pinta-alaa koskevat tiedot sekä muut asumistukijärjestelmän kehittämistä ja seurantaa varten ministeriön tarpeellisiksi katsomat tiedot.",
+      "locator": "48 § Sosiaali- ja terveysministeriön oikeus saada tietoja"
+    },
+    {
+      "id": "law-938-2014:F207",
+      "kind": "exception",
+      "statement": "Data provided to the Ministry of Social Affairs and Health must not include information enabling identification of the allowance recipient.",
+      "quote": "Tietoihin ei saa sisällyttää tuensaajan tunnistamisen mahdollistavia tietoja.",
+      "locator": "48 § Sosiaali- ja terveysministeriön oikeus saada tietoja"
+    },
+    {
+      "id": "law-938-2014:F208",
+      "kind": "step",
+      "statement": "Kela must inform the housing allowance applicant in advance, in an appropriate way, where information about them may be obtained and to whom it may regularly be disclosed.",
+      "quote": "Kansaneläkelaitoksen on annettava asumistuen hakijalle etukäteen sopivin tavoin tiedot siitä, mistä häntä koskevia tietoja voidaan hankkia ja mihin niitä voidaan säännönmukaisesti luovuttaa.",
+      "locator": "49 § Tietojen antaminen asumistuen hakijalle"
+    },
+    {
+      "id": "law-938-2014:F209",
+      "kind": "exception",
+      "statement": "Housing allowance cannot be subjected to distraint (enforcement attachment).",
+      "quote": "Asumistukea ei saa ulosmitata.",
+      "locator": "50 § Asumistuen ulosmittaus- ja siirtämiskielto"
+    },
+    {
+      "id": "law-938-2014:F210",
+      "kind": "exception",
+      "statement": "An agreement to assign the housing allowance to another party is void.",
+      "quote": "Sopimus, joka tarkoittaa asumistuen siirtämistä toiselle, on mitätön.",
+      "locator": "50 § Asumistuen ulosmittaus- ja siirtämiskielto"
+    },
+    {
+      "id": "law-938-2014:F211",
+      "kind": "calculation",
+      "statement": "Euro amounts in the Act are tied to price level changes via the National Pension Index, except the earned income deduction (13 §), the minimum basic deductible (16 §), the minimum payable allowance (24 §), the income and housing cost change thresholds for reporting and review (20 and 27 §), and the maximum housing costs (10 §).",
+      "quote": "Tässä laissa säädetyt rahamäärät lukuun ottamatta 13 §:ssä säädettyä ansiotulovähennyksen määrää, 16 §:ssä säädettyä pienintä perusomavastuuosuutta, 24 §:ssä säädettyä pienintä maksettavaa tukea sekä 20 ja 27 §:ssä säädettyjä tuensaajan ilmoitusvelvollisuutta ja tuen tarkistamista koskevia tulojen ja asumismenojen muutosten määriä sekä 10 §:ssä säädettyjä enimmäisasumismenoja, sidotaan hintatason muutoksiin",
+      "locator": "51 § Indeksisidonnaisuus"
+    },
+    {
+      "id": "law-938-2014:F212",
+      "kind": "calculation",
+      "statement": "Index-linked amounts correspond to the National Pension Index point figure used to calculate national pensions payable in January 2010.",
+      "quote": "Kansaneläkeindeksiin sidotut rahamäärät vastaavat kansaneläkeindeksin sitä pistelukua, jonka mukaan vuoden 2010 tammikuussa maksettavina olevien kansaneläkkeiden suuruus on laskettu.",
+      "locator": "51 § Indeksisidonnaisuus"
+    },
+    {
+      "id": "law-938-2014:F213",
+      "kind": "deadline",
+      "statement": "Maximum housing costs under 10 § subsection 1 are reviewed annually in line with changes in the general rent level.",
+      "quote": "Edellä 10 §:n 1 momentissa tarkoitettuja enimmäisasumismenoja tarkistetaan kuitenkin vuosittain yleisessä vuokratasossa tapahtunutta muutosta vastaavasti.",
+      "locator": "51 § Indeksisidonnaisuus"
+    },
+    {
+      "id": "law-938-2014:F214",
+      "kind": "data_source",
+      "statement": "Maximum housing costs are tied to Statistics Finland's annual nationwide rent index for all rental dwellings (2010 = 100), with the 10 § euro amounts corresponding to the 2015 rent index point figure.",
+      "quote": "Enimmäisasumismenot sidotaan vuokratason kehitystä kuvaavaan Tilastokeskuksen vahvistamaan koko maata ja kaikkia vuokra-asuntoja koskevaan vuositason vuokraindeksiin, jonka pisteluku vuonna 2010 oli 100, siten, että 10 §:ssä säädetyt euromäärät vastaavat vuoden 2015 vuokraindeksin pistelukua.",
+      "locator": "51 § Indeksisidonnaisuus"
+    },
+    {
+      "id": "law-938-2014:F215",
+      "kind": "deadline",
+      "statement": "Maximum housing costs were first reviewed according to the rent index change from the beginning of 2018.",
+      "quote": "Enimmäisasumismenoja tarkistetaan ensimmäisen kerran vuokraindeksin muutosta vastaavasti vuoden 2018 alusta.",
+      "locator": "51 § Indeksisidonnaisuus"
+    },
+    {
+      "id": "law-938-2014:F216",
+      "kind": "procedural_rule",
+      "statement": "Revised maximum housing costs and other amounts apply to allowances granted or reviewed from the beginning of the following year or later.",
+      "quote": "Tarkistettuja enimmäisasumismenoja ja muita rahamääriä sovelletaan seuraavan vuoden alusta tai sen jälkeen myönnettäviin tai tarkistettaviin tukiin.",
+      "locator": "51 § Indeksisidonnaisuus"
+    },
+    {
+      "id": "law-938-2014:F217",
+      "kind": "calculation",
+      "statement": "When determining housing allowance, housing costs, household members' income items, the basic deductible amount and the payable allowance are taken into account as monthly amounts to the cent.",
+      "quote": "Asumistukea määrättäessä otetaan asumismenot, ruokakunnan jäsenten tuloerät, perusomavastuuosuuden määrä ja maksettava asumistuki huomioon kuukausimääräisinä sentin tarkkuudella.",
+      "locator": "52 § Rahamäärien pyöristäminen"
+    },
+    {
+      "id": "law-938-2014:F218",
+      "kind": "calculation",
+      "statement": "The household's combined income, the maintenance cost items (9 §), the maximum housing cost amounts (10 §) and the values used in calculating the basic deductible (16 §) are rounded to full euros.",
+      "quote": "Ruokakunnan yhteenlasketut tulot, 9 §:ssä tarkoitetut hoitomenoerät, 10 §:ssä säädetyt asumismenojen enimmäismäärät ja 16 §:ssä tarkoitetut perusomavastuuosuuden laskennassa käytettävät arvot pyöristetään täysiksi euroiksi.",
+      "locator": "52 § Rahamäärien pyöristäminen"
+    },
+    {
+      "id": "law-938-2014:F219",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance is paid from state funds, and the state reimburses Kela for the costs of benefits paid under the Act.",
+      "quote": "Asumistuki maksetaan valtion varoista ja valtio korvaa Kansaneläkelaitokselle tämän lain nojalla suoritettavista etuuksista aiheutuvat kustannukset.",
+      "locator": "53 § Rahoitus"
+    },
+    {
+      "id": "law-938-2014:F220",
+      "kind": "deadline",
+      "statement": "Kela must notify the state of the amount of housing allowances payable that month five working days before the housing allowance payment date (24 §).",
+      "quote": "Kansaneläkelaitoksen on viisi arkipäivää ennen 24 §:ssä tarkoitettua asumistuen maksupäivää ilmoitettava valtiolle sinä kuukautena maksettavien asumistukien määrä.",
+      "locator": "53 § Rahoitus"
+    },
+    {
+      "id": "law-938-2014:F221",
+      "kind": "deadline",
+      "statement": "Based on Kela's notification, the state must pay Kela the notified amount no later than one banking day before the housing allowance payment date.",
+      "quote": "Valtion on 2 momentissa tarkoitetun ilmoituksen perusteella maksettava Kansaneläkelaitokselle ilmoituksen mukainen rahamäärä viimeistään yhtä pankkipäivää ennen asumistukien maksupäivää.",
+      "locator": "53 § Rahoitus"
+    },
+    {
+      "id": "law-938-2014:F222",
+      "kind": "procedural_rule",
+      "statement": "The Act entered into force on 1 January 2015; 13 § entered into force on 1 September 2015 and applies to allowances granted or reviewed from that date onward.",
+      "quote": "Tämä laki tulee voimaan 1 päivänä tammikuuta 2015. Lain 13 § tulee kuitenkin voimaan 1 päivänä syyskuuta 2015 ja sitä sovelletaan siitä ja myöhäisemmästä ajankohdasta myönnettävään tai tarkistettavaan tukeen.",
+      "locator": "54 § Voimaantulo"
+    },
+    {
+      "id": "law-938-2014:F223",
+      "kind": "procedural_rule",
+      "statement": "The Act repeals the previous Housing Allowance Act (408/1975).",
+      "quote": "Tällä lailla kumotaan asumistukilaki \n (408/1975) .",
+      "locator": "54 § Voimaantulo"
+    },
+    {
+      "id": "law-938-2014:F224",
+      "kind": "exception",
+      "statement": "Housing allowances being paid when the Act entered into force continue to be paid on the previous basis until the 27 § review or until the allowance ends.",
+      "quote": "Tämän lain voimaan tullessa maksussa olevien asumistukien maksamista jatketaan entisin perustein 27 §:n mukaiseen tarkistukseen saakka tai siihen saakka kunnes asumistuki lakkaa.",
+      "locator": "55 § Siirtymäsäännökset"
+    },
+    {
+      "id": "law-938-2014:F225",
+      "kind": "exception",
+      "statement": "If a pre-2015 allowance is reviewed under 27 § subsection 1 from 1.1.–1.12.2015 without a 27 § subsection 2 change in household circumstances, and the allowance would drop by 100 euros per month or more, payment continues at the previous amount until the next 27 § review.",
+      "quote": "Kun ennen tämän lain voimaantuloa maksussa ollut asumistuki tarkistetaan 1.1.–1.12.2015 alkaen 27 §:n 1 momentin mukaisesti eikä ruokakunnan olosuhteissa ole tapahtunut 27 §:n 2 momentin mukaista muutosta, tuen maksamista jatketaan entisen suuruisena seuraavaan 27 §:n mukaiseen tarkistukseen saakka, jos tuen määrä alenisi 100 euroa kuukaudessa tai enemmän.",
+      "locator": "55 § Siirtymäsäännökset"
+    },
+    {
+      "id": "law-938-2014:F226",
+      "kind": "procedural_rule",
+      "statement": "References in other laws to the old Housing Allowance Act (408/1975), allowances under it, or the Housing Allowance Decree (949/1993) are deemed to refer to the corresponding provisions of this Act and to housing allowance under this Act, unless otherwise provided.",
+      "quote": "viittauksen katsotaan tarkoittavan viittausta tämän lain vastaaviin säännöksiin ja tämän lain mukaiseen asumistukeen, jollei tästä laista muuta johdu.",
+      "locator": "56 § Viittaus aikaisempaan lakiin"
+    }
+  ]
+}

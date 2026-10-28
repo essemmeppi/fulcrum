@@ -1,0 +1,199 @@
+flowchart LR
+  subgraph citizen["Applicant / household representative"]
+    S_APPLY(("Household needs support for housing costs"))
+    T_ESTIMATE["Estimate allowance with calculator (optional)"]
+    T_HOUSEHOLD_REP["Identify household and representative"]
+    T_SUBMIT_APP["Complete and submit application"]
+    T_ATTACH["Submit supporting documents"]
+    T_PROVIDE_INFO["Provide requested information"]
+    S_CHANGE(("Change in household circumstances"))
+    T_REPORT_CHANGE["Report change to Kela"]
+    T_REVIEW_APP["Submit annual review application"]
+    S_NO_NEED(("Household no longer needs the allowance"))
+    T_TERMINATION_REQUEST["Request termination"]
+    S_DISSATISFIED(("Party dissatisfied with a Kela decision"))
+    T_APPEAL_SUBMIT["Submit written appeal to Kela"]
+    D_FURTHER_APPEAL{"Appeal to Insurance Court?"}
+    T_IC_APPEAL["Appeal to Insurance Court"]
+    E_NOT_APPEALABLE((("Decision not appealable")))
+  end
+  subgraph kela_system["Kela benefit processing system and OmaKela"]
+    T_REGISTER["Register application and record arrival date"]
+    T_FETCH_INCOME["Retrieve wage and benefit income from Incomes Register"]
+    T_FETCH_LEASE["Retrieve electronic lease data from landlord"]
+    T_FETCH_TAX["Retrieve taxation and YEL/MYEL income data"]
+    T_FETCH_OTHER["Retrieve dwelling, imprisonment and Kela benefit data"]
+    T_REQUEST_INFO["Request additional information"]
+    T_ASSETS["Compute asset-derived income and check asset ceiling"]
+    T_COSTS["Determine accepted housing costs"]
+    T_CALC["Calculate allowance amount"]
+    D_MIN_AMOUNT{"Amount at least 15 € per month?"}
+    T_NOTIFY["Deliver decision to applicant"]
+    D_PAYABLE{"Allowance payable after this decision?"}
+    T_STATE_NOTICE["Notify State of monthly payable amount"]
+    D_PAY_LANDLORD{"Pay to landlord?"}
+    T_PAY_APPLICANT["Pay allowance to recipient"]
+    T_PAY_LANDLORD["Pay allowance to landlord"]
+    W_IN_PAYMENT[/"Wait for next monthly payment date"/]
+    E_NOT_PAYABLE((("No allowance payable")))
+    E_NO_CHANGE((("Allowance continues unchanged")))
+    S_ANNUAL(("Annual review approaching"))
+    T_REVIEW_INSTR["Send annual review instructions"]
+    D_REVIEW_ON_TIME{"Review application received in time?"}
+    S_IMPULSE(("Pension or rehabilitation benefit granted to a recipient"))
+    T_IMPULSE_TASK["Create impulse task in work queue"]
+    S_OVERPAYMENT(("Overpayment identified"))
+    T_NOTIFY_RECOVERY["Deliver recovery decision"]
+  end
+  subgraph kela_caseworker["Kela benefit caseworker"]
+    T_COMPLETENESS["Check application completeness and documents"]
+    D_COMPLETE{"Application complete?"}
+    D_INFO_PROVIDED{"Information provided in reasonable time?"}
+    T_RESIDENCE["Determine permanent residence in Finland"]
+    T_HOUSEHOLD["Determine household composition"]
+    T_INCOME["Determine monthly household income"]
+    T_ELIG_CHECK["Assess eligibility conditions"]
+    D_ELIGIBLE{"Eligibility conditions met?"}
+    T_DECIDE["Make written decision"]
+    T_ASSESS_CHANGE["Assess effect of reported change"]
+    D_CHANGE_EFFECT{"Effect of change?"}
+    T_REVISION_DATE["Determine revision effective date"]
+    T_SUSPEND["Temporarily suspend or reduce payment"]
+    T_TERMINATION_DATE["Determine termination effective date"]
+    T_CONTACT_RECIPIENT["Contact recipient before redirecting payment"]
+    T_ASSESS_UNPAID["Assess non-payment and recipient's circumstances"]
+    D_REDIRECT{"Redirect payment to landlord?"}
+    T_ASSESS_RECOVERY["Assess recovery, liable persons and waiver"]
+    D_RECOVER{"Recover overpayment?"}
+    T_RECOVERY_DECISION["Issue recovery decision"]
+    E_WAIVED((("Recovery waived")))
+    D_APPEALABLE{"Decision appealable?"}
+    T_SELF_RECT_EXAMINE["Examine appeal for self-rectification"]
+    D_ACCEPT_ALL{"Kela accepts all demands?"}
+    T_RECTIFY_DECISION["Issue rectification decision"]
+    T_FORWARD_APPEAL["Prepare statement and forward appeal"]
+    T_IMPLEMENT["Implement final appellate decision"]
+    E_APPEAL_CLOSED((("Appeal concluded")))
+    S_NEW_EVIDENCE(("Error or new evidence identified"))
+    T_REEXAMINE["Re-examine decision"]
+  end
+  subgraph state["Finnish State (funder)"]
+    T_STATE_PAYS["State transfers funds to Kela"]
+  end
+  subgraph landlord["Landlord"]
+    S_LANDLORD_MOVEOUT(("Tenancy ends while paid to landlord"))
+    T_LANDLORD_NOTICE["Landlord notifies Kela of move-out"]
+    S_UNPAID_RENT(("Rent unpaid for two consecutive months"))
+    T_UNPAID_INFO["Landlord informs Kela of unpaid rent"]
+  end
+  subgraph kela_robot["Kela software robot"]
+    T_ROBOT_CHECK["Software robot checks impact"]
+    D_ROBOT_OUTCOME{"Outcome of automated check?"}
+    T_AUTO_DECISION["Issue automated termination or revision decision"]
+  end
+  subgraph kela_recovery_centre["Kela Overpayment Recovery Centre"]
+    T_COLLECT["Collect, offset or enforce overpayment"]
+    E_RECOVERED((("Overpayment recovered or claim closed")))
+  end
+  subgraph ssab["Social Security Appeal Board (sosiaaliturvan muutoksenhakulautakunta)"]
+    T_SSAB_DECIDE["Social Security Appeal Board decides"]
+  end
+  subgraph insurance_court["Insurance Court (vakuutusoikeus)"]
+    T_IC_DECIDE["Insurance Court decides"]
+  end
+  S_APPLY --> T_ESTIMATE
+  T_ESTIMATE --> T_HOUSEHOLD_REP
+  T_HOUSEHOLD_REP --> T_SUBMIT_APP
+  T_SUBMIT_APP --> T_ATTACH
+  T_ATTACH --> T_REGISTER
+  T_REGISTER --> T_FETCH_INCOME
+  T_FETCH_INCOME --> T_FETCH_LEASE
+  T_FETCH_LEASE --> T_FETCH_TAX
+  T_FETCH_TAX --> T_FETCH_OTHER
+  T_FETCH_OTHER --> T_COMPLETENESS
+  T_COMPLETENESS --> D_COMPLETE
+  D_COMPLETE -->|"All information needed to decide is available"| T_RESIDENCE
+  D_COMPLETE -->|"Application or attachments incomplete"| T_REQUEST_INFO
+  T_REQUEST_INFO --> T_PROVIDE_INFO
+  T_PROVIDE_INFO --> D_INFO_PROVIDED
+  D_INFO_PROVIDED -->|"Requested information received"| T_COMPLETENESS
+  D_INFO_PROVIDED -->|"Applicant refuses or fails to provide information within reasonable time – decide on available information"| T_RESIDENCE
+  T_RESIDENCE --> T_HOUSEHOLD
+  T_HOUSEHOLD --> T_INCOME
+  T_INCOME --> T_ASSETS
+  T_ASSETS --> T_COSTS
+  T_COSTS --> T_ELIG_CHECK
+  T_ELIG_CHECK --> D_ELIGIBLE
+  D_ELIGIBLE -->|"All eligibility conditions met"| T_CALC
+  D_ELIGIBLE -->|"Any condition not met (income/asset limit exceeded, ineligible dwelling, student or pensioner exclusion, non-residence) – rejection or termination"| T_DECIDE
+  T_CALC --> D_MIN_AMOUNT
+  D_MIN_AMOUNT -->|"Amount ≥ 15 €/month – grant"| T_DECIDE
+  D_MIN_AMOUNT -->|"Amount < 15 €/month – not paid"| T_DECIDE
+  T_DECIDE --> T_NOTIFY
+  T_NOTIFY --> D_PAYABLE
+  D_PAYABLE -->|"Allowance granted or continues in payment"| T_STATE_NOTICE
+  D_PAYABLE -->|"Rejected, below minimum or terminated"| E_NOT_PAYABLE
+  T_STATE_NOTICE --> T_STATE_PAYS
+  T_STATE_PAYS --> D_PAY_LANDLORD
+  D_PAY_LANDLORD -->|"Recipient authorised landlord payment or § 25(2) decision in force"| T_PAY_LANDLORD
+  D_PAY_LANDLORD -->|"Otherwise – pay to representative's account"| T_PAY_APPLICANT
+  T_PAY_LANDLORD --> W_IN_PAYMENT
+  T_PAY_APPLICANT --> W_IN_PAYMENT
+  W_IN_PAYMENT -->|"Next month's payment cycle"| T_STATE_NOTICE
+  S_CHANGE --> T_REPORT_CHANGE
+  T_REPORT_CHANGE --> T_ASSESS_CHANGE
+  S_LANDLORD_MOVEOUT --> T_LANDLORD_NOTICE
+  T_LANDLORD_NOTICE --> T_ASSESS_CHANGE
+  T_ASSESS_CHANGE --> D_CHANGE_EFFECT
+  D_CHANGE_EFFECT -->|"Revision trigger met (income +400/−200 €, costs ±50 €, dwelling/tenure, permanent household change, subtenant)"| T_REVISION_DATE
+  D_CHANGE_EFFECT -->|"Termination ground (moved out without new dwelling, costs ceased, § 8 entitlement lost, single person absent > 3 months)"| T_TERMINATION_DATE
+  D_CHANGE_EFFECT -->|"Good reason to assume no or reduced entitlement pending clarification"| T_SUSPEND
+  D_CHANGE_EFFECT -->|"Change below thresholds or cost increase that would lower the allowance without income rise ≥ 400 €"| E_NO_CHANGE
+  T_REVISION_DATE --> T_FETCH_INCOME
+  T_SUSPEND --> T_REQUEST_INFO
+  S_ANNUAL --> T_REVIEW_INSTR
+  T_REVIEW_INSTR --> T_REVIEW_APP
+  T_REVIEW_APP --> D_REVIEW_ON_TIME
+  D_REVIEW_ON_TIME -->|"Review application received before the review date"| T_REGISTER
+  D_REVIEW_ON_TIME -->|"Review information not provided in time"| T_TERMINATION_DATE
+  S_NO_NEED --> T_TERMINATION_REQUEST
+  T_TERMINATION_REQUEST --> T_TERMINATION_DATE
+  T_TERMINATION_DATE --> T_DECIDE
+  S_IMPULSE --> T_IMPULSE_TASK
+  T_IMPULSE_TASK --> T_ROBOT_CHECK
+  T_ROBOT_CHECK --> D_ROBOT_OUTCOME
+  D_ROBOT_OUTCOME -->|"Entitlement lost or changed and case within automated processing rules"| T_AUTO_DECISION
+  D_ROBOT_OUTCOME -->|"Case hits an exclusion rule – transferred to a caseworker"| T_TERMINATION_DATE
+  D_ROBOT_OUTCOME -->|"Granted benefit has no effect on the allowance"| E_NO_CHANGE
+  T_AUTO_DECISION --> T_NOTIFY
+  S_UNPAID_RENT --> T_UNPAID_INFO
+  T_UNPAID_INFO --> T_CONTACT_RECIPIENT
+  T_CONTACT_RECIPIENT --> T_ASSESS_UNPAID
+  T_ASSESS_UNPAID --> D_REDIRECT
+  D_REDIRECT -->|"Pay landlord directly (§ 25(2) decision)"| T_DECIDE
+  D_REDIRECT -->|"Circumstances do not justify redirection"| E_NO_CHANGE
+  S_OVERPAYMENT --> T_ASSESS_RECOVERY
+  T_ASSESS_RECOVERY --> D_RECOVER
+  D_RECOVER -->|"Recovery required (no waiver grounds)"| T_RECOVERY_DECISION
+  D_RECOVER -->|"Waiver reasonable and no fraud, or amount minor"| E_WAIVED
+  T_RECOVERY_DECISION --> T_NOTIFY_RECOVERY
+  T_NOTIFY_RECOVERY --> T_COLLECT
+  T_COLLECT --> E_RECOVERED
+  S_DISSATISFIED --> D_APPEALABLE
+  D_APPEALABLE -->|"Decision is appealable"| T_APPEAL_SUBMIT
+  D_APPEALABLE -->|"Interim decision or § 25(2) landlord-payment decision"| E_NOT_APPEALABLE
+  T_APPEAL_SUBMIT --> T_SELF_RECT_EXAMINE
+  T_SELF_RECT_EXAMINE --> D_ACCEPT_ALL
+  D_ACCEPT_ALL -->|"All demands accepted"| T_RECTIFY_DECISION
+  D_ACCEPT_ALL -->|"Not all demands accepted"| T_FORWARD_APPEAL
+  T_RECTIFY_DECISION --> T_NOTIFY
+  T_FORWARD_APPEAL --> T_SSAB_DECIDE
+  T_SSAB_DECIDE --> D_FURTHER_APPEAL
+  D_FURTHER_APPEAL -->|"Party appeals to Insurance Court"| T_IC_APPEAL
+  D_FURTHER_APPEAL -->|"Board decision accepted and becomes final"| T_IMPLEMENT
+  T_IC_APPEAL --> T_IC_DECIDE
+  T_IC_DECIDE --> T_IMPLEMENT
+  T_IMPLEMENT --> E_APPEAL_CLOSED
+  S_NEW_EVIDENCE --> T_REEXAMINE
+  T_REEXAMINE --> T_DECIDE
+  style T_UNPAID_INFO stroke-dasharray: 5 5

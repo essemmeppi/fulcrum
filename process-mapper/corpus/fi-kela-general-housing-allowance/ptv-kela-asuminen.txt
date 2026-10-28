@@ -1,0 +1,56 @@
+[PTV service 579991be-f40f-4913-8130-0e07592b50c4]
+Name (fi): Kelan tuet asumiseen
+Name (en): Housing benefits provided by Kela
+Type: Service  Funding: PubliclyFunded  Charge: FreeOfCharge
+Organisations: Kela (Responsible); Kela (Producer)
+
+[Description:Summary (en)]
+Kela provides assistance with housing for low-income households by paying housing allowances.
+
+[Description:Summary (fi)]
+Kela tukee pienituloisten asumista maksamalla asumistukea.
+
+[Description:UserInstruction (en)]
+Most benefits provided by Kela are generally available on application only. However, reimbursements of medical, pharmaceutical and travel expenses are available as direct on-the-spot reimbursements, with no application required.
+
+You can apply for most benefits, submit documents supporting your application and report changes online using Kela’s OmaKela e-service. You can also check the status of your application and payment dates.
+
+If you need help, you can call Kela’s customer service number or visit a Kela service point.
+
+
+[Description:UserInstruction (fi)]
+Useimpia etuuksia voi hakea verkossa Kelan asiointipalvelu OmaKelassa. Voit myös lähettää hakemuksen liitteitä ja ilmoittaa muutoksista sekä tarkistaa hakemuksesi tilanteen ja tuen maksupäivät. Jos tarvitset neuvoja, soita Kelan puhelinpalveluun tai tule käymään palvelupisteessä.
+
+[Description:Description (en)]
+Kela provides assistance with housing for low-income households by paying housing allowances.
+
+Kela’s benefits for housing are:
+* general housing allowance
+* housing allowance for pensioners
+* housing assistance for conscripts
+
+Kela offers support in various other situations as well. For more information, please see www.kela.fi.
+
+
+[Description:Description (fi)]
+Kela tukee pienituloisten asumista maksamalla asumistukea.
+
+Kelan tuet asumiseen ovat:
+* yleinen asumistuki
+* eläkkeensaajan asumistuki
+* sotilasavustuksen asumisavustus
+
+Kela tarjoaa tukea myös muissa elämäntilanteissa. Lisätietoja Kelan verkkosivuilta www.kela.fi.
+
+[Requirements]
+(empty)
+
+[Legislation]
+(empty)
+
+[Life events] Conscription; Retirement; Beginning full-time studies
+[Service classes] Housing; Supporting housing
+[Target groups] Citizens
+
+[Service channels] 232 channels in total; non-office channels: Alavuden kaupunginviraston asiointipiste; Asikkalan kunnanvirasto; Asiointipiste; Asiointipiste / yhteispalvelu; Asiointipiste Anttola; Asiointipiste Haukivuori; Asiointipiste Juuka; Asiointipiste Mikkeli; Asiointipiste Piipahlus; Asiointipiste Ristiina; Asiointipiste Suomenniemi; Asiointipiste Töysän kirjasto; Espoo-infon asiointipiste Kalajärvi; Espoo-infon asiointipiste Leppävaara; Espoo-infon asiointipiste Matinkylä; Espoonlahden Espoo-info; Hartolan kunta; Haukiputaan asiointipiste; Heinäveden kirjasto; Himangan kirjasto; Hyrynsalmen kirjasto; Hämeenkyrön asiointipiste; Iin asiointipiste; Isojoen asiointipiste; Isonkyrön kunnankirjasto; Jalasjärven kirjasto; Joutsan asiointipiste; Juvan asiointipiste; Kangaslammin asiointipiste; Kangasniemen asiointipiste; Kauppatorin Monitori, asiointipiste; Kaupungin Asiointipiste; Kaupungintalo; Kaustisen asiointipiste; Keiteleen asiointipiste; Kela-palveluiden asiointipiste, Kemiönsaaren kunta; Kela-palveluiden asiointipiste, Taalintehdas Kemiönsaari; Kelan asiointipiste; Kelan asiointipiste, Haapavesi; Kelan puhelinpalvelu henkilöasiakkaille; Kelan tuet asumiseen; Keravan asiointipiste; Kerimäen asiointipiste; Keskustan asiointipiste; Kestilän asiointipiste; Kesälahden asiointipiste; Keuruun kaupungintalo; Kiimingin asiointipiste; Kirjasto; Kiteen kaupungin asiointipiste; Kittilän asiointipiste; Kokemäen Asiointipiste/Kela; Kolarin Kelan asiointipiste; Konneveden kunnan asiointipiste; Konneveden kunnantalo; Kostiakeskus; Kunnanvirasto; Kurikan kaupungin ja Kelan Jurvan asiointipiste; Kurikan pääkirjasto; Kympin työllisyysalueen Alajärven toimipaikka; Kärsämäen kirjasto; Lahden Suomi-piste; Laihian kunnantalo; Lapinlahden asiointipiste; Lappeenrannan Suomi-piste; Lapuan asiointipiste; Laukaan asiointipiste; Liedon asiointipiste; Liperin kunnanvirasto; Luopioisten Kuntainfo; Maalahden asiointipiste; Merikarvian asiointipiste; Multian asiointipiste; Muonion Kelan asiointipiste; Mäntyharjun asiointipiste; Naantalin asiointipiste; Nilsiän asiointipiste; Nivalan asiointipiste; Nurmeksen asiointipiste; Närpiön asiointipiste; OmaKela; Oravaisten hallintotalo; Oulaisten asiointipiste (Kela); Oulunsalon asiointipiste; Outokummun asiointipiste; Paltamon asiointipiste; Paltamon pääkirjasto; Paraisten Asiointipiste; Parkanon Asiointipiste; Pelkosenniemen kunnantalo; Perhon kunnan Asiointipiste; Pertunmaan asiointipiste; Peräseinäjoen monipalvelukirjasto; Petäjäveden asiointipiste; Pieksämäen toimipiste; Pihtiputaan kunnanvirasto; Piippolan asiointipiste; Pomarkun kunnan asiointipiste; Pudasjärven asiointipiste; Pulkkilan asiointipiste; Punkaharjun asiointipiste; Puumalan asiointipiste; Rantsilan asiointipiste; Rautalammin kunnanvirasto; Rautavaaran kunnan ja Kelan asiointipiste; Rautjärven Asiointipiste; Ruoveden kunnanvirasto; Ruukin asiointipiste; Saarijärven kaupungin Asiointipiste; Sievin asiointipiste; Sievin kunnantalo; Siilinjärven asiointipiste; Someron asiointipiste; Sonkajärven asiointipiste; Sukevan asiointipiste; Sulkavan asiointipiste; Suonenjoen asiointipiste; Sysmän kunnanvirasto; Taalintehtaan asiointipiste; Tervon Kelan asiointipiste; Tervon kunta; Tohmajärven asiointipiste; Työllisyyspalvelut, Valkeakosken toimipiste; Utajärven Asiointipiste; Utsjoen asiointipiste; Valtimon asiointipiste; Vantaa-info, Korso; Vantaa-info, Myyrmäki; Vantaa-info, Tikkurila; Varpaisjärven asiointipiste; Vesannon kunnan kirjaston asiointipiste; Vieremän asiointipiste; Viitasaaren asiointipiste; Vöyrin kunnantalo - infopiste; Yhteispalvelu Vähäkyrö; Yli-Iin asiointipiste; Ylikiimingin asiointipiste; Ylistaron monipalvelukirjasto; Ähtärin kaupunginvirasto
+Office / service point channels: 73

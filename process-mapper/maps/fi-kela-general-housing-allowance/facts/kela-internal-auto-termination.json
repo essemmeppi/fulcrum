@@ -1,0 +1,236 @@
+{
+  "source_id": "kela-internal-auto-termination",
+  "facts": [
+    {
+      "id": "kela-internal-auto-termination:F1",
+      "kind": "calculation",
+      "statement": "A household is entitled to general housing allowance equal to 70% of acceptable housing costs (section 9 of the Act on General Housing Allowance), capped at the maximum housing costs of section 10, minus the income-based basic deductible of section 16.",
+      "quote": "Ruokakunnalla on oikeus saada asumistukea 70 prosenttia siitä yleisestä asumistuesta annetun lain 9 §:ssä säädettyjen hyväksyttävien, mutta enintään 10 §:ssä säädettyjen enimmäismääräisten asumismenojen määrästä, josta on vähennetty ruokakunnan tulojen mukaan määräytyvä 16 §:ssä säädetty perusomavastuuosuus.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F2",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance can be terminated from the beginning of the month from which the household no longer has entitlement under section 8 or 8 a of the Act.",
+      "quote": "Asumistuki voidaan lak- kauttaa sen kuukauden alusta, josta ruokakunnalla ei lain 8 tai 8 a §:n mukaan enää ole oikeutta asumistukeen.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F3",
+      "kind": "actor",
+      "statement": "A software robot processes Kela's internal impulse tasks related to general housing allowance.",
+      "quote": "Ohjelmistorobotti käsittelee Kelan sisäisiä, yleiseen asumistukeen liittyviä impulssitöitä.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F4",
+      "kind": "step",
+      "statement": "A task is created in the work queue of the work management system when a recipient of general housing allowance has been granted a pension benefit or rehabilitation benefit.",
+      "quote": "Työ muodostuu työnhallintajärjestelmän työjonolle, kun yleisen asumistuen saajalle on myönnetty eläke-etuus tai kuntoutusetuus.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F5",
+      "kind": "data_source",
+      "statement": "Kela's work management system (työnhallintajärjestelmä) work queue is the source of the impulse tasks handled by the robot.",
+      "quote": "Työ muodostuu työnhallintajärjestelmän työjonolle",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F6",
+      "kind": "step",
+      "statement": "The software robot checks whether the impulse (granted pension or rehabilitation benefit) affects the general housing allowance.",
+      "quote": "Ohjelmistorobotti tarkistaa, onko impulssilla vaikutusta yleiseen asumistukeen.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F7",
+      "kind": "eligibility",
+      "statement": "If a certain pension or rehabilitation benefit has been granted to the customer (household) such that they are no longer entitled to general housing allowance, the housing allowance is terminated or revised.",
+      "quote": "Jos tietty eläke- tai kuntoutusetuus on myönnetty asi- akkaalle (ruokakunnalle) siten, että hänellä ei ole oikeutta yleiseen asumistukeen, yleinen asumistuki lakkautetaan tai oikaistaan.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F8",
+      "kind": "output",
+      "statement": "The administrative benefit decision is given to the customer in writing.",
+      "quote": "Hallinnollinen etuuspäätös annetaan asiakkaalle kirjallisesti.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F9",
+      "kind": "channel",
+      "statement": "If the customer has opted out of paper mail via Kela's online service OmaKela, the decision is delivered only through OmaKela.",
+      "quote": "Jos asiakas on luopunut paperipostista Kansaneläkelaitoksen verkkoasioin- nin kautta (OmaKela), päätös toimitetaan vain OmaKelan kautta.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F10",
+      "kind": "procedural_rule",
+      "statement": "The automatic decision procedure is based on Chapter 8 b of the Administrative Procedure Act, and the automatic housing allowance decisions meet its requirements.",
+      "quote": "Automaattinen ratkaisumenettely perustuu hallintolain 8 b lukuun. Yleisen asumistuen automaattiset päätökset täyttävät hallintolain 8 b luvun vaatimukset.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F11",
+      "kind": "procedural_rule",
+      "statement": "Matters decided automatically do not require case-by-case discretion; the decision is made based on processing rules defined in advance by a human.",
+      "quote": "Automaattisesti rat- kaistavat asiat eivät edellytä tapauskohtaista harkintaa. Ratkaisu tehdään ihmisen etukä- teenmäärittelemien käsittelysääntöjen perusteella.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F12",
+      "kind": "exception",
+      "statement": "The processing rules define limitations under which the decision of the matter is always transferred to a natural person (caseworker).",
+      "quote": "Käsittelysääntöihin on määritelty ra- jaukset, joiden perusteella asian ratkaisu siirtyy aina luonnolliselle henkilölle.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F13",
+      "kind": "appeal",
+      "statement": "A prerequisite for automatic decision-making is that the natural person concerned can request rectification of the decision in full, free of charge, via a request for rectification under Chapter 7 a, handled by the deciding authority or an authority under the same controller.",
+      "quote": "automaattisen ratkaisemisen edellytyksenä on, että luonnollinen henkilö, johon ratkaisu on kohdistettu, voi kaikilta osin vaatia siihen oi- kaisua maksutta 7 a luvun mukaisella oikaisuvaatimuksella tai siihen rinnastuvalla vaati- muksella, joka käsitellään päätöksen tehneessä viranomaisessa",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F14",
+      "kind": "appeal",
+      "statement": "A person dissatisfied with a decision under the Act on General Housing Allowance can appeal to the Social Security Appeal Board (sosiaaliturvan muutoksenhakulautakunta).",
+      "quote": "Yleisestä asumistuesta annetun lain mukai- seen päätökseen tyytymätön voi hakea siihen muutosta valittamalla sosiaaliturvan muu- toksenhakulautakuntaan",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F15",
+      "kind": "appeal",
+      "statement": "A person dissatisfied with the Social Security Appeal Board's decision can appeal to the Insurance Court (vakuutusoikeus).",
+      "quote": "muutoksenhakulautakunnan päätökseen tyytymätön valitta- malla vakuutusoikeuteen.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-internal-auto-termination:F16",
+      "kind": "output",
+      "statement": "Kela's automatically made administrative decision is marked with information that the matter was decided automatically as referred to in section 53 e of the Administrative Procedure Act.",
+      "quote": "Kansaneläkelaitoksen automaattisesti tehtävään hallintopäätökseen merkitään tieto siitä, että asia on ratkaistu hallintolain 53 e §:ssä tar- koitetulla tavalla automaattisesti.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F17",
+      "kind": "output",
+      "statement": "The decision also includes the address of Kela's website where the deployment decision (käyttöönottopäätös) is available.",
+      "quote": "Lisäksi hallintopäätökseen merkitään Kansaneläkelai- toksen verkkosivun osoite, josta tämä käyttöönottopäätös on saatavilla.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F18",
+      "kind": "procedural_rule",
+      "statement": "Under section 53 g(3) of the Administrative Procedure Act, the name of a person giving further information is not marked on the automatic decision.",
+      "quote": "Hallintolain 53 g §:n 3 momentin perusteella lisätietoja antavan henkilön nimeä ei merkitä päätöksellä.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F19",
+      "kind": "output",
+      "statement": "The decision includes contact information from which the party can request further information about the decision if needed.",
+      "quote": "Päätökselle merkitään kuitenkin yhteystieto, josta asianosainen voi pyytää tarvittaessa lisätietoja päätöksestä.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F20",
+      "kind": "procedural_rule",
+      "statement": "Kela has documented the division of tasks of persons responsible for the obligations under Chapter 6 a of the Information Management Act in a separate document.",
+      "quote": "Kansaneläkelaitos on dokumentoinut tehtäväjaon erilliseen asiakirjaan.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F21",
+      "kind": "procedural_rule",
+      "statement": "The processing rules must show how non-discrimination is ensured, how the matter is adequately investigated including hearing, and how the decision is justified or why justification may be omitted; Kela has documented the processing rules in a separate document.",
+      "quote": "Käsittelysäännöistä on käy- tävä erityisesti ilmi, miten ratkaisumenettelyn syrjimättömyys varmistetaan, miten asia selvitetään riittävästi ja asianmukaisesti, mukaan lukien kuuleminen sekä miten ratkaisu perustellaan tai miksi se voidaan jättää perustelematta. Kansaneläkelaitos on dokumen- toinut käsittelysäännöt erilliseen asiakirjaan.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F22",
+      "kind": "procedural_rule",
+      "statement": "Before deployment and when changing the procedure, the authority must verify that the automatic procedure corresponds to its documented processing rules.",
+      "quote": "viranomaisen on varmistettava ennen automaattisen ratkaisumenettelyn käyttöönottoa ja menettelyä käytön aikana muutettaessa, että menet- tely vastaa tiedonhallintalain 28 a §:n 2 momentissa tarkoitettua dokumentaatiota",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F23",
+      "kind": "procedural_rule",
+      "statement": "The authority must monitor the quality and substantive correctness of automatically decided matters (section 28 c of the Information Management Act).",
+      "quote": "Tiedonhallintalain 28 c §:n mukaan viranomaisen on valvottava automaattisesti ratkaistavien asioiden laa- tua ja sisällöllistä virheettömyyttä.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F24",
+      "kind": "actor",
+      "statement": "At Kela, persons responsible for quality assurance and quality monitoring of the automatic procedure have been named.",
+      "quote": "Kan- saneläkelaitoksessa laadunvarmistuksen ja -valvonnan toimintatavat on dokumentoitu ja laadunvarmistuksesta sekä -valvonnasta vastaavat henkilöt on nimetty.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F25",
+      "kind": "step",
+      "statement": "Before deployment, Kela verified by comprehensive testing that the decision procedure corresponds to the processing rules.",
+      "quote": "Kansaneläkelaitos on ennen automaattisen ratkaisumenettelyn käyttöönottoa varmista- nut, että ratkaisumenettely vastaa laadittuja käsittelysääntöjä, testaamalla menettelyn kattavasti.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F26",
+      "kind": "step",
+      "statement": "Kela used language editing to ensure that automatically generated decisions use good language.",
+      "quote": "Kansaneläkelaitos on kielenhuollon avulla varmistanut, että automaat- tisesti laadittavat päätökset perustuvat hyvään kielenkäyttöön.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-internal-auto-termination:F27",
+      "kind": "step",
+      "statement": "After deployment, quality monitoring is mainly carried out by selecting some automatic decisions by random sampling for manual review.",
+      "quote": "Laadunvalvontaa toteutetaan pääsääntöisesti valikoi- malla satunnaisotannalla joitakin automaattipäätöksiä manuaaliseen tarkasteluun.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-internal-auto-termination:F28",
+      "kind": "procedural_rule",
+      "statement": "Procedures for handling possible error situations have been planned and documented.",
+      "quote": "Mah- dollisten virhetilanteiden käsittelyä koskevat menettelyt on suunniteltu ja dokumentoitu.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-internal-auto-termination:F29",
+      "kind": "input",
+      "statement": "The deployment decision is based on a data protection impact assessment, a description of the processing activity, and a quality assurance document and quality monitoring plan.",
+      "quote": "Tietosuojan vaikutusten arviointi\nKäsittelytoimen kuvaus\nLaadunvarmistamisen dokumentti ja laadunvalvonnan suunnitelma",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-internal-auto-termination:F30",
+      "kind": "deadline",
+      "statement": "If the automatic procedure is discontinued, Kela retains the deployment decision for at least five years, starting from the beginning of the calendar year following discontinuation.",
+      "quote": "Jos automaattinen ratkaisumenettely poistetaan käytöstä, Kansaneläkelaitos säilyttää tä- män käyttöönottopäätöksen sen jälkeenkin vähintään viiden vuoden ajan. Määräaika al- kaa poistamista seuraavan kalenterivuoden alusta.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-internal-auto-termination:F31",
+      "kind": "appeal",
+      "statement": "The deployment decision itself cannot be appealed.",
+      "quote": "Tähän käyttöönottopäätökseen ei saa hakea muutosta.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-internal-auto-termination:F32",
+      "kind": "procedural_rule",
+      "statement": "The automatic decisions were deployed on 9 May 2022; the deployment decision was made by the head of the development unit.",
+      "quote": "Automaattiset päätökset otettiin käyttöön 9.5.2022. Päätöksen käyttöönotosta teki kehit- tämisyksikön päällikkö Pirkko Kilpeläinen.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-internal-auto-termination:F33",
+      "kind": "channel",
+      "statement": "Further information on the automatic decision procedure is available from the Unemployment and housing allowance service number or by post to Kela's registry.",
+      "quote": "Automaattisen päätöksenteon menettelystä saa lisätietoja Työttömyys ja asumistuki -pal- velunumerosta 020 692 210 tai osoitteesta Kela, kirjaamo, PL 450, 00056 Kela.",
+      "locator": "p. 3"
+    }
+  ]
+}

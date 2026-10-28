@@ -1,0 +1,831 @@
+{
+  "source_id": "kela-en-general-housing-allowance",
+  "facts": [
+    {
+      "id": "kela-en-general-housing-allowance:F1",
+      "kind": "eligibility",
+      "statement": "General housing allowance can be paid to households consisting of a single person or several persons.",
+      "quote": "General housing allowance can be paid to households consisting of a single person or several persons.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F2",
+      "kind": "calculation",
+      "statement": "Housing allowance is granted to the household as a unit, and the amount depends on the total income and assets of the entire household.",
+      "quote": "Housing allowance is granted to the household as a unit, so the amount of housing allowance will depend on the total income and assets of the entire household.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F3",
+      "kind": "eligibility",
+      "statement": "General housing allowance is available for rental, right-of-occupancy and part-ownership housing.",
+      "quote": "General housing allowance is available for rental, right-of-occupancy and part-ownership housing.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F4",
+      "kind": "eligibility",
+      "statement": "A household can get housing allowance only if its income does not exceed the income limit for its municipality.",
+      "quote": "You can get housing allowance if your income does not exceed the income limit for your municipality.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F5",
+      "kind": "calculation",
+      "statement": "Only part of the housing costs are taken into account when calculating the housing allowance.",
+      "quote": "Only part of your housing costs are taken into account when calculating your housing allowance.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F6",
+      "kind": "channel",
+      "statement": "Kela provides an online calculator that citizens can use to estimate their housing allowance; the result is only an estimate.",
+      "quote": "Use our calculator to check how much housing allowance you might get. The result is an estimate.",
+      "locator": "H2: Estimate how much housing allowance you can get"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F7",
+      "kind": "channel",
+      "statement": "The citizen can apply for housing allowance either on a form or in the OmaKela e-service.",
+      "quote": "You can apply for housing allowance either on a form or in the OmaKela e-service.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F8",
+      "kind": "calculation",
+      "statement": "Maximum limits for recognised housing costs (maximum housing costs) are defined and vary by municipality.",
+      "quote": "Maximum limits have been defined for recognised housing costs. They vary by municipality, and they are also known as maximum housing costs.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F9",
+      "kind": "calculation",
+      "statement": "The housing allowance cannot exceed the municipality-specific maximum limit for recognised housing costs.",
+      "quote": "The amount of housing allowance you can get cannot exceed the municipality-specific maximum limit for recognised housing costs.",
+      "locator": "H2: Can you get general housing allowance?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F10",
+      "kind": "eligibility",
+      "statement": "As a rule, students cannot get general housing allowance; most students can get the housing supplement for students instead.",
+      "quote": "If you study, you cannot, as a rule, get general housing allowance. The majority of students can get the housing supplement for students to help with their housing costs.",
+      "locator": "H3: Are you a student?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F11",
+      "kind": "exception",
+      "statement": "A student can qualify for general housing allowance instead of the student housing supplement if they live with their own child or their partner's child.",
+      "quote": "However, you can qualify for general housing allowance instead of the student housing supplement for example in the following situations:\nYou live with your own child or your partner’s child.",
+      "locator": "H3: Are you a student?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F12",
+      "kind": "exception",
+      "statement": "A student can qualify for general housing allowance if during studies they are paid another benefit that is not student financial aid, such as unemployment benefits, rehabilitation allowance or sickness allowance.",
+      "quote": "You are paid some other benefit during your studies that is not student financial aid, such as unemployment benefits, rehabilitation allowance or sickness allowance.",
+      "locator": "H3: Are you a student?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F13",
+      "kind": "exception",
+      "statement": "A student can qualify for general housing allowance if they have suspended their studies or used up all available months of student financial aid.",
+      "quote": "You have suspended your studies or used up all months of student financial aid available to you.",
+      "locator": "H3: Are you a student?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F14",
+      "kind": "exception",
+      "statement": "A student can qualify for general housing allowance if Kela has stopped payment of their student financial aid due to insufficient study progress.",
+      "quote": "You have not made enough progress during your studies and we have stopped the payment of your student financial aid as a result",
+      "locator": "H3: Are you a student?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F15",
+      "kind": "exception",
+      "statement": "Pensioners who live permanently in Finland, have a low income and receive a qualifying pension can get the housing allowance for pensioners.",
+      "quote": "You can get housing allowance for pensioners if you are living permanently in Finland, you have a low income and you receive a pension which entitles you to the housing allowance for pensioners.",
+      "locator": "H3: Are you a pensioner?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F16",
+      "kind": "eligibility",
+      "statement": "A person who has moved to Finland from another country may have the right to general housing allowance if they live in Finland permanently.",
+      "quote": "You may have the right to general housing allowance (yleinen asumistuki) if you have moved to Finland from another country and you live in Finland permanently.",
+      "locator": "H3: Have you moved to Finland from another country?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F17",
+      "kind": "eligibility",
+      "statement": "A person is usually considered to live in Finland permanently after living in Finland for one year.",
+      "quote": "You will usually be considered to be living in Finland permanently after you have lived in Finland for one year.",
+      "locator": "H3: Have you moved to Finland from another country?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F18",
+      "kind": "eligibility",
+      "statement": "Only persons who live in Finland can belong to the same household for general housing allowance.",
+      "quote": "General housing allowance is paid to a household. Only persons who live in Finland can belong to the same household.",
+      "locator": "H3: Have you moved to Finland from another country?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F19",
+      "kind": "eligibility",
+      "statement": "A citizen of an EU or EEA country or Switzerland who moved to Finland to work may have the right to general housing allowance.",
+      "quote": "You may have the right to general housing allowance if you have moved to Finland to work and you are the citizen of an EU or EEA country or Switzerland.",
+      "locator": "H4: Did you come to Finland to work?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F20",
+      "kind": "eligibility",
+      "statement": "A person who has fled the war in Ukraine may have the right to general housing allowance if they live in Finland permanently.",
+      "quote": "You may have the right to general housing allowance if you have fled the war in Ukraine and you live in Finland permanently.",
+      "locator": "H4: Have you fled the war in Ukraine?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F21",
+      "kind": "eligibility",
+      "statement": "A household typically includes the persons sharing a home on a permanent basis, and a person can only be a member of one household at a time.",
+      "quote": "A household typically includes the persons sharing a home on a permanent basis. You can only be a member of one household at a time.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F22",
+      "kind": "actor",
+      "statement": "One member of the household applies for housing allowance on behalf of the entire household.",
+      "quote": "One member of the household applies for housing allowance on behalf of the entire household.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F23",
+      "kind": "eligibility",
+      "statement": "Married persons or persons in a relationship who share a home belong to the same household regardless of whether they have joint or separate rental agreements.",
+      "quote": "Persons who are married or in a relationship and are sharing a home belong to the same household regardless of whether they have a joint rental agreement or separate rental agreements.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F24",
+      "kind": "exception",
+      "statement": "A spouse or partner entitled to the housing supplement for students is not part of the household, so their income and assets do not affect the general housing allowance.",
+      "quote": "A spouse or partner who is entitled to the housing supplement for students is not considered part of the household. Their income or assets therefore do not affect the amount of the general housing allowance.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F25",
+      "kind": "eligibility",
+      "statement": "Married couples living at different addresses belong to the same household if they live apart because of e.g. work, studies, or military or non-military service in another municipality.",
+      "quote": "Married couples living at different addresses also belong to the same household if the reason that they live apart is, for example, work, studies, or military or non-military service in another municipality.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F26",
+      "kind": "exception",
+      "statement": "Married spouses are in different households if they live apart because their relationship has ended.",
+      "quote": "Married spouses are considered to be part of different households if they live apart because their relationship has ended.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F27",
+      "kind": "eligibility",
+      "statement": "Roommates with a joint rental agreement, or who are jointly responsible for paying rent under the agreement or its appendix, belong to the same household.",
+      "quote": "Roommates can be part of the same household or two different households.\nroommates with a joint rental agreement\nroommates who under the rental agreement (or an appendix to the agreement) are jointly responsible for paying rent.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F28",
+      "kind": "procedural_rule",
+      "statement": "Roommates belonging to the same household must authorise one household member to apply for housing allowance for the whole household.",
+      "quote": "Roommates belonging to the same household must authorise one member of their household to apply for housing allowance for the whole household.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F29",
+      "kind": "input",
+      "statement": "Authorisation of one roommate household member is given with the form 'Power of attorney to represent a communal household' AT5e.",
+      "quote": "Use the form ‘Power of attorney to represent a communal household’ AT5e (PDF) to authorise one household member.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F30",
+      "kind": "output",
+      "statement": "If housing allowance is granted to a roommate household, it is paid to the authorised person.",
+      "quote": "If housing allowance is granted to the household, it is paid to the authorised person.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F31",
+      "kind": "eligibility",
+      "statement": "Roommates with separate rental agreements or who sublet an apartment can be in different households, provided they are not jointly responsible for paying rent for the entire dwelling under the rental agreement or its appendix.",
+      "quote": "roommates with separate rental agreements\nroommates who are subletting an apartment\nFurther, in order to be considered to be part of different households, roommates may not be jointly responsible for paying rent for the entire dwelling",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F32",
+      "kind": "eligibility",
+      "statement": "A married couple, cohabiting couple or close relatives (parents, children, grandparents) living at the same address are in the same household regardless of their rental agreement terms.",
+      "quote": "A married couple, a cohabiting couple or close relatives are part of the same household if they live at the same address, regardless of the terms of their rental agreement. Close relatives means parents, children and grandparents.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F33",
+      "kind": "exception",
+      "statement": "Siblings sharing a home are in different households if they have separate rental agreements or a sublease agreement.",
+      "quote": "Siblings sharing a home are part of different households if they have separate rental agreements or a sublease agreement.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F34",
+      "kind": "eligibility",
+      "statement": "A child under 18 living independently with no income is usually considered part of their parents' household.",
+      "quote": "A child under the age of 18 who is living independently and who has no income is usually considered to be part of their parents’ household.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F35",
+      "kind": "eligibility",
+      "statement": "Adult children (18 or older) living independently are not part of their parents' household, while adult children living with their parents are.",
+      "quote": "Adult children (18 or older) who live independently are not part of their parents’ household.\nAdult children who live with their parents belong to their parents’ household.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F36",
+      "kind": "eligibility",
+      "statement": "A person temporarily living elsewhere due to work, military or non-military service or similar reasons remains part of the household of their permanent residence.",
+      "quote": "You are part of the same household as the persons living in your permanent residence even if you live elsewhere temporarily on account of work, military or non-military service, or other similar reasons.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F37",
+      "kind": "deadline",
+      "statement": "Living elsewhere is usually considered temporary if it lasts less than about a year.",
+      "quote": "Living elsewhere is usually considered to be temporary if it lasts less than about a year.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F38",
+      "kind": "eligibility",
+      "statement": "A person who has moved to Finland can be part of a household if Kela considers the person to be permanently resident in Finland.",
+      "quote": "A person who has moved to Finland can be considered part of a household if Kela considers the person to be permanently resident in Finland.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F39",
+      "kind": "exception",
+      "statement": "Students who come to Finland cannot belong to a household or get housing allowance.",
+      "quote": "Students who come to Finland cannot belong to a household or get housing allowance.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F40",
+      "kind": "eligibility",
+      "statement": "Subtenants belong to a different household than the main tenant or owner, except a subtenant who is the spouse or close relative of the main tenant or owner.",
+      "quote": "Subtenants are considered to belong to a different household than the main tenant or owner, with a few exceptions.\nA subtenant who is the spouse or close relative of the main tenant or owner is part of the same household.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F41",
+      "kind": "procedural_rule",
+      "statement": "A housing allowance recipient must notify Kela if they take in a subtenant.",
+      "quote": "Notify Kela if you get housing allowance and take in a subtenant.",
+      "locator": "H3: Who belongs to a household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F42",
+      "kind": "calculation",
+      "statement": "If the calculated housing allowance is less than EUR 15 per month, it is not paid out.",
+      "quote": "If your housing allowance is less than EUR 15 per month, it is not paid out.",
+      "locator": "H2: How much general housing allowance can you get?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F43",
+      "kind": "calculation",
+      "statement": "The amount of housing allowance is affected by the number of adults and children in the household, income and assets, eligible housing costs, the municipal maximum housing costs, and the basic deductible.",
+      "quote": "The amount of the housing allowance is affected by\nthe number of adults and children in the household\nincome and assets\nhousing costs for which you can get housing allowance\nthe maximum limits for housing costs defined for each municipality (maximum housing costs)\nthe basic deductible.",
+      "locator": "H2: How much general housing allowance can you get?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F44",
+      "kind": "step",
+      "statement": "Kela pays the housing allowance into the recipient's bank account or the landlord's account on the first banking day of the month.",
+      "quote": "Kela pays the housing allowance into your bank account or your landlord’s account on the first banking day of the month.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F45",
+      "kind": "procedural_rule",
+      "statement": "If banks are closed on the scheduled payment date, the housing allowance is paid on the next banking day.",
+      "quote": "If the banks are closed on the scheduled payment date, the housing allowance will be paid on the next banking day.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F46",
+      "kind": "procedural_rule",
+      "statement": "The housing allowance is tax-free income.",
+      "quote": "The housing allowance is tax-free income.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F47",
+      "kind": "deadline",
+      "statement": "Retroactively granted housing allowance generally appears in the bank account within two banking days of payment.",
+      "quote": "If you get housing allowance retroactively, the allowance will generally appear in your bank account within two banking days of payment.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F48",
+      "kind": "deadline",
+      "statement": "Housing allowance is available retroactively for one month.",
+      "quote": "Housing allowance is available retroactively for one month.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F49",
+      "kind": "procedural_rule",
+      "statement": "Kela can pay the housing allowance directly to the landlord's account if the recipient consents.",
+      "quote": "Kela can pay the housing allowance directly to your landlord’s account if you give your consent.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F50",
+      "kind": "exception",
+      "statement": "Kela can pay the housing allowance directly to the landlord without consent if the recipient has left part or all of the rent unpaid for two months in a row.",
+      "quote": "Kela can also pay the housing allowance directly to the landlord if you have left part of or all your rent unpaid for two months in a row.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F51",
+      "kind": "step",
+      "statement": "Before paying the allowance directly to the landlord due to unpaid rent, Kela contacts the recipient.",
+      "quote": "In situations like that, we will contact you before we pay your housing allowance.",
+      "locator": "H3: Payment of the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F52",
+      "kind": "channel",
+      "statement": "OmaKela is only available in Finnish and Swedish, while Kela's forms are also available in English.",
+      "quote": "OmaKela is currently only available in Finnish and Swedish. Kela’s forms are also available in English.",
+      "locator": "H2: How to apply for general housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F53",
+      "kind": "channel",
+      "statement": "Supporting documents are submitted in OmaKela; non-digital documents can be photographed for submission.",
+      "quote": "Submit supporting documents in OmaKela. Take photographs of the documents you are sending if they are not in a digital format.",
+      "locator": "H3: Apply in OmaKela"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F54",
+      "kind": "input",
+      "statement": "The applicant must send a copy of the signed rental agreement with the application if Kela does not get it directly from the landlord.",
+      "quote": "Send Kela a copy of your signed rental agreement with your application if Kela does not get it directly from your landlord.",
+      "locator": "H4: Rental agreement"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F55",
+      "kind": "input",
+      "statement": "A roommate representing a communal household must submit form AT 5e (Power of attorney to represent a communal household) with the application.",
+      "quote": "Complete and submit the form Power of attorney to represent a communal household AT 5e (PDF) with your application if you and your roommate(s) belong to the same household and you represent the household.",
+      "locator": "H4: Do you represent your household?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F56",
+      "kind": "input",
+      "statement": "A first-time applicant since moving to Finland must submit a notification of moving to Finland (in OmaKela or form Y 77e) if Kela has not yet checked whether a household member qualifies for Kela benefits.",
+      "quote": "You must submit a notification of moving to Finland in OmaKela or on the form Notification – Moving to Finland or employment in Finland Y 77e (PDF) if you are applying for housing allowance for the first time since you moved to Finland and Kela has not yet checked if you or another member of your household qualifies for Kela benefits.",
+      "locator": "H4: Have you moved to Finland from another country?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F57",
+      "kind": "procedural_rule",
+      "statement": "The citizen must tell Kela about a move to or stay in another country, in OmaKela or on form Y 38e.",
+      "quote": "Tell Kela about your move to or your stay in another country in OmaKela or on the form Moving from Finland or employment abroad Y 38e (PDF).",
+      "locator": "H4: Have you moved to another country?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F58",
+      "kind": "output",
+      "statement": "In OmaKela the applicant can see whether Kela has made a decision, how much they will get and when the benefit will be paid.",
+      "quote": "Go to OmaKela to see if Kela has made a decision on your application. You will also see how much you will get and when your benefit will be paid.",
+      "locator": "H2: Apply for housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F59",
+      "kind": "output",
+      "statement": "If supporting documents are missing from the application, the applicant gets a reminder in OmaKela.",
+      "quote": "If supporting documents are missing from your application, you will get a reminder about that in OmaKela.",
+      "locator": "H2: Apply for housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F60",
+      "kind": "channel",
+      "statement": "In OmaKela the citizen can consent to Kela sending them messages, which speeds up the application process.",
+      "quote": "In OmaKela, you can also give consent for Kela to send you messages. This will help make your application process and other contacts with Kela quicker.",
+      "locator": "H2: Apply for housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F61",
+      "kind": "exception",
+      "statement": "Due to a system error, OmaKela may show a review application (tarkistushakemus) instead of a new application; it can be used and Kela processes it as a new application.",
+      "quote": "You can use the review application to apply for the allowance if this happens to you. We will process your application as a new application even if you use the review application.",
+      "locator": "H3: OmaKela may show an application for a review instead of a new application"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F62",
+      "kind": "channel",
+      "statement": "Applicants who cannot use OmaKela apply on paper form AT 1e (Application – General housing allowance).",
+      "quote": "Do as follows if you cannot use OmaKela:\nApply for housing allowance on the form Application – General housing allowance AT 1e (PDF)",
+      "locator": "H3: If you cannot use OmaKela, send your application to Kela by post"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F63",
+      "kind": "step",
+      "statement": "The paper applicant saves the blank form to their device, fills it in, prints it and signs it.",
+      "quote": "Save the blank form to your device. Do not fill in the form directly in the browser because some of the information may not be saved that way.\nFill in the form and print it out. Remember to sign the form.",
+      "locator": "H3: If you cannot use OmaKela, send your application to Kela by post"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F64",
+      "kind": "channel",
+      "statement": "The paper form and supporting documents are sent by post to Kela, PL 10, 00056 KELA.",
+      "quote": "Send the form together with any supporting documents to Kela, PL 10, 00056 KELA.",
+      "locator": "H3: If you cannot use OmaKela, send your application to Kela by post"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F65",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance is always granted as of the first day of a month; e.g. a rental agreement starting 15 March gives allowance from 1 April.",
+      "quote": "Housing allowance is always granted as of the first day of the month. For example, if your rental agreement enters into force on 15 March, you will start receiving housing allowance as of 1 April.",
+      "locator": "H3: When to apply"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F66",
+      "kind": "deadline",
+      "statement": "Housing allowance can be granted retroactively for up to one month from the month of application; e.g. for allowance from the beginning of January the application must reach Kela before the end of February.",
+      "quote": "You can get housing allowance retroactively for up to one month from the month of application. For example, if you wish to get housing allowance from the beginning of January, your application must reach Kela before the end of February.",
+      "locator": "H3: When to apply"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F67",
+      "kind": "data_source",
+      "statement": "Kela gets wage and salary information from the Incomes Register and uses it when processing the application.",
+      "quote": "Kela gets wage and salary information from the Incomes Register and uses this information when processing your application.",
+      "locator": "H3: When to apply"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F68",
+      "kind": "output",
+      "statement": "Kela may ask the applicant for more information if needed.",
+      "quote": "We may ask you for more information if we need it.",
+      "locator": "H3: When to apply"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F69",
+      "kind": "output",
+      "statement": "The decision notice is issued only in Finnish or Swedish.",
+      "quote": "The decision notice is only in Finnish or Swedish.",
+      "locator": "H3: When to apply"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F70",
+      "kind": "channel",
+      "statement": "Applicants needing help can call Kela's English language customer service numbers.",
+      "quote": "If you need help with something, you can call one of our English language customer service numbers.",
+      "locator": "H3: When to apply"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F71",
+      "kind": "data_source",
+      "statement": "Kela gets rental agreement information directly from certain listed landlords; tenants of these landlords need not send their rental agreement or rent details.",
+      "quote": "Kela gets information about rental agreements directly from certain landlords. If your landlord is on the list below, you do not need to send us your rental agreement or details of the amount of your rent.",
+      "locator": "H3: Landlords that provide rental agreement information directly to Kela"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F72",
+      "kind": "input",
+      "statement": "If the landlord is not on the list, the applicant must send the rental agreement with the application.",
+      "quote": "If your landlord is not on the list, send your rental agreement together with your application.",
+      "locator": "H3: Landlords that provide rental agreement information directly to Kela"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F73",
+      "kind": "input",
+      "statement": "An applicant renting from a private landlord must always send the rental agreement to Kela.",
+      "quote": "You must always send us your rental agreement if you have rented your flat from a private landlord.",
+      "locator": "H3: Landlords that provide rental agreement information directly to Kela"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F74",
+      "kind": "actor",
+      "statement": "Landlords providing rental agreement information directly to Kela include municipal housing companies, student housing foundations and private investors, e.g. Helsingin kaupungin vuokra-asunnot HEKA, HOAS, SATO Oyj and VVO Asunnot Oy/Kojamo.",
+      "quote": "Helsingin kaupungin vuokra-asunnot HEKA\nHelsingin seudun opiskelija-asuntosäätiö HOAS",
+      "locator": "H3: Landlords that provide rental agreement information directly to Kela"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F75",
+      "kind": "volume",
+      "statement": "Some 280+ named landlords are listed as sending rental agreement information directly to Kela (the text gives the list, not a count; e.g. it includes A-kruunu Oy and Lumo).",
+      "quote": "A-kruunu Oy",
+      "locator": "H3: Landlords that provide rental agreement information directly to Kela"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F76",
+      "kind": "procedural_rule",
+      "statement": "A housing allowance recipient must notify Kela of changes in their own or their household's circumstances, such as changes in income, housing costs or something else.",
+      "quote": "If you get housing allowance, you must notify us if there are changes in your circumstances or the circumstances of your household, such as changes in income, housing costs or something else.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F77",
+      "kind": "actor",
+      "statement": "Only the person who applied for housing allowance for the household can report changes.",
+      "quote": "Changes can only be reported by the person who applied for housing allowance for the household.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F78",
+      "kind": "channel",
+      "statement": "Changes can be reported in the OmaKela e-service.",
+      "quote": "You can report changes in the OmaKela e-service.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F79",
+      "kind": "channel",
+      "statement": "If the citizen cannot use OmaKela, they send their application to Kela by post to report changes.",
+      "quote": "If you cannot use OmaKela, send your application to Kela by post.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F80",
+      "kind": "procedural_rule",
+      "statement": "If changes are not reported, more benefit than entitled may be paid, and the overpaid benefit will be recovered later.",
+      "quote": "If you do not report changes to Kela, you may be paid more benefit than you have the right to. In that case, the overpaid benefit will be recovered from you later.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F81",
+      "kind": "procedural_rule",
+      "statement": "Overpaid benefit is recovered first from the person who applied for the benefit.",
+      "quote": "The benefit is recovered first from the person who applied for the benefit.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F82",
+      "kind": "procedural_rule",
+      "statement": "If necessary, Kela may also recover the overpayment from another adult household member who was at least 18 when the overpayment occurred.",
+      "quote": "If necessary, we may also recover the overpayment from another adult member of the household who had reached the age of 18 when the overpayment occurred.",
+      "locator": "H2: Report changes that affect the housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F83",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if their or their household's gross income increases by at least EUR 400 per month.",
+      "quote": "Let us know if your gross income or the gross income of your household\nincreases by at least EUR 400 per month",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F84",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if their or their household's gross income decreases by at least EUR 200 per month.",
+      "quote": "decreases by at least EUR 200 per month.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F85",
+      "kind": "procedural_rule",
+      "statement": "When household income changes due to a new job starting on the 1st of a month, Kela reviews the housing allowance as of the 1st of the following month (e.g. job starting 1 February leads to review as of 1 March).",
+      "quote": "Aino, who receives housing allowance, starts in a new job on 1 February. Her new job causes a change in household income. Kela reviews the housing allowance as of 1 March",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F86",
+      "kind": "procedural_rule",
+      "statement": "If the new job starts after the 1st of the month (e.g. 4 February), Kela reviews the housing allowance as of the 1st of the second following month (1 April).",
+      "quote": "If Aino’s work begins on 4 February, Kela reviews the housing allowance as of 1 April.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F87",
+      "kind": "step",
+      "statement": "Kela reviews the housing allowance after a reported change, and the amount may change as a result of the review.",
+      "quote": "Kela reviews the housing allowance as of 1 March, and the amount of housing allowance may change as a result of the review.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F88",
+      "kind": "calculation",
+      "statement": "Kela calculates an average income if the person's income does not stay the same for 3 months.",
+      "quote": "Read about the way we calculate an average income for you if your income does not stay the same for 3 months.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F89",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if they or their household move to a new home.",
+      "quote": "Let us know if you or your household move to a new home.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F90",
+      "kind": "procedural_rule",
+      "statement": "When a household moves and the new rental agreement is in force from the 1st of the month with a full month's rent paid for that month, Kela reviews the housing allowance as of the 1st of that month.",
+      "quote": "The new rental agreement has entered into force from 1 June, and the household pays a full month's rent for June for the new home. Kela reviews the housing allowance as of 1 June",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F91",
+      "kind": "procedural_rule",
+      "statement": "If the new rental agreement goes into effect after the 1st (e.g. 2 June), even with a full month's rent paid, Kela reviews the housing allowance as of the 1st of the following month (1 July).",
+      "quote": "If the rental agreement goes into effect on 2 June and the household pays a full month's rent for June for the new home, Kela will review the housing allowance as of 1 July.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F92",
+      "kind": "input",
+      "statement": "The rental agreement and its entry-into-force date are relevant information when a household moves.",
+      "quote": "The new rental agreement has entered into force from 1 June",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F93",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the rent or residence charge paid by the household decreases or increases by EUR 50 or more per month.",
+      "quote": "the rent or residence charge paid by your household decreases or increases by EUR 50 or more per month",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F94",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if a household member moves abroad or stays abroad for a period of time.",
+      "quote": "a member of your household moves abroad or stays abroad for a period of time",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F95",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the tenure of the home changes, e.g. buying a home previously rented.",
+      "quote": "the tenure of your home changes, meaning for instance that you buy a home that you used to rent.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F96",
+      "kind": "procedural_rule",
+      "statement": "When housing costs change, Kela reviews the housing allowance from the beginning of the first full month of the change in housing costs.",
+      "quote": "Kela will review the housing allowance from the beginning of the first full month of the change in housing costs.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F97",
+      "kind": "input",
+      "statement": "Changes in housing costs are compared with the housing costs recognised in the previous housing allowance decision.",
+      "quote": "the household’s housing costs decrease by EUR 50 per month compared with the housing costs recognised in the previous housing allowance decision.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F98",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the number of household members or the composition of the household changes.",
+      "quote": "the number of household members or the composition of the household changes.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F99",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the household takes on a subtenant or if a sublease ends.",
+      "quote": "your household takes on a subtenant, or if a sublease ends.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F100",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report getting married.",
+      "quote": "you get married.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F101",
+      "kind": "procedural_rule",
+      "statement": "If the number of household members changes during a month (e.g. 25 May), Kela reviews the housing allowance as of the 1st of the following month (1 June).",
+      "quote": "The number of people in a household that receives housing allowance changes on 25 May. Kela reviews the housing allowance as of 1 June",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F102",
+      "kind": "procedural_rule",
+      "statement": "If the number of household members changes on the 1st of a month (e.g. 1 June), Kela reviews the housing allowance as of that day.",
+      "quote": "If the number of people in the household changes on 1 June. Kela will review the housing allowance as of 1 June.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F103",
+      "kind": "procedural_rule",
+      "statement": "A person living alone must report being away from home for more than 3 months.",
+      "quote": "If you live alone, let us know if you are away from your home for more than 3 months.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F104",
+      "kind": "eligibility",
+      "statement": "The right to housing allowance ends if the person is away from home for 3 months or more.",
+      "quote": "Your right to housing allowance ends if you are away from your home for 3 months or more.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F105",
+      "kind": "step",
+      "statement": "A recipient who no longer needs housing allowance notifies Kela that they want it stopped.",
+      "quote": "If you no longer need housing allowance, let us know that you want your housing allowance stopped.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F106",
+      "kind": "channel",
+      "statement": "Termination can be requested via a notification in OmaKela (under Ilmoita muutoksista) or a message in OmaKela (under Lähetä ja lue viestejä).",
+      "quote": "Submit a notification in OmaKela e-service (under Ilmoita muutoksista) or send a message in OmaKela (under Lähetä ja lue viestejä).",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F107",
+      "kind": "channel",
+      "statement": "OmaKela is only available in Finnish and Swedish.",
+      "quote": "OmaKela is only available in Finnish and Swedish.",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F108",
+      "kind": "channel",
+      "statement": "If the citizen cannot use OmaKela, they fill in form AT 6e 'General housing allowance - Termination of housing allowance' to stop the allowance.",
+      "quote": "If you cannot use OmaKela, fill in the form ‘General housing allowance - Termination of housing allowance’ AT 6e (PDF).",
+      "locator": "H3: Report the following changes"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F109",
+      "kind": "deadline",
+      "statement": "Kela reviews the housing allowance at least every 12 months even if household circumstances do not change.",
+      "quote": "Kela will review your housing allowance at least every 12 months even if your household’s circumstances do not change.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F110",
+      "kind": "data_source",
+      "statement": "The date of the next annual review is shown in the OmaKela e-service.",
+      "quote": "You can see the date for your next annual review in OmaKela e-service.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F111",
+      "kind": "step",
+      "statement": "Kela sends instructions about the annual review about two months before the scheduled review.",
+      "quote": "We will send you instructions about the annual review of your housing allowance about two months before the review is scheduled to take place.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F112",
+      "kind": "channel",
+      "statement": "The annual review instructions are delivered as a message in OmaKela.",
+      "quote": "You will receive the message in OmaKela.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F113",
+      "kind": "input",
+      "statement": "Information for the annual review is submitted on the application for general housing allowance.",
+      "quote": "Send us the information needed for the annual review on the application for general housing allowance.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F114",
+      "kind": "channel",
+      "statement": "The annual review application can be filled in in OmaKela, or sent to Kela by post if OmaKela cannot be used.",
+      "quote": "You can fill in the application in OmaKela e-service (available in Finnish and Swedish). If you cannot use OmaKela, send your application to Kela by post.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F115",
+      "kind": "deadline",
+      "statement": "If the application is not submitted in time for the annual review, Kela stops payment of the housing allowance.",
+      "quote": "If you do not submit the application in time for the review, we will have to stop the payment of your housing allowance.",
+      "locator": "H2: Annual review"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F116",
+      "kind": "channel",
+      "statement": "Questions can be addressed to Kela's customer service by phone.",
+      "quote": "Call Kela’s customer service.",
+      "locator": "H2: Do you still have questions?"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F117",
+      "kind": "channel",
+      "statement": "A new online application form allows applying for general social security benefit and general housing allowance at the same time.",
+      "quote": "Kela has introduced a new online application form that you can use to apply for general social security benefit and general housing allowance at the same time.",
+      "locator": "H3: New application form introduced for general social security benefit and general housing allowance"
+    },
+    {
+      "id": "kela-en-general-housing-allowance:F118",
+      "kind": "channel",
+      "statement": "The same new online form can be used to report changes affecting general social security benefit and general housing allowance.",
+      "quote": "You can also use the same form to report any changes that affect these benefits to Kela.",
+      "locator": "H3: New application form introduced for general social security benefit and general housing allowance"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+anthropic>=0.96
+pydantic>=2
+pypdf
+lxml
+httpx
+pyyaml
+python-dotenv

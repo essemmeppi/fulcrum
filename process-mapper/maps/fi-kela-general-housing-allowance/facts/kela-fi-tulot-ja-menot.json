@@ -1,0 +1,873 @@
+{
+  "source_id": "kela-fi-tulot-ja-menot",
+  "facts": [
+    {
+      "id": "kela-fi-tulot-ja-menot:F1",
+      "kind": "eligibility",
+      "statement": "If the household's income exceeds the income limit, no general housing allowance can be granted at all.",
+      "quote": "Jos tulot ylittävät tulorajan, et voi saada asumistukea lainkaan.",
+      "locator": "H2: Nämä asiat vaikuttavat yleiseen asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F2",
+      "kind": "eligibility",
+      "statement": "Deposits, investments, housing shares and real estate can also affect the right to receive housing allowance.",
+      "quote": "Myös talletukset ja sijoitukset tai esimerkiksi asunto-osakkeet ja kiinteistöt voivat vaikuttaa oikeuteen saada asumistukea.",
+      "locator": "H2: Nämä asiat vaikuttavat yleiseen asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F3",
+      "kind": "calculation",
+      "statement": "Accepted housing costs are defined separately for each form of housing, and the size of the dwelling does not affect the allowance.",
+      "quote": "Eri asumismuodoille on määritelty menot, joihin asumistukea voi saada. Näitä kutsutaan hyväksyttäviksi asumismenoiksi. Asuntosi koko ei vaikuta tukeen.",
+      "locator": "H2: Nämä asiat vaikuttavat yleiseen asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F4",
+      "kind": "calculation",
+      "statement": "Housing costs are subject to municipality-specific upper limits (maximum housing costs), and the allowance is paid at most according to these maximum housing costs.",
+      "quote": "Asumismenojen määrille on kuntakohtaiset ylärajat. Näitä rajoja kutsutaan myös enimmäisasumismenoiksi. Voit saada asumistukea enintään enimmäisasumismenojen mukaan.",
+      "locator": "H2: Nämä asiat vaikuttavat yleiseen asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F5",
+      "kind": "calculation",
+      "statement": "A basic deductible (perusomavastuu) is subtracted from accepted housing costs.",
+      "quote": "Asumistuen perusomavastuu on summa, joka vähennetään hyväksyttävistä asumismenoista.",
+      "locator": "H2: Nämä asiat vaikuttavat yleiseen asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F6",
+      "kind": "exception",
+      "statement": "If the household's income is very small, there is no basic deductible at all.",
+      "quote": "Jos tulosi ovat hyvin pienet, sinulla ei ole perusomavastuuta lainkaan.",
+      "locator": "H2: Nämä asiat vaikuttavat yleiseen asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F7",
+      "kind": "eligibility",
+      "statement": "Students generally cannot receive general housing allowance; most students can instead receive the housing supplement of the study grant.",
+      "quote": "Jos opiskelet, et yleensä voi saada yleistä asumistukea. Suurin osa opiskelijoista voi saada asumisensa tueksi opintotuen asumislisää.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F8",
+      "kind": "exception",
+      "statement": "A student can receive general housing allowance if they live with their own child or their spouse's child.",
+      "quote": "Asut lapsesi tai puolisosi lapsen kanssa.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F9",
+      "kind": "exception",
+      "statement": "A student can receive general housing allowance if during studies they receive a benefit other than study grant, e.g. unemployment benefit, rehabilitation allowance or sickness allowance.",
+      "quote": "Saat opintojesi ajalta muuta tukea kuin opintotukea, esimerkiksi työttömyystukea, kuntoutusrahaa tai sairauspäivärahaa.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F10",
+      "kind": "exception",
+      "statement": "A student can receive general housing allowance if they have interrupted their studies or used up their study grant months.",
+      "quote": "Olet keskeyttänyt opintosi tai käyttänyt loppuun opintotukikuukautesi.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F11",
+      "kind": "exception",
+      "statement": "A student can receive general housing allowance if their studies have not progressed sufficiently and Kela has terminated their study grant.",
+      "quote": "Opintosi eivät ole edistyneet riittävästi, ja olemme lakkauttaneet opintotukesi.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F12",
+      "kind": "eligibility",
+      "statement": "A pensioner can receive pensioner's housing allowance if they reside permanently in Finland, have low income and receive a pension that entitles them to pensioner's housing allowance.",
+      "quote": "Voit saada eläkkeensaajan asumistukea, jos asut vakinaisesti Suomessa, olet pienituloinen ja saat eläkettä, joka oikeuttaa eläkkeensaajan asumistukeen.",
+      "locator": "H3: Oletko eläkkeensaaja?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F13",
+      "kind": "calculation",
+      "statement": "General housing allowance is at most 70% of accepted housing costs, calculated as 0.7 x (accepted housing costs – basic deductible).",
+      "quote": "Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu).",
+      "locator": "H2: Miten asumistuki lasketaan?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F14",
+      "kind": "channel",
+      "statement": "Citizens can estimate the amount of housing allowance with an online calculator; the calculator's result is only an estimate.",
+      "quote": "Laske asumistuen määrä laskurilla. Laskurin antama tulos on arvio.",
+      "locator": "H2: Arvioi määrä"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F15",
+      "kind": "calculation",
+      "statement": "In the worked example, the income limit for a two-adult household in Turku is 2,116 €/month; a couple with combined income of 1,800 € is below it and can apply.",
+      "quote": "Turussa kahden aikuisen muodostaman ruokakunnan tuloraja on 2 116 e/kk. Einon ja Elisan tulot eivät ylitä tulorajaa, joten he voivat hakea asumistukea.",
+      "locator": "H3: Esimerkki asumistuen laskemisesta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F16",
+      "kind": "calculation",
+      "statement": "Kela takes into account e.g. rent and water costs as housing costs; in Turku at most 652 €/month is accepted for two adults, so the allowance is calculated on that amount even if actual costs are higher (950 € in the example).",
+      "quote": "Kela huomioi asumismenoissa esimerkiksi vuokra- ja vesikulut. ... Turussa kahden aikuisen asumismenoiksi hyväksytään kuitenkin enintään 652 e/kk, joten heille maksettava asumistuki lasketaan tämän summan mukaan.",
+      "locator": "H3: Esimerkki asumistuen laskemisesta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F17",
+      "kind": "calculation",
+      "statement": "Worked example: with capped costs of 652 € and a basic deductible of 472.50 €, the allowance is 0.7 x (652 – 472.50) = 125.65 €.",
+      "quote": "0,7 x (652 euroa – 472,50 euroa) = 125,65 euroa.",
+      "locator": "H3: Esimerkki asumistuen laskemisesta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F18",
+      "kind": "exception",
+      "statement": "On Åland, general housing allowance is calculated differently: at most 80% of accepted housing costs, using 0.8 x (accepted housing costs – basic deductible).",
+      "quote": "Ahvenanmaalla asumistuki on enintään 80 % hyväksyttävistä asumismenoista. Asumistuen määrä lasketaan kaavalla 0,8 x (hyväksyttävät asumismenot – perusomavastuu).",
+      "locator": "H3: Esimerkki asumistuen laskemisesta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F19",
+      "kind": "calculation",
+      "statement": "The basic deductible is calculated as 0.42 x [T – (667 + 111 x A + 246 x L)], where T is the household's combined income, A the number of adults and L the number of children.",
+      "quote": "T = ruokakunnan yhteenlasketut tulot\nA = aikuisten lukumäärä\nL = lasten lukumäärä\n0,42 x [T - (667 + 111 x A + 246 x L)]",
+      "locator": "H3: Esimerkki asumistuen laskemisesta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F20",
+      "kind": "exception",
+      "statement": "Åland students who live in rented housing cannot receive general housing allowance, regardless of whether they study on Åland or in mainland Finland.",
+      "quote": "Ahvenanmaalaiset opiskelijat eivät voi saada yleistä asumistukea, jos he asuvat vuokralla. Tuen saamiseen ei vaikuta se, opiskeleeko opiskelija Ahvenanmaalla vai Manner-Suomessa.",
+      "locator": "H3: Esimerkki asumistuen laskemisesta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F21",
+      "kind": "calculation",
+      "statement": "The household's income and assets affect the allowance; Kela calculates an average income where necessary; assets include e.g. bank deposits, shares and investments.",
+      "quote": "Asumistukeesi vaikuttavat ruokakuntasi tulot ja omaisuus. Tarvittaessa laskemme tuloistasi keskiarvotulon. Asumistukeen vaikuttavaa omaisuutta ovat esimerkiksi pankkitalletukset, osakkeet ja sijoitukset.",
+      "locator": "H2: Tulot ja omaisuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F22",
+      "kind": "calculation",
+      "statement": "The allowance is calculated on monthly income, which Kela determines either as continuous income or as average income.",
+      "quote": "Asumistuen määrä lasketaan kuukausitulojesi mukaan. Laskemme asumistukeen vaikuttavien tulojesi määrän joko jatkuvana tulona tai keskiarvotulona.",
+      "locator": "H2: Tulot ja omaisuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F23",
+      "kind": "input",
+      "statement": "Kela takes into account the household's earned income, capital income and many Kela benefits.",
+      "quote": "Otamme huomioon ruokakunnan ansio- ja pääomatulot ja monet Kelan tuista.",
+      "locator": "H2: Tulot ja omaisuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F24",
+      "kind": "procedural_rule",
+      "statement": "Income is allocated to the period during which it was earned, not the payment date; e.g. if applying from the start of September, income earned in August is not considered.",
+      "quote": "Tulosi vaikuttavat tukeen sen mukaan, miltä ajalta olet ne ansainnut. Tulojen maksupäivällä ei siis ole merkitystä. Jos esimerkiksi haet asumistukea syyskuun alusta alkaen, elokuussa ansaitsemiasi tuloja ei huomioida asumistuessa.",
+      "locator": "H2: Tulot ja omaisuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F25",
+      "kind": "calculation",
+      "statement": "Income is always taken into account as gross income.",
+      "quote": "Tulot huomioidaan aina bruttotuloina.",
+      "locator": "H2: Tulot ja omaisuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F26",
+      "kind": "calculation",
+      "statement": "If income stays the same for at least 3 months from when the allowance was granted or reviewed, Kela calculates the allowance on that income (continuous income).",
+      "quote": "Jos tulosi pysyvät samanlaisina vähintään 3 kuukauden ajan siitä, kun asumistuki on myönnetty tai tarkistettu, laskemme asumistuen määrän näiden tulojen mukaan. Tätä kutsutaan jatkuvaksi tuloksi.",
+      "locator": "H4: Jos tulosi pysyvät samanlaisina 3 kuukautta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F27",
+      "kind": "calculation",
+      "statement": "If income does not stay the same for 3 months from when the allowance was granted or reviewed, Kela estimates an average income.",
+      "quote": "Jos tulosi eivät pysy samanlaisina 3 kuukauden ajan siitä, kun asumistuki on myönnetty tai tarkistettu, arvioimme sinulle keskiarvotulon.",
+      "locator": "H4: Jos tulosi eivät pysy samanlaisina 3:a kuukautta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F28",
+      "kind": "procedural_rule",
+      "statement": "Average income accounts for gig work, studying or intermittent unemployment; income variation due to working hours or supplements does not change the income source and is treated as continuous income.",
+      "quote": "Keskiarvotulossa otamme huomioon esimerkiksi sen, että teet keikkatöitä, opiskelet tai olet välillä työttömänä. Sen sijaan tulojen vaihtelu esimerkiksi työaikojen tai lisien vuoksi ei tarkoita sitä, että tulonlähde muuttuu, ja siksi tällaiset tulot katsotaan jatkuviksi tuloiksi.",
+      "locator": "H4: Jos tulosi eivät pysy samanlaisina 3:a kuukautta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F29",
+      "kind": "calculation",
+      "statement": "Average income is computed by summing all income estimated to be received over the next 12 months and dividing by 12.",
+      "quote": "Keskiarvotulo saadaan laskemalla yhteen kaikki tulot, joita sinun arvioidaan saavan seuraavan 12 kuukauden aikana. Tämä summa jaetaan 12:lla",
+      "locator": "H4: Jos tulosi eivät pysy samanlaisina 3:a kuukautta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F30",
+      "kind": "deadline",
+      "statement": "Housing allowance is usually granted until further notice and reviewed once a year, which is why average income is estimated for one year ahead.",
+      "quote": "Arvioimme keskiarvotulon vuodeksi eteenpäin, sillä asumistuki myönnetään yleensä toistaiseksi ja tarkistetaan vuoden välein.",
+      "locator": "H4: Jos tulosi eivät pysy samanlaisina 3:a kuukautta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F31",
+      "kind": "procedural_rule",
+      "statement": "The recipient must notify Kela if the household's income rises by at least 400 €/month or falls by 200 €/month.",
+      "quote": "Ilmoita meille, jos ruokakuntasi tulot nousevat vähintään 400 e/kk tai laskevat 200 e/kk.",
+      "locator": "H4: Jos tulosi muuttuvat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F32",
+      "kind": "channel",
+      "statement": "Changes are reported in OmaKela or with the paper form Yleinen asumistuki AT 1.",
+      "quote": "Ilmoita muutoksista OmaKelassa tai lomakkeella Yleinen asumistuki AT 1 (pdf).",
+      "locator": "H4: Jos tulosi muuttuvat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F33",
+      "kind": "calculation",
+      "statement": "The combined earned and capital income of all residents of the household affects the allowance; earned income means wage income and entrepreneur income.",
+      "quote": "Yleisen asumistuen määrään vaikuttavat ruokakunnan kaikkien asukkaiden yhteenlasketut ansio- ja pääomatulot. Ansiotuloja ovat palkkatulot ja yrittäjän tulot.",
+      "locator": "H4: Jos tulosi muuttuvat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F34",
+      "kind": "calculation",
+      "statement": "Both taxable and tax-free income are counted; taxable income is counted gross.",
+      "quote": "Tulona otetaan huomioon sekä veronalaiset että verottomat tulot. Veronalaiset tulot huomioidaan bruttotuloina.",
+      "locator": "H4: Jos tulosi muuttuvat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F35",
+      "kind": "exception",
+      "statement": "A minor's income is counted only if the minor applies for the allowance alone or with their spouse.",
+      "quote": "Alaikäisen tulot otetaan huomioon kuitenkin vain, jos alaikäinen hakee tukea yksin tai puolisonsa kanssa.",
+      "locator": "H4: Jos tulosi muuttuvat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F36",
+      "kind": "input",
+      "statement": "Wage income and pay-related extras count, e.g. fringe benefits (housing, car, meal), overtime pay, shift supplements and holiday bonuses.",
+      "quote": "luontaisedut (muun muassa asunto-, auto- ja ravintoetu)\nylityökorvaukset\nvuorotyölisät\nlomarahat.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F37",
+      "kind": "data_source",
+      "statement": "Kela generally assesses an entrepreneur's income based on the work income of their YEL or MYEL pension insurance.",
+      "quote": "Arvioimme yrittäjän tulot pääsääntöisesti YEL- tai MYEL-vakuutuksen (tyoelake.fi) työtulon perusteella.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F38",
+      "kind": "calculation",
+      "statement": "Dividend and interest income from shares in each household member's book-entry account is counted as income if it exceeds 12.02 €/month.",
+      "quote": "Ruokakunnan kunkin jäsenen arvo-osuustilillä olevien osakkeiden osinko- ja korkotulot otetaan tulona huomioon, jos ne ovat suuremmat kuin 12,02 e/kk.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F39",
+      "kind": "calculation",
+      "statement": "Returns withdrawn from an equity savings account are counted as income when recurring.",
+      "quote": "Osakesäästötililtä nostettu tuotto otetaan tulona huomioon silloin, kun se on toistuvaa.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F40",
+      "kind": "calculation",
+      "statement": "Recurring capital gains are counted as income, and capital losses are not deducted from them.",
+      "quote": "Toistuvat luovutusvoitot otetaan tulona huomioon.\n Luovutustappioita ei vähennetä luovutusvoittojen määrästä.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F41",
+      "kind": "input",
+      "statement": "Rental income counts, e.g. from residential premises, commercial premises and land leases.",
+      "quote": "asuinhuoneiston vuokratulot\n liikehuoneiston vuokratulot\n maanvuokratulot.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F42",
+      "kind": "calculation",
+      "statement": "Forestry income is calculated according to the forest's average yield; actual timber sales income is not considered.",
+      "quote": "Metsätalouden tulot lasketaan metsän keskimääräisen tuoton mukaan. Metsän todellista myyntituloa ei oteta huomioon.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F43",
+      "kind": "calculation",
+      "statement": "Many benefits such as general unemployment support and study grant affect the allowance, but social assistance, child benefit and student loans do not.",
+      "quote": "Yleisen asumistuen määrään vaikuttavat monet tuet, kuten yleistuki ja opintoraha. Tietyt tuet, kuten toimeentulotuki ja lapsilisä, eivät kuitenkaan vaikuta asumistukeen. Asumistukeen ei myöskään vaikuta opintolaina.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F44",
+      "kind": "calculation",
+      "statement": "Benefits are counted as gross income, and benefits received by all residents of the household are counted.",
+      "quote": "Tuet otetaan huomioon bruttotuloina. Asumistukeen vaikuttavat ruokakunnan kaikkien asukkaiden saamat tuet.",
+      "locator": "H4: Nämä tulot vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F45",
+      "kind": "input",
+      "statement": "Unemployment benefits (general support, earnings-related daily allowance) and sickness/rehabilitation benefits (sickness allowance, rehabilitation allowance, rehabilitation subsidy) affect the allowance.",
+      "quote": "Työttömyystuet: yleistuki ja ansiosidonnainen työttömyyspäiväraha\nSairausajan tuet ja kuntoutus: sairauspäiväraha, kuntoutusraha ja kuntoutustuki",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset vaikuttavat asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F46",
+      "kind": "input",
+      "statement": "Study grant, family benefits (pregnancy and parental allowance, child home care allowance, partial and flexible care allowance, private day care allowance if paid to the applicant as hired carer) affect the allowance.",
+      "quote": "Opiskelijan tuet: opintoraha\nLapsiperheiden tuet: raskaus- ja vanhempainraha, lasten kotihoidon tuki, osittainen hoitoraha, joustava hoitoraha ja yksityisenhoidon tuki (jos olet palkattu lastenhoitaja ja yksityisen hoidon tuki maksetaan sinulle)",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset vaikuttavat asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F47",
+      "kind": "input",
+      "statement": "Pensions affect the allowance: national pension, earnings-related pension, partial old-age pension, survivor's pension, pension from abroad and disability pension.",
+      "quote": "Eläkkeet: kansaneläke, työeläke, osittainen vanhuuseläke, leskeneläke, ulkomailta saatu eläke ja työkyvyttömyyseläke",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset vaikuttavat asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F48",
+      "kind": "exception",
+      "statement": "Benefits not affecting the allowance include e.g. disability allowances, pensioners' care allowance, child maintenance and maintenance allowance, child's pension, child benefit, informal care fee, student loan, study grant housing supplement, social assistance, military assistance and maternity grant.",
+      "quote": "Alle 16-vuotiaan vammaistuki\n16 vuotta täyttäneen vammaistuki ... Eläkettä saavan hoitotuki ... Lapsen elatusapu ja elatustuki\nLapseneläke\nLapsilisä\nOmaishoidon tuen hoitopalkkio\nOpintolaina\nOpintotuen asumislisä ... Sotilasavustus ... Toimeentulotuki ... Äitiysavustus",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F49",
+      "kind": "exception",
+      "statement": "Further non-affecting items include grants not related to securing livelihood, handicap compensation, child increase to national pension, school transport subsidy, expense and maintenance reimbursements, learning material supplement, guardian's increase of study grant, family care cost reimbursements, front-veteran's supplements, military injury compensation and compensation based on defect, injury or handicap.",
+      "quote": "Apurahat ja avustukset, jotka eivät liity toimeentulon turvaamiseen ... Haittaraha\nKansaneläkkeeseen maksettava lapsikorotus\nKoulumatkatuki\nKulukorvaukset ja ylläpitokorvaukset ... Oppimateriaalilisä\nOpintorahan huoltajakorotus\nPerhehoidon kustannusten korvaukset\nRintamalisä ja ylimääräinen rintamalisä ... Sotilasvammalain mukaiset korvaukset ... Vian, vamman tai haitan perusteella maksettavat korvaukset",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F50",
+      "kind": "exception",
+      "statement": "A minor's assets are counted only if the minor applies for the allowance alone or with their spouse.",
+      "quote": "Alaikäisen omaisuus otetaan huomioon vain, jos alaikäinen hakee tukea yksin tai puolisonsa kanssa.",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F51",
+      "kind": "calculation",
+      "statement": "Assets affect the allowance if a one-adult household has assets over 10,000 € or a household of two or more adults has combined assets over 20,000 €.",
+      "quote": "asut yhden aikuisen ruokakunnassa ja sinulla on omaisuutta yli 10 000 euroa\nasut kahden tai useamman aikuisen ruokakunnassa ja ruokakunnallasi on omaisuutta yhteensä yli 20 000 euroa.",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F52",
+      "kind": "calculation",
+      "statement": "Kela counts 20% of the part of assets exceeding the 10,000 € or 20,000 € threshold as income.",
+      "quote": "Jos ruokakuntasi omaisuus ylittää 10 000 tai 20 000 euron rajan, otamme rajan ylittävästä osasta tuloksi huomioon 20 %.",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F53",
+      "kind": "eligibility",
+      "statement": "If the household has assets of 50,000 € or more, no housing allowance is paid; long-term debts such as housing or student loans are first deducted from assets.",
+      "quote": "Jos ruokakunnallasi on omaisuutta 50 000 euroa tai enemmän, asumistukea ei makseta lainkaan. Omaisuudesta vähennetään kuitenkin ensin pitkäaikaiset velat kuten asunto- tai opintolaina.",
+      "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F54",
+      "kind": "calculation",
+      "statement": "Example: a single person with a 15,000 € insurance investment has 20% of the 5,000 € excess, i.e. 1,000 € per year or 83.33 € per month, counted as income in addition to earned and capital income.",
+      "quote": "Pekalle lasketaan 5 000 euron omaisuudesta tuloa 20 % eli 1 000 euroa. Pekan omaisuudesta yleiseen asumistukeen vaikuttaa siis 1 000 euroa vuodessa eli 83,33 euroa kuukaudessa. Lisäksi tulona otetaan huomioon Pekan ansio- ja pääomatulot.",
+      "locator": "H4: Esimerkki omaisuuden vaikutuksesta asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F55",
+      "kind": "calculation",
+      "statement": "Account deposits count as assets, but a personal 2,000 € spending-reserve deduction is made from each household member's account deposits.",
+      "quote": "Talletukset. Tilillä olevista talletuksista tehdään kuitenkin 2 000 euron käyttövaravähennys, joka ei vaikuta yleiseen asumistukeen. Vähennys on henkilökohtainen, eli se tehdään jokaisen ruokakunnan jäsenen tilitalletuksista.",
+      "locator": "H4: Esimerkki omaisuuden vaikutuksesta asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F56",
+      "kind": "input",
+      "statement": "Assets that count include real estate (except a holiday home in own use), housing shares, publicly listed shares and fund units, business and farm assets, forest holdings, bonds and similar, and insurance investments.",
+      "quote": "Kiinteistöt, ei kuitenkaan omassa käytössä oleva vapaa-ajan asunto\nAsunto-osakkeet\nJulkisesti noteeratut osakkeet ja sijoitusrahasto-osuudet\nElinkeinotoiminnan ja maatalouden varat sekä osuudet yhtymien varoista\nMetsäomistukset\nObligaatiot, joukkovelkakirjat ja muut vastaavat\nVakuutussijoitukset",
+      "locator": "H4: Esimerkki omaisuuden vaikutuksesta asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F57",
+      "kind": "exception",
+      "statement": "A share in an undivided estate, deposits in an ASP (first-home savings) account, and assets without right of control are not counted as assets.",
+      "quote": "Omaisuutena ei kuitenkaan oteta huomioon osuutta jakamattomasta kuolinpesästä, ASP-tilillä olevia talletuksia tai omaisuutta, johon ei ole hallintaoikeutta.",
+      "locator": "H4: Esimerkki omaisuuden vaikutuksesta asumistukeen"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F58",
+      "kind": "eligibility",
+      "statement": "If the household's combined gross income is above the applicable income limit, no housing allowance can be received at all.",
+      "quote": "Jos ruokakuntasi bruttotulot ovat suuremmat kuin alla esitetty tuloraja, et voi saada lainkaan asumistukea.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F59",
+      "kind": "calculation",
+      "statement": "Income limits are rounded to the nearest euro.",
+      "quote": "Tulot on pyöristetty lähimpään euroon.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F60",
+      "kind": "calculation",
+      "statement": "First income-limit table (the text does not name the municipality group) for one adult: 1,844 €/month; +1 child 2,630; +2 children 3,348; +3 children 3,982; +4 children 4,574.",
+      "quote": "1 aikuinen, tuloraja on 1 844 e/kk\n1 aikuinen + 1 lapsi, tuloraja on 2 630 e/kk\n1 aikuinen + 2 lasta, tuloraja on 3 348 e/kk\n1 aikuinen + 3 lasta, tuloraja on 3 982 e/kk\n1 aikuinen + 4 lasta, tuloraja on 4 574 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F61",
+      "kind": "calculation",
+      "statement": "First income-limit table: two adults 2,428 €/month; +1 child 3,146; +2 children 3,780; +3 children 4,372.",
+      "quote": "2 aikuista, tuloraja on 2 428 e/kk\n2 aikuista + 1 lapsi, tuloraja on 3 146 e/kk\n2 aikuista + 2 lasta, tuloraja on 3 780 e/kk\n2 aikuista + 3 lasta, tuloraja on 4 372 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F62",
+      "kind": "calculation",
+      "statement": "First income-limit table: three adults 2,944 €/month; +1 child 3,578; +2 children 4,170.",
+      "quote": "3 aikuista, tuloraja on 2 944 e/kk\n3 aikuista + 1 lapsi, tuloraja on 3 578 e/kk\n3 aikuista + 2 lasta, tuloraja on 4 170 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F63",
+      "kind": "calculation",
+      "statement": "For households of more than 5 persons, income limits are higher than in the examples, and the citizen can estimate their situation with the calculator.",
+      "quote": "Jos ruokakunnassasi on enemmän kuin 5 henkilöä, yleisen asumistuen tulorajat ovat korkeammat kuin esimerkeissä. Voit arvioida tilannettasi asumistuen laskurilla.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F64",
+      "kind": "calculation",
+      "statement": "Second income-limit table (the text does not name the municipality group; the Turku example matches it): one adult 1,612 €/month; +1 child 2,318; +2 children 2,966; +3 children 3,568; +4 children 4,132.",
+      "quote": "1 aikuinen, tuloraja on 1 612 e/kk\n1 aikuinen + 1 lapsi, tuloraja on 2 318 e/kk\n1 aikuinen + 2 lasta, tuloraja on 2 966 e/kk\n1 aikuinen + 3 lasta, tuloraja 3 568 e/kk\n1 aikuinen + 4 lasta, tuloraja on 4 132 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F65",
+      "kind": "calculation",
+      "statement": "Second income-limit table: two adults 2,116 €/month; +1 child 2,764; +2 children 3,366; +3 children 3,930.",
+      "quote": "2 aikuista, tuloraja on 2 116 e/kk\n2 aikuista + 1 lapsi, tuloraja on 2 764 e/kk\n2 aikuista + 2 lasta, tuloraja on 3 366 e/kk\n2 aikuista + 3 lasta, tuloraja on 3930 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F66",
+      "kind": "calculation",
+      "statement": "Second income-limit table: three adults 2,562 €/month; +1 child 3,164; +2 children 3,728.",
+      "quote": "3 aikuista, tuloraja on 2 562 e/kk\n3 aikuista + 1 lapsi, tuloraja on 3 164 e/kk\n3 aikuista + 2 lasta, tuloraja on 3 728 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F67",
+      "kind": "calculation",
+      "statement": "Third income-limit table (the text does not name the municipality group): one adult 1,506 €/month; +1 child 2,162; +2 children 2,778; +3 children 3,356; +4 children 3,910.",
+      "quote": "1 aikuinen, tuloraja on 1 506 e/kk\n1 aikuinen + 1 lapsi, tuloraja on 2 162 e/kk\n1 aikuinen + 2 lasta, tuloraja on 2 778 e/kk\n1 aikuinen + 3 lasta, tuloraja on 3 356 e/kk\n1 aikuinen + 4 lasta, tuloraja on 3 910 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F68",
+      "kind": "calculation",
+      "statement": "Third income-limit table: two adults 1,960 €/month; +1 child 2,576; +2 children 3,154; +3 children 3,708.",
+      "quote": "2 aikuista, tuloraja on 1 960 e/kk\n2 aikuista + 1 lapsi, tuloraja on 2 576 e/kk\n2 aikuista + 2 lasta, tuloraja on 3 154 e/kk\n2 aikuista + 3 lasta, tuloraja on 3 708 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F69",
+      "kind": "calculation",
+      "statement": "Third income-limit table: three adults 2,374 €/month; +1 child 2,952; +2 children 3,506.",
+      "quote": "3 aikuista, tuloraja on 2 374 e/kk\n3 aikuista + 1 lapsi, tuloraja on 2 952 e/kk\n3 aikuista + 2 lasta, tuloraja on 3 506 e/kk.",
+      "locator": "H2: Tulorajat"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F70",
+      "kind": "eligibility",
+      "statement": "Housing allowance can be applied for if the applicant lives permanently in a rental dwelling in Finland.",
+      "quote": "Voit hakea asumistukea, jos asut vakinaisesti vuokra-asunnossa Suomessa.",
+      "locator": "H2: Asumismenot, joihin voit saada asumistukea"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F71",
+      "kind": "input",
+      "statement": "When applying for support for a rental dwelling, the applicant must have a written rental agreement.",
+      "quote": "Jos haet tukea vuokra-asuntoon, sinulla täytyy olla kirjallinen vuokrasopimus.",
+      "locator": "H2: Asumismenot, joihin voit saada asumistukea"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F72",
+      "kind": "eligibility",
+      "statement": "For rental dwellings, accepted housing costs are rent and separately paid water and heating costs.",
+      "quote": "Tukea voi saada seuraaviin asumismenoihin:\nvuokra\nerikseen maksettavat vesimaksut ja lämmityskulut",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F73",
+      "kind": "calculation",
+      "statement": "If electricity is included in the rent, Kela deducts the electricity share from the rent; no allowance is paid for electricity.",
+      "quote": "Jos vuokraan sisältyy sähkö, vähennämme vuokrasta sähkön osuuden. Asumistukea ei voi saada sähkömaksuihin.",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F74",
+      "kind": "calculation",
+      "statement": "Water charges paid separately from rent are accepted at 20 €/month per person.",
+      "quote": "Voit saada asumistukea vesimaksuihin, jos maksat niitä erikseen vuokran lisäksi. Vesimaksuksi hyväksytään 20 e/kk henkilöä kohti.",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F75",
+      "kind": "calculation",
+      "statement": "Separately paid heating costs are accepted at 46 €/month for a one-person household, plus 16 €/month for each additional person.",
+      "quote": "Jos ruokakunnassa on 1 henkilö, lämmityskuluiksi hyväksytään 46 e/kk. Jos ruokakuntaan kuuluu useampi henkilö, lämmityskuluihin lisätään 16 e/kk jokaista seuraavaa henkilöä kohti.",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F76",
+      "kind": "exception",
+      "statement": "In Etelä-Savo, Pohjois-Savo and Pohjois-Karjala, accepted heating costs are 48 €/month for one person and 17 €/month for each additional person.",
+      "quote": "Etelä-Savon, Pohjois-Savon ja Pohjois-Karjalan maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 48 e /kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F77",
+      "kind": "exception",
+      "statement": "In Pohjois-Pohjanmaa, Kainuu and Lappi, accepted heating costs are 50 €/month for one person and 17 €/month for each additional person.",
+      "quote": "Pohjois-Pohjanmaan, Kainuun ja Lapin maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 50 e/kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F78",
+      "kind": "exception",
+      "statement": "No allowance is paid for separately charged housing-related fees such as electricity, sauna, laundry room, parking space, internet connection, or usage/furniture fees.",
+      "quote": "Asumistukea ei voi saada asumiseen liittyviin, erikseen maksettaviin maksuihin. Tällaisia ovat esimerkiksi\nsähkömaksu\nsaunamaksu\npesutupamaksu\nautopaikkamaksu\ninternetliittymän maksu\nkäyttö- tai kalustemaksu.",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F79",
+      "kind": "eligibility",
+      "statement": "Only fees paid by the applicant or a household member can be accepted as housing costs; the part paid by an employer or company is not accepted.",
+      "quote": "Vain sinun tai ruokakuntasi jäsenen maksamat maksut voidaan hyväksyä asumismenoiksi. Esimerkiksi työnantajan tai yrityksen maksamaa osaa kuluista ei siis hyväksytä.",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F80",
+      "kind": "calculation",
+      "statement": "If the applicant has a subtenant, the rent paid by the subtenant is deducted from the accepted housing costs.",
+      "quote": "Jos sinulla on alivuokralainen, asumistuessasi hyväksyttävistä asumismenoista vähennetään alivuokralaisen maksama vuokran määrä.",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F81",
+      "kind": "exception",
+      "statement": "A rental security deposit is not covered by housing allowance; if income and assets are insufficient to pay it, the person can apply to Kela for social assistance.",
+      "quote": "Jos tulosi ja varasi eivät riitä vuokravakuuden maksamiseen, voit hakea siihen Kelasta toimeentulotukea.",
+      "locator": "H4: Vuokravakuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F82",
+      "kind": "eligibility",
+      "statement": "Housing allowance can be applied for if the applicant lives in a right-of-occupancy dwelling in Finland.",
+      "quote": "Voit hakea asumistukea, jos asut asumisoikeusasunnossa Suomessa.",
+      "locator": "H4: Vuokravakuus"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F83",
+      "kind": "eligibility",
+      "statement": "For right-of-occupancy dwellings, accepted housing costs are the usage charge (käyttövastike) and separately paid water and heating costs (water 20 €/month per person; heating at the same rates as rentals).",
+      "quote": "käyttövastike\nerikseen maksettavat vesimaksut ja lämmityskulut\nVoit saada asumistukea käyttövastikkeen maksamiseen.",
+      "locator": "H4: Mihin asumismenoihin voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F84",
+      "kind": "exception",
+      "statement": "For right-of-occupancy dwellings, no allowance is paid for housing loan interest or for separately charged fees such as electricity, sauna, laundry, parking, internet or usage/furniture fees.",
+      "quote": "Asumistukea ei voi saada asumiseen liittyviin, erikseen maksettaviin maksuihin. Tällaisia ovat esimerkiksi\nasuntolainan korko\nsähkömaksu",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F85",
+      "kind": "eligibility",
+      "statement": "Housing allowance can be applied for if the applicant lives in a shared-ownership dwelling in Finland, and a written rental agreement is required.",
+      "quote": "Voit hakea asumistukea, jos asut osaomistusasunnossa Suomessa. Jos haet tukea osaomistusasuntoon, sinulla täytyy olla kirjallinen vuokrasopimus.",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F86",
+      "kind": "exception",
+      "statement": "For shared-ownership dwellings, no allowance is paid for interest on a loan taken to pay for the ownership share.",
+      "quote": "Asumistukea ei voi saada osaomistusasunnon osamaksua varten otetun lainan korkoihin.",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F87",
+      "kind": "exception",
+      "statement": "No general housing allowance is paid for an owner-occupied dwelling.",
+      "quote": "Omistusasuntoon ei saa yleistä asumistukea.",
+      "locator": "H4: Mihin asumismenoihin ei voi saada tukea?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F88",
+      "kind": "calculation",
+      "statement": "If housing costs exceed the maximum housing costs, the applicant can still receive the allowance, but only up to the maximum housing costs.",
+      "quote": "Jos asumismenosi ovat suuremmat kuin enimmäisasumismenot, voit silti saada asumistukea. Saat tukea kuitenkin enintään enimmäisasumismenojen mukaan.",
+      "locator": "H2: Asumistuen kuntakohtaiset ylärajat (enimmäisasumismenot)"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F89",
+      "kind": "calculation",
+      "statement": "First maximum-housing-cost table (applies to Helsinki per the example; the municipality group is not otherwise named): 1 person 563 €/month, 2 persons 808, 3 persons 1,019, 4 persons 1,188, and over 4 persons 1,188 + 148 €/month per additional person.",
+      "quote": "1 henkilö, asumismenoiksi hyväksytään enintään 563 e/kk\n2 henkilöä, asumismenoiksi hyväksytään enintään 808 e/kk\n3 henkilöä, asumismenoiksi hyväksytään enintään 1 019 e/kk\n4 henkilöä, asumismenoiksi hyväksytään enintään 1 188 e/kk\nyli 4 henkilöä, asumismenoiksi hyväksytään enintään 1 188 e/kk + 148 e/kk jokaista seuraavaa henkilöä kohti.",
+      "locator": "H4: Miten asumistuki lasketaan?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F90",
+      "kind": "exception",
+      "statement": "If the household includes a disabled person who needs especially much space due to aids or a carer, Kela accepts housing costs according to a household size one person larger.",
+      "quote": "Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.",
+      "locator": "H4: Miten asumistuki lasketaan?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F91",
+      "kind": "calculation",
+      "statement": "Example: a person living alone in Helsinki paying 800 €/month rent has the allowance calculated on the 563 € municipal cap, not on the actual rent.",
+      "quote": "Maijan asumistuen määrä lasketaan siis 563 euron kuntakohtaisen ylärajan mukaan. Sitä ei lasketa Maijan vuokran eli 800 euron mukaan.",
+      "locator": "H4: Esimerkki asumismenojen ylärajasta"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F92",
+      "kind": "calculation",
+      "statement": "Second maximum-housing-cost table (matches Turku per the example; the municipality group is not otherwise named): 1 person 447 €/month, 2 persons 652, 3 persons 828, 4 persons 981, and over 4 persons 981 + 134 €/month per additional person.",
+      "quote": "1 henkilö, asumismenoiksi hyväksytään enintään 447 e/kk\n2 henkilöä, asumismenoiksi hyväksytään enintään 652 e/kk\n3 henkilöä, asumismenoiksi hyväksytään enintään 828 e/kk\n4 henkilöä, asumismenoiksi hyväksytään enintään 981 e/kk\nyli 4 henkilöä, asumismenoiksi hyväksytään enintään 981 e/kk + 134 e/kk jokaista seuraavaa henkilöä kohti.",
+      "locator": "H4: Miten asumistuki lasketaan?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F93",
+      "kind": "eligibility",
+      "statement": "Spouses belong to the same household (ruokakunta) and receive a joint general housing allowance.",
+      "quote": "Koska Tommi ja Pauliina ovat puolisoja, he kuuluvat samaan ruokakuntaan ja saavat yhteisen asumistuen.",
+      "locator": "#_R_57a6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F94",
+      "kind": "calculation",
+      "statement": "In Turku, the maximum accepted housing costs for a two-person household are 652 euros per month.",
+      "quote": "Kahden henkilön ruokakunnan asumismenoiksi voidaan Turussa hyväksyä enintään 652 e/kk.",
+      "locator": "#_R_57a6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F95",
+      "kind": "calculation",
+      "statement": "When the rent paid exceeds the municipality-specific cap on housing costs, the housing allowance is calculated using the municipal cap rather than the actual rent (example: Turku couple paying 750 e/month gets allowance calculated on 652 e).",
+      "quote": "Tommin ja Pauliinan asumistuen määrä lasketaan siis 652 euron kuntakohtaisen ylärajan mukaan. Sitä ei lasketa heidän maksamansa vuokran eli 750 euron mukaan.",
+      "locator": "#_R_57a6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F96",
+      "kind": "calculation",
+      "statement": "In one of the calculation variants shown, the housing allowance is at most 70% of the acceptable housing costs.",
+      "quote": "Asumistuki on enintään 70 % hyväksyttävistä asumismenoista.",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F97",
+      "kind": "eligibility",
+      "statement": "Rent and water fees are examples of acceptable housing costs.",
+      "quote": "Esimerkiksi vuokra ja vesimaksu ovat hyväksyttäviä asumismenoja.",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F98",
+      "kind": "calculation",
+      "statement": "A basic deductible (perusomavastuu) is subtracted from the acceptable housing costs.",
+      "quote": "Hyväksyttävistä asumismenoista vähennetään myös perusomavastuu.",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F99",
+      "kind": "calculation",
+      "statement": "In the 70% variant, the general housing allowance is computed as 0.7 x (acceptable housing costs – basic deductible).",
+      "quote": "Yleisen asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu).",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F100",
+      "kind": "calculation",
+      "statement": "In the 70% variant, the maximum accepted housing costs for a one-person household are 394 e/month.",
+      "quote": "1 henkilö, asumismenoiksi hyväksytään enintään 394 e/kk",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F101",
+      "kind": "calculation",
+      "statement": "In the 70% variant, the maximum accepted housing costs for a two-person household are 574 e/month.",
+      "quote": "2 henkilöä, asumismenoiksi hyväksytään enintään 574 e/kk",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F102",
+      "kind": "calculation",
+      "statement": "In the 70% variant, the maximum accepted housing costs for a three-person household are 734 e/month.",
+      "quote": "3 henkilöä, asumismenoiksi hyväksytään enintään 734 e/kk",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F103",
+      "kind": "calculation",
+      "statement": "In the 70% variant, the maximum accepted housing costs for a four-person household are 875 e/month.",
+      "quote": "4 henkilöä, asumismenoiksi hyväksytään enintään 875 e/kk",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F104",
+      "kind": "calculation",
+      "statement": "In the 70% variant, for households of more than four persons the cap is 875 e/month plus 129 e/month for each additional person.",
+      "quote": "yli 4 henkilöä, asumismenoiksi hyväksytään enintään 875 e/kk + 129 e/kk jokaista seuraavaa henkilöä kohti.",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F105",
+      "kind": "exception",
+      "statement": "If the household includes a disabled person who needs particularly much space because of assistive devices or a carer, Kela accepts housing costs according to a household size one person larger.",
+      "quote": "Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.",
+      "locator": "#_R_17b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F106",
+      "kind": "calculation",
+      "statement": "In Pori, the maximum accepted housing costs for a two-person household are 574 e/month.",
+      "quote": "Kahden henkilön ruokakunnan asumismenoiksi voidaan Porissa hyväksyä enintään 574 e/kk.",
+      "locator": "#_R_57b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F107",
+      "kind": "calculation",
+      "statement": "A Pori couple paying 650 e/month rent has their allowance calculated on the 574 e municipal cap, not on the rent actually paid.",
+      "quote": "Pian ja Eeron asumistuen määrä lasketaan siis 574 euron kuntakohtaisen ylärajan mukaan. Sitä ei lasketa heidän maksamansa vuokran eli 650 euron mukaan.",
+      "locator": "#_R_57b6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F108",
+      "kind": "calculation",
+      "statement": "In another calculation variant shown, the housing allowance is at most 80% of the acceptable housing costs.",
+      "quote": "Asumistuki on enintään 80 % hyväksyttävistä asumismenoista.",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F109",
+      "kind": "calculation",
+      "statement": "In the 80% variant, the general housing allowance is computed as 0.8 x (acceptable housing costs – basic deductible).",
+      "quote": "Yleisen asumistuen määrä lasketaan kaavalla 0,8 x (hyväksyttävät asumismenot – perusomavastuu).",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F110",
+      "kind": "calculation",
+      "statement": "In the 80% variant, the maximum accepted housing costs for a one-person household are 470 e/month.",
+      "quote": "1 henkilö, asumismenoiksi hyväksytään enintään 470 e/kk",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F111",
+      "kind": "calculation",
+      "statement": "In the 80% variant, the maximum accepted housing costs for a two-person household are 687 e/month.",
+      "quote": "2 henkilöä, asumismenoiksi hyväksytään enintään 687 e/kk",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F112",
+      "kind": "calculation",
+      "statement": "In the 80% variant, the maximum accepted housing costs for a three-person household are 871 e/month.",
+      "quote": "3 henkilöä, asumismenoiksi hyväksytään enintään 871 e/kk",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F113",
+      "kind": "calculation",
+      "statement": "In the 80% variant, the maximum accepted housing costs for a four-person household are 1,032 e/month.",
+      "quote": "4 henkilöä, asumismenoiksi hyväksytään enintään 1 032 e/kk",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F114",
+      "kind": "calculation",
+      "statement": "In the 80% variant, for households of more than four persons the cap is 1,032 e/month plus 141 e/month for each additional person.",
+      "quote": "yli 4 henkilöä, asumismenoiksi hyväksytään enintään 1 032 e/kk + 141 e/kk jokaista seuraavaa henkilöä kohti.",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F115",
+      "kind": "exception",
+      "statement": "In the 80% variant as well, a household with a disabled person needing extra space for assistive devices or a carer has housing costs accepted according to one additional person.",
+      "quote": "Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.",
+      "locator": "#_R_17c6esmel6_"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F116",
+      "kind": "calculation",
+      "statement": "The basic deductible is subtracted from the housing allowance and is calculated from the household's gross income and the number of adults and children in the household.",
+      "quote": "Asumistuesta vähennetään perusomavastuu. Perusomavastuu lasketaan ruokakunnan bruttotuloista ja ruokakunnan aikuisten ja lasten määrästä.",
+      "locator": "H2: Perusomavastuun laskukaava"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F117",
+      "kind": "input",
+      "statement": "The basic deductible calculation needs the household's combined income (T), the number of adults (A) and the number of children (L).",
+      "quote": "T = ruokakunnan yhteenlasketut tulot\nA = aikuisten lukumäärä\nL = lasten lukumäärä",
+      "locator": "H2: Perusomavastuun laskukaava"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F118",
+      "kind": "calculation",
+      "statement": "Basic deductible = 0.5 x [T – (667 + 94 x A + 296 x L)], where T is combined household income, A number of adults, L number of children.",
+      "quote": "Perusomavastuu = 0,5 x [T – (667 + 94 x A + 296 x L)]",
+      "locator": "H2: Perusomavastuun laskukaava"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F119",
+      "kind": "calculation",
+      "statement": "Income up to 667 euros, plus 94 euros per adult and 296 euros per child in the household, entitles the household to the full housing allowance.",
+      "quote": "Täyteen asumistukeen oikeuttavat 667 euron tulot, joihin lisätään 94 euroa jokaista ruokakuntaan kuuluvaa aikuista ja 296 euroa jokaista ruokakuntaan kuuluvaa lasta kohti.",
+      "locator": "H2: Perusomavastuun laskukaava"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F120",
+      "kind": "procedural_rule",
+      "statement": "The income threshold figures in the basic deductible formula are tied to the national pension index.",
+      "quote": "Luvut ovat sidoksissa kansaneläkeindeksiin",
+      "locator": "H2: Perusomavastuun laskukaava"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F121",
+      "kind": "exception",
+      "statement": "For residents of Åland, the basic deductible is calculated with a different formula.",
+      "quote": "Jos asut Ahvenanmaalla, perusomavastuu lasketaan eri kaavalla.",
+      "locator": "H2: Perusomavastuun laskukaava"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F122",
+      "kind": "channel",
+      "statement": "Citizens with questions can ask Kela's chatbot or call Kela customer service.",
+      "quote": "Kysy chattirobotilta tai soita Kelan asiakaspalveluun.",
+      "locator": "H2: Jäikö jotain epäselväksi?"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F123",
+      "kind": "procedural_rule",
+      "statement": "When a person receives several Kela benefits, different incomes and their changes can affect the benefits differently, and in certain situations income changes must be reported to Kela (the text does not specify when).",
+      "quote": "Jos saat Kelasta useita tukia, erilaiset tulot ja niiden muutokset voivat vaikuttaa tukiin eri tavoin. Lue, miten tulot vaikuttavat ja milloin tulojen muutoksista täytyy ilmoittaa Kelaan.",
+      "locator": "H2: Saatko sekä asumistukea että yleistukea? Näin eri tulot vaikuttavat tukiisi"
+    },
+    {
+      "id": "kela-fi-tulot-ja-menot:F124",
+      "kind": "exception",
+      "statement": "If income remains very low despite receiving other Kela benefits, the person is advised to check eligibility for social assistance (toimeentulotuki).",
+      "quote": "Jos tulosi jäävät hyvin pieniksi, vaikka saat muita Kelan tukia, selvitä, voisitko saada toimeentulotukea.",
+      "locator": "H3: Jos toimeentulo on tiukoilla"
+    }
+  ]
+}

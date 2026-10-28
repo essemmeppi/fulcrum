@@ -1,0 +1,494 @@
+
+[H1: Yleinen asumistuki]
+
+[H2: Tällä sivulla]
+Voitko saada yleistä asumistukea?
+Keitä ruokakuntaan kuuluu?
+Kuinka paljon voit saada yleistä asumistukea?
+Näin haet
+Ilmoita muutoksista
+Vuositarkistus
+
+[H2: Voitko saada yleistä asumistukea?]
+Yleistä asumistukea voi saada yhden tai useamman henkilön ruokakunta. Asumistuki myönnetään ruokakunnalle yhteisesti, ja siihen vaikuttavat koko ruokakunnan yhteenlasketut tulot ja omaisuus.
+Voit saada yleistä asumistukea, jos tulosi ovat pienet
+ Asumistukea voi saada vuokra-, asumisoikeus- tai osaomistusasuntoon.
+ Lue, mihin menoihin voit saada asumistukea.
+Yleiseen asumistukeen vaikuttavat monet asiat, kuten tulosi ja asumismenosi
+ Voit saada asumistukea, jos tulosi eivät ylitä kuntakohtaista tulorajaa. Asumistuessa otetaan huomioon vain osa asumismenoistasi.
+ Lue, mitkä asiat vaikuttavat asumistukeen.
+Arvioi tuen määrä laskurilla
+ Koska asumistuen määrään vaikuttavat monet asiat, voit helpoiten arvioida asumistukesi määrän laskurilla.
+ Siirry laskuriin.
+Hae yleistä asumistukea OmaKelassa
+ Jos et voi käyttää OmaKelaa, postita hakemus Kelaan.
+ Lue lisää siitä, miten haet asumistukea.
+Asumismenojen määrille on kuntakohtaiset ylärajat. Näitä rajoja kutsutaan myös enimmäisasumismenoiksi. Voit saada asumistukea enintään enimmäisasumismenojen mukaan.
+
+[H3: Oletko opiskelija?]
+Jos opiskelet, et yleensä voi saada yleistä asumistukea. Suurin osa opiskelijoista voi saada asumisensa tueksi opintotuen asumislisää.
+Voit kuitenkin saada yleistä asumistukea esimerkiksi seuraavissa tilanteissa:
+Asut lapsesi tai puolisosi lapsen kanssa.
+Saat opintojesi ajalta muuta tukea kuin opintotukea, esimerkiksi työttömyystukea, kuntoutusrahaa tai sairauspäivärahaa.
+Olet keskeyttänyt opintosi tai käyttänyt loppuun opintotukikuukautesi.
+Opintosi eivät ole edistyneet riittävästi, ja olemme lakkauttaneet opintotukesi.
+
+[H3: Oletko eläkkeensaaja?]
+Voit saada eläkkeensaajan asumistukea, jos asut vakinaisesti Suomessa, olet pienituloinen ja saat eläkettä, joka oikeuttaa eläkkeensaajan asumistukeen.
+
+[H3: Muutitko ulkomailta Suomeen?]
+Sinulla voi olla oikeus yleiseen asumistukeen, jos olet muuttanut Suomeen ja asut Suomessa vakinaisesti. Suomessa asuminen katsotaan yleensä vakinaiseksi, kun olet asunut Suomessa yhden vuoden. Vain Suomessa asuvat henkilöt voivat kuulua yleisen asumistuen ruokakuntaan. Lue lisää Suomeen muuttaneiden oikeudesta Kelan tukiin.
+
+[H4: Suomeen työskentelemään tulleet]
+Jos olet tullut Suomeen työskentelemään ja olet toisen EU- tai Eta-maan tai Sveitsin kansalainen, sinulla voi olla oikeus yleiseen asumistukeen. Lue lisää työntekijöiden oikeudesta Kelan tukiin.
+
+[H4: Ukrainasta sotaa paenneet]
+Jos olet paennut sotaa Ukrainasta ja asut Suomessa vakinaisesti, sinulla voi olla oikeus yleiseen asumistukeen. Lue lisää Ukrainasta sotaa paenneiden oikeudesta Kelan tukiin.
+
+[H3: ​​​Keitä ruokakuntaan kuuluu?]
+Ruokakuntaan kuuluvat yleensä samassa asunnossa vakinaisesti asuvat henkilöt. Voit kuulua vain yhteen ruokakuntaan kerrallaan. Tukea voi hakea vain yksi henkilö koko ruokakunnan puolesta.
+Avio- ja avopuolisot ja samassa asunnossa asuvat seurustelukumppanit kuuluvat samaan ruokakuntaan riippumatta siitä, onko asunnon vuokrasopimus yhteinen vai erillinen.
+Avio- tai avopuoliso, jolla on oikeus opintotuen asumislisään, ei kuitenkaan kuulu ruokakuntaan. Hänen tulonsa tai omaisuutensa eivät siis vaikuta yleisen asumistuen määrään.
+Myös eri asunnoissa asuvat aviopuolisot kuuluvat samaan ruokakuntaan, jos he asuvat erillään esimerkiksi työn, opiskelun tai toisella paikkakunnalla suoritettavan ase- tai siviilipalveluksen vuoksi.
+Aviopuolisot kuuluvat eri ruokakuntiin, jos he asuvat erillään siksi, että heidän parisuhteensa on päättynyt. Lue lisää, miten ero voi vaikuttaa Kelan tukiin.
+Kimppakämpässä asuvat voivat kuulua joko samaan tai eri ruokakuntaan.
+kämppäkaverit, joilla on yhteinen vuokrasopimus
+kämppäkaverit, jotka ovat vuokrasopimuksen tai sen liitteen mukaan yhdessä vastuussa koko asunnon vuokrasta.
+Samaan ruokakuntaan kuuluvat kämppäkaverit valitsevat ruokakunnastaan edustajan, joka hakee asumistukea ruokakunnalle. Edustajan tiedot ilmoitetaan lomakkeella Yhteisöruokakunnan valtuutus AT 5 (pdf). Jos ruokakunnalle myönnetään asumistukea, maksetaan se ruokakunnan edustajalle.
+kämppäkaverit, joilla on erilliset vuokrasopimukset
+kämppäkaverit, joilla on alivuokrasopimus.
+Lisäksi eri ruokakuntiin kuulumisen edellytyksenä on, että kämppäkaverit eivät ole vuokrasopimuksen tai sen liitteen mukaan yhdessä vastuussa koko asunnon vuokrasta.
+Samassa asunnossa asuvat avio- ja avopuolisot, seurustelukumppanit ja lähisukulaiset kuuluvat samaan ruokakuntaan vuokrasopimuksesta riippumatta. Lähisukulaisia ovat vanhemmat, lapset ja isovanhemmat.
+Samassa asunnossa asuvat sisarukset kuuluvat eri ruokakuntiin, jos heillä on erilliset vuokrasopimukset tai alivuokrasopimus.
+Samassa asunnossa asuvat lähisukulaiset kuuluvat samaan ruokakuntaan vuokrasopimuksesta riippumatta. Lähisukulaisia ovat
+vanhemmat
+lapset
+isovanhemmat.
+Samassa asunnossa asuvat sisarukset kuuluvat eri ruokakuntiin, jos heillä on erilliset vuokrasopimukset tai alivuokrasopimus.
+Alaikäinen omillaan asuva lapsi, jolla ei ole tuloja, kuuluu yleensä samaan ruokakuntaan vanhempiensa kanssa.
+Täysi-ikäinen omilleen asumaan muuttanut lapsi kuuluu eri ruokakuntaan kuin hänen vanhempansa.
+Jos täysi-ikäinen lapsi asuu samassa asunnossa vanhempiensa kanssa, kuuluu hän samaan ruokakuntaan heidän kanssaan.
+Lue, mitä tukia itsenäistyvä nuori voi saada Kelasta.
+Kuulut samaan ruokakuntaan vakinaisessa asunnossasi asuvien kanssa, vaikka asuisit väliaikaisesti muualla esimerkiksi työn tai ase- tai siviilipalveluksen takia. Muualla asuminen on väliaikaista, jos se kestää enintään noin 1 vuoden.
+Suomeen muuttanut voi kuulua ruokakuntaan, jos katsomme, että hän asuu Suomessa vakinaisesti.
+Suomeen tulleet opiskelijat eivät voi kuulua ruokakuntaan eivätkä saada asumistukea.
+Alivuokralainen kuuluu yleensä eri ruokakuntaan kuin päävuokralainen tai asunnon omistaja.
+Jos alivuokralainen on päävuokralaisen tai asunnon omistajan puoliso tai lähisukulainen, hän kuuluu tämän kanssa samaan ruokakuntaan. Lähisukulaisia ovat vanhemmat, lapset ja isovanhemmat.
+Ilmoita meille, jos saat asumistukea ja asuntoosi muuttaa alivuokralainen.
+
+[H2: Kuinka paljon voit saada yleistä asumistukea?]
+Jos asumistuen määrä on alle 15 e/kk, sitä ei makseta.
+Helpoiten selvität asumistukesi määrän laskurilla. Asumistuen määrään vaikuttavat
+aikuisten ja lasten lukumäärä
+tulot ja omaisuus
+asumismenot, joihin asumistukea voi saada
+kuntakohtaiset ylärajat (enimmäisasumismenot)
+perusomavastuu.
+Lue, miten tulot, omaisuus ja asumismenot vaikuttavat asumistukeesi.
+
+[H2: Arvioi asumistuen määrä laskurilla]
+Laskurin antama tulos on arvio.
+
+[H3: Asumistuen maksaminen]
+Maksamme asumistuen sinun tai vuokranantajasi tilille kuukauden 1. pankkipäivänä. Jos pankit ovat kiinni maksupäivänä, tuki maksetaan seuraavana pankkipäivänä. Asumistuki on verotonta tuloa.
+Jos sinulle maksetaan asumistukea takautuvasti, tuki näkyy tililläsi yleensä kahden arkipäivän kuluttua maksamisesta. Asumistukea voi saada takautuvasti 1 kuukaudelta.
+Voimme maksaa asumistuen vuokranantajasi tilille, jos olet antanut siihen luvan.
+Voimme maksaa asumistuen suoraan vuokranantajalle myös silloin, jos vuokra on jäänyt osittain tai kokonaan maksamatta 2 peräkkäisenä kuukautena. Tällaisessa tilanteessa otamme sinuun yhteyttä ennen tuen maksamista.
+
+[H2: Näin haet yleistä asumistukea]
+Hae yleistä asumistukea OmaKelassa.
+Lähetä liitteet OmaKelassa. Jos liitteet eivät ole sähköisessä muodossa, ota niistä kuvat.
+
+[H3: Tarvitset hakemukseesi nämä liitteet]
+
+[H4: Vuokrasopimus]
+Liitä hakemukseesi kopio allekirjoitetusta kirjallisesta vuokrasopimuksesta, jos Kela ei saa sitä suoraan vuokranantajaltasi. Katso vuokranantajat, joilta Kela saa vuokrasopimuksen.
+
+[H4: Edustatko ruokakuntaa?]
+Jos kuulut samaan ruokakuntaan kämppäkaverisi kanssa ja edustat ruokakuntaa, liitä hakemukseen lomake Yhteisöruokakunnan valtuutus AT 5 (pdf).
+
+[H4: Oletko muuttanut Suomeen?]
+Jos haet asumistukea ensimmäistä kertaa Suomeen muuton jälkeen eikä sinun tai ruokakuntasi jäsenen oikeutta Kelan tukiin ole vielä selvitetty, tee ilmoitus Suomeen muutosta OmaKelassa tai lomakkeella Ilmoitus Suomeen muutosta Y 77 (pdf).
+
+[H4: Oletko muuttanut ulkomaille?]
+Ilmoita muutosta ulkomaille tai oleskelusta ulkomailla OmaKelassa tai lomakkeella Muutto ulkomaille tai työskentely ulkomailla Y 38 (pdf).
+
+[H2: Hae asumistukea]
+Lähetä hakemus ja liitteet verkossa.
+OmaKelassa näet, onko hakemuksesi käsitelty. Näet myös, kuinka paljon saat tukea ja milloin se maksetaan. Jos hakemuksestasi puuttuu liitteitä, saat niistä muistutuksen OmaKelaan.
+OmaKelassa voit myös antaa luvan siihen, että Kela saa lähettää sinulle viestejä. Näin nopeutat asioidesi hoitoa.
+
+[H3: OmaKelassa voi näkyä uuden hakemuksen sijaan tarkistushakemus] [#_R_dssmel6_]
+OmaKelassa voi näkyä uuden yleisen asumistuen hakemuksen sijaan virheellisesti tarkistushakemus. Voit kuitenkin hakea uutta yleistä asumistukea tarkistushakemuksella. Käsittelemme hakemuksesi tavalliseen tapaan, eikä sinun tarvitse ottaa yhteyttä asiakaspalveluun. Korjaamme tilannetta parhaillaan, ja pahoittelemme siitä aiheutuvaa haittaa.
+
+[H3: Jos et voi käyttää OmaKelaa, postita hakemus Kelaan]
+Jos et voi käyttää OmaKelaa, toimi näin:
+Hae tukea lomakkeella Yleinen asumistuki AT 1 (pdf).
+Tallenna tyhjä lomake laitteellesi. Älä täytä lomaketta suoraan selaimessa, koska silloin osa tiedoista voi jäädä tallentumatta.
+Täytä lomake ja tulosta se. Allekirjoita lomake.
+Lähetä lomake ja liitteet osoitteeseen Kela, PL 10, 00056 KELA.
+
+[H3: Hakuaika]
+Myönnämme asumistuen aina kuukauden 1. päivästä alkaen. Jos esimerkiksi vuokrasopimuksesi tulee voimaan 15.3., alat saada tukea 1.4.
+Voit saada asumistukea takautuvasti enintään 1 kuukaudelta. Jos haluat saada tukea esimerkiksi tammikuun alusta alkaen, hakemuksesi täytyy olla Kelassa viimeistään helmikuun viimeisenä päivänä.
+Saamme tiedot palkkatuloistasi tulorekisteristä, ja hyödynnämme tietoja hakemuksesi käsittelyssä. Tarvittaessa pyydämme sinulta lisätietoja.
+
+[H3: Vuokranantajat, joilta Kela saa vuokrasopimuksen verkossa]
+Saamme osalta vuokranantajista vuokrasopimustiedot suoraan verkossa. Sinun ei tarvitse lähettää meille vuokrasopimusta ja todistusta vuokran määrästä, jos vuokranantajasi on alla olevalla listalla.
+Jos vuokranantajaasi ei löydy listasta, lähetä vuokrasopimus hakemuksen liitteenä. Vuokrasopimus täytyy lähettää aina, jos asunto on vuokrattu yksityiseltä vuokranantajalta.
+Aalto yliopiston ylioppilaskunta AYY
+Akaan Vuokra-asunnot Oy
+A-kruunu Oy
+Annalan Vuokra-asunnot Oy
+AREF FIN 1 Oy (Inna Finland Oy)
+Aries Housing Ky (Inna Finland Oy)
+Asoasunnot Yrjö ja Hanna
+As Oy Espoon Sellonhuippu
+Asunto-osakeyhtiö Heinolan Helena
+Asunto-osakeyhtiö Helsingin Hämeentie 15b
+Asunto-osakeyhtiö Pyhäjoen Hovi
+Asunto-osakeyhtiö Suomussalmen Marjakangas
+ASPA Palvelut Oy
+ASPA Säätiö SR
+ASPER HoldCo FI Oy (Inna Finland Oy)
+Asunto Lily Oy
+Auroranlinna
+Auroratalo Oy
+Axa investment managers Deutschland
+AXA Real Invest HPK
+Bo Fastigheter Ab
+CoRE FIN 2017 6 Oy (Inna Finland Oy)
+Deceo Oy
+Domus Arctica Säätiö DAS
+Erikoissijoitusrahasto Titanium Asunto (Inna Finland Oy)
+Erikoissij. rahasto Evli Vuokratuotto
+Espoon asunnot Oy
+Espoon Diakoniasäätiö Edistia
+Etelä-Suomen Kodit Oy, 2966719-1
+Fastighets Ab Ebba Kiinteistöt Oy
+FAB Kronoby Bostäder
+FAb Pedersöre Bostäder Kiinteistö Oy
+Fastighets Ab Jägarbacken
+Fastighets Ab Victoria 4 (Inna Finland Oy)
+Fidus topaasi Oy
+Fidus villa asunnot Oy
+Fidus vuokratalot Oy
+Fidus vuokratalot II Oy
+Forssa-asunnot Oy
+Halsuan kunta
+Heinolan vuokra-asunnot
+Helsingin Diakonissalaitoksen säätiö sr
+Helsingin kaupungin Asuntoyksikkö
+Helsingin kaupunki KYMP Asumisen palvelut
+Helsingin kaupungin vuokra-asunnot HEKA
+Helsingin seudun opiskelija-asuntosäätiö HOAS
+HOAS Kiinteistöosakeyhtiö Juus-Fastighets Ab
+Hoivatie Oy
+Holding 1 Espoo Oy (Inna Finland Oy)
+Holding 2 Lahti Oy (Inna Finland Oy)
+Holding 3 Vantaa Oy (Inna Finland Oy)
+Holding 4 Kerava Oy (Inna Finland Oy)
+Holding 5 Tuusula Oy (Inna Finland Oy)
+Hollolan Asuntotalot Oy
+Hollolan kunta
+Hopeakodit Oy KAS
+Hyvinkään vuokra-asunnot
+Hämeenlinnan Asunnot Oy
+IC Kodit V (Icecapital)
+IC Kodit VI (Icecapital)
+Iin Vuokratalot Oy
+Iitin Vuokratalot Oy
+IL-Kiinteistöt Oy
+Invalidiliitto ry
+Isonkyrön Asuntovuokraus Oy
+Janakkalan Asunnot Oy
+Joo Kodit / Joo Group Oy
+Juli Olarin Noste Oy
+Juli Olarin Ylväs Oy
+Jyränkölän Palvelukodit Oy
+Jyränkölän Setlementti ry
+Jyväskylän Eläkeläisten Tuki r.y. (Inna Finland Oy)
+Jyväskylän Katulähetys ry
+Jyväskylän vuokra-asunnot Oy
+Järvenpään kaupunki/Vuokra-asunnot
+Järvenpään Mestariasunnot Oy
+Kaakkois-Suomen Asunnot Oy
+Kangasalan kaupunki
+Kankaanpään Asuntohankinta Oy
+Kannuksen Vuokra-asunnot Oy
+Karjalaisen Kulttuurin Edistämissäätiö sr
+KAS asunnot Oy
+KAS Kodit Kymppi
+KAS Kodit Oy
+Kemiönsaaren Asunnot
+Keski-Suomen opiskelija-asuntosäätiö sr
+Keuruun vuokra-asunnot liikelaitos
+Kiimingin Nuorisoasuntoyhdistys ry
+Kiinteistöosakeyhtiö Ahmahaka
+Kiinteistöosakeyhtiö A-Lukaali
+Kiinteistöosakeyhtiö Antinaravat
+Kiinteistöosakeyhtiö Espoon Hehkurinne 2A
+Kiinteistöosakeyhtiö Espoon Hehkurinne 2C
+Kiinteistöosakeyhtiö Espoon Matinrinne
+Kiinteistöosakeyhtiö ESPOON ULLANMÄENTIE 13 (Nuorisosäätiö/ Nuorisoasuntojen isännöinti oy)
+Kiinteistöosakeyhtiö ET-Hoiva-asunnot I
+Kiinteistöosakeyhtiö Finnoon Kuunari
+Kiinteistöosakeyhtiö Graniittikodit
+Kiinteistöosakeyhtiö Haapajärven vuokratalot
+Kiinteistöosakeyhtiö Haapaveden Vuokratalo 1
+Kiinteistöosakeyhtiö Helsingin Saarni
+Kiinteistöosakeyhtiö Hiirosen Jänönkulma
+Kiinteistöosakeyhtiö Jermu
+Kiinteistöosakeyhtiö Juus-Fastighets Ab
+Kiinteistöosakeyhtiö Järvenpään Myllytie 14
+Kiinteistöosakeyhtiö Järvenpään Pajalan Mylly
+Kiinteistöosakeyhtiö Jyrkkälänpolku
+Kiinteistöosakeyhtiö Kaarinan vuokratalot Oy
+Kiinteistöosakeyhtiö Kiiltohaka
+Kiinteistöosakeyhtiö Kulhankari
+Kiinteistöosakeyhtiö Kummatti
+Kiinteistöosakeyhtiö Kuopion Kotokulma
+Kiinteistöosakeyhtiö Kuusamon Vuokratalot
+Kiinteistöosakeyhtiö LAHDEN KAUNOKKI (Nuorisosäätiö/ Nuorisoasuntojen isännöinti oy)
+Kiinteistöosakeyhtiö LAHDEN KUUSAMA (Nuorisosäätiö/ Nuorisoasuntojen isännöinti oy)
+Kiinteistöosakeyhtiö LAHDEN UNIKKO (Nuorisosäätiö/ Nuorisoasuntojen isännöinti oy)
+Kiinteistöosakeyhtiö LAHDEN VANAMO (Nuorisosäätiö/ Nuorisoasuntojen isännöinti oy)
+Kiinteistöosakeyhtiö Laitilan Talot
+Kiinteistöosakeyhtiö M2-kodit
+Kiinteistöosakeyhtiö Marjatie 13
+Kiinteistöosakeyhtiö Mustikkatie 2
+Kiinteistöosakeyhtiö Mäenalus 15
+Kiinteistöosakeyhtiö Naantalin Lounatuuli 13 ja 15
+Kiinteistöosakeyhtiö Nikkarinkruunu (Kerava)
+Kiinteistöosakeyhtiö Nivalan vuokrakodit
+Kiinteistöosakeyhtiö Nokian Säästökeskus
+Kiinteistöosakeyhtiö Oulun Metsätähti
+Kiinteistöosakeyhtiö Oulun Seudun Seniori
+Kiinteistöosakeyhtiö Oulun Tarve
+Kiinteistöosakeyhtiö Petäjäveden Ankkuri (Inna Finland Oy)
+Kiinteistöosakeyhtiö Pielaveden Vuokratalot
+Kiinteistöosakeyhtiö Pirkkalan Metsätähti
+Kiinteistöosakeyhtiö Posion Kartano
+Kiinteistöosakeyhtiö Pukkilan Vuokratalot KAS
+Kiinteistöosakeyhtiö Puolangan Vuokratalot
+Kiinteistöosakeyhtiö Puumalan Vuokratalot
+Kiinteistöosakeyhtiö Rekipolska (Kaustinen)
+Kiinteistöosakeyhtiö Reisjärven vuokratalot
+Kiinteistöosakeyhtiö Rillankivi
+Kiinteistöosakeyhtiö Ristiinan Suopursu
+Kiinteistöosakeyhtiö RK-Asunnot
+Kiinteistöosakeyhtiö Rovaniemen Harrikatu KAS
+Kiinteistöosakeyhtiö Rovatalo / KAS
+Kiinteistöosakeyhtiö Saratalot
+Kiinteistöosakeyhtiö Suomussalmen Vuokratalot
+Kiinteistöosakeyhtiö Taavinkuja 6
+Kiinteistöosakeyhtiö Taipalsaaren asunnot
+Kiinteistöosakeyhtiö Taloherttua
+Kiinteistöosakeyhtiö Tankkari
+Kiinteistöosakeyhtiö Toppilan Vöörmanni
+Kiinteistöosakeyhtiö Tuusulan Kauppaholvi
+Kiinteistöosakeyhtiö Uudenkaupungin vuokratalot
+Kiinteistöosakeyhtiö Uudenkaupungin Lukkosepänkatu 1
+Kiinteistöosakeyhtiö Vetelinraitti
+Kiinteistöosakeyhtiö Villa-Metsolan Hovi
+Kiinteistöosakeyhtiö VUOSAAREN NUORISOKYLÄ (Nuorisosäätiö/ Nuorisoasuntojen isännöinti oy)
+Kirkonkylän vanhustentalo järjestö ry
+Kokkolan kaupungin asunnot
+Kokkolan vuokra-asunnot Oy
+Koskelantalot Oy (Mänttä-Vilppula)
+Kotkan Asunnot Oy
+Kouvolan Asunnot Oy
+KOy Hyvinkään nuorisoasunnot
+Kuopion Metsäkumpu Oy (Inna Finland Oy)
+Kuopion opiskelija-asuntosäätiö KUOPAS Oy
+Kuopion Seudun Nuorisoasunnot ry
+Lahden Asunnot Oy
+Lahden Talot Oy
+Lahden vanhusten asuntosäätiö
+Lapinlahden Kaskihovi Oy
+Lapinlahden kunta
+Lappeenrannan Asuntopalvelu Oy
+Lappeenrannan seudun opiskelija-asuntosäätiö LOAS
+Laukaan vuokrakodit
+Lempäälän Vuokrakodit
+Lepovilla Oy
+Leppävirran Kiinteistöosakeyhtiö
+Lestijärven kunta
+Lieksan Kiinteistö Oy
+Lohjan Vuokra-asunnot LOVA Oy
+Loisteasunnot 5 Oy
+Lumo
+Majakkalahden Kiinteistöt Ky (Inna Finland Oy)
+Malmin Setlementtiasunnot Oy
+Mikalo Oy (Mikkeli)
+Mikkelin Asumisoikeus Oy
+Mikkelin Kaupunki
+Multian Vuokra-asunnot Oy (Inna Finland Oy)
+Mäntsälän Kodit Oy
+NAL Asunnot
+Niiralan kulma (Kuopio)
+Niskanen Residential Oy
+Nokian Vuokrakodit Oy
+Nuorisoasuntoliitto ry
+Nuorisosäätiö
+Nuorten ystävät
+Nurmijärven kodit Oy
+Orimattilan Asunnot Oy
+Oriveden kaupunki
+Oriveden Kotikoivu Oy
+Osuusasunnot/Naantali (Inna Finland Oy)
+Otokylä ry
+Oulun Sivakka Oy
+Ovaro Kiinteistösijoitus Oyj
+Oy Granilla Ab (Retta Oy)
+Parikkalan kunta
+Patrizia Symphony Ky
+Patrizia T7 LP Ky
+Petäjäveden Tähtiasunnot Oy (Inna Finland Oy)
+Pirkan opiskelija-asunnot Oy (POAS)
+Pohjois-Suomen opiskelija-asuntosäätiö (PSOAS)
+Porin YH-asunnot Oy
+Porvoon A-Asunnot Oy
+Porvoon vuokra-asunnot Oy
+Pudasjärven vuokratalot Oy
+Raahen seudun asuntosäätiö
+Rainbow Group Oy
+Raision vuokra-asunnot Oy
+Ranuan vuokra-asunnot Oy
+Rinnekodit Oy
+RentHouse Kiinteistörahasto REF I Ky
+Rosa Housing Ky
+RPF I (Icecapital)
+RPF II (Icecapital)
+Ruoveden Asunnot Oy
+Sailors Home Holding Oy
+Sallan Vuokratalot Oy
+Sastamalan vuokratalot Oy
+SATO Oyj
+Savonlinnan seudun Nuorisoasunnot ry
+Savonlinnan vuokratalot Oy
+Selectiv Primus Oy (Inna Finland Oy)
+Setlementtiasunnot Oy
+Sevas Kodit Oy
+Siilinjärven Kotipolku Oy
+Sininauhasäätiö
+Sininauha Oy
+Soihtu Jyväskylän yliopiston ylioppilaskunta JYY
+Suomen Vuokrakodit 3 Oy
+Suomussalmen Kunta
+S-yhtymä (Sivakka-yhtymä)
+TA-Asumisoikeus Oy
+TA-Asunnot Oy
+TA-Kodit Oy
+TA-Yhtymä Oy
+Tammi-Kodit Ky (Inna Finland Oy)
+Tampereen opiskelija-asuntosäätiö TOAS
+Tampereen Kotilinnasäätiö
+Tampereen Vuokra-asunnot Oy (TVA)
+Tampereen Vuokratalosäätiö sr (VTS)
+Taova Oy
+Tarveasunnot Oy
+Tekman tuki ry
+Tervatalot Oy (Oulu)
+Tervolan Vuokratalot Oy
+Tukena-säätiö SR
+Turun osakehuoneistot Oy
+Turun ylioppilaskyläsäätiö TYS
+TVT Asunnot Oy
+Utajärven kunta
+Uudenkaupungin kaupunki
+Vaasan opiskelija-asuntosäätiö sr VOAS
+Validia Oy
+Valion eläkekassa (Vantaa)
+Vaparatalot Oy / Espoon Herttuanport.
+Varman A-kiinteistöt Oy
+Vatrotalot Oy
+VAV Asunnot Oy
+Vilusen Rinne Vuokra-asunnot Oy
+Vihnusrinnesäätiö
+Holding 3 Vantaa Oy
+Vivada star 1 bidco Oy
+Vivada star 2 bidco Oy
+Vivada star 3 bidco Oy
+Vivada star 4 bidco Oy
+Vivada star 5 bidco Oy
+Vivada star 6 bidco Oy
+Vivada star 7 bidco Oy
+VVO Asunnot Oy/Kojamo
+Vähänkyrön Vuokratalot Kiinteistö Oy
+Wartalo Kodit (Varkaus)
+YH-Antura Oy
+YH-Asumisoikeus Länsi Oy
+YH-Kodit Oy
+YH-Priimus Oy
+YH-Tammi Oy
+Ylivieskan Vuokra-asunnot Oy
+Yrjö ja Hanna Kiinteistöt Oy
+Yrjö ja Hanna -säätiö
+Y-säätiö
+Ålandsbanken Asuntorahasto Erikoissijoitusrahasto (Inna Finland Oy)
+Ääneseudun Asunnot Oy
+
+[H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen]
+Jos saat asumistukea ja sinun tai ruokakuntasi tulot, asumismenot tai muut olosuhteet muuttuvat, sinun täytyy ilmoittaa siitä meille. Muutoksista voi ilmoittaa vain se henkilö, joka on hakenut asumistukea ruokakunnalle.
+Kun ilmoitat muutoksista, saat tuen oikean suuruisena etkä jää ilman sinulle kuuluvaa tukea.
+Voit ilmoittaa muutoksista OmaKelassa. Jos et voi käyttää OmaKelaa, postita hakemus Kelaan.
+Jos et ilmoita muutoksista, sinulle voidaan maksaa liikaa tukea. Silloin joudumme perimään tukea myöhemmin takaisin. Tuki peritään ensisijaisesti siltä henkilöltä, joka tuen on hakenut. Tarvittaessa voimme periä liikamaksun takaisin myös muulta ruokakuntaan kuuluneelta henkilöltä, joka on ollut täysi-ikäinen silloin kun liikamaksu syntyi. Lue lisää takaisinperinnästä.
+Tarkista myös, miten elämäntilanteesi muutos vaikuttaa muihin Kelalta saamiisi tukiin.
+
+[H3: Ilmoita näistä muutoksista]
+Ilmoita meille, jos sinun tai ruokakuntasi bruttotulot
+nousevat vähintään 400 e/kk
+laskevat vähintään 200 e/kk.
+Aino saa asumistukea ja aloittaa työt 1.2. Tällöin ruokakunnan tulot muuttuvat. Kela tarkistaa tuen 1.3.alkaen, ja asumistuen määrä voi muuttua.
+Jos Ainon työt alkavat 4.2., Kela tarkistaa tuen 1.4. alkaen.
+Lue, miten laskemme sinulle keskiarvotulon, jos tulosi eivät pysy samanlaisina 3 kuukauden ajan.
+Lue, miten muutokset tuloissasi voivat vaikuttaa Kelan tukiin.
+Ilmoita meille, jos sinä muutat tai ruokakuntasi muuttaa uuteen asuntoon.
+Ruokakunta saa asumistukea ja muuttaa uuteen asuntoon 4.6. Uusi vuokrasopimus tulee voimaan 1.6., ja ruokakunta maksaa koko kuukauden vuokran uudesta asunnosta. Kela tarkistaa tuen 1.6. alkaen, ja asumistuen määrä voi muuttua.
+Jos uusi vuokrasopimus tulee voimaan 2.6. ja ruokakunta maksaa koko kuukauden vuokran uudesta asunnosta, Kela tarkistaa tuen 1.7. alkaen.
+Lue lisää, miten muutto voi vaikuttaa Kelan tukiin.
+Ilmoita meille, jos
+ruokakuntasi vuokran tai käyttövastikkeen määrä pienenee tai nousee vähintään 50 e/kk
+ruokakuntaasi kuuluva henkilö muuttaa ulkomaille tai oleskelee ulkomailla
+asunnon hallintamuoto muuttuu, esimerkiksi ostat vuokraamasi asunnon.
+Ruokakunta saa asumistukea, ja ruokakunnan asumismenot ovat 1.1. alkaen 50 e/kk pienemmät kuin edellisen päätöksen hyväksyttävät asumismenot. Kela tarkistaa tuen sen kuukauden alusta, josta muuttuneita asumismenoja maksetaan koko kuukaudelta. Ruokakunnan asumistuki tarkistetaan siis 1.1. alkaen, ja asumistuen määrä voi muuttua.
+Ilmoita meille, jos
+ruokakuntasi jäsenmäärä tai kokoonpano muuttuu
+ruokakuntasi ottaa alivuokralaisen tai alivuokralaisen vuokrasuhde päättyy
+menet naimisiin.
+Lue lisää, miten avo- tai avioliitto vaikuttaa Kelan tukiin.
+Ruokakunta saa asumistukea, ja asukkaiden lukumäärä muuttuu 25.5. Kela tarkistaa tuen 1.6. alkaen, ja asumistuen määrä voi muuttua.
+Jos asukkaiden lukumäärä muuttuu 1.6., Kela tarkistaa tuen 1.6. alkaen.
+Ilmoita meille, jos asut yksin ja olet poissa asunnostasi yli 3 kuukautta. Jos et ole asunnossasi yli 3 kuukauteen, oikeutesi asumistukeen päättyy.
+Jos et enää tarvitse asumistukea, ilmoita meille tuen lakkauttamisesta. Tee ilmoitus OmaKelassa tai pyydä lakkauttamista lähettämällä viesti OmaKelassa. Jos et voi käyttää OmaKelaa, voit ilmoittaa lakkauttamisesta lomakkeella Asumistuen lakkautus AT 6 (pdf).
+
+[H2: Vuositarkistus]
+Tarkistamme asumistukesi määrän vähintään vuoden välein, vaikka ruokakuntasi olosuhteissa ei tapahtuisi muutoksia. Näet seuraavan vuositarkistuksesi ajankohdan OmaKelasta.
+Lähetämme sinulle ohjeet asumistuen vuositarkistusta varten noin 2 kuukautta ennen tarkistusta. Saat viestin OmaKelaan.
+Toimita meille vuositarkistuksessa tarvittavat tiedot OmaKelassa. Jos et voi käyttää OmaKelaa, postita hakemus Kelaan.
+Jos et tee hakemusta ajoissa ennen tarkistusajankohtaa, joudumme lakkauttamaan asumistukesi.
+
+[H2: Aiheesta selkokielellä ja viittomakielellä]
+Asumistuki selkokielellä
+Asumistuki viittomakielellä
+
+[H2: Jäikö jotain epäselväksi?]
+Kysy chattirobotilta tai soita Kelan asiakaspalveluun.
+
+[H2: Mitä muuta elämääsi kuuluu?]
+
+[H3: Oletko työtön?]
+Työttömänä voit saada yleistukea.
+
+[H3: Jos toimeentulo on tiukoilla]
+Jos tulosi jäävät hyvin pieniksi, vaikka saat muita Kelan tukia, selvitä, voisitko saada toimeentulotukea.
+
+[H2: Ajankohtaista]
+
+[H2: Yleistukea ja yleistä asumistukea voi nyt hakea samalla hakemuksella]
+Kela on ottanut käyttöön uuden verkkohakemuksen, jolla voit hakea yleistukea ja yleistä asumistukea samalla kertaa. Hakemuksella voit myös ilmoittaa näihin tukiin liittyvistä muutoksista.
+
+[H2: Asumistuki-sivuilla]
+Yleinen asumistuki
+Miten tulot ja menot vaikuttavat?

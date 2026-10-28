@@ -1,0 +1,166 @@
+{
+  "source_id": "ptv-kela-asuminen",
+  "facts": [
+    {
+      "id": "ptv-kela-asuminen:F1",
+      "kind": "actor",
+      "statement": "Kela is both the responsible organisation and the producer of the housing benefits service.",
+      "quote": "Organisations: Kela (Responsible); Kela (Producer)",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    },
+    {
+      "id": "ptv-kela-asuminen:F2",
+      "kind": "procedural_rule",
+      "statement": "The housing benefits service provided by Kela is free of charge and publicly funded.",
+      "quote": "Funding: PubliclyFunded  Charge: FreeOfCharge",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    },
+    {
+      "id": "ptv-kela-asuminen:F3",
+      "kind": "eligibility",
+      "statement": "Kela's housing assistance is targeted at low-income households.",
+      "quote": "Kela provides assistance with housing for low-income households by paying housing allowances.",
+      "locator": "Description:Summary (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F4",
+      "kind": "output",
+      "statement": "Kela supports housing by paying housing allowances.",
+      "quote": "Kela tukee pienituloisten asumista maksamalla asumistukea.",
+      "locator": "Description:Summary (fi)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F5",
+      "kind": "procedural_rule",
+      "statement": "Most Kela benefits are generally available on application only.",
+      "quote": "Most benefits provided by Kela are generally available on application only.",
+      "locator": "Description:UserInstruction (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F6",
+      "kind": "exception",
+      "statement": "Reimbursements of medical, pharmaceutical and travel expenses are paid as direct on-the-spot reimbursements without an application.",
+      "quote": "However, reimbursements of medical, pharmaceutical and travel expenses are available as direct on-the-spot reimbursements, with no application required.",
+      "locator": "Description:UserInstruction (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F7",
+      "kind": "channel",
+      "statement": "The citizen can apply for most benefits online using Kela's OmaKela e-service.",
+      "quote": "You can apply for most benefits, submit documents supporting your application and report changes online using Kela’s OmaKela e-service.",
+      "locator": "Description:UserInstruction (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F8",
+      "kind": "step",
+      "statement": "The citizen can submit documents supporting the application (attachments) online via OmaKela.",
+      "quote": "Voit myös lähettää hakemuksen liitteitä",
+      "locator": "Description:UserInstruction (fi)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F9",
+      "kind": "step",
+      "statement": "The citizen can report changes to Kela online via OmaKela.",
+      "quote": "ilmoittaa muutoksista",
+      "locator": "Description:UserInstruction (fi)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F10",
+      "kind": "step",
+      "statement": "The citizen can check the status of their application in OmaKela.",
+      "quote": "You can also check the status of your application and payment dates.",
+      "locator": "Description:UserInstruction (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F11",
+      "kind": "output",
+      "statement": "Payment dates of the benefit are viewable by the citizen in OmaKela.",
+      "quote": "tarkistaa hakemuksesi tilanteen ja tuen maksupäivät",
+      "locator": "Description:UserInstruction (fi)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F12",
+      "kind": "channel",
+      "statement": "Citizens needing help can call Kela's customer service (telephone service).",
+      "quote": "If you need help, you can call Kela’s customer service number or visit a Kela service point.",
+      "locator": "Description:UserInstruction (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F13",
+      "kind": "channel",
+      "statement": "Citizens needing advice can visit a Kela service point.",
+      "quote": "Jos tarvitset neuvoja, soita Kelan puhelinpalveluun tai tule käymään palvelupisteessä.",
+      "locator": "Description:UserInstruction (fi)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F14",
+      "kind": "eligibility",
+      "statement": "General housing allowance is one of Kela's housing benefits.",
+      "quote": "* general housing allowance",
+      "locator": "Description:Description (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F15",
+      "kind": "eligibility",
+      "statement": "Housing allowance for pensioners is one of Kela's housing benefits.",
+      "quote": "* housing allowance for pensioners",
+      "locator": "Description:Description (en)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F16",
+      "kind": "eligibility",
+      "statement": "Housing assistance for conscripts (part of conscript's allowance) is one of Kela's housing benefits.",
+      "quote": "* sotilasavustuksen asumisavustus",
+      "locator": "Description:Description (fi)"
+    },
+    {
+      "id": "ptv-kela-asuminen:F17",
+      "kind": "procedural_rule",
+      "statement": "No requirements are listed in the service record.",
+      "quote": "[Requirements]\n(empty)",
+      "locator": "Requirements"
+    },
+    {
+      "id": "ptv-kela-asuminen:F18",
+      "kind": "procedural_rule",
+      "statement": "No legislation is listed in the service record.",
+      "quote": "(empty)",
+      "locator": "Legislation"
+    },
+    {
+      "id": "ptv-kela-asuminen:F19",
+      "kind": "eligibility",
+      "statement": "The service is linked to the life events conscription, retirement and beginning full-time studies, and targets citizens.",
+      "quote": "[Life events] Conscription; Retirement; Beginning full-time studies",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    },
+    {
+      "id": "ptv-kela-asuminen:F20",
+      "kind": "volume",
+      "statement": "The service has 232 service channels in total, of which 73 are office/service point channels.",
+      "quote": "[Service channels] 232 channels in total",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    },
+    {
+      "id": "ptv-kela-asuminen:F21",
+      "kind": "volume",
+      "statement": "There are 73 office/service point channels for the service.",
+      "quote": "Office / service point channels: 73",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    },
+    {
+      "id": "ptv-kela-asuminen:F22",
+      "kind": "channel",
+      "statement": "Service channels include OmaKela and Kela's telephone service for personal customers.",
+      "quote": "Kelan puhelinpalvelu henkilöasiakkaille",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    },
+    {
+      "id": "ptv-kela-asuminen:F23",
+      "kind": "channel",
+      "statement": "Service channels include municipal joint service/customer service points (asiointipiste), libraries and municipal offices offering Kela services.",
+      "quote": "Kela-palveluiden asiointipiste, Kemiönsaaren kunta",
+      "locator": "PTV service 579991be-f40f-4913-8130-0e07592b50c4"
+    }
+  ]
+}

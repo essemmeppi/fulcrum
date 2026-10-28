@@ -1,0 +1,104 @@
+
+[p. 1]
+PÄÄTÖS 1 (3)
+Asiakkaan lähipalvelujen tulosyksikkö
+18.10.2024
+Kirjoita tekstiä napsauttamalla tai napauttamalla tätä.
+Myönnetyn eläke- tai kuntoutusetuuden perusteella tehtävä automaattinen
+yleisen asumistuen lakkautus- tai oikaisupäätös
+1. Yleistä
+Ruokakunnalla on oikeus saada asumistukea 70 prosenttia siitä yleisestä asumistuesta
+annetun lain 9 §:ssä säädettyjen hyväksyttävien, mutta enintään 10 §:ssä säädettyjen
+enimmäismääräisten asumismenojen määrästä, josta on vähennetty ruokakunnan tulojen
+mukaan määräytyvä 16 §:ssä säädetty perusomavastuuosuus. Asumistuki voidaan lak-
+kauttaa sen kuukauden alusta, josta ruokakunnalla ei lain 8 tai 8 a §:n mukaan enää ole
+oikeutta asumistukeen.
+Ohjelmistorobotti käsittelee Kelan sisäisiä, yleiseen asumistukeen liittyviä impulssitöitä.
+Työ muodostuu työnhallintajärjestelmän työjonolle, kun yleisen asumistuen saajalle on
+myönnetty eläke-etuus tai kuntoutusetuus. Ohjelmistorobotti tarkistaa, onko impulssilla
+vaikutusta yleiseen asumistukeen. Jos tietty eläke- tai kuntoutusetuus on myönnetty asi-
+akkaalle (ruokakunnalle) siten, että hänellä ei ole oikeutta yleiseen asumistukeen, yleinen
+asumistuki lakkautetaan tai oikaistaan. Hallinnollinen etuuspäätös annetaan asiakkaalle
+kirjallisesti. Jos asiakas on luopunut paperipostista Kansaneläkelaitoksen verkkoasioin-
+nin kautta (OmaKela), päätös toimitetaan vain OmaKelan kautta.
+2. Hallintolain edellytykset automaattiselle päätöksenteolle
+Automaattinen ratkaisumenettely perustuu hallintolain 8 b lukuun. Yleisen asumistuen
+automaattiset päätökset täyttävät hallintolain 8 b luvun vaatimukset. Automaattisesti rat-
+kaistavat asiat eivät edellytä tapauskohtaista harkintaa. Ratkaisu tehdään ihmisen etukä-
+teenmäärittelemien käsittelysääntöjen perusteella. Käsittelysääntöihin on määritelty ra-
+jaukset, joiden perusteella asian ratkaisu siirtyy aina luonnolliselle henkilölle.
+Hallintolain 53 f §:n 1 momentin mukaan automaattisen ratkaisemisen edellytyksenä on,
+että luonnollinen henkilö, johon ratkaisu on kohdistettu, voi kaikilta osin vaatia siihen oi-
+kaisua maksutta 7 a luvun mukaisella oikaisuvaatimuksella tai siihen rinnastuvalla vaati-
+muksella, joka käsitellään päätöksen tehneessä viranomaisessa tai sen kanssa samaan re-
+kisterinpitäjään kuuluvassa viranomaisessa. Yleisestä asumistuesta annetun lain mukai-
+seen päätökseen tyytymätön voi hakea siihen muutosta valittamalla sosiaaliturvan muu-
+toksenhakulautakuntaan ja muutoksenhakulautakunnan päätökseen tyytymätön valitta-
+malla vakuutusoikeuteen.
+Hallintolain 53 g §:n 1 momentin perusteella hallintopäätöksestä on käytävä ilmi, jos asia
+
+[p. 2]
+PÄÄTÖS 2 (3)
+18.10.2024
+Kirjoita tekstiä napsauttamalla tai napauttamalla tätä.
+on ratkaistu automaattisesti, sekä tieto siitä, missä tiedonhallintalain 28 d §:ssä tarkoi-
+tettu käyttöönottopäätös on saatavilla. Kansaneläkelaitoksen automaattisesti tehtävään
+hallintopäätökseen merkitään tieto siitä, että asia on ratkaistu hallintolain 53 e §:ssä tar-
+koitetulla tavalla automaattisesti. Lisäksi hallintopäätökseen merkitään Kansaneläkelai-
+toksen verkkosivun osoite, josta tämä käyttöönottopäätös on saatavilla. Hallintolain 53 g
+§:n 3 momentin perusteella lisätietoja antavan henkilön nimeä ei merkitä päätöksellä.
+Päätökselle merkitään kuitenkin yhteystieto, josta asianosainen voi pyytää tarvittaessa
+lisätietoja päätöksestä.
+3. Tiedonhallintalaissa säädetyt edellytykset automaattiselle päätöksenteolle
+Tiedonhallintalain 28 a §:n 1 momentin mukaan viranomaisen on dokumentoitava tie-
+donhallintalain 6 a luvussa säädettyjen velvollisuuksien toteuttamisesta vastuussa ole-
+vien henkilöiden tehtäväjako. Kansaneläkelaitos on dokumentoinut tehtäväjaon erilliseen
+asiakirjaan.
+Tiedonhallintalain 28 a §:n 2 momentin mukaan viranomaisen on varmistettava, että au-
+tomaattisen ratkaisumenettelyn käsittelysäännöt dokumentoidaan riittävän selkeästi ja
+kattavasti niin, että niiden lainmukaisuus voidaan osoittaa. Käsittelysäännöistä on käy-
+tävä erityisesti ilmi, miten ratkaisumenettelyn syrjimättömyys varmistetaan, miten asia
+selvitetään riittävästi ja asianmukaisesti, mukaan lukien kuuleminen sekä miten ratkaisu
+perustellaan tai miksi se voidaan jättää perustelematta. Kansaneläkelaitos on dokumen-
+toinut käsittelysäännöt erilliseen asiakirjaan.
+Tiedonhallintalain 28 b § mukaan viranomaisen on varmistettava ennen automaattisen
+ratkaisumenettelyn käyttöönottoa ja menettelyä käytön aikana muutettaessa, että menet-
+tely vastaa tiedonhallintalain 28 a §:n 2 momentissa tarkoitettua dokumentaatiota eli me-
+nettelystä laadittuja käsittelysääntöjä. Lisäksi viranomaisen on varmistettava, että auto-
+maattisesti laadituissa asianosaiselle annettavissa asiakirjoissa käytetään hyvää kieltä ja
+että laadun varmistamisen keskeiset toimenpiteet on dokumentoitu. Tiedonhallintalain
+28 c §:n mukaan viranomaisen on valvottava automaattisesti ratkaistavien asioiden laa-
+tua ja sisällöllistä virheettömyyttä. Säännöksessä on myös säädetty riskienhallinnasta
+sekä havaittujen virheiden korjaamiseen liittyvän menettelyn suunnittelemisesta. Kan-
+saneläkelaitoksessa laadunvarmistuksen ja -valvonnan toimintatavat on dokumentoitu ja
+laadunvarmistuksesta sekä -valvonnasta vastaavat henkilöt on nimetty.
+Kansaneläkelaitos on ennen automaattisen ratkaisumenettelyn käyttöönottoa varmista-
+nut, että ratkaisumenettely vastaa laadittuja käsittelysääntöjä, testaamalla menettelyn
+kattavasti. Lisäksi Kansaneläkelaitos on kielenhuollon avulla varmistanut, että automaat-
+tisesti laadittavat päätökset perustuvat hyvään kielenkäyttöön.
+
+[p. 3]
+PÄÄTÖS 3 (3)
+18.10.2024
+Kirjoita tekstiä napsauttamalla tai napauttamalla tätä.
+Kansaneläkelaitos on dokumentoinut, miten automaattisen ratkaisumenettelyn laatua
+valvotaan käyttöönoton jälkeen. Laadunvalvontaa toteutetaan pääsääntöisesti valikoi-
+malla satunnaisotannalla joitakin automaattipäätöksiä manuaaliseen tarkasteluun. Mah-
+dollisten virhetilanteiden käsittelyä koskevat menettelyt on suunniteltu ja dokumentoitu.
+4. Luettelo käyttöönottopäätöksen perusteena olevista asiakirjoista
+Tietosuojan vaikutusten arviointi
+Käsittelytoimen kuvaus
+Laadunvarmistamisen dokumentti ja laadunvalvonnan suunnitelma
+5. Säilytysaika
+Jos automaattinen ratkaisumenettely poistetaan käytöstä, Kansaneläkelaitos säilyttää tä-
+män käyttöönottopäätöksen sen jälkeenkin vähintään viiden vuoden ajan. Määräaika al-
+kaa poistamista seuraavan kalenterivuoden alusta.
+6. Muutoksenhaku
+Tähän käyttöönottopäätökseen ei saa hakea muutosta.
+7. Käyttöönoton ajankohta ja päätös käyttöönotosta
+Automaattiset päätökset otettiin käyttöön 9.5.2022. Päätöksen käyttöönotosta teki kehit-
+tämisyksikön päällikkö Pirkko Kilpeläinen.
+8. Lisätietoja
+Automaattisen päätöksenteon menettelystä saa lisätietoja Työttömyys ja asumistuki -pal-
+velunumerosta 020 692 210 tai osoitteesta Kela, kirjaamo, PL 450, 00056 Kela. Sähkö-
+posti: kirjaamo(a)kela.fi

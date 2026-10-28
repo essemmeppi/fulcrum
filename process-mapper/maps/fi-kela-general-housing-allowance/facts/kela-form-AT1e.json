@@ -1,0 +1,565 @@
+{
+  "source_id": "kela-form-AT1e",
+  "facts": [
+    {
+      "id": "kela-form-AT1e:F1",
+      "kind": "exception",
+      "statement": "An applicant who has moved to Finland and has not previously claimed benefits from Kela must also complete form Y 77e.",
+      "quote": "If you have moved to Finland and you have not previously claimed benefits from Kela, also complete form Y 77e.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F2",
+      "kind": "exception",
+      "statement": "An applicant who is going abroad must also complete form Y 38e.",
+      "quote": "If you are going abroad, also complete form Y 38e.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F3",
+      "kind": "deadline",
+      "statement": "General housing allowance can be granted retroactively from the beginning of the month preceding the month in which Kela receives the application.",
+      "quote": "General housing allowance can be granted from the beginning of the month preceding that in which your application is received.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F4",
+      "kind": "procedural_rule",
+      "statement": "General housing allowance is always granted as of the first day of a month.",
+      "quote": "The allowance is always granted as of the first day of the month.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F5",
+      "kind": "input",
+      "statement": "The application requires the applicant's personal identity code, family and given name, and telephone number.",
+      "quote": "Personal identity code Family name and given name\nTelephone",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F6",
+      "kind": "input",
+      "statement": "The applicant must state since when they have lived in a cohabiting relationship or since when they have been separated from their spouse.",
+      "quote": "I am living in a cohabiting relationship since\nI am separated from my spouse since",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F7",
+      "kind": "input",
+      "statement": "The applicant must state whether they are a student and, if so, the estimated time of graduation (month and year).",
+      "quote": "Are you a student? No Yes. Estimated time of graduation / (month and year)",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F8",
+      "kind": "procedural_rule",
+      "statement": "A spouse means a cohabiting spouse living with the applicant in a couple relationship or a married spouse.",
+      "quote": "Spouse mean cohabiting spouse with whom you live together in a couple relationship or a married spouse.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F9",
+      "kind": "procedural_rule",
+      "statement": "The applicant chooses whether housing allowance is paid to the applicant or to the landlord.",
+      "quote": "Housing allowance is payable to\n2. Payment details\nthe applicant the landlord",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F10",
+      "kind": "procedural_rule",
+      "statement": "If the landlord has reported a reference number for rent payment, Kela can pay the housing allowance to the landlord only if the applicant reports that reference number to Kela.",
+      "quote": "If the landlord has reported a reference number for payment of the rent, Kela can pay the housing allowance to the landlord only if you report the reference number to Kela.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F11",
+      "kind": "procedural_rule",
+      "statement": "The applicant chooses separately whether retroactive allowance is paid to the applicant or to the landlord.",
+      "quote": "Retroactive allowance is payable to the applicant the landlord",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F12",
+      "kind": "input",
+      "statement": "The landlord's bank account number and payment reference number are given only if the benefit is payable to the landlord.",
+      "quote": "Bank account number of the landlord (state the bank account number only if the benefit is payable to the landlord)\nReference number for the payment",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F13",
+      "kind": "input",
+      "statement": "The applicant's bank account number must be given even if the benefit is paid to the landlord.",
+      "quote": "Applicant’s bank account number (state the bank account number even if the benefit is paid out to the landlord)",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F14",
+      "kind": "input",
+      "statement": "The application requires the address, postal code, postal district, the municipality where the home is located and the date of moving in.",
+      "quote": "Address\nPostal code Postal district\nThe municipality in which the home is located Date of moving in",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F15",
+      "kind": "input",
+      "statement": "The applicant must state whether a separation is due to the end of a couple relationship.",
+      "quote": "Is the separation due to the end of a couple relationship? No Yes",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F16",
+      "kind": "input",
+      "statement": "An applicant who is about to move must state the new address.",
+      "quote": "If you are about to move, state your new address.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F17",
+      "kind": "channel",
+      "statement": "The application and related documentation can be filed online at www.kela.fi/english.",
+      "quote": "You can also file the application and related documentation online: www.kela.fi/english.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F18",
+      "kind": "channel",
+      "statement": "The paper application and supporting documents are sent by mail to Kela, PL 10, 00056 KELA.",
+      "quote": "Send the application and any supporting documents by mail. The address is Kela, PL 10, 00056 KELA.",
+      "locator": "p. 1"
+    },
+    {
+      "id": "kela-form-AT1e:F19",
+      "kind": "eligibility",
+      "statement": "A household means the people who live permanently in the same flat or house.",
+      "quote": "A household means the people who live permanently in the same flat or house.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F20",
+      "kind": "eligibility",
+      "statement": "Several persons who have rented a home under a joint rental agreement are considered a communal household.",
+      "quote": "If several persons have rented a home under a joint rental agreement, they are considered as a communal household.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F21",
+      "kind": "procedural_rule",
+      "statement": "A person living in a communal household must have a power of attorney from the other residents to apply for housing allowance on behalf of the household, and must enclose form AT 5e with the application.",
+      "quote": "If you live in a communal household, you must have a power of attorney from the other residents if you wish to apply for housing allowance on behalf of the household. Enclose the form AT 5e, Power of attorney to represent a communal household with the application.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F22",
+      "kind": "deadline",
+      "statement": "The change of address for all household members must be notified to the Digital and Population Data Services Agency within one week of the change.",
+      "quote": "Notify the Digital and Population Data Services Agency of the change of address for all members of the household within one week of the change of address.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F23",
+      "kind": "actor",
+      "statement": "The Digital and Population Data Services Agency is the authority to which address changes are notified.",
+      "quote": "Notify the Digital and Population Data Services Agency of the change of address",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F24",
+      "kind": "procedural_rule",
+      "statement": "Inaccurate address details may delay the processing of the application.",
+      "quote": "Inaccurate address details may cause a delay in the processing of the application.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F25",
+      "kind": "calculation",
+      "statement": "If the household includes a disabled person who needs extra living space or an assistant, this must be described in section 10 and it affects the amount of the housing allowance.",
+      "quote": "If your household includes a disabled person who needs extra living space or an assistant, provide details about this at section 10. Additional information. This information affects the amount of the housing allowance.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F26",
+      "kind": "input",
+      "statement": "For each household member the form asks for name, personal identity code or date of birth (spouse, children, other persons sharing the home), student status and estimated graduation; extra members are listed in section 10.",
+      "quote": "If there is not enough space here for the details for all household members, report their details at section 10. Additional information.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F27",
+      "kind": "step",
+      "statement": "The applicant indicates which benefit is applied for: a new housing allowance from a given date, an annual review, or a review of housing allowance in current payment.",
+      "quote": "Which benefit do you wish to apply for?\nNew housing allowance starting from\nAnnual review of the housing allowance because one year has passed since the housing allowance was awarded or last reviewed.\nReview of housing allowance in current payment.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F28",
+      "kind": "deadline",
+      "statement": "An annual review of housing allowance is done when one year has passed since the allowance was awarded or last reviewed.",
+      "quote": "Annual review of the housing allowance because one year has passed since the housing allowance was awarded or last reviewed.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F29",
+      "kind": "procedural_rule",
+      "statement": "A new housing allowance means the applicant does not currently receive housing allowance.",
+      "quote": "New housing allowance means that you do not currently receive housing allowance.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F30",
+      "kind": "procedural_rule",
+      "statement": "When notifying changes, the applicant states what types of changes have happened or will happen in the household.",
+      "quote": "State what types of changes in the household have happened or will happen.",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F31",
+      "kind": "procedural_rule",
+      "statement": "Reportable changes include a change in income (stated in section 6) and a change of residence.",
+      "quote": "Change in income as from State the changed income under section 6. Household income.\nChange of residence",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F32",
+      "kind": "procedural_rule",
+      "statement": "Reportable changes include a change in housing costs and a change in the number or composition of persons in the household, each with a start date.",
+      "quote": "Change in housing costs as from .\nChange in the number of persons in the household or change of persons in the household as from .",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F33",
+      "kind": "procedural_rule",
+      "statement": "Reportable changes include a change in the occupancy status of the home (e.g. from rental to owner-occupied).",
+      "quote": "Change in the occupancy status of your home (e.g. from rental to owner-occupied) as from .",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F34",
+      "kind": "procedural_rule",
+      "statement": "A reportable change is when a household member gains or loses eligibility for the student housing supplement.",
+      "quote": "A person in the household gains or loses eligibility for the student housing supplement .",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F35",
+      "kind": "input",
+      "statement": "The applicant states whether the home is a rental or part-ownership home (with landlord's name) or a right-of-occupancy home.",
+      "quote": "My home is\na rental or part-ownership home\nName of landlord\na right-of-occupancy home",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F36",
+      "kind": "input",
+      "statement": "The applicant states the monthly amount of rent or maintenance charge and its start date.",
+      "quote": "Amount of rent or maintenance charge: EUR per month starting from .",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F37",
+      "kind": "input",
+      "statement": "The applicant states whether water, heating and electricity are paid separately in addition to the rent or maintenance charge.",
+      "quote": "In addition to the rent or maintenance charge, do you pay separately for any of the following?\nWater",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F38",
+      "kind": "input",
+      "statement": "The applicant states whether the household has a subtenant, with the subtenant's name, date of birth and monthly rent paid.",
+      "quote": "Does your household have a subtenant?\nNo Yes\nSubtenant’s name and date of birth\nMonthly rent paid by the subtenant: EUR .",
+      "locator": "p. 2"
+    },
+    {
+      "id": "kela-form-AT1e:F39",
+      "kind": "data_source",
+      "statement": "Kela receives information on household wages, salaries and benefits from the national Incomes Register.",
+      "quote": "If your household receives wages and salaries or benefits, we receive information on them from the national incomes register.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F40",
+      "kind": "data_source",
+      "statement": "Kela also uses information from the Tax Administration when assessing income.",
+      "quote": "We also use information from the Tax Administration when assessing the income.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F41",
+      "kind": "procedural_rule",
+      "statement": "Kela needs information on coming incomes from the applicant because they may affect the amount of housing allowance.",
+      "quote": "However, we already now need information on coming incomes because they may affect the amount of housing allowance.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F42",
+      "kind": "procedural_rule",
+      "statement": "Household income must be stated as gross amounts (before taxes and deductions), including tax-exempt income.",
+      "quote": "State the household income to its gross amount, i.e. before taxes and other deductions. Also state any tax-exempt income.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F43",
+      "kind": "exception",
+      "statement": "Benefits received from Kela and incomes of underage children need not be stated.",
+      "quote": "Benefits received from Kela and the incomes of underage children need not be stated.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F44",
+      "kind": "input",
+      "statement": "Wages or salaries and wage supplements must be stated; varying wages are estimated as an average monthly amount; details of all employers must be given.",
+      "quote": "State the wage or salary and any wage supplements. If the wage or salary varies, estimate and state the average monthly wage or salary. If there are several employers, state the details for all the employers.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F45",
+      "kind": "input",
+      "statement": "For each wage earner the form asks the employer's name, whether the employment is fixed-term or open-ended, and the monthly wage amount.",
+      "quote": "Name of employer\nEmployment relationship Fixed-term",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F46",
+      "kind": "input",
+      "statement": "Pensions from countries other than Finland must be stated, with recipient, monthly amount, currency and country.",
+      "quote": "Pension from some other country than Finland\nNo Yes. Specify who receives such a pension.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F47",
+      "kind": "input",
+      "statement": "Scholarships and grants must be stated with recipient and period; grants paid from another country are stated in EUR per month.",
+      "quote": "If the grant or scholarship is paid from another country, state the amount of the grant or scholarship in EUR per month.",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F48",
+      "kind": "input",
+      "statement": "The form asks whether a grant or scholarship recipient is insured under the MYEL (Farmers') Pensions Act.",
+      "quote": "Is the person receiving a grant or scholarship insured under the MYEL (Farmers’) Pensions Act? No Yes",
+      "locator": "p. 3"
+    },
+    {
+      "id": "kela-form-AT1e:F49",
+      "kind": "exception",
+      "statement": "Assets and capital income of underage children need not be stated.",
+      "quote": "You do not need to state the assets and capital income of underage children.",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F50",
+      "kind": "input",
+      "statement": "For self-employed household members, the form asks the company name or business ID, YEL/MYEL insurance status, and whether a business start-up grant is received.",
+      "quote": "Does the self-employed person receive a business start-up grant?\nIs the self-employed person insured under the YEL (Self-Employed Persons’) or MYEL (Farmers’) Pensions Act?\nName or business ID (Y-tunnus) of the company",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F51",
+      "kind": "calculation",
+      "statement": "If the self-employed person has no YEL/MYEL insurance and no business start-up grant, the self-employed person's own assessment of income is stated.",
+      "quote": "start-up grant, state the self-employed person’s own assessment of the income EUR\nIf the self-employed person does not have insurance under the YEL or MYEL Pensions Acts or does not receive a business",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F52",
+      "kind": "input",
+      "statement": "Bank deposits, bonds and receivables must be stated with holder, type, amount and interest rate, including equity savings account balance and current value of cryptocurrency wallets.",
+      "quote": "State the holder, the type of asset, the amount and the interest rate. Also state for instance the balance on the equity savings account and the current value of cryptocurrency wallets.",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F53",
+      "kind": "input",
+      "statement": "For an equity savings account, the holder and whether money will be drawn from it within the next 12 months must be stated.",
+      "quote": "State the account holder and whether you intend to draw money from the equity savings account within the next 12 months.",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F54",
+      "kind": "input",
+      "statement": "Shares in stock (holder, company, type, number) and mutual funds (holder, funds, number of shares) must be stated, or provided in separate enclosures.",
+      "quote": "As regards shares in stock, state the holder, the company in question, the type and number of shares. Also state the shares if they are in an equity savings account. As regards shares in mutual funds, state the holder, the funds in question and the number of shares. Alternatively, you can provide the information in separate enclosures.",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F55",
+      "kind": "input",
+      "statement": "Insurance-based investment products must be stated with person, type and surrender value, or in a separate enclosure such as an annual report.",
+      "quote": "State the person(s) concerned, the type of insurance-based investment product and their surrender value. An alternative is to provide the information in a separate enclosure (for instance an annual report).",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F56",
+      "kind": "exception",
+      "statement": "A holiday home in the household's own use does not have to be reported.",
+      "quote": "You do not have to provide information on a holiday home in your own use.",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F57",
+      "kind": "input",
+      "statement": "Fixed assets must be stated: for real estate the owner, address, property identifier and municipality; for forest holdings the owner, forest area and municipality.",
+      "quote": "As regards real estate, state the owner, the address and property identifier of the real estate and the municipality where the real estate is located. As regards forest holdings, state the owner, the forest area and the municipality where the forest holdings are located.",
+      "locator": "p. 4"
+    },
+    {
+      "id": "kela-form-AT1e:F58",
+      "kind": "input",
+      "statement": "The form asks whether household members bought or sold shares in a book-entry account in the previous 12 months and whether such sales continue.",
+      "quote": "Have you or has another member of your household bought or sold shares in a book-entry account in the previous 12 months?",
+      "locator": "p. 5"
+    },
+    {
+      "id": "kela-form-AT1e:F59",
+      "kind": "input",
+      "statement": "The form asks whether household members intend to sell mutual fund shares, other securities or cryptocurrencies in the next 12 months.",
+      "quote": "Do you or does another member of your household intend to sell shares in a mutual fund, other securities or cryptocurrencies in the next 12 months?",
+      "locator": "p. 5"
+    },
+    {
+      "id": "kela-form-AT1e:F60",
+      "kind": "input",
+      "statement": "Shares in a housing cooperative must be stated with holder, unit address and building type.",
+      "quote": "State the holder, the address of the unit in a housing cooperative and the type of building (for instance apartment building, terraced house).",
+      "locator": "p. 5"
+    },
+    {
+      "id": "kela-form-AT1e:F61",
+      "kind": "procedural_rule",
+      "statement": "Rental income must be stated for all sources, with total rent and deductions stated separately.",
+      "quote": "If you have rental income, the income must be stated for all sources of rental income. State the amount of rent in total and any deductions separately.",
+      "locator": "p. 5"
+    },
+    {
+      "id": "kela-form-AT1e:F62",
+      "kind": "input",
+      "statement": "For rental income sources the form asks rent per month, maintenance charge, heating costs and whether water/heating charges are included.",
+      "quote": "Is a water charge included in the rent?",
+      "locator": "p. 5"
+    },
+    {
+      "id": "kela-form-AT1e:F63",
+      "kind": "input",
+      "statement": "Any other type of household income must be stated with recipient, type and monthly amount.",
+      "quote": "Do you or does another member of your household receive some other type of income than those mentioned above?\nNo Yes. State the recipient, type of income and amount per month.",
+      "locator": "p. 5"
+    },
+    {
+      "id": "kela-form-AT1e:F64",
+      "kind": "procedural_rule",
+      "statement": "Information obtained for this decision may be used for other benefit matters if required by law, and information obtained for another benefit may be used to decide this matter.",
+      "quote": "Information obtained for the purpose of deciding the present matter may be used for other benefit-related matters, if so required under law. Any information obtained within the context of another benefit may also be used to decide the present matter.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F65",
+      "kind": "data_source",
+      "statement": "Kela may access outside sources to obtain additional information about the applicant's circumstances; the text does not list them.",
+      "quote": "Please contact us for more information about which outside sources we may access to obtain additional information about your circumstances and to whom we may provide such information.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F66",
+      "kind": "step",
+      "statement": "The applicant signs the application with place and date, declaring the information is true and undertaking to notify changes.",
+      "quote": "I declare that the information I have given is true and accurate. I will notify any changes.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F67",
+      "kind": "procedural_rule",
+      "statement": "Additional information on a separate sheet must include the applicant's name and personal identity code.",
+      "quote": "Additional information on a separate sheet. Write your name and personal identity code on the sheet.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F68",
+      "kind": "input",
+      "statement": "Enclosures for section 6 include other documentation on income.",
+      "quote": "Other documentation on income. Please specify.\nSection 6. Household income",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F69",
+      "kind": "input",
+      "statement": "A copy of the rental or right-of-occupancy agreement is an enclosure for section 5.",
+      "quote": "Copy of the rental or right-of-occupancy agreement.\nSection 5. Residential details and housing costs",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F70",
+      "kind": "data_source",
+      "statement": "Kela receives rental housing details electronically from certain landlords; in that case the recipient need not submit the rental agreement.",
+      "quote": "Kela receives the details on rental housing from certain landlords in electronic form. In this case, the recipient of housing allowance does not need to submit the rental agreement.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F71",
+      "kind": "channel",
+      "statement": "Applicants can check at www.kela.fi/rental-agreement whether Kela receives details electronically from their landlord.",
+      "quote": "You can check at www.kela.fi/rental-agreement, if we receive the details in electronic form from the landlord.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F72",
+      "kind": "exception",
+      "statement": "Documentation already submitted to Kela previously, e.g. for another benefit, need not be submitted again.",
+      "quote": "If you have submitted the relevant documentation to Kela already previously for instance for another benefit, you need not submit the same documentation again.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F73",
+      "kind": "procedural_rule",
+      "statement": "In reviews of housing allowance in current payment, the rental agreement is needed only if its terms change and Kela does not receive the information electronically from the landlord.",
+      "quote": "The rental agreement is needed in reviews of housing allowance in current payment only if the terms of the rental agreement change and Kela does not receive the information from the landlord in electronic form.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F74",
+      "kind": "output",
+      "statement": "Kela may later request receipts and documents related to the application, so the applicant must keep them.",
+      "quote": "Keep any receipts and documents related to your application because we may request them at a later stage, when necessary.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F75",
+      "kind": "channel",
+      "statement": "The power of attorney form AT 5e for a communal household is available at www.kela.fi/forms.",
+      "quote": "The form is available on our website at www.kela.fi/forms.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F76",
+      "kind": "input",
+      "statement": "The form asks whether a household member will apply for unemployment allowance from an unemployment fund or from Kela.",
+      "quote": "Will you or another member of your household apply for unemployment allowance from the unemployment fund or from Kela?",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F77",
+      "kind": "actor",
+      "statement": "Unemployment funds are named as a possible payer of unemployment allowance to household members.",
+      "quote": "apply for unemployment allowance from the unemployment fund or from Kela?",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F78",
+      "kind": "input",
+      "statement": "Expected changes in household incomes and benefits must be stated: whose income, when and how, with an estimated gross amount.",
+      "quote": "State whose income will change, when the income will change and how. Estimate the income and state the gross amount of the income, i.e. the amount before taxes and other deductions.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F79",
+      "kind": "input",
+      "statement": "Household debt must be stated with the persons concerned and the amount.",
+      "quote": "Do you or does another member of your household have debt?\nNo Yes. State the person(s) concerned and the amount.",
+      "locator": "p. 6"
+    },
+    {
+      "id": "kela-form-AT1e:F80",
+      "kind": "exception",
+      "statement": "Only long-term debt must be stated (not consumer or other short-term debt), and debt need not be reported if the household has no assets.",
+      "quote": "You only have to state long-term debt (not consumer debt or other short-term debt). You do not have to provide information on the debt, if you have no assets.",
+      "locator": "p. 6"
+    }
+  ]
+}

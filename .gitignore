@@ -1,0 +1,12 @@
+# private notes and transcripts
+chats/
+
+# secrets and local noise
+.env
+*.log
+.DS_Store
+__pycache__/
+*.pyc
+
+# raw downloads are re-fetchable
+process-mapper/corpus/*/_raw/

@@ -1,0 +1,957 @@
+{
+  "source_id": "kela-fi-yleinen-asumistuki",
+  "facts": [
+    {
+      "id": "kela-fi-yleinen-asumistuki:F1",
+      "kind": "eligibility",
+      "statement": "General housing allowance can be granted to a household consisting of one or more persons.",
+      "quote": "Yleistä asumistukea voi saada yhden tai useamman henkilön ruokakunta.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F2",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance is granted jointly to the household.",
+      "quote": "Asumistuki myönnetään ruokakunnalle yhteisesti",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F3",
+      "kind": "calculation",
+      "statement": "The combined income and assets of the whole household affect the housing allowance.",
+      "quote": "siihen vaikuttavat koko ruokakunnan yhteenlasketut tulot ja omaisuus.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F4",
+      "kind": "eligibility",
+      "statement": "The applicant can get general housing allowance if their income is low.",
+      "quote": "Voit saada yleistä asumistukea, jos tulosi ovat pienet",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F5",
+      "kind": "eligibility",
+      "statement": "Housing allowance can be granted for a rental, right-of-occupancy or shared-ownership dwelling.",
+      "quote": "Asumistukea voi saada vuokra-, asumisoikeus- tai osaomistusasuntoon.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F6",
+      "kind": "eligibility",
+      "statement": "Housing allowance can be granted only if income does not exceed a municipality-specific income limit.",
+      "quote": "Voit saada asumistukea, jos tulosi eivät ylitä kuntakohtaista tulorajaa.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F7",
+      "kind": "calculation",
+      "statement": "Only part of the household's housing costs is taken into account in the housing allowance.",
+      "quote": "Asumistuessa otetaan huomioon vain osa asumismenoistasi.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F8",
+      "kind": "channel",
+      "statement": "Citizens can estimate the amount of their housing allowance with Kela's online calculator.",
+      "quote": "voit helpoiten arvioida asumistukesi määrän laskurilla.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F9",
+      "kind": "channel",
+      "statement": "If the citizen cannot use OmaKela, they can mail the application to Kela.",
+      "quote": "Jos et voi käyttää OmaKelaa, postita hakemus Kelaan.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F10",
+      "kind": "calculation",
+      "statement": "There are municipality-specific upper limits on the amount of housing costs, also called maximum housing costs (enimmäisasumismenot).",
+      "quote": "Asumismenojen määrille on kuntakohtaiset ylärajat. Näitä rajoja kutsutaan myös enimmäisasumismenoiksi.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F11",
+      "kind": "calculation",
+      "statement": "Housing allowance is granted at most according to the maximum housing costs.",
+      "quote": "Voit saada asumistukea enintään enimmäisasumismenojen mukaan.",
+      "locator": "H2: Voitko saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F12",
+      "kind": "exception",
+      "statement": "Students generally cannot get general housing allowance.",
+      "quote": "Jos opiskelet, et yleensä voi saada yleistä asumistukea.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F13",
+      "kind": "exception",
+      "statement": "Most students can instead get the housing supplement of the study grant.",
+      "quote": "Suurin osa opiskelijoista voi saada asumisensa tueksi opintotuen asumislisää.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F14",
+      "kind": "exception",
+      "statement": "A student can get general housing allowance if they live with their own child or their spouse's child.",
+      "quote": "Asut lapsesi tai puolisosi lapsen kanssa.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F15",
+      "kind": "exception",
+      "statement": "A student can get general housing allowance if during studies they receive support other than study grant, e.g. unemployment benefit, rehabilitation allowance or sickness allowance.",
+      "quote": "Saat opintojesi ajalta muuta tukea kuin opintotukea, esimerkiksi työttömyystukea, kuntoutusrahaa tai sairauspäivärahaa.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F16",
+      "kind": "exception",
+      "statement": "A student can get general housing allowance if they have interrupted studies or used up their study grant months.",
+      "quote": "Olet keskeyttänyt opintosi tai käyttänyt loppuun opintotukikuukautesi.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F17",
+      "kind": "exception",
+      "statement": "A student can get general housing allowance if their studies have not progressed sufficiently and Kela has terminated their study grant.",
+      "quote": "Opintosi eivät ole edistyneet riittävästi, ja olemme lakkauttaneet opintotukesi.",
+      "locator": "H3: Oletko opiskelija?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F18",
+      "kind": "exception",
+      "statement": "Pension recipients can get the separate pensioner's housing allowance if they permanently reside in Finland, have low income and receive a pension that entitles to it.",
+      "quote": "Voit saada eläkkeensaajan asumistukea, jos asut vakinaisesti Suomessa, olet pienituloinen ja saat eläkettä, joka oikeuttaa eläkkeensaajan asumistukeen.",
+      "locator": "H3: Oletko eläkkeensaaja?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F19",
+      "kind": "eligibility",
+      "statement": "A person who has moved to Finland may be entitled to general housing allowance if they reside permanently in Finland.",
+      "quote": "Sinulla voi olla oikeus yleiseen asumistukeen, jos olet muuttanut Suomeen ja asut Suomessa vakinaisesti.",
+      "locator": "H3: Muutitko ulkomailta Suomeen?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F20",
+      "kind": "eligibility",
+      "statement": "Residence in Finland is generally considered permanent after the person has lived in Finland for one year.",
+      "quote": "Suomessa asuminen katsotaan yleensä vakinaiseksi, kun olet asunut Suomessa yhden vuoden.",
+      "locator": "H3: Muutitko ulkomailta Suomeen?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F21",
+      "kind": "eligibility",
+      "statement": "Only persons living in Finland can belong to a general housing allowance household.",
+      "quote": "Vain Suomessa asuvat henkilöt voivat kuulua yleisen asumistuen ruokakuntaan.",
+      "locator": "H3: Muutitko ulkomailta Suomeen?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F22",
+      "kind": "eligibility",
+      "statement": "A citizen of another EU/EEA country or Switzerland who came to Finland to work may be entitled to general housing allowance.",
+      "quote": "Jos olet tullut Suomeen työskentelemään ja olet toisen EU- tai Eta-maan tai Sveitsin kansalainen, sinulla voi olla oikeus yleiseen asumistukeen.",
+      "locator": "H4: Suomeen työskentelemään tulleet"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F23",
+      "kind": "eligibility",
+      "statement": "A person who fled the war in Ukraine and resides permanently in Finland may be entitled to general housing allowance.",
+      "quote": "Jos olet paennut sotaa Ukrainasta ja asut Suomessa vakinaisesti, sinulla voi olla oikeus yleiseen asumistukeen.",
+      "locator": "H4: Ukrainasta sotaa paenneet"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F24",
+      "kind": "eligibility",
+      "statement": "A household generally consists of persons permanently living in the same dwelling.",
+      "quote": "Ruokakuntaan kuuluvat yleensä samassa asunnossa vakinaisesti asuvat henkilöt.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F25",
+      "kind": "procedural_rule",
+      "statement": "A person can belong to only one household at a time.",
+      "quote": "Voit kuulua vain yhteen ruokakuntaan kerrallaan.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F26",
+      "kind": "procedural_rule",
+      "statement": "Only one person can apply for the allowance on behalf of the whole household.",
+      "quote": "Tukea voi hakea vain yksi henkilö koko ruokakunnan puolesta.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F27",
+      "kind": "eligibility",
+      "statement": "Married spouses, cohabiting partners and dating partners living in the same dwelling belong to the same household regardless of whether the lease is joint or separate.",
+      "quote": "Avio- ja avopuolisot ja samassa asunnossa asuvat seurustelukumppanit kuuluvat samaan ruokakuntaan riippumatta siitä, onko asunnon vuokrasopimus yhteinen vai erillinen.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F28",
+      "kind": "exception",
+      "statement": "A spouse or cohabiting partner who is entitled to the study grant housing supplement does not belong to the household.",
+      "quote": "Avio- tai avopuoliso, jolla on oikeus opintotuen asumislisään, ei kuitenkaan kuulu ruokakuntaan.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F29",
+      "kind": "calculation",
+      "statement": "The income or assets of a spouse entitled to the study grant housing supplement do not affect the amount of general housing allowance.",
+      "quote": "Hänen tulonsa tai omaisuutensa eivät siis vaikuta yleisen asumistuen määrään.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F30",
+      "kind": "eligibility",
+      "statement": "Married spouses living in different dwellings belong to the same household if they live apart because of work, studies, or military/civilian service in another locality.",
+      "quote": "Myös eri asunnoissa asuvat aviopuolisot kuuluvat samaan ruokakuntaan, jos he asuvat erillään esimerkiksi työn, opiskelun tai toisella paikkakunnalla suoritettavan ase- tai siviilipalveluksen vuoksi.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F31",
+      "kind": "eligibility",
+      "statement": "Married spouses belong to different households if they live apart because their relationship has ended.",
+      "quote": "Aviopuolisot kuuluvat eri ruokakuntiin, jos he asuvat erillään siksi, että heidän parisuhteensa on päättynyt.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F32",
+      "kind": "eligibility",
+      "statement": "People living in a shared flat can belong to either the same or different households.",
+      "quote": "Kimppakämpässä asuvat voivat kuulua joko samaan tai eri ruokakuntaan.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F33",
+      "kind": "eligibility",
+      "statement": "The text lists flatmates with a joint lease and flatmates jointly responsible for the whole rent under the lease or its annex as one category of shared-flat residents (followed by rules for flatmates in the same household).",
+      "quote": "kämppäkaverit, joilla on yhteinen vuokrasopimus\nkämppäkaverit, jotka ovat vuokrasopimuksen tai sen liitteen mukaan yhdessä vastuussa koko asunnon vuokrasta.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F34",
+      "kind": "step",
+      "statement": "Flatmates belonging to the same household choose a representative from among themselves who applies for housing allowance for the household.",
+      "quote": "Samaan ruokakuntaan kuuluvat kämppäkaverit valitsevat ruokakunnastaan edustajan, joka hakee asumistukea ruokakunnalle.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F35",
+      "kind": "input",
+      "statement": "The representative's details are reported on form AT 5 (Yhteisöruokakunnan valtuutus).",
+      "quote": "Edustajan tiedot ilmoitetaan lomakkeella Yhteisöruokakunnan valtuutus AT 5 (pdf).",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F36",
+      "kind": "output",
+      "statement": "If housing allowance is granted to a flatmate household, it is paid to the household's representative.",
+      "quote": "Jos ruokakunnalle myönnetään asumistukea, maksetaan se ruokakunnan edustajalle.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F37",
+      "kind": "eligibility",
+      "statement": "The text lists flatmates with separate leases and flatmates with a sublease as a category relating to belonging to different households.",
+      "quote": "kämppäkaverit, joilla on erilliset vuokrasopimukset\nkämppäkaverit, joilla on alivuokrasopimus.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F38",
+      "kind": "eligibility",
+      "statement": "An additional condition for flatmates to belong to different households is that they are not jointly responsible for the whole rent under the lease or its annex.",
+      "quote": "Lisäksi eri ruokakuntiin kuulumisen edellytyksenä on, että kämppäkaverit eivät ole vuokrasopimuksen tai sen liitteen mukaan yhdessä vastuussa koko asunnon vuokrasta.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F39",
+      "kind": "eligibility",
+      "statement": "Spouses, cohabitants, dating partners and close relatives (parents, children, grandparents) living in the same dwelling belong to the same household regardless of the lease.",
+      "quote": "Samassa asunnossa asuvat avio- ja avopuolisot, seurustelukumppanit ja lähisukulaiset kuuluvat samaan ruokakuntaan vuokrasopimuksesta riippumatta. Lähisukulaisia ovat vanhemmat, lapset ja isovanhemmat.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F40",
+      "kind": "eligibility",
+      "statement": "Siblings living in the same dwelling belong to different households if they have separate leases or a sublease.",
+      "quote": "Samassa asunnossa asuvat sisarukset kuuluvat eri ruokakuntiin, jos heillä on erilliset vuokrasopimukset tai alivuokrasopimus.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F41",
+      "kind": "eligibility",
+      "statement": "A minor child living on their own without income generally belongs to the same household as their parents.",
+      "quote": "Alaikäinen omillaan asuva lapsi, jolla ei ole tuloja, kuuluu yleensä samaan ruokakuntaan vanhempiensa kanssa.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F42",
+      "kind": "eligibility",
+      "statement": "An adult child who has moved out belongs to a different household than their parents.",
+      "quote": "Täysi-ikäinen omilleen asumaan muuttanut lapsi kuuluu eri ruokakuntaan kuin hänen vanhempansa.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F43",
+      "kind": "eligibility",
+      "statement": "An adult child living in the same dwelling as their parents belongs to the same household as them.",
+      "quote": "Jos täysi-ikäinen lapsi asuu samassa asunnossa vanhempiensa kanssa, kuuluu hän samaan ruokakuntaan heidän kanssaan.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F44",
+      "kind": "eligibility",
+      "statement": "A person belongs to the household of their permanent dwelling even when temporarily living elsewhere, e.g. for work or military/civilian service.",
+      "quote": "Kuulut samaan ruokakuntaan vakinaisessa asunnossasi asuvien kanssa, vaikka asuisit väliaikaisesti muualla esimerkiksi työn tai ase- tai siviilipalveluksen takia.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F45",
+      "kind": "deadline",
+      "statement": "Living elsewhere is considered temporary if it lasts at most about 1 year.",
+      "quote": "Muualla asuminen on väliaikaista, jos se kestää enintään noin 1 vuoden.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F46",
+      "kind": "eligibility",
+      "statement": "A person who moved to Finland can belong to a household if Kela considers that they reside permanently in Finland.",
+      "quote": "Suomeen muuttanut voi kuulua ruokakuntaan, jos katsomme, että hän asuu Suomessa vakinaisesti.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F47",
+      "kind": "exception",
+      "statement": "Students who have come to Finland cannot belong to a household and cannot get housing allowance.",
+      "quote": "Suomeen tulleet opiskelijat eivät voi kuulua ruokakuntaan eivätkä saada asumistukea.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F48",
+      "kind": "eligibility",
+      "statement": "A subtenant generally belongs to a different household than the main tenant or the dwelling owner.",
+      "quote": "Alivuokralainen kuuluu yleensä eri ruokakuntaan kuin päävuokralainen tai asunnon omistaja.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F49",
+      "kind": "exception",
+      "statement": "A subtenant who is the spouse or close relative (parent, child, grandparent) of the main tenant or owner belongs to the same household as them.",
+      "quote": "Jos alivuokralainen on päävuokralaisen tai asunnon omistajan puoliso tai lähisukulainen, hän kuuluu tämän kanssa samaan ruokakuntaan.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F50",
+      "kind": "procedural_rule",
+      "statement": "A housing allowance recipient must notify Kela if a subtenant moves into their dwelling.",
+      "quote": "Ilmoita meille, jos saat asumistukea ja asuntoosi muuttaa alivuokralainen.",
+      "locator": "H3: ​​​Keitä ruokakuntaan kuuluu?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F51",
+      "kind": "calculation",
+      "statement": "If the housing allowance amount is less than 15 euros per month, it is not paid.",
+      "quote": "Jos asumistuen määrä on alle 15 e/kk, sitä ei makseta.",
+      "locator": "H2: Kuinka paljon voit saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F52",
+      "kind": "calculation",
+      "statement": "The number of adults and children affects the amount of housing allowance.",
+      "quote": "aikuisten ja lasten lukumäärä",
+      "locator": "H2: Kuinka paljon voit saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F53",
+      "kind": "calculation",
+      "statement": "Income and assets affect the amount of housing allowance.",
+      "quote": "tulot ja omaisuus",
+      "locator": "H2: Kuinka paljon voit saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F54",
+      "kind": "calculation",
+      "statement": "The housing costs eligible for housing allowance affect the amount.",
+      "quote": "asumismenot, joihin asumistukea voi saada",
+      "locator": "H2: Kuinka paljon voit saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F55",
+      "kind": "calculation",
+      "statement": "Municipality-specific upper limits (maximum housing costs) affect the amount.",
+      "quote": "kuntakohtaiset ylärajat (enimmäisasumismenot)",
+      "locator": "H2: Kuinka paljon voit saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F56",
+      "kind": "calculation",
+      "statement": "A basic deductible (perusomavastuu) affects the amount of housing allowance.",
+      "quote": "perusomavastuu.",
+      "locator": "H2: Kuinka paljon voit saada yleistä asumistukea?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F57",
+      "kind": "output",
+      "statement": "The result given by the calculator is only an estimate.",
+      "quote": "Laskurin antama tulos on arvio.",
+      "locator": "H2: Arvioi asumistuen määrä laskurilla"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F58",
+      "kind": "step",
+      "statement": "Kela pays the housing allowance to the recipient's or the landlord's account on the first banking day of the month.",
+      "quote": "Maksamme asumistuen sinun tai vuokranantajasi tilille kuukauden 1. pankkipäivänä.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F59",
+      "kind": "procedural_rule",
+      "statement": "If banks are closed on the payment day, the allowance is paid on the next banking day.",
+      "quote": "Jos pankit ovat kiinni maksupäivänä, tuki maksetaan seuraavana pankkipäivänä.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F60",
+      "kind": "procedural_rule",
+      "statement": "Housing allowance is tax-free income.",
+      "quote": "Asumistuki on verotonta tuloa.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F61",
+      "kind": "output",
+      "statement": "A retroactive payment usually appears on the account two working days after payment.",
+      "quote": "Jos sinulle maksetaan asumistukea takautuvasti, tuki näkyy tililläsi yleensä kahden arkipäivän kuluttua maksamisesta.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F62",
+      "kind": "deadline",
+      "statement": "Housing allowance can be paid retroactively for 1 month.",
+      "quote": "Asumistukea voi saada takautuvasti 1 kuukaudelta.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F63",
+      "kind": "procedural_rule",
+      "statement": "Kela can pay the housing allowance to the landlord's account if the recipient has given permission.",
+      "quote": "Voimme maksaa asumistuen vuokranantajasi tilille, jos olet antanut siihen luvan.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F64",
+      "kind": "exception",
+      "statement": "Kela can pay the housing allowance directly to the landlord if rent has been partly or wholly unpaid for 2 consecutive months.",
+      "quote": "Voimme maksaa asumistuen suoraan vuokranantajalle myös silloin, jos vuokra on jäänyt osittain tai kokonaan maksamatta 2 peräkkäisenä kuukautena.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F65",
+      "kind": "procedural_rule",
+      "statement": "In the unpaid-rent situation, Kela contacts the recipient before paying the allowance to the landlord.",
+      "quote": "Tällaisessa tilanteessa otamme sinuun yhteyttä ennen tuen maksamista.",
+      "locator": "H3: Asumistuen maksaminen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F66",
+      "kind": "channel",
+      "statement": "General housing allowance is applied for in OmaKela.",
+      "quote": "Hae yleistä asumistukea OmaKelassa.",
+      "locator": "H2: Näin haet yleistä asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F67",
+      "kind": "channel",
+      "statement": "Attachments are sent in OmaKela; non-electronic attachments can be photographed.",
+      "quote": "Lähetä liitteet OmaKelassa. Jos liitteet eivät ole sähköisessä muodossa, ota niistä kuvat.",
+      "locator": "H2: Näin haet yleistä asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F68",
+      "kind": "input",
+      "statement": "The applicant must attach a copy of the signed written lease agreement if Kela does not receive it directly from the landlord.",
+      "quote": "Liitä hakemukseesi kopio allekirjoitetusta kirjallisesta vuokrasopimuksesta, jos Kela ei saa sitä suoraan vuokranantajaltasi.",
+      "locator": "H4: Vuokrasopimus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F69",
+      "kind": "data_source",
+      "statement": "Kela receives lease agreements directly from certain listed landlords.",
+      "quote": "Katso vuokranantajat, joilta Kela saa vuokrasopimuksen.",
+      "locator": "H4: Vuokrasopimus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F70",
+      "kind": "input",
+      "statement": "An applicant representing a flatmate household must attach form AT 5 (Yhteisöruokakunnan valtuutus) to the application.",
+      "quote": "Jos kuulut samaan ruokakuntaan kämppäkaverisi kanssa ja edustat ruokakuntaa, liitä hakemukseen lomake Yhteisöruokakunnan valtuutus AT 5 (pdf).",
+      "locator": "H4: Edustatko ruokakuntaa?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F71",
+      "kind": "input",
+      "statement": "When applying for the first time after moving to Finland and the right to Kela benefits of the applicant or a household member has not yet been determined, the applicant must submit a notification of moving to Finland in OmaKela or on form Y 77.",
+      "quote": "Jos haet asumistukea ensimmäistä kertaa Suomeen muuton jälkeen eikä sinun tai ruokakuntasi jäsenen oikeutta Kelan tukiin ole vielä selvitetty, tee ilmoitus Suomeen muutosta OmaKelassa tai lomakkeella Ilmoitus Suomeen muutosta Y 77 (pdf).",
+      "locator": "H4: Oletko muuttanut Suomeen?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F72",
+      "kind": "input",
+      "statement": "A move abroad or stay abroad must be reported in OmaKela or on form Y 38.",
+      "quote": "Ilmoita muutosta ulkomaille tai oleskelusta ulkomailla OmaKelassa tai lomakkeella Muutto ulkomaille tai työskentely ulkomailla Y 38 (pdf).",
+      "locator": "H4: Oletko muuttanut ulkomaille?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F73",
+      "kind": "channel",
+      "statement": "The application and attachments are sent online.",
+      "quote": "Lähetä hakemus ja liitteet verkossa.",
+      "locator": "H2: Hae asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F74",
+      "kind": "output",
+      "statement": "In OmaKela the applicant can see whether the application has been processed.",
+      "quote": "OmaKelassa näet, onko hakemuksesi käsitelty.",
+      "locator": "H2: Hae asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F75",
+      "kind": "output",
+      "statement": "In OmaKela the applicant can see how much allowance they get and when it is paid.",
+      "quote": "Näet myös, kuinka paljon saat tukea ja milloin se maksetaan.",
+      "locator": "H2: Hae asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F76",
+      "kind": "output",
+      "statement": "If attachments are missing from the application, the applicant receives a reminder in OmaKela.",
+      "quote": "Jos hakemuksestasi puuttuu liitteitä, saat niistä muistutuksen OmaKelaan.",
+      "locator": "H2: Hae asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F77",
+      "kind": "procedural_rule",
+      "statement": "In OmaKela the applicant can consent to Kela sending them messages, which speeds up handling.",
+      "quote": "OmaKelassa voit myös antaa luvan siihen, että Kela saa lähettää sinulle viestejä. Näin nopeutat asioidesi hoitoa.",
+      "locator": "H2: Hae asumistukea"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F78",
+      "kind": "exception",
+      "statement": "OmaKela may erroneously show a review application instead of a new application; a new general housing allowance can nevertheless be applied for using the review application.",
+      "quote": "OmaKelassa voi näkyä uuden yleisen asumistuen hakemuksen sijaan virheellisesti tarkistushakemus. Voit kuitenkin hakea uutta yleistä asumistukea tarkistushakemuksella.",
+      "locator": "H3: OmaKelassa voi näkyä uuden hakemuksen sijaan tarkistushakemus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F79",
+      "kind": "procedural_rule",
+      "statement": "Kela processes an application submitted via the erroneous review application in the normal way and the applicant need not contact customer service.",
+      "quote": "Käsittelemme hakemuksesi tavalliseen tapaan, eikä sinun tarvitse ottaa yhteyttä asiakaspalveluun.",
+      "locator": "H3: OmaKelassa voi näkyä uuden hakemuksen sijaan tarkistushakemus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F80",
+      "kind": "channel",
+      "statement": "If the citizen cannot use OmaKela, they apply using paper form AT 1 (Yleinen asumistuki).",
+      "quote": "Hae tukea lomakkeella Yleinen asumistuki AT 1 (pdf).",
+      "locator": "H3: Jos et voi käyttää OmaKelaa, postita hakemus Kelaan"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F81",
+      "kind": "step",
+      "statement": "The applicant saves the blank form to their device and should not fill it directly in the browser, as some data may not be saved.",
+      "quote": "Tallenna tyhjä lomake laitteellesi. Älä täytä lomaketta suoraan selaimessa, koska silloin osa tiedoista voi jäädä tallentumatta.",
+      "locator": "H3: Jos et voi käyttää OmaKelaa, postita hakemus Kelaan"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F82",
+      "kind": "step",
+      "statement": "The applicant fills in, prints and signs the paper form.",
+      "quote": "Täytä lomake ja tulosta se. Allekirjoita lomake.",
+      "locator": "H3: Jos et voi käyttää OmaKelaa, postita hakemus Kelaan"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F83",
+      "kind": "channel",
+      "statement": "The paper form and attachments are mailed to Kela, PL 10, 00056 KELA.",
+      "quote": "Lähetä lomake ja liitteet osoitteeseen Kela, PL 10, 00056 KELA.",
+      "locator": "H3: Jos et voi käyttää OmaKelaa, postita hakemus Kelaan"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F84",
+      "kind": "procedural_rule",
+      "statement": "Kela always grants housing allowance from the 1st day of a month; e.g. if the lease takes effect on 15 March, allowance starts on 1 April.",
+      "quote": "Myönnämme asumistuen aina kuukauden 1. päivästä alkaen. Jos esimerkiksi vuokrasopimuksesi tulee voimaan 15.3., alat saada tukea 1.4.",
+      "locator": "H3: Hakuaika"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F85",
+      "kind": "deadline",
+      "statement": "Housing allowance can be granted retroactively for at most 1 month; to get allowance from the start of January, the application must be at Kela by the last day of February.",
+      "quote": "Voit saada asumistukea takautuvasti enintään 1 kuukaudelta. Jos haluat saada tukea esimerkiksi tammikuun alusta alkaen, hakemuksesi täytyy olla Kelassa viimeistään helmikuun viimeisenä päivänä.",
+      "locator": "H3: Hakuaika"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F86",
+      "kind": "data_source",
+      "statement": "Kela obtains the applicant's wage income data from the Incomes Register and uses it when processing the application.",
+      "quote": "Saamme tiedot palkkatuloistasi tulorekisteristä, ja hyödynnämme tietoja hakemuksesi käsittelyssä.",
+      "locator": "H3: Hakuaika"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F87",
+      "kind": "output",
+      "statement": "Kela requests additional information from the applicant when necessary.",
+      "quote": "Tarvittaessa pyydämme sinulta lisätietoja.",
+      "locator": "H3: Hakuaika"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F88",
+      "kind": "data_source",
+      "statement": "Kela receives lease agreement data directly online from some landlords.",
+      "quote": "Saamme osalta vuokranantajista vuokrasopimustiedot suoraan verkossa.",
+      "locator": "H3: Vuokranantajat, joilta Kela saa vuokrasopimuksen verkossa"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F89",
+      "kind": "procedural_rule",
+      "statement": "If the landlord is on Kela's list, the applicant does not need to send the lease agreement or a certificate of the rent amount.",
+      "quote": "Sinun ei tarvitse lähettää meille vuokrasopimusta ja todistusta vuokran määrästä, jos vuokranantajasi on alla olevalla listalla.",
+      "locator": "H3: Vuokranantajat, joilta Kela saa vuokrasopimuksen verkossa"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F90",
+      "kind": "input",
+      "statement": "If the landlord is not on the list, the applicant must send the lease agreement as an attachment to the application.",
+      "quote": "Jos vuokranantajaasi ei löydy listasta, lähetä vuokrasopimus hakemuksen liitteenä.",
+      "locator": "H3: Vuokranantajat, joilta Kela saa vuokrasopimuksen verkossa"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F91",
+      "kind": "procedural_rule",
+      "statement": "The lease agreement must always be sent if the dwelling is rented from a private landlord.",
+      "quote": "Vuokrasopimus täytyy lähettää aina, jos asunto on vuokrattu yksityiseltä vuokranantajalta.",
+      "locator": "H3: Vuokranantajat, joilta Kela saa vuokrasopimuksen verkossa"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F92",
+      "kind": "actor",
+      "statement": "Landlords on the list from which Kela receives leases online include, for example, SATO Oyj and Helsingin kaupungin vuokra-asunnot HEKA.",
+      "quote": "Helsingin kaupungin vuokra-asunnot HEKA",
+      "locator": "H3: Vuokranantajat, joilta Kela saa vuokrasopimuksen verkossa"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F93",
+      "kind": "procedural_rule",
+      "statement": "A recipient must notify Kela if their or their household's income, housing costs or other circumstances change.",
+      "quote": "Jos saat asumistukea ja sinun tai ruokakuntasi tulot, asumismenot tai muut olosuhteet muuttuvat, sinun täytyy ilmoittaa siitä meille.",
+      "locator": "H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F94",
+      "kind": "procedural_rule",
+      "statement": "Only the person who applied for housing allowance for the household can report changes.",
+      "quote": "Muutoksista voi ilmoittaa vain se henkilö, joka on hakenut asumistukea ruokakunnalle.",
+      "locator": "H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F95",
+      "kind": "channel",
+      "statement": "Changes can be reported in OmaKela, or by mail if OmaKela cannot be used.",
+      "quote": "Voit ilmoittaa muutoksista OmaKelassa. Jos et voi käyttää OmaKelaa, postita hakemus Kelaan.",
+      "locator": "H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F96",
+      "kind": "procedural_rule",
+      "statement": "If changes are not reported and too much allowance is paid, Kela recovers the overpayment later.",
+      "quote": "Jos et ilmoita muutoksista, sinulle voidaan maksaa liikaa tukea. Silloin joudumme perimään tukea myöhemmin takaisin.",
+      "locator": "H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F97",
+      "kind": "procedural_rule",
+      "statement": "Overpaid allowance is recovered primarily from the person who applied for it.",
+      "quote": "Tuki peritään ensisijaisesti siltä henkilöltä, joka tuen on hakenut.",
+      "locator": "H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F98",
+      "kind": "procedural_rule",
+      "statement": "If necessary, Kela can also recover the overpayment from another household member who was an adult when the overpayment arose.",
+      "quote": "Tarvittaessa voimme periä liikamaksun takaisin myös muulta ruokakuntaan kuuluneelta henkilöltä, joka on ollut täysi-ikäinen silloin kun liikamaksu syntyi.",
+      "locator": "H2: Ilmoita muutoksista, jotka vaikuttavat asumistukeen"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F99",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if their or their household's gross income rises by at least 400 euros per month.",
+      "quote": "Ilmoita meille, jos sinun tai ruokakuntasi bruttotulot ... nousevat vähintään 400 e/kk",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F100",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if their or their household's gross income falls by at least 200 euros per month.",
+      "quote": "laskevat vähintään 200 e/kk.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F101",
+      "kind": "procedural_rule",
+      "statement": "When income changes because work starts on 1 February, Kela reviews the allowance from 1 March and the amount may change.",
+      "quote": "Aino saa asumistukea ja aloittaa työt 1.2. Tällöin ruokakunnan tulot muuttuvat. Kela tarkistaa tuen 1.3.alkaen, ja asumistuen määrä voi muuttua.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F102",
+      "kind": "procedural_rule",
+      "statement": "If work starts on 4 February, Kela reviews the allowance from 1 April.",
+      "quote": "Jos Ainon työt alkavat 4.2., Kela tarkistaa tuen 1.4. alkaen.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F103",
+      "kind": "calculation",
+      "statement": "Kela calculates an average income if income does not stay the same over 3 months.",
+      "quote": "Lue, miten laskemme sinulle keskiarvotulon, jos tulosi eivät pysy samanlaisina 3 kuukauden ajan.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F104",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if they or their household move to a new dwelling.",
+      "quote": "Ilmoita meille, jos sinä muutat tai ruokakuntasi muuttaa uuteen asuntoon.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F105",
+      "kind": "procedural_rule",
+      "statement": "If a household moves on 4 June, the new lease takes effect on 1 June and the full month's rent is paid for the new dwelling, Kela reviews the allowance from 1 June.",
+      "quote": "Ruokakunta saa asumistukea ja muuttaa uuteen asuntoon 4.6. Uusi vuokrasopimus tulee voimaan 1.6., ja ruokakunta maksaa koko kuukauden vuokran uudesta asunnosta. Kela tarkistaa tuen 1.6. alkaen, ja asumistuen määrä voi muuttua.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F106",
+      "kind": "procedural_rule",
+      "statement": "If the new lease takes effect on 2 June and the household pays a full month's rent for the new dwelling, Kela reviews the allowance from 1 July.",
+      "quote": "Jos uusi vuokrasopimus tulee voimaan 2.6. ja ruokakunta maksaa koko kuukauden vuokran uudesta asunnosta, Kela tarkistaa tuen 1.7. alkaen.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F107",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the household's rent or maintenance charge decreases or increases by at least 50 euros per month.",
+      "quote": "ruokakuntasi vuokran tai käyttövastikkeen määrä pienenee tai nousee vähintään 50 e/kk",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F108",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if a household member moves abroad or stays abroad.",
+      "quote": "ruokakuntaasi kuuluva henkilö muuttaa ulkomaille tai oleskelee ulkomailla",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F109",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the form of tenure of the dwelling changes, e.g. they buy the dwelling they rent.",
+      "quote": "asunnon hallintamuoto muuttuu, esimerkiksi ostat vuokraamasi asunnon.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F110",
+      "kind": "procedural_rule",
+      "statement": "When housing costs change, Kela reviews the allowance from the start of the month for which the changed costs are paid for the whole month (e.g. costs 50 €/month lower from 1 January → reviewed from 1 January).",
+      "quote": "Kela tarkistaa tuen sen kuukauden alusta, josta muuttuneita asumismenoja maksetaan koko kuukaudelta. Ruokakunnan asumistuki tarkistetaan siis 1.1. alkaen, ja asumistuen määrä voi muuttua.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F111",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the number of household members or the household composition changes.",
+      "quote": "ruokakuntasi jäsenmäärä tai kokoonpano muuttuu",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F112",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if the household takes a subtenant or a subtenant's tenancy ends.",
+      "quote": "ruokakuntasi ottaa alivuokralaisen tai alivuokralaisen vuokrasuhde päättyy",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F113",
+      "kind": "procedural_rule",
+      "statement": "The recipient must report if they get married.",
+      "quote": "menet naimisiin.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F114",
+      "kind": "procedural_rule",
+      "statement": "If the number of residents changes on 25 May, Kela reviews the allowance from 1 June.",
+      "quote": "Ruokakunta saa asumistukea, ja asukkaiden lukumäärä muuttuu 25.5. Kela tarkistaa tuen 1.6. alkaen, ja asumistuen määrä voi muuttua.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F115",
+      "kind": "procedural_rule",
+      "statement": "If the number of residents changes on 1 June, Kela reviews the allowance from 1 June.",
+      "quote": "Jos asukkaiden lukumäärä muuttuu 1.6., Kela tarkistaa tuen 1.6. alkaen.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F116",
+      "kind": "procedural_rule",
+      "statement": "A recipient living alone must report if they are away from their dwelling for more than 3 months.",
+      "quote": "Ilmoita meille, jos asut yksin ja olet poissa asunnostasi yli 3 kuukautta.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F117",
+      "kind": "deadline",
+      "statement": "If the recipient (living alone) is not in their dwelling for more than 3 months, their right to housing allowance ends.",
+      "quote": "Jos et ole asunnossasi yli 3 kuukauteen, oikeutesi asumistukeen päättyy.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F118",
+      "kind": "step",
+      "statement": "A recipient who no longer needs housing allowance notifies Kela of termination in OmaKela or by sending a message in OmaKela.",
+      "quote": "Jos et enää tarvitse asumistukea, ilmoita meille tuen lakkauttamisesta. Tee ilmoitus OmaKelassa tai pyydä lakkauttamista lähettämällä viesti OmaKelassa.",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F119",
+      "kind": "channel",
+      "statement": "If OmaKela cannot be used, termination can be reported on form AT 6 (Asumistuen lakkautus).",
+      "quote": "Jos et voi käyttää OmaKelaa, voit ilmoittaa lakkauttamisesta lomakkeella Asumistuen lakkautus AT 6 (pdf).",
+      "locator": "H3: Ilmoita näistä muutoksista"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F120",
+      "kind": "step",
+      "statement": "Kela reviews the amount of general housing allowance at least once a year, even if the household's circumstances have not changed (annual review).",
+      "quote": "Tarkistamme asumistukesi määrän vähintään vuoden välein, vaikka ruokakuntasi olosuhteissa ei tapahtuisi muutoksia.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F121",
+      "kind": "deadline",
+      "statement": "The housing allowance amount must be reviewed at intervals of at most one year.",
+      "quote": "Tarkistamme asumistukesi määrän vähintään vuoden välein",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F122",
+      "kind": "channel",
+      "statement": "The citizen can see the date of their next annual review in OmaKela.",
+      "quote": "Näet seuraavan vuositarkistuksesi ajankohdan OmaKelasta.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F123",
+      "kind": "step",
+      "statement": "Kela sends the citizen instructions for the annual review of the housing allowance.",
+      "quote": "Lähetämme sinulle ohjeet asumistuen vuositarkistusta varten noin 2 kuukautta ennen tarkistusta.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F124",
+      "kind": "deadline",
+      "statement": "Kela sends the annual review instructions approximately 2 months before the review date.",
+      "quote": "noin 2 kuukautta ennen tarkistusta",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F125",
+      "kind": "channel",
+      "statement": "The annual review instructions are delivered as a message to OmaKela.",
+      "quote": "Saat viestin OmaKelaan.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F126",
+      "kind": "step",
+      "statement": "The citizen submits the information needed for the annual review to Kela.",
+      "quote": "Toimita meille vuositarkistuksessa tarvittavat tiedot OmaKelassa.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F127",
+      "kind": "channel",
+      "statement": "The information needed for the annual review is submitted via OmaKela.",
+      "quote": "Toimita meille vuositarkistuksessa tarvittavat tiedot OmaKelassa.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F128",
+      "kind": "channel",
+      "statement": "If the citizen cannot use OmaKela, they can send the annual review application to Kela by post.",
+      "quote": "Jos et voi käyttää OmaKelaa, postita hakemus Kelaan.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F129",
+      "kind": "procedural_rule",
+      "statement": "If the citizen does not submit the annual review application in time before the review date, Kela has to terminate the housing allowance.",
+      "quote": "Jos et tee hakemusta ajoissa ennen tarkistusajankohtaa, joudumme lakkauttamaan asumistukesi.",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F130",
+      "kind": "deadline",
+      "statement": "The annual review application must be submitted before the review date.",
+      "quote": "Jos et tee hakemusta ajoissa ennen tarkistusajankohtaa",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F131",
+      "kind": "output",
+      "statement": "Failure to apply in time for the annual review results in termination of the housing allowance.",
+      "quote": "joudumme lakkauttamaan asumistukesi",
+      "locator": "H2: Vuositarkistus"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F132",
+      "kind": "channel",
+      "statement": "Citizens with questions can ask a chatbot or call Kela customer service.",
+      "quote": "Kysy chattirobotilta tai soita Kelan asiakaspalveluun.",
+      "locator": "H2: Jäikö jotain epäselväksi?"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F133",
+      "kind": "channel",
+      "statement": "Kela has introduced a new online application with which general support (yleistuki) and general housing allowance can be applied for at the same time.",
+      "quote": "Kela on ottanut käyttöön uuden verkkohakemuksen, jolla voit hakea yleistukea ja yleistä asumistukea samalla kertaa.",
+      "locator": "H2: Yleistukea ja yleistä asumistukea voi nyt hakea samalla hakemuksella"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F134",
+      "kind": "procedural_rule",
+      "statement": "The same combined online application can also be used to report changes related to general support and general housing allowance.",
+      "quote": "Hakemuksella voit myös ilmoittaa näihin tukiin liittyvistä muutoksista.",
+      "locator": "H2: Yleistukea ja yleistä asumistukea voi nyt hakea samalla hakemuksella"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F135",
+      "kind": "actor",
+      "statement": "Kela is the agency that reviews, administers and may terminate the general housing allowance.",
+      "quote": "Kela on ottanut käyttöön uuden verkkohakemuksen",
+      "locator": "H2: Yleistukea ja yleistä asumistukea voi nyt hakea samalla hakemuksella"
+    },
+    {
+      "id": "kela-fi-yleinen-asumistuki:F136",
+      "kind": "actor",
+      "statement": "The household (ruokakunta) is the unit whose circumstances are considered for the housing allowance.",
+      "quote": "vaikka ruokakuntasi olosuhteissa ei tapahtuisi muutoksia",
+      "locator": "H2: Vuositarkistus"
+    }
+  ]
+}

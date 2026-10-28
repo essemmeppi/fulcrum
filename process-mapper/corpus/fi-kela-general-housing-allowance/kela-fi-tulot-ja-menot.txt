@@ -1,0 +1,393 @@
+
+[H1: Miten tulot ja asumismenot vaikuttavat yleiseen asumistukeen?]
+
+[H2: Tällä sivulla]
+Nämä asiat vaikuttavat asumistukeesi
+Miten asumistuki lasketaan?
+Tulot ja omaisuus
+Tulorajat
+Asumismenot, joihin voit saada asumistukea
+Asumistuen kuntakohtaiset ylärajat (enimmäisasumismenot)
+
+[H2: Nämä asiat vaikuttavat yleiseen asumistukeen]
+Ruokakunnan tulot ja omaisuus vaikuttavat asumistukeen
+
+ Jos tulot ylittävät tulorajan, et voi saada asumistukea lainkaan. Myös talletukset ja sijoitukset tai esimerkiksi asunto-osakkeet ja kiinteistöt voivat vaikuttaa oikeuteen saada asumistukea. 
+ Lue, miten tulot ja omaisuus huomioidaan asumistuessa, ja tarkista kotikuntasi tulorajat.
+Asumistukea ei myönnetä kaikkiin asumisen menoihin
+ Eri asumismuodoille on määritelty menot, joihin asumistukea voi saada. Näitä kutsutaan hyväksyttäviksi asumismenoiksi. Asuntosi koko ei vaikuta tukeen. 
+ Lue lisää asumismenoista, joihin voit saada asumistukea.
+Asumismenoille on kuntakohtaiset ylärajat (enimmäisasumismenot)
+ Asumismenojen määrille on kuntakohtaiset ylärajat. Näitä rajoja kutsutaan myös enimmäisasumismenoiksi. Voit saada asumistukea enintään enimmäisasumismenojen mukaan.
+ Tarkista, kuinka paljon kotikunnassasi voidaan enimmillään maksaa asumistukea.
+Asumismenoistasi vähennetään perusomavastuu
+ Asumistuen perusomavastuu on summa, joka vähennetään hyväksyttävistä asumismenoista. Jos tulosi ovat hyvin pienet, sinulla ei ole perusomavastuuta lainkaan. 
+ Lue, miten perusomavastuu lasketaan.
+
+[H3: Oletko opiskelija?]
+Jos opiskelet, et yleensä voi saada yleistä asumistukea. Suurin osa opiskelijoista voi saada asumisensa tueksi opintotuen asumislisää.
+Voit kuitenkin saada yleistä asumistukea esimerkiksi seuraavissa tilanteissa:
+Asut lapsesi tai puolisosi lapsen kanssa.
+Saat opintojesi ajalta muuta tukea kuin opintotukea, esimerkiksi työttömyystukea, kuntoutusrahaa tai sairauspäivärahaa.
+Olet keskeyttänyt opintosi tai käyttänyt loppuun opintotukikuukautesi.
+Opintosi eivät ole edistyneet riittävästi, ja olemme lakkauttaneet opintotukesi.
+
+[H3: Oletko eläkkeensaaja?]
+Voit saada eläkkeensaajan asumistukea, jos asut vakinaisesti Suomessa, olet pienituloinen ja saat eläkettä, joka oikeuttaa eläkkeensaajan asumistukeen.
+
+[H2: Miten asumistuki lasketaan?]
+Yleinen asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu).
+Koska asumistuen määrään vaikuttavat monet asiat, voit helpoiten arvioida asumistukesi määrän laskurilla.
+
+[H2: Arvioi määrä]
+Laske asumistuen määrä laskurilla. Laskurin antama tulos on arvio.
+
+[H3: Esimerkki asumistuen laskemisesta] [#_R_jl2msmel6_]
+Eino asuu puolisonsa Elisan kanssa Turussa vuokra-asunnossa. Heidän yhteenlasketut tulonsa ovat 1 800 euroa. Turussa kahden aikuisen muodostaman ruokakunnan tuloraja on 2 116 e/kk. Einon ja Elisan tulot eivät ylitä tulorajaa, joten he voivat hakea asumistukea.
+Kela huomioi asumismenoissa esimerkiksi vuokra- ja vesikulut. Einolla ja Elisalla tällaisia asumistuessa hyväksyttäviä asumismenoja on yhteensä 950 euroa. Turussa kahden aikuisen asumismenoiksi hyväksytään kuitenkin enintään 652 e/kk, joten heille maksettava asumistuki lasketaan tämän summan mukaan.
+Einon ja Elisan tuloista laskettu perusomavastuun määrä on 472,50 euroa.
+Lasketaan asumistuen määrä:
+0,7 x (652 euroa – 472,50 euroa) = 125,65 euroa.
+Eino ja Elisa saavat asumistukea 125,65 euroa.
+Ahvenanmaalla asuvien yleinen asumistuki lasketaan eri tavalla kuin muualla Suomessa asuvien yleinen asumistuki. Ahvenanmaalla asumistuki on enintään 80 % hyväksyttävistä asumismenoista. Asumistuen määrä lasketaan kaavalla 0,8 x (hyväksyttävät asumismenot – perusomavastuu).
+Perusomavastuun määrä lasketaan alla olevalla kaavalla, jossa
+T = ruokakunnan yhteenlasketut tulot
+A = aikuisten lukumäärä
+L = lasten lukumäärä
+0,42 x [T - (667 + 111 x A + 246 x L)]
+Ahvenanmaalaiset opiskelijat eivät voi saada yleistä asumistukea, jos he asuvat vuokralla. Tuen saamiseen ei vaikuta se, opiskeleeko opiskelija Ahvenanmaalla vai Manner-Suomessa.
+
+[H2: Tulot ja omaisuus]
+Asumistukeesi vaikuttavat ruokakuntasi tulot ja omaisuus. Tarvittaessa laskemme tuloistasi keskiarvotulon. Asumistukeen vaikuttavaa omaisuutta ovat esimerkiksi pankkitalletukset, osakkeet ja sijoitukset.
+Asumistuen määrä lasketaan kuukausitulojesi mukaan. Laskemme asumistukeen vaikuttavien tulojesi määrän joko jatkuvana tulona tai keskiarvotulona. Otamme huomioon ruokakunnan ansio- ja pääomatulot ja monet Kelan tuista.
+Tulosi vaikuttavat tukeen sen mukaan, miltä ajalta olet ne ansainnut. Tulojen maksupäivällä ei siis ole merkitystä. Jos esimerkiksi haet asumistukea syyskuun alusta alkaen, elokuussa ansaitsemiasi tuloja ei huomioida asumistuessa.
+Tulot huomioidaan aina bruttotuloina.
+
+[H4: Jos tulosi pysyvät samanlaisina 3 kuukautta]
+Jos tulosi pysyvät samanlaisina vähintään 3 kuukauden ajan siitä, kun asumistuki on myönnetty tai tarkistettu, laskemme asumistuen määrän näiden tulojen mukaan. Tätä kutsutaan jatkuvaksi tuloksi.
+
+[H4: Jos tulosi eivät pysy samanlaisina 3:a kuukautta]
+Jos tulosi eivät pysy samanlaisina 3 kuukauden ajan siitä, kun asumistuki on myönnetty tai tarkistettu, arvioimme sinulle keskiarvotulon.
+Keskiarvotulossa otamme huomioon esimerkiksi sen, että teet keikkatöitä, opiskelet tai olet välillä työttömänä. Sen sijaan tulojen vaihtelu esimerkiksi työaikojen tai lisien vuoksi ei tarkoita sitä, että tulonlähde muuttuu, ja siksi tällaiset tulot katsotaan jatkuviksi tuloiksi.
+Keskiarvotulo saadaan laskemalla yhteen kaikki tulot, joita sinun arvioidaan saavan seuraavan 12 kuukauden aikana. Tämä summa jaetaan 12:lla, ja näin muodostuu kuukausittainen keskiarvotulosi, jonka perusteella asumistuki määräytyy.
+Arvioimme keskiarvotulon vuodeksi eteenpäin, sillä asumistuki myönnetään yleensä toistaiseksi ja tarkistetaan vuoden välein.
+Voit arvioida myös laskurin avulla, miten tulosi vaikuttavat asumistukesi määrään.
+
+[H4: Jos tulosi muuttuvat] [#_R_c793esmel6_]
+Ilmoita meille, jos ruokakuntasi tulot nousevat vähintään 400 e/kk tai laskevat 200 e/kk. Ilmoita muutoksista OmaKelassa tai lomakkeella Yleinen asumistuki AT 1 (pdf).
+Lue, mistä muutoksista sinun täytyy ilmoittaa meille.
+Yleisen asumistuen määrään vaikuttavat ruokakunnan kaikkien asukkaiden yhteenlasketut ansio- ja pääomatulot. Ansiotuloja ovat palkkatulot ja yrittäjän tulot.
+Tulona otetaan huomioon sekä veronalaiset että verottomat tulot. Veronalaiset tulot huomioidaan bruttotuloina.
+Alaikäisen tulot otetaan huomioon kuitenkin vain, jos alaikäinen hakee tukea yksin tai puolisonsa kanssa.
+
+[H4: Nämä tulot vaikuttavat asumistukeen]
+Asumistukeen vaikuttavat palkkatulot ja palkan lisäksi maksettavat tulot, esimerkiksi
+luontaisedut (muun muassa asunto-, auto- ja ravintoetu)
+ylityökorvaukset
+vuorotyölisät
+lomarahat.
+Myös yrittäjän tulot vaikuttavat asumistukeen. Arvioimme yrittäjän tulot pääsääntöisesti YEL- tai MYEL-vakuutuksen (tyoelake.fi) työtulon perusteella.
+Asumistukeen vaikuttavat myös pääomatulot, esimerkiksi
+osinkotulot ja talletusten korot
+ 
+ Ruokakunnan kunkin jäsenen arvo-osuustilillä olevien osakkeiden osinko- ja korkotulot otetaan tulona huomioon, jos ne ovat suuremmat kuin 12,02 e/kk.
+ Osakesäästötililtä nostettu tuotto otetaan tulona huomioon silloin, kun se on toistuvaa.
+luovutusvoitot
+ 
+ Toistuvat luovutusvoitot otetaan tulona huomioon.
+ Luovutustappioita ei vähennetä luovutusvoittojen määrästä.
+vuokratulot, esimerkiksi
+ 
+ asuinhuoneiston vuokratulot
+ liikehuoneiston vuokratulot
+ maanvuokratulot.
+Myös metsätalouden tulot vaikuttavat asumistukeen. Metsätalouden tulot lasketaan metsän keskimääräisen tuoton mukaan. Metsän todellista myyntituloa ei oteta huomioon.
+Lue, miten ruokakunnan omaisuus voi vaikuttaa asumistuen määrään.
+Yleisen asumistuen määrään vaikuttavat monet tuet, kuten yleistuki ja opintoraha. Tietyt tuet, kuten toimeentulotuki ja lapsilisä, eivät kuitenkaan vaikuta asumistukeen. Asumistukeen ei myöskään vaikuta opintolaina.
+Tuet otetaan huomioon bruttotuloina. Asumistukeen vaikuttavat ruokakunnan kaikkien asukkaiden saamat tuet.
+
+[H4: Esimerkiksi nämä tuet ja korvaukset vaikuttavat asumistukeen:]
+Työttömyystuet: yleistuki ja ansiosidonnainen työttömyyspäiväraha
+Sairausajan tuet ja kuntoutus: sairauspäiväraha, kuntoutusraha ja kuntoutustuki
+Opiskelijan tuet: opintoraha
+Lapsiperheiden tuet: raskaus- ja vanhempainraha, lasten kotihoidon tuki, osittainen hoitoraha, joustava hoitoraha ja yksityisenhoidon tuki (jos olet palkattu lastenhoitaja ja yksityisen hoidon tuki maksetaan sinulle)
+Eläkkeet: kansaneläke, työeläke, osittainen vanhuuseläke, leskeneläke, ulkomailta saatu eläke ja työkyvyttömyyseläke
+
+[H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:]
+Alle 16-vuotiaan vammaistuki
+16 vuotta täyttäneen vammaistuki
+Apurahat ja avustukset, jotka eivät liity toimeentulon turvaamiseen
+Eläkettä saavan hoitotuki
+Haittaraha
+Kansaneläkkeeseen maksettava lapsikorotus
+Koulumatkatuki
+Kulukorvaukset ja ylläpitokorvaukset
+Lapsen elatusapu ja elatustuki
+Lapseneläke
+Lapsilisä
+Omaishoidon tuen hoitopalkkio
+Opintolaina
+Opintotuen asumislisä
+Oppimateriaalilisä
+Opintorahan huoltajakorotus
+Perhehoidon kustannusten korvaukset
+Rintamalisä ja ylimääräinen rintamalisä
+Sotilasavustus
+Sotilasvammalain mukaiset korvaukset
+Toimeentulotuki
+Vian, vamman tai haitan perusteella maksettavat korvaukset
+Äitiysavustus
+Ruokakunnan omaisuus voi vaikuttaa asumistuen määrään. Alaikäisen omaisuus otetaan huomioon vain, jos alaikäinen hakee tukea yksin tai puolisonsa kanssa.
+Omaisuutesi vaikuttaa asumistukeen, jos
+asut yhden aikuisen ruokakunnassa ja sinulla on omaisuutta yli 10 000 euroa
+asut kahden tai useamman aikuisen ruokakunnassa ja ruokakunnallasi on omaisuutta yhteensä yli 20 000 euroa.
+Jos ruokakuntasi omaisuus ylittää 10 000 tai 20 000 euron rajan, otamme rajan ylittävästä osasta tuloksi huomioon 20 %.
+Jos ruokakunnallasi on omaisuutta 50 000 euroa tai enemmän, asumistukea ei makseta lainkaan. Omaisuudesta vähennetään kuitenkin ensin pitkäaikaiset velat kuten asunto- tai opintolaina.
+
+[H4: Esimerkki omaisuuden vaikutuksesta asumistukeen] [#_R_67c3esmel6_]
+Pekka asuu yksin vuokra-asunnossa. Hänellä on vakuutussijoitus, jonka arvo on 15 000 euroa. Koska Pekka asuu yksin, hänelle lasketaan tuloa omaisuudesta, joka ylittää 10 000 euroa (15 000 e – 10 000 e), eli 5 000 eurosta.
+Pekalle lasketaan 5 000 euron omaisuudesta tuloa 20 % eli 1 000 euroa. Pekan omaisuudesta yleiseen asumistukeen vaikuttaa siis 1 000 euroa vuodessa eli 83,33 euroa kuukaudessa. Lisäksi tulona otetaan huomioon Pekan ansio- ja pääomatulot.
+Yleiseen asumistukeen vaikuttava omaisuus
+Talletukset. Tilillä olevista talletuksista tehdään kuitenkin 2 000 euron käyttövaravähennys, joka ei vaikuta yleiseen asumistukeen. Vähennys on henkilökohtainen, eli se tehdään jokaisen ruokakunnan jäsenen tilitalletuksista.
+Kiinteistöt, ei kuitenkaan omassa käytössä oleva vapaa-ajan asunto
+Asunto-osakkeet
+Julkisesti noteeratut osakkeet ja sijoitusrahasto-osuudet
+Elinkeinotoiminnan ja maatalouden varat sekä osuudet yhtymien varoista
+Metsäomistukset
+Obligaatiot, joukkovelkakirjat ja muut vastaavat
+Vakuutussijoitukset
+Omaisuutena ei kuitenkaan oteta huomioon osuutta jakamattomasta kuolinpesästä, ASP-tilillä olevia talletuksia tai omaisuutta, johon ei ole hallintaoikeutta.
+
+[H2: Tulorajat]
+Asumistukeen vaikuttavat ruokakunnan yhteenlasketut tulot. Jos ruokakuntasi bruttotulot ovat suuremmat kuin alla esitetty tuloraja, et voi saada lainkaan asumistukea. Alaikäisen tulot otetaan huomioon vain silloin, kun alaikäinen hakee tukea yksin tai puolisonsa kanssa.
+Tulot on pyöristetty lähimpään euroon.
+Jos ruokakunnassa on
+1 aikuinen, tuloraja on 1 844 e/kk
+1 aikuinen + 1 lapsi, tuloraja on 2 630 e/kk
+1 aikuinen + 2 lasta, tuloraja on 3 348 e/kk
+1 aikuinen + 3 lasta, tuloraja on 3 982 e/kk
+1 aikuinen + 4 lasta, tuloraja on 4 574 e/kk.
+Jos ruokakunnassa on
+2 aikuista, tuloraja on 2 428 e/kk
+2 aikuista + 1 lapsi, tuloraja on 3 146 e/kk
+2 aikuista + 2 lasta, tuloraja on 3 780 e/kk
+2 aikuista + 3 lasta, tuloraja on 4 372 e/kk.
+Jos ruokakunnassa on
+3 aikuista, tuloraja on 2 944 e/kk
+3 aikuista + 1 lapsi, tuloraja on 3 578 e/kk
+3 aikuista + 2 lasta, tuloraja on 4 170 e/kk.
+​​​​​Jos ruokakunnassasi on enemmän kuin 5 henkilöä, yleisen asumistuen tulorajat ovat korkeammat kuin esimerkeissä. Voit arvioida tilannettasi asumistuen laskurilla.
+Tulot on pyöristetty lähimpään euroon.
+Jos ruokakunnassa on
+1 aikuinen, tuloraja on 1 612 e/kk
+1 aikuinen + 1 lapsi, tuloraja on 2 318 e/kk
+1 aikuinen + 2 lasta, tuloraja on 2 966 e/kk
+1 aikuinen + 3 lasta, tuloraja 3 568 e/kk
+1 aikuinen + 4 lasta, tuloraja on 4 132 e/kk.
+Jos ruokakunnassa on
+2 aikuista, tuloraja on 2 116 e/kk
+2 aikuista + 1 lapsi, tuloraja on 2 764 e/kk
+2 aikuista + 2 lasta, tuloraja on 3 366 e/kk
+2 aikuista + 3 lasta, tuloraja on 3930 e/kk.
+Jos ruokakunnassa on
+3 aikuista, tuloraja on 2 562 e/kk
+3 aikuista + 1 lapsi, tuloraja on 3 164 e/kk
+3 aikuista + 2 lasta, tuloraja on 3 728 e/kk.
+Jos ruokakunnassasi on enemmän kuin 5 henkilöä, yleisen asumistuen tulorajat ovat korkeammat kuin esimerkeissä. Voit arvioida tilannettasi asumistuen laskurilla.
+Tulot on pyöristetty lähimpään euroon.
+Jos ruokakunnassa on
+1 aikuinen, tuloraja on 1 506 e/kk
+1 aikuinen + 1 lapsi, tuloraja on 2 162 e/kk
+1 aikuinen + 2 lasta, tuloraja on 2 778 e/kk
+1 aikuinen + 3 lasta, tuloraja on 3 356 e/kk
+1 aikuinen + 4 lasta, tuloraja on 3 910 e/kk.
+Jos ruokakunnassa on
+2 aikuista, tuloraja on 1 960 e/kk
+2 aikuista + 1 lapsi, tuloraja on 2 576 e/kk
+2 aikuista + 2 lasta, tuloraja on 3 154 e/kk
+2 aikuista + 3 lasta, tuloraja on 3 708 e/kk.
+Jos ruokakunnassa on
+3 aikuista, tuloraja on 2 374 e/kk
+3 aikuista + 1 lapsi, tuloraja on 2 952 e/kk
+3 aikuista + 2 lasta, tuloraja on 3 506 e/kk.
+Jos ruokakunnassasi on enemmän kuin 5 henkilöä, yleisen asumistuen tulorajat ovat korkeammat kuin esimerkeissä. Voit arvioida tilannettasi yleisen asumistuen laskurilla.
+
+[H3: Jos tulosi muuttuvat] [#_R_14esmel6_]
+Ilmoita meille, jos ruokakuntasi tulot nousevat vähintään 400 e/kk tai laskevat 200 e/kk. Ilmoita muutoksista OmaKelassa tai lomakkeella Yleinen asumistuki AT 1 (pdf).
+
+[H2: Asumismenot, joihin voit saada asumistukea]
+Eri asumismuodoille on määritelty menot, joihin asumistukea voi saada. Näitä kutsutaan hyväksyttäviksi asumismenoiksi.
+Voit hakea asumistukea, jos asut vakinaisesti vuokra-asunnossa Suomessa. Jos haet tukea vuokra-asuntoon, sinulla täytyy olla kirjallinen vuokrasopimus.
+
+[H4: Mihin asumismenoihin voi saada tukea?]
+Tukea voi saada seuraaviin asumismenoihin:
+vuokra
+erikseen maksettavat vesimaksut ja lämmityskulut
+Voit saada asumistukea vuokran maksamiseen.
+Jos vuokraan sisältyy sähkö, vähennämme vuokrasta sähkön osuuden. Asumistukea ei voi saada sähkömaksuihin.
+Voit saada asumistukea vesimaksuihin, jos maksat niitä erikseen vuokran lisäksi. Vesimaksuksi hyväksytään 20 e/kk henkilöä kohti.
+Voit saada asumistukea lämmityskuluihin, jos maksat niitä erikseen vuokran lisäksi.
+Jos ruokakunnassa on 1 henkilö, lämmityskuluiksi hyväksytään 46 e/kk. Jos ruokakuntaan kuuluu useampi henkilö, lämmityskuluihin lisätään 16 e/kk jokaista seuraavaa henkilöä kohti.
+Tietyissä maakunnissa lämmityskuluiksi hyväksytään suurempi summa:
+Etelä-Savon, Pohjois-Savon ja Pohjois-Karjalan maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 48 e /kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.
+Pohjois-Pohjanmaan, Kainuun ja Lapin maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 50 e/kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.
+
+[H4: Mihin asumismenoihin ei voi saada tukea?]
+Asumistukea ei voi saada asumiseen liittyviin, erikseen maksettaviin maksuihin. Tällaisia ovat esimerkiksi
+sähkömaksu
+saunamaksu
+pesutupamaksu
+autopaikkamaksu
+internetliittymän maksu
+käyttö- tai kalustemaksu.
+Vain sinun tai ruokakuntasi jäsenen maksamat maksut voidaan hyväksyä asumismenoiksi. Esimerkiksi työnantajan tai yrityksen maksamaa osaa kuluista ei siis hyväksytä.
+Jos sinulla on alivuokralainen, asumistuessasi hyväksyttävistä asumismenoista vähennetään alivuokralaisen maksama vuokran määrä.
+
+[H4: Vuokravakuus] [#_R_a3l56smel6_]
+Kun muutat vuokra-asuntoon, sinulta vaaditaan yleensä muutaman kuukauden vuokran suuruinen vuokravakuus tai takuuvuokra. Jos tulosi ja varasi eivät riitä vuokravakuuden maksamiseen, voit hakea siihen Kelasta toimeentulotukea.
+Voit hakea asumistukea, jos asut asumisoikeusasunnossa Suomessa.
+
+[H4: Mihin asumismenoihin voi saada tukea?]
+Tukea voi saada seuraaviin asumismenoihin:
+käyttövastike
+erikseen maksettavat vesimaksut ja lämmityskulut
+Voit saada asumistukea käyttövastikkeen maksamiseen.
+Voit saada asumistukea vesimaksuihin, jos maksat niitä erikseen käyttövastikkeen lisäksi. Vesimaksuksi hyväksytään 20 e/kk henkilöä kohti.
+Voit saada asumistukea lämmityskuluihin, jos maksat niitä erikseen käyttövastikkeen lisäksi.
+Jos ruokakunnassa on 1 henkilö, lämmityskuluiksi hyväksytään 46 e/kk. Jos ruokakuntaan kuuluu useampi henkilö, lämmityskuluihin lisätään 16 e/kk jokaista seuraavaa henkilöä kohti.
+Tietyissä maakunnissa lämmityskuluiksi hyväksytään suurempi summa:
+Etelä-Savon, Pohjois-Savon ja Pohjois-Karjalan maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 48 e/kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.
+Pohjois-Pohjanmaan, Kainuun ja Lapin maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 50 e/kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.
+
+[H4: Mihin asumismenoihin ei voi saada tukea?]
+Asumistukea ei voi saada asumiseen liittyviin, erikseen maksettaviin maksuihin. Tällaisia ovat esimerkiksi
+asuntolainan korko
+sähkömaksu
+saunamaksu
+pesutupamaksu
+autopaikkamaksu
+internetliittymän maksu
+käyttö- tai kalustemaksu.
+Vain sinun tai ruokakuntasi jäsenen maksamat maksut voidaan hyväksyä asumismenoiksi. Esimerkiksi työnantajan tai yrityksen maksamaa osaa kuluista ei siis hyväksytä.
+Voit hakea asumistukea, jos asut osaomistusasunnossa Suomessa. Jos haet tukea osaomistusasuntoon, sinulla täytyy olla kirjallinen vuokrasopimus.
+
+[H4: Mihin asumismenoihin voi saada tukea?]
+Tukea voi saada seuraaviin asumismenoihin:
+vuokra
+erikseen maksettavat vesimaksut ja lämmityskulut
+Voit saada asumistukea vuokran maksamiseen.
+Voit saada asumistukea vesimaksuihin, jos maksat niitä erikseen vuokran lisäksi. Vesimaksuksi hyväksytään 20 e/kk henkilöä kohti.
+Voit saada asumistukea lämmityskuluihin, jos maksat niitä erikseen vuokran lisäksi.
+Jos ruokakunnassa on 1 henkilö, lämmityskuluiksi hyväksytään 46 e/kk. Jos ruokakuntaan kuuluu useampi henkilö, lämmityskuluihin lisätään 16 e/kk jokaista seuraavaa henkilöä kohti.
+Tietyissä maakunnissa lämmityskuluiksi hyväksytään suurempi summa:
+Etelä-Savon, Pohjois-Savon ja Pohjois-Karjalan maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 48 e /kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.
+Pohjois-Pohjanmaan, Kainuun ja Lapin maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 50 e /kk ja jokaista seuraavaa henkilöä kohti 17 e/kk.
+
+[H4: Mihin asumismenoihin ei voi saada tukea?]
+Asumistukea ei voi saada osaomistusasunnon osamaksua varten otetun lainan korkoihin.
+Asumistukea ei voi saada myöskään asumiseen liittyviin, erikseen maksettaviin maksuihin. Tällaisia ovat esimerkiksi
+sähkömaksu
+saunamaksu
+pesutupamaksu
+autopaikkamaksu
+internetliittymän maksu
+käyttö- tai kalustemaksu.
+Vain sinun tai ruokakuntasi jäsenen maksamat maksut voidaan hyväksyä asumismenoiksi. Esimerkiksi työnantajan tai yrityksen maksamaa osaa kuluista ei siis hyväksytä.
+Omistusasuntoon ei saa yleistä asumistukea.
+
+[H2: Asumistuen kuntakohtaiset ylärajat (enimmäisasumismenot)]
+Tarkista, kuinka paljon kotikunnassasi voidaan enimmillään maksaa asumistukea. Asumistuki on enintään 70 % hyväksyttävistä asumismenoista.
+Jos asumismenosi ovat suuremmat kuin enimmäisasumismenot, voit silti saada asumistukea. Saat tukea kuitenkin enintään enimmäisasumismenojen mukaan.
+
+[H4: Miten asumistuki lasketaan?] [#_R_1796esmel6_]
+Asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Esimerkiksi vuokra ja vesimaksu ovat hyväksyttäviä asumismenoja. Hyväksyttävistä asumismenoista vähennetään myös perusomavastuu.
+Yleisen asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu).
+Jos ruokakunnassa on
+1 henkilö, asumismenoiksi hyväksytään enintään 563 e/kk
+2 henkilöä, asumismenoiksi hyväksytään enintään 808 e/kk
+3 henkilöä, asumismenoiksi hyväksytään enintään 1 019 e/kk
+4 henkilöä, asumismenoiksi hyväksytään enintään 1 188 e/kk
+yli 4 henkilöä, asumismenoiksi hyväksytään enintään 1 188 e/kk + 148 e/kk jokaista seuraavaa henkilöä kohti.
+Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.
+
+[H4: Esimerkki asumismenojen ylärajasta] [#_R_5796esmel6_]
+Maija asuu yksin vuokra-asunnossa Helsingissä. Hän maksaa vuokraa 800 e/kk. Yksin asuvan asumismenoiksi voidaan Helsingissä hyväksyä enintään 563 e/kk.
+Maijan asumistuen määrä lasketaan siis 563 euron kuntakohtaisen ylärajan mukaan. Sitä ei lasketa Maijan vuokran eli 800 euron mukaan.
+
+[H4: Miten asumistuki lasketaan?] [#_R_17a6esmel6_]
+Asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Esimerkiksi vuokra ja vesimaksu ovat hyväksyttäviä asumismenoja. Hyväksyttävistä asumismenoista vähennetään myös perusomavastuu.
+Yleisen asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu).
+Jos ruokakunnassa on
+1 henkilö, asumismenoiksi hyväksytään enintään 447 e/kk
+2 henkilöä, asumismenoiksi hyväksytään enintään 652 e/kk
+3 henkilöä, asumismenoiksi hyväksytään enintään 828 e/kk
+4 henkilöä, asumismenoiksi hyväksytään enintään 981 e/kk
+yli 4 henkilöä, asumismenoiksi hyväksytään enintään 981 e/kk + 134 e/kk jokaista seuraavaa henkilöä kohti.
+Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.
+
+[H4: Esimerkki asumismenojen ylärajasta] [#_R_57a6esmel6_]
+Tommi ja Pauliina asuvat kahdestaan vuokra-asunnossa Turussa. He maksavat vuokraa 750 e/kk. Koska Tommi ja Pauliina ovat puolisoja, he kuuluvat samaan ruokakuntaan ja saavat yhteisen asumistuen.
+Kahden henkilön ruokakunnan asumismenoiksi voidaan Turussa hyväksyä enintään 652 e/kk. Tommin ja Pauliinan asumistuen määrä lasketaan siis 652 euron kuntakohtaisen ylärajan mukaan. Sitä ei lasketa heidän maksamansa vuokran eli 750 euron mukaan.
+
+[H4: Miten asumistuki lasketaan?] [#_R_17b6esmel6_]
+Asumistuki on enintään 70 % hyväksyttävistä asumismenoista. Esimerkiksi vuokra ja vesimaksu ovat hyväksyttäviä asumismenoja. Hyväksyttävistä asumismenoista vähennetään myös perusomavastuu.
+Yleisen asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu).
+Jos ruokakunnassa on
+1 henkilö, asumismenoiksi hyväksytään enintään 394 e/kk
+2 henkilöä, asumismenoiksi hyväksytään enintään 574 e/kk
+3 henkilöä, asumismenoiksi hyväksytään enintään 734 e/kk
+4 henkilöä, asumismenoiksi hyväksytään enintään 875 e/kk
+yli 4 henkilöä, asumismenoiksi hyväksytään enintään 875 e/kk + 129 e/kk jokaista seuraavaa henkilöä kohti.
+Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.
+
+[H4: Esimerkki asumismenojen ylärajasta] [#_R_57b6esmel6_]
+Pia ja Eero asuvat vuokra-asunnossa Porissa. He maksavat vuokraa 650 e/kk. Koska Pia ja Eero ovat puolisoja, he kuuluvat samaan ruokakuntaan ja saavat yhteisen asumistuen.
+Kahden henkilön ruokakunnan asumismenoiksi voidaan Porissa hyväksyä enintään 574 e/kk. Pian ja Eeron asumistuen määrä lasketaan siis 574 euron kuntakohtaisen ylärajan mukaan. Sitä ei lasketa heidän maksamansa vuokran eli 650 euron mukaan.
+
+[H4: Miten asumistuki lasketaan?] [#_R_17c6esmel6_]
+Asumistuki on enintään 80 % hyväksyttävistä asumismenoista. Esimerkiksi vuokra ja vesimaksu ovat hyväksyttäviä asumismenoja. Hyväksyttävistä asumismenoista vähennetään myös perusomavastuu.
+Yleisen asumistuen määrä lasketaan kaavalla 0,8 x (hyväksyttävät asumismenot – perusomavastuu).
+Jos ruokakunnassa on
+1 henkilö, asumismenoiksi hyväksytään enintään 470 e/kk
+2 henkilöä, asumismenoiksi hyväksytään enintään 687 e/kk
+3 henkilöä, asumismenoiksi hyväksytään enintään 871 e/kk
+4 henkilöä, asumismenoiksi hyväksytään enintään 1 032 e/kk
+yli 4 henkilöä, asumismenoiksi hyväksytään enintään 1 032 e/kk + 141 e/kk jokaista seuraavaa henkilöä kohti.
+Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan.
+
+[H2: Perusomavastuun laskukaava]
+Asumistuesta vähennetään perusomavastuu. Perusomavastuu lasketaan ruokakunnan bruttotuloista ja ruokakunnan aikuisten ja lasten määrästä.
+Perusomavastuun määrä lasketaan alla olevalla kaavalla, jossa
+T = ruokakunnan yhteenlasketut tulot
+A = aikuisten lukumäärä
+L = lasten lukumäärä
+Perusomavastuu = 0,5 x [T – (667 + 94 x A + 296 x L)]
+Täyteen asumistukeen oikeuttavat 667 euron tulot, joihin lisätään 94 euroa jokaista ruokakuntaan kuuluvaa aikuista ja 296 euroa jokaista ruokakuntaan kuuluvaa lasta kohti. Luvut ovat sidoksissa kansaneläkeindeksiin (Tietoa Kelasta -osio).
+Jos asut Ahvenanmaalla, perusomavastuu lasketaan eri kaavalla.
+
+[H2: Aiheesta selkokielellä ja viittomakielellä]
+Asumistuki selkokielellä
+Asumistuki viittomakielellä
+
+[H2: Jäikö jotain epäselväksi?]
+Kysy chattirobotilta tai soita Kelan asiakaspalveluun.
+
+[H2: Mitä muuta elämääsi kuuluu?]
+
+[H3: Oletko työtön?]
+Työttömänä voit saada peruspäivärahaa tai työmarkkinatukea.
+
+[H3: Jos toimeentulo on tiukoilla]
+Jos tulosi jäävät hyvin pieniksi, vaikka saat muita Kelan tukia, selvitä, voisitko saada toimeentulotukea.
+
+[H2: Ajankohtaista]
+
+[H2: Miten säästöt ja omaisuus vaikuttavat asumistukeen?]
+Voiko yleistä asumistukea saada, jos tilille on kertynyt säästöjä tai ASP-tilillä on talletuksia? Pienentääkö kaikki omaisuus tuen määrää? Kokosimme avuksesi tietoa siitä, miten omaisuus vaikuttaa asumistukeen.
+
+[H2: Saatko sekä asumistukea että yleistukea? Näin eri tulot vaikuttavat tukiisi]
+Jos saat Kelasta useita tukia, erilaiset tulot ja niiden muutokset voivat vaikuttaa tukiin eri tavoin. Lue, miten tulot vaikuttavat ja milloin tulojen muutoksista täytyy ilmoittaa Kelaan.
+
+[H2: Asumistuki-sivuilla]
+Yleinen asumistuki
+Miten tulot ja menot vaikuttavat?

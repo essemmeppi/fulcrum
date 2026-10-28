@@ -1,0 +1,70 @@
+# Public sources for one service. Layers: catalogue, legislation, guidance, forms, internal, statistics, appeals.
+service_id: fi-kela-general-housing-allowance
+service_name: General housing allowance (yleinen asumistuki)
+country: Finland
+authority: Kela (Kansaneläkelaitos — Social Insurance Institution of Finland)
+
+sources:
+  - id: ptv-kela-asuminen
+    title: "PTV service record: Kelan tuet asumiseen"
+    url: https://api.palvelutietovaranto.suomi.fi/api/v11/Service/579991be-f40f-4913-8130-0e07592b50c4
+    kind: ptv_api
+    layer: catalogue
+    publisher: Suomi.fi / DVV (Palvelutietovaranto)
+    language: fi/en
+
+  - id: law-938-2014
+    title: "Laki yleisestä asumistuesta 938/2014 (General Housing Allowance Act), Finlex open-data consolidated text — consolidation stops at amendment 12/2017; 2024–25 parameter changes are not in it"
+    url: https://opendata.finlex.fi/finlex/avoindata/v1/akn/fi/act/statute-consolidated/2014/938
+    kind: akn_xml
+    layer: legislation
+    publisher: Finlex (Ministry of Justice)
+    language: fi
+
+  - id: kela-fi-yleinen-asumistuki
+    title: "Kela: Yleinen asumistuki (citizen guidance, Finnish)"
+    url: https://www.kela.fi/yleinen-asumistuki
+    kind: html
+    layer: guidance
+    publisher: Kela
+    language: fi
+
+  - id: kela-en-general-housing-allowance
+    title: "Kela: General housing allowance (citizen guidance, English)"
+    url: https://www.kela.fi/general-housing-allowance
+    kind: html
+    layer: guidance
+    publisher: Kela
+    language: en
+
+  - id: kela-fi-tulot-ja-menot
+    title: "Kela: Miten tulot ja asumismenot vaikuttavat yleiseen asumistukeen (income, costs, municipal caps)"
+    url: https://www.kela.fi/miten-tulot-ja-menot-vaikuttavat
+    kind: html
+    layer: guidance
+    publisher: Kela
+    language: fi
+
+  - id: kela-guide-gha-en
+    title: "Kela benefit guide: General housing allowance (PDF, English)"
+    url: https://www.kela.fi/documents/d/guest/benefit-guide-general-housing-allowance
+    kind: pdf
+    layer: guidance
+    publisher: Kela
+    language: en
+
+  - id: kela-form-AT1e
+    title: "Kela application form AT 1e: General housing allowance (PDF, English)"
+    url: https://www.kela.fi/benefit-forms/AT1e.pdf
+    kind: pdf
+    layer: forms
+    publisher: Kela
+    language: en
+
+  - id: kela-internal-auto-termination
+    title: "Kela procedure note: automatic termination/revision of general housing allowance when a pension or rehabilitation benefit is granted (PDF)"
+    url: https://kela.fi/documents/d/guest/myonnetyn-elake-tai-kuntoutusetuuden-perusteella-tehtava-automaattinen-yleisen-asumistuen-lakkautus-tai-oikaisupaatos-pdf
+    kind: pdf
+    layer: internal
+    publisher: Kela
+    language: fi

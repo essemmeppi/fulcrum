@@ -1,0 +1,99 @@
+{
+  "service_id": "fi-kela-general-housing-allowance",
+  "model": "claude-opus-5-5",
+  "sources": {
+    "ptv-kela-asuminen": {
+      "facts": 23,
+      "verified": 23,
+      "rejected": 0
+    },
+    "law-938-2014": {
+      "facts": 226,
+      "verified": 226,
+      "rejected": 0
+    },
+    "kela-fi-yleinen-asumistuki": {
+      "facts": 136,
+      "verified": 136,
+      "rejected": 0
+    },
+    "kela-en-general-housing-allowance": {
+      "facts": 118,
+      "verified": 118,
+      "rejected": 0
+    },
+    "kela-fi-tulot-ja-menot": {
+      "facts": 124,
+      "verified": 124,
+      "rejected": 0
+    },
+    "kela-guide-gha-en": {
+      "facts": 78,
+      "verified": 78,
+      "rejected": 0
+    },
+    "kela-form-AT1e": {
+      "facts": 80,
+      "verified": 80,
+      "rejected": 0
+    },
+    "kela-internal-auto-termination": {
+      "facts": 33,
+      "verified": 33,
+      "rejected": 0
+    }
+  },
+  "facts_total": 818,
+  "facts_verified": 818,
+  "facts_used_in_map": 775,
+  "nodes": 84,
+  "edges": 95,
+  "rules": 79,
+  "data_sources": 13,
+  "nodes_by_grounding": {
+    "documented": 83,
+    "inferred": 1
+  },
+  "nodes_by_visibility": {
+    "internal": 52,
+    "external": 32
+  },
+  "grounding_by_visibility": {
+    "external": {
+      "documented": 32
+    },
+    "internal": {
+      "documented": 51,
+      "inferred": 1
+    }
+  },
+  "nodes_by_automation_class": {
+    "deterministic_rule": 30,
+    "citizen_action": 20,
+    "judgment": 18,
+    "notification": 5,
+    "human_signoff": 5,
+    "register_lookup": 4,
+    "document_check": 2
+  },
+  "nodes_by_agent_mode": {
+    "agent_can_execute": 37,
+    "agent_prepares_human_decides": 24,
+    "human_only": 23
+  },
+  "nodes_by_actor": {
+    "kela_caseworker": 30,
+    "kela_system": 26,
+    "citizen": 16,
+    "landlord": 4,
+    "kela_robot": 3,
+    "kela_recovery_centre": 2,
+    "state": 1,
+    "ssab": 1,
+    "insurance_court": 1
+  },
+  "rules_by_grounding": {
+    "documented": 79
+  },
+  "open_questions": 16
+}
