@@ -4,233 +4,26 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
-<title>Workflow Rails</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&family=Inter:wght@300;400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<style>
-  /* Layout: a guided scroll with a sticky step rail; text column ~68ch, the map breaks out to full width. */
-  :root {
-    --bg: #F6F7F5; --surface: #FFFFFF; --fg: #141F2A; --muted: #5C6B78; --line: #D6DCE1; --line-strong: #AEB8C1;
-    --accent: #1557A6; --accent-soft: #E3ECF8;
-    --ok: #1E7A5A; --ok-soft: #DDF1E8; --warn: #BD6414; --warn-soft: #FBE9D6; --bad: #B3261E;
-    --mode-agent: #1557A6; --mode-prep: #6B48C8; --mode-human: #66737F;
-    --display: "Inter", "Helvetica Neue", Arial, sans-serif;
-    --serif: "Newsreader", Georgia, serif;
-    --body: "Inter", "Helvetica Neue", Arial, sans-serif;
-    --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
-  }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-    --bg: #0F1418; --surface: #161C22; --fg: #E6EBEF; --muted: #9AA8B4; --line: #28323B; --line-strong: #3B4752;
-    --accent: #6AA9F2; --accent-soft: #15283F;
-    --ok: #48B88C; --ok-soft: #10332A; --warn: #E6A05A; --warn-soft: #3A2A14; --bad: #F0796F;
-    --mode-agent: #6AA9F2; --mode-prep: #A78BFA; --mode-human: #8C99A5;
-    color-scheme: dark;
-  } }
-  :root[data-theme="dark"] {
-    --bg: #0F1418; --surface: #161C22; --fg: #E6EBEF; --muted: #9AA8B4; --line: #28323B; --line-strong: #3B4752;
-    --accent: #6AA9F2; --accent-soft: #15283F;
-    --ok: #48B88C; --ok-soft: #10332A; --warn: #E6A05A; --warn-soft: #3A2A14; --bad: #F0796F;
-    --mode-agent: #6AA9F2; --mode-prep: #A78BFA; --mode-human: #8C99A5;
-    color-scheme: dark;
-  }
 
-  * { box-sizing: border-box; }
-  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.55;
-         padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 96px; }
-  body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
-  a { color: var(--accent); }
-  h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; text-wrap: balance; margin: 0; }
-  h1 { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(2rem, 4.6vw, 3.2rem); letter-spacing: -0.01em; }
-  h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 300; letter-spacing: -0.01em; }
-  h3 { font-size: 1.1rem; font-weight: 400; }
-  p { margin: 0; }
-  .eyebrow { font-family: var(--display); font-size: 0.76rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
-  .mono { font-family: var(--mono); font-size: 0.82em; }
-  .muted { color: var(--muted); }
-  .wrap { max-width: 1120px; margin: 0 auto; }
-  .prose { max-width: 68ch; display: grid; gap: 1rem; }
-  .prose p + p { margin-top: 0; }
-
-  /* step rail */
-  .rail { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 9; background: var(--bg); border-bottom: 1px solid var(--line); margin: 0 calc(-1 * max(16px, env(safe-area-inset-left, 0px))) 0 calc(-1 * max(16px, env(safe-area-inset-right, 0px)));
-          padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
-  .rail-inner { max-width: 1120px; margin: 0 auto; display: flex; gap: 0.25rem; overflow-x: auto; scrollbar-width: none; }
-  .rail-inner::-webkit-scrollbar { display: none; }
-  .rail a { display: flex; align-items: baseline; gap: 0.5rem; padding: 0.8rem 0.9rem; text-decoration: none; color: var(--muted); font-family: var(--display); font-weight: 500; font-size: 0.85rem; white-space: nowrap; border-bottom: 2px solid transparent; margin-bottom: -1px; }
-  .rail a .n { font-family: var(--mono); font-weight: 500; font-size: 0.75rem; }
-  .rail a:hover, .rail a:focus-visible { color: var(--fg); outline: none; }
-  .rail a.active { color: var(--accent); border-bottom-color: var(--accent); }
-
-  section { padding-block: 3.5rem; border-bottom: 1px solid var(--line); scroll-margin-top: 64px; }
-  section:last-of-type { border-bottom: 0; }
-  .sec-head { display: grid; gap: 0.6rem; margin-bottom: 1.6rem; }
-  .status { display: inline-flex; align-items: center; gap: 0.4rem; font-family: var(--display); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.2rem 0.55rem; border-radius: 999px; border: 1px solid var(--line-strong); color: var(--muted); }
-  .status.done { color: var(--ok); border-color: var(--ok); background: var(--ok-soft); }
-  .status.next { color: var(--warn); border-color: var(--warn); background: var(--warn-soft); }
-
-  /* hero */
-  .hero { padding-block: 2.5rem 2.5rem; display: grid; gap: 1rem; }
-  header.top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-top: 1.2rem; }
-  header.top .mark { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.25rem; text-decoration: none; color: var(--fg); }
-  header.top .mark:hover { color: var(--accent); }
-  .hero .lede { font-size: clamp(1rem, 1.8vw, 1.15rem); max-width: 62ch; }
-  .claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 0.5rem; }
-  .claim { background: var(--surface); padding: 1.1rem 1.2rem; display: grid; gap: 0.5rem; align-content: start; }
-  .claim h3 { display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; }
-  .claim p { font-size: 0.95rem; color: var(--muted); }
-  .glossary { border-top: 1px solid var(--line); padding-top: 0.8rem; }
-  .glossary summary { cursor: pointer; font-family: var(--display); font-weight: 500; font-size: 0.9rem; color: var(--accent); list-style: none; }
-  .glossary summary::before { content: "+ "; }
-  .glossary[open] summary::before { content: "− "; }
-  .glossary dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.45rem 1.2rem; margin: 1rem 0 0; font-size: 0.92rem; max-width: 80ch; }
-  .glossary dt { font-family: var(--display); font-weight: 500; font-size: 0.85rem; padding-top: 0.1rem; }
-  .glossary dd { margin: 0; color: var(--muted); }
-  @media (max-width: 600px) { .glossary dl { grid-template-columns: 1fr; gap: 0.15rem 0; } .glossary dd { margin-bottom: 0.5rem; } }
-
-  /* tables */
-  .tbl-wrap { overflow-x: auto; border: 1px solid var(--line); background: var(--surface); }
-  table { border-collapse: collapse; width: 100%; font-size: 0.92rem; }
-  th, td { text-align: left; padding: 0.6rem 0.8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
-  th { font-family: var(--display); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--muted); font-weight: 500; background: var(--bg); }
-  tr:last-child td { border-bottom: 0; }
-  td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; font-family: var(--mono); font-size: 0.82rem; }
-  .layer { font-family: var(--display); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase; padding: 0.15rem 0.45rem; border: 1px solid var(--line-strong); border-radius: 3px; white-space: nowrap; }
-
-  /* stats */
-  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); }
-  .stat { background: var(--surface); padding: 0.9rem 1rem; display: grid; gap: 0.2rem; }
-  .stat .v { font-family: var(--display); font-size: 1.8rem; font-weight: 300; letter-spacing: -0.02em; font-variant-numeric: tabular-nums; line-height: 1; }
-  .stat .k { font-size: 0.82rem; color: var(--muted); }
-
-  /* pipeline */
-  .pipe { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 0.75rem; counter-reset: step; }
-  .pipe > div { border-left: 2px solid var(--accent); padding: 0.1rem 0 0.1rem 0.9rem; display: grid; gap: 0.3rem; align-content: start; }
-  .pipe .eyebrow { color: var(--accent); }
-  .pipe p { font-size: 0.93rem; }
-
-  /* facts */
-  .facts { display: grid; gap: 0.75rem; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-  .fact { background: var(--surface); border: 1px solid var(--line); padding: 0.9rem 1rem; display: grid; gap: 0.5rem; min-width: 0; }
-  .fact .stmt { font-size: 0.95rem; }
-  .fact blockquote { margin: 0; padding: 0.5rem 0.75rem; border-left: 3px solid var(--line-strong); font-family: var(--mono); font-size: 0.78rem; line-height: 1.45; color: var(--muted); overflow-wrap: anywhere; }
-  .fact .src { display: flex; flex-wrap: wrap; gap: 0.4rem 0.8rem; font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
-  .fact .src .v { color: var(--ok); }
-  .fact .src .x { color: var(--bad); }
-
-  /* map */
-  .map-tools { display: flex; flex-wrap: wrap; gap: 0.6rem 1.4rem; align-items: center; margin-bottom: 0.8rem; font-family: var(--display); font-size: 0.85rem; }
-  .map-tools label { display: inline-flex; align-items: center; gap: 0.35rem; cursor: pointer; }
-  .legend { display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; font-size: 0.8rem; color: var(--muted); }
-  .legend span::before { content: ""; display: inline-block; width: 0.7rem; height: 0.7rem; border-radius: 2px; margin-right: 0.35rem; vertical-align: -1px; background: var(--c); }
-  .legend .dash::before { background: none; border: 2px dashed var(--muted); width: 0.6rem; height: 0.6rem; }
-  .map-grid { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 1rem; align-items: start; }
-  @media (max-width: 900px) { .map-grid { grid-template-columns: 1fr; } }
-  .map-box { border: 1px solid var(--line); background: var(--surface); overflow: auto; max-height: 72vh; }
-  .map-box svg { display: block; font-family: var(--display); }
-  .map-box .lane-band { fill: var(--bg); }
-  .map-box .lane-band.alt { fill: var(--surface); }
-  .map-box .lane-label { fill: var(--muted); font-size: 11px; font-weight: 500; letter-spacing: 0.06em; text-transform: uppercase; }
-  .map-box .edge { fill: none; stroke: var(--line-strong); stroke-width: 1.4; }
-  .map-box .edge.back { stroke-dasharray: 4 3; }
-  .map-box .edge-label { fill: var(--muted); font-size: 10px; }
-  .map-box .node { cursor: pointer; }
-  .map-box .node rect, .map-box .node circle, .map-box .node polygon { stroke-width: 1.5; }
-  .map-box .node.inferred rect, .map-box .node.inferred polygon, .map-box .node.inferred circle { stroke-dasharray: 5 3; }
-  .map-box .node text { fill: var(--fg); font-size: 11.5px; font-weight: 500; pointer-events: none; }
-  .map-box .node.sel rect, .map-box .node.sel polygon, .map-box .node.sel circle { stroke-width: 3; }
-  .map-box .badge { font-size: 9px; font-family: var(--mono); fill: var(--muted); }
-  .panel { border: 1px solid var(--line); background: var(--surface); padding: 1rem 1.1rem; display: grid; gap: 0.75rem; position: sticky; top: 70px; max-height: 72vh; overflow: auto; font-size: 0.92rem; min-width: 0; }
-  .panel h3 { font-size: 1.05rem; }
-  .panel .kv { display: grid; grid-template-columns: 7.5rem 1fr; gap: 0.3rem 0.6rem; font-size: 0.88rem; }
-  .panel .kv dt { color: var(--muted); font-family: var(--display); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding-top: 0.15rem; }
-  .panel .kv dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
-  .panel .pill { display: inline-block; font-family: var(--display); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; padding: 0.12rem 0.5rem; border-radius: 999px; color: #fff; background: var(--c); }
-  .panel blockquote { margin: 0; padding: 0.45rem 0.7rem; border-left: 3px solid var(--ok); font-family: var(--mono); font-size: 0.76rem; line-height: 1.45; color: var(--muted); overflow-wrap: anywhere; }
-  .panel .ev-src { font-family: var(--mono); font-size: 0.72rem; color: var(--muted); margin-top: 0.25rem; }
-  .panel ul { margin: 0; padding-left: 1.1rem; }
-  .rule-card { border: 1px solid var(--line); background: var(--bg); padding: 0.6rem 0.75rem; display: grid; gap: 0.3rem; font-size: 0.85rem; }
-  .rule-card .params { font-family: var(--mono); font-size: 0.74rem; color: var(--muted); }
-
-  /* encode */
-  .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.2rem; align-items: start; }
-  .bars { display: grid; gap: 0.45rem; }
-  .bar { display: grid; grid-template-columns: 11rem 1fr 3rem; gap: 0.6rem; align-items: center; font-size: 0.85rem; }
-  .bar .track { height: 0.8rem; background: var(--line); position: relative; }
-  .bar .fill { position: absolute; inset: 0 auto 0 0; background: var(--c); }
-  .bar .n { font-family: var(--mono); font-size: 0.78rem; text-align: right; font-variant-numeric: tabular-nums; }
-  .rules { display: grid; gap: 0.6rem; }
-  .code { background: var(--surface); border: 1px solid var(--line); padding: 0.9rem 1rem; font-family: var(--mono); font-size: 0.76rem; line-height: 1.5; max-height: 360px; overflow: auto; white-space: pre; }
-  button { font-family: var(--display); font-weight: 500; font-size: 0.85rem; padding: 0.5rem 0.9rem; border: 1px solid var(--accent); color: var(--accent); background: transparent; cursor: pointer; border-radius: 3px; }
-  button:hover, button:focus-visible { background: var(--accent-soft); outline: none; }
-
-  /* gap */
-  .qs { display: grid; gap: 0.8rem; }
-  .q { border-left: 3px solid var(--warn); padding: 0.2rem 0 0.2rem 0.9rem; display: grid; gap: 0.25rem; }
-  .q .why { font-size: 0.9rem; color: var(--muted); }
-  .q .where { font-family: var(--mono); font-size: 0.74rem; color: var(--warn); }
-  .inferred-list li { margin-bottom: 0.35rem; }
-
-  .next-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
-  .next-grid div { display: grid; gap: 0.4rem; align-content: start; border-top: 2px solid var(--line-strong); padding-top: 0.6rem; }
-  .next-grid p { font-size: 0.93rem; color: var(--muted); }
-  footer { padding-top: 2rem; font-size: 0.85rem; color: var(--muted); }
-  @media (prefers-reduced-motion: no-preference) { html { scroll-behavior: smooth; } }
-</style>
-</head>
-<body>
-
-<nav class="rail" aria-label="Steps">
+<nav class="rail" aria-label="Sections">
   <div class="rail-inner" id="rail">
-    <a href="#ingest"><span class="n">1</span>Sources</a>
-    <a href="#method"><span class="n">2</span>Method</a>
-    <a href="#map"><span class="n">3</span>Map</a>
-    <a href="#encode"><span class="n">4</span>Specification</a>
-    <a href="#gap"><span class="n">5</span>Confidence</a>
+    <a href="#map"><span class="n">1</span>Map</a>
+    <a href="#operable"><span class="n">2</span>Agent-operable</a>
+    <a href="#redesign"><span class="n">3</span>Redesign</a>
   </div>
 </nav>
 
 <div class="wrap">
 
-<header class="top"><a class="mark" id="back-link" href="index.html" target="_blank" rel="noopener">← The Agentic State</a><span class="muted" style="font-family:var(--display);font-size:0.85rem">Worked example</span></header>
+<header class="top"><a class="mark" href="index.html">← The Agentic State</a><span class="muted" style="font-family:var(--display);font-size:0.85rem">Worked example</span></header>
 <section id="statement" class="hero">
   <div class="eyebrow" id="svc-eyebrow"></div>
   <h1>General housing allowance, Kela, Finland</h1>
-  <p class="lede">One public service rebuilt from its public record into a process map that agents could operate: the sources, how each claim was verified, the map itself, and the encoded specification. Built on 28 October 2026 from public documents only. Nothing here has been validated by Kela yet.</p>
-</section>
-
-<section id="ingest">
-  <div class="sec-head"><div class="eyebrow">1 · Sources</div><h2>What went in</h2>
-    <p class="prose" id="ingest-lede"></p></div>
-  <div class="stats" id="ingest-stats"></div>
-  <div style="height:1rem"></div>
-  <div class="tbl-wrap"><table id="sources-table">
-    <thead><tr><th>Layer</th><th>Source</th><th>Publisher</th><th>Format</th><th class="num">Text (chars)</th><th class="num">Facts</th><th class="num">Verified</th></tr></thead>
-    <tbody></tbody></table></div>
-  <p class="muted" style="margin-top:0.8rem;font-size:0.9rem" id="ingest-note"></p>
-</section>
-
-<section id="method">
-  <div class="sec-head"><div class="eyebrow">2 · Method</div><h2>How a claim gets into the map</h2>
-    <p class="prose">The point is not that a model can summarise documents. The point is that every element of the map can be checked by a person who has never seen the model. So the pipeline separates reading from reasoning, and verifies the reading before any reasoning happens.</p></div>
-  <div class="pipe">
-    <div><div class="eyebrow">Facts</div><h3>Read each source alone</h3><p>The model extracts atomic claims (a step, a rule, a deadline, a data source) and must copy a verbatim quote plus the nearest section marker for each.</p></div>
-    <div><div class="eyebrow">Verify</div><h3>Exact-match every quote</h3><p>Code checks each quote against the source text. Quotes that do not appear verbatim are dropped before anything else happens.</p></div>
-    <div><div class="eyebrow">Synthesise</div><h3>Build the map from facts only</h3><p>The model assembles steps, actors, rules and data from the verified facts, citing fact ids. A step with no fact behind it is marked inferred, not hidden.</p></div>
-    <div><div class="eyebrow">Expand</div><h3>Attach the provenance</h3><p>Fact ids become provenance on every node, edge and rule. Click any step in the map to see the passages it rests on.</p></div>
-  </div>
-  <div style="height:1.6rem"></div>
-  <div class="stats" id="method-stats"></div>
-  <div style="height:1.2rem"></div>
-  <h3 style="margin-bottom:0.7rem">Examples of verified facts</h3>
-  <div class="facts" id="facts-ok"></div>
-  <div id="facts-bad-wrap" hidden>
-    <h3 style="margin:1.4rem 0 0.7rem">Examples of quotes that failed verification and were dropped</h3>
-    <div class="facts" id="facts-bad"></div>
-  </div>
+  <p class="lede" id="lede"></p>
 </section>
 
 <section id="map">
-  <div class="sec-head"><div class="eyebrow">3 · Map</div><h2 id="map-title"></h2>
+  <div class="sec-head"><div class="eyebrow">1 · Map</div><h2 id="map-title"></h2>
     <p class="prose" id="map-lede"></p></div>
   <div class="map-tools">
     <span class="eyebrow">Colour by</span>
@@ -241,49 +34,25 @@
     <span class="legend" id="legend"></span>
   </div>
   <div class="legend" style="margin-bottom:0.8rem">Shapes: rounded pill = event (something happens) · rectangle = work by one actor · diamond = decision · dashed outline = inferred step · lanes = actors · dashed arrows = flows that loop back</div>
-<div class="map-grid">
+  <div class="map-grid">
     <div class="map-box" id="map-box"></div>
     <aside class="panel" id="panel"><p class="muted">Select a step to see its actor, rules, data, and the passages that back it.</p></aside>
   </div>
 </section>
 
-<section id="encode">
-  <div class="sec-head"><div class="eyebrow">4 · Specification</div><h2>The map as a workflow</h2>
-    <p class="prose">The same map, read as instructions. Each step says what an agent may do with it; each rule is a testable statement with its parameters and legal basis; each data source says how it is reached. This is what an agent runtime would load.</p></div>
-  <div class="two">
-    <div>
-      <h3 style="margin-bottom:0.7rem">Steps by agent mode</h3>
-      <div class="bars" id="bars-mode"></div>
-      <h3 style="margin:1.4rem 0 0.7rem">Steps by automation class</h3>
-      <div class="bars" id="bars-auto"></div>
-      <h3 style="margin:1.4rem 0 0.7rem">Data sources</h3>
-      <div class="tbl-wrap"><table id="ds-table"><thead><tr><th>Register / system</th><th>Owner</th><th>Access</th><th>Grounding</th></tr></thead><tbody></tbody></table></div>
-    </div>
-    <div>
-      <h3 style="margin-bottom:0.7rem">Rules <span class="muted mono" id="rules-count"></span></h3>
-      <div class="rules" id="rules"></div>
-    </div>
-  </div>
-  <div style="height:1.6rem"></div>
-  <div style="display:flex;gap:0.8rem;align-items:center;flex-wrap:wrap;margin-bottom:0.6rem">
-    <h3>The spec as JSON</h3>
-    <button id="copy-json" type="button">Copy JSON</button><span class="muted" id="copy-msg" style="font-size:0.85rem"></span>
-  </div>
-  <div class="code" id="json-view"></div>
+<section id="operable">
+  <div class="sec-head"><div class="eyebrow">2 · Agent-operable</div><h2>What an agent could run today</h2>
+    <p class="prose" id="operable-lede"></p></div>
+  <div class="bars" id="bars-mode" style="max-width:40rem"></div>
 </section>
 
-<section id="gap">
-  <div class="sec-head"><div class="eyebrow">5 · Confidence</div><h2>How sure the map is</h2>
-    <p class="prose">Every step carries a confidence: our expected probability that it matches how the process really runs, from a fixed rubric (explicit in law or official guidance across several sources; explicit in one; implied; inferred). The public record describes the external side of the process, what the citizen does and receives, better than the internal side, and the figures show it. A process owner at Kela can validate steps; validated steps count as certain.</p></div>
-  <div class="stats" id="gap-stats"></div>
-  <div style="height:1.2rem"></div>
-  <h3 style="margin-bottom:0.7rem">Steps we had to infer</h3>
-  <p class="muted" style="font-size:0.9rem;margin-bottom:0.6rem">Needed to connect the flow, but no public passage shows them. Dashed in the map.</p>
-  <ul class="inferred-list" id="inferred"></ul>
+<section id="redesign">
+  <div class="sec-head"><div class="eyebrow">3 · Redesign</div><h2>Where redesign starts</h2>
+    <p class="prose">The map already shows the same kind of work repeated: four separate register retrievals, several decision notices, three different triggers that lead to the same recalculation. Which of these to merge, and what the law allows, is a conversation with Kela's process owners, not a drawing. The map is the agenda for it: here is your process as the public record describes it; correct it, then simplify it together.</p></div>
+  <h3 style="margin:1.6rem 0 0.6rem">Sources</h3>
+  <ul id="sources-list" style="margin:0;padding-left:1.1rem;font-size:0.9rem;line-height:1.7"></ul>
   <footer id="footer"></footer>
 </section>
-
-
 
 </div>
 
@@ -301,34 +70,11 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   const sources = byId(manifest.sources);
   const label = s => String(s).replace(/_/g, ' ');
 
-  // ---------- hero / ingest ----------
-  document.getElementById('svc-eyebrow').textContent = `${service_cfg.service_name} · ${service_cfg.authority.split(' (')[0]} · ${service_cfg.country} · ${manifest.sources.length} public sources`;
-  const totalChars = manifest.sources.reduce((a, s) => a + s.chars, 0);
-  const layers = [...new Set(manifest.sources.map(s => s.layer))];
-  document.getElementById('ingest-lede').textContent = `${manifest.sources.length} public sources about ${service_cfg.service_name}, across ${layers.length} layers: ${layers.join(', ')}. No access to the agency, no interviews, no internal systems.`;
-  document.getElementById('ingest-stats').innerHTML = [
-    [manifest.sources.length, 'public sources'], [fmt(totalChars), 'characters of text'], [layers.length, 'document layers'],
-    [report.facts_total, 'facts extracted'], [report.facts_verified, 'quotes verified'],
-  ].map(([v, k]) => `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
-  document.querySelector('#sources-table tbody').innerHTML = manifest.sources.map(s => {
-    const r = report.sources[s.id] || {};
-    return `<tr><td><span class="layer">${esc(s.layer)}</span></td><td><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a></td><td>${esc(s.publisher)}</td><td class="mono">${esc(s.kind)} · ${esc(s.language)}</td><td class="num">${fmt(s.chars)}</td><td class="num">${r.facts ?? ''}</td><td class="num">${r.verified ?? ''}</td></tr>`;
-  }).join('');
-  const ptv = manifest.sources.find(s => s.kind === 'ptv_api');
-  document.getElementById('ingest-note').textContent = ptv
-    ? 'The service catalogue entry (PTV) is an index, not a process description: for this service its legislation and requirements fields are empty. The process came out of legislation, guidance and forms. A catalogue helps to find services; it is not required to map them.'
-    : '';
-
-  // ---------- method ----------
-  const pct = report.facts_total ? Math.round(100 * report.facts_verified / report.facts_total) : 0;
-  const g = report.nodes_by_grounding || {};
-  document.getElementById('method-stats').innerHTML = [
-    [`${pct}%`, 'of quotes exact-matched their source'], [report.facts_used_in_map ?? '–', 'facts used as provenance'], [report.nodes, 'steps in the map'],
-    [report.rules, 'rules'], [g.documented || 0, 'steps documented'], [g.inferred || 0, 'steps inferred'],
-  ].map(([v, k]) => `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
-  const factCard = (f, ok) => `<div class="fact"><div class="eyebrow">${esc(label(f.kind))}</div><div class="stmt">${esc(f.statement)}</div><blockquote>${esc(f.quote)}</blockquote><div class="src"><span>${esc(sources[f.id.split(':')[0]]?.title || f.id.split(':')[0])}</span><span>${esc(f.locator)}</span><span class="${ok ? 'v' : 'x'}">${ok ? 'verified' : 'not found verbatim'}</span></div></div>`;
-  document.getElementById('facts-ok').innerHTML = example_facts.slice(0, 6).map(f => factCard(f, true)).join('');
-  if (rejected_examples.length) { document.getElementById('facts-bad-wrap').hidden = false; document.getElementById('facts-bad').innerHTML = rejected_examples.slice(0, 3).map(f => factCard(f, false)).join(''); }
+  // ---------- intro ----------
+  const am = report.nodes_by_agent_mode || {};
+  const mean = v => { const a = map.nodes.filter(n => n.visibility === v); return a.length ? (a.reduce((s, n) => s + n.confidence, 0) / a.length).toFixed(2) : '–'; };
+  document.getElementById('svc-eyebrow').textContent = `${service_cfg.service_name} · ${service_cfg.authority.split(' (')[0]} · ${service_cfg.country}`;
+  document.getElementById('lede').textContent = `${manifest.sources.length} public documents (the Act, Kela's guidance and forms, one internal instruction, the service-catalogue entry) read into ${fmt(report.facts_verified)} verified facts and assembled into ${report.nodes} steps, ${report.rules} rules and ${report.data_sources} data sources across ${map.actors.length} actors. Built in one day without contact with Kela. Confidence ${mean('external')} for steps the citizen sees, ${mean('internal')} for steps inside Kela.`;
 
   // ---------- map ----------
   document.getElementById('map-title').textContent = `${map.service.name_en} as it runs today`;
@@ -461,35 +207,12 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
   new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
-  // ---------- encode ----------
+  // ---------- agent-operable ----------
+  document.getElementById('operable-lede').textContent = `Of the ${report.nodes} steps, ${am.agent_can_execute || 0} could be executed by an agent (rules, register lookups, notifications), ${am.agent_prepares_human_decides || 0} prepared by an agent for a caseworker to decide, and ${am.human_only || 0} stay with people. Colour the map by agent mode to see where they sit; click a step for the rule and the passage that justify its mode.`;
   const bars = (el, counts, pal) => { const total = Object.values(counts).reduce((a, b) => a + b, 0) || 1; el.innerHTML = Object.entries(counts).map(([k, v]) => `<div class="bar"><span>${esc(label(k))}</span><span class="track"><span class="fill" style="--c:${css(pal[k] || '--muted')};width:${100 * v / total}%"></span></span><span class="n">${v}</span></div>`).join(''); };
   bars(document.getElementById('bars-mode'), report.nodes_by_agent_mode, palettes.agent_mode);
-  bars(document.getElementById('bars-auto'), report.nodes_by_automation_class, palettes.automation);
-  document.querySelector('#ds-table tbody').innerHTML = map.data_sources.map(d => `<tr><td>${esc(d.name)}</td><td>${esc(d.owner)}</td><td class="mono">${esc(d.access)}</td><td><span class="layer" style="color:${css(d.grounding === 'documented' ? '--ok' : '--warn')};border-color:currentColor">${esc(d.grounding)}</span></td></tr>`).join('');
-  document.getElementById('rules-count').textContent = `${map.rules.length}`;
-  document.getElementById('rules').innerHTML = map.rules.map(r => `<div class="rule-card"><div style="display:flex;justify-content:space-between;gap:0.5rem;flex-wrap:wrap"><strong>${esc(r.name)}</strong><span class="eyebrow">${esc(r.kind)}</span></div><div>${esc(r.logic)}</div>${r.parameters.length ? `<div class="params">${r.parameters.map(p => `${esc(p.name)} = ${esc(p.value)}`).join(' · ')}</div>` : ''}<div class="ev-src" style="font-family:var(--mono);font-size:0.72rem;color:${r.provenance.length ? 'var(--muted)' : 'var(--warn)'}">${r.provenance.length ? r.provenance.map(e => `${esc(sources[e.source_id]?.title?.split(':')[0] || e.source_id)} · ${esc(e.locator)}`).join(' | ') : 'no public passage found for this rule'}</div></div>`).join('');
-  const spec = { service: map.service, actors: map.actors, data_sources: map.data_sources, data_objects: map.data_objects, rules: map.rules, nodes: map.nodes, edges: map.edges };
-  const specText = JSON.stringify(spec, null, 2);
-  document.getElementById('json-view').textContent = specText.length > 60000 ? specText.slice(0, 60000) + '\n… (truncated in view; copy gives the full spec)' : specText;
-  document.getElementById('copy-json').addEventListener('click', async () => {
-    const msg = document.getElementById('copy-msg');
-    try { await navigator.clipboard.writeText(specText); msg.textContent = 'Copied.'; }
-    catch { const r = document.createRange(); r.selectNodeContents(document.getElementById('json-view')); const s = getSelection(); s.removeAllRanges(); s.addRange(r); msg.textContent = 'Select-all is ready; press copy.'; }
-  });
-
-  // ---------- gap ----------
-  const side = v => map.nodes.filter(n => n.visibility === v);
-  const mean = a => a.length ? (a.reduce((s, n) => s + n.confidence, 0) / a.length) : 0;
-  const docShare = a => a.length ? Math.round(100 * a.filter(n => n.grounding === 'documented').length / a.length) : 0;
-  const ext = side('external'), inn = side('internal');
-  document.getElementById('gap-stats').innerHTML = [
-    [ext.length, 'external steps'], [mean(ext).toFixed(2), 'mean confidence, external'], [`${docShare(ext)}%`, 'external steps documented'],
-    [inn.length, 'internal steps'], [mean(inn).toFixed(2), 'mean confidence, internal'], [`${docShare(inn)}%`, 'internal steps documented'],
-  ].map(([v, k]) => `<div class="stat"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
-  const inferred = map.nodes.filter(n => n.grounding === 'inferred');
-  document.getElementById('inferred').innerHTML = inferred.length ? inferred.map(n => `<li><strong>${esc(n.name)}</strong> <span class="muted">(${esc(actors[n.actor_id]?.name || n.actor_id)})</span><br><span class="muted" style="font-size:0.9rem">${esc(n.inferred_reason)}</span></li>`).join('') : '<li class="muted">Every step in the map has at least one public passage behind it.</li>';
-  
-  document.getElementById('footer').textContent = `Built in one day from ${manifest.sources.length} public sources. Extraction model: ${report.model}. Vocabulary borrowed from CPSV-AP (service) and BPMN (steps). Nothing on this page has been validated by the agency yet.`;
+  document.getElementById('sources-list').innerHTML = manifest.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> <span class="muted">· ${esc(s.publisher)}</span></li>`).join('');
+  document.getElementById('footer').textContent = `Map built with ${report.model} on 28 October 2026. Nothing on this page has been validated by Kela yet.`;
 
   // rail highlight
   const links = [...document.querySelectorAll('#rail a')];
@@ -498,6 +221,5 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   secs.forEach(s => s && io.observe(s));
 })();
 </script>
-
 </body>
 </html>

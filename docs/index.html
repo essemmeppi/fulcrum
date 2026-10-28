@@ -133,7 +133,7 @@
 
 <header class="top">
   <a class="mark" href="https://agenticstate.org" target="_blank" rel="noopener">The Agentic State</a>
-  <nav><a href="#approach">Approach</a><a href="#step">A step</a><a href="#findings">Findings</a><a href="#example">Example</a></nav>
+  <nav><a href="#approach">Approach</a><a href="#step">A step</a><a href="#example">Example</a></nav>
 </header>
 
 <section class="col hero">
@@ -149,7 +149,7 @@
   <div class="text">
     <div class="step" data-phase="map" id="s-map">
       <div class="label">1 · Map</div>
-      <h2>Build an accurate map of how a service runs today, from public documents alone.</h2>
+      <h2>Build an accurate map of how a service runs today.</h2>
       <p>The goal is a precise picture of the process as it is, without interviews and without access to internal systems. Governments publish a great deal about how they work: laws, guidance, forms, decision templates, internal instructions, annual reports. Most of it is unstructured text. One document gives fragments. Many documents together give the whole process. The quantity of documents is what makes the map possible.</p>
       <p>We read them with frontier models in two passes. First, atomic facts. Each fact carries a verbatim quote, and code checks that the quote exists in the source; a fact that cannot be found word for word is dropped. Second, the map, assembled only from verified facts. Steps that no document shows are marked inferred, not hidden.</p>
       <p>The output is one JSON document per service, in a standard structure: steps, actors, rules with parameters, data sources, flows. Every element carries its provenance and a confidence score. The structure is the same for every service in every country, so maps can be compared and loaded by software.</p>
@@ -202,18 +202,10 @@
     <dt>Provenance</dt><dd>The passages the step rests on: source, section, verbatim quote. A step with none is marked inferred.</dd>
     <dt>Confidence</dt><dd>Our expected probability that the step matches how the process really runs, from a fixed rubric. A responsible official can validate a step; validated steps count as certain.</dd>
   </dl>
-  <p class="muted" style="font-size:0.95rem">One real step and one of the rules it applies, from the Finnish map, abridged:</p>
-  <div class="two-code"><pre id="ex-step"></pre><pre id="ex-rule"></pre></div>
+  
 </section>
 
-<section class="col findings" id="findings">
-  <h2>What we found, and how sure we are</h2>
-  <p id="findings-lede"></p>
-  <div class="numbers" id="numbers"></div>
-  <ol id="findings-list"></ol>
-  <h3>What would make us wrong</h3>
-  <p>The test is a process owner at Kela reading the map. If they correct more than a third of the internal steps, the public record is not enough for the inside of the process and the method needs the agency's own documents from the start. If they correct few, the map can be validated in days rather than built in months. Until that reading happens, every number above is an estimate of how the process works, not a measurement.</p>
-</section>
+
 
 <section class="col cta" id="example">
   <h2>See it on a real public service</h2>
@@ -237,26 +229,6 @@ const DATA = {"nodes": [{"id": "S_APPLY", "name": "Household needs support for h
 
   document.getElementById('proof').innerHTML = `<span><b>${report.sources_count}</b> public documents in</span><span><b>${fmt(report.facts_verified)}</b> verified facts</span><span><b>${report.nodes}</b> steps, <b>${report.rules}</b> rules out</span><span>every one traced to its passage</span>`;
   document.getElementById('example-link').href = example_url || '#';
-  document.getElementById('ex-step').textContent = JSON.stringify(example_step, null, 2);
-  document.getElementById('ex-rule').textContent = JSON.stringify(example_rule, null, 2);
-
-  // ---------- findings ----------
-  const g = report.nodes_by_agent_mode || {};
-  document.getElementById('findings-lede').textContent = `One service, the general housing allowance paid by Kela, mapped from ${report.sources_count} public documents on 28 October 2026. No contact with the agency.`;
-  document.getElementById('numbers').innerHTML = [
-    [fmt(report.facts_verified), 'facts, all quotes verified verbatim'], [`${report.provenance_pct}%`, 'of facts used as provenance'],
-    [report.nodes, 'steps across ' + report.actors + ' actors'], [report.rules, 'rules with parameters'], [report.data_sources, 'data sources'],
-    [means.external.toFixed(2), 'confidence, external steps'], [means.internal.toFixed(2), 'confidence, internal steps'],
-    [`${g.agent_can_execute || 0} / ${g.agent_prepares_human_decides || 0} / ${g.human_only || 0}`, 'steps an agent executes / prepares / leaves to people'],
-  ].map(([v, k]) => `<div><div class="v">${v}</div><div class="k">${k}</div></div>`).join('');
-  document.getElementById('findings-list').innerHTML = [
-    `What looks like one service is ${report.processes} processes sharing one rulebook: application and decision, payment, change reporting, annual review, termination, an automated termination run by a software robot, redirection of payment to landlords, overpayment recovery, and appeal up to the Insurance Court.`,
-    `The public record describes the outside of the process better than the inside, as expected: confidence ${means.external.toFixed(2)} for steps the citizen sees against ${means.internal.toFixed(2)} for steps inside Kela. Only one step had to be inferred outright; most internal steps have some passage behind them but a thin one.`,
-    `The service catalogue was an index, not a description: Finland's national register lists this service as one entry with empty legislation and requirements fields. The process came from the act, Kela's guidance and forms. A country without a catalogue is not excluded.`,
-    `Legal open data lags administrative reality. The machine-readable consolidated act stops at a 2017 amendment; the 2024–25 changes to the allowance rate and deductible exist only in Kela's guidance. The map detected the conflict between its sources and raised it before we did.`,
-    `A single leaked internal instruction, on automated termination when a pension is granted, revealed more of the internal machinery (a software robot, an impulse-task queue, sampling for quality) than all citizen-facing pages together. Internal documents are worth a disproportionate amount.`,
-  ].map(t => `<li>${t}</li>`).join('');
-  document.getElementById('foot-note').textContent = `Map built with ${report.model}. Vocabulary from CPSV-AP (services) and BPMN (steps). Nothing shown here has been validated by the agency yet.`;
 
   // ---------- network: one process of the service, bigger shapes ----------
   const W = 1000, H = 640, PAD = 48;
