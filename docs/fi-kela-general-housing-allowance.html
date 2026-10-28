@@ -388,11 +388,13 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   // zoom and pan on the viewBox
   const mapBox = document.getElementById('map-box');
   const applyView = () => { const s = mapBox.querySelector('svg'); if (s) s.setAttribute('viewBox', `${view.x} ${view.y} ${view.w} ${view.h}`); };
+  const startView = () => { const r = mapBox.getBoundingClientRect(); const aspect = r.height ? r.width / r.height : 1.5; view = { x: 0, y: 0, w: Math.min(W, H * aspect), h: H }; applyView(); };
+  startView();
   const metrics = () => { const r = mapBox.getBoundingClientRect(); const scale = Math.min(r.width / view.w, r.height / view.h); return { r, scale, ox: (r.width - view.w * scale) / 2, oy: (r.height - view.h * scale) / 2 }; };
   const zoomAt = (f, cx, cy) => {
     const { r, scale, ox, oy } = metrics();
     const vx = view.x + (cx - r.left - ox) / scale, vy = view.y + (cy - r.top - oy) / scale;
-    const nw = Math.max(W / 8, Math.min(W * 1.15, view.w * f)); const g = nw / view.w;
+    const nw = Math.max(Math.min(W, H) / 6, Math.min(Math.max(W, H * 1.2), view.w * f)); const g = nw / view.w;
     view = { x: vx - (vx - view.x) * g, y: vy - (vy - view.y) * g, w: nw, h: view.h * g }; applyView();
   };
   mapBox.addEventListener('wheel', e => { e.preventDefault(); zoomAt(Math.exp(e.deltaY * 0.0015), e.clientX, e.clientY); }, { passive: false });
@@ -404,7 +406,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   const centre = () => { const r = mapBox.getBoundingClientRect(); return [r.left + r.width / 2, r.top + r.height / 2]; };
   document.getElementById('zoom-in').addEventListener('click', () => zoomAt(0.75, ...centre()));
   document.getElementById('zoom-out').addEventListener('click', () => zoomAt(1.33, ...centre()));
-  document.getElementById('zoom-fit').addEventListener('click', () => { view = { x: 0, y: 0, w: W, h: H }; applyView(); });
+  document.getElementById('zoom-fit').addEventListener('click', () => { const r = mapBox.getBoundingClientRect(); const aspect = r.height ? r.width / r.height : 1.5; const w = Math.max(W, H * aspect); view = { x: W / 2 - w / 2, y: 0, w, h: w / aspect }; applyView(); });
   if (window.matchMedia) window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
   new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
