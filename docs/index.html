@@ -132,11 +132,11 @@
 </header>
 
 <section class="col hero">
-  <h1>Making government procedure legible to machines, operable by agents, and accountable to people.</h1>
+  <h1>Making government processes legible to machines, operable by agents, and accountable to people.</h1>
   <div class="date">October 2026 · working note</div>
-  <p>Government runs on procedure. Who checks what, in which order, under which rule, by which deadline: this is what a public administration is, more than its buildings or its staff. Most of it is public by law, in statutes, guidance, forms and reports. It is written for people to read, one document at a time.</p>
-  <p>AI agents can now carry out long sequences of work in software, within rules, using tools. For a government, that capability is usable only where the procedure has been made explicit enough for a machine to follow and for a person to check. Almost nowhere has it been.</p>
-  <p>We make government procedure legible. We read the public record of a service and compress it into a map: steps, actors, rules, data, flows, each element tied to the passage it comes from, with a measure of how sure we are. The compression is lossy. The loss is shown, not hidden. A procedure that is legible in this way can be operated by agents under human control, verified against the law it implements, and redesigned by comparison with others.</p>
+  <p>Government runs on processes. Who checks what, in which order, under which rule, by which deadline: this is what a public administration is, more than its buildings or its staff. Most of it is public by law, in statutes, guidance, forms and reports. It is written for people to read, one document at a time.</p>
+  <p>AI agents can now carry out long sequences of work in software, within rules, using tools. For a government, that capability is usable only where the process has been made explicit enough for a machine to follow and for a person to check. Almost nowhere has it been.</p>
+  <p>We make government processes legible. We read the public record of a service and compress it into a map: steps, actors, rules, data, flows, each element tied to the passage it comes from, with a measure of how sure we are. The compression is lossy. The loss is shown, not hidden. A process that is legible in this way can be operated by agents under human control, verified against the law it implements, and redesigned by comparison with others.</p>
   <p>We began with one benefit in Finland.</p>
   <div class="proof" id="proof"></div>
 </section>
@@ -146,7 +146,7 @@
     <div class="step" data-phase="map" id="s-map">
       <div class="label">1 · Map</div>
       <h2>Read everything the state publishes about itself.</h2>
-      <p>Laws, guidance, forms, decision templates, procedure notes, annual reports. For one service that is a handful of documents; for a government, hundreds of thousands. We read them with frontier models in two passes. First, atomic facts, each with a verbatim quote that code checks against the source: a fact that cannot be found word for word is dropped. Then the map, assembled only from verified facts. Steps the documents do not show are marked inferred, not hidden.</p>
+      <p>Laws, guidance, forms, decision templates, internal instructions, annual reports. For one service that is a handful of documents; for a government, hundreds of thousands. We read them with frontier models in two passes. First, atomic facts, each with a verbatim quote that code checks against the source: a fact that cannot be found word for word is dropped. Then the map, assembled only from verified facts. Steps the documents do not show are marked inferred, not hidden.</p>
       <p>The output is one JSON document per service: steps, actors, rules with their parameters, data sources, flows, each with its provenance and a confidence score. The schema is open and uses the words governments already use for services and processes, so a map reads the same in any country.</p>
     </div>
     <div class="step" data-phase="encode" id="s-encode">
@@ -236,7 +236,7 @@ const DATA = {"nodes": [{"id": "S_APPLY", "name": "Household needs support for h
     `The public record describes the outside of the process better than the inside, as expected: confidence ${means.external.toFixed(2)} for steps the citizen sees against ${means.internal.toFixed(2)} for steps inside Kela. Only one step had to be inferred outright; most internal steps have some passage behind them but a thin one.`,
     `The service catalogue was an index, not a description: Finland's national register lists this service as one entry with empty legislation and requirements fields. The process came from the act, Kela's guidance and forms. A country without a catalogue is not excluded.`,
     `Legal open data lags administrative reality. The machine-readable consolidated act stops at a 2017 amendment; the 2024–25 changes to the allowance rate and deductible exist only in Kela's guidance. The map detected the conflict between its sources and raised it before we did.`,
-    `A single leaked procedure note, on automated termination when a pension is granted, revealed more of the internal machinery (a software robot, an impulse-task queue, sampling for quality) than all citizen-facing pages together. Internal documents are worth a disproportionate amount.`,
+    `A single leaked internal instruction, on automated termination when a pension is granted, revealed more of the internal machinery (a software robot, an impulse-task queue, sampling for quality) than all citizen-facing pages together. Internal documents are worth a disproportionate amount.`,
   ].map(t => `<li>${t}</li>`).join('');
   document.getElementById('foot-note').textContent = `Map built with ${report.model}. Vocabulary from CPSV-AP (services) and BPMN (steps). Nothing shown here has been validated by the agency yet.`;
 
