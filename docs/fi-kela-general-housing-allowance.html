@@ -197,19 +197,13 @@
 </style>
 </head>
 <body>
-<nav class="rail" aria-label="Sections">
-  <div class="rail-inner" id="rail">
-    <a href="#map"><span class="n">1</span>Map</a>
-    <a href="#operable"><span class="n">2</span>Agent-operable</a>
-    <a href="#redesign"><span class="n">3</span>Redesign</a>
-  </div>
-</nav>
+
 
 <div class="wrap">
 
 <header class="top"><a class="mark" href="index.html">← The Agentic State</a><span class="muted" style="font-family:var(--display);font-size:0.85rem">Worked example</span></header>
 <section id="statement" class="hero">
-  <h1>General housing allowance, Kela, Finland</h1>
+  <h1>General housing allowance (Kela, Finland)</h1>
   <p class="lede" id="lede">By reading <a href="#sources">official documents</a>, we mapped the processes of the general housing allowance: the benefit Finland pays to low-income households towards their housing costs, administered by Kela, the national social insurance institution. </p>
     
   <p class="lede" id="lede"> For this demo we used public documents only. That gives high confidence for the steps citizens see and somewhat lower confidence for the steps inside Kela; access to internal documents would raise it.</p>
@@ -441,11 +435,6 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   document.querySelector('#bars-mode .bar[data-k="agent_can_execute"]')?.click();
   document.getElementById('sources-list').innerHTML = manifest.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> <span class="muted">· ${esc(s.publisher)}</span></li>`).join('');
 
-  // rail highlight
-  const links = [...document.querySelectorAll('#rail a')];
-  const secs = links.map(a => document.querySelector(a.getAttribute('href')));
-  const io = new IntersectionObserver(es => { es.forEach(e => { if (e.isIntersecting) { links.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id)); } }); }, { rootMargin: '-40% 0px -55% 0px' });
-  secs.forEach(s => s && io.observe(s));
 })();
 </script>
 </body>
