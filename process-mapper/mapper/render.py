@@ -1,15 +1,15 @@
-"""Render the two pages from a map.
+"""Refresh the data embedded in the two hand-edited pages in docs/.
 
-  templates/landing.html, templates/example.html + maps/<svc>/*.json + corpus/<svc>/manifest.json
-      -> docs/index.html, docs/<svc>.html   (standalone, self-contained: the only copy in the repo)
-      -> build/index.html, build/<svc>.html  (fragments for the artifact host; gitignored)
-      -> maps/<svc>/map.mmd
+docs/index.html and docs/<service>.html are the source of truth and are edited by hand. This script only
+replaces the `const DATA = ...;` line in each of them with fresh numbers from maps/<service>/ and
+corpus/<service>/manifest.json, and writes maps/<service>/map.mmd. It never regenerates the pages.
 
 Usage:
   python -m mapper.render services/fi-kela-general-housing-allowance
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -44,29 +44,18 @@ def mermaid(pm: dict) -> str:
     return "\n".join(lines)
 
 
-LANDING_EXAMPLE_URL = "https://claude.ai/artifact/Ny89PLSUukS65dgaFZQqwr"
-LANDING_URL = "https://claude.ai/artifact/1QtqzmiNniqopWiHWX3UhF"
-DOCS = ROOT.parent / "docs"  # the pages, standalone, for GitHub Pages (serve from main /docs)
-BUILD = ROOT / "build"  # fragments for the claude.ai artifact host (gitignored)
-
-SKELETON_HEAD = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
-                 '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">\n'
-                 '<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n')
+DOCS = ROOT.parent / "docs"
 
 
-def write_standalone(fragment: str, name: str) -> Path:
-    """The artifact host wraps fragments in its own skeleton; for GitHub Pages we add one ourselves
-    and point the two pages at each other with relative links."""
-    cut = fragment.index("</style>") + len("</style>")
-    head, body = fragment[:cut], fragment[cut:]
-    html = SKELETON_HEAD + head + "\n</head>\n<body>" + body + "\n</body>\n</html>\n"
-    html = html.replace(LANDING_EXAMPLE_URL, "fi-kela-general-housing-allowance.html").replace(LANDING_URL, "index.html")
-    DOCS.mkdir(exist_ok=True)
-    (DOCS / ".nojekyll").touch()
-    out = DOCS / name
-    out.write_text(html)
-    print(f"Wrote {out} ({len(html)//1024} KB, standalone)")
-    return out
+def refresh_data(page: Path, data: dict) -> None:
+    """Replace the embedded DATA constant in a page, leaving everything else untouched."""
+    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
+    html = page.read_text()
+    new, n = re.subn(r"const DATA = .*?;\n", "const DATA = " + payload.replace("\\", "\\\\") + ";\n", html, count=1, flags=re.S)
+    if n != 1:
+        raise SystemExit(f"{page}: could not find the `const DATA = ...;` line")
+    page.write_text(new)
+    print(f"Refreshed data in {page} ({len(new)//1024} KB)")
 
 
 TASK_TYPES = ("citizen_task", "caseworker_task", "system_task", "third_party_task")
@@ -147,7 +136,7 @@ def contract(nodes: list[dict], edges: list[dict]) -> tuple[dict, list[dict]]:
     return rep, [{"s": a, "t": b} for a, b in sorted(E)]
 
 
-def render_landing(service_dir: Path) -> Path:
+def render_landing(service_dir: Path) -> None:
     """The general landing page, with one process of the service as its live illustration."""
     import statistics
     cfg = yaml.safe_load((service_dir / "sources.yaml").read_text())
@@ -177,19 +166,12 @@ def render_landing(service_dir: Path) -> Path:
         "report": {**report, "sources_count": len(manifest["sources"]), "actors": len(pm["actors"]), "processes": sum(1 for n in pm["nodes"] if n["type"] == "start_event") - 1,
                    "provenance_pct": round(100 * report.get("facts_used_in_map", 0) / max(1, report["facts_verified"]))},
         "means": {"external": statistics.mean(by_vis("external")), "internal": statistics.mean(by_vis("internal"))},
-        "example_step": ex_step, "example_rule": ex_rule, "example_url": LANDING_EXAMPLE_URL,
+        "example_step": ex_step, "example_rule": ex_rule, "example_url": f"{sid}.html",
     }
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    html = (ROOT / "templates" / "landing.html").read_text().replace("/*__DATA__*/null", payload)
-    BUILD.mkdir(exist_ok=True)
-    out = BUILD / "index.html"
-    out.write_text(html)
-    print(f"Wrote {out} ({len(html)//1024} KB)")
-    write_standalone(html, "index.html")
-    return out
+    refresh_data(DOCS / "index.html", data)
 
 
-def render(service_dir: Path) -> Path:
+def render(service_dir: Path) -> None:
     cfg = yaml.safe_load((service_dir / "sources.yaml").read_text())
     sid = cfg["service_id"]
     maps_dir = ROOT / "maps" / sid
@@ -214,16 +196,9 @@ def render(service_dir: Path) -> Path:
         "example_facts": examples,
         "rejected_examples": rejected[:5],
     }
-    payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    template = (ROOT / "templates" / "example.html").read_text()
-    html = template.replace("/*__DATA__*/null", payload)
-    BUILD.mkdir(exist_ok=True)
-    out = BUILD / f"{sid}.html"
-    out.write_text(html)
-    write_standalone(html, f"{sid}.html")
+    refresh_data(DOCS / f"{sid}.html", data)
     (maps_dir / "map.mmd").write_text(mermaid(pm))
-    print(f"Wrote {out} ({len(html)//1024} KB) and {maps_dir / 'map.mmd'}")
-    return out
+    print(f"Wrote {maps_dir / 'map.mmd'}")
 
 
 if __name__ == "__main__":
