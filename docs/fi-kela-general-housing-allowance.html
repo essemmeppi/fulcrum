@@ -376,8 +376,9 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
     const n = nid[id]; if (!n) return;
     const list = (ids, dict, f) => ids.length ? `<ul>${ids.map(i => `<li>${f(dict[i] || { name: i })}</li>`).join('')}</ul>` : '<span class="muted">none</span>';
     const quote = e => `<blockquote>${esc(e.quote)}</blockquote><div class="ev-src">${esc(sources[e.source_id]?.title || e.source_id)} · ${esc(e.locator)}</div>`;
-    const ev = n.provenance.length ? n.provenance.slice(0, 2).map(quote).join('') + (n.provenance.length > 2 ? `<details><summary class="muted" style="cursor:pointer;font-size:0.85rem">${n.provenance.length - 2} more passage${n.provenance.length > 3 ? 's' : ''}</summary>${n.provenance.slice(2).map(quote).join('')}</details>` : '')
-      : `<p class="muted"><strong>Inferred.</strong> ${esc(n.inferred_reason || 'No public passage shows this step; it was added to connect the flow.')}</p>`;
+    const ev = n.provenance.length
+      ? `<details><summary class="eyebrow" style="cursor:pointer">${n.provenance.length} passage${n.provenance.length > 1 ? 's' : ''} behind this step</summary>${n.provenance.map(quote).join('')}</details>`
+      : `<div class="eyebrow">Provenance</div><p class="muted"><strong>Inferred.</strong> ${esc(n.inferred_reason || 'No public passage shows this step; it was added to connect the flow.')}</p>`;
     document.getElementById('panel').innerHTML = `
       <div class="eyebrow">${esc(label(n.type))} · ${esc(actors[n.actor_id]?.name || n.actor_id)}</div>
       <h3>${esc(n.name)}</h3>
@@ -391,7 +392,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
         <dt>Confidence</dt><dd class="mono">${n.confidence.toFixed(2)}</dd>
       </dl>
       ${n.rule_ids.length ? `<details><summary class="eyebrow" style="cursor:pointer">${n.rule_ids.length} rule${n.rule_ids.length > 1 ? 's' : ''} applied</summary>${n.rule_ids.map(r => rules[r]).filter(Boolean).map(r => `<div class="rule-card"><strong>${esc(r.name)}</strong><div>${esc(r.logic)}</div>${r.parameters.length ? `<div class="params">${r.parameters.map(p => `${esc(p.name)} = ${esc(p.value)}`).join(' · ')}</div>` : ''}${r.provenance.length ? `<div class="ev-src">${r.provenance.map(e => `${esc(sources[e.source_id]?.title?.split(':')[0] || e.source_id)} ${esc(e.locator)}`).join(' · ')}</div>` : ''}</div>`).join('')}</details>` : ''}
-      <div class="eyebrow">Provenance</div>${ev}`;
+      ${ev}`;
   }
   draw();
   // zoom and pan on the viewBox
