@@ -210,7 +210,9 @@
 <header class="top"><a class="mark" href="index.html">← The Agentic State</a><span class="muted" style="font-family:var(--display);font-size:0.85rem">Worked example</span></header>
 <section id="statement" class="hero">
   <h1>General housing allowance, Kela, Finland</h1>
-  <p class="lede" id="lede">By reading <a href="#sources">official documents</a>, we mapped the processes of the general housing allowance: the benefit Finland pays to low-income households towards their housing costs, administered by Kela, the national social insurance institution. For this demo we used public documents only. That gives high confidence for the steps citizens see and somewhat lower confidence for the steps inside Kela; access to internal documents would raise it.</p>
+  <p class="lede" id="lede">By reading <a href="#sources">official documents</a>, we mapped the processes of the general housing allowance: the benefit Finland pays to low-income households towards their housing costs, administered by Kela, the national social insurance institution. </p>
+    
+  <p class="lede" id="lede"> For this demo we used public documents only. That gives high confidence for the steps citizens see and somewhat lower confidence for the steps inside Kela; access to internal documents would raise it.</p>
 </section>
 
 <section id="map">
@@ -243,7 +245,6 @@
   <p style="margin:0.4rem 0 0"><a class="button" href="mailto:hello@agenticstate.org">Get in touch</a><span class="muted" style="font-size:0.9rem;margin-left:0.8rem">hello@agenticstate.org</span></p>
   <h3 id="sources" style="margin:2.4rem 0 0.6rem">Sources</h3>
   <ul id="sources-list" style="margin:0;padding-left:1.1rem;font-size:0.9rem;line-height:1.7"></ul>
-  <footer id="footer"></footer>
 </section>
 
 </div>
@@ -439,7 +440,6 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   }; b.addEventListener('click', show); b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } }); });
   document.querySelector('#bars-mode .bar[data-k="agent_can_execute"]')?.click();
   document.getElementById('sources-list').innerHTML = manifest.sources.map(s => `<li><a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title)}</a> <span class="muted">· ${esc(s.publisher)}</span></li>`).join('');
-  document.getElementById('footer').textContent = `Map built with ${report.model} on 28 October 2026. Nothing on this page has been validated by Kela yet.`;
 
   // rail highlight
   const links = [...document.querySelectorAll('#rail a')];
