@@ -370,6 +370,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   }
 
   const modeColour = n => css(palettes.agent_mode[n.agent_mode] || '--muted');
+    const plain = s => String(s || '').replace(/\b(R_[A-Z0-9_]+)\b/g, id => rules[id] ? `“${rules[id].name}”` : id).replace(/\s*\((?:[a-z0-9-]+:)?F\d+(?:\s*(?:,|and|;)\s*(?:[a-z0-9-]+:)?F\d+)*\)/g, '').replace(/\s{2,}/g, ' ').trim();
   function select(id) {
     selected = id; draw();
     const n = nid[id]; if (!n) return;
@@ -382,7 +383,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
       <h3>${esc(n.name)}</h3>
       <p>${esc(n.description)}</p>
       <div style="display:flex;flex-wrap:wrap;gap:0.35rem"><span class="pill" style="--c:${css(palettes.visibility[n.visibility] || '--muted')}">${esc(n.visibility)}</span><span class="pill" style="--c:${modeColour(n)}">${esc(label(n.agent_mode))}</span><span class="pill" style="--c:${css('--muted')}">${esc(label(n.automation_class))}</span>${n.validated ? `<span class="pill" style="--c:${css('--ok')}">validated</span>` : ''}</div>
-      <p class="muted" style="font-size:0.88rem">${esc(n.agent_mode_reason)}</p>
+      <p class="muted" style="font-size:0.88rem">${esc(plain(n.agent_mode_reason))}</p>
       <dl class="kv">
         <dt>Channel</dt><dd>${esc(n.channel || '—')}</dd>
         <dt>Time limit</dt><dd>${esc(n.time_limit || '—')}</dd>
@@ -429,9 +430,10 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
     document.querySelectorAll('#bars-mode .bar').forEach(x => x.classList.remove('active'));
     b.classList.add('active');
     const names = (ids, dict) => ids.map(i => dict[i]?.name || i).join(', ');
+    const plain = s => String(s || '').replace(/\b(R_[A-Z0-9_]+)\b/g, id => rules[id] ? `“${rules[id].name}”` : id).replace(/\s*\((?:[a-z0-9-]+:)?F\d+(?:\s*(?:,|and|;)\s*(?:[a-z0-9-]+:)?F\d+)*\)/g, '').replace(/\s{2,}/g, ' ').trim();
     modeList.innerHTML = map.nodes.filter(n => n.agent_mode === k).map(n => {
       const attrs = [n.inputs.length ? `in: ${esc(names(n.inputs, dobj))}` : '', n.outputs.length ? `out: ${esc(names(n.outputs, dobj))}` : '', n.rule_ids.length ? `${n.rule_ids.length} rule${n.rule_ids.length > 1 ? 's' : ''}: ${esc(names(n.rule_ids, rules))}` : '', n.data_source_ids.length ? `data: ${esc(names(n.data_source_ids, dsrc))}` : '', n.time_limit ? `deadline: ${esc(n.time_limit)}` : '', `confidence ${n.confidence.toFixed(2)}`].filter(Boolean).join(' · ');
-      return `<li><div class="head"><strong style="font-weight:500">${esc(n.name)}</strong><span class="muted">${esc(actors[n.actor_id]?.name || n.actor_id)} · ${esc(label(n.automation_class))} · ${esc(n.visibility)}</span></div><div class="why">${esc(n.agent_mode_reason || n.description)}</div><div class="attrs">${attrs}</div></li>`;
+      return `<li><div class="head"><strong style="font-weight:500">${esc(n.name)}</strong><span class="muted">${esc(actors[n.actor_id]?.name || n.actor_id)} · ${esc(label(n.automation_class))} · ${esc(n.visibility)}</span></div><div class="why">${esc(plain(n.agent_mode_reason || n.description))}</div><div class="attrs">${attrs}</div></li>`;
     }).join('');
   }; b.addEventListener('click', show); b.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); show(); } }); });
   document.querySelector('#bars-mode .bar[data-k="agent_can_execute"]')?.click();
