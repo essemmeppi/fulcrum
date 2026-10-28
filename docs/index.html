@@ -156,7 +156,6 @@
       <div class="label">1 · Map</div>
       <h2>Build an accurate map of how a service runs today.</h2>
       <p>The goal is a precise picture of the process as it is, without interviews and without access to internal systems. Governments publish a great deal about how they work: laws, guidance, forms, decision templates, internal instructions, annual reports. Most of it is unstructured text. One document gives fragments. Many documents together give the whole process. The quantity of documents is what makes the map possible.</p>
-      <p>We read them with frontier models in two passes. First, atomic facts. Each fact carries a verbatim quote, and code checks that the quote exists in the source; a fact that cannot be found word for word is dropped. Second, the map, assembled only from verified facts. Steps that no document shows are marked inferred, not hidden.</p>
       <p>The output is one JSON document per service, in a standard structure: steps, actors, rules with parameters, data sources, flows. Every element carries its provenance and a confidence score. The structure is the same for every service in every country, so maps can be compared and loaded by software.</p>
       <details class="schema"><summary>Show the structure of the JSON</summary>
         <dl>
@@ -176,13 +175,13 @@
       <div class="label">2 · Encode</div>
       <h2>Build agents with harnesses to run the service.</h2>
       <p>The goal is to run the operations of a service with agents, under the authority's control. The map becomes the specification an agent harness loads: a tool for every register, every rule as a check, an approval gate wherever the law requires a person. Each step states what the agent may do: execute it (rules, register lookups, notifications), prepare it for a human (document checks, assessments), or leave it to people (formal decisions, the citizen's own actions).</p>
-      <p>This is more than a model of the process. The same harness that replays a past case can process a new one, and every run can be checked step by step against the law it implements. The authority keeps the decision, the accountability and the relationship with the citizen; the routine work runs on the encoded workflow. Small banks already buy their operations this way and keep the brand and the customer. Public services can move in the same direction, one process at a time.</p>
+      <p>This is more than a model of the process. The same harness that replays a past case can process a new one, and every run can be checked step by step against the law it implements. The work can now run on the encoded workflow.</p>
     </div>
     <div class="step" data-phase="redesign" id="s-redesign">
       <div class="label">3 · Redesign</div>
       <h2>Change the process to make it simpler, faster and more transparent.</h2>
-      <p>The goal is state capacity: services that cost less to run, are easier to use, and produce better outcomes, with less of the public's time and the administration's. Today redesign means workshops: the process is reconstructed from interviews, drawn once, and argued over. With many services encoded in one structure, the shared work shows itself. Intake, identity, income checks, decision notices and annual reviews appear in every benefit, with rules that differ only in parameters and handovers that exist only because two offices once did.</p>
-      <p>Redesign becomes a comparison between maps. A proposed change is itself a map, with the same provenance and confidence, so it can be tested on synthetic cases before a law changes or a desk moves. The drawing shows the mechanical version: consecutive steps by the same actor doing the same kind of work merge, a check merges into the step that computes it, and loops are drawn once. We have not tested redesign with an agency yet.</p>
+      <p>The goal is increasing state capacity with processes that cost less to run, are more reliable, and more transparent. This ultimately means better access to services, more responsive government, and more trust in the state. Today redesign means workshops: the process is reconstructed from interviews, drawn once, and argued over. While changes at the political level bring pressure to administration.</p>
+      <p>Redesign becomes immediate. A proposed change is itself a map, with the same provenance and confidence, so it can be tested on synthetic cases before a law changes or a desk moves. The drawing shows the mechanical version: consecutive steps by the same actor doing the same kind of work merge, a check merges into the step that computes it, and loops are drawn once.</p>
     </div>
   </div>
   <div class="viz-wrap">
