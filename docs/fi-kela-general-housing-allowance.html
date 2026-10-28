@@ -10,44 +10,45 @@
 <style>
   /* Layout: a guided scroll with a sticky step rail; text column ~68ch, the map breaks out to full width. */
   :root {
-    --bg: #F6F7F5; --surface: #FFFFFF; --fg: #141F2A; --muted: #5C6B78; --line: #D6DCE1; --line-strong: #AEB8C1;
-    --accent: #1557A6; --accent-soft: #E3ECF8;
+    --bg: #ffffff; --surface: #ffffff; --fg: #111111; --muted: #6b6b73; --line: #e6e6ea; --line-strong: #c9c9d1;
+    --accent: #8b7ae8; --accent-soft: #ece8fb;
     --ok: #1E7A5A; --ok-soft: #DDF1E8; --warn: #BD6414; --warn-soft: #FBE9D6; --bad: #B3261E;
-    --mode-agent: #1557A6; --mode-prep: #6B48C8; --mode-human: #66737F;
+    --mode-agent: #8b7ae8; --mode-prep: #bfb3f4; --mode-human: #8c99a5;
     --display: "Inter", "Helvetica Neue", Arial, sans-serif;
     --serif: "Newsreader", Georgia, serif;
     --body: "Inter", "Helvetica Neue", Arial, sans-serif;
     --mono: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, monospace;
   }
+
   @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
-    --bg: #0F1418; --surface: #161C22; --fg: #E6EBEF; --muted: #9AA8B4; --line: #28323B; --line-strong: #3B4752;
-    --accent: #6AA9F2; --accent-soft: #15283F;
+    --bg: #0f0f13; --surface: #15151b; --fg: #ececf1; --muted: #9a9aa8; --line: #24242c; --line-strong: #3a3a46;
+    --accent: #a491fc; --accent-soft: #241f3d;
     --ok: #48B88C; --ok-soft: #10332A; --warn: #E6A05A; --warn-soft: #3A2A14; --bad: #F0796F;
-    --mode-agent: #6AA9F2; --mode-prep: #A78BFA; --mode-human: #8C99A5;
+    --mode-agent: #a491fc; --mode-prep: #7d6ad6; --mode-human: #8c99a5;
     color-scheme: dark;
   } }
   :root[data-theme="dark"] {
-    --bg: #0F1418; --surface: #161C22; --fg: #E6EBEF; --muted: #9AA8B4; --line: #28323B; --line-strong: #3B4752;
-    --accent: #6AA9F2; --accent-soft: #15283F;
+    --bg: #0f0f13; --surface: #15151b; --fg: #ececf1; --muted: #9a9aa8; --line: #24242c; --line-strong: #3a3a46;
+    --accent: #a491fc; --accent-soft: #241f3d;
     --ok: #48B88C; --ok-soft: #10332A; --warn: #E6A05A; --warn-soft: #3A2A14; --bad: #F0796F;
-    --mode-agent: #6AA9F2; --mode-prep: #A78BFA; --mode-human: #8C99A5;
+    --mode-agent: #a491fc; --mode-prep: #7d6ad6; --mode-human: #8c99a5;
     color-scheme: dark;
   }
 
   * { box-sizing: border-box; }
-  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-weight: 300; font-size: 16px; line-height: 1.55;
+  body { background: var(--bg); color: var(--fg); font-family: var(--body); font-weight: 300; font-size: 1.05rem; line-height: 1.55;
          padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 96px; }
   body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
   a { color: var(--accent); }
   h1, h2, h3, h4 { font-family: var(--display); line-height: 1.1; text-wrap: balance; margin: 0; }
-  h1 { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(2rem, 4.6vw, 3.2rem); letter-spacing: -0.01em; }
+  h1 { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: clamp(2rem, 4.6vw, 3.3rem); line-height: 1.12; letter-spacing: -0.01em; }
   h2 { font-size: clamp(1.4rem, 2.6vw, 1.8rem); font-weight: 300; letter-spacing: -0.01em; }
   h3 { font-size: 1.1rem; font-weight: 400; }
   p { margin: 0; }
   .eyebrow { font-family: var(--display); font-size: 0.76rem; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
   .mono { font-family: var(--mono); font-size: 0.82em; }
   .muted { color: var(--muted); }
-  .wrap { max-width: 1120px; margin: 0 auto; }
+  .wrap { max-width: 1100px; margin: 0 auto; }
   .prose { max-width: 68ch; display: grid; gap: 1rem; }
   .prose p + p { margin-top: 0; }
 
@@ -69,10 +70,12 @@
   .status.next { color: var(--warn); border-color: var(--warn); background: var(--warn-soft); }
 
   /* hero */
-  .hero { padding-block: 2.5rem 2.5rem; display: grid; gap: 1rem; }
-  header.top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-top: 1.2rem; }
+  .hero { padding-block: 5.5rem 3rem; display: grid; gap: 1.4rem; }
+  header.top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding-block: 1.4rem 0; font-family: var(--display); font-size: 0.9rem; }
   header.top .mark { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.25rem; text-decoration: none; color: var(--fg); }
-  header.top .mark:hover { color: var(--accent); }
+  header.top nav { display: flex; gap: 1.4rem; }
+  header.top nav a { text-decoration: none; color: var(--muted); }
+  header.top nav a:hover, header.top nav a.current { color: var(--fg); }
   .hero .lede { font-size: clamp(1rem, 1.8vw, 1.15rem); max-width: 62ch; }
   .claims { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1px; background: var(--line); border: 1px solid var(--line); margin-top: 0.5rem; }
   .claim { background: var(--surface); padding: 1.1rem 1.2rem; display: grid; gap: 0.5rem; align-content: start; }
@@ -201,7 +204,10 @@
 
 <div class="wrap">
 
-<header class="top"><a class="mark" href="index.html">← The Agentic State</a><span class="muted" style="font-family:var(--display);font-size:0.85rem">Worked example</span></header>
+<header class="top">
+  <a class="mark" href="https://agenticstate.org" target="_blank" rel="noopener">The Agentic State</a>
+  <nav><a href="index.html">Home</a><a href="fi-kela-general-housing-allowance.html" class="current">Demo</a></nav>
+</header>
 <section id="statement" class="hero">
   <h1>General housing allowance (Kela, Finland)</h1>
   <p class="lede" id="lede">By reading <a href="#sources">official documents</a>, we mapped the processes of the general housing allowance: the benefit Finland pays to low-income households towards their housing costs, administered by Kela, the national social insurance institution. </p>
