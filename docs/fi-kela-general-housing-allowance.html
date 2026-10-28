@@ -370,7 +370,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
   }
 
   const modeColour = n => css(palettes.agent_mode[n.agent_mode] || '--muted');
-    const plain = s => String(s || '').replace(/\b(R_[A-Z0-9_]+)\b/g, id => rules[id] ? `“${rules[id].name}”` : id).replace(/\s*\((?:[a-z0-9-]+:)?F\d+(?:\s*(?:,|and|;)\s*(?:[a-z0-9-]+:)?F\d+)*\)/g, '').replace(/\s{2,}/g, ' ').trim();
+    const plain = s => String(s || '').replace(/\b(R_[A-Z0-9_]+)\b/g, id => rules[id] ? `“${rules[id].name}”` : id).replace(/\s*\((?:[A-Za-z0-9-]+:)?F\d+(?:\s*(?:,|and|;)\s*(?:[A-Za-z0-9-]+:)?F\d+)*\)/g, '').replace(/\s{2,}/g, ' ').trim();
   function select(id) {
     selected = id; draw();
     const n = nid[id]; if (!n) return;
@@ -430,7 +430,7 @@ const DATA = {"service_cfg": {"service_id": "fi-kela-general-housing-allowance",
     document.querySelectorAll('#bars-mode .bar').forEach(x => x.classList.remove('active'));
     b.classList.add('active');
     const names = (ids, dict) => ids.map(i => dict[i]?.name || i).join(', ');
-    const plain = s => String(s || '').replace(/\b(R_[A-Z0-9_]+)\b/g, id => rules[id] ? `“${rules[id].name}”` : id).replace(/\s*\((?:[a-z0-9-]+:)?F\d+(?:\s*(?:,|and|;)\s*(?:[a-z0-9-]+:)?F\d+)*\)/g, '').replace(/\s{2,}/g, ' ').trim();
+    const plain = s => String(s || '').replace(/\b(R_[A-Z0-9_]+)\b/g, id => rules[id] ? `“${rules[id].name}”` : id).replace(/\s*\((?:[A-Za-z0-9-]+:)?F\d+(?:\s*(?:,|and|;)\s*(?:[A-Za-z0-9-]+:)?F\d+)*\)/g, '').replace(/\s{2,}/g, ' ').trim();
     modeList.innerHTML = map.nodes.filter(n => n.agent_mode === k).map(n => {
       const attrs = [n.inputs.length ? `in: ${esc(names(n.inputs, dobj))}` : '', n.outputs.length ? `out: ${esc(names(n.outputs, dobj))}` : '', n.rule_ids.length ? `${n.rule_ids.length} rule${n.rule_ids.length > 1 ? 's' : ''}: ${esc(names(n.rule_ids, rules))}` : '', n.data_source_ids.length ? `data: ${esc(names(n.data_source_ids, dsrc))}` : '', n.time_limit ? `deadline: ${esc(n.time_limit)}` : '', `confidence ${n.confidence.toFixed(2)}`].filter(Boolean).join(' · ');
       return `<li><div class="head"><strong style="font-weight:500">${esc(n.name)}</strong><span class="muted">${esc(actors[n.actor_id]?.name || n.actor_id)} · ${esc(label(n.automation_class))} · ${esc(n.visibility)}</span></div><div class="why">${esc(plain(n.agent_mode_reason || n.description))}</div><div class="attrs">${attrs}</div></li>`;
