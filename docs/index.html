@@ -6,7 +6,7 @@
 <style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
 <title>The Agentic State</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@1,6..72,300&family=Inter:wght@300;400;500&display=swap">
 <style>
   /* Layout: one narrow reading column (observableintuition register); the three-step section opens to a two-column split with a sticky network on the right. */
   :root {
@@ -25,21 +25,21 @@
     --accent: #a491fc; --accent-soft: #241f3d; --accent-ink: #c4b8ff; color-scheme: dark;
   }
   * { box-sizing: border-box; }
-  body { background: var(--bg); color: var(--fg); font-family: var(--serif); font-size: 1.2rem; line-height: 1.5;
+  body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-weight: 300; font-size: 1.05rem; line-height: 1.55;
          padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 0 5rem; }
   body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 10; background: var(--bg); }
   a { color: inherit; text-decoration: underline; text-decoration-color: var(--line-strong); text-underline-offset: 0.15em; }
   a:hover { text-decoration-color: var(--accent); }
   p { margin: 0 0 1.1em; }
-  h2, h3 { font-family: var(--serif); font-weight: 400; margin: 0; text-wrap: balance; }
-  h2 { font-size: 1.75rem; line-height: 1.2; margin-bottom: 1rem; }
-  h3 { font-size: 1.35rem; line-height: 1.25; margin-bottom: 0.6rem; }
+  h2, h3 { font-family: var(--sans); font-weight: 300; margin: 0; text-wrap: balance; }
+  h2 { font-size: 1.6rem; line-height: 1.2; margin-bottom: 1rem; letter-spacing: -0.01em; }
+  h3 { font-size: 1.2rem; line-height: 1.25; margin-bottom: 0.6rem; }
   .sans { font-family: var(--sans); }
   .label { font-family: var(--sans); font-size: 0.72rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
   .muted { color: var(--muted); }
 
   header.top { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; max-width: 1100px; margin: 0 auto; padding-block: 1.4rem 0; font-family: var(--sans); font-size: 0.9rem; }
-  header.top .mark { font-family: var(--serif); font-size: 1.15rem; font-weight: 500; text-decoration: none; }
+  header.top .mark { font-family: var(--serif); font-style: italic; font-weight: 300; font-size: 1.25rem; text-decoration: none; }
   header.top nav { display: flex; gap: 1.4rem; }
   header.top nav a { text-decoration: none; color: var(--muted); }
   header.top nav a:hover { color: var(--fg); }
@@ -50,14 +50,14 @@
   .hero .date { font-family: var(--sans); font-size: 0.85rem; color: var(--muted); margin-bottom: 2.4rem; }
   .hero p:last-child { margin-bottom: 0; }
   .proof { font-family: var(--sans); font-size: 0.92rem; color: var(--muted); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 0.9rem 0; margin: 2.4rem 0 0; display: flex; flex-wrap: wrap; gap: 0.4rem 1.6rem; }
-  .proof b { color: var(--fg); font-weight: 600; }
+  .proof b { color: var(--fg); font-weight: 500; }
 
   /* three steps */
   .steps { max-width: 1100px; margin: 4rem auto 0; display: grid; grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr); gap: 3rem; align-items: start; }
   .steps .text { display: grid; gap: 0; }
   .step { min-height: 70vh; display: flex; flex-direction: column; justify-content: center; padding-block: 2rem; }
   .step .label { margin-bottom: 0.6rem; }
-  .step p { font-size: 1.1rem; }
+  .step p { font-size: 1rem; }
   .viz-wrap { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 1.2rem); display: grid; gap: 0.7rem; }
   .viz { width: 100%; aspect-ratio: 1000 / 640; max-width: 100%; border: 1px solid var(--line); background: var(--bg); overflow: hidden; }
   .viz svg { width: 100%; height: 100%; display: block; }
@@ -99,8 +99,8 @@
 
   /* step anatomy */
   .anatomy { padding-block: 4rem 1rem; }
-  .features { display: grid; grid-template-columns: max-content 1fr; gap: 0.35rem 1.1rem; font-size: 1rem; margin: 1.2rem 0 1.6rem; }
-  .features dt { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; padding-top: 0.25rem; }
+  .features { display: grid; grid-template-columns: max-content 1fr; gap: 0.35rem 1.1rem; font-size: 0.95rem; margin: 1.2rem 0 1.6rem; }
+  .features dt { font-family: var(--sans); font-size: 0.82rem; font-weight: 500; padding-top: 0.2rem; }
   .features dd { margin: 0; color: var(--fg-soft); }
   @media (max-width: 600px) { .features { grid-template-columns: 1fr; gap: 0.1rem 0; } .features dd { margin-bottom: 0.5rem; } }
   pre { font-family: var(--mono); font-size: 0.74rem; line-height: 1.5; background: var(--accent-soft); color: var(--fg); border-left: 2px solid var(--accent); padding: 0.9rem 1rem; margin: 0 0 1rem; overflow-x: auto; white-space: pre; }
@@ -110,7 +110,7 @@
   .findings { padding-block: 3rem 1rem; }
   .numbers { font-family: var(--sans); display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem 1.6rem; margin: 1.4rem 0 2rem; }
   .numbers div { border-top: 1px solid var(--line-strong); padding-top: 0.5rem; }
-  .numbers .v { font-family: var(--serif); font-size: 1.9rem; font-weight: 300; line-height: 1.1; font-variant-numeric: tabular-nums; }
+  .numbers .v { font-family: var(--sans); font-size: 1.7rem; font-weight: 300; line-height: 1.1; font-variant-numeric: tabular-nums; }
   .numbers .k { font-size: 0.8rem; color: var(--muted); margin-top: 0.15rem; }
   .findings ol { padding-left: 1.2rem; margin: 0 0 1.2rem; }
   .findings li { margin-bottom: 0.6rem; }
@@ -184,7 +184,7 @@
     <dt>Provenance</dt><dd>The passages the step rests on: source, section, verbatim quote. A step with none is marked inferred.</dd>
     <dt>Confidence</dt><dd>Our expected probability that the step matches how the process really runs, from a fixed rubric. A responsible official can validate a step; validated steps count as certain.</dd>
   </dl>
-  <p class="muted" style="font-size:1rem">One real step and one of the rules it applies, from the Finnish map, abridged:</p>
+  <p class="muted" style="font-size:0.95rem">One real step and one of the rules it applies, from the Finnish map, abridged:</p>
   <div class="two-code"><pre id="ex-step"></pre><pre id="ex-rule"></pre></div>
 </section>
 
