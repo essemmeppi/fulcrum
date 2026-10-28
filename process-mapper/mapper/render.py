@@ -69,8 +69,86 @@ def write_standalone(fragment: str, name: str) -> Path:
     return out
 
 
+TASK_TYPES = ("citizen_task", "caseworker_task", "system_task", "third_party_task")
+
+
+def first_process(pm: dict) -> tuple[list[dict], list[dict]]:
+    """The steps reachable from the service's first start event without crossing another start event."""
+    starts = [n["id"] for n in pm["nodes"] if n["type"] == "start_event"]
+    out: dict[str, list[str]] = {}
+    for e in pm["edges"]:
+        out.setdefault(e["source"], []).append(e["target"])
+    seen, stack = {starts[0]}, [starts[0]]
+    while stack:
+        for v in out.get(stack.pop(), []):
+            if v in starts[1:] or v in seen:
+                continue
+            seen.add(v)
+            stack.append(v)
+    nodes = [n for n in pm["nodes"] if n["id"] in seen]
+    edges = [e for e in pm["edges"] if e["source"] in seen and e["target"] in seen]
+    return nodes, edges
+
+
+def contract(nodes: list[dict], edges: list[dict]) -> tuple[dict, list[dict]]:
+    """Illustrative redesign. Rule 1: consecutive steps by the same actor doing the same kind of work
+    merge. Rule 2: a decision merges into the preceding step when both are by the same actor and of
+    the same kind (the check becomes part of the step). Rule 3: loops are drawn once (back-edges dropped).
+    Returns (rep: original id -> representative id, contracted edges)."""
+    N = {n["id"]: n for n in nodes}
+    rep = {n["id"]: n["id"] for n in nodes}
+    E = {(e["source"], e["target"]) for e in edges}
+
+    def degrees():
+        o, i = {}, {}
+        for a, b in E:
+            o.setdefault(a, set()).add(b)
+            i.setdefault(b, set()).add(a)
+        return o, i
+
+    def merge(b, a):
+        nonlocal E
+        E = {(a if x == b else x, a if y == b else y) for (x, y) in E}
+        E = {(x, y) for (x, y) in E if x != y}
+        for k, v in rep.items():
+            if v == b:
+                rep[k] = a
+
+    changed = True
+    while changed:
+        changed = False
+        o, i = degrees()
+        for a, b in sorted(E):
+            A, B = N[a], N[b]
+            same = A["actor_id"] == B["actor_id"] and A["automation_class"] == B["automation_class"]
+            chain = A["type"] in TASK_TYPES and B["type"] in TASK_TYPES and len(o.get(a, ())) == 1 and len(i.get(b, ())) == 1
+            check = A["type"] in TASK_TYPES and B["type"] == "decision" and len(i.get(b, ())) == 1
+            if same and (chain or check):
+                merge(b, a)
+                changed = True
+                break
+    # rule 3: drop back-edges (longest-path ranks, DFS-based)
+    start = next(n["id"] for n in nodes if n["type"] == "start_event")
+    color, order, back = {}, [], set()
+    o, _ = degrees()
+
+    def dfs(u):
+        color[u] = 1
+        for v in sorted(o.get(u, ())):
+            if color.get(v) == 1:
+                back.add((u, v))
+            elif v not in color:
+                dfs(v)
+        color[u] = 2
+        order.append(u)
+
+    dfs(rep[start])
+    E = {(a, b) for (a, b) in E if (a, b) not in back}
+    return rep, [{"s": a, "t": b} for a, b in sorted(E)]
+
+
 def render_landing(service_dir: Path) -> Path:
-    """The general landing page, with the service's map as its live illustration."""
+    """The general landing page, with one process of the service as its live illustration."""
     import statistics
     cfg = yaml.safe_load((service_dir / "sources.yaml").read_text())
     sid = cfg["service_id"]
@@ -78,8 +156,11 @@ def render_landing(service_dir: Path) -> Path:
     pm = json.loads((maps_dir / "map.json").read_text())
     report = json.loads((maps_dir / "report.json").read_text())
     manifest = json.loads((ROOT / "corpus" / sid / "manifest.json").read_text())
-    nodes = [{k: n[k] for k in ("id", "name", "type", "actor_id", "visibility", "automation_class", "agent_mode", "confidence")} for n in pm["nodes"]]
-    edges = [{"s": e["source"], "t": e["target"]} for e in pm["edges"]]
+    p_nodes, p_edges = first_process(pm)
+    rep, r_edges = contract(p_nodes, p_edges)
+    nodes = [{k: n[k] for k in ("id", "name", "type", "actor_id", "visibility", "automation_class", "agent_mode", "confidence")} for n in p_nodes]
+    edges = [{"s": e["source"], "t": e["target"]} for e in p_edges]
+    process_name = next(n["name"] for n in p_nodes if n["type"] == "start_event")
     by_vis = lambda v: [n["confidence"] for n in pm["nodes"] if n["visibility"] == v]
     step = next((n for n in pm["nodes"] if n["id"] == "T_CALC"), pm["nodes"][len(pm["nodes"]) // 3])
     ex_step = {k: step[k] for k in ("id", "name", "type", "actor_id", "visibility", "inputs", "data_source_ids", "rule_ids", "automation_class", "agent_mode", "agent_mode_reason", "grounding", "confidence", "validated")}
@@ -91,6 +172,8 @@ def render_landing(service_dir: Path) -> Path:
     ex_rule["provenance_count"] = len(rule["provenance"])
     data = {
         "nodes": nodes, "edges": edges, "actors": {a["id"]: a["name"] for a in pm["actors"]},
+        "process_name": process_name, "redesign": {"rep": rep, "edges": r_edges},
+        "service_totals": {"nodes": len(pm["nodes"]), "edges": len(pm["edges"])},
         "report": {**report, "sources_count": len(manifest["sources"]), "actors": len(pm["actors"]), "processes": sum(1 for n in pm["nodes"] if n["type"] == "start_event") - 1,
                    "provenance_pct": round(100 * report.get("facts_used_in_map", 0) / max(1, report["facts_verified"]))},
         "means": {"external": statistics.mean(by_vis("external")), "internal": statistics.mean(by_vis("internal"))},

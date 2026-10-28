@@ -52,6 +52,12 @@
   .step { min-height: 70vh; display: flex; flex-direction: column; justify-content: center; padding-block: 2rem; }
   .step .label { margin-bottom: 0.6rem; }
   .step p { font-size: 1rem; }
+  .schema { margin-top: 0.4rem; font-size: 0.9rem; }
+  .schema summary { cursor: pointer; color: var(--accent-ink); font-weight: 400; list-style: none; }
+  .schema summary::before { content: "+ "; } .schema[open] summary::before { content: "− "; }
+  .schema dl { display: grid; grid-template-columns: max-content 1fr; gap: 0.3rem 0.9rem; margin: 0.8rem 0 0; font-family: var(--mono); font-size: 0.74rem; line-height: 1.45; }
+  .schema dt { color: var(--fg); } .schema dd { margin: 0; color: var(--muted); overflow-wrap: anywhere; }
+  @media (max-width: 600px) { .schema dl { grid-template-columns: 1fr; } .schema dd { margin-bottom: 0.4rem; } }
   .viz-wrap { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 1.2rem); display: grid; gap: 0.7rem; }
   .viz { width: 100%; aspect-ratio: 1000 / 640; max-width: 100%; border: 1px solid var(--line); background: var(--bg); overflow: hidden; }
   .viz svg { width: 100%; height: 100%; display: block; }
@@ -78,18 +84,17 @@
   svg.encode .edge.humanic { stroke: var(--line); }
   @keyframes march { to { stroke-dashoffset: -9; } }
   @media (prefers-reduced-motion: reduce) { svg.encode .edge.agentic { animation: none; stroke-dasharray: none; } .node { transition: none; } }
-  svg.redesign .node { opacity: 0; }
-  svg.redesign .edge { opacity: 0; }
-  .engines, .eedges { opacity: 0; transition: opacity 0.6s 0.35s; pointer-events: none; }
-  svg.redesign .engines, svg.redesign .eedges { opacity: 1; pointer-events: auto; }
-  .eedge { stroke: var(--line-strong); fill: none; }
-  .eedge.agentic { stroke: var(--accent); }
-  .engine .shape { fill: var(--bg); stroke: var(--fg-soft); stroke-width: 1.2; }
-  .engine.agent .shape { fill: var(--accent); stroke: var(--accent); }
-  .engine.prep .shape { fill: var(--accent-soft); stroke: var(--accent); }
-  .engine.human .shape { fill: var(--bg); stroke: var(--line-strong); }
-  .engine text { font-family: var(--sans); font-size: 11px; fill: var(--fg); }
-  .engine text.n { fill: var(--muted); font-size: 10px; }
+  svg.redesign .node.absorbed { opacity: 0; }
+  svg.redesign .edges { opacity: 0; }
+  .redges { opacity: 0; transition: opacity 0.6s 0.4s; }
+  svg.redesign .redges { opacity: 1; }
+  svg.redesign .node.agent .shape { fill: var(--accent); stroke: var(--accent); }
+  svg.redesign .node.prep .shape { fill: var(--accent-soft); stroke: var(--accent); }
+  svg.redesign .node.human .shape { fill: var(--bg); stroke: var(--line-strong); }
+  svg.redesign .redge.agentic { stroke: var(--accent); stroke-width: 1.6; }
+  svg.redesign .redge.humanic { stroke: var(--line-strong); }
+  .edges, .redges { transition: opacity 0.5s; }
+  .node .shape { stroke-width: 1.4; }
 
   /* step anatomy */
   .anatomy { padding-block: 4rem 1rem; }
@@ -137,21 +142,35 @@
   <div class="text">
     <div class="step" data-phase="map" id="s-map">
       <div class="label">1 · Map</div>
-      <h2>Read everything the state publishes about itself.</h2>
-      <p>Laws, guidance, forms, decision templates, internal instructions, annual reports. For one service that is a handful of documents; for a government, hundreds of thousands. We read them with frontier models in two passes. First, atomic facts, each with a verbatim quote that code checks against the source: a fact that cannot be found word for word is dropped. Then the map, assembled only from verified facts. Steps the documents do not show are marked inferred, not hidden.</p>
-      <p>The output is one JSON document per service: steps, actors, rules with their parameters, data sources, flows, each with its provenance and a confidence score. The schema is open and uses the words governments already use for services and processes, so a map reads the same in any country.</p>
+      <h2>Build an accurate map of how a service runs today, from public documents alone.</h2>
+      <p>The goal is a precise picture of the process as it is, without interviews and without access to internal systems. Governments publish a great deal about how they work: laws, guidance, forms, decision templates, internal instructions, annual reports. Most of it is unstructured text. One document gives fragments. Many documents together give the whole process. The quantity of documents is what makes the map possible.</p>
+      <p>We read them with frontier models in two passes. First, atomic facts. Each fact carries a verbatim quote, and code checks that the quote exists in the source; a fact that cannot be found word for word is dropped. Second, the map, assembled only from verified facts. Steps that no document shows are marked inferred, not hidden.</p>
+      <p>The output is one JSON document per service, in a standard structure: steps, actors, rules with parameters, data sources, flows. Every element carries its provenance and a confidence score. The structure is the same for every service in every country, so maps can be compared and loaded by software.</p>
+      <details class="schema"><summary>Show the structure of the JSON</summary>
+        <dl>
+          <dt>service</dt><dd>name, competent authority, legal basis, life events, channels, outputs, eligibility summary, processing time</dd>
+          <dt>actors[]</dt><dd>id, name, kind (citizen · caseworker · system · third party · other authority)</dd>
+          <dt>rules[]</dt><dd>id, name, kind (eligibility · calculation · procedural · deadline · sanction), logic, parameters[], provenance[], grounding, validated</dd>
+          <dt>data_sources[]</dt><dd>id, name, owner, access (api · manual lookup · citizen supplied · unknown), provenance[]</dd>
+          <dt>data_objects[]</dt><dd>id, name, provided_by</dd>
+          <dt>nodes[] (steps)</dt><dd>id, name, type (event · task · decision), actor_id, visibility (external · internal), inputs[], outputs[], data_source_ids[], rule_ids[], channel, time_limit, exceptions[], automation_class, agent_mode, agent_mode_reason, provenance[], grounding, confidence, validated</dd>
+          <dt>edges[] (flows)</dt><dd>source, target, condition, rule_id, provenance[]</dd>
+          <dt>provenance entry</dt><dd>source_id, locator (section, page or heading), quote (verbatim), verified</dd>
+          <dt>sources[]</dt><dd>id, title, url, kind, layer (catalogue · legislation · guidance · forms · internal · statistics · appeals), publisher, fetched_at, sha256</dd>
+        </dl>
+      </details>
     </div>
     <div class="step" data-phase="encode" id="s-encode">
       <div class="label">2 · Encode</div>
-      <h2>Turn the map into something agents can run.</h2>
-      <p>Each step says what an agent may do: execute it (deterministic rules, register lookups, notifications), prepare it for a human (document checks, discretionary assessments), or stay out (formal decisions, the citizen's own actions). Rules become testable statements with parameters and legal basis; data sources carry how they are reached.</p>
-      <p>This is the specification an agent harness loads: a tool per register, the rules as checks, an approval gate wherever the law puts a human. It is built on what agents can now do, long-horizon tool use, structured outputs, evaluation suites, so every run can be replayed and audited against the map. A process encoded this way is a verifiable task: an agent's run can be checked step by step against the law it implements.</p>
+      <h2>Give agents the harness to run the service.</h2>
+      <p>The goal is to run the operations of a service with agents, under the authority's control. The map becomes the specification an agent harness loads: a tool for every register, every rule as a check, an approval gate wherever the law requires a person. Each step states what the agent may do: execute it (rules, register lookups, notifications), prepare it for a human (document checks, assessments), or leave it to people (formal decisions, the citizen's own actions).</p>
+      <p>This is more than a model of the process. The same harness that replays a past case can process a new one, and every run can be checked step by step against the law it implements. The authority keeps the decision, the accountability and the relationship with the citizen; the routine work runs on the encoded workflow. Small banks already buy their operations this way and keep the brand and the customer. Public services can move in the same direction, one process at a time.</p>
     </div>
     <div class="step" data-phase="redesign" id="s-redesign">
       <div class="label">3 · Redesign</div>
-      <h2>Change the process once you can see it whole.</h2>
-      <p>Redesign in government has meant workshops: the process is reconstructed from interviews, drawn once, and argued over. With many services encoded in one schema, the shared work shows itself: intake, identity, income verification, decision notice, annual review appear in every benefit, with rules that differ only in parameters and handovers that exist only because two offices once did.</p>
-      <p>Redesign becomes a comparison between maps rather than a workshop. Each proposed change is itself a map, with the same provenance and confidence, so it can be tested on synthetic cases before anyone changes a law or moves a desk. The drawing on the right is the mechanical version of this: steps that share an actor and a kind of work merge into one engine. We have not tested redesign with an agency yet.</p>
+      <h2>Change the process to make it simpler, faster and more transparent.</h2>
+      <p>The goal is state capacity: services that cost less to run, are easier to use, and produce better outcomes, with less of the public's time and the administration's. Today redesign means workshops: the process is reconstructed from interviews, drawn once, and argued over. With many services encoded in one structure, the shared work shows itself. Intake, identity, income checks, decision notices and annual reviews appear in every benefit, with rules that differ only in parameters and handovers that exist only because two offices once did.</p>
+      <p>Redesign becomes a comparison between maps. A proposed change is itself a map, with the same provenance and confidence, so it can be tested on synthetic cases before a law changes or a desk moves. The drawing shows the mechanical version: consecutive steps by the same actor doing the same kind of work merge, a check merges into the step that computes it, and loops are drawn once. We have not tested redesign with an agency yet.</p>
     </div>
   </div>
   <div class="viz-wrap">
@@ -232,75 +251,71 @@ const DATA = /*__DATA__*/null;
   ].map(t => `<li>${t}</li>`).join('');
   document.getElementById('foot-note').textContent = `Map built with ${report.model}. Vocabulary from CPSV-AP (services) and BPMN (steps). Nothing shown here has been validated by the agency yet.`;
 
-  // ---------- network ----------
-  const W = 1000, H = 640, PAD = 36;
-  const rnd = (s => () => { s |= 0; s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; })(7);
+  // ---------- network: one process of the service, bigger shapes ----------
+  const W = 1000, H = 640, PAD = 48;
+  const rnd = (s => () => { s |= 0; s = s + 0x6D2B79F5 | 0; let t = Math.imul(s ^ s >>> 15, 1 | s); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; })(11);
   const byId = Object.fromEntries(nodes.map(n => [n.id, n]));
   const E = edges.filter(e => byId[e.s] && byId[e.t]);
-  // rank by longest path from start events (cycle-safe), used as a weak left-to-right pull
-  const rank = {}; const indeg = {}; nodes.forEach(n => indeg[n.id] = 0); E.forEach(e => indeg[e.t]++);
-  let frontier = nodes.filter(n => n.type === 'start_event' || indeg[n.id] === 0).map(n => (rank[n.id] = 0, n.id));
-  for (let it = 0; it < 60 && frontier.length; it++) { const next = []; frontier.forEach(u => E.filter(e => e.s === u).forEach(e => { if (rank[e.t] === undefined || rank[e.t] < rank[u] + 1) { if (rank[e.t] === undefined || it < 40) { rank[e.t] = rank[u] + 1; next.push(e.t); } } })); frontier = [...new Set(next)]; }
-  const maxRank = Math.max(1, ...Object.values(rank));
-  const P = {}; nodes.forEach(n => { const r = rank[n.id] ?? maxRank / 2; P[n.id] = { x: PAD + (r / maxRank) * (W - 2 * PAD) + (rnd() - 0.5) * 40, y: PAD + rnd() * (H - 2 * PAD) }; });
-  // force layout
-  const adj = E.map(e => [e.s, e.t]);
-  for (let it = 0; it < 320; it++) {
-    const f = {}; nodes.forEach(n => f[n.id] = { x: 0, y: 0 });
-    for (let i = 0; i < nodes.length; i++) for (let j = i + 1; j < nodes.length; j++) {
-      const a = nodes[i].id, b = nodes[j].id; let dx = P[a].x - P[b].x, dy = P[a].y - P[b].y; let d2 = dx * dx + dy * dy + 0.01; const d = Math.sqrt(d2);
-      const rep = 1600 / d2; f[a].x += dx / d * rep; f[a].y += dy / d * rep; f[b].x -= dx / d * rep; f[b].y -= dy / d * rep;
-    }
-    adj.forEach(([a, b]) => { const dx = P[b].x - P[a].x, dy = P[b].y - P[a].y; const d = Math.sqrt(dx * dx + dy * dy) + 0.01; const k = (d - 46) * 0.03; f[a].x += dx / d * k; f[a].y += dy / d * k; f[b].x -= dx / d * k; f[b].y -= dy / d * k; });
-    nodes.forEach(n => { const r = rank[n.id] ?? maxRank / 2; const tx = PAD + (r / maxRank) * (W - 2 * PAD); f[n.id].x += (tx - P[n.id].x) * 0.015; f[n.id].y += (H / 2 - P[n.id].y) * 0.004; });
-    const cool = 1 - it / 320;
-    nodes.forEach(n => { const v = f[n.id]; const m = Math.sqrt(v.x * v.x + v.y * v.y) || 1; const step = Math.min(m, 8 * cool + 0.5); P[n.id].x = Math.max(PAD, Math.min(W - PAD, P[n.id].x + v.x / m * step)); P[n.id].y = Math.max(PAD, Math.min(H - PAD, P[n.id].y + v.y / m * step)); });
+  const rep = DATA.redesign.rep, RE = DATA.redesign.edges;
+  const reps = [...new Set(Object.values(rep))];
+
+  function ranks(ids, es) {  // longest path from the start event, cycle-safe
+    const start = ids.find(id => byId[id].type === 'start_event') || ids[0];
+    const out = {}; ids.forEach(id => out[id] = []); es.forEach(e => out[e.s].push(e.t));
+    const color = {}, order = [], back = new Set();
+    (function dfs(u) { color[u] = 1; out[u].forEach(v => { if (color[v] === 1) back.add(u + '>' + v); else if (!color[v]) dfs(v); }); color[u] = 2; order.push(u); })(start);
+    ids.forEach(id => { if (!color[id]) order.unshift(id); });
+    const r = {}; order.slice().reverse().forEach(u => { const p = es.filter(e => e.t === u && !back.has(e.s + '>' + e.t) && r[e.s] !== undefined).map(e => r[e.s]); r[u] = p.length ? Math.max(...p) + 1 : 0; });
+    return { r, back };
   }
+  function layout(ids, es, seedPos) {  // force layout with a weak left-to-right pull by rank
+    const { r } = ranks(ids, es); const maxR = Math.max(1, ...ids.map(id => r[id]));
+    const P = {}; ids.forEach(id => { P[id] = seedPos && seedPos[id] ? { ...seedPos[id] } : { x: PAD + (r[id] / maxR) * (W - 2 * PAD) + (rnd() - 0.5) * 60, y: H / 2 + (rnd() - 0.5) * (H - 2 * PAD) }; });
+    const L = 95, REP = 5200;
+    for (let it = 0; it < 360; it++) {
+      const f = {}; ids.forEach(id => f[id] = { x: 0, y: 0 });
+      for (let i = 0; i < ids.length; i++) for (let j = i + 1; j < ids.length; j++) { const a = ids[i], b = ids[j]; const dx = P[a].x - P[b].x, dy = P[a].y - P[b].y; const d2 = dx * dx + dy * dy + 1, d = Math.sqrt(d2); const k = REP / d2; f[a].x += dx / d * k; f[a].y += dy / d * k; f[b].x -= dx / d * k; f[b].y -= dy / d * k; }
+      es.forEach(e => { const dx = P[e.t].x - P[e.s].x, dy = P[e.t].y - P[e.s].y; const d = Math.sqrt(dx * dx + dy * dy) + 1; const k = (d - L) * 0.04; f[e.s].x += dx / d * k; f[e.s].y += dy / d * k; f[e.t].x -= dx / d * k; f[e.t].y -= dy / d * k; });
+      ids.forEach(id => { const tx = PAD + (r[id] / maxR) * (W - 2 * PAD); f[id].x += (tx - P[id].x) * 0.03; f[id].y += (H / 2 - P[id].y) * 0.006; });
+      const cool = 1 - it / 360;
+      ids.forEach(id => { const v = f[id]; const m = Math.sqrt(v.x * v.x + v.y * v.y) || 1; const st = Math.min(m, 10 * cool + 0.4); P[id].x = Math.max(PAD, Math.min(W - PAD, P[id].x + v.x / m * st)); P[id].y = Math.max(PAD, Math.min(H - PAD, P[id].y + v.y / m * st)); });
+    }
+    return P;
+  }
+  const ids = nodes.map(n => n.id);
+  const P = layout(ids, E);
+  const seed = {}; reps.forEach(id => { const mem = ids.filter(k => rep[k] === id); seed[id] = { x: mem.reduce((s, k) => s + P[k].x, 0) / mem.length, y: mem.reduce((s, k) => s + P[k].y, 0) / mem.length }; });
+  const Q = layout(reps, RE, seed);
   const modeCls = n => n.agent_mode === 'agent_can_execute' ? 'agent' : n.agent_mode === 'agent_prepares_human_decides' ? 'prep' : 'human';
   const isAgentic = n => n.agent_mode !== 'human_only';
-
-  // engines: non-event steps grouped by actor + automation class; events grouped into triggers / outcomes
-  const pretty = { deterministic_rule: 'Rules', judgment: 'Judgment', citizen_action: 'Citizen actions', register_lookup: 'Register lookups', notification: 'Notifications', human_signoff: 'Formal decisions', document_check: 'Document checks' };
-  const engKey = n => n.type === 'start_event' ? 'triggers' : n.type === 'end_event' ? 'outcomes' : `${n.actor_id}|${n.automation_class}`;
-  const engines = {}; nodes.forEach(n => { const k = engKey(n); (engines[k] = engines[k] || { id: k, members: [] }).members.push(n); });
-  Object.values(engines).forEach(en => {
-    const m0 = en.members[0];
-    en.label = en.id === 'triggers' ? 'Triggers' : en.id === 'outcomes' ? 'Outcomes' : `${pretty[m0.automation_class] || m0.automation_class} · ${(actors[m0.actor_id] || m0.actor_id).replace(/\s*\(.*\)/, '')}`;
-    const modes = en.members.map(modeCls); en.cls = en.id === 'triggers' || en.id === 'outcomes' ? 'human' : (modes.filter(m => m === 'agent').length >= en.members.length / 2 ? 'agent' : modes.filter(m => m === 'human').length > en.members.length / 2 ? 'human' : 'prep');
-    en.x = en.members.reduce((s, n) => s + P[n.id].x, 0) / en.members.length; en.y = en.members.reduce((s, n) => s + P[n.id].y, 0) / en.members.length; en.r = 9 + 4.5 * Math.sqrt(en.members.length);
-  });
-  const EN = Object.values(engines);
-  for (let it = 0; it < 200; it++) for (let i = 0; i < EN.length; i++) for (let j = i + 1; j < EN.length; j++) { const a = EN[i], b = EN[j]; let dx = b.x - a.x, dy = b.y - a.y; const d = Math.sqrt(dx * dx + dy * dy) || 1; const min = a.r + b.r + 58; if (d < min) { const push = (min - d) / 2; a.x -= dx / d * push; a.y -= dy / d * push; b.x += dx / d * push; b.y += dy / d * push; } }
-  EN.forEach(en => { en.x = Math.max(PAD + en.r, Math.min(W - PAD - en.r - 60, en.x)); en.y = Math.max(PAD + en.r, Math.min(H - PAD - en.r, en.y)); });
-  const eEdges = {}; E.forEach(e => { const a = engKey(byId[e.s]), b = engKey(byId[e.t]); if (a === b) return; const k = a + '>' + b; eEdges[k] = eEdges[k] || { a, b, n: 0, agentic: isAgentic(byId[e.s]) && isAgentic(byId[e.t]) }; eEdges[k].n++; });
-
-  const shape = (n, cls) => n.type === 'decision' ? `<rect class="shape ${cls}" x="-6" y="-6" width="12" height="12" transform="rotate(45)"/>` : (n.type === 'start_event' || n.type === 'end_event' || n.type === 'timer') ? `<circle class="shape ${cls}" r="6.5"/>` : `<rect class="shape ${cls}" x="-7" y="-6" width="14" height="12" rx="1.5"/>`;
-  let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" id="net" class="map" role="img" aria-label="Network of the ${nodes.length} steps of the Finnish general housing allowance">`;
-  svg += `<g class="edges">` + E.map(e => `<line class="edge ${isAgentic(byId[e.s]) && isAgentic(byId[e.t]) ? 'agentic' : 'humanic'}" x1="${P[e.s].x.toFixed(1)}" y1="${P[e.s].y.toFixed(1)}" x2="${P[e.t].x.toFixed(1)}" y2="${P[e.t].y.toFixed(1)}"/>`).join('') + `</g>`;
-  svg += `<g class="nodes">` + nodes.map(n => `<g class="node ${modeCls(n)} ${n.visibility}" data-id="${esc(n.id)}" style="transform:translate(${P[n.id].x.toFixed(1)}px,${P[n.id].y.toFixed(1)}px)"><title>${esc(n.name)} · ${esc(actors[n.actor_id] || n.actor_id)} · ${esc(n.agent_mode.replace(/_/g, ' '))}</title>${shape(n, '')}</g>`).join('') + `</g>`;
-  svg += `<g class="eedges">` + Object.values(eEdges).map(e => { const a = engines[e.a], b = engines[e.b]; return `<line class="eedge ${e.agentic ? 'agentic' : ''}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}" stroke-width="${(0.8 + Math.min(e.n, 6) * 0.5).toFixed(1)}"/>`; }).join('') + `</g>`;
-  svg += `<g class="engines">` + EN.map(en => `<g class="engine ${en.cls}" transform="translate(${en.x.toFixed(1)},${en.y.toFixed(1)})"><title>${esc(en.label)}: ${en.members.length} steps</title><circle class="shape" r="${en.r.toFixed(1)}"/><text x="${(en.r + 6).toFixed(1)}" y="3">${esc(en.label)}</text><text class="n" x="${(en.r + 6).toFixed(1)}" y="16">${en.members.length} step${en.members.length > 1 ? 's' : ''}</text></g>`).join('') + `</g>`;
+  const shape = n => n.type === 'decision' ? `<rect class="shape" x="-11" y="-11" width="22" height="22" transform="rotate(45)"/>` : (n.type === 'start_event' || n.type === 'end_event' || n.type === 'timer') ? `<circle class="shape" r="12"/>` : `<rect class="shape" x="-16" y="-11" width="32" height="22" rx="3"/>`;
+  const edgeCls = (a, b) => isAgentic(byId[a]) && isAgentic(byId[b]) ? 'agentic' : 'humanic';
+  let svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${W} ${H}" id="net" class="map" role="img" aria-label="The application process of the Finnish general housing allowance, ${nodes.length} steps">`;
+  svg += `<g class="edges">` + E.map(e => `<line class="edge ${edgeCls(e.s, e.t)}" x1="${P[e.s].x.toFixed(1)}" y1="${P[e.s].y.toFixed(1)}" x2="${P[e.t].x.toFixed(1)}" y2="${P[e.t].y.toFixed(1)}"/>`).join('') + `</g>`;
+  svg += `<g class="redges">` + RE.map(e => `<line class="edge redge ${edgeCls(e.s, e.t)}" x1="${Q[e.s].x.toFixed(1)}" y1="${Q[e.s].y.toFixed(1)}" x2="${Q[e.t].x.toFixed(1)}" y2="${Q[e.t].y.toFixed(1)}"/>`).join('') + `</g>`;
+  svg += `<g class="nodes">` + nodes.map(n => { const mem = ids.filter(k => rep[k] === n.id); const merged = mem.length > 1 ? ` Merges ${mem.length} steps in the redesign.` : ''; return `<g class="node ${modeCls(n)} ${n.visibility} ${rep[n.id] === n.id ? 'rep' : 'absorbed'}" data-id="${esc(n.id)}" style="transform:translate(${P[n.id].x.toFixed(1)}px,${P[n.id].y.toFixed(1)}px)"><title>${esc(n.name)} · ${esc(actors[n.actor_id] || n.actor_id)} · ${esc(n.agent_mode.replace(/_/g, ' '))}.${merged}</title>${shape(n)}</g>`; }).join('') + `</g>`;
   svg += `</svg>`;
   document.getElementById('viz').innerHTML = svg;
   const net = document.getElementById('net');
-  // collapse targets: when in redesign, each node slides to its engine's centre
   const nodeEls = [...net.querySelectorAll('.node')];
   const home = Object.fromEntries(nodeEls.map(el => [el.dataset.id, el.style.transform]));
 
   const sw = (fill, kind) => kind === 'circle' ? `<svg viewBox="-8 -8 16 16"><circle r="6" fill="${fill}" stroke="currentColor" stroke-width="1.2"/></svg>` : kind === 'diamond' ? `<svg viewBox="-9 -9 18 18"><rect x="-6" y="-6" width="12" height="12" transform="rotate(45)" fill="${fill}" stroke="currentColor" stroke-width="1.2"/></svg>` : `<svg viewBox="-8 -8 16 16"><rect x="-7" y="-6" width="14" height="12" rx="1.5" fill="${fill}" stroke="currentColor" stroke-width="1.2"/></svg>`;
+  const shapesLegend = `<span>${sw('var(--bg)', 'circle')} event</span><span>${sw('var(--bg)', 'rect')} work by one actor</span><span>${sw('var(--bg)', 'diamond')} decision</span>`;
   const legends = {
-    map: `<span>${sw('var(--bg)', 'circle')} event</span><span>${sw('var(--bg)', 'rect')} work by one actor</span><span>${sw('var(--bg)', 'diamond')} decision</span><span>${sw('var(--line)', 'rect')} inside the authority</span><span>${sw('var(--bg)', 'rect')} seen by the citizen</span>`,
-    encode: `<span>${sw('var(--accent)', 'rect')} agent executes</span><span>${sw('var(--accent-soft)', 'rect')} agent prepares, human decides</span><span>${sw('var(--bg)', 'rect')} human only</span><span><svg viewBox="0 0 24 8" style="width:28px"><line x1="0" y1="4" x2="24" y2="4" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="2 5"/></svg> flow an agent can carry</span>`,
-    redesign: `<span>${sw('var(--accent)', 'circle')} engine run by agents</span><span>${sw('var(--accent-soft)', 'circle')} engine prepared by agents</span><span>${sw('var(--bg)', 'circle')} engine run by people</span><span>size = steps merged</span>`,
+    map: shapesLegend + `<span>${sw('var(--line)', 'rect')} inside the authority</span><span>${sw('var(--bg)', 'rect')} seen by the citizen</span>`,
+    encode: shapesLegend + `<span>${sw('var(--accent)', 'rect')} agent executes</span><span>${sw('var(--accent-soft)', 'rect')} agent prepares, human decides</span><span>${sw('var(--bg)', 'rect')} human only</span><span><svg viewBox="0 0 24 8" style="width:28px"><line x1="0" y1="4" x2="24" y2="4" stroke="var(--accent)" stroke-width="1.6" stroke-dasharray="2 5"/></svg> flow an agent can carry</span>`,
+    redesign: shapesLegend + `<span>${sw('var(--accent)', 'rect')} agent executes</span><span>${sw('var(--accent-soft)', 'rect')} agent prepares</span><span>${sw('var(--bg)', 'rect')} human only</span>`,
   };
+  const am = report.nodes_by_agent_mode || {};
   const captions = {
-    map: `The general housing allowance, Kela, Finland: ${nodes.length} steps and ${E.length} flows, laid out left to right from first application. Hover a step for its name.`,
-    encode: `The same map, read as a workflow: ${(report.nodes_by_agent_mode || {}).agent_can_execute || 0} steps an agent can execute, ${(report.nodes_by_agent_mode || {}).agent_prepares_human_decides || 0} it can prepare, ${(report.nodes_by_agent_mode || {}).human_only || 0} that stay with people. Moving dashes mark flows between agent-operable steps.`,
-    redesign: `Illustrative: the ${nodes.filter(n => !/event/.test(n.type)).length} working steps merged into ${EN.length - 2} engines by actor and kind of work, plus triggers and outcomes. Thicker lines carry more flows.`,
+    map: `${DATA.process_name}: the application process of the general housing allowance, ${nodes.length} steps and ${E.length} flows, one of ${report.processes} processes in the service (${DATA.service_totals.nodes} steps in all). Hover a step for its name.`,
+    encode: `The same process read as a workflow. Purple steps an agent can execute, pale ones it prepares for a human, white ones stay with people. Moving dashes mark flows an agent can carry from one step to the next.`,
+    redesign: `Illustrative redesign of the same process: ${nodes.length} steps become ${reps.length}, ${E.length} flows become ${RE.length}. Steps that merged keep the shape of the step that absorbs them.`,
   };
   function setPhase(ph) {
     net.setAttribute('class', ph);
-    nodeEls.forEach(el => { const n = byId[el.dataset.id]; const en = engines[engKey(n)]; el.style.transform = ph === 'redesign' ? `translate(${en.x.toFixed(1)}px,${en.y.toFixed(1)}px)` : home[el.dataset.id]; });
+    nodeEls.forEach(el => { const id = el.dataset.id; el.style.transform = ph === 'redesign' ? `translate(${Q[rep[id]].x.toFixed(1)}px,${Q[rep[id]].y.toFixed(1)}px)` : home[id]; });
     document.getElementById('legend').innerHTML = legends[ph]; document.getElementById('caption').textContent = captions[ph];
   }
   setPhase('map');
