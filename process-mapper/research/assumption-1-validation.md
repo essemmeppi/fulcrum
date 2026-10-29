@@ -73,7 +73,7 @@ Same corpus, different builds, all aligned to the 129-step reference by the same
 | Law only | 113 | 54 (42%) | 66 (58%) | 43 / 45 |
 | Citizen guidance only | 83 | 53 (41%) | 66 (80%) | 45 / 49 |
 | Application form only | 85 | 39 (30%) | 40 (47%) | 32 / 38 |
-| Per document, then merge | 170 | [fill] | [fill] | [fill] |
+| Per document (no inference), then merge | 170 | 66 (51%) | 101 (59%) | 53 / 60 |
 | Claims only: no inferred actor, no inferred order | 60 | 40 (31%) | 44 (73%) | 3 / 20 (15 unconnected) |
 
 Readings.
@@ -82,6 +82,7 @@ Readings.
 - **Runs are not stable in size.** Three Sonnet runs on identical inputs: 95 to 110 steps, 44 to 52 of them "system". They recover largely the same reference steps (overlap 0.84 between runs 1 and 3), so the instability is in what gets padded, not in what gets found.
 - **Order comes from the law and the guide.** Kendall's tau between the order of first mention in a document and process order: Act 0.64, benefit guide 0.68, service catalogue 0.70, citizen pages 0.36 to 0.42, form 0.11, parameter page 0.06. The law-only build gets 43 of 45 orders right; the form-only build 32 of 38 only because its loops make everything reachable.
 - **The internal note adds its own branch and nothing else** (67 versus 63 to 75 recovered).
+- **Decompose, then merge, gives the best recall per invented step.** 66 of 129 recovered; 43 of the 66 come from nodes that two or more documents support. But the merge is 170 nodes, 69 of them matching nothing in the guideline (form fields, rules as steps, events), so it is a candidate list for review, not a map.
 - **Forbidding inference lowers recall and removes the invented structure.** The claims-only build names no actor for 35 of 60 steps because no public sentence names one, states 40 orders instead of 150 edges, and writes 24 questions. Checked against the benefit guideline (one Opus judge, same rubric), its 60 claims: 16 described as steps, 16 with corrections, 10 rule-only, 18 absent, 0 contradicted, and not one claim with a wrong actor. The absent ones are citizen channel steps (calculator, upload, postal address, status check), the State-funding transfers, and the appeal steps the guideline defers to the cross-benefit guideline. By share, 27 per cent of its claims are described as steps against 13 per cent for the two-pass map in the same round, and 27 per cent need a correction against 32 per cent. It recovers 40 reference steps and connects almost none of them. It is the honest map: everything in it is a sentence, and everything it does not know is a question.
 
 ### 2.4 Australia and Germany
