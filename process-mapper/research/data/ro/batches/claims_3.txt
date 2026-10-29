@@ -1,0 +1,237 @@
+CLAIM C57
+  name: Primarul solicită informaţii altor instituţii
+  what: To establish the right, the mayor requests information from other institutions/authorities.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: application under examination
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «primarul stabileşte dreptul la ajutor pentru încălzire, solicitând informaţii altor instituţii/autorităţi»
+
+CLAIM C58
+  name: Anchete sociale de verificare în sezonul rece
+  what: During the cold season the public social-assistance service carries out social inquiries to check reported situations and detect error and fraud.
+  who: das_staff (evidence: 'serviciul public de asistenţă socială'); automation: unknown
+  trigger: third-party report, AJPIS request, or ex officio
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (3): r2_law-226-2021.txt: «Pe parcursul sezonului rece, la sesizarea terţilor, la solicitarea agenţiilor pentru plăţi şi inspecţie socială»; r2_law-226-2021.txt: «serviciul public de asistenţă socială efectuează anchete sociale pentru verificarea situaţiilor semnalate şi determinarea cazurilor de eroare şi fraudă.»
+
+CLAIM C59
+  name: Dispoziţie unică pentru ajutor şi VMG/ASF
+  what: When heating aid is requested together with minimum-income aid and/or family allowance, the mayor's disposition grants all requested rights.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: joint request with VMG/ASF (art. 18(1))
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «Pentru situaţia prevăzută la alin. (1), dispoziţia primarului conţine acordarea tuturor drepturilor solicitate.»
+
+CLAIM C60
+  name: Primarul transmite situaţia modificărilor/încetărilor
+  what: Within the same 5 days, the mayor sends suppliers, owners' associations and AJPIS the statement of modified or terminated rights, on paper and electronically.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: new disposition after a change
+  stated predecessors: C21 (Primarul emite noi dispoziţii după modificări)
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «primarul transmite furnizorilor, asociaţiilor de proprietari/locatari, precum şi agenţiilor teritoriale situaţia privind modificările prevăzute la alin. (3)»
+
+CLAIM C61
+  name: Includerea borderoului în PIEE
+  what: After certification, the town hall includes the borderou data in its annual energy-efficiency improvement programme (PIEE), showing vulnerable consumers' aggregated consumption separately.
+  who: other (evidence: 'primăriile (town hall; department not named)'); automation: unknown
+  trigger: borderou certified
+  stated predecessors: C29 (Primarul certifică borderoul şi îl trimite la AJPIS)
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «şi este inclus de către primării în Programul anual de îmbunătăţire a eficienţei energetice (PIEE)»
+
+CLAIM C62
+  name: Asociaţia defalcă cheltuielile ţinând cont de ajutor
+  what: Each month the owners' association splits heating (and gas) costs per individual consumer, taking the heating aid into account.
+  who: other (evidence: 'asociaţiile de proprietari/locatari'); automation: unknown
+  trigger: thermal: within 10 days of receiving the invoice; gas: within the contract term
+  stated predecessors: C27 (Furnizorul emite factura cu ajutorul evidenţiat)
+  stated successors: C63 (Asociaţia trimite furnizorului borderoul defalcării)
+  sources (2): r2_law-226-2021.txt: «Lunar, în termen de 10 zile de la data primirii facturii, asociaţiile de proprietari/locatari au obligaţia de a defalca, pe consumatori individuali, cheltuielil»; r2_law-226-2021.txt: «asociaţiile de proprietari/locatari au obligaţia de a defalca, pe consumatori individuali, cheltuielile privind gazele naturale»
+
+CLAIM C63
+  name: Asociaţia trimite furnizorului borderoul defalcării
+  what: The association records the cost split in a borderou sent to the supplier within 2 days of drawing it up (gas: no later than 5 days from the invoice).
+  who: other (evidence: 'asociaţia de proprietari/locatari'); automation: unknown
+  trigger: cost split done
+  stated predecessors: C62 (Asociaţia defalcă cheltuielile ţinând cont de ajutor)
+  stated successors: none stated
+  sources (2): r2_law-226-2021.txt: «defalcarea cheltuielilor prevăzute la alin. (1) se evidenţiază într-un borderou care se transmite furnizorului în termen de maximum 2 zile de la întocmire.»; r2_law-226-2021.txt: «dar nu mai mult de 5 zile de la data primirii facturii.»
+
+CLAIM C64
+  name: Asociaţia evidenţiază ajutorul în lista de întreţinere
+  what: The association shows the heating aid monthly in the maintenance-cost table.
+  who: other (evidence: 'asociaţia de proprietari/locatari'); automation: unknown
+  trigger: monthly
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (2): r2_law-226-2021.txt: «Asociaţia de proprietari/locatari are obligaţia de a evidenţia lunar ajutorul pentru energie termică în tabelul cu cheltuielile de întreţinere.»; r2_law-226-2021.txt: «Asociaţia de proprietari/locatari are obligaţia de a evidenţia lunar ajutorul pentru gaze naturale în tabelul cu cheltuielile de întreţinere.»
+
+CLAIM C65
+  name: AJPIS constituie baza de date a beneficiarilor
+  what: From the borderouri and centralizing statements received electronically, AJPIS builds the database of beneficiaries and amounts paid.
+  who: ajpis (evidence: 'agenţiile teritoriale'); automation: unknown
+  trigger: borderouri and statements received
+  stated predecessors: C22 (Transmiterea situaţiilor centralizatoare către AJPIS, furnizori, asociaţii); C29 (Primarul certifică borderoul şi îl trimite la AJPIS)
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «Pe baza documentelor prevăzute la alin. (1), agenţiile teritoriale elaborează baza de date cu beneficiarii ajutoarelor pentru încălzire şi ai suplimentului pent»
+
+CLAIM C66
+  name: Primarul emite nouă dispoziţie după ancheta periodică
+  what: If the periodic inquiry finds grounds to change, suspend or end the right, the mayor issues a new written disposition and communicates it to AJPIS within 5 days.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: periodic inquiry finds a change
+  stated predecessors: C53 (Primarul dispune anchete sociale periodice de verificare)
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «primarul emite o nouă dispoziţie scrisă, pe care o comunică agenţiei teritoriale în termen de 5 zile de la emitere.»
+
+CLAIM C67
+  name: Verificări AJPIS
+  what: AJPIS may at any time check the conditions on which the aid/supplement was granted and whether the holder reported changes.
+  who: ajpis (evidence: 'agenţiile teritoriale'); automation: unknown
+  trigger: any time
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «Agenţiile teritoriale pot efectua oricând verificări cu privire la condiţiile care au stat la baza acordării ajutorului pentru încălzire»
+
+CLAIM C68
+  name: Sesizarea organelor de urmărire penală
+  what: If verifications find false declarations with signs of an offence, the finding body must notify the criminal investigation bodies.
+  who: unknown (evidence: "'organul constatator' (the body that made the finding: town-hall verification or AJPIS)"); automation: unknown
+  trigger: false declaration with indications of a crime
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «organul constatator are obligaţia să sesizeze organele de urmărire penală.»
+
+CLAIM C69
+  name: Monitorizare şi control MMPS
+  what: The Ministry of Labour monitors and controls the granting of the aid; its control bodies may run social inquiries or home checks.
+  who: other (evidence: 'Ministerul Muncii şi Protecţiei Sociale (and subordinated institutions)'); automation: unknown
+  trigger: own initiative or third-party request
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (2): r2_law-226-2021.txt: «Ministerul Muncii şi Protecţiei Sociale monitorizează şi controlează, prin personalul împuternicit şi prin instituţiile abilitate din subordine»; r2_law-226-2021.txt: «Organele de control ale Ministerului Muncii şi Protecţiei Sociale pot efectua în caz de autosesizare sau la solicitarea unor terţi anchete sociale ori verificăr»
+
+CLAIM C70
+  name: Primarii furnizează date la cererea AJPIS
+  what: On AJPIS request, mayors, suppliers and other institutions must provide data on how the law is applied.
+  who: mayor (evidence: 'primarii (also suppliers/distributors and other institutions)'); automation: unknown
+  trigger: AJPIS request
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «La solicitarea agenţiilor teritoriale, primarii, furnizorii/distribuitorii de energie termică, gaze naturale şi energie electrică, precum şi celelalte instituţi»
+
+CLAIM C71
+  name: Primarii pun documentele la dispoziţia organelor de control
+  what: Mayors must make the documents underlying each right available to the control bodies of the Ministry and ANPIS.
+  who: mayor (evidence: 'primarii (and other institutions)'); automation: unknown
+  trigger: control
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «Primarii, precum şi celelalte instituţii implicate au obligaţia de a pune la dispoziţia organelor de control ale Ministerului Muncii şi Protecţiei Sociale»
+
+CLAIM C72
+  name: MMPS coordonează baza de date naţională
+  what: The Ministry coordinates the national database of beneficiaries, energy consumption and cost.
+  who: other (evidence: 'Ministerul Muncii şi Protecţiei Sociale'); automation: unknown
+  trigger: 
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «Ministerul Muncii şi Protecţiei Sociale coordonează la nivel naţional baza de date cu beneficiarii ajutoarelor»
+
+CLAIM C73
+  name: SPAS pregăteşte documentaţia şi proiectele de dispoziţie
+  what: Public social-assistance staff prepare the case documentation, including draft dispositions, and submit them to the mayor for signature within the legal terms.
+  who: das_staff (evidence: 'personalul serviciului public de asistenţă socială (duty stated through the sanction in art. 36(2)(a))'); automation: unknown
+  trigger: terms of art. 14(7), 15(1), 17(2) and 17(7)
+  stated predecessors: none stated
+  stated successors: C14 (Primarul stabileşte dreptul prin dispoziţie)
+  sources (1): r2_law-226-2021.txt: «neîntocmirea de către personalul serviciului public de asistenţă socială a documentaţiilor specifice, inclusiv a proiectelor de dispoziţie, precum şi nedepunere»
+
+CLAIM C74
+  name: Contestarea dispoziţiei în contencios administrativ
+  what: Mayor's dispositions granting, rejecting, changing or ending the aid/supplement can be challenged under the administrative-litigation law 554/2004.
+  who: unknown (evidence: "passive voice ('se pot ataca'); presumably the addressee"); automation: unknown
+  trigger: disagreement with a disposition
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r2_law-226-2021.txt: «Dispoziţiile primarului privind acordarea, respingerea, modificarea sau încetarea ajutorului pentru încălzire şi/sau a suplimentului pentru energie se pot ataca»
+
+CLAIM C75
+  name: Anexarea certificatului fiscal şi a adeverinţei de teren agricol
+  what: The applicant attaches a fiscal certificate and an agricultural-land certificate for every adult member of the household.
+  who: citizen (evidence: 'document the applicant must attach (list of required documents); issuer not named'); automation: unknown
+  trigger: filing the application
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (4): r3_pub-bucovat-acte.txt: «Certificat fiscal pentru toti membrii majori din locuinta»; r3_pub-bucovat-acte.txt: «Adeverinta agricol- detine/nu detine teren agricol pentru toti membrii majori din locuinta.»
+
+CLAIM C76
+  name: Respingerea cererilor incomplete
+  what: An incomplete or incompletely filled application, or one missing any supporting document, is rejected.
+  who: unknown (evidence: "passive ('duce la respingerea cererii'); Galaţi DAS notice"); automation: unknown
+  trigger: application or documents incomplete
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r3_pub-galati-termoficare.txt: «Cerererea incompleta sau incomplet completata, precum si lipsa unuia sau mai multor inscrisuri doveditoare, obligatoriu duce la respingerea cererii»
+  low_rank_only: true
+
+CLAIM C77
+  name: Verificarea în baze de date a veniturilor şi bunurilor
+  what: The income, assets and financial situation of every person listed in the application are checked against databases.
+  who: unknown (evidence: "passive ('SE VERIFICĂ'); Galaţi DAS notice; which databases and who queries them not stated"); automation: unknown
+  trigger: application filed
+  stated predecessors: none stated
+  stated successors: C14 (Primarul stabileşte dreptul prin dispoziţie)
+  sources (2): r3_pub-galati-termoficare.txt: «SE VERIFICĂ BAZELE DE DATE PRIVIND VENITURILE, BUNURILE DEȚINUTE ȘI ORICE ALTE DETALII PRIVIND SITUAȚIA FINANCIARĂ A TUTUROR PERSOANELOR INSCRISE IN CERERE!»; r6_minor-alba24-2026.txt: «Autoritățile verifică și celelalte criterii de eligibilitate, inclusiv bunurile deținute de solicitant.»
+
+CLAIM C78
+  name: Asociaţia de proprietari eliberează adeverinţă/viză
+  what: The owners'/tenants' association issues a certificate/endorsement stating the persons registered in the building book, the number of occupants and the number of rooms, which the applicant attaches.
+  who: other (evidence: 'Asociaţia de Proprietari/Locatari'); automation: unknown
+  trigger: applicant lives in a block with an association
+  stated predecessors: none stated
+  stated successors: C06 (Depunerea cererii şi declaraţiei pe propria răspundere)
+  sources (3): r3_pub-galati-termoficare.txt: «Adeverinţă de la Asociaţia de Proprietari/Locatari din care să rezulte numele, prenumele, persoanelor înregistrate în cartea imobilului»; r3_pub-galati-termoficare.txt: «viza Asociaţiei de Proprietari/Locatari din care să rezulte numărul de persoane care locuiesc în imobil și numărul de camere»
+
+CLAIM C79
+  name: Serviciul/compartimentul de asistenţă socială preia dosarele
+  what: The local social-assistance unit takes in the application files for heating aid and the energy supplement during the announced intake window.
+  who: das_staff (evidence: 'Compartimentul de Asistenţă Socială al Oraşului Sânnicolau Mare'); automation: unknown
+  trigger: intake window (27 Oct - 20 Nov 2025), then until the 20th of each month
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (5): r3_pub-sannicolau-2025.txt: «In perioada 27 octombrie 2025 - 20.11.2025, Compartimentul de Asistență Socială»; r3_pub-sannicolau-2025.txt: «v-a prelua dosarele pentru acordarea ajutorului pentru încălzirea locuinței și a suplimentului pentru energie»
+
+CLAIM C80
+  name: Asociaţiile de proprietari distribuie formularele
+  what: For residents of blocks of flats, the owners' associations hand out the application forms for thermal, electricity and gas aid.
+  who: other (evidence: 'asociaţiile de proprietari'); automation: unknown
+  trigger: applicant lives in a condominium
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r3_pub-suceava-precizari.txt: «asociațiile de proprietari pentru ajutorul la energie termică, electrică și gaze, care locuiesc în condominii.»
+  low_rank_only: true
+
+CLAIM C81
+  name: Anchetă socială obligatorie şi pentru supliment
+  what: A social inquiry is carried out in every case of energy-supplement application (and, for thermal/gas/solid fuels, only on suspicion).
+  who: unknown (evidence: "passive ('Ancheta socială se efectuează'); Suceava DAS guidance"); automation: unknown
+  trigger: supplement application
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r3_pub-suceava-precizari.txt: «Ancheta socială se efectuează obligatoriu în cazul ajutoarelor pentru energie electrică și a suplimentului pentru energie»
+  low_rank_only: true
+
+CLAIM C82
+  name: Transmiterea cererilor către furnizorii de energie
+  what: After the mayor's disposition, applications are sent to the energy suppliers.
+  who: unknown (evidence: 'catalogue step 3; actor not named'); automation: unknown
+  trigger: disposition issued
+  stated predecessors: C14 (Primarul stabileşte dreptul prin dispoziţie)
+  stated successors: C29 (Primarul certifică borderoul şi îl trimite la AJPIS)
+  sources (1): r5_catalogue-serviciipublice.txt: «3Transmitere cereri către furnizorii de energie»
+  low_rank_only: true

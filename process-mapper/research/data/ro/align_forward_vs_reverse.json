@@ -1,0 +1,1996 @@
+{
+ "pairs": [
+  {
+   "forward_id": "C01",
+   "reverse_id": "C10",
+   "match_type": "exact",
+   "who_agreement": "different",
+   "who_forward": "other",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C02",
+   "reverse_id": "C11",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "supplier",
+   "who_reverse": "supplier",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C03",
+   "reverse_id": "C01",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 6,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C01 folds forward C03+C04+C80 (all form-availability channels)"
+  },
+  {
+   "forward_id": "C04",
+   "reverse_id": "C01",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "unknown",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 6,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C01 folds forward C03+C04+C80"
+  },
+  {
+   "forward_id": "C05",
+   "reverse_id": "C46",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C06",
+   "reverse_id": "C02",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "citizen",
+   "who_reverse": "citizen",
+   "n_sources_forward": 11,
+   "n_sources_reverse": 13,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C02 folds forward C06+C07+C35 (filing, paper/electronic, supplement request)"
+  },
+  {
+   "forward_id": "C07",
+   "reverse_id": "C02",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "citizen",
+   "who_reverse": "citizen",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 13,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C02 folds forward C06+C07+C35"
+  },
+  {
+   "forward_id": "C10",
+   "reverse_id": "C12",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 4,
+   "n_sources_reverse": 5,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C11",
+   "reverse_id": "C41",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C41 folds forward C11+C13+C77 (electronic takeover, protocols, database checks)"
+  },
+  {
+   "forward_id": "C12",
+   "reverse_id": "C48",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "unknown",
+   "who_reverse": "unknown",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C13",
+   "reverse_id": "C41",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "other",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C41 folds forward C11+C13+C77"
+  },
+  {
+   "forward_id": "C14",
+   "reverse_id": "C05",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 5,
+   "n_sources_reverse": 7,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C15",
+   "reverse_id": "C13",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "mayor",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 6,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C13 folds forward C15+C16+C81 (order inquiry, carry out inquiry, Suceava supplement inquiry)"
+  },
+  {
+   "forward_id": "C16",
+   "reverse_id": "C13",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 4,
+   "n_sources_reverse": 6,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C13 folds forward C15+C16+C81"
+  },
+  {
+   "forward_id": "C17",
+   "reverse_id": "C17",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C18",
+   "reverse_id": "C52",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "unknown",
+   "who_reverse": "unknown",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C19",
+   "reverse_id": "C16",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "unknown",
+   "who_reverse": "unknown",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C20",
+   "reverse_id": "C20",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "citizen",
+   "who_reverse": "citizen",
+   "n_sources_forward": 4,
+   "n_sources_reverse": 5,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C21",
+   "reverse_id": "C21",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 4,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C21 folds forward C21+C66 (new disposition after change or after periodic inquiry); communication part sits in reverse C22"
+  },
+  {
+   "forward_id": "C22",
+   "reverse_id": "C18",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "also_reverse_ids": [
+    "C19"
+   ],
+   "note": "forward folds what reverse splits: statement to AJPIS (C18) and to suppliers/associations (C19)"
+  },
+  {
+   "forward_id": "C23",
+   "reverse_id": "C23",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "supplier",
+   "who_reverse": "supplier",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C24",
+   "reverse_id": "C24",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C24 folds forward C24+C25 (split consumption and send by the 5th)"
+  },
+  {
+   "forward_id": "C25",
+   "reverse_id": "C24",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C24 folds forward C24+C25"
+  },
+  {
+   "forward_id": "C26",
+   "reverse_id": "C25",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "supplier",
+   "who_reverse": "supplier",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C27",
+   "reverse_id": "C26",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "supplier",
+   "who_reverse": "supplier",
+   "n_sources_forward": 5,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "also_reverse_ids": [
+    "C07"
+   ],
+   "note": "forward folds what reverse splits: issue invoice showing aid (C26) and deduct aid from bill (C07)"
+  },
+  {
+   "forward_id": "C28",
+   "reverse_id": "C28",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "supplier",
+   "who_reverse": "supplier",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C29",
+   "reverse_id": "C29",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 3,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "also_reverse_ids": [
+    "C30"
+   ],
+   "note": "forward folds what reverse splits: certify borderou (C29) and forward it to AJPIS (C30)"
+  },
+  {
+   "forward_id": "C30",
+   "reverse_id": "C06",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 6,
+   "n_sources_reverse": 7,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C06 folds forward C30+C46 (settlement + transfer on opened credits, per reverse order C55->C06)"
+  },
+  {
+   "forward_id": "C31",
+   "reverse_id": "C47",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C47 folds forward C31+C32 (draw up solid-fuel statement and send by the 15th)"
+  },
+  {
+   "forward_id": "C32",
+   "reverse_id": "C47",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "mayor",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C47 folds forward C31+C32"
+  },
+  {
+   "forward_id": "C33",
+   "reverse_id": "C45",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C34",
+   "reverse_id": "C08",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 4,
+   "n_sources_reverse": 6,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C08 folds forward C34+C56 (pay solid-fuel aid; payment method chosen in request)"
+  },
+  {
+   "forward_id": "C35",
+   "reverse_id": "C02",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "citizen",
+   "who_reverse": "citizen",
+   "n_sources_forward": 4,
+   "n_sources_reverse": 13,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C02 folds forward C06+C07+C35; supplement request \"any time in the year\" kept as rule R33"
+  },
+  {
+   "forward_id": "C36",
+   "reverse_id": "C32",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 3,
+   "n_sources_reverse": 5,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C37",
+   "reverse_id": "C49",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C38",
+   "reverse_id": "C50",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C39",
+   "reverse_id": "C09",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "supplier",
+   "who_reverse": "unknown",
+   "n_sources_forward": 3,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C09 folds forward C39+C41+C42 (supplement deducted on invoice / paid to supplier / paid to holder)"
+  },
+  {
+   "forward_id": "C41",
+   "reverse_id": "C09",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "ajpis",
+   "who_reverse": "unknown",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C09 folds forward C39+C41+C42; settlement quote also in reverse C06"
+  },
+  {
+   "forward_id": "C42",
+   "reverse_id": "C09",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "other",
+   "who_reverse": "unknown",
+   "n_sources_forward": 3,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C09 folds forward C39+C41+C42"
+  },
+  {
+   "forward_id": "C43",
+   "reverse_id": "C53",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C44",
+   "reverse_id": "C54",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C45",
+   "reverse_id": "C55",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C46",
+   "reverse_id": "C06",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 7,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse has no separate transfer step; order C55->C06 cites the same \"virează sumele\" provision"
+  },
+  {
+   "forward_id": "C47",
+   "reverse_id": "C58",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "supplier",
+   "who_reverse": "supplier",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C48",
+   "reverse_id": "C56",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C49",
+   "reverse_id": "C57",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C57 folds forward C49+C50 (county and national statistical reports)"
+  },
+  {
+   "forward_id": "C50",
+   "reverse_id": "C57",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "unknown",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C57 folds forward C49+C50"
+  },
+  {
+   "forward_id": "C51",
+   "reverse_id": "C51",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C52",
+   "reverse_id": "C36",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 4,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C53",
+   "reverse_id": "C38",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C54",
+   "reverse_id": "C62",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C62 folds forward C54+C55 (local-budget aid; shown on supplier invoice)"
+  },
+  {
+   "forward_id": "C55",
+   "reverse_id": "C62",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "supplier",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C62 folds forward C54+C55"
+  },
+  {
+   "forward_id": "C56",
+   "reverse_id": "C08",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "citizen",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 6,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C08 folds forward C34+C56"
+  },
+  {
+   "forward_id": "C57",
+   "reverse_id": "C04",
+   "match_type": "partial",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 5,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "same art. 14(5) provision; reverse C04 is broader (also social-inquiry route and asset checks)"
+  },
+  {
+   "forward_id": "C58",
+   "reverse_id": "C14",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 4,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C60",
+   "reverse_id": "C22",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C22 folds forward C60 with the communication part of forward C21"
+  },
+  {
+   "forward_id": "C61",
+   "reverse_id": "C31",
+   "match_type": "exact",
+   "who_agreement": "different",
+   "who_forward": "other",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C62",
+   "reverse_id": "C27",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C27 folds forward C62+C63+C64 (association cost split, borderou, maintenance table)"
+  },
+  {
+   "forward_id": "C63",
+   "reverse_id": "C27",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C27 folds forward C62+C63+C64"
+  },
+  {
+   "forward_id": "C64",
+   "reverse_id": "C27",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C27 folds forward C62+C63+C64"
+  },
+  {
+   "forward_id": "C65",
+   "reverse_id": "C34",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C66",
+   "reverse_id": "C21",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "mayor",
+   "who_reverse": "mayor",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 4,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C21 folds forward C21+C66"
+  },
+  {
+   "forward_id": "C67",
+   "reverse_id": "C35",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "ajpis",
+   "who_reverse": "ajpis",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C68",
+   "reverse_id": "C37",
+   "match_type": "exact",
+   "who_agreement": "one_unknown",
+   "who_forward": "unknown",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C69",
+   "reverse_id": "C59",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 1,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C70",
+   "reverse_id": "C39",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "mayor",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C39 folds forward C70+C71 (data on request; documents to control bodies)"
+  },
+  {
+   "forward_id": "C71",
+   "reverse_id": "C39",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "mayor",
+   "who_reverse": "other",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C39 folds forward C70+C71"
+  },
+  {
+   "forward_id": "C73",
+   "reverse_id": "C15",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C74",
+   "reverse_id": "C61",
+   "match_type": "exact",
+   "who_agreement": "one_unknown",
+   "who_forward": "unknown",
+   "who_reverse": "citizen",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 1,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true
+  },
+  {
+   "forward_id": "C75",
+   "reverse_id": "C03",
+   "match_type": "merged",
+   "who_agreement": "same",
+   "who_forward": "citizen",
+   "who_reverse": "citizen",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C03 is one broad \"attach supporting documents\" step covering forward C75 (and the document lists of C10/C78); the Simleu asset certificate is also reverse C43 framed as town-hall issuing"
+  },
+  {
+   "forward_id": "C77",
+   "reverse_id": "C41",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "unknown",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 3,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": true,
+   "note": "reverse C41 folds forward C11+C13+C77 (Galati database-check quote); Alba24 asset-check quote sits in reverse C04"
+  },
+  {
+   "forward_id": "C78",
+   "reverse_id": "C44",
+   "match_type": "partial",
+   "who_agreement": "same",
+   "who_forward": "other",
+   "who_reverse": "other",
+   "n_sources_forward": 2,
+   "n_sources_reverse": 1,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": true,
+   "low_rank_only_agree": false,
+   "note": "reverse C44 keeps only the Suceava gas-request visa; Galati association certificate went into reverse C03"
+  },
+  {
+   "forward_id": "C79",
+   "reverse_id": "C42",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "das_staff",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 4,
+   "n_sources_reverse": 2,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": false,
+   "low_rank_only_reverse": true,
+   "low_rank_only_agree": false
+  },
+  {
+   "forward_id": "C80",
+   "reverse_id": "C01",
+   "match_type": "merged",
+   "who_agreement": "different",
+   "who_forward": "other",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 8,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": true,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": false,
+   "note": "reverse C01 folds forward C03+C04+C80"
+  },
+  {
+   "forward_id": "C81",
+   "reverse_id": "C13",
+   "match_type": "merged",
+   "who_agreement": "one_unknown",
+   "who_forward": "unknown",
+   "who_reverse": "das_staff",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 6,
+   "n_sources_within_1": false,
+   "low_rank_only_forward": true,
+   "low_rank_only_reverse": false,
+   "low_rank_only_agree": false,
+   "note": "reverse C13 folds forward C15+C16+C81 (Suceava quote on mandatory inquiry incl. supplement)"
+  },
+  {
+   "forward_id": "C82",
+   "reverse_id": "C40",
+   "match_type": "exact",
+   "who_agreement": "same",
+   "who_forward": "unknown",
+   "who_reverse": "unknown",
+   "n_sources_forward": 1,
+   "n_sources_reverse": 1,
+   "n_sources_within_1": true,
+   "low_rank_only_forward": true,
+   "low_rank_only_reverse": true,
+   "low_rank_only_agree": true
+  }
+ ],
+ "forward_unmatched": [
+  {
+   "id": "C08",
+   "name": "Beneficiarii VMG/ASF folosesc formularul anexa 1a",
+   "reason": "reverse keeps VMG/ASF form only as rule R30/R17 on C02, no step"
+  },
+  {
+   "id": "C09",
+   "name": "Reutilizarea documentelor depuse pentru VMG/ASF",
+   "reason": "reverse keeps reuse of VMG/ASF documents only as rule R30 on C02, no step"
+  },
+  {
+   "id": "C40",
+   "name": "Furnizorul întocmeşte borderoul pentru supliment",
+   "reason": "no supplement-specific borderou (annexes 18-20) in reverse; nearest is the heating-aid borderou C28"
+  },
+  {
+   "id": "C59",
+   "name": "Dispoziţie unică pentru ajutor şi VMG/ASF",
+   "reason": "reverse keeps single disposition for heating aid + VMG/ASF only as rule R30, no step"
+  },
+  {
+   "id": "C72",
+   "name": "MMPS coordonează baza de date naţională",
+   "reason": "Ministry-coordinated national database (law art.) not captured as a step or rule in reverse"
+  },
+  {
+   "id": "C76",
+   "name": "Respingerea cererilor incomplete",
+   "reason": "reverse keeps rejection of incomplete files only as rule R49 attached to rejection step C17"
+  }
+ ],
+ "reverse_unmatched": [
+  {
+   "id": "C33",
+   "name": "Request settlement of previous-season amounts",
+   "note": "previous-season settlement request; forward has it only as rule R64 on C29"
+  },
+  {
+   "id": "C43",
+   "name": "Issue certificate of assets held (incl. agricultural/forest land, animals)",
+   "note": "town hall issues asset certificate (Simleu); forward only has the applicant attaching it (C75)"
+  },
+  {
+   "id": "C60",
+   "name": "Find contraventions and apply fines",
+   "note": "contraventions and fines; forward has it only as rule R71 on C73"
+  }
+ ],
+ "summary": {
+  "forward_total": 82,
+  "reverse_total": 62,
+  "matched": 76,
+  "who_same": 57,
+  "who_different": 10,
+  "who_one_unknown": 9,
+  "order_pairs_forward": 45,
+  "order_pairs_found_in_reverse": 32,
+  "order_pairs_reversed": 0,
+  "contradictions_shared": 7,
+  "contradictions_forward_only": 8,
+  "contradictions_reverse_only": 4,
+  "match_type_counts": {
+   "exact": 35,
+   "merged": 39,
+   "partial": 2
+  },
+  "reverse_steps_covered": 59,
+  "reverse_unmatched_count": 3,
+  "who_both_unknown_counted_as_same": 4,
+  "n_sources_within_1": 48,
+  "n_sources_within_1_exact_only": "30/35",
+  "n_sources_reverse_higher": 67,
+  "n_sources_forward_higher": 3,
+  "low_rank_only_agree": 72,
+  "low_rank_only_disagree_ids": [
+   "C78/C44",
+   "C79/C42",
+   "C80/C01",
+   "C81/C13"
+  ],
+  "who_exact_only": {
+   "different": 2,
+   "same": 31,
+   "one_unknown": 2
+  },
+  "order_status_counts": {
+   "found": 32,
+   "absent": 9,
+   "collapsed_same_reverse_step": 3,
+   "endpoint_unmatched": 1
+  },
+  "order_pairs_reverse_distinct": 34,
+  "order_pairs_reverse_found_in_forward": 31,
+  "contradiction_entries_forward": 18,
+  "contradiction_entries_reverse": 17,
+  "contradiction_entries_forward_in_shared_issues": 9,
+  "contradiction_entries_reverse_in_shared_issues": 12
+ },
+ "order_detail": [
+  {
+   "forward": [
+    "C01",
+    "C02"
+   ],
+   "reverse_a": [
+    "C10"
+   ],
+   "reverse_b": [
+    "C11"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C02",
+    "C06"
+   ],
+   "reverse_a": [
+    "C11"
+   ],
+   "reverse_b": [
+    "C02"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C06",
+    "C14"
+   ],
+   "reverse_a": [
+    "C02"
+   ],
+   "reverse_b": [
+    "C05"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C06",
+    "C16"
+   ],
+   "reverse_a": [
+    "C02"
+   ],
+   "reverse_b": [
+    "C13"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C10",
+    "C14"
+   ],
+   "reverse_a": [
+    "C12"
+   ],
+   "reverse_b": [
+    "C05"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C14",
+    "C19"
+   ],
+   "reverse_a": [
+    "C05"
+   ],
+   "reverse_b": [
+    "C16"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C14",
+    "C31"
+   ],
+   "reverse_a": [
+    "C05"
+   ],
+   "reverse_b": [
+    "C47"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C14",
+    "C82"
+   ],
+   "reverse_a": [
+    "C05"
+   ],
+   "reverse_b": [
+    "C40"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C15",
+    "C16"
+   ],
+   "reverse_a": [
+    "C13"
+   ],
+   "reverse_b": [
+    "C13"
+   ],
+   "status": "collapsed_same_reverse_step"
+  },
+  {
+   "forward": [
+    "C16",
+    "C14"
+   ],
+   "reverse_a": [
+    "C13"
+   ],
+   "reverse_b": [
+    "C05"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C18",
+    "C19"
+   ],
+   "reverse_a": [
+    "C52"
+   ],
+   "reverse_b": [
+    "C16"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C20",
+    "C21"
+   ],
+   "reverse_a": [
+    "C20"
+   ],
+   "reverse_b": [
+    "C21"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C21",
+    "C60"
+   ],
+   "reverse_a": [
+    "C21"
+   ],
+   "reverse_b": [
+    "C22"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C22",
+    "C26"
+   ],
+   "reverse_a": [
+    "C18",
+    "C19"
+   ],
+   "reverse_b": [
+    "C25"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C22",
+    "C65"
+   ],
+   "reverse_a": [
+    "C18",
+    "C19"
+   ],
+   "reverse_b": [
+    "C34"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C23",
+    "C24"
+   ],
+   "reverse_a": [
+    "C23"
+   ],
+   "reverse_b": [
+    "C24"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C24",
+    "C25"
+   ],
+   "reverse_a": [
+    "C24"
+   ],
+   "reverse_b": [
+    "C24"
+   ],
+   "status": "collapsed_same_reverse_step"
+  },
+  {
+   "forward": [
+    "C25",
+    "C26"
+   ],
+   "reverse_a": [
+    "C24"
+   ],
+   "reverse_b": [
+    "C25"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C26",
+    "C27"
+   ],
+   "reverse_a": [
+    "C25"
+   ],
+   "reverse_b": [
+    "C07",
+    "C26"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C27",
+    "C28"
+   ],
+   "reverse_a": [
+    "C07",
+    "C26"
+   ],
+   "reverse_b": [
+    "C28"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C27",
+    "C30"
+   ],
+   "reverse_a": [
+    "C07",
+    "C26"
+   ],
+   "reverse_b": [
+    "C06"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C27",
+    "C62"
+   ],
+   "reverse_a": [
+    "C07",
+    "C26"
+   ],
+   "reverse_b": [
+    "C27"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C28",
+    "C29"
+   ],
+   "reverse_a": [
+    "C28"
+   ],
+   "reverse_b": [
+    "C29",
+    "C30"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C28",
+    "C43"
+   ],
+   "reverse_a": [
+    "C28"
+   ],
+   "reverse_b": [
+    "C53"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C29",
+    "C30"
+   ],
+   "reverse_a": [
+    "C29",
+    "C30"
+   ],
+   "reverse_b": [
+    "C06"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C29",
+    "C61"
+   ],
+   "reverse_a": [
+    "C29",
+    "C30"
+   ],
+   "reverse_b": [
+    "C31"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C29",
+    "C65"
+   ],
+   "reverse_a": [
+    "C29",
+    "C30"
+   ],
+   "reverse_b": [
+    "C34"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C32",
+    "C33"
+   ],
+   "reverse_a": [
+    "C47"
+   ],
+   "reverse_b": [
+    "C45"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C33",
+    "C34"
+   ],
+   "reverse_a": [
+    "C45"
+   ],
+   "reverse_b": [
+    "C08"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C35",
+    "C36"
+   ],
+   "reverse_a": [
+    "C02"
+   ],
+   "reverse_b": [
+    "C32"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C36",
+    "C19"
+   ],
+   "reverse_a": [
+    "C32"
+   ],
+   "reverse_b": [
+    "C16"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C37",
+    "C38"
+   ],
+   "reverse_a": [
+    "C49"
+   ],
+   "reverse_b": [
+    "C50"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C40",
+    "C43"
+   ],
+   "reverse_a": [],
+   "reverse_b": [
+    "C53"
+   ],
+   "status": "endpoint_unmatched"
+  },
+  {
+   "forward": [
+    "C43",
+    "C44"
+   ],
+   "reverse_a": [
+    "C53"
+   ],
+   "reverse_b": [
+    "C54"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C44",
+    "C45"
+   ],
+   "reverse_a": [
+    "C54"
+   ],
+   "reverse_b": [
+    "C55"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C45",
+    "C46"
+   ],
+   "reverse_a": [
+    "C55"
+   ],
+   "reverse_b": [
+    "C06"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C48",
+    "C49"
+   ],
+   "reverse_a": [
+    "C56"
+   ],
+   "reverse_b": [
+    "C57"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C48",
+    "C50"
+   ],
+   "reverse_a": [
+    "C56"
+   ],
+   "reverse_b": [
+    "C57"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C51",
+    "C52"
+   ],
+   "reverse_a": [
+    "C51"
+   ],
+   "reverse_b": [
+    "C36"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C53",
+    "C66"
+   ],
+   "reverse_a": [
+    "C38"
+   ],
+   "reverse_b": [
+    "C21"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C62",
+    "C63"
+   ],
+   "reverse_a": [
+    "C27"
+   ],
+   "reverse_b": [
+    "C27"
+   ],
+   "status": "collapsed_same_reverse_step"
+  },
+  {
+   "forward": [
+    "C73",
+    "C14"
+   ],
+   "reverse_a": [
+    "C15"
+   ],
+   "reverse_b": [
+    "C05"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C77",
+    "C14"
+   ],
+   "reverse_a": [
+    "C41"
+   ],
+   "reverse_b": [
+    "C05"
+   ],
+   "status": "absent"
+  },
+  {
+   "forward": [
+    "C78",
+    "C06"
+   ],
+   "reverse_a": [
+    "C44"
+   ],
+   "reverse_b": [
+    "C02"
+   ],
+   "status": "found"
+  },
+  {
+   "forward": [
+    "C82",
+    "C29"
+   ],
+   "reverse_a": [
+    "C40"
+   ],
+   "reverse_b": [
+    "C29",
+    "C30"
+   ],
+   "status": "found"
+  }
+ ],
+ "contradiction_issues": [
+  {
+   "issue": "VMG/ASF beneficiaries form: annex 1a HG 50/2011 vs Law 277/2010 art.18^1(5) form",
+   "forward_entries": [
+    0
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Collective-metering proces-verbal not applicable to suppliers >1,000 clients / individual meters",
+   "forward_entries": [
+    1
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Solid-fuel aid: monthly centralizing statement vs single settlement per season",
+   "forward_entries": [
+    2
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Disposition communication term: 5 days vs 5 working days",
+   "forward_entries": [
+    3
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Linked benefit: VMG/ASF (law) vs VMI Law 196/2016 (Galati notice)",
+   "forward_entries": [
+    4
+   ],
+   "reverse_entries": [
+    2,
+    13
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "Filing deadline 15 Oct (as a rule) vs local intake windows (Sannicolau 2025, Simleu 2023)",
+   "forward_entries": [
+    5,
+    8
+   ],
+   "reverse_entries": [
+    3
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "Asset list reference: annex 4 HG 50/2011 vs HG 1154/2022",
+   "forward_entries": [
+    6
+   ],
+   "reverse_entries": [
+    4,
+    14,
+    16
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "Income band boundary 680 vs 680.1 lei (Scobinti / Tirgu Mures template)",
+   "forward_entries": [
+    7,
+    13
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Periodic social inquiries every 6 months vs only on suspicion (Suceava)",
+   "forward_entries": [
+    9
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "In-season cut-off: 20th-of-month rule vs Suceava 15 Nov 2021",
+   "forward_entries": [
+    10
+   ],
+   "reverse_entries": [
+    8
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "Bank-deposit threshold: 3x average gross wage vs 3,000 lei",
+   "forward_entries": [
+    11
+   ],
+   "reverse_entries": [
+    7
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "Income exclusion list (ASF vs social aid excluded)",
+   "forward_entries": [
+    12
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Mayor disposition vs \"decizie\" (catalogue)",
+   "forward_entries": [
+    14
+   ],
+   "reverse_entries": [],
+   "status": "forward_only"
+  },
+  {
+   "issue": "Electronic filing only where local system exists vs catalogue \"complet online\"",
+   "forward_entries": [
+    15
+   ],
+   "reverse_entries": [
+    15
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "Filing deadline 15 Oct vs 20 Nov (explainers / press)",
+   "forward_entries": [
+    16,
+    17
+   ],
+   "reverse_entries": [
+    0,
+    1,
+    11
+   ],
+   "status": "shared"
+  },
+  {
+   "issue": "General application form model: annex 1 HG 50/2011 vs forms in HG 1073/2021",
+   "forward_entries": [],
+   "reverse_entries": [
+    5,
+    12
+   ],
+   "status": "reverse_only"
+  },
+  {
+   "issue": "Solid-fuel payment timing: December (ANPIS 2026) vs start of season (Suceava)",
+   "forward_entries": [],
+   "reverse_entries": [
+    6
+   ],
+   "status": "reverse_only"
+  },
+  {
+   "issue": "Catalogue \"transmit requests to suppliers\" vs centralizing statement (law)",
+   "forward_entries": [],
+   "reverse_entries": [
+    9
+   ],
+   "status": "reverse_only"
+  },
+  {
+   "issue": "Who transfers solid-fuel funds to town hall: Ministry (Suceava) vs AJPIS (law/norms)",
+   "forward_entries": [],
+   "reverse_entries": [
+    10
+   ],
+   "status": "reverse_only"
+  }
+ ],
+ "method": {
+  "match_type": "exact = one-to-one same unit of work; partial = one-to-one with overlapping but unequal scope; merged = one ledger folded into one step what the other kept as several (reverse_id is the best-fitting reverse step, also_reverse_ids lists the others when the forward step spans several reverse steps); none = no reverse step",
+  "who_agreement": "same (identical label, including both unknown) | different | one_unknown",
+  "order": "forward distinct (before,after) pairs mapped through matched reverse ids (primary + also); found = direct reverse order pair; collapsed = both ends map to one reverse step; endpoint_unmatched = an end has no reverse match",
+  "contradictions": "compared at issue level (same subject and same conflicting values), indices refer to positions in each ledger contradictions list"
+ }
+}
