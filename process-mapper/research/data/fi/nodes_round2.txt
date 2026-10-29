@@ -1,0 +1,246 @@
+NODE S_OVERPAYMENT
+  name: Overpayment identified
+  description: Kela identifies allowance paid without grounds or in excess.
+  type: start_event; actor: Kela benefit processing system and OmaKela (kela_system); visibility: internal
+  automation_class: deterministic_rule; agent_mode: agent_can_execute; confidence (model's own): 0.85
+  rules applied: R_PROC_RECOVERY: Recovery of overpayments — Allowance paid without grounds or in excess must be recovered, primarily from the applicant, else from spouse/cohabitant or another adult member during the over
+  predecessors: none
+  successors: T_ASSESS_RECOVERY (Assess recovery, liable persons and waiver)
+  public-source provenance: 3 fact(s) from sources ['kela-en-general-housing-allowance', 'kela-fi-yleinen-asumistuki', 'law-938-2014']
+
+NODE T_ASSESS_RECOVERY
+  name: Assess recovery, liable persons and waiver
+  description: Kela assesses the overpaid amount, liable persons and grounds for waiver.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.75
+  rules applied: R_PROC_RECOVERY: Recovery of overpayments — Allowance paid without grounds or in excess must be recovered, primarily from the applicant, else from spouse/cohabitant or another adult member during the over; R_DL_RECOVERY_LIMITATION: Recovery time limits — A recovery decision must be made within 5 years of the payment date; the confirmed claim expires 5 years after the decision unless interrupted, interruption sta; R_PROC_DATA_DISCLOSURE: Disclosure for crime and misuse investigation — Kela may disclose identity data, paid benefits and their bases and other necessary data to the ministry, Tax Administration, social security institutions, polic
+  predecessors: S_OVERPAYMENT (Overpayment identified)
+  successors: D_RECOVER (Recover overpayment?)
+  public-source provenance: 5 fact(s) from sources ['law-938-2014']
+
+NODE D_RECOVER
+  name: Recover overpayment?
+  description: Branches on whether the overpayment is recovered or waived.
+  type: decision; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.75
+  rules applied: R_PROC_RECOVERY: Recovery of overpayments — Allowance paid without grounds or in excess must be recovered, primarily from the applicant, else from spouse/cohabitant or another adult member during the over
+  predecessors: T_ASSESS_RECOVERY (Assess recovery, liable persons and waiver)
+  successors: T_RECOVERY_DECISION (Issue recovery decision) [if: Recovery required (no waiver grounds)]; E_WAIVED (Recovery waived) [if: Waiver reasonable and no fraud, or amount minor]
+  public-source provenance: 1 fact(s) from sources ['law-938-2014']
+
+NODE T_RECOVERY_DECISION
+  name: Issue recovery decision
+  description: Kela issues an appealable recovery decision, separately for each liable person.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: human_signoff; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.8
+  time_limit: Within 5 years of the payment date
+  rules applied: R_PROC_RECOVERY: Recovery of overpayments — Allowance paid without grounds or in excess must be recovered, primarily from the applicant, else from spouse/cohabitant or another adult member during the over; R_DL_RECOVERY_LIMITATION: Recovery time limits — A recovery decision must be made within 5 years of the payment date; the confirmed claim expires 5 years after the decision unless interrupted, interruption sta; R_PROC_WRITTEN_DECISION: Written decision — A written, free-of-charge decision is given on granting, rejecting, revising, terminating and recovering, and on paying to the landlord without authorisation; i
+  predecessors: D_RECOVER (Recover overpayment?) [if: Recovery required (no waiver grounds)]
+  successors: T_NOTIFY_RECOVERY (Deliver recovery decision)
+  public-source provenance: 3 fact(s) from sources ['law-938-2014']
+
+NODE T_NOTIFY_RECOVERY
+  name: Deliver recovery decision
+  description: Kela delivers the recovery decision to each liable person.
+  type: system_task; actor: Kela benefit processing system and OmaKela (kela_system); visibility: external
+  automation_class: notification; agent_mode: agent_can_execute; confidence (model's own): 0.6
+  channel: OmaKela or post
+  rules applied: R_PROC_WRITTEN_DECISION: Written decision — A written, free-of-charge decision is given on granting, rejecting, revising, terminating and recovering, and on paying to the landlord without authorisation; i
+  predecessors: T_RECOVERY_DECISION (Issue recovery decision)
+  successors: T_COLLECT (Collect, offset or enforce overpayment)
+  public-source provenance: 1 fact(s) from sources ['law-938-2014']
+  inferred_reason: Delivery channel for recovery decisions is not stated; assumed same as other decisions.
+
+NODE T_COLLECT
+  name: Collect, offset or enforce overpayment
+  description: The Overpayment Recovery Centre collects the debt, offsets it against later benefits or enforces it.
+  type: caseworker_task; actor: Kela Overpayment Recovery Centre (kela_recovery_centre); visibility: external
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.75
+  rules applied: R_PROC_RECOVERY: Recovery of overpayments — Allowance paid without grounds or in excess must be recovered, primarily from the applicant, else from spouse/cohabitant or another adult member during the over; R_DL_RECOVERY_LIMITATION: Recovery time limits — A recovery decision must be made within 5 years of the payment date; the confirmed claim expires 5 years after the decision unless interrupted, interruption sta
+  predecessors: T_NOTIFY_RECOVERY (Deliver recovery decision)
+  successors: E_RECOVERED (Overpayment recovered or claim closed)
+  public-source provenance: 6 fact(s) from sources ['kela-guide-gha-en', 'law-938-2014']
+
+NODE E_WAIVED
+  name: Recovery waived
+  description: The overpayment is not recovered.
+  type: end_event; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: deterministic_rule; agent_mode: agent_can_execute; confidence (model's own): 0.75
+  rules applied: R_PROC_RECOVERY: Recovery of overpayments — Allowance paid without grounds or in excess must be recovered, primarily from the applicant, else from spouse/cohabitant or another adult member during the over
+  predecessors: D_RECOVER (Recover overpayment?) [if: Waiver reasonable and no fraud, or amount minor]
+  successors: none
+  public-source provenance: 1 fact(s) from sources ['law-938-2014']
+
+NODE E_RECOVERED
+  name: Overpayment recovered or claim closed
+  description: The recovery claim is settled, offset, enforced or expired.
+  type: end_event; actor: Kela Overpayment Recovery Centre (kela_recovery_centre); visibility: external
+  automation_class: deterministic_rule; agent_mode: agent_can_execute; confidence (model's own): 0.7
+  rules applied: R_DL_RECOVERY_LIMITATION: Recovery time limits — A recovery decision must be made within 5 years of the payment date; the confirmed claim expires 5 years after the decision unless interrupted, interruption sta
+  predecessors: T_COLLECT (Collect, offset or enforce overpayment)
+  successors: none
+  public-source provenance: 2 fact(s) from sources ['law-938-2014']
+
+NODE S_DISSATISFIED
+  name: Party dissatisfied with a Kela decision
+  description: A party considers a Kela housing allowance decision wrong.
+  type: start_event; actor: Applicant / household representative (citizen); visibility: external
+  automation_class: citizen_action; agent_mode: human_only; confidence (model's own): 0.9
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: none
+  successors: D_APPEALABLE (Decision appealable?)
+  public-source provenance: 3 fact(s) from sources ['kela-guide-gha-en', 'law-938-2014']
+
+NODE D_APPEALABLE
+  name: Decision appealable?
+  description: Branches on whether the decision type can be appealed.
+  type: decision; actor: Kela benefit caseworker (kela_caseworker); visibility: external
+  automation_class: deterministic_rule; agent_mode: agent_can_execute; confidence (model's own): 0.8
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: S_DISSATISFIED (Party dissatisfied with a Kela decision)
+  successors: T_APPEAL_SUBMIT (Submit written appeal to Kela) [if: Decision is appealable]; E_NOT_APPEALABLE (Decision not appealable) [if: Interim decision or § 25(2) landlord-payment decision]
+  public-source provenance: 2 fact(s) from sources ['kela-internal-auto-termination', 'law-938-2014']
+
+NODE T_APPEAL_SUBMIT
+  name: Submit written appeal to Kela
+  description: The party submits a written appeal to Kela following the decision's appeal instructions.
+  type: citizen_task; actor: Applicant / household representative (citizen); visibility: external
+  automation_class: citizen_action; agent_mode: human_only; confidence (model's own): 0.95
+  channel: Written appeal delivered to Kela (method per appeal instructions)
+  time_limit: 30 days after deemed receipt (7th day after posting)
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp; R_DL_APPEAL_PERIOD: Appeal period — The appeal must reach Kela within 30 days after the day the party is deemed to have received the decision (the 7th day after posting unless otherwise shown); a 
+  predecessors: D_APPEALABLE (Decision appealable?) [if: Decision is appealable]
+  successors: T_SELF_RECT_EXAMINE (Examine appeal for self-rectification)
+  public-source provenance: 7 fact(s) from sources ['kela-guide-gha-en', 'kela-internal-auto-termination', 'law-938-2014']
+
+NODE T_SELF_RECT_EXAMINE
+  name: Examine appeal for self-rectification
+  description: Kela examines whether it can accept the appeal demands.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.8
+  rules applied: R_PROC_SELF_RECTIFICATION: Self-rectification (itseoikaisu) — If Kela accepts all demands it issues an appealable rectification decision; otherwise it forwards the appeal with its statement within 30 days of the end of the
+  predecessors: T_APPEAL_SUBMIT (Submit written appeal to Kela)
+  successors: D_ACCEPT_ALL (Kela accepts all demands?)
+  public-source provenance: 2 fact(s) from sources ['law-938-2014']
+
+NODE D_ACCEPT_ALL
+  name: Kela accepts all demands?
+  description: Branches on whether all appeal demands are accepted.
+  type: decision; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.8
+  rules applied: R_PROC_SELF_RECTIFICATION: Self-rectification (itseoikaisu) — If Kela accepts all demands it issues an appealable rectification decision; otherwise it forwards the appeal with its statement within 30 days of the end of the
+  predecessors: T_SELF_RECT_EXAMINE (Examine appeal for self-rectification)
+  successors: T_RECTIFY_DECISION (Issue rectification decision) [if: All demands accepted]; T_FORWARD_APPEAL (Prepare statement and forward appeal) [if: Not all demands accepted]
+  public-source provenance: 2 fact(s) from sources ['law-938-2014']
+
+NODE T_RECTIFY_DECISION
+  name: Issue rectification decision
+  description: Kela issues an appealable rectification decision accepting the appeal.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: human_signoff; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.85
+  rules applied: R_PROC_SELF_RECTIFICATION: Self-rectification (itseoikaisu) — If Kela accepts all demands it issues an appealable rectification decision; otherwise it forwards the appeal with its statement within 30 days of the end of the; R_PROC_WRITTEN_DECISION: Written decision — A written, free-of-charge decision is given on granting, rejecting, revising, terminating and recovering, and on paying to the landlord without authorisation; i
+  predecessors: D_ACCEPT_ALL (Kela accepts all demands?) [if: All demands accepted]
+  successors: T_NOTIFY (Deliver decision to applicant)
+  public-source provenance: 1 fact(s) from sources ['law-938-2014']
+
+NODE T_FORWARD_APPEAL
+  name: Prepare statement and forward appeal
+  description: Kela forwards the appeal with its statement to the Social Security Appeal Board, optionally partly rectifying by interim decision.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.85
+  time_limit: Within 30 days of the end of the appeal period (absolute max 60 days)
+  rules applied: R_PROC_SELF_RECTIFICATION: Self-rectification (itseoikaisu) — If Kela accepts all demands it issues an appealable rectification decision; otherwise it forwards the appeal with its statement within 30 days of the end of the
+  predecessors: D_ACCEPT_ALL (Kela accepts all demands?) [if: Not all demands accepted]
+  successors: T_SSAB_DECIDE (Social Security Appeal Board decides)
+  public-source provenance: 4 fact(s) from sources ['law-938-2014']
+
+NODE T_SSAB_DECIDE
+  name: Social Security Appeal Board decides
+  description: The Appeal Board decides the appeal.
+  type: third_party_task; actor: Social Security Appeal Board (sosiaaliturvan muutoksenhakulautakunta) (ssab); visibility: external
+  automation_class: human_signoff; agent_mode: human_only; confidence (model's own): 0.85
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp; R_DL_APPEAL_PERIOD: Appeal period — The appeal must reach Kela within 30 days after the day the party is deemed to have received the decision (the 7th day after posting unless otherwise shown); a ; R_PROC_ANNULMENT: Annulment of final decisions — On request of a party or Kela, the Appeal Board (for Kela decisions) or Insurance Court (for appellate decisions) may annul a final decision based on wrong or i
+  predecessors: T_FORWARD_APPEAL (Prepare statement and forward appeal)
+  successors: D_FURTHER_APPEAL (Appeal to Insurance Court?)
+  public-source provenance: 4 fact(s) from sources ['kela-internal-auto-termination', 'law-938-2014']
+
+NODE D_FURTHER_APPEAL
+  name: Appeal to Insurance Court?
+  description: Branches on whether the party appeals the Board's decision.
+  type: decision; actor: Applicant / household representative (citizen); visibility: external
+  automation_class: citizen_action; agent_mode: human_only; confidence (model's own): 0.85
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: T_SSAB_DECIDE (Social Security Appeal Board decides)
+  successors: T_IC_APPEAL (Appeal to Insurance Court) [if: Party appeals to Insurance Court]; T_IMPLEMENT (Implement final appellate decision) [if: Board decision accepted and becomes final]
+  public-source provenance: 2 fact(s) from sources ['kela-internal-auto-termination', 'law-938-2014']
+
+NODE T_IC_APPEAL
+  name: Appeal to Insurance Court
+  description: The party appeals the Appeal Board's decision to the Insurance Court.
+  type: citizen_task; actor: Applicant / household representative (citizen); visibility: external
+  automation_class: citizen_action; agent_mode: human_only; confidence (model's own): 0.8
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: D_FURTHER_APPEAL (Appeal to Insurance Court?) [if: Party appeals to Insurance Court]
+  successors: T_IC_DECIDE (Insurance Court decides)
+  public-source provenance: 2 fact(s) from sources ['kela-internal-auto-termination', 'law-938-2014']
+
+NODE T_IC_DECIDE
+  name: Insurance Court decides
+  description: The Insurance Court issues a final decision.
+  type: third_party_task; actor: Insurance Court (vakuutusoikeus) (insurance_court); visibility: external
+  automation_class: human_signoff; agent_mode: human_only; confidence (model's own): 0.85
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp; R_PROC_ANNULMENT: Annulment of final decisions — On request of a party or Kela, the Appeal Board (for Kela decisions) or Insurance Court (for appellate decisions) may annul a final decision based on wrong or i
+  predecessors: T_IC_APPEAL (Appeal to Insurance Court)
+  successors: T_IMPLEMENT (Implement final appellate decision)
+  public-source provenance: 2 fact(s) from sources ['law-938-2014']
+
+NODE T_IMPLEMENT
+  name: Implement final appellate decision
+  description: Kela implements the final appellate outcome in the case and payments.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.5
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: D_FURTHER_APPEAL (Appeal to Insurance Court?) [if: Board decision accepted and becomes final]; T_IC_DECIDE (Insurance Court decides)
+  successors: E_APPEAL_CLOSED (Appeal concluded)
+  public-source provenance: 1 fact(s) from sources ['law-938-2014']
+  inferred_reason: Law says Kela's decision applies until a final decision; the implementation step itself is not described.
+
+NODE E_NOT_APPEALABLE
+  name: Decision not appealable
+  description: Interim or § 25(2) decisions end without appeal.
+  type: end_event; actor: Applicant / household representative (citizen); visibility: external
+  automation_class: deterministic_rule; agent_mode: agent_can_execute; confidence (model's own): 0.8
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: D_APPEALABLE (Decision appealable?) [if: Interim decision or § 25(2) landlord-payment decision]
+  successors: none
+  public-source provenance: 1 fact(s) from sources ['law-938-2014']
+
+NODE E_APPEAL_CLOSED
+  name: Appeal concluded
+  description: The appeal process ends with a final decision implemented.
+  type: end_event; actor: Kela benefit caseworker (kela_caseworker); visibility: external
+  automation_class: deterministic_rule; agent_mode: agent_can_execute; confidence (model's own): 0.75
+  rules applied: R_PROC_APPEAL: Appeal route — A dissatisfied party may appeal in writing to the Social Security Appeal Board and then to the Insurance Court, whose decision is final; Kela's decision is comp
+  predecessors: T_IMPLEMENT (Implement final appellate decision)
+  successors: none
+  public-source provenance: 2 fact(s) from sources ['law-938-2014']
+
+NODE S_NEW_EVIDENCE
+  name: Error or new evidence identified
+  description: An error in a decision or new evidence on a refused or under-paid allowance comes to light.
+  type: start_event; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: human_only; confidence (model's own): 0.75
+  rules applied: R_PROC_CORRECTION_ERROR: Correction of factual error — Kela may annul and re-decide a decision based on clearly erroneous or incomplete evidence, obviously wrong application of law or a procedural error; correction ; R_PROC_REOPEN_NEW_EVIDENCE: Re-examination on new evidence — If new evidence arises on a refused allowance or an increase, Kela must re-examine and may grant/increase despite a final decision; the new decision is appealab
+  predecessors: none
+  successors: T_REEXAMINE (Re-examine decision)
+  public-source provenance: 2 fact(s) from sources ['law-938-2014']
+
+NODE T_REEXAMINE
+  name: Re-examine decision
+  description: Kela re-examines the decision for error correction, new evidence or an annulment request.
+  type: caseworker_task; actor: Kela benefit caseworker (kela_caseworker); visibility: internal
+  automation_class: judgment; agent_mode: agent_prepares_human_decides; confidence (model's own): 0.75
+  rules applied: R_PROC_CORRECTION_ERROR: Correction of factual error — Kela may annul and re-decide a decision based on clearly erroneous or incomplete evidence, obviously wrong application of law or a procedural error; correction ; R_PROC_REOPEN_NEW_EVIDENCE: Re-examination on new evidence — If new evidence arises on a refused allowance or an increase, Kela must re-examine and may grant/increase despite a final decision; the new decision is appealab; R_PROC_ANNULMENT: Annulment of final decisions — On request of a party or Kela, the Appeal Board (for Kela decisions) or Insurance Court (for appellate decisions) may annul a final decision based on wrong or i; R_PROC_REDECIDE_ON_BENEFIT: Re-decision when a precluding benefit is granted retroactively — If a benefit preventing payment under § 8(2) (e.g. pensioners' housing allowance) is granted retroactively, Kela may re-decide without annulment or consent (alt
+  predecessors: S_NEW_EVIDENCE (Error or new evidence identified)
+  successors: T_DECIDE (Make written decision)
+  public-source provenance: 6 fact(s) from sources ['law-938-2014']

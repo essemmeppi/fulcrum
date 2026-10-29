@@ -1,0 +1,1881 @@
+{
+  "actors": [
+    {
+      "id": "customer",
+      "name": "Customer (person claiming or getting an eligible Centrelink payment)",
+      "kind": "citizen"
+    },
+    {
+      "id": "sa_staff",
+      "name": "Services Australia staff (Centrelink service officers)",
+      "kind": "caseworker"
+    },
+    {
+      "id": "sa_system",
+      "name": "Services Australia / Centrelink systems, including myGov online services",
+      "kind": "system"
+    },
+    {
+      "id": "landlord_or_agent",
+      "name": "Landlord, real estate agent or accommodation provider (including community housing / supported accommodation providers using EVoR)",
+      "kind": "third_party"
+    },
+    {
+      "id": "other",
+      "name": "Australia's immigration department",
+      "kind": "other_authority"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N01",
+      "name": "Lodge claim for an eligible payment",
+      "description": "The customer lodges a new claim for an eligible payment (e.g. Age Pension, JobSeeker Payment, Family Tax Benefit Part A above base rate) and declares rent or accommodation costs; no separate Rent Assistance claim is made.",
+      "type": "start_event",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-rent-assistance.txt",
+          "quote": "You don’t need to submit a claim for Rent Assistance. We’ll check if you can get it when you either:"
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "a new claim is submitted for an eligible Centrelink payment"
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "We’ll check if you can get Rent Assistance when you submit a new claim or update your address and accommodation details for any of these payments:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N02",
+      "name": "Circumstances change for a current recipient",
+      "description": "A customer already getting an eligible payment has a change: rent or accommodation costs, accommodation type, moving house, income, marital status, number of dependent children, people moving in or out, temporarily living away from home, being in-between addresses, or community housing transitioning to government housing.",
+      "type": "start_event",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "To get the correct rate of payment, it’s important you tell us within 14 days if any of the following things happen:"
+        },
+        {
+          "source": "pub-how-much.txt",
+          "quote": "We may adjust your Rent Assistance if any of these things happen:"
+        },
+        {
+          "source": "pub-rent-assistance.txt",
+          "quote": "already get an eligible payment from us, and you tell us that your address, accommodation or rent details have changed."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N03",
+      "name": "Young DSP recipient getting RA as an independent turns 18",
+      "description": "A Disability Support Pension recipient who qualified for Rent Assistance as an independent before 18 turns 18 and must contact the agency so continued eligibility can be checked.",
+      "type": "start_event",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-payment-special-rules-for-rent-assistance-eligibility.txt",
+          "quote": "If you’re eligible for Rent Assistance as an independent when you’re younger than 18, you’ll need to contact us when you turn 18 to make sure you’re still eligible for Rent Assistance."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N04",
+      "name": "Rent change covered by EVoR?",
+      "description": "The customer determines whether the change is a rent-amount change with a community housing or supported accommodation provider that uses Electronic Verification of Rent (EVoR) and whether consent has been given, which decides whether the customer must report it personally.",
+      "type": "decision",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source": "pub-manage.txt",
+          "quote": "Ask them if they use EVoR. If they do and you’ve given them consent to tell us using EVoR, you don’t need to tell us if your rent changes. They can help you fill out a consent form."
+        },
+        {
+          "source": "pub-evor.txt",
+          "quote": "If you agree, your community housing organisation or supported accommodation provider will use the EVoR service to update and verify your rent details with us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N05",
+      "name": "Give housing provider consent to use EVoR",
+      "description": "The customer completes a consent form (with the provider's help) allowing their community housing or supported accommodation provider to report rent changes to the agency via EVoR.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-manage.txt",
+          "quote": "Ask them if they use EVoR. If they do and you’ve given them consent to tell us using EVoR, you don’t need to tell us if your rent changes. They can help you fill out a consent form."
+        },
+        {
+          "source": "pub-evor.txt",
+          "quote": "If you agree, your community housing organisation or supported accommodation provider will use the EVoR service to update and verify your rent details with us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N06",
+      "name": "Provider updates and verifies rent via EVoR",
+      "description": "The community housing or supported accommodation provider uses the free EVoR online service to tell the agency about the new rent amount, which both updates and verifies the customer's rent details.",
+      "type": "third_party_task",
+      "actor_id": "landlord_or_agent",
+      "visibility": "external",
+      "automation_class": "notification",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-evor.txt",
+          "quote": "They can use it to tell us each time there’s a change in your rent."
+        },
+        {
+          "source": "pub-manage.txt",
+          "quote": "If you pay rent to a community housing organisation that uses the Electronic Verification of Rent (EVoR) online service, they can update your rent amount if it changes within 15 to 50 days of the rent change."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N07",
+      "name": "EVoR update made within 15-50 days?",
+      "description": "The customer checks whether the provider updated the rent amount via EVoR within 15 to 50 days of the rent change; if not, the customer must report the change themselves.",
+      "type": "decision",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-manage.txt",
+          "quote": "If they don’t update the rent amount within this timeframe, you must update it yourself. You must update any other details that change with us yourself."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N08",
+      "name": "Rent paid by Centrepay deduction?",
+      "description": "The customer checks whether their rent is paid through a Centrepay deduction, which the housing organisation cannot change on their behalf.",
+      "type": "decision",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-manage.txt",
+          "quote": "If you have a Centrepay deduction set up to pay your rent, you’ll need to update your changes with Centrepay yourself. Your housing organisation can’t do that for you."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N09",
+      "name": "Update Centrepay deduction",
+      "description": "The customer updates their Centrepay rent deduction to reflect the new rent amount.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-manage.txt",
+          "quote": "If you have a Centrepay deduction set up to pay your rent, you’ll need to update your changes with Centrepay yourself. Your housing organisation can’t do that for you."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N10",
+      "name": "Report change of circumstances within 14 days",
+      "description": "The customer tells the agency about the change within 14 days (online via myGov 'Update accommodation details', by phone on their regular payment line, at a service centre or by post), including a secure mailing address if in-between addresses.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "You can tell us about changes online within 14 days if your Centrelink online account is linked to myGov."
+        },
+        {
+          "source": "pub-manage.txt",
+          "quote": "To keep getting Rent Assistance, you need to tell us within 14 days if your circumstances change. This includes if you plan to travel outside Australia."
+        },
+        {
+          "source": "pub-private-housing-rent-type-for-rent-assistance.txt",
+          "quote": "If you move house or your rent amount changes, you must tell us within 14 days."
+        },
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "While you’re waiting to move, it’s important you give us a secure mailing address."
+        },
+        {
+          "source": "pub-community-or-disability-housing-rent-type-for-rent-assistance.txt",
+          "quote": "If you get a letter telling you the house you’re living in is transitioning to government housing, you should tell us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N11",
+      "name": "Reported online or through staff?",
+      "description": "The reporting channel determines whether the update is self-recorded online through myGov or lodged by phone, at a service centre or by post for staff to record.",
+      "type": "decision",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you can’t tell us online, you can let us know about the change within 14 days either:"
+        },
+        {
+          "source": "pub-proof-rent-arrangements-for-rent-assistance.txt",
+          "quote": "update your address and accommodation details online, at a service centre or by post."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N12",
+      "name": "Record change reported by phone, at a service centre or by post",
+      "description": "A service officer records the customer's updated address, accommodation or rent details in the customer's record.",
+      "type": "caseworker_task",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.55,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "by calling your regular payment line"
+        },
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you can’t tell us online, you can let us know about the change within 14 days either:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N13",
+      "name": "Automatically start Rent Assistance assessment",
+      "description": "The system automatically assesses (or reassesses) Rent Assistance when a claim for an eligible payment is lodged or rent/accommodation details are updated.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "We automatically assess for Rent Assistance if either:"
+        },
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you already get an eligible payment from us and you tell us your circumstances have changed, we’ll automatically check if you can get or keep getting Rent Assistance."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N14",
+      "name": "Getting an eligible payment?",
+      "description": "Check that the customer is getting (or is granted on the new claim) one of the eligible payments, e.g. FTB Part A only if paid above the base rate.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "To be eligible for Rent Assistance, you must be getting one of these payments. If you’re 25 or younger, some payments have special rules for Rent Assistance."
+        },
+        {
+          "source": "pub-rent-types-for-rent-assistance.txt",
+          "quote": "You must also be getting an eligible payment from us."
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "Family Tax Benefit - Part A at more than the base rate"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N15",
+      "name": "Meets under-25 special rules for the payment?",
+      "description": "For young customers, apply the payment-specific special rules (ABSTUDY Living Allowance, DSP under 21, JobSeeker Payment while living with parents, Youth Allowance) on age, independence, couple status and living arrangements.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you’re 25 or younger, you also need to meet special rules for the payment you get."
+        },
+        {
+          "source": "pub-payment-special-rules-for-rent-assistance-eligibility.txt",
+          "quote": "Special rules apply to get Rent Assistance with an eligible payment if you’re 25 or younger."
+        },
+        {
+          "source": "pub-payment-special-rules-for-rent-assistance-eligibility.txt",
+          "quote": "To get Rent Assistance with JobSeeker Payment when you live with your parents or guardians, you must be either:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N16",
+      "name": "Eligible accommodation (rent) type?",
+      "description": "Classify the customer's accommodation and decide whether it is an eligible rent type, excluding rent paid to a state or territory housing authority (government tenants or sub-tenants).",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-rent-types-for-rent-assistance.txt",
+          "quote": "You must live in one of these accommodation types to get Rent Assistance:"
+        },
+        {
+          "source": "pub-rent-types-for-rent-assistance.txt",
+          "quote": "You’re not eligible for Rent Assistance if you pay rent to live in or lease a house that a state or territory housing authority owns or manages."
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "To be eligible for Rent Assistance, you must also be paying one of these accommodation costs:"
+        },
+        {
+          "source": "pub-community-or-disability-housing-rent-type-for-rent-assistance.txt",
+          "quote": "If you pay rent to the AHO for accommodation in a house they don’t own, you’re not eligible for Rent Assistance."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N17",
+      "name": "Retirement village resident assessed as non-homeowner?",
+      "description": "Using the amount paid on entry to the retirement village, assess whether the resident is a homeowner (likely not eligible) or a non-homeowner (Rent Assistance based on ongoing fees).",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-retirement-village-or-lifestyle-village-rent-type-for-rent-assistance.txt",
+          "quote": "Using the amount you paid when you entered the retirement village, we assess if you’re either a:"
+        },
+        {
+          "source": "pub-retirement-village-or-lifestyle-village-rent-type-for-rent-assistance.txt",
+          "quote": "If you’re assessed as a non-homeowner, you may get Rent Assistance. We base the assistance on your ongoing fees in the retirement village. If we assess you as a homeowner, you likely won’t be eligible for Rent Assistance."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N18",
+      "name": "Travelling homeowner qualifies for site fees?",
+      "description": "For a homeowner travelling in mobile accommodation, check they are travelling 12 months or more, their principal home is assessed as an asset, they pay site fees, and no exclusion applies.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travelling-site-and-mooring-fees-rent-type-for-rent-assistance.txt",
+          "quote": "If you’re a homeowner and you’re travelling in mobile accommodation for 12 months or more, you may get Rent Assistance if both apply:"
+        },
+        {
+          "source": "pub-travelling-site-and-mooring-fees-rent-type-for-rent-assistance.txt",
+          "quote": "You won’t get Rent Assistance if you’re travelling away from the home you own for less than 12 months and any of these apply:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N19",
+      "name": "Temporarily away from home for an accepted reason?",
+      "description": "If the customer is temporarily living away from their home address, a service officer judges whether the absence is for medical treatment, caring for someone or training/education so Rent Assistance can continue.",
+      "type": "decision",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "Tell us within 14 days if you’re temporarily living away from your home address, so we can check your eligibility for Rent Assistance."
+        },
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "The main reasons you might still get Rent Assistance if you’re temporarily away from home are to:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N20",
+      "name": "Determine rate category",
+      "description": "Determine which rate table applies: with income support/ABSTUDY or with FTB Part A, single, single sharer, couple or separated couple, and number of dependent children.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-how-much.txt",
+          "quote": "If you have dependent children, you’ll usually get Rent Assistance with Family Tax Benefit Part A."
+        },
+        {
+          "source": "pub-how-much.txt",
+          "quote": "The single sharer rate of Rent Assistance applies if you’re eligible and you:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N21",
+      "name": "Determine assessable rent amount",
+      "description": "Apply rent-type rules to the declared costs: lodging component only (or two thirds of board and lodging if lodging is unknown), Defence rent minus Temporary Rental Allowance subsidy, retirement village ongoing fees.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-how-much.txt",
+          "quote": "If you pay board and lodging, we work out how much you can get based on lodging only."
+        },
+        {
+          "source": "pub-how-much.txt",
+          "quote": "If you can’t tell us what you pay for lodging, we’ll use two thirds of the total board and lodging amount you pay as rent."
+        },
+        {
+          "source": "pub-board-and-lodging-rent-type-for-rent-assistance.txt",
+          "quote": "Lodging is when you pay for a room in either a private home or other shared accommodation, which doesn’t include meals."
+        },
+        {
+          "source": "pub-defence-housing-rent-type-for-rent-assistance.txt",
+          "quote": "If you get Rental Allowance from Defence Housing, we calculate Rent Assistance on the amount of rent you pay, minus the Temporary Rental Allowance subsidy."
+        },
+        {
+          "source": "pub-retirement-village-or-lifestyle-village-rent-type-for-rent-assistance.txt",
+          "quote": "If you’re assessed as a non-homeowner, you may get Rent Assistance. We base the assistance on your ongoing fees in the retirement village. If we assess you as a homeowner, you likely won’t be eligible for Rent Assistance."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N22",
+      "name": "Rent above minimum threshold?",
+      "description": "Check that the assessable fortnightly rent exceeds the minimum rent threshold for the customer's rate category.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-how-much.txt",
+          "quote": "There’s a minimum amount of rent you need to pay to get Rent Assistance. For every $1 of rent you pay above this amount, you’ll get 75c. You can’t get more than the maximum amount."
+        },
+        {
+          "source": "pub-rent-types-for-rent-assistance.txt",
+          "quote": "You must pay more than the minimum amount of eligible rent or accommodation costs and live in an eligible accommodation type to get Rent Assistance."
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "pay more than the minimum amount of rent or accommodation costs."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N23",
+      "name": "Rent verification required?",
+      "description": "Decide whether proof of rent is needed: a new claim declaring rent, or an update to address, rent amount, kind of accommodation or who the customer lives with.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If someone submits a claim or is getting an eligible Centrelink payment from us and they update their rent or accommodation details, we may ask them to verify if any of the following change:"
+        },
+        {
+          "source": "pub-rent-assistance.txt",
+          "quote": "If you’re eligible, we may ask you to complete a Rent Certificate or provide a formal tenancy agreement. You only need to do this if we ask you to."
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you tell us you’re renting or paying an eligible accommodation cost when you claim an eligible payment, we may ask for proof."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N24",
+      "name": "Formal tenancy agreement already provided?",
+      "description": "Check whether a formal tenancy agreement was provided (e.g. with the claim); if not, a Rent Certificate is generated.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-proof-rent-arrangements-for-rent-assistance.txt",
+          "quote": "lodge a new claim for an eligible payment and a formal tenancy agreement isn’t provided"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N25",
+      "name": "Issue Rent Certificate with due date",
+      "description": "The system automatically sends the customer a Rent Certificate to return by a due date, also available through myGov 'Request a document' from the next working day.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "notification",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-proof-rent-arrangements-for-rent-assistance.txt",
+          "quote": "We’ll automatically send you a Rent Certificate when you either:"
+        },
+        {
+          "source": "pub-proof-rent-arrangements-for-rent-assistance.txt",
+          "quote": "If your Centrelink online account is linked to myGov, you can access the Rent Certificate through the Request a document option. You can access it the next working day after your details are updated."
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "After a review, we’ll sometimes send them a Rent Certificate to confirm their accommodation details."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N26",
+      "name": "Complete and sign Rent Certificate",
+      "description": "The customer fills in and signs the Rent Certificate confirming their rent and accommodation details.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If we send a Rent Certificate form to confirm their details, they must sign the certificate and return it by the due date. If they don’t their Rent Assistance will stop."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N27",
+      "name": "Attach lease or tenancy agreement?",
+      "description": "The customer chooses whether to attach a copy of their lease or tenancy agreement, in which case the landlord does not need to sign the Rent Certificate.",
+      "type": "decision",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If they include a copy of their lease or tenancy agreement, their landlord or accommodation provider doesn’t need to sign the Rent Certificate."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N28",
+      "name": "Landlord or agent signs Rent Certificate",
+      "description": "The landlord, real estate agent or accommodation provider signs the Rent Certificate to confirm the customer's rental arrangements.",
+      "type": "third_party_task",
+      "actor_id": "landlord_or_agent",
+      "visibility": "external",
+      "automation_class": "human_signoff",
+      "agent_mode": "human_only",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "be signed by their landlord or accommodation provider"
+        },
+        {
+          "source": "pub-private-housing-rent-type-for-rent-assistance.txt",
+          "quote": "If you don’t have a formal tenancy agreement, you can ask your landlord or real estate agent to sign a Rent Certificate to prove your rental arrangements."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N29",
+      "name": "Submit proof of rent",
+      "description": "The customer submits the Rent Certificate and/or a copy of the tenancy agreement online (myGov Upload documents), by post or at a service centre.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "To verify their details, we need a copy of their tenancy agreement or a Rent Certificate. They can submit it online, by post or at a service centre."
+        },
+        {
+          "source": "pub-proof-rent-arrangements-for-rent-assistance.txt",
+          "quote": "If we ask you to give us proof of your rent or accommodation arrangements to get Rent Assistance, you can submit a copy of a formal tenancy agreement or Rent Certificate in any of these ways:"
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "select Upload documents from the Favourite services on the homepage"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N30",
+      "name": "Proof received by due date?",
+      "description": "Check whether the completed Rent Certificate (or tenancy agreement) was returned by the due date; if not, Rent Assistance stops.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If we send a Rent Certificate form to confirm their details, they must sign the certificate and return it by the due date. If they don’t their Rent Assistance will stop."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N31",
+      "name": "Check proof and update rent details",
+      "description": "A service officer checks the tenancy agreement or Rent Certificate (signed by the landlord or accompanied by a lease) and records the verified address, rent, accommodation type and household.",
+      "type": "caseworker_task",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "document_check",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "When they return the completed form, it must either:"
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "To verify their details, we need a copy of their tenancy agreement or a Rent Certificate. They can submit it online, by post or at a service centre."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N32",
+      "name": "Proof sufficient?",
+      "description": "The service officer decides whether the proof confirms the rent and accommodation details or more details are needed.",
+      "type": "decision",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.55,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If we need more details, we’ll ask you for them."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N33",
+      "name": "Ask customer for more details",
+      "description": "The agency asks the customer for further details or documents about their rent or accommodation.",
+      "type": "caseworker_task",
+      "actor_id": "sa_staff",
+      "visibility": "external",
+      "automation_class": "notification",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If we need more details, we’ll ask you for them."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N34",
+      "name": "Calculate Rent Assistance rate",
+      "description": "Calculate 75 cents for every dollar of assessable rent above the threshold, capped at the maximum fortnightly rate for the customer's category.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-how-much.txt",
+          "quote": "There’s a minimum amount of rent you need to pay to get Rent Assistance. For every $1 of rent you pay above this amount, you’ll get 75c. You can’t get more than the maximum amount."
+        },
+        {
+          "source": "pub-rent-assistance.txt",
+          "quote": "The amount of Rent Assistance you can get depends on how much rent you pay."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N35",
+      "name": "Overpaid because a change was not reported?",
+      "description": "Determine whether Rent Assistance was overpaid because the customer did not tell the agency about a change in time, and whether the non-disclosure appears deliberate.",
+      "type": "decision",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you don’t tell us about changes, we may pay you too much. If this happens, you’ll have to repay the money to us."
+        },
+        {
+          "source": "pub-community-or-disability-housing-rent-type-for-rent-assistance.txt",
+          "quote": "Tell us even if you keep paying your rent to the community housing organisation. This is so we can update your rent details and avoid any overpayments."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N36",
+      "name": "Consider fraud action",
+      "description": "Where non-disclosure of a change appears deliberate, the agency considers charging the customer with fraud.",
+      "type": "caseworker_task",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "judgment",
+      "agent_mode": "human_only",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you deliberately don’t tell us about changes, we could charge you with fraud."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N37",
+      "name": "Raise overpayment debt",
+      "description": "The agency raises a debt for the Rent Assistance overpaid because of the unreported change.",
+      "type": "caseworker_task",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you don’t tell us about changes, we may pay you too much. If this happens, you’ll have to repay the money to us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N38",
+      "name": "Repay overpaid amount",
+      "description": "The customer repays the overpaid Rent Assistance to the agency.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you don’t tell us about changes, we may pay you too much. If this happens, you’ll have to repay the money to us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N39",
+      "name": "Refuse or stop Rent Assistance",
+      "description": "Record that Rent Assistance is not payable or cancel it (not eligible, proof not returned, departure to live overseas, or travel limits exceeded).",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If we send a Rent Certificate form to confirm their details, they must sign the certificate and return it by the due date. If they don’t their Rent Assistance will stop."
+        },
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you leave Australia to live in another country, your payment will stop when you depart."
+        },
+        {
+          "source": "pub-rent-types-for-rent-assistance.txt",
+          "quote": "You’re not eligible for Rent Assistance if you pay rent to live in or lease a house that a state or territory housing authority owns or manages."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N40",
+      "name": "Notify Rent Assistance outcome",
+      "description": "Send a message to the customer's myGov Inbox (or a letter by mail) saying whether they can get Rent Assistance or how it changes, with the claim result or change outcome.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "notification",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "We’ll send a message to your myGov Inbox to tell you if you can get Rent Assistance when we either:"
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you don’t get electronic letters, we’ll send you a letter in the mail."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N41",
+      "name": "Rent Assistance payable?",
+      "description": "Route on the outcome: pay Rent Assistance if the customer is eligible, otherwise close as not payable.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you’re eligible, we’ll pay it automatically with your regular payment. You don’t need to apply."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N42",
+      "name": "Pay Rent Assistance with regular payment",
+      "description": "Pay Rent Assistance automatically as an extra amount with the customer's regular payment at the calculated rate.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.95,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you’re eligible, we’ll pay it automatically with your regular payment. You don’t need to apply."
+        },
+        {
+          "source": "pub-rent-assistance.txt",
+          "quote": "A regular extra payment we’ll automatically pay you if you pay eligible rent or accommodation costs and get an eligible payment from us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N43",
+      "name": "Rent Assistance in payment",
+      "description": "Rent Assistance continues with the regular payment until a change, review, rate update or travel event triggers reassessment.",
+      "type": "end_event",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-rent-assistance.txt",
+          "quote": "A regular extra payment we’ll automatically pay you if you pay eligible rent or accommodation costs and get an eligible payment from us."
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you’re eligible, we’ll pay it automatically with your regular payment. You don’t need to apply."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N44",
+      "name": "Rent Assistance not payable or stopped",
+      "description": "The customer does not get Rent Assistance, or their Rent Assistance has stopped.",
+      "type": "end_event",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If we send a Rent Certificate form to confirm their details, they must sign the certificate and return it by the due date. If they don’t their Rent Assistance will stop."
+        },
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "We’ll send a message to your myGov Inbox to tell you if you can get Rent Assistance when we either:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N45",
+      "name": "Overpayment repaid",
+      "description": "The Rent Assistance overpayment has been repaid.",
+      "type": "end_event",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "If you don’t tell us about changes, we may pay you too much. If this happens, you’ll have to repay the money to us."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N46",
+      "name": "Rent review initiated (from time to time)",
+      "description": "From time to time the agency selects a customer getting a payment for a review of their rent and accommodation details (a scheduled trigger).",
+      "type": "start_event",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.85,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "To make sure a Centrelink customer is getting the right amount of Rent Assistance, they may need to verify their rent or accommodation details. We may also ask them to review their details from time to time."
+        },
+        {
+          "source": "pub-quickguide-docx.txt",
+          "quote": "Review of your details when you get Rent Assistance"
+        },
+        {
+          "source": "pub-manage.txt",
+          "quote": "If you get Rent Assistance, we may ask you to verify your rent to make sure you’re getting the right amount."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N47",
+      "name": "Send rent review letter",
+      "description": "Send a review letter with a due date through the customer's preferred notification channel (myGov Inbox or post).",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "external",
+      "automation_class": "notification",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "When someone is getting a payment from us, we sometimes ask fora review of rent and accommodation details by sending them a letter using their preferred notification channel."
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If they get letters online, they can check their myGov Inbox. If both members of a couple get a letter, only one person needs to complete the review."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N48",
+      "name": "Complete rent review",
+      "description": "The customer (only one member of a couple) completes the review online through myGov, by phone self service, or by calling the dedicated number in the letter.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "They must complete the review by the due date in the letter one of these ways:"
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "using phone self service"
+        },
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "If they get letters online, they can check their myGov Inbox. If both members of a couple get a letter, only one person needs to complete the review."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N49",
+      "name": "Review completed by due date?",
+      "description": "Check whether the review was completed by the due date in the letter; completed reviews feed reassessment, which may lead to a Rent Certificate being sent.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.55,
+      "evidence": [
+        {
+          "source": "pub-factsheet-docx.txt",
+          "quote": "They must complete the review by the due date in the letter one of these ways:"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N50",
+      "name": "Customer plans travel outside Australia",
+      "description": "The customer getting Rent Assistance plans to travel outside Australia, which is a reportable change.",
+      "type": "start_event",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-manage.txt",
+          "quote": "To keep getting Rent Assistance, you need to tell us within 14 days if your circumstances change. This includes if you plan to travel outside Australia."
+        },
+        {
+          "source": "pub-change-circumstances-when-you-get-rent-assistance.txt",
+          "quote": "you plan to travel outside Australia."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N51",
+      "name": "Tell agency about travel plans",
+      "description": "The customer tells the agency about their travel plans when and how the travel rules for their main payment require.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "when and how to tell us about your travel plans."
+        },
+        {
+          "source": "pub-manage.txt",
+          "quote": "The travel rules for your main payment affect your Rent Assistance when you travel outside Australia."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N52",
+      "name": "Immigration department reports departure",
+      "description": "Australia's immigration department tells the agency when the customer leaves Australia.",
+      "type": "third_party_task",
+      "actor_id": "other",
+      "visibility": "internal",
+      "automation_class": "register_lookup",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "Australia’s immigration department will tell us when you leave. They will also tell us when you return."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N53",
+      "name": "Leaving to live in another country?",
+      "description": "Decide whether the customer is leaving Australia to live in another country (payment stops on departure) or travelling temporarily.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you leave Australia to live in another country, your payment will stop when you depart."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N54",
+      "name": "Main payment continues and rent still paid in Australia?",
+      "description": "For temporary travel, check the main payment remains payable overseas under its travel rules and the customer is still paying rent in Australia.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.9,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If your travel is temporary, you may continue to get Rent Assistance if you’re still paying rent in Australia and getting your main payment."
+        },
+        {
+          "source": "pub-manage.txt",
+          "quote": "The travel rules for your main payment affect your Rent Assistance when you travel outside Australia."
+        },
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "To get your payment or concession card while outside Australia, you must continue to meet the qualification rules at all times."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N55",
+      "name": "Travelling for overseas study as part of Australian course?",
+      "description": "Check whether the travel is overseas study that is part of the customer's Australian course with the payment payable overseas for that reason.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you’re travelling for overseas study as part of your Australian course and your payment is payable overseas for that reason, you’ll get Rent Assistance for as long as you get your main payment."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N56",
+      "name": "Continue RA while main payment is paid overseas",
+      "description": "Keep paying Rent Assistance for as long as the main payment is paid during the overseas study.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you’re travelling for overseas study as part of your Australian course and your payment is payable overseas for that reason, you’ll get Rent Assistance for as long as you get your main payment."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N57",
+      "name": "Continue RA overseas for up to 26 weeks",
+      "description": "Keep paying Rent Assistance while the main payment is paid overseas, for at most 26 weeks.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you’re travelling for a reason other than overseas study, you’ll get Rent Assistance for as long as you get your main payment, up to 26 weeks."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N58",
+      "name": "Returns before 26 weeks?",
+      "description": "Check whether the customer returns to Australia before the 26-week Rent Assistance overseas limit is reached.",
+      "type": "decision",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you’re travelling for a reason other than overseas study, you’ll get Rent Assistance for as long as you get your main payment, up to 26 weeks."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N59",
+      "name": "26-week overseas limit reached",
+      "description": "The 26-week period for paying Rent Assistance overseas for non-study travel expires.",
+      "type": "timer",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "If you’re travelling for a reason other than overseas study, you’ll get Rent Assistance for as long as you get your main payment, up to 26 weeks."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N60",
+      "name": "Immigration department reports return",
+      "description": "Australia's immigration department tells the agency when the customer returns to Australia.",
+      "type": "third_party_task",
+      "actor_id": "other",
+      "visibility": "internal",
+      "automation_class": "register_lookup",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-travel-outside-australia-rules-for-rent-assistance.txt",
+          "quote": "Australia’s immigration department will tell us when you leave. They will also tell us when you return."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N61",
+      "name": "Indexation date (20 March / 20 September)",
+      "description": "Twice a year, on 20 March and 20 September, Rent Assistance rates are due for update (a scheduled trigger).",
+      "type": "start_event",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-how-much.txt",
+          "quote": "We update Rent Assistance rates on 20 March and 20 September each year. This is in line with the Consumer Price Index."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N62",
+      "name": "Update thresholds and maximum rates by CPI",
+      "description": "Update the Rent Assistance thresholds and maximum rates in line with the Consumer Price Index so each customer's amount is adjusted.",
+      "type": "system_task",
+      "actor_id": "sa_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-how-much.txt",
+          "quote": "We update Rent Assistance rates on 20 March and 20 September each year. This is in line with the Consumer Price Index."
+        },
+        {
+          "source": "pub-how-much.txt",
+          "quote": "We’ll also adjust the amount of Rent Assistance you get when the payment rates change during the year."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N63",
+      "name": "Customer thinks the decision is wrong",
+      "description": "After receiving a Rent Assistance outcome, the customer believes the agency has made a mistake.",
+      "type": "start_event",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you think we’ve made a mistake, you can ask us to review our decision."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N64",
+      "name": "Ask for a review of the decision",
+      "description": "The customer asks the agency to review its Rent Assistance decision.",
+      "type": "citizen_task",
+      "actor_id": "customer",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.75,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you think we’ve made a mistake, you can ask us to review our decision."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N65",
+      "name": "Review the Rent Assistance decision",
+      "description": "A service officer reconsiders the Rent Assistance decision and triggers a reassessment with any corrected details.",
+      "type": "caseworker_task",
+      "actor_id": "sa_staff",
+      "visibility": "internal",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "source": "pub-who-can-get.txt",
+          "quote": "If you think we’ve made a mistake, you can ask us to review our decision."
+        }
+      ],
+      "inferred_reason": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "N01",
+      "target": "N13",
+      "condition": ""
+    },
+    {
+      "source": "N02",
+      "target": "N04",
+      "condition": ""
+    },
+    {
+      "source": "N03",
+      "target": "N10",
+      "condition": ""
+    },
+    {
+      "source": "N04",
+      "target": "N06",
+      "condition": "Rent amount changed, provider uses EVoR and customer has already given consent"
+    },
+    {
+      "source": "N04",
+      "target": "N05",
+      "condition": "Provider uses EVoR but customer has not yet given consent"
+    },
+    {
+      "source": "N04",
+      "target": "N10",
+      "condition": "Any other change, or provider does not use EVoR"
+    },
+    {
+      "source": "N05",
+      "target": "N06",
+      "condition": ""
+    },
+    {
+      "source": "N06",
+      "target": "N07",
+      "condition": ""
+    },
+    {
+      "source": "N07",
+      "target": "N08",
+      "condition": "Yes: rent updated via EVoR within 15-50 days of the change"
+    },
+    {
+      "source": "N07",
+      "target": "N10",
+      "condition": "No: not updated within the timeframe, customer must update it"
+    },
+    {
+      "source": "N08",
+      "target": "N09",
+      "condition": "Yes: Centrepay deduction pays the rent"
+    },
+    {
+      "source": "N08",
+      "target": "N13",
+      "condition": "No"
+    },
+    {
+      "source": "N09",
+      "target": "N13",
+      "condition": ""
+    },
+    {
+      "source": "N10",
+      "target": "N11",
+      "condition": ""
+    },
+    {
+      "source": "N11",
+      "target": "N13",
+      "condition": "Online through myGov"
+    },
+    {
+      "source": "N11",
+      "target": "N12",
+      "condition": "By phone, at a service centre or by post"
+    },
+    {
+      "source": "N12",
+      "target": "N13",
+      "condition": ""
+    },
+    {
+      "source": "N13",
+      "target": "N14",
+      "condition": ""
+    },
+    {
+      "source": "N14",
+      "target": "N15",
+      "condition": "Yes: getting or granted an eligible payment"
+    },
+    {
+      "source": "N14",
+      "target": "N39",
+      "condition": "No: not getting an eligible payment"
+    },
+    {
+      "source": "N15",
+      "target": "N16",
+      "condition": "Special rules met, or not applicable because of age"
+    },
+    {
+      "source": "N15",
+      "target": "N39",
+      "condition": "Special rules not met"
+    },
+    {
+      "source": "N16",
+      "target": "N19",
+      "condition": "Eligible type: private, community/disability, defence, lifestyle village, under-25 housing, board and lodging/lodging, site or mooring fees"
+    },
+    {
+      "source": "N16",
+      "target": "N17",
+      "condition": "Retirement village"
+    },
+    {
+      "source": "N16",
+      "target": "N18",
+      "condition": "Homeowner travelling in mobile accommodation"
+    },
+    {
+      "source": "N16",
+      "target": "N39",
+      "condition": "Not eligible: rent paid to a state or territory housing authority (government tenant or sub-tenant)"
+    },
+    {
+      "source": "N17",
+      "target": "N19",
+      "condition": "Non-homeowner: assess on ongoing fees"
+    },
+    {
+      "source": "N17",
+      "target": "N39",
+      "condition": "Homeowner"
+    },
+    {
+      "source": "N18",
+      "target": "N19",
+      "condition": "Yes: 12 months or more, principal home assessed as asset, paying site fees"
+    },
+    {
+      "source": "N18",
+      "target": "N39",
+      "condition": "No: less than 12 months with an exclusion applying"
+    },
+    {
+      "source": "N19",
+      "target": "N20",
+      "condition": "Not temporarily away, or away for medical treatment, caring or training/education"
+    },
+    {
+      "source": "N19",
+      "target": "N39",
+      "condition": "Temporarily away for another reason"
+    },
+    {
+      "source": "N20",
+      "target": "N21",
+      "condition": ""
+    },
+    {
+      "source": "N21",
+      "target": "N22",
+      "condition": ""
+    },
+    {
+      "source": "N22",
+      "target": "N23",
+      "condition": "Yes: rent above minimum threshold"
+    },
+    {
+      "source": "N22",
+      "target": "N39",
+      "condition": "No: rent at or below minimum threshold"
+    },
+    {
+      "source": "N23",
+      "target": "N24",
+      "condition": "Yes: new claim with rent declared, or address, rent, accommodation type or household changed"
+    },
+    {
+      "source": "N23",
+      "target": "N34",
+      "condition": "No: no relevant change, or rent already verified electronically through EVoR"
+    },
+    {
+      "source": "N24",
+      "target": "N31",
+      "condition": "Yes: formal tenancy agreement provided"
+    },
+    {
+      "source": "N24",
+      "target": "N25",
+      "condition": "No formal tenancy agreement, or details updated online, at a service centre or by post"
+    },
+    {
+      "source": "N25",
+      "target": "N26",
+      "condition": ""
+    },
+    {
+      "source": "N26",
+      "target": "N27",
+      "condition": ""
+    },
+    {
+      "source": "N27",
+      "target": "N29",
+      "condition": "Yes: copy of lease or tenancy agreement attached"
+    },
+    {
+      "source": "N27",
+      "target": "N28",
+      "condition": "No: landlord or provider signature needed"
+    },
+    {
+      "source": "N28",
+      "target": "N29",
+      "condition": ""
+    },
+    {
+      "source": "N29",
+      "target": "N30",
+      "condition": ""
+    },
+    {
+      "source": "N30",
+      "target": "N31",
+      "condition": "Yes: returned by due date"
+    },
+    {
+      "source": "N30",
+      "target": "N39",
+      "condition": "No: not returned by due date"
+    },
+    {
+      "source": "N31",
+      "target": "N32",
+      "condition": ""
+    },
+    {
+      "source": "N32",
+      "target": "N34",
+      "condition": "Yes: details confirmed"
+    },
+    {
+      "source": "N32",
+      "target": "N33",
+      "condition": "No: more details needed"
+    },
+    {
+      "source": "N33",
+      "target": "N29",
+      "condition": ""
+    },
+    {
+      "source": "N34",
+      "target": "N35",
+      "condition": ""
+    },
+    {
+      "source": "N35",
+      "target": "N40",
+      "condition": "No overpayment"
+    },
+    {
+      "source": "N35",
+      "target": "N37",
+      "condition": "Overpaid; non-disclosure not deliberate"
+    },
+    {
+      "source": "N35",
+      "target": "N36",
+      "condition": "Overpaid; non-disclosure appears deliberate"
+    },
+    {
+      "source": "N36",
+      "target": "N37",
+      "condition": ""
+    },
+    {
+      "source": "N37",
+      "target": "N40",
+      "condition": ""
+    },
+    {
+      "source": "N37",
+      "target": "N38",
+      "condition": ""
+    },
+    {
+      "source": "N38",
+      "target": "N45",
+      "condition": ""
+    },
+    {
+      "source": "N39",
+      "target": "N40",
+      "condition": ""
+    },
+    {
+      "source": "N40",
+      "target": "N41",
+      "condition": ""
+    },
+    {
+      "source": "N41",
+      "target": "N42",
+      "condition": "Yes: eligible, rate calculated"
+    },
+    {
+      "source": "N41",
+      "target": "N44",
+      "condition": "No: not eligible or stopped"
+    },
+    {
+      "source": "N42",
+      "target": "N43",
+      "condition": ""
+    },
+    {
+      "source": "N46",
+      "target": "N47",
+      "condition": ""
+    },
+    {
+      "source": "N47",
+      "target": "N48",
+      "condition": ""
+    },
+    {
+      "source": "N48",
+      "target": "N49",
+      "condition": ""
+    },
+    {
+      "source": "N49",
+      "target": "N13",
+      "condition": "Yes: details confirmed or updated, reassess"
+    },
+    {
+      "source": "N49",
+      "target": "N39",
+      "condition": "No: review not completed (consequence inferred, not stated in sources)"
+    },
+    {
+      "source": "N50",
+      "target": "N51",
+      "condition": ""
+    },
+    {
+      "source": "N51",
+      "target": "N52",
+      "condition": ""
+    },
+    {
+      "source": "N52",
+      "target": "N53",
+      "condition": ""
+    },
+    {
+      "source": "N53",
+      "target": "N39",
+      "condition": "Yes: leaving to live in another country"
+    },
+    {
+      "source": "N53",
+      "target": "N54",
+      "condition": "No: temporary travel"
+    },
+    {
+      "source": "N54",
+      "target": "N55",
+      "condition": "Yes: main payment payable overseas and still paying rent in Australia"
+    },
+    {
+      "source": "N54",
+      "target": "N39",
+      "condition": "No"
+    },
+    {
+      "source": "N55",
+      "target": "N56",
+      "condition": "Yes: overseas study as part of Australian course"
+    },
+    {
+      "source": "N55",
+      "target": "N57",
+      "condition": "No: any other reason for travel"
+    },
+    {
+      "source": "N56",
+      "target": "N60",
+      "condition": ""
+    },
+    {
+      "source": "N57",
+      "target": "N58",
+      "condition": ""
+    },
+    {
+      "source": "N58",
+      "target": "N60",
+      "condition": "Yes: returns within 26 weeks"
+    },
+    {
+      "source": "N58",
+      "target": "N59",
+      "condition": "No: still overseas"
+    },
+    {
+      "source": "N59",
+      "target": "N39",
+      "condition": ""
+    },
+    {
+      "source": "N60",
+      "target": "N43",
+      "condition": ""
+    },
+    {
+      "source": "N61",
+      "target": "N62",
+      "condition": ""
+    },
+    {
+      "source": "N62",
+      "target": "N34",
+      "condition": ""
+    },
+    {
+      "source": "N63",
+      "target": "N64",
+      "condition": ""
+    },
+    {
+      "source": "N64",
+      "target": "N65",
+      "condition": ""
+    },
+    {
+      "source": "N65",
+      "target": "N13",
+      "condition": ""
+    }
+  ]
+}

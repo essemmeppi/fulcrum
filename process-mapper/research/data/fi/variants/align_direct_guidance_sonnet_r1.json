@@ -1,0 +1,1395 @@
+{
+ "reference_to_generated": [
+  {
+   "ref_id": "G01",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G02",
+   "matched_node_ids": [
+    "N07",
+    "N08",
+    "N09",
+    "N10"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G03",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G04",
+   "matched_node_ids": [
+    "N05",
+    "N04"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G05",
+   "matched_node_ids": [
+    "N06"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G06",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G07",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G08",
+   "matched_node_ids": [
+    "N11",
+    "N12"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G09",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G10",
+   "matched_node_ids": [
+    "N18",
+    "N19"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G11",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G12",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G13",
+   "matched_node_ids": [
+    "N13"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G14",
+   "matched_node_ids": [
+    "N21"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G15",
+   "matched_node_ids": [
+    "N21"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G16",
+   "matched_node_ids": [
+    "N13",
+    "N14",
+    "N21"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G17",
+   "matched_node_ids": [
+    "N22",
+    "N15"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G18",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G19",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G20",
+   "matched_node_ids": [
+    "N24"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G21",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G22",
+   "matched_node_ids": [
+    "N27"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G23",
+   "matched_node_ids": [
+    "N25",
+    "N27"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G24",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G25",
+   "matched_node_ids": [
+    "N26"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G26",
+   "matched_node_ids": [
+    "N26"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G27",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G28",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G29",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G30",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G31",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G32",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G33",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G34",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G35",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G36",
+   "matched_node_ids": [
+    "N17"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G37",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G38",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G39",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G40",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G41",
+   "matched_node_ids": [
+    "N35"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G42",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G43",
+   "matched_node_ids": [
+    "N40"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G44",
+   "matched_node_ids": [
+    "N29",
+    "N30",
+    "N31"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G45",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G46",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G47",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G48",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G49",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G50",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G51",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G52",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G53",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G54",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G55",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G56",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G57",
+   "matched_node_ids": [
+    "N33",
+    "N34"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G58",
+   "matched_node_ids": [
+    "N38",
+    "N36",
+    "N37"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G59",
+   "matched_node_ids": [
+    "N20"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G60",
+   "matched_node_ids": [
+    "N41",
+    "N42"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G61",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G62",
+   "matched_node_ids": [
+    "N41"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G63",
+   "matched_node_ids": [
+    "N43",
+    "N44",
+    "N60",
+    "N68"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G64",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G65",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G66",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G67",
+   "matched_node_ids": [
+    "N48"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G68",
+   "matched_node_ids": [
+    "N39"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G69",
+   "matched_node_ids": [
+    "N49",
+    "N50"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G70",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G71",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G72",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G73",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G74",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G75",
+   "matched_node_ids": [
+    "N52"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G76",
+   "matched_node_ids": [
+    "N53"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G77",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G78",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G79",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G80",
+   "matched_node_ids": [
+    "N54"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G81",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G82",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G83",
+   "matched_node_ids": [
+    "N55"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G84",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G85",
+   "matched_node_ids": [
+    "N55"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G86",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G87",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G88",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G89",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G90",
+   "matched_node_ids": [
+    "N57"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G91",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G92",
+   "matched_node_ids": [
+    "N58",
+    "N59"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G93",
+   "matched_node_ids": [
+    "N56"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G94",
+   "matched_node_ids": [
+    "N62",
+    "N61"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G95",
+   "matched_node_ids": [
+    "N63"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G96",
+   "matched_node_ids": [
+    "N64"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G97",
+   "matched_node_ids": [
+    "N67",
+    "N68"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G98",
+   "matched_node_ids": [
+    "N57",
+    "N58",
+    "N59"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G99",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G100",
+   "matched_node_ids": [
+    "N59",
+    "N67"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G101",
+   "matched_node_ids": [
+    "N65"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G102",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G103",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G104",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G105",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G106",
+   "matched_node_ids": [
+    "N66",
+    "N67"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G107",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G108",
+   "matched_node_ids": [
+    "N70"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G109",
+   "matched_node_ids": [
+    "N71"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G110",
+   "matched_node_ids": [
+    "N71"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G111",
+   "matched_node_ids": [
+    "N74",
+    "N73"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G112",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G113",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G114",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G115",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G116",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G117",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G118",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G119",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G120",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G121",
+   "matched_node_ids": [
+    "N73"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G122",
+   "matched_node_ids": [
+    "N79"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G123",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G124",
+   "matched_node_ids": [
+    "N80",
+    "N81"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G125",
+   "matched_node_ids": [
+    "N77"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G126",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G127",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G128",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G129",
+   "matched_node_ids": [],
+   "match_type": "none"
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "node_id": "N01",
+   "reason": "no reference step: modelling start event (household's need for help), not a step in the staff guideline"
+  },
+  {
+   "node_id": "N02",
+   "reason": "no reference step: out of scope - optional citizen-side pre-application estimate with the online calculator"
+  },
+  {
+   "node_id": "N03",
+   "reason": "no reference step: citizen works out household and applicant; the guideline's household determination (G25) is a caseworker step, different actor"
+  },
+  {
+   "node_id": "N23",
+   "reason": "no reference step: rule as step - eligible housing forms (rented/right-of-occupancy/part-ownership); guideline has no separate housing-form check"
+  },
+  {
+   "node_id": "N28",
+   "reason": "no reference step: inferred aggregating gateway over the eligibility checks"
+  },
+  {
+   "node_id": "N32",
+   "reason": "no reference step: rule as step - municipal income limit; guideline handles income through the basic deductible in the calculation, no separate income-limit check"
+  },
+  {
+   "node_id": "N45",
+   "reason": "no reference step: citizen receives/reads the decision notice; plausible but absent from guideline"
+  },
+  {
+   "node_id": "N46",
+   "reason": "no reference step: inferred citizen accept/dispute branching"
+  },
+  {
+   "node_id": "N47",
+   "reason": "no reference step: modelling end event (rejection accepted)"
+  },
+  {
+   "node_id": "N51",
+   "reason": "no reference step: inferred wait/steady state holding the payment-change-review loop"
+  },
+  {
+   "node_id": "N69",
+   "reason": "no reference step: modelling end event (allowance terminated)"
+  },
+  {
+   "node_id": "N72",
+   "reason": "no reference step: citizen repays the overpayment; plausible but absent from guideline (guideline describes only Kela's recovery actions)"
+  },
+  {
+   "node_id": "N75",
+   "reason": "no reference step: modelling end event (recovery closed)"
+  },
+  {
+   "node_id": "N76",
+   "reason": "no reference step: citizen contacts Kela about a decision believed wrong; citizen-facing guidance, absent from guideline"
+  },
+  {
+   "node_id": "N78",
+   "reason": "no reference step: inferred citizen branching (dispute resolved?)"
+  },
+  {
+   "node_id": "N82",
+   "reason": "no reference step: modelling end event (appeal rejected, decision stands)"
+  },
+  {
+   "node_id": "N83",
+   "reason": "no reference step: modelling end event (dispute resolved without appeal)"
+  }
+ ],
+ "order_checks": [
+  {
+   "ref_pair": [
+    "G02",
+    "G04"
+   ],
+   "generated_pair": [
+    "N07",
+    "N05"
+   ],
+   "same_order": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G05"
+   ],
+   "generated_pair": [
+    "N07",
+    "N06"
+   ],
+   "same_order": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G08"
+   ],
+   "generated_pair": [
+    "N08",
+    "N11"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G10"
+   ],
+   "generated_pair": [
+    "N08",
+    "N18"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G11"
+   ],
+   "generated_pair": [
+    "N08",
+    "N16"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G11",
+    "G13"
+   ],
+   "generated_pair": [
+    "N16",
+    "N13"
+   ],
+   "same_order": "not_connected"
+  },
+  {
+   "ref_pair": [
+    "G13",
+    "G14"
+   ],
+   "generated_pair": [
+    "N13",
+    "N21"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G14",
+    "G17"
+   ],
+   "generated_pair": [
+    "N21",
+    "N22"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G15",
+    "G17"
+   ],
+   "generated_pair": [
+    "N21",
+    "N22"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G16",
+    "G17"
+   ],
+   "generated_pair": [
+    "N14",
+    "N15"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G13",
+    "G36"
+   ],
+   "generated_pair": [
+    "N13",
+    "N17"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G04",
+    "G36"
+   ],
+   "generated_pair": [
+    "N05",
+    "N17"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G36",
+    "G41"
+   ],
+   "generated_pair": [
+    "N17",
+    "N35"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G36",
+    "G43"
+   ],
+   "generated_pair": [
+    "N17",
+    "N40"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G10",
+    "G44"
+   ],
+   "generated_pair": [
+    "N19",
+    "N29"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G44"
+   ],
+   "generated_pair": [
+    "N26",
+    "N29"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G41",
+    "G58"
+   ],
+   "generated_pair": [
+    "N35",
+    "N36"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G44",
+    "G58"
+   ],
+   "generated_pair": [
+    "N30",
+    "N36"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G57",
+    "G58"
+   ],
+   "generated_pair": [
+    "N34",
+    "N36"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G17",
+    "G59"
+   ],
+   "generated_pair": [
+    "N22",
+    "N20"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G58",
+    "G60"
+   ],
+   "generated_pair": [
+    "N38",
+    "N42"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G59",
+    "G60"
+   ],
+   "generated_pair": [
+    "N20",
+    "N42"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G62",
+    "G63"
+   ],
+   "generated_pair": [
+    "N41",
+    "N43"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G67"
+   ],
+   "generated_pair": [
+    "N60",
+    "N48"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G05",
+    "G67"
+   ],
+   "generated_pair": [
+    "N06",
+    "N48"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G58",
+    "G68"
+   ],
+   "generated_pair": [
+    "N38",
+    "N39"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G67",
+    "G69"
+   ],
+   "generated_pair": [
+    "N48",
+    "N49"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G68",
+    "G69"
+   ],
+   "generated_pair": [
+    "N39",
+    "N49"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G69",
+    "G75"
+   ],
+   "generated_pair": [
+    "N49",
+    "N52"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G75",
+    "G76"
+   ],
+   "generated_pair": [
+    "N52",
+    "N53"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G80"
+   ],
+   "generated_pair": [
+    "N60",
+    "N54"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G80",
+    "G83"
+   ],
+   "generated_pair": [
+    "N54",
+    "N55"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G85",
+    "G90"
+   ],
+   "generated_pair": [
+    "N55",
+    "N57"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G90",
+    "G92"
+   ],
+   "generated_pair": [
+    "N57",
+    "N58"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G92",
+    "G93"
+   ],
+   "generated_pair": [
+    "N58",
+    "N56"
+   ],
+   "same_order": false
+  },
+  {
+   "ref_pair": [
+    "G94",
+    "G95"
+   ],
+   "generated_pair": [
+    "N62",
+    "N63"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G95",
+    "G96"
+   ],
+   "generated_pair": [
+    "N63",
+    "N64"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G96",
+    "G97"
+   ],
+   "generated_pair": [
+    "N64",
+    "N67"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G96",
+    "G98"
+   ],
+   "generated_pair": [
+    "N64",
+    "N57"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G101"
+   ],
+   "generated_pair": [
+    "N60",
+    "N65"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G83",
+    "G106"
+   ],
+   "generated_pair": [
+    "N55",
+    "N66"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G93",
+    "G108"
+   ],
+   "generated_pair": [
+    "N56",
+    "N70"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G92",
+    "G108"
+   ],
+   "generated_pair": [
+    "N59",
+    "N70"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G108",
+    "G109"
+   ],
+   "generated_pair": [
+    "N70",
+    "N71"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G110",
+    "G111"
+   ],
+   "generated_pair": [
+    "N71",
+    "N73"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G110",
+    "G121"
+   ],
+   "generated_pair": [
+    "N71",
+    "N73"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G122"
+   ],
+   "generated_pair": [
+    "N68",
+    "N79"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G122",
+    "G124"
+   ],
+   "generated_pair": [
+    "N79",
+    "N80"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G125"
+   ],
+   "generated_pair": [
+    "N60",
+    "N77"
+   ],
+   "same_order": true
+  }
+ ]
+}

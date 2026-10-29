@@ -1,0 +1,584 @@
+[
+ {
+  "node_id": "C31",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The guideline says nothing about notifying the State of the monthly total or about State funding. Its only 'five days before the payment day' reference is the annual-review payment-run deadline (p. 72), which is a different matter.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C32",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "No mention of the State transferring funds to Kela or of any banking-day deadline for it.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C33",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 76",
+    "quote": "Yleinen asumistuki maksetaan kuukausittain. Maksupäivä on kuukauden ensimmäinen arkipäivä. Takautuvat kuukausierät voidaan maksaa myös muuna pankkipäivänä."
+   },
+   {
+    "page": "p. 76",
+    "quote": "Asumistuki voidaan maksaa hakijalle, vuokranantajalle tai muulle Muut maksunsaajat - sivulla mainitulle maksunsaajalle."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Guideline gives the payment day as the first weekday (arkipäivä), not 'first banking day'; retroactive instalments may be paid on other banking days, and payees also include others (guardian, wellbeing services county, intermediary account, right-of-occupancy company) or a prepaid card. Of the claimed predecessors only C35 (hearing before transfer to landlord) is supported; C31/C32 are not mentioned and no actor/automation is stated.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "C34",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 79",
+    "quote": "Jos vuokralainen laiminlyö vuokran maksamisen kokonaan tai osittain kahden perättäisen kuukauden ajan, tuki voidaan vuokranantajan pyynnöstä maksaa suoraan vuokranantajalle ilman tuensaajan suostumusta (YAL 25 § 2 mom.). Tuensaajalle annetaan päätös vuokranantajalle maksamisesta."
+   },
+   {
+    "page": "p. 79",
+    "quote": "Päätöksestä ei ole valitusoikeutta. • Kuule tuensaajaa ennen maksun siirtämistä vuokranantajalle"
+   },
+   {
+    "page": "p. 64",
+    "quote": "Kirjallinen päätös on annettava myös tilanteissa, joissa asumistuen maksu siirretään vuokranantajalle vuokranmaksun laiminlyönnin perusteella."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "caseworker",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "guideline_splits_it",
+  "corrections": "Trigger differs: the transfer is made at the landlord's request (missing from the claim) and covers rent left unpaid wholly or partly ('kokonaan tai osittain'; claim trigger says 'kokonaan'). The caseworker must hear the recipient first; a written decision goes to the recipient and it is not appealable (supports C34->C29 and C34->C36).",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C35",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 79",
+    "quote": "Kuule tuensaajaa ennen maksun siirtämistä vuokranantajalle"
+   },
+   {
+    "page": "p. 79",
+    "quote": "tuki voidaan vuokranantajan pyynnöstä maksaa suoraan vuokranantajalle ilman tuensaajan suostumusta (YAL 25 § 2 mom.)."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "caseworker",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Confirmed as a formal hearing (kuuleminen) by the caseworker before payment is transferred to the landlord (supports C35->C33). The guideline places this inside a procedure started by the landlord's request, which the claim's trigger leaves out.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "C36",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 79",
+    "quote": "Jos tuki on maksussa vuokranantajalle laiminlyönnin perusteella ja tuensaaja pyytää tuen maksamista itselleen. • Kuule vuokranantajaa ennen asian ratkaisua."
+   },
+   {
+    "page": "p. 78",
+    "quote": "Tuensaaja voi milloin tahansa peruuttaa antamansa valtuutuksen suullisesti tai kirjallisesti."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "caseworker",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "guideline_splits_it",
+  "corrections": "Guideline adds a mandatory hearing of the landlord before the caseworker decides on the recipient's request, and does not state the 'no longer a ground' condition or that payment stops automatically. Separately, consent-based landlord payment can be revoked by the recipient at any time.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "C37",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 79",
+    "quote": "Vuokranantajan on ilmoitettava Kelalle, jos • asumistuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai • asumistuen saaja muuttaa pois asunnosta."
+   },
+   {
+    "page": "p. 79",
+    "quote": "Ilmoituksessa on mainittava hallintaoikeuden päättymisajankohta ja asunnosta pois muuttamisen ajankohta."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_guideline": "landlord",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Confirmed as a landlord obligation. Guideline adds that the notice must state the end date of the right of occupancy and the move-out date, and that failing to notify is a ground for recovery from the landlord (p. 79).",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C38",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 75",
+    "quote": "Yleisestä asumistuesta annetun lain regressisäännöksen (26 §) mukaan samalta ajalta maksettava yleinen asumistuki voidaan käyttää eläkkeensaajan asumistuen liikamaksun kuittaamiseen."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "The same 26 § rule is cited, but framed as using the same-period general housing allowance to offset (kuittaus) an overpayment of pensioners' housing allowance, in the context of termination when pensioners' housing allowance entitlement arises. No actor or procedure is stated (refers to the example 'Regressitilanteet').",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "C39",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 81",
+    "quote": "Lisäksi yleisen asumistuen saajan tulee ilmoittaa Kelalle, jos ruokakunnan olosuhteissa tapahtuu muutos, joka saattaa vaikuttaa yleisen asumistuen määrään tai maksamisen."
+   },
+   {
+    "page": "p. 81",
+    "quote": "ruokakunnan asumismenojen alentuminen vähintään 50 euroa kuukaudessa"
+   },
+   {
+    "page": "p. 81",
+    "quote": "ruokakunnan yhteenlaskettujen kuukausitulojen nouseminen vähintään 400 euroa kuukaudessa;"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_guideline": "citizen",
+  "automation_check": "same",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Confirmed as the recipient's duty; the guideline's list is one-directional for amounts (income rise of at least 400 EUR/month, housing-cost fall of at least 50 EUR/month) and also covers marriage/cohabitation, student housing supplement or pensioners' housing allowance entitlement, and moving abroad. No channel is stated, and the claimed successor links (C40, C47) are not stated.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C40",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 67",
+    "quote": "Välitarkistus voidaan tehdä seuraavien muutosten perusteella:"
+   },
+   {
+    "page": "p. 70",
+    "quote": "Yleinen asumistuki tarkistetaan, jos samassa asunnossa asuvalle ruokakunnan jäsenelle syntyy oikeus opintotukilain mukaiseen asumislisään tai opintotuesta annetun Ahvenanmaan maakuntalain mukaiseen asumislisään."
+   },
+   {
+    "page": "p. 68",
+    "quote": "Tämän vuoksi asumistukea ei tarkisteta asumismenojen nousun perusteella, jos tuki tämän vuoksi alenisi, jollei myös ruokakunnan"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Guideline adds a ground the claim lacks (a household member's student housing supplement entitlement starts or ends) and a protection rule: a housing-cost rise is not reviewed if that would lower the allowance, unless income also changed significantly. Each ground has its own effective date and resets the annual review; a written decision is required (supports C40->C29), while C39->C40 is not stated.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "C41",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 73",
+    "quote": "Tuki lakkautetaan asumistuen hakijan suullisen tai kirjallisen pyynnön perusteella."
+   },
+   {
+    "page": "p. 73",
+    "quote": "Lakkautuksen yhteydessä tulee tutkia, pitäisikö tuki lakkauttaa jo aikaisemmasta ajankohdasta."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_guideline": "citizen",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Guideline accepts an oral or written request and names none of the claimed channels (OmaKela notification/message, form AT 6e). On termination the caseworker must check whether it should apply from an earlier date, since termination can be retroactive.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C42",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 72",
+    "quote": "Yleinen asumistuki lakkautetaan, jos: • ruokakunnalla ei enää ole asumismenoja"
+   },
+   {
+    "page": "p. 74",
+    "quote": "lakkauta tuki muuttoa seuraavan kuukauden alusta."
+   },
+   {
+    "page": "p. 72",
+    "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää), asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "caseworker",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "guideline_splits_it",
+  "corrections": "The caseworker is instructed ('lakkauta') with ground-specific dates; extra grounds include free dormitory place, empty dwelling after 3 months, prison after 6 months and death of a single recipient. If the annual-review application is not returned by the payment run, the system terminates automatically ('ohjelmallisesti') and a decision follows, so the C45->C42 edge holds only for non-return.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "C43",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 72",
+    "quote": "Yleinen asumistuki tarkistetaan vuositarkistuksena, kun asumistuen myöntämisestä tai edellisestä tarkistamisesta on kulunut vuosi."
+   },
+   {
+    "page": "p. 72",
+    "quote": "Vuositarkistus tehdään vuositarkistuksen ajankohdan mukaisten ruokakunnan kuukausitulojen, asumismenojen ja muiden tukeen vaikuttavien tietojen perusteella."
+   },
+   {
+    "page": "p. 67",
+    "quote": "seuraavan vuositarkistuksen aika siirtyy vuoden päähän tarkistusajankohdasta."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Rule confirmed (review date given in the previous decision; outcome is payment on new grounds or termination), but any interim review resets the one-year clock, and if a retroactive interim review is due only that review is done (p. 67). No actor stated; C44->C43, C45->C43 and C43->C29 are consistent with the text.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "C44",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 72",
+    "quote": "Kela lähettää asumistuen saajalle kirjeen noin kaksi kuukautta ennen vuositarkistusaikaa."
+   },
+   {
+    "page": "p. 25",
+    "quote": "Kela lähettää ohjelmallisesti ennen vuositarkistusajankohtaa kirjeen asumistuen saajalle."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "system",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The letter is sent programmatically ('ohjelmallisesti'), so the actor is the system and the step is automated. The channel is a letter (kirje), with OmaKela not named, and the letter also warns of automatic termination if the application is not returned.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C45",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 72",
+    "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää)"
+   },
+   {
+    "page": "p. 21",
+    "quote": "Yksi ruokakunnan jäsen edustaa ruokakuntaa ja hakee yleistä asumistukea sekä tuen tarkistamista."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_guideline": "citizen",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Confirmed (the household representative applies for the review), with a hard deadline added: the application must be back by the review month's payment run (at the latest five days before payment day), or the system terminates the allowance. The form/channel is not stated, and C45->C42 applies only to non-return.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "C46",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 81",
+    "quote": "Asumistuen väliaikainen vähentäminen tai keskeyttäminen tulee kysymykseen silloin, kun Kelaan on tullut tieto tuensaajan olosuhteissa tapahtuneesta muutoksesta, jonka vuoksi tuki olisi lakkautettava tai tuen määrää olisi vähennettävä."
+   },
+   {
+    "page": "p. 65",
+    "quote": "yleisen asumistuen määrää vähennetään tai sen maksaminen keskeytetään rekisteröimällä tarkistus- tai lakkautusratkaisu, koska ruokakunnan olosuhteissa on tapahtunut muutos, jonka vuoksi asumistuki olisi tarkistettava tai lakkautettava eikä lopullista päätöstä voida vielä antaa."
+   },
+   {
+    "page": "p. 65",
+    "quote": "Väliaikaisesta päätöksestä ei ole muutoksenhakuoikeutta."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "The trigger is operationalised as Kela receiving information on a change that would require termination or reduction, and the suspension is done by registering a review/termination as a temporary decision, which cannot be appealed. The successor C26 (decide on available information) is not stated, and no actor is named.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "C47",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 81",
+    "quote": "Jos yleistä asumistukea on maksettu aiheettomasti tai liian suurena, liikaa maksettu etuus on perittävä takaisin."
+   },
+   {
+    "page": "p. 81",
+    "quote": "Yleisen asumistuen liikamaksua voi syntyä tai liikamaksun määrä voi lisääntyä tarkistus-, oikaisu- tai lakkautusratkaisun yhteydessä."
+   },
+   {
+    "page": "p. 82",
+    "quote": "peritään takaisin ensisijaisesti hakijalta"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Rule confirmed; overpayment arises with review, correction or termination decisions (so recovery follows those rather than C39/C33 directly), recovery is primarily from the applicant, and general principles are deferred to the common recovery guideline. C47->C48 and C47->C29 are supported; C47->C50 is not stated.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "C48",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 82",
+    "quote": "voidaan periä takaisin tarvittaessa myös muulta ruokakuntaan kuuluneelta henkilöltä, joka on liikamaksun aikana ollut täysi-ikäinen"
+   },
+   {
+    "page": "p. 82",
+    "quote": "Liikaa maksettu yleinen asumistuki voidaan periä yhteisvastuulliselta, jos perintä hakijalta ei onnistu."
+   },
+   {
+    "page": "p. 82",
+    "quote": "voidaan periä ruokakunnan jäseneltä vain sinä aikana syntyneestä velasta, jona hän on kuulunut ruokakuntaan."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Condition is narrower than 'if necessary': the co-liable member is pursued only if recovery from the applicant fails (e.g. enforcement finds the applicant without means, insolvent estate, zero debt-adjustment programme). Recovery targets whoever is most likely to pay and covers only debt from their time in the household.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "C49",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 80",
+    "quote": "Jos vuokranantajalta perimisen edellytykset täyttyvät, anna vuokranantajalle takaisinperintäpäätös."
+   },
+   {
+    "page": "p. 80",
+    "quote": "anna tuensaajalle päätös perinnästä luopumisesta ja perinnän kohdentamisesta vuokranantajaan."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "caseworker",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "A separate recovery decision to a non-applicant is described only for the landlord, issued by the caseworker after landlord recovery (C51), plus a waiver/redirection decision to the recipient. A separate decision for co-liable household members (claimed predecessor C48) is not stated.",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "C50",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The general waiver conditions (reasonable, no fraud, small amount) are not in this guideline; it defers to the common recovery guideline (p. 81). Related only: in landlord recovery no reasonableness reduction is considered, and the recipient gets a decision waiving recovery from them (p. 80).",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "C51",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 79",
+    "quote": "Kun tuensaaja on muuttanut ja asumistuki on ehditty maksaa virheellisesti entiselle vuokranantajalle, pyydä vuokranantajaa palauttamaan asumistuki."
+   },
+   {
+    "page": "p. 79",
+    "quote": "Jos vuokranantaja ei palauta tukea, tutki vuokranantajalta perimisen edellytykset vain, jos tuensaaja itse sitä esittää."
+   },
+   {
+    "page": "p. 79",
+    "quote": "Asumistuki voidaan kuitenkin periä takaisin vuokranantajalta (YAL 31 § 4 mom), jos"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "caseworker",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "guideline_splits_it",
+  "corrections": "Two gating steps come first: the caseworker asks the landlord to return the money voluntarily, and formal recovery is examined only if the recipient proposes it. A recovery decision then goes to the landlord for the full amount (no reasonableness reduction, no separate hearing, one payment), and the recipient is no longer liable.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C52",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The appeal step is not described; section 1.12.4 only refers to the common appeal guideline (p. 83). Related: decisions to pay the landlord for non-payment (p. 79) and temporary decisions (p. 65) are stated as not appealable, which narrows the claim's trigger.",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "C53",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Self-rectification on appeal (itseoikaisu) is not described; appeals are deferred to the common appeal guideline.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "C54",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Forwarding the appeal and Kela's statement, and the 30-day limit, are not described. The only related remark is that a temporary decision is possible in connection with an appeal (p. 65).",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C55",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Not described; 'muutoksenhakuelin' (appeal body) appears only in a cross-reference title on p. 83, and neither the Social Security Appeal Board nor the Insurance Court is named.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "C56",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Further appeal to the Insurance Court is not described.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "C57",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 83",
+    "quote": "Etuuksille yhteinen Päätöksen oikaisu ja poistaminen -ohje."
+   },
+   {
+    "page": "p. 83",
+    "quote": "Oikaisu kuulemalla vahingoksi (YAL 38 §)"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Only a cross-reference: section 1.12.5 points to the common guideline and lists the YAL 38 § procedure as 'correction to the party's detriment after hearing'. The claimed conditions (clearly wrong/incomplete evidence, wrong application of law, procedural error) are not stated.",
+  "reviewer_confidence": 0.5
+ },
+ {
+  "node_id": "C58",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 64",
+    "quote": "Oikaisu eduksi ja asian tutkiminen uudelleen uuden selvityksen perusteella"
+   },
+   {
+    "page": "p. 26",
+    "quote": "Katso esimerkki Asian uudelleen tutkiminen uuden selvityksen johdosta."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Mentioned only as a common-guideline topic (correction in the party's favour and re-examination on new evidence) and an example title. The limit to refused or increased allowance and the 'must examine' duty are not stated.",
+  "reviewer_confidence": 0.55
+ },
+ {
+  "node_id": "C59",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 83",
+    "quote": "Yleisen asumistuen päätös, kun muutoksenhakuelin on poistanut päätöksen"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_guideline": "other",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Only a cross-reference title about Kela's new decision after an appeal body has removed a decision. The body is generic ('muutoksenhakuelin'), not specifically the Social Security Appeal Board, and the demand by a party or Kela and the conditions are not stated.",
+  "reviewer_confidence": 0.45
+ },
+ {
+  "node_id": "C60",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 83",
+    "quote": "Yleisen asumistuen oikaiseminen, kun ruokakuntaan kuuluvalle on myönnetty takautuvasti estävä etuus eli kevennetty oikaisumenettely"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_guideline": "not stated",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Mentioned as a process topic: a simplified correction procedure ('kevennetty oikaisumenettely') when a preventing benefit was granted retroactively. Hearing the party and acting without consent are not stated in this item, and it is framed as correction (oikaisu) rather than deciding anew.",
+  "reviewer_confidence": 0.55
+ }
+]

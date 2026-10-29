@@ -1,0 +1,9 @@
+# Task: compare a law-derived process map with the government's official process model
+
+(A) OFFICIAL: fim_reference.json holds the German FIM reference process "Antrag Erteilung Aufenthaltserlaubnis aus völkerrechtlichen, humanitären oder politischen Gründen bearbeiten" as published by the federal process catalogue: 42 activity groups, each with a name, legal bases and sometimes decision/participation attributes, plus 7 participants. It has no sequence information.
+(B) GENERATED: outputs/map_law_opus.json, built by a model from the statute text alone.
+
+For every official activity group, decide whether the generated map contains a node that means the same unit of work (same action and same actor; "Antrag weiterleiten" appears twice in the official list and may match one node). match_type: "exact" | "partial" | "merged" | "none". Also check "legal_basis_match": true if the generated node cites at least one of the same sections (ignore paragraph numbering differences), false otherwise, null if no match. Then list every generated node that matches no official activity group with a reason ("not in official model: <why>" / "rule as step" / "citizen-side step the official model does not list" / "inferred"). Finally list official participants missing from the generated actors.
+
+Output JSON: {"official_to_generated": [{"official_id": "22", "official_name": "...", "matched_node_ids": [], "match_type": "...", "legal_basis_match": true|false|null}], "generated_unmatched": [{"node_id": "...", "reason": "..."}], "missing_participants": ["..."]}
+Write to outputs/align_law_opus_vs_fim.json ; validate with python3; reply with: official groups matched / 42, legal-basis matches / matched, generated nodes matched / total, and the official activities the law-only map missed, grouped by why.

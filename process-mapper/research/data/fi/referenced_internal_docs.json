@@ -1,0 +1,424 @@
+[
+  {
+    "name": "Yleisen asumistuen prosessi (prosessikuvaus), 'Lue lisää yleisen asumistuen prosessista kohdasta …'",
+    "type": "process description",
+    "times_referenced": 42,
+    "example_page": "p. 4",
+    "example_text": "Lue lisää yleisen asumistuen prosessista kohdasta Ruokakunnan kokonaistilanteeseen tutustuminen",
+    "named_items": [
+      "Ruokakunnan kokonaistilanteeseen tutustuminen",
+      "Esimerkkejä valmistelun tilanteista (incl. Asumismenojen jakaminen, Tiedustelut rahalaitoksilta)",
+      "Muiden etuuksien vaikutus",
+      "Aviopuolisoiden erilleen muutto",
+      "Avopuolisoiden erilleen muutto",
+      "Lisäselvitysten pyytäminen/Avoliiton selvittäminen",
+      "Päätöksen antaminen/Avoliittoharkinta ja päätöksen perusteleminen",
+      "Seurantatyöt",
+      "Keskitetyt hakemukset",
+      "Ahvenanmaalla asuvat",
+      "Hakemuksen peruminen",
+      "Ruokakuntaan kuulumattoman puolison avustus tulona",
+      "Opiskelija valmistuu",
+      "Opintojen keskeyttäminen",
+      "Korkeakouluopiskelijan enimmäistukiajan pidennys",
+      "Kuntoutusrahalla tai nuoren kuntoutusrahalla opiskeleva opiskelija",
+      "Päätöksen antaminen",
+      "Maksaminen",
+      "Liikamaksu"
+    ],
+    "note": "Counted as occurrences of 'yleisen asumistuen prosessi(sta)' outside the table of contents. This is the guideline's main pointer for operational detail (candidate for the 'prosessikuvaus' the question mentions)."
+  },
+  {
+    "name": "Vuokranantajalle maksaminen -prosessi",
+    "type": "process description (sub-process)",
+    "times_referenced": 6,
+    "example_page": "p. 78",
+    "example_text": "Lue lisää Vuokranantajalle maksaminen -prosessista kohdasta Maksaminen vuokralaisen valtuutuksella.",
+    "named_items": [
+      "Maksaminen vuokralaisen valtuutuksella",
+      "Maksaminen vuokranmaksun laiminlyönnin perusteella",
+      "Vapaaehtoinen palautus vuokranantajalta",
+      "Maksut tuensaajalle",
+      "Takaisinperintäpäätöksen antaminen vuokranantajalle",
+      "Perinnän seuraaminen"
+    ]
+  },
+  {
+    "name": "Etuusväärinkäytösprosessi",
+    "type": "process description",
+    "times_referenced": 1,
+    "example_page": "p. 83",
+    "example_text": "Lue lisää etuusväärinkäytösprosessista."
+  },
+  {
+    "name": "Menettelyohjeet (erikseen julkaistut)",
+    "type": "procedure instructions (generic reference)",
+    "times_referenced": 1,
+    "example_page": "p. 4",
+    "example_text": "Etuusohjetta täydentävät erikseen julkaistut menettelyohjeet.",
+    "note": "Only generic reference; no specific menettelyohje is named anywhere in the guideline."
+  },
+  {
+    "name": "Toimintaohjeet (tilannekohtaiset toimintaohjeet)",
+    "type": "action instructions",
+    "times_referenced": 23,
+    "example_page": "p. 8",
+    "example_text": "Lue toimintaohjeet Avopuolison opiskelu ja olosuhdemuutokset",
+    "named_items": [
+      "Avopuolison opiskelu ja olosuhdemuutokset",
+      "Isovanhemman luona asuva opiskelija",
+      "Korkeakouluopiskelijan enimmäistukiajan pidennys",
+      "Kuntoutusrahaa saava opiskelija",
+      "Opintoja aloittavat opiskelijat",
+      "Opintoja jatkavat tai valmistuvat opiskelijat",
+      "Opintotuen palautus ja asumistuen lakkautus",
+      "Opiskelija saa vauvan",
+      "Sairastuva opiskelija",
+      "Suomeen työhön EU-maasta",
+      "Toimintaohjeet tilanteisiin, kun ulkomailta tullaan Suomeen opiskelemaan",
+      "Peitelty osinko",
+      "Tulojen arvioiminen pätkätyötä tekevälle",
+      "Kiinteistöosakeyhtiö, keskinäinen kiinteistöosakeyhtiö ja kiinteistöyhtymä",
+      "Miten omavastuuaika ja lomakorvauksen jaksotus otetaan huomioon yleisen asumistuen käsittelyssä",
+      "Ansiosidonnaisen päivärahan porrastus",
+      "Siirtymävaiheen toimintaohjeet Yleistuki ja yleinen asumistuki",
+      "Asunto-osakkeet omaisuutena",
+      "Kiinteistöt omaisuutena",
+      "Osinkotulo ja omaisuus pörssiosakkeista",
+      "Metsätalouden tulo ja metsäomaisuus",
+      "Korkotulo ja omaisuus sijoitusrahasto-osuuksista",
+      "Erilaiset tilit ja niillä olevat talletukset",
+      "Korkotulo ja omaisuus talletuksista ja vastaavista",
+      "Saatava",
+      "Vankilassaolon vaikutus"
+    ]
+  },
+  {
+    "name": "Esimerkit ('Katso esimerkki …', 'Lue lisää esimerkistä …')",
+    "type": "worked examples",
+    "times_referenced": 148,
+    "example_page": "p. 5",
+    "example_text": "Katso esimerkki Alaikäinen muuttaa itsenäisesti asumaan",
+    "note": "At least 102 distinct example titles (e.g. 'Poste restante -osoite', 'Itsenäinen asunto', 'Asuntoetu', 'Keskiarvotulon ABC', 'Virheellisen tuloarvion oikaiseminen', 'Regressitilanteet', 'Vuokranmaksujen laiminlyönti')."
+  },
+  {
+    "name": "Rekisteröintiohjeet (järjestelmään rekisteröinti), 'Lue lisää … rekisteröinnistä'",
+    "type": "case-system registration instructions",
+    "times_referenced": 13,
+    "example_page": "p. 26",
+    "example_text": "Lue lisää hakemistietojen rekisteröinnistä.",
+    "named_items": [
+      "hakemistietojen",
+      "asumismenojen",
+      "keskiarvotulon",
+      "palkkatulojen",
+      "sosiaalietuuksien",
+      "omaisuuden (järjestelmään)",
+      "muun päätöksensaajan",
+      "tarkistusratkaisun",
+      "ruokakuntatietojen",
+      "lakkautuksen",
+      "vuokranantajatietojen",
+      "vuokranantajalle maksaminen -tietojen"
+    ]
+  },
+  {
+    "name": "Etuuksille yhteiset asiat / Hallintolain soveltaminen ja asiointi toisen puolesta Kelassa -ohjeet",
+    "type": "common benefit guideline",
+    "times_referenced": 5,
+    "example_page": "p. 64",
+    "example_text": "Etuuksille yhteiset Hallintolain soveltaminen ja asiointi toisen puolesta Kelassa -ohjeet:",
+    "named_items": [
+      "Asian selvittäminen",
+      "Asian vireillepanotavat",
+      "Hakeminen",
+      "Kuka voi hakea etuutta",
+      "Esteellisyys",
+      "Kuuleminen",
+      "Lisäselvitysten pyytäminen",
+      "Oikaisu eduksi ja asian tutkiminen uudelleen uuden selvityksen perusteella",
+      "Päätöksen antaminen"
+    ]
+  },
+  {
+    "name": "Takaisinperintä-ohje (etuuksille yhteinen)",
+    "type": "common benefit guideline",
+    "times_referenced": 1,
+    "example_page": "p. 81",
+    "example_text": "Takaisinperinnän yleiset periaatteet on kerrottu etuuksille yhteisessä Takaisinperintä-"
+  },
+  {
+    "name": "Muutoksenhaku-ohje (etuuksille yhteinen)",
+    "type": "common benefit guideline",
+    "times_referenced": 1,
+    "example_page": "p. 83",
+    "example_text": "Etuuksille yhteinen Muutoksenhaku -ohje."
+  },
+  {
+    "name": "Päätöksen oikaisu ja poistaminen -ohje (etuuksille yhteinen)",
+    "type": "common benefit guideline",
+    "times_referenced": 1,
+    "example_page": "p. 83",
+    "example_text": "Etuuksille yhteinen Päätöksen oikaisu ja poistaminen -ohje."
+  },
+  {
+    "name": "Etuusväärinkäytökset-ohje (etuuksille yhteinen)",
+    "type": "common benefit guideline",
+    "times_referenced": 1,
+    "example_page": "p. 83",
+    "example_text": "Etuuksille yhteinen Etuusväärinkäytökset-ohje."
+  },
+  {
+    "name": "Väärän henkilön tilille maksettu etuus ja sen periminen (etuuksille yhteinen ohje)",
+    "type": "common benefit guideline",
+    "times_referenced": 1,
+    "example_page": "p. 77",
+    "example_text": "Etuuksille yhteinen ohje Väärän henkilön tilille maksettu etuus ja sen periminen."
+  },
+  {
+    "name": "Kuolinpesältä periminen (etuuksien yhteinen ohje)",
+    "type": "common benefit guideline",
+    "times_referenced": 1,
+    "example_page": "p. 82",
+    "example_text": "Lue lisää kuolinpesältä perimisestä etuuksien yhteisestä ohjeesta Kuolinpesältä"
+  },
+  {
+    "name": "Oikeus etuuksiin -ohje (kohta Opiskelija)",
+    "type": "benefit guideline (other benefit)",
+    "times_referenced": 2,
+    "example_page": "p. 14",
+    "example_text": "Lue lisää Oikeus etuuksiin -ohjeen kohdasta Opiskelija."
+  },
+  {
+    "name": "Opintotuen ohje",
+    "type": "benefit guideline (other benefit)",
+    "times_referenced": 1,
+    "example_page": "p. 14",
+    "example_text": "Lue lisää oikeudesta opintotukeen Opintotuen ohjeesta:"
+  },
+  {
+    "name": "Lapsen huolto ja asuminen / Lapsen asuminen -ohjeet",
+    "type": "benefit guideline (other benefit)",
+    "times_referenced": 1,
+    "example_page": "p. 17",
+    "example_text": "Lisätietoa vuoroasumisesta löydät ohjeesta Lapsen huolto ja asuminen sekä Lapsen asuminen."
+  },
+  {
+    "name": "Ohje valuuttakurssien käytöstä eläkkeissä ja asumistuissa",
+    "type": "common benefit guideline",
+    "times_referenced": 3,
+    "example_page": "p. 54",
+    "example_text": "Lue myös Ohje valuuttakurssien käytöstä eläkkeissä ja asumistuissa."
+  },
+  {
+    "name": "Asiakaskohtaamisen malli",
+    "type": "service model document",
+    "times_referenced": 1,
+    "example_page": "p. 4",
+    "example_text": "Lue lisää Asiakaskohtaamisen malli"
+  },
+  {
+    "name": "Ukrainan tilanteeseen liittyvä ohjeistus",
+    "type": "special-situation guidance",
+    "times_referenced": 1,
+    "example_page": "p. 14",
+    "example_text": "Lue lisää Ukrainan tilanteeseen liittyvästä ohjeistuksesta."
+  },
+  {
+    "name": "Tulot, tulolajit ja ansiotulovähennys (ohjesivu)",
+    "type": "guideline sub-page",
+    "times_referenced": 1,
+    "example_page": "p. 46",
+    "example_text": "Lue lisää Tulot, tulolajit ja ansiotulovähennys"
+  },
+  {
+    "name": "Työvälineet-sivu (laskentatyökalut, esim. julkisesti noteerattujen osakkeiden arvon laskeminen)",
+    "type": "intranet tools page",
+    "times_referenced": 2,
+    "example_page": "p. 62",
+    "example_text": "Lue lisää julkisesti noteerattujen osakkeiden arvon laskemisesta Työvälineet-sivulta"
+  },
+  {
+    "name": "Päätösesitys ja ratkaisun tekeminen",
+    "type": "guideline sub-page (decision-making)",
+    "times_referenced": 1,
+    "example_page": "p. 64",
+    "example_text": "Lue lisää päätösesityksestä ja ratkaisun tekemisestä."
+  },
+  {
+    "name": "Asumistuen vastuuyksiköt",
+    "type": "guideline sub-page (responsible units)",
+    "times_referenced": 1,
+    "example_page": "p. 64",
+    "example_text": "Lue lisää asumistuen vastuuyksiköistä."
+  },
+  {
+    "name": "Yleisen asumistuen asiakokonaisuus",
+    "type": "guideline sub-page",
+    "times_referenced": 1,
+    "example_page": "p. 65",
+    "example_text": "Lue lisää yleisen asumistuen asiakokonaisuudesta."
+  },
+  {
+    "name": "Enimmäisasumismenojen määrät / vuosittain vahvistettavat enimmäisasumismenot",
+    "type": "guideline sub-page (cap amounts)",
+    "times_referenced": 3,
+    "example_page": "p. 33",
+    "example_text": "Lue lisää Enimmäisasumismenojen määrät"
+  },
+  {
+    "name": "Asumistuen määrän muutokset 1.4.2024 alkaen",
+    "type": "guideline sub-page",
+    "times_referenced": 2,
+    "example_page": "p. 27",
+    "example_text": "Lue lisää Asumistuen määrän muutokset 1.4.2024 alkaen."
+  },
+  {
+    "name": "Eläkkeensaajan asumistukeen oikeuttavat eläkkeet / Eläkkeet, joiden perusteella ei ole oikeutta eläkkeensaajan asumistukeen",
+    "type": "guideline sub-page",
+    "times_referenced": 2,
+    "example_page": "p. 10",
+    "example_text": "Lue lisää Eläkkeensaajan asumistukeen oikeuttavat eläkkeet."
+  },
+  {
+    "name": "Vuokrasopimuskyselyn käytöstä / Vuokranantajien erityispiirteet",
+    "type": "guideline sub-page",
+    "times_referenced": 2,
+    "example_page": "p. 40",
+    "example_text": "Lue lisää vuokrasopimuskyselyn käytöstä."
+  },
+  {
+    "name": "Verotustiedoista (verotustietojen hyödyntäminen)",
+    "type": "guideline sub-page",
+    "times_referenced": 3,
+    "example_page": "p. 47",
+    "example_text": "Lue lisää Verotustiedoista"
+  },
+  {
+    "name": "Etuusohjeen muut aihekohtaiset alasivut ('Lue lisää …', 'Lue myös …', 'Lue täältä …')",
+    "type": "guideline sub-pages (aggregate)",
+    "times_referenced": 210,
+    "example_page": "p. 4",
+    "example_text": "Lue lisää muiden asumisen tukien suhteesta yleiseen asumistukeen.",
+    "note": "Aggregate count of all 'Lue lisää / Lue myös / Lue toimintaohjeet / Lue tarkemmin / Lue siirtymävaiheen / Lue yleisen ...' cross-references outside the table of contents; it overlaps the entries above. Other named sub-pages include: Vesi- ja lämmityskustannusten hyväksyttävistä määristä, Hallintaoikeudesta, Omaisuudesta vähennettävistä veloista, Pääomatuloista, Maksamisesta, Prepaid-kortista, Maksuosoite ulkomailla, Edunvalvoja täysi-ikäiselle, Edunvalvojan puhevalta, Edunvalvontavaltuutus, Vuokratulon ulosmittauksesta, Maksaminen asumisoikeusyhtiölle, Maksaminen asunto-osakeyhtiölle, regressimenettelystä, neutraalista oikaisusta, osittaisesta oikaisusta, väliaikaisesta keskeyttämisestä, Vankilassaolon vaikutus, Poste restante-osoitteen vaikutuksesta, Vakuuttamisen selvittäminen, Suomessa asumisen arviointi."
+  },
+  {
+    "name": "Kelan intranet (etuusohje julkaistu intranetissä)",
+    "type": "system",
+    "times_referenced": 1,
+    "example_page": "p. 4",
+    "example_text": "Ohje on julkaistu Kelan intranetissä verkkosivuina ja pdf-muodossa sekä lisäksi Kela.fi - sivuilla pdf-muodossa."
+  },
+  {
+    "name": "OmaKela (asiointipalvelu)",
+    "type": "system",
+    "times_referenced": 1,
+    "example_page": "p. 25",
+    "example_text": "asiointipalvelu OmaKelassa"
+  },
+  {
+    "name": "Viestipalvelu / asiakaskirje (asiakasviestintäkanavat)",
+    "type": "system / channel",
+    "times_referenced": 1,
+    "example_page": "p. 4",
+    "example_text": "Käytä tarvittaessa viestipalvelua tai asiakaskirjettä."
+  },
+  {
+    "name": "Tulorekisteri (Incomes Register)",
+    "type": "external register / data source",
+    "times_referenced": 11,
+    "example_page": "p. 26",
+    "example_text": "Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä"
+  },
+  {
+    "name": "Vuokrasopimuskysely (Kelan vuokrasopimuskysely)",
+    "type": "system / data source",
+    "times_referenced": 3,
+    "example_page": "p. 26",
+    "example_text": "Kopiota vuokrasopimuksesta ei tarvita, jos vuokranantaja on mukana Kelan vuokrasopimuskyselyssä"
+  },
+  {
+    "name": "Verotustietojen kysely / verotustiedot (Verohallinto)",
+    "type": "system / data source",
+    "times_referenced": 13,
+    "example_page": "p. 61",
+    "example_text": "kun niitä koskevat tiedot saadaan verotustietojen kyselyltä"
+  },
+  {
+    "name": "VTJ / väestörekisteri (Väestötietojärjestelmä)",
+    "type": "external register / data source",
+    "times_referenced": 7,
+    "example_page": "p. 8",
+    "example_text": "Jos asiakas väestörekisteritietojen tai muiden tietojen mukaan tosiasiallisesti asuu samassa asunnossa"
+  },
+  {
+    "name": "Tilastokeskuksen tiedot (asunto-osakkeen arvon arviointi)",
+    "type": "external data source",
+    "times_referenced": 1,
+    "example_page": "p. 61",
+    "example_text": "arvio asunto-osakkeen arvosta tehdään tilastokeskuksen tietojen perusteella"
+  },
+  {
+    "name": "Kauppalehti (osakkeiden ja rahastojen arvot)",
+    "type": "external data source",
+    "times_referenced": 2,
+    "example_page": "p. 62",
+    "example_text": "Voit selvittää myöntö- tai tarkistusajankohdan noteeratun arvon Kauppalehden sivulta."
+  },
+  {
+    "name": "Työvoimapoliittinen lausunto (TE-toimisto)",
+    "type": "external document / data source",
+    "times_referenced": 2,
+    "example_page": "p. 57",
+    "example_text": "Arvioi työttömyysetuus tuloksi, vaikka työvoimapoliittista lausuntoa tai lomautustodistusta ei vielä ole Kelassa."
+  },
+  {
+    "name": "ETK:n vakuuttamisratkaisu (A1-todistus)",
+    "type": "external document",
+    "times_referenced": 2,
+    "example_page": "p. 11",
+    "example_text": "ETK:n vakuuttamisratkaisu (A1-todistus) ottaa kantaa vain EU-asetuksen 883/2004 soveltamiseen"
+  },
+  {
+    "name": "Lomake AT1 (yleisen asumistuen hakemus)",
+    "type": "form",
+    "times_referenced": 1,
+    "example_page": "p. 25",
+    "example_text": "kirjallisesti lomakkeella AT1"
+  },
+  {
+    "name": "Lomake AT13 (yleisen asumistuen jatkohakemus)",
+    "type": "form",
+    "times_referenced": 1,
+    "example_page": "p. 25",
+    "example_text": "Yleisen asumistuen jatkohakemus -lomakkeella AT13."
+  },
+  {
+    "name": "Lomake AT5 (yhteisöruokakunnan valtuutus)",
+    "type": "form",
+    "times_referenced": 3,
+    "example_page": "p. 26",
+    "example_text": "yhteisöruokakunnan valtuutus (lomake AT5)."
+  },
+  {
+    "name": "Lomake Y77 (ilmoitus Suomeen muutosta)",
+    "type": "form",
+    "times_referenced": 1,
+    "example_page": "p. 26",
+    "example_text": "Ilmoitus Suomeen muutosta (Y77)"
+  },
+  {
+    "name": "Lomake Y38 (muutto ulkomaille tai työskentely ulkomailla)",
+    "type": "form",
+    "times_referenced": 1,
+    "example_page": "p. 26",
+    "example_text": "Muutto ulkomaille tai työskentely ulkomailla -lomake (Y38)"
+  },
+  {
+    "name": "Lomake Y121 (tilinumeron muutos)",
+    "type": "form",
+    "times_referenced": 1,
+    "example_page": "p. 76",
+    "example_text": "lomakkeella Y 121"
+  }
+]

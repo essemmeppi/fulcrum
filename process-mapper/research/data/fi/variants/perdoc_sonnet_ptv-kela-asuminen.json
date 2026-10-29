@@ -1,0 +1,251 @@
+{
+  "actors": [
+    {
+      "id": "citizen",
+      "name": "Applicant / housing allowance recipient (asiakas)",
+      "kind": "citizen"
+    },
+    {
+      "id": "kela_system",
+      "name": "Kela (OmaKela e-service and benefit payment)",
+      "kind": "system"
+    },
+    {
+      "id": "kela_customer_service",
+      "name": "Kela customer service (puhelinpalvelu / palvelupiste)",
+      "kind": "caseworker"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "N01",
+      "name": "Housing support needed; application required",
+      "description": "A low-income household needs housing support, and the benefit is only available when an application is made (no direct on-the-spot payment).",
+      "type": "start_event",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.6,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Most benefits provided by Kela are generally available on application only."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Kela provides assistance with housing for low-income households by paying housing allowances."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N02",
+      "name": "Submit housing allowance application online (OmaKela)",
+      "description": "The applicant applies for the benefit online through Kela's OmaKela e-service (hakeminen OmaKelassa).",
+      "type": "citizen_task",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.65,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "You can apply for most benefits, submit documents supporting your application and report changes online using Kela’s OmaKela e-service."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Useimpia etuuksia voi hakea verkossa Kelan asiointipalvelu OmaKelassa."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N03",
+      "name": "Submit supporting documents (liitteet)",
+      "description": "The applicant sends documents that support the application through OmaKela.",
+      "type": "citizen_task",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.65,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "You can apply for most benefits, submit documents supporting your application and report changes online using Kela’s OmaKela e-service."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Voit myös lähettää hakemuksen liitteitä"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N04",
+      "name": "Check application status in OmaKela",
+      "description": "The applicant looks up the status of their application in OmaKela.",
+      "type": "citizen_task",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.65,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "You can also check the status of your application and payment dates."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "tarkistaa hakemuksesi tilanteen ja tuen maksupäivät"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N05",
+      "name": "Pay housing allowance (asumistuki)",
+      "description": "Kela supports low-income households' housing by paying the housing allowance.",
+      "type": "system_task",
+      "actor_id": "kela_system",
+      "visibility": "internal",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Kela provides assistance with housing for low-income households by paying housing allowances."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Kela tukee pienituloisten asumista maksamalla asumistukea."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N06",
+      "name": "Check payment dates in OmaKela",
+      "description": "The recipient looks up the benefit payment dates in OmaKela.",
+      "type": "citizen_task",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_can_execute",
+      "confidence": 0.65,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "You can also check the status of your application and payment dates."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "tarkistaa hakemuksesi tilanteen ja tuen maksupäivät"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N07",
+      "name": "Report changes online (OmaKela)",
+      "description": "The applicant or recipient reports changes to Kela online through OmaKela.",
+      "type": "citizen_task",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.65,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "You can apply for most benefits, submit documents supporting your application and report changes online using Kela’s OmaKela e-service."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "ilmoittaa muutoksista"
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N08",
+      "name": "Contact Kela customer service for help",
+      "description": "An applicant who needs help calls Kela's customer service number or visits a Kela service point (palvelupiste).",
+      "type": "citizen_task",
+      "actor_id": "citizen",
+      "visibility": "external",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "confidence": 0.7,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "If you need help, you can call Kela’s customer service number or visit a Kela service point."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Jos tarvitset neuvoja, soita Kelan puhelinpalveluun tai tule käymään palvelupisteessä."
+        }
+      ],
+      "inferred_reason": ""
+    },
+    {
+      "id": "N09",
+      "name": "Give guidance by phone or at service point",
+      "description": "Kela customer service helps the customer by phone or at a Kela service point.",
+      "type": "caseworker_task",
+      "actor_id": "kela_customer_service",
+      "visibility": "external",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "confidence": 0.55,
+      "evidence": [
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "If you need help, you can call Kela’s customer service number or visit a Kela service point."
+        },
+        {
+          "source": "ptv-kela-asuminen.txt",
+          "quote": "Kelan puhelinpalvelu henkilöasiakkaille"
+        }
+      ],
+      "inferred_reason": ""
+    }
+  ],
+  "edges": [
+    {
+      "source": "N01",
+      "target": "N02",
+      "condition": ""
+    },
+    {
+      "source": "N02",
+      "target": "N03",
+      "condition": ""
+    },
+    {
+      "source": "N02",
+      "target": "N04",
+      "condition": ""
+    },
+    {
+      "source": "N02",
+      "target": "N05",
+      "condition": ""
+    },
+    {
+      "source": "N05",
+      "target": "N06",
+      "condition": ""
+    },
+    {
+      "source": "N08",
+      "target": "N09",
+      "condition": ""
+    }
+  ]
+}

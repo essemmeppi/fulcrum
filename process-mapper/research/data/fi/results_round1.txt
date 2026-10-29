@@ -1,0 +1,58 @@
+
+== opus: 84 nodes reviewed ==
+ verdicts: {'confirmed_rule_only': 29, 'not_mentioned': 17, 'confirmed_with_corrections': 27, 'confirmed_step': 11}
+ actor_check: {'same': 36, 'unknown': 42, 'different': 6}
+ automation_check: {'same': 35, 'unknown': 44, 'different': 5}
+ order_check: {'silent': 54, 'supported': 24, 'contradicted': 6}
+ granularity: {'unknown': 29, 'guideline_merges_it': 7, 'same': 36, 'guideline_splits_it': 12}
+ by visibility:
+   external           n=32  exists=0.41 rule_only=0.31 absent=0.28 contradicted=0.00
+   internal           n=52  exists=0.48 rule_only=0.37 absent=0.15 contradicted=0.00
+ by n_sources:
+   1 source           n=32  exists=0.28 rule_only=0.38 absent=0.34 contradicted=0.00
+   2+ sources         n=52  exists=0.56 rule_only=0.33 absent=0.12 contradicted=0.00
+ by automation_class:
+   citizen_action     n=20  exists=0.40 rule_only=0.30 absent=0.30 contradicted=0.00
+   deterministic_rule n=30  exists=0.30 rule_only=0.50 absent=0.20 contradicted=0.00
+   document_check     n= 2  exists=1.00 rule_only=0.00 absent=0.00 contradicted=0.00
+   human_signoff      n= 5  exists=0.40 rule_only=0.00 absent=0.60 contradicted=0.00
+   judgment           n=18  exists=0.50 rule_only=0.39 absent=0.11 contradicted=0.00
+   notification       n= 5  exists=0.80 rule_only=0.20 absent=0.00 contradicted=0.00
+   register_lookup    n= 4  exists=1.00 rule_only=0.00 absent=0.00 contradicted=0.00
+ by conf_bin:
+   0.7-0.89           n=45  exists=0.31 rule_only=0.36 absent=0.33 contradicted=0.00
+   <0.7               n=17  exists=0.65 rule_only=0.35 absent=0.00 contradicted=0.00
+   >=0.9              n=22  exists=0.59 rule_only=0.32 absent=0.09 contradicted=0.00
+ calibration (exists): {'0.6-0.69': '0.58 (n=12)', '0.7-0.79': '0.33 (n=27)', '0.8-0.89': '0.28 (n=18)', '<0.6': '0.80 (n=5)', '>=0.9': '0.59 (n=22)'}
+ calibration (exists_or_rule): {'0.6-0.69': '1.00 (n=12)', '0.7-0.79': '0.74 (n=27)', '0.8-0.89': '0.56 (n=18)', '<0.6': '1.00 (n=5)', '>=0.9': '0.91 (n=22)'}
+
+== sonnet: 84 nodes reviewed ==
+ verdicts: {'confirmed_rule_only': 31, 'not_mentioned': 18, 'confirmed_with_corrections': 25, 'confirmed_step': 10}
+ actor_check: {'same': 34, 'unknown': 45, 'different': 5}
+ automation_check: {'same': 34, 'unknown': 46, 'different': 4}
+ order_check: {'silent': 53, 'supported': 28, 'contradicted': 3}
+ granularity: {'unknown': 31, 'same': 37, 'guideline_merges_it': 10, 'guideline_splits_it': 6}
+ by visibility:
+   external           n=32  exists=0.44 rule_only=0.28 absent=0.28 contradicted=0.00
+   internal           n=52  exists=0.40 rule_only=0.42 absent=0.17 contradicted=0.00
+ by n_sources:
+   1 source           n=32  exists=0.22 rule_only=0.41 absent=0.38 contradicted=0.00
+   2+ sources         n=52  exists=0.54 rule_only=0.35 absent=0.12 contradicted=0.00
+ by automation_class:
+   citizen_action     n=20  exists=0.35 rule_only=0.35 absent=0.30 contradicted=0.00
+   deterministic_rule n=30  exists=0.30 rule_only=0.50 absent=0.20 contradicted=0.00
+   document_check     n= 2  exists=0.50 rule_only=0.50 absent=0.00 contradicted=0.00
+   human_signoff      n= 5  exists=0.20 rule_only=0.20 absent=0.60 contradicted=0.00
+   judgment           n=18  exists=0.44 rule_only=0.39 absent=0.17 contradicted=0.00
+   notification       n= 5  exists=1.00 rule_only=0.00 absent=0.00 contradicted=0.00
+   register_lookup    n= 4  exists=1.00 rule_only=0.00 absent=0.00 contradicted=0.00
+ by conf_bin:
+   0.7-0.89           n=45  exists=0.29 rule_only=0.36 absent=0.36 contradicted=0.00
+   <0.7               n=17  exists=0.53 rule_only=0.47 absent=0.00 contradicted=0.00
+   >=0.9              n=22  exists=0.59 rule_only=0.32 absent=0.09 contradicted=0.00
+ calibration (exists): {'0.6-0.69': '0.42 (n=12)', '0.7-0.79': '0.37 (n=27)', '0.8-0.89': '0.17 (n=18)', '<0.6': '0.80 (n=5)', '>=0.9': '0.59 (n=22)'}
+ calibration (exists_or_rule): {'0.6-0.69': '1.00 (n=12)', '0.7-0.79': '0.74 (n=27)', '0.8-0.89': '0.50 (n=18)', '<0.6': '1.00 (n=5)', '>=0.9': '0.91 (n=22)'}
+
+== judge agreement on 84 nodes: 5-way kappa=0.67 (raw 0.76); 3-way (exists/rule_only/absent/contradicted) kappa=0.70 (raw 0.81)
+ disagreements (collapsed): [('D_COMPLETE', 'confirmed_step', 'confirmed_rule_only'), ('D_INFO_PROVIDED', 'confirmed_with_corrections', 'confirmed_rule_only'), ('D_REDIRECT', 'confirmed_step', 'confirmed_rule_only'), ('S_CHANGE', 'confirmed_with_corrections', 'confirmed_rule_only'), ('T_ASSESS_CHANGE', 'confirmed_step', 'confirmed_rule_only'), ('T_ASSESS_RECOVERY', 'confirmed_with_corrections', 'confirmed_rule_only'), ('T_AUTO_DECISION', 'confirmed_rule_only', 'confirmed_with_corrections'), ('T_COLLECT', 'confirmed_rule_only', 'confirmed_with_corrections'), ('T_FORWARD_APPEAL', 'confirmed_rule_only', 'not_mentioned'), ('T_LANDLORD_NOTICE', 'confirmed_rule_only', 'confirmed_step'), ('T_NOTIFY_RECOVERY', 'confirmed_rule_only', 'confirmed_with_corrections'), ('T_PAY_LANDLORD', 'confirmed_rule_only', 'confirmed_step'), ('T_PROVIDE_INFO', 'confirmed_with_corrections', 'confirmed_rule_only'), ('T_RECOVERY_DECISION', 'confirmed_with_corrections', 'confirmed_rule_only'), ('T_REEXAMINE', 'confirmed_rule_only', 'confirmed_with_corrections'), ('T_TERMINATION_DATE', 'confirmed_with_corrections', 'confirmed_rule_only')]
+ cross-tab (opus, sonnet): {('absent', 'absent'): 17, ('rule_only', 'rule_only'): 22, ('exists', 'exists'): 29, ('exists', 'rule_only'): 9, ('rule_only', 'exists'): 6, ('rule_only', 'absent'): 1}

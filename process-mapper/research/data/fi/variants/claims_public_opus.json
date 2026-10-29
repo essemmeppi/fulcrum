@@ -1,0 +1,1591 @@
+{
+ "steps": [
+  {
+   "id": "C01",
+   "name": "Estimate the allowance with the online calculator",
+   "who": "citizen",
+   "who_evidence": "you might get",
+   "automation": "manual",
+   "automation_evidence": "Use our calculator to check",
+   "what": "The applicant may use Kela's calculator to get an estimate of the allowance; the result is only an estimate.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Use our calculator to check how much housing allowance you might get. The result is an estimate."
+  },
+  {
+   "id": "C02",
+   "name": "Submit communal-household power of attorney (AT 5e) with the application",
+   "who": "citizen",
+   "who_evidence": "you represent the household",
+   "automation": "manual",
+   "automation_evidence": "Complete and submit the form",
+   "what": "A roommate who represents a communal household completes form AT 5e and submits it with the application.",
+   "trigger": "if you and your roommate(s) belong to the same household and you represent the household",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Complete and submit the form Power of attorney to represent a communal household AT 5e (PDF) with your application if you and your roommate(s) belong to the same household and you represent the household."
+  },
+  {
+   "id": "C03",
+   "name": "Notify move to Finland (form Y 77e)",
+   "who": "citizen",
+   "who_evidence": "If you have moved to Finland",
+   "automation": "manual",
+   "automation_evidence": "also complete form Y 77e",
+   "what": "An applicant who has moved to Finland and has not claimed Kela benefits before also completes form Y 77e.",
+   "trigger": "If you have moved to Finland and you have not previously claimed benefits from Kela",
+   "source": "kela-form-AT1e.txt",
+   "quote": "If you have moved to Finland and you have not previously claimed benefits from Kela, also complete form Y 77e."
+  },
+  {
+   "id": "C04",
+   "name": "Decide whether a person who moved to Finland is permanently resident",
+   "who": "unknown",
+   "who_evidence": "Kela considers",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela considers whether a person who moved to Finland is permanently resident, which decides whether they can belong to the household.",
+   "trigger": "A person who has moved to Finland",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "A person who has moved to Finland can be considered part of a household if Kela considers the person to be permanently resident in Finland."
+  },
+  {
+   "id": "C05",
+   "name": "Report move abroad or stay abroad (form Y 38e)",
+   "who": "citizen",
+   "who_evidence": "your move to or your stay in another country",
+   "automation": "manual",
+   "automation_evidence": "Tell Kela about your move",
+   "what": "The applicant tells Kela in OmaKela or on form Y 38e about moving to or staying in another country.",
+   "trigger": "move to or stay in another country",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Tell Kela about your move to or your stay in another country in OmaKela or on the form Moving from Finland or employment abroad Y 38e (PDF)."
+  },
+  {
+   "id": "C06",
+   "name": "Check whether the landlord sends rental agreement data to Kela",
+   "who": "citizen",
+   "who_evidence": "Check the list (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Check the list",
+   "what": "The applicant checks the published list of landlords that send rental agreement information directly to Kela.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Check the list of landlords who send rental agreement information directly to Kela."
+  },
+  {
+   "id": "C07",
+   "name": "Landlord provides rental agreement details to Kela electronically",
+   "who": "landlord",
+   "who_evidence": "from certain landlords",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Certain landlords provide rental housing details to Kela in electronic form, so the recipient need not submit the rental agreement.",
+   "trigger": "",
+   "source": "kela-form-AT1e.txt",
+   "quote": "Kela receives the details on rental housing from certain landlords in electronic form."
+  },
+  {
+   "id": "C08",
+   "name": "Attach a copy of the signed rental agreement",
+   "who": "citizen",
+   "who_evidence": "your signed rental agreement",
+   "automation": "manual",
+   "automation_evidence": "Send Kela a copy",
+   "what": "The applicant sends a copy of the signed rental agreement with the application when Kela does not get it from the landlord.",
+   "trigger": "if Kela does not get it directly from your landlord",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Send Kela a copy of your signed rental agreement with your application if Kela does not get it directly from your landlord."
+  },
+  {
+   "id": "C09",
+   "name": "Apply online in OmaKela",
+   "who": "citizen",
+   "who_evidence": "to apply (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Use the OmaKela e-service ... to apply",
+   "what": "The applicant applies for general housing allowance in the OmaKela e-service.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Use the OmaKela e-service (available in Finnish and Swedish) to apply for general housing allowance."
+  },
+  {
+   "id": "C10",
+   "name": "Apply with the combined online form (general social security benefit + housing allowance)",
+   "who": "citizen",
+   "who_evidence": "you can use to apply",
+   "automation": "manual",
+   "automation_evidence": "you can use to apply",
+   "what": "The applicant may use the new online form to apply for general social security benefit and general housing allowance at the same time.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela has introduced a new online application form that you can use to apply for general social security benefit and general housing allowance at the same time."
+  },
+  {
+   "id": "C11",
+   "name": "Submit supporting documents in OmaKela",
+   "who": "citizen",
+   "who_evidence": "the documents you are sending",
+   "automation": "manual",
+   "automation_evidence": "Take photographs of the documents",
+   "what": "The applicant submits supporting documents in OmaKela, photographing paper documents.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Submit supporting documents in OmaKela. Take photographs of the documents you are sending if they are not in a digital format."
+  },
+  {
+   "id": "C12",
+   "name": "Apply on paper form AT 1e",
+   "who": "citizen",
+   "who_evidence": "Apply for housing allowance on the form (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Apply ... on the form",
+   "what": "An applicant who cannot use OmaKela applies on form AT 1e.",
+   "trigger": "if you cannot use OmaKela",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Apply for housing allowance on the form Application – General housing allowance AT 1e (PDF)"
+  },
+  {
+   "id": "C13",
+   "name": "Fill in, print and sign the form",
+   "who": "citizen",
+   "who_evidence": "Remember to sign the form (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Fill in the form and print it out. Remember to sign the form.",
+   "what": "The applicant fills in, prints and signs the paper application.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Fill in the form and print it out. Remember to sign the form."
+  },
+  {
+   "id": "C14",
+   "name": "Post the form and supporting documents to Kela",
+   "who": "citizen",
+   "who_evidence": "Send the form (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Send the form together with any supporting documents",
+   "what": "The applicant posts the form and supporting documents to Kela, PL 10, 00056 KELA.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Send the form together with any supporting documents to Kela, PL 10, 00056 KELA."
+  },
+  {
+   "id": "C15",
+   "name": "Declare household income (gross) in the application",
+   "who": "citizen",
+   "who_evidence": "State the household income (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "State the household income",
+   "what": "The applicant states household income at its gross amount, including tax-exempt income.",
+   "trigger": "",
+   "source": "kela-form-AT1e.txt",
+   "quote": "State the household income to its gross amount, i.e. before taxes and other deductions. Also state any tax-exempt income."
+  },
+  {
+   "id": "C16",
+   "name": "Notify the Digital and Population Data Services Agency of the change of address",
+   "who": "citizen",
+   "who_evidence": "Notify (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Notify the Digital and Population Data Services Agency",
+   "what": "The applicant notifies the Digital and Population Data Services Agency of the new address of all household members within one week.",
+   "trigger": "change of address",
+   "source": "kela-form-AT1e.txt",
+   "quote": "Notify the Digital and Population Data Services Agency of the change of address for all members of the household within one week"
+  },
+  {
+   "id": "C17",
+   "name": "Consent to payment of the allowance to the landlord",
+   "who": "citizen",
+   "who_evidence": "if you give your consent",
+   "automation": "manual",
+   "automation_evidence": "you give your consent",
+   "what": "The applicant may consent to Kela paying the allowance directly to the landlord's account.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela can pay the housing allowance directly to your landlord’s account if you give your consent."
+  },
+  {
+   "id": "C18",
+   "name": "Inform the applicant in advance of data sources and disclosures",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitoksen on annettava",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela must tell the applicant in advance where data about them may be obtained and to whom it is regularly disclosed.",
+   "trigger": "",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen on annettava asumistuen hakijalle etukäteen sopivin tavoin tiedot siitä, mistä häntä koskevia tietoja voidaan hankkia ja mihin niitä voidaan säännönmukaisesti luovuttaa."
+  },
+  {
+   "id": "C19",
+   "name": "Process the application",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The application must be processed without undue delay (the provision does not name who processes it).",
+   "trigger": "hakemuksen saapumisesta (arrival of the application, 23 § 2 mom)",
+   "source": "law-938-2014.txt",
+   "quote": "Hakemus on käsiteltävä ilman aiheetonta viivytystä."
+  },
+  {
+   "id": "C20",
+   "name": "Obtain wage and salary data from the Incomes Register",
+   "who": "unknown",
+   "who_evidence": "Kela gets",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela gets wage and salary information from the Incomes Register and uses it when processing the application.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela gets wage and salary information from the Incomes Register and uses this information when processing your application."
+  },
+  {
+   "id": "C21",
+   "name": "Request necessary information from authorities, pension bodies, employers, landlords and others",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitoksella",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela (and the appeal body) may request, free of charge and despite secrecy rules, information needed to decide the case from the bodies listed in 42 § 1 mom.",
+   "trigger": "käsiteltävänä olevan asumistuen ratkaisemista varten",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksella ja tämän lain mukaisella muutoksenhakuelimellä on oikeus saada pyynnöstä salassapitosäännösten ja muiden tiedon saantia koskevien rajoitusten estämättä maksutta käsiteltävänä olevan asumistuen ratkaisemista varten"
+  },
+  {
+   "id": "C22",
+   "name": "Inform the applicant before requesting data from financial institutions",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Before a request to a financial institution is made, the applicant or recipient must be informed (the provision does not say by whom).",
+   "trigger": "request for data from financial institutions (42 § 2 mom)",
+   "source": "law-938-2014.txt",
+   "quote": "Ennen pyynnön esittämistä hakijalle tai saajalle on annettava siitä tieto."
+  },
+  {
+   "id": "C23",
+   "name": "Request data from financial institutions in writing",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "A request for data from financial institutions must be made in writing.",
+   "trigger": "jollei riittäviä tietoja ja selvityksiä muutoin saada ja on perusteltua syytä epäillä ... tietojen riittävyyttä tai luotettavuutta",
+   "source": "law-938-2014.txt",
+   "quote": "Pyyntö tietojen saamiseksi tulee esittää kirjallisena."
+  },
+  {
+   "id": "C24",
+   "name": "Send a reminder about missing supporting documents in OmaKela",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The applicant gets a reminder in OmaKela if supporting documents are missing (the text does not say who or what sends it).",
+   "trigger": "If supporting documents are missing from your application",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If supporting documents are missing from your application, you will get a reminder about that in OmaKela."
+  },
+  {
+   "id": "C25",
+   "name": "Ask the applicant for more information",
+   "who": "unknown",
+   "who_evidence": "We may ask you",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela may ask the applicant for more information when needed.",
+   "trigger": "if we need it",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "We may ask you for more information if we need it."
+  },
+  {
+   "id": "C26",
+   "name": "Decide on the information available to Kela",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The application can be decided on the information Kela has if the applicant refuses to give the information or explanation required.",
+   "trigger": "jos hakija kieltäytyy antamasta ... tarvittavia tietoja; also 30 § if the recipient does not provide requested clarification",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistukea koskeva hakemus voidaan ratkaista Kansaneläkelaitoksen käytettävissä olevien tietojen perusteella, jos hakija kieltäytyy antamasta 19 ja 20 §:ssä tarkoitettuja hakemuksen ratkaisemiseksi tarvittavia tietoja"
+  },
+  {
+   "id": "C27",
+   "name": "Determine income as continuous income or average income",
+   "who": "unknown",
+   "who_evidence": "Laskemme",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela calculates the household income that affects the allowance either as continuous income or as average income.",
+   "trigger": "",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Laskemme asumistukeen vaikuttavien tulojesi määrän joko jatkuvana tulona tai keskiarvotulona."
+  },
+  {
+   "id": "C28",
+   "name": "Calculate the allowance amount",
+   "who": "unknown",
+   "who_evidence": "Kela deducts",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela deducts the basic deductible from the housing costs when calculating the allowance; the allowance is 70% of the remaining acceptable housing costs.",
+   "trigger": "",
+   "source": "kela-guide-gha-en.txt",
+   "quote": "Kela deducts a basic deductible from the housing costs"
+  },
+  {
+   "id": "C29",
+   "name": "Issue a written decision",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "A written decision is given to the applicant on granting, rejecting, reviewing, terminating or recovering housing allowance (the provision does not name who issues it).",
+   "trigger": "",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen hakijalle annetaan kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+  },
+  {
+   "id": "C30",
+   "name": "Check decision, amount and payment date in OmaKela",
+   "who": "citizen",
+   "who_evidence": "Go to OmaKela to see (imperative addressed to the applicant)",
+   "automation": "manual",
+   "automation_evidence": "Go to OmaKela to see",
+   "what": "The applicant can check in OmaKela whether Kela has decided, the amount and the payment date.",
+   "trigger": "",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Go to OmaKela to see if Kela has made a decision on your application. You will also see how much you will get and when your benefit will be paid."
+  },
+  {
+   "id": "C31",
+   "name": "Notify the State of the month's housing allowance total",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitoksen on ... ilmoitettava",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Five working days before the payment day Kela must notify the State of the amount of housing allowances payable that month.",
+   "trigger": "viisi arkipäivää ennen ... asumistuen maksupäivää",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen on viisi arkipäivää ennen 24 §:ssä tarkoitettua asumistuen maksupäivää ilmoitettava valtiolle sinä kuukautena maksettavien asumistukien määrä."
+  },
+  {
+   "id": "C32",
+   "name": "State transfers the notified amount to Kela",
+   "who": "other_authority",
+   "who_evidence": "Valtion on",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "On the basis of Kela's notification the State pays Kela the notified amount at least one banking day before the payment day.",
+   "trigger": "2 momentissa tarkoitetun ilmoituksen perusteella",
+   "source": "law-938-2014.txt",
+   "quote": "Valtion on 2 momentissa tarkoitetun ilmoituksen perusteella maksettava Kansaneläkelaitokselle ilmoituksen mukainen rahamäärä viimeistään yhtä pankkipäivää ennen asumistukien maksupäivää."
+  },
+  {
+   "id": "C33",
+   "name": "Pay the allowance monthly to the recipient's or the landlord's account",
+   "who": "unknown",
+   "who_evidence": "Kela pays",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela pays the allowance into the recipient's or the landlord's bank account on the first banking day of the month.",
+   "trigger": "first banking day of the month",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela pays the housing allowance into your bank account or your landlord’s account on the first banking day of the month."
+  },
+  {
+   "id": "C34",
+   "name": "Decide to pay the allowance to the landlord without the recipient's consent",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitos voi päättää",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela may decide to pay the allowance directly to the landlord without authorisation if the recipient has failed to pay rent for at least two consecutive months.",
+   "trigger": "jos asumistuen saaja on laiminlyönyt vähintään kahden peräkkäisen kuukauden vuokran maksamisen kokonaan",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitos voi päättää, että asumistuki maksetaan suoraan vuokranantajalle ilman asumistuensaajan valtuutusta, jos asumistuen saaja on laiminlyönyt vähintään kahden peräkkäisen kuukauden vuokran maksamisen kokonaan."
+  },
+  {
+   "id": "C35",
+   "name": "Contact the recipient before paying the allowance to the landlord",
+   "who": "unknown",
+   "who_evidence": "we will contact you",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "When rent has been left unpaid for two months in a row, Kela contacts the recipient before paying the allowance to the landlord.",
+   "trigger": "if you have left part of or all your rent unpaid for two months in a row",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "In situations like that, we will contact you before we pay your housing allowance."
+  },
+  {
+   "id": "C36",
+   "name": "Stop paying the landlord at the tenant's request",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Payment directly to the landlord is stopped at the tenant's request when there is no longer a ground for it (the provision does not name who stops it).",
+   "trigger": "vuokralaisen pyynnöstä, kun perustetta vuokranantajalle maksamiselle ei enää ole",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen maksaminen suoraan vuokranantajalle lopetetaan vuokralaisen pyynnöstä, kun perustetta vuokranantajalle maksamiselle ei enää ole."
+  },
+  {
+   "id": "C37",
+   "name": "Landlord notifies Kela that the tenancy ends or the tenant moves out",
+   "who": "landlord",
+   "who_evidence": "vuokranantaja on ... velvollinen ilmoittamaan",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "When the allowance is paid to the landlord, the landlord must notify Kela if the recipient's right of occupancy ends or the recipient moves out.",
+   "trigger": "jos tuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai hän muuttaa pois asunnosta",
+   "source": "law-938-2014.txt",
+   "quote": "Kun asumistuki maksetaan vuokranantajalle, vuokranantaja on saatuaan asiasta tiedon velvollinen ilmoittamaan Kansaneläkelaitokselle, jos tuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai hän muuttaa pois asunnosta"
+  },
+  {
+   "id": "C38",
+   "name": "Withhold retroactive allowance against housing allowance for pensioners already paid",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Retroactively granted allowance may be withheld to Kela to the extent it matches housing allowance for pensioners paid for the same period.",
+   "trigger": "jos Kansaneläkelaitos myöntää asumistuen takautuvasti ajalle, jona ... on saanut eläkkeensaajan asumistuesta annetun lain mukaista asumistukea",
+   "source": "law-938-2014.txt",
+   "quote": "Takautuvasti myönnetty asumistuki voidaan pidättää Kansaneläkelaitokselle sen maksamaa eläkkeensaajan asumistuesta annetun lain mukaista asumistukea vastaavalta osin"
+  },
+  {
+   "id": "C39",
+   "name": "Report changes in circumstances",
+   "who": "citizen",
+   "who_evidence": "you must notify us",
+   "automation": "manual",
+   "automation_evidence": "you must notify us",
+   "what": "A recipient must notify Kela of changes in the circumstances of the household, such as income or housing costs.",
+   "trigger": "changes in your circumstances or the circumstances of your household",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you get housing allowance, you must notify us if there are changes in your circumstances or the circumstances of your household, such as changes in income, housing costs or something else."
+  },
+  {
+   "id": "C40",
+   "name": "Review the allowance because circumstances changed",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The allowance must also be reviewed when one of the changes listed in 27 § 2 mom occurs (income, housing costs, move or tenure, household size or subtenant).",
+   "trigger": "27 § 2 mom changes: income +400/-200 EUR, housing costs +/-50 EUR, new home or tenure, household or subtenant change",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistukea on tarkistettava myös, jos:"
+  },
+  {
+   "id": "C41",
+   "name": "Request termination of the allowance",
+   "who": "citizen",
+   "who_evidence": "let us know that you want your housing allowance stopped",
+   "automation": "manual",
+   "automation_evidence": "let us know",
+   "what": "A recipient who no longer needs the allowance tells Kela to stop it (OmaKela notification, OmaKela message or form AT 6e).",
+   "trigger": "If you no longer need housing allowance",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you no longer need housing allowance, let us know that you want your housing allowance stopped."
+  },
+  {
+   "id": "C42",
+   "name": "Terminate the allowance",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The allowance is terminated on the grounds and from the dates listed in 29 § (the provision does not name who terminates it).",
+   "trigger": "29 § grounds: request, moving out, loss of entitlement, housing costs ending, review information not given",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuki lakkautetaan:"
+  },
+  {
+   "id": "C43",
+   "name": "Annual review of the allowance",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The amount of the allowance is reviewed when a year has passed since it started or was last reviewed.",
+   "trigger": "kun tuen alkamisesta tai edellisestä tarkistamisesta on kulunut vuosi",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen määrä tarkistetaan, kun tuen alkamisesta tai edellisestä tarkistamisesta on kulunut vuosi."
+  },
+  {
+   "id": "C44",
+   "name": "Send annual review instructions to the recipient",
+   "who": "unknown",
+   "who_evidence": "We will send you",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Kela sends instructions for the annual review to the recipient's OmaKela about two months before the review.",
+   "trigger": "about two months before the review is scheduled",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "We will send you instructions about the annual review of your housing allowance about two months before the review is scheduled to take place."
+  },
+  {
+   "id": "C45",
+   "name": "Submit the information for the annual review",
+   "who": "citizen",
+   "who_evidence": "Send us the information (imperative addressed to the recipient)",
+   "automation": "manual",
+   "automation_evidence": "Send us the information",
+   "what": "The recipient sends the information for the annual review on the general housing allowance application (OmaKela or post).",
+   "trigger": "annual review",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Send us the information needed for the annual review on the application for general housing allowance."
+  },
+  {
+   "id": "C46",
+   "name": "Temporarily suspend or reduce payment",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Payment may be suspended in part or in full if there is good reason to assume the recipient is no longer entitled to all or part of it.",
+   "trigger": "jos on perusteltua syytä olettaa, että asumistuen saajalla ei ... ole oikeutta tukeen tai osaan siitä",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen maksaminen voidaan väliaikaisesti keskeyttää osittain tai kokonaan, jos on perusteltua syytä olettaa, että asumistuen saajalla ei olosuhteiden muuttumisen vuoksi tai muusta syystä ole oikeutta tukeen tai osaan siitä."
+  },
+  {
+   "id": "C47",
+   "name": "Recover overpaid allowance",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Allowance paid without grounds or in too large an amount must be recovered (the provision does not name who recovers it).",
+   "trigger": "Jos asumistukea on maksettu aiheetta tai määrältään liian suurena",
+   "source": "law-938-2014.txt",
+   "quote": "Jos asumistukea on maksettu aiheetta tai määrältään liian suurena, liikaa maksettu tuki on perittävä takaisin."
+  },
+  {
+   "id": "C48",
+   "name": "Recover the overpayment from another adult household member",
+   "who": "unknown",
+   "who_evidence": "we may also recover",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "If necessary Kela may also recover the overpayment from another household member who was an adult when the overpayment occurred.",
+   "trigger": "If necessary",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If necessary, we may also recover the overpayment from another adult member of the household who had reached the age of 18 when the overpayment occurred."
+  },
+  {
+   "id": "C49",
+   "name": "Issue a separate recovery decision to a non-applicant",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "When recovery is directed at someone other than the applicant, that person gets their own recovery decision.",
+   "trigger": "Kun liikaa maksettua tukea peritään muulta kuin hakijalta",
+   "source": "law-938-2014.txt",
+   "quote": "Kun liikaa maksettua tukea peritään muulta kuin hakijalta, tälle annetaan erikseen oma päätös takaisinperinnästä."
+  },
+  {
+   "id": "C50",
+   "name": "Waive recovery in full or in part",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Recovery may be waived if reasonable and not caused by fraud, or if the amount is small.",
+   "trigger": "jos se katsotaan kohtuulliseksi ... tai jos aiheettomasti maksettu määrä on vähäinen",
+   "source": "law-938-2014.txt",
+   "quote": "Takaisinperinnästä voidaan luopua joko kokonaan tai osittain, jos se katsotaan kohtuulliseksi eikä aiheeton maksaminen ole johtunut etuuden saajan tai hänen edustajansa vilpillisestä menettelystä tai jos aiheettomasti maksettu määrä on vähäinen."
+  },
+  {
+   "id": "C51",
+   "name": "Recover allowance from the landlord",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Allowance paid without grounds may also be recovered from the landlord in the cases listed in 31 § 4 mom.",
+   "trigger": "jos vuokranantajalle on maksettu asumistukea ajalta, jolta hänellä ei ole oikeutta enää periä vuokraa (and other 31 § 4 mom cases)",
+   "source": "law-938-2014.txt",
+   "quote": "Perusteettomasti maksettu tuki voidaan periä takaisin myös vuokranantajalta, jos vuokranantajalle on maksettu asumistukea ajalta, jolta hänellä ei ole oikeutta enää periä vuokraa"
+  },
+  {
+   "id": "C52",
+   "name": "Appeal in writing to the Social Security Appeal Board",
+   "who": "citizen",
+   "who_evidence": "päätökseen tyytymätön",
+   "automation": "manual",
+   "automation_evidence": "kirjallisella valituksella",
+   "what": "A person dissatisfied with Kela's decision may appeal in writing to the Social Security Appeal Board; the appeal is delivered to Kela.",
+   "trigger": "päätökseen tyytymätön (dissatisfied with the decision)",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen tämän lain nojalla antamaan päätökseen tyytymätön saa hakea siihen muutosta sosiaaliturvan muutoksenhakulautakunnalta kirjallisella valituksella."
+  },
+  {
+   "id": "C53",
+   "name": "Rectify the decision when Kela accepts all appeal claims",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitos ... sen on annettava",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "If Kela accepts all claims in the appeal it must issue a rectification decision.",
+   "trigger": "Jos Kansaneläkelaitos hyväksyy kaikilta osin ... vaatimukset",
+   "source": "law-938-2014.txt",
+   "quote": "Jos Kansaneläkelaitos hyväksyy kaikilta osin sille toimitetussa valituksessa esitetyt vaatimukset, sen on annettava asiasta oikaisupäätös."
+  },
+  {
+   "id": "C54",
+   "name": "Forward the appeal and Kela's statement to the appeal body",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitos ... sen on ... toimitettava",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "If Kela does not rectify the decision, it forwards the appeal and its statement to the appeal body within 30 days of the end of the appeal period.",
+   "trigger": "Jos Kansaneläkelaitos ei oikaise valituksen kohteena olevaa päätöstä",
+   "source": "law-938-2014.txt",
+   "quote": "Jos Kansaneläkelaitos ei oikaise valituksen kohteena olevaa päätöstä 1 momentissa säädetyin tavoin, sen on 30 päivän kuluessa valitusajan päättymisestä toimitettava valituskirjelmä ja lausuntonsa asianomaisen muutoksenhakuelimen käsiteltäväksi."
+  },
+  {
+   "id": "C55",
+   "name": "Appeal body handles the appeal",
+   "who": "other_authority",
+   "who_evidence": "sosiaaliturvan muutoksenhakulautakunta ja vakuutusoikeus",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "Appeals are handled by the Social Security Appeal Board and the Insurance Court.",
+   "trigger": "appeal forwarded by Kela",
+   "source": "law-938-2014.txt",
+   "quote": "Muutoksenhakua varten on sosiaaliturvan muutoksenhakulautakunta ja vakuutusoikeus."
+  },
+  {
+   "id": "C56",
+   "name": "Further appeal to the Insurance Court",
+   "who": "unknown",
+   "who_evidence": "",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "The Appeal Board's decision may be appealed to the Insurance Court (the provision does not name the appellant).",
+   "trigger": "Sosiaaliturvan muutoksenhakulautakunnan päätös",
+   "source": "law-938-2014.txt",
+   "quote": "Sosiaaliturvan muutoksenhakulautakunnan päätökseen saa hakea muutosta valittamalla vakuutusoikeuteen siten kuin hallintolainkäyttölaissa"
+  },
+  {
+   "id": "C57",
+   "name": "Remove an erroneous decision and decide again",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitos voi",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "If a decision rests on clearly wrong or incomplete information, an obviously wrong application of law or a procedural error, Kela may remove it and decide again.",
+   "trigger": "virheelliseen tai puutteelliseen selvitykseen ... menettelyvirhe",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitos voi poistaa virheellisen päätöksensä ja ratkaista asian uudelleen."
+  },
+  {
+   "id": "C58",
+   "name": "Re-examine a final decision on new evidence",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitoksen on tutkittava",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "If new evidence appears in a case about a refused or increased allowance, Kela must examine the case again and may grant or increase the allowance.",
+   "trigger": "ilmenee uutta selvitystä",
+   "source": "law-938-2014.txt",
+   "quote": "Jos asiassa, jossa on kysymys evätyn asumistuen myöntämisestä tai myönnetyn asumistuen lisäämisestä, ilmenee uutta selvitystä, Kansaneläkelaitoksen on tutkittava asia uudelleen."
+  },
+  {
+   "id": "C59",
+   "name": "Annul a final decision and order the case re-heard",
+   "who": "other_authority",
+   "who_evidence": "sosiaaliturvan muutoksenhakulautakunta voi",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "On demand of a party or Kela, the Social Security Appeal Board may annul a final Kela decision and order the case to be heard again.",
+   "trigger": "asianosaisen tai Kansaneläkelaitoksen vaatimuksesta",
+   "source": "law-938-2014.txt",
+   "quote": "sosiaaliturvan muutoksenhakulautakunta voi asianosaisen tai Kansaneläkelaitoksen vaatimuksesta poistaa päätöksen ja määrätä asian uudelleen käsiteltäväksi."
+  },
+  {
+   "id": "C60",
+   "name": "Decide again after a benefit that prevents payment was granted retroactively",
+   "who": "unknown",
+   "who_evidence": "Kansaneläkelaitos voi",
+   "automation": "unknown",
+   "automation_evidence": "",
+   "what": "If a benefit that prevents payment of housing allowance is granted retroactively, Kela may decide the case again after hearing the party, without their consent.",
+   "trigger": "on takautuvasti myönnetty 8 §:n 2 momentin mukainen asumistuen maksamisen estävä etuus",
+   "source": "law-938-2014.txt",
+   "quote": "on takautuvasti myönnetty 8 §:n 2 momentin mukainen asumistuen maksamisen estävä etuus, Kansaneläkelaitos voi ilman asianosaisen suostumusta asianosaista kuultuaan ratkaista asian uudelleen."
+  }
+ ],
+ "order": [
+  {
+   "before": "C02",
+   "after": "C09",
+   "source": "kela-form-AT1e.txt",
+   "quote": "you must have a power of attorney from the other residents if you wish to apply for housing allowance on behalf of the household."
+  },
+  {
+   "before": "C03",
+   "after": "C04",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "if you are applying for housing allowance for the first time since you moved to Finland and Kela has not yet checked if you or another member of your household qualifies for Kela benefits"
+  },
+  {
+   "before": "C06",
+   "after": "C08",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If your landlord is not on the list, send your rental agreement together with your application."
+  },
+  {
+   "before": "C12",
+   "after": "C13",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Do as follows if you cannot use OmaKela:"
+  },
+  {
+   "before": "C13",
+   "after": "C14",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Do as follows if you cannot use OmaKela:"
+  },
+  {
+   "before": "C09",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen on annettava asumistukea koskeva päätös viimeistään kolmantenakymmenentenä kalenteripäivänä hakemuksen saapumisesta."
+  },
+  {
+   "before": "C20",
+   "after": "C19",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela gets wage and salary information from the Incomes Register and uses this information when processing your application."
+  },
+  {
+   "before": "C18",
+   "after": "C21",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen on annettava asumistuen hakijalle etukäteen sopivin tavoin tiedot siitä, mistä häntä koskevia tietoja voidaan hankkia ja mihin niitä voidaan säännönmukaisesti luovuttaa."
+  },
+  {
+   "before": "C22",
+   "after": "C23",
+   "source": "law-938-2014.txt",
+   "quote": "Ennen pyynnön esittämistä hakijalle tai saajalle on annettava siitä tieto."
+  },
+  {
+   "before": "C25",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Päätös on tällöin annettava viimeistään neljäntenätoista kalenteripäivänä sen jälkeen, kun Kansaneläkelaitos on saanut käyttöönsä asian ratkaisemiseksi tarvittavat tiedot."
+  },
+  {
+   "before": "C25",
+   "after": "C26",
+   "source": "law-938-2014.txt",
+   "quote": "jos hakija kieltäytyy antamasta 19 ja 20 §:ssä tarkoitettuja hakemuksen ratkaisemiseksi tarvittavia tietoja tai esittämästä selvitystä, joka häneltä voidaan kohtuudella vaatia"
+  },
+  {
+   "before": "C46",
+   "after": "C26",
+   "source": "law-938-2014.txt",
+   "quote": "Jos asumistuen saaja ei toimita pyydettyä lisäselvitystä, asia ratkaistaan lopullisella päätöksellä niiden selvitysten perusteella, jotka ovat Kansaneläkelaitoksen käytettävissä."
+  },
+  {
+   "before": "C19",
+   "after": "C29",
+   "source": "kela-guide-gha-en.txt",
+   "quote": "As soon as Kela has processed your application, you will get a decision notice in the OmaKela e-service or by post to your home address."
+  },
+  {
+   "before": "C29",
+   "after": "C33",
+   "source": "kela-guide-gha-en.txt",
+   "quote": "The decision notice will tell you how much benefit you get, the reasons for granting it and when it will be paid to you."
+  },
+  {
+   "before": "C31",
+   "after": "C33",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen on viisi arkipäivää ennen 24 §:ssä tarkoitettua asumistuen maksupäivää ilmoitettava valtiolle sinä kuukautena maksettavien asumistukien määrä."
+  },
+  {
+   "before": "C31",
+   "after": "C32",
+   "source": "law-938-2014.txt",
+   "quote": "Valtion on 2 momentissa tarkoitetun ilmoituksen perusteella maksettava Kansaneläkelaitokselle ilmoituksen mukainen rahamäärä viimeistään yhtä pankkipäivää ennen asumistukien maksupäivää."
+  },
+  {
+   "before": "C32",
+   "after": "C33",
+   "source": "law-938-2014.txt",
+   "quote": "Valtion on 2 momentissa tarkoitetun ilmoituksen perusteella maksettava Kansaneläkelaitokselle ilmoituksen mukainen rahamäärä viimeistään yhtä pankkipäivää ennen asumistukien maksupäivää."
+  },
+  {
+   "before": "C17",
+   "after": "C33",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela can pay the housing allowance directly to your landlord’s account if you give your consent."
+  },
+  {
+   "before": "C35",
+   "after": "C33",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "In situations like that, we will contact you before we pay your housing allowance."
+  },
+  {
+   "before": "C34",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Hakijalle on annettava kirjallinen päätös myös silloin, kun asumistuki maksetaan vuokranantajalle 25 §:n 2 momentin perusteella."
+  },
+  {
+   "before": "C34",
+   "after": "C36",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen maksaminen suoraan vuokranantajalle lopetetaan vuokralaisen pyynnöstä, kun perustetta vuokranantajalle maksamiselle ei enää ole."
+  },
+  {
+   "before": "C39",
+   "after": "C40",
+   "source": "kela-fi-yleinen-asumistuki.txt",
+   "quote": "Kun ilmoitat muutoksista, saat tuen oikean suuruisena etkä jää ilman sinulle kuuluvaa tukea."
+  },
+  {
+   "before": "C40",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen hakijalle annetaan kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+  },
+  {
+   "before": "C41",
+   "after": "C42",
+   "source": "law-938-2014.txt",
+   "quote": "sen kuukauden alusta, jolloin 27 §:ssä tarkoitettu tarkistus tulisi voimaan, jos ruokakunta pyytää asumistukensa lakkauttamista;"
+  },
+  {
+   "before": "C42",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen hakijalle annetaan kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+  },
+  {
+   "before": "C44",
+   "after": "C43",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "We will send you instructions about the annual review of your housing allowance about two months before the review is scheduled to take place."
+  },
+  {
+   "before": "C45",
+   "after": "C43",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you do not submit the application in time for the review, we will have to stop the payment of your housing allowance."
+  },
+  {
+   "before": "C45",
+   "after": "C42",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you do not submit the application in time for the review, we will have to stop the payment of your housing allowance."
+  },
+  {
+   "before": "C43",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen hakijalle annetaan kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+  },
+  {
+   "before": "C39",
+   "after": "C47",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you do not report changes to Kela, you may be paid more benefit than you have the right to. In that case, the overpaid benefit will be recovered from you later."
+  },
+  {
+   "before": "C33",
+   "after": "C47",
+   "source": "law-938-2014.txt",
+   "quote": "Päätös aiheettomasti maksetun asumistuen takaisinperinnästä on tehtävä viiden vuoden kuluessa asumistuen maksupäivästä lukien."
+  },
+  {
+   "before": "C47",
+   "after": "C48",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "The benefit is recovered first from the person who applied for the benefit."
+  },
+  {
+   "before": "C48",
+   "after": "C49",
+   "source": "law-938-2014.txt",
+   "quote": "Kun liikaa maksettua tukea peritään muulta kuin hakijalta, tälle annetaan erikseen oma päätös takaisinperinnästä."
+  },
+  {
+   "before": "C47",
+   "after": "C50",
+   "source": "law-938-2014.txt",
+   "quote": "Takaisinperinnästä voidaan luopua kokonaan takaisinperintää koskevan päätöksen antamisen jälkeen myös, jos takaisinperintää ei asumistuen saajan taloudellinen tilanne huomioon ottaen ole enää tarkoituksenmukaista jatkaa"
+  },
+  {
+   "before": "C47",
+   "after": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen hakijalle annetaan kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+  },
+  {
+   "before": "C29",
+   "after": "C52",
+   "source": "law-938-2014.txt",
+   "quote": "Valituskirjelmä on toimitettava Kansaneläkelaitokselle viimeistään 30 päivänä sen päivän jälkeen, jona asianosaisen katsotaan saaneen päätöksestä tiedon."
+  },
+  {
+   "before": "C52",
+   "after": "C53",
+   "source": "law-938-2014.txt",
+   "quote": "Jos Kansaneläkelaitos hyväksyy kaikilta osin sille toimitetussa valituksessa esitetyt vaatimukset, sen on annettava asiasta oikaisupäätös."
+  },
+  {
+   "before": "C52",
+   "after": "C54",
+   "source": "law-938-2014.txt",
+   "quote": "Jos Kansaneläkelaitos ei oikaise valituksen kohteena olevaa päätöstä 1 momentissa säädetyin tavoin, sen on 30 päivän kuluessa valitusajan päättymisestä toimitettava valituskirjelmä ja lausuntonsa asianomaisen muutoksenhakuelimen käsiteltäväksi."
+  },
+  {
+   "before": "C54",
+   "after": "C55",
+   "source": "law-938-2014.txt",
+   "quote": "sen on 30 päivän kuluessa valitusajan päättymisestä toimitettava valituskirjelmä ja lausuntonsa asianomaisen muutoksenhakuelimen käsiteltäväksi."
+  },
+  {
+   "before": "C55",
+   "after": "C56",
+   "source": "law-938-2014.txt",
+   "quote": "Sosiaaliturvan muutoksenhakulautakunnan päätökseen saa hakea muutosta valittamalla vakuutusoikeuteen siten kuin hallintolainkäyttölaissa"
+  }
+ ],
+ "rules": [
+  {
+   "id": "R01",
+   "name": "One household member applies on behalf of the whole household",
+   "applies_in_step": "C09",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "One member of the household applies for housing allowance on behalf of the entire household."
+  },
+  {
+   "id": "R02",
+   "name": "Who represents the household",
+   "applies_in_step": "C02",
+   "source": "law-938-2014.txt",
+   "quote": "Ruokakuntaa edustaa asunnonhaltija tai hänen puolisonsa, yhteisöruokakunnan valtuuttama henkilö taikka se, jonka nimissä erillinen vuokrasopimus tai sitä vastaava hallintasopimus on."
+  },
+  {
+   "id": "R03",
+   "name": "Benefits generally available on application only",
+   "applies_in_step": "C09",
+   "source": "ptv-kela-asuminen.txt",
+   "quote": "Most benefits provided by Kela are generally available on application only."
+  },
+  {
+   "id": "R04",
+   "name": "Application is made to Kela; Kela sets procedures and forms",
+   "applies_in_step": "C09",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistukea haetaan Kansaneläkelaitokselta. Kansaneläkelaitos vahvistaa tämän lain toimeenpanossa tarvittavat menettelyt ja lomakkeet."
+  },
+  {
+   "id": "R05",
+   "name": "Wrongly shown review application is processed as a new application",
+   "applies_in_step": "C09",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "We will process your application as a new application even if you use the review application."
+  },
+  {
+   "id": "R06",
+   "name": "Eligible housing types",
+   "applies_in_step": "C29",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "General housing allowance is available for rental, right-of-occupancy and part-ownership housing."
+  },
+  {
+   "id": "R07",
+   "name": "No general housing allowance for an owner-occupied home",
+   "applies_in_step": "C29",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Omistusasuntoon ei saa yleistä asumistukea."
+  },
+  {
+   "id": "R08",
+   "name": "Only persons living in Finland belong to the household",
+   "applies_in_step": "C04",
+   "source": "law-938-2014.txt",
+   "quote": "Ruokakuntaan pysyvästi kuuluvaksi katsotaan vain Suomessa asuva henkilö."
+  },
+  {
+   "id": "R09",
+   "name": "Residence usually permanent after one year in Finland",
+   "applies_in_step": "C04",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "You will usually be considered to be living in Finland permanently after you have lived in Finland for one year."
+  },
+  {
+   "id": "R10",
+   "name": "Students generally not eligible",
+   "applies_in_step": "C29",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you study, you cannot, as a rule, get general housing allowance."
+  },
+  {
+   "id": "R11",
+   "name": "Usually only one housing benefit at a time",
+   "applies_in_step": "C29",
+   "source": "kela-guide-gha-en.txt",
+   "quote": "You can usually be paid only one kind of housing benefit at a time."
+  },
+  {
+   "id": "R12",
+   "name": "Written rental agreement required for a rented home",
+   "applies_in_step": "C08",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos haet tukea vuokra-asuntoon, sinulla täytyy olla kirjallinen vuokrasopimus."
+  },
+  {
+   "id": "R13",
+   "name": "Rental agreement always required for a private landlord",
+   "applies_in_step": "C08",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "You must always send us your rental agreement if you have rented your flat from a private landlord."
+  },
+  {
+   "id": "R14",
+   "name": "Rental agreement needed in reviews only if its terms change and Kela lacks electronic data",
+   "applies_in_step": "C08",
+   "source": "kela-form-AT1e.txt",
+   "quote": "The rental agreement is needed in reviews of housing allowance in current payment only if the terms of the rental agreement change and Kela does not receive the information from the landlord in electronic form."
+  },
+  {
+   "id": "R15",
+   "name": "Contents the application must state",
+   "applies_in_step": "C15",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen hakijan on annettava Kansaneläkelaitokselle myös muut hakemuksen ratkaisemiseksi ja asumistuen maksamiseksi välttämättömät tiedot."
+  },
+  {
+   "id": "R16",
+   "name": "Disabled member needing extra space must be reported in section 10",
+   "applies_in_step": "C12",
+   "source": "kela-form-AT1e.txt",
+   "quote": "If your household includes a disabled person who needs extra living space or an assistant, provide details about this at section 10. Additional information."
+  },
+  {
+   "id": "R17",
+   "name": "Inaccurate address details may delay processing",
+   "applies_in_step": "C16",
+   "source": "kela-form-AT1e.txt",
+   "quote": "Inaccurate address details may cause a delay in the processing of the application."
+  },
+  {
+   "id": "R18",
+   "name": "Keep receipts; Kela may request them later",
+   "applies_in_step": "C25",
+   "source": "kela-form-AT1e.txt",
+   "quote": "Keep any receipts and documents related to your application because we may request them at a later stage, when necessary."
+  },
+  {
+   "id": "R19",
+   "name": "Information from other benefit cases may be used",
+   "applies_in_step": "C19",
+   "source": "kela-form-AT1e.txt",
+   "quote": "Any information obtained within the context of another benefit may also be used to decide the present matter."
+  },
+  {
+   "id": "R20",
+   "name": "Conditions for requesting data from financial institutions",
+   "applies_in_step": "C23",
+   "source": "law-938-2014.txt",
+   "quote": "jollei riittäviä tietoja ja selvityksiä muutoin saada ja on perusteltua syytä epäillä asumistuen hakijan tai saajan antamien tietojen riittävyyttä tai luotettavuutta eikä hän ole antanut suostumustaan tietojen saamiseen"
+  },
+  {
+   "id": "R21",
+   "name": "Decision deadline: 30 calendar days from receipt",
+   "applies_in_step": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen on annettava asumistukea koskeva päätös viimeistään kolmantenakymmenentenä kalenteripäivänä hakemuksen saapumisesta."
+  },
+  {
+   "id": "R22",
+   "name": "Incomplete application: Kela must act within the 30 days to clarify",
+   "applies_in_step": "C25",
+   "source": "law-938-2014.txt",
+   "quote": "Jos päätöstä ei hakemuksen puutteellisuuden vuoksi voida antaa 2 momentin mukaisessa määräajassa, Kansaneläkelaitoksen on mainitun määräajan kuluessa ryhdyttävä toimiin asian selvittämiseksi."
+  },
+  {
+   "id": "R23",
+   "name": "Retroactive grant at most from the month before application",
+   "applies_in_step": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuki myönnetään takautuvasti enintään hakemista edeltävältä kuukaudelta, jos tuen saamisen edellytykset ovat jo tuolloin täyttyneet."
+  },
+  {
+   "id": "R24",
+   "name": "Allowance always granted from the first day of a month",
+   "applies_in_step": "C29",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Housing allowance is always granted as of the first day of the month."
+  },
+  {
+   "id": "R25",
+   "name": "Allowance granted to the household; decision notified to the applicant",
+   "applies_in_step": "C29",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuki myönnetään ruokakunnalle. Päätös annetaan tiedoksi hakijalle."
+  },
+  {
+   "id": "R26",
+   "name": "Decision notice only in Finnish or Swedish",
+   "applies_in_step": "C29",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "The decision notice is only in Finnish or Swedish."
+  },
+  {
+   "id": "R27",
+   "name": "Appeal instructions come with every decision",
+   "applies_in_step": "C29",
+   "source": "kela-guide-gha-en.txt",
+   "quote": "You get instructions on how to appeal the decision with every decision notice you get from Kela."
+  },
+  {
+   "id": "R28",
+   "name": "Income limit",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos ruokakuntasi bruttotulot ovat suuremmat kuin alla esitetty tuloraja, et voi saada lainkaan asumistukea."
+  },
+  {
+   "id": "R29",
+   "name": "Assets of EUR 50,000 or more: no allowance",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos ruokakunnallasi on omaisuutta 50 000 euroa tai enemmän, asumistukea ei makseta lainkaan."
+  },
+  {
+   "id": "R30",
+   "name": "20% of assets above the 10,000/20,000 limit counted as income",
+   "applies_in_step": "C27",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos ruokakuntasi omaisuus ylittää 10 000 tai 20 000 euron rajan, otamme rajan ylittävästä osasta tuloksi huomioon 20 %."
+  },
+  {
+   "id": "R31",
+   "name": "Continuous income: lasts at least three months",
+   "applies_in_step": "C27",
+   "source": "law-938-2014.txt",
+   "quote": "Jatkuvana tulona pidetään vähintään kolmen kuukauden ajan tuen myöntämis- tai tarkistamisajankohdasta jatkuvaa tuloa."
+  },
+  {
+   "id": "R32",
+   "name": "Average income over the next 12 months",
+   "applies_in_step": "C27",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Keskiarvotulo saadaan laskemalla yhteen kaikki tulot, joita sinun arvioidaan saavan seuraavan 12 kuukauden aikana."
+  },
+  {
+   "id": "R33",
+   "name": "Income counts for the period in which it was earned",
+   "applies_in_step": "C27",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Tulosi vaikuttavat tukeen sen mukaan, miltä ajalta olet ne ansainnut."
+  },
+  {
+   "id": "R34",
+   "name": "Tax Administration data used in income assessment",
+   "applies_in_step": "C27",
+   "source": "kela-form-AT1e.txt",
+   "quote": "We also use information from the Tax Administration when assessing the income."
+  },
+  {
+   "id": "R35",
+   "name": "Fallback to taxed income if no reliable income information",
+   "applies_in_step": "C27",
+   "source": "law-938-2014.txt",
+   "quote": "Jos tuloista ei saada luotettavaa selvitystä, voidaan tuloina ottaa huomioon viimeksi toimitetussa verotuksessa vahvistetut veronalaiset tulot"
+  },
+  {
+   "id": "R36",
+   "name": "Some benefits are not counted as income",
+   "applies_in_step": "C27",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Tietyt tuet, kuten toimeentulotuki ja lapsilisä, eivät kuitenkaan vaikuta asumistukeen."
+  },
+  {
+   "id": "R37",
+   "name": "Earned income deduction of EUR 300 per month",
+   "applies_in_step": "C28",
+   "source": "law-938-2014.txt",
+   "quote": "Ruokakunnan jäsenen yhteenlasketuista palkkatuloista ja 12 §:n 4 momentin 1 kohdan mukaisista tuloista vähennetään 300 euroa kuukaudessa asumistuen määrää laskettaessa."
+  },
+  {
+   "id": "R38",
+   "name": "Allowance formula 0.7 x (acceptable housing costs - basic deductible)",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Yleisen asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu)."
+  },
+  {
+   "id": "R39",
+   "name": "Basic deductible formula",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Perusomavastuu = 0,5 x [T – (667 + 94 x A + 296 x L)]"
+  },
+  {
+   "id": "R40",
+   "name": "Housing costs capped at municipal maximum",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos asumismenosi ovat suuremmat kuin enimmäisasumismenot, voit silti saada asumistukea. Saat tukea kuitenkin enintään enimmäisasumismenojen mukaan."
+  },
+  {
+   "id": "R41",
+   "name": "Disabled member: maximum costs for one extra person",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan."
+  },
+  {
+   "id": "R42",
+   "name": "Flat water charge per person",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Vesimaksuksi hyväksytään 20 e/kk henkilöä kohti."
+  },
+  {
+   "id": "R43",
+   "name": "Subtenant's rent deducted from housing costs",
+   "applies_in_step": "C28",
+   "source": "kela-fi-tulot-ja-menot.txt",
+   "quote": "Jos sinulla on alivuokralainen, asumistuessasi hyväksyttävistä asumismenoista vähennetään alivuokralaisen maksama vuokran määrä."
+  },
+  {
+   "id": "R44",
+   "name": "Allowance under EUR 15 per month is not paid",
+   "applies_in_step": "C33",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If your housing allowance is less than EUR 15 per month, it is not paid out."
+  },
+  {
+   "id": "R45",
+   "name": "Statutory payment day: first or second working day, to an EU account",
+   "applies_in_step": "C33",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuki maksetaan kunkin kalenterikuukauden ensimmäisenä tai toisena arkipäivänä ruokakunnan edustajan tai hänen valtuuttamansa ilmoittamalle Euroopan unionissa sijaitsevalle tilille."
+  },
+  {
+   "id": "R46",
+   "name": "Banks closed: payment on next banking day",
+   "applies_in_step": "C33",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If the banks are closed on the scheduled payment date, the housing allowance will be paid on the next banking day."
+  },
+  {
+   "id": "R47",
+   "name": "Landlord payment needs the rent reference number reported by the applicant",
+   "applies_in_step": "C17",
+   "source": "kela-form-AT1e.txt",
+   "quote": "If the landlord has reported a reference number for payment of the rent, Kela can pay the housing allowance to the landlord only if you report the reference number to Kela."
+  },
+  {
+   "id": "R48",
+   "name": "Recipient's circumstances considered when assessing unpaid rent",
+   "applies_in_step": "C34",
+   "source": "law-938-2014.txt",
+   "quote": "Laiminlyöntiä arvioitaessa otetaan huomioon tuensaajan olosuhteet."
+  },
+  {
+   "id": "R49",
+   "name": "No appeal against interim decisions or landlord-payment decisions",
+   "applies_in_step": "C52",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen antamaan päätökseen ei saa hakea muutosta valittamalla, jos päätös on annettu väliaikaisena tai 25 §:n 2 momentin perusteella."
+  },
+  {
+   "id": "R50",
+   "name": "Only the applicant can report changes",
+   "applies_in_step": "C39",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Changes can only be reported by the person who applied for housing allowance for the household."
+  },
+  {
+   "id": "R51",
+   "name": "Changes are reported in OmaKela or by post",
+   "applies_in_step": "C39",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "You can report changes in the OmaKela e-service. If you cannot use OmaKela, send your application to Kela by post."
+  },
+  {
+   "id": "R52",
+   "name": "Statutory list of changes the recipient must report",
+   "applies_in_step": "C39",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuen saajan on ilmoitettava Kansaneläkelaitokselle:"
+  },
+  {
+   "id": "R53",
+   "name": "Review threshold: continuous income up EUR 400 or down EUR 200",
+   "applies_in_step": "C40",
+   "source": "law-938-2014.txt",
+   "quote": "ruokakunnan jatkuvat kuukausitulot ovat nousseet vähintään 400 euroa tai alentuneet vähintään 200 euroa;"
+  },
+  {
+   "id": "R54",
+   "name": "Report rent or residence charge changes of EUR 50 or more",
+   "applies_in_step": "C39",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "the rent or residence charge paid by your household decreases or increases by EUR 50 or more per month"
+  },
+  {
+   "id": "R55",
+   "name": "Review without application when Kela has all grounds",
+   "applies_in_step": "C40",
+   "source": "law-938-2014.txt",
+   "quote": "Asumistuki voidaan tarkistaa ilman hakemusta, jos kaikki tarkistamisen perusteet ovat Kansaneläkelaitoksen käytettävissä."
+  },
+  {
+   "id": "R56",
+   "name": "Effective date of an income-change review",
+   "applies_in_step": "C40",
+   "source": "law-938-2014.txt",
+   "quote": "1 kohdan perusteella sitä kuukautta seuraavan kuukauden alusta, jonka 1 päivästä mainitussa kohdassa tarkoitettu tulojen muutos on voimassa;"
+  },
+  {
+   "id": "R57",
+   "name": "Effective date of a housing-cost or move review",
+   "applies_in_step": "C40",
+   "source": "law-938-2014.txt",
+   "quote": "2 ja 3 kohdan perusteella sen kuukauden alusta, josta muuttuneita tai uusia asumismenoja maksetaan koko kuukaudelta;"
+  },
+  {
+   "id": "R58",
+   "name": "Rise in housing costs not reviewed if it would lower the allowance, unless income also rose",
+   "applies_in_step": "C40",
+   "source": "law-938-2014.txt",
+   "quote": "Jos asumistuki alenisi, asumistuen määrää ei kuitenkaan 2 momentin 2 kohdassa tarkoitetussa tapauksessa tarkisteta asumismenojen nousun perusteella, ellei myös jatkuvissa kuukausituloissa ole tapahtunut 2 momentin 1 kohdassa tarkoitettua nousua."
+  },
+  {
+   "id": "R59",
+   "name": "Annual review at least every 12 months",
+   "applies_in_step": "C43",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Kela will review your housing allowance at least every 12 months even if your household’s circumstances do not change."
+  },
+  {
+   "id": "R60",
+   "name": "Termination channel when OmaKela cannot be used: form AT 6e",
+   "applies_in_step": "C41",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "If you cannot use OmaKela, fill in the form ‘General housing allowance - Termination of housing allowance’ AT 6e (PDF)."
+  },
+  {
+   "id": "R61",
+   "name": "Termination from the month after moving out",
+   "applies_in_step": "C42",
+   "source": "law-938-2014.txt",
+   "quote": "muuttoa seuraavan kuukauden alusta, jos ruokakunta muuttaa pois asunnosta, johon asumistukea on myönnetty, jollei asumistukea tarkisteta 27 §:n 2 momentin 3 kohdan perusteella;"
+  },
+  {
+   "id": "R62",
+   "name": "Termination if review information is not given within a reasonable time after Kela's request",
+   "applies_in_step": "C42",
+   "source": "law-938-2014.txt",
+   "quote": "sen kuukauden alusta, josta 27 §:n 1 momentissa tarkoitettu tarkistus tulisi voimaan, jos ruokakunta ei Kansaneläkelaitoksen kehotuksesta kohtuullisessa ajassa anna asumistuen tarkistamiseksi tarvittavia tietoja"
+  },
+  {
+   "id": "R63",
+   "name": "Single person away from home 3 months or more loses entitlement",
+   "applies_in_step": "C42",
+   "source": "kela-en-general-housing-allowance.txt",
+   "quote": "Your right to housing allowance ends if you are away from your home for 3 months or more."
+  },
+  {
+   "id": "R64",
+   "name": "Recovery primarily from the applicant",
+   "applies_in_step": "C47",
+   "source": "law-938-2014.txt",
+   "quote": "Tuki peritään ensisijaisesti tuen hakijalta."
+  },
+  {
+   "id": "R65",
+   "name": "Recovery decision is appealable",
+   "applies_in_step": "C47",
+   "source": "law-938-2014.txt",
+   "quote": "Takaisinperinnästä annetaan valituskelpoinen päätös."
+  },
+  {
+   "id": "R66",
+   "name": "Recovery may be offset against later benefits",
+   "applies_in_step": "C47",
+   "source": "law-938-2014.txt",
+   "quote": "Takaisin perittävä määrä voidaan kuitata Kansaneläkelaitoksen myöhemmin maksamasta asumistuesta tai siihen rinnastettavasta muusta etuudesta."
+  },
+  {
+   "id": "R67",
+   "name": "Final recovery decision enforceable like a judgment",
+   "applies_in_step": "C47",
+   "source": "law-938-2014.txt",
+   "quote": "Takaisinperintää koskeva lainvoimainen päätös saadaan panna täytäntöön kuten lainvoimainen tuomio."
+  },
+  {
+   "id": "R68",
+   "name": "Decision deemed received on the 7th day after posting",
+   "applies_in_step": "C52",
+   "source": "law-938-2014.txt",
+   "quote": "Asianosaisen katsotaan saaneen päätöksestä tiedon seitsemäntenä päivänä sen päivän jälkeen, jona päätös on postitettu hänen ilmoittamaansa osoitteeseen, jos muutoksenhaun yhteydessä ei muuta näytetä."
+  },
+  {
+   "id": "R69",
+   "name": "Kela's decision is followed during the appeal",
+   "applies_in_step": "C52",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitoksen päätöstä on muutoksenhausta huolimatta noudatettava, kunnes asia on lainvoimaisella päätöksellä ratkaistu."
+  },
+  {
+   "id": "R70",
+   "name": "Late appeal may be examined for a weighty reason",
+   "applies_in_step": "C52",
+   "source": "law-938-2014.txt",
+   "quote": "Jos sosiaaliturvan muutoksenhakulautakunnalle tai vakuutusoikeudelle annettava valitus on saapunut 35 §:ssä säädetyn määräajan jälkeen, valitus voidaan ottaa tutkittavaksi, jos myöhästymiseen on ollut painava syy."
+  },
+  {
+   "id": "R71",
+   "name": "Interim rectification possible while appeal is pending",
+   "applies_in_step": "C54",
+   "source": "law-938-2014.txt",
+   "quote": "Kansaneläkelaitos voi tällöin väliaikaisella päätöksellä oikaista aikaisemman päätöksensä siltä osin kuin se hyväksyy valituksessa esitetyn vaatimuksen."
+  },
+  {
+   "id": "R72",
+   "name": "Insurance Court decision is final",
+   "applies_in_step": "C56",
+   "source": "law-938-2014.txt",
+   "quote": "Vakuutusoikeuden päätökseen ei saa hakea muutosta valittamalla."
+  },
+  {
+   "id": "R73",
+   "name": "Correction to a party's detriment requires consent",
+   "applies_in_step": "C57",
+   "source": "law-938-2014.txt",
+   "quote": "Päätöksen korjaaminen asianosaisen vahingoksi edellyttää, että asianosainen suostuu päätöksen korjaamiseen."
+  },
+  {
+   "id": "R74",
+   "name": "Parties must be heard before annulment is decided",
+   "applies_in_step": "C59",
+   "source": "law-938-2014.txt",
+   "quote": "Sosiaaliturvan muutoksenhakulautakunnan on varattava asianosaisille tilaisuus tulla kuulluksi ennen asian ratkaisemista."
+  },
+  {
+   "id": "R75",
+   "name": "Annulment must be sought within five years",
+   "applies_in_step": "C59",
+   "source": "law-938-2014.txt",
+   "quote": "Päätöksen poistamista on haettava viiden vuoden kuluessa siitä, kun päätös sai lainvoiman."
+  }
+ ],
+ "questions": [
+  {
+   "gap": "For every step the documents attribute only to 'Kela', 'we' or 'Kansaneläkelaitos' (or state in the passive), who actually performs it: a caseworker or the system? The public documents never say, so those steps are recorded as who='unknown'.",
+   "where_it_would_matter": "C19"
+  },
+  {
+   "gap": "Is any part of application handling (income determination, calculation, decision) automated? No public document says whether any step is automatic or manual on Kela's side.",
+   "where_it_would_matter": "C28"
+  },
+  {
+   "gap": "When the annual-review information is not submitted in time, who stops the payment, and is it done automatically? What counts as a 'reasonable time' (kohtuullinen aika) after Kela's request, and is a termination decision sent?",
+   "where_it_would_matter": "C42"
+  },
+  {
+   "gap": "How is the annual-review date set and the instruction message (about two months ahead) generated, and how are recipients who do not use OmaKela informed?",
+   "where_it_would_matter": "C44"
+  },
+  {
+   "gap": "Does a change review start only from the recipient's notification, or also from data Kela receives itself (e.g. Incomes Register)? Which reviews are done 'without application' under 27 §, and by whom?",
+   "where_it_would_matter": "C40"
+  },
+  {
+   "gap": "No document states what happens between a received application and the processing step (registration, routing, queueing), or who processes it.",
+   "where_it_would_matter": "C19"
+  },
+  {
+   "gap": "Who or what sends the missing-attachment reminder in OmaKela, when, and what deadline or consequence follows if the documents are not supplied?",
+   "where_it_would_matter": "C24"
+  },
+  {
+   "gap": "No document states the order between income determination, calculation and decision (e.g. does calculation always precede the decision, and is it repeated in reviews?).",
+   "where_it_would_matter": "C28"
+  },
+  {
+   "gap": "How does Kela learn that rent has been unpaid for two consecutive months (landlord report or other source), and what can the recipient do after being contacted before payment to the landlord?",
+   "where_it_would_matter": "C34"
+  },
+  {
+   "gap": "Payment day conflict: the law says the first or second working day of the month (24 §); the Kela pages and guide say the first banking day. Which is current practice?",
+   "where_it_would_matter": "C33"
+  },
+  {
+   "gap": "The law file contains two versions of several sections (4, 8, 9, 15, 20, 27, 28, 29, 41 §) and amounts that differ from Kela's pages (80% vs 70%, basic deductible 42%/555 vs 0.5/667, water 17 vs 20 EUR, heating 38 vs 46 EUR, maximum housing costs). Which versions and amounts are in force?",
+   "where_it_would_matter": "C28"
+  },
+  {
+   "gap": "Law 7 § allows allowance for owner-occupied homes, but the Kela pages say an owner-occupied home gets no general housing allowance. Which applies?",
+   "where_it_would_matter": "C29"
+  },
+  {
+   "gap": "Is a written decision issued for every review even when the amount does not change, and is a decision issued when the recipient requests termination?",
+   "where_it_would_matter": "C29"
+  },
+  {
+   "gap": "Is a decision issued directly after calculation, or is there an approval or quality-check step? The documents describe no approval step.",
+   "where_it_would_matter": "C29"
+  },
+  {
+   "gap": "Between a temporary suspension and the final decision, how is the recipient asked for clarification, and within what deadline?",
+   "where_it_would_matter": "C46"
+  },
+  {
+   "gap": "How is an overpayment detected (recipient report, data match, landlord notice, review), and who starts recovery?",
+   "where_it_would_matter": "C47"
+  },
+  {
+   "gap": "Channels for reporting changes differ: the web page says OmaKela or post, the guide adds phone and service points, the income page names form AT 1. Which channels are accepted for reporting changes?",
+   "where_it_would_matter": "C39"
+  },
+  {
+   "gap": "How does Kela learn that a single person has been away from home for 3 months or more, and does termination happen from the 4th month (old 29 § 6 item, absent from the newer version) or otherwise?",
+   "where_it_would_matter": "C42"
+  },
+  {
+   "gap": "Is an application made with the combined online form (general social security benefit + housing allowance) processed and decided in the same flow as a housing-allowance-only application?",
+   "where_it_would_matter": "C10"
+  },
+  {
+   "gap": "After the landlord notifies Kela that the tenancy has ended (25 § 3), what happens next: review, termination or recovery from the landlord? No sentence states the next step.",
+   "where_it_would_matter": "C37"
+  },
+  {
+   "gap": "Student eligibility differs: the guide says a student is eligible only when living with their own or partner's child, while the web pages list further situations. Which is correct?",
+   "where_it_would_matter": "C29"
+  },
+  {
+   "gap": "When Kela receives rental data electronically from a landlord, how is it matched to the application, and by whom?",
+   "where_it_would_matter": "C07"
+  },
+  {
+   "gap": "What triggers correction, re-examination or re-decision of a decision (38, 39 and 41 §), who detects the need, and how do these steps connect to the decision and payment steps? No sentence states their predecessors or successors.",
+   "where_it_would_matter": "C57"
+  },
+  {
+   "gap": "The documents do not say who checks whether a person who moved to Finland is permanently resident, or how the Y 77e notification is linked to the housing allowance application.",
+   "where_it_would_matter": "C04"
+  }
+ ]
+}

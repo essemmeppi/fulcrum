@@ -1,0 +1,481 @@
+{
+ "official_to_generated": [
+  {
+   "official_id": "22",
+   "official_name": "Voraussetzungen nach § 25 AufenthG beurteilen (Zuständigkeit BAMF)",
+   "matched_node_ids": [
+    "N30"
+   ],
+   "match_type": "partial",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "02",
+   "official_name": "Zuständigkeit prüfen",
+   "matched_node_ids": [
+    "N04"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "23",
+   "official_name": "Fiktionsbescheinigung ausstellen",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "44",
+   "official_name": "Gebührenerhebung veranlassen",
+   "matched_node_ids": [
+    "N53"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "43",
+   "official_name": "Gebührenerhebung beurteilen",
+   "matched_node_ids": [
+    "N53"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "31",
+   "official_name": "Information bearbeiten",
+   "matched_node_ids": [
+    "N13"
+   ],
+   "match_type": "partial",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "40",
+   "official_name": "Ablehnungsbescheid erstellen",
+   "matched_node_ids": [
+    "N43"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "11",
+   "official_name": "Information an Ausländerzentralregister übermitteln",
+   "matched_node_ids": [
+    "N59"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "28",
+   "official_name": "Bestelldaten für Aufenthaltstitel übermitteln",
+   "matched_node_ids": [
+    "N56"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "32",
+   "official_name": "Widerspruch entgegennehmen",
+   "matched_node_ids": [
+    "N46"
+   ],
+   "match_type": "partial",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "06",
+   "official_name": "Antrag auf Vollständigkeit prüfen",
+   "matched_node_ids": [
+    "N08"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "41",
+   "official_name": "Ablehnungsbescheid bekannt geben",
+   "matched_node_ids": [
+    "N44"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "29",
+   "official_name": "Aufenthaltstitel aushändigen",
+   "matched_node_ids": [
+    "N58"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "08",
+   "official_name": "Unterschrift erfassen",
+   "matched_node_ids": [
+    "N55"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "25",
+   "official_name": "Dauer des Aufenthalts festlegen",
+   "matched_node_ids": [
+    "N51"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "01",
+   "official_name": "Unterlagen entgegennehmen",
+   "matched_node_ids": [
+    "N03"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "13",
+   "official_name": "Auskunft zu möglichen Versagungsgründen oder sonstigen Sicherheitsbedenken erteilen",
+   "matched_node_ids": [
+    "N20"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "42",
+   "official_name": "Antrag weiterleiten",
+   "matched_node_ids": [
+    "N05"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "12",
+   "official_name": "Auskunft zu möglichen Versagungsgründen oder sonstigen Sicherheitsbedenken einholen",
+   "matched_node_ids": [
+    "N19"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "38",
+   "official_name": "Voraussetzungen für einen anderen Aufenthaltstitel prüfen",
+   "matched_node_ids": [],
+   "match_type": "none",
+   "legal_basis_match": null
+  },
+  {
+   "official_id": "07",
+   "official_name": "Angaben klären",
+   "matched_node_ids": [
+    "N09",
+    "N10"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "10",
+   "official_name": "Fingerabdruck erfassen",
+   "matched_node_ids": [
+    "N55",
+    "N12"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "09",
+   "official_name": "Authentifizierung durchführen",
+   "matched_node_ids": [
+    "N18"
+   ],
+   "match_type": "partial",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "35",
+   "official_name": "Sicherheitsrechtliche Befragung durchführen",
+   "matched_node_ids": [],
+   "match_type": "none",
+   "legal_basis_match": null
+  },
+  {
+   "official_id": "19",
+   "official_name": "Voraussetzungen nach § 25 AufenthG beurteilen",
+   "matched_node_ids": [
+    "N31",
+    "N32",
+    "N34"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "39",
+   "official_name": "Antrag weiterleiten",
+   "matched_node_ids": [
+    "N05"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "17",
+   "official_name": "Voraussetzungen nach § 23a AufenthG beurteilen",
+   "matched_node_ids": [
+    "N28"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "28",
+   "official_name": "Aufenthaltstitel produzieren",
+   "matched_node_ids": [
+    "N57"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "16",
+   "official_name": "Voraussetzungen nach § 23 AufenthG beurteilen",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "37",
+   "official_name": "Anhörung durchführen",
+   "matched_node_ids": [
+    "N40",
+    "N41"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "26",
+   "official_name": "Über die Erteilung des Aufenthaltstitels informieren",
+   "matched_node_ids": [
+    "N58"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": false
+  },
+  {
+   "official_id": "15",
+   "official_name": "Voraussetzungen nach § 22 AufenthG beurteilen",
+   "matched_node_ids": [
+    "N24"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "21",
+   "official_name": "Voraussetzungen nach § 25b AufenthG beurteilen",
+   "matched_node_ids": [
+    "N36"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "05",
+   "official_name": "Amtshilfe zur Überprüfung der Identität leisten",
+   "matched_node_ids": [],
+   "match_type": "none",
+   "legal_basis_match": null
+  },
+  {
+   "official_id": "14",
+   "official_name": "Gründe prüfen",
+   "matched_node_ids": [
+    "N23"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "30",
+   "official_name": "Daten zum Aufenthaltstitel übermitteln",
+   "matched_node_ids": [
+    "N59"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "34",
+   "official_name": "Auf sicherheitsrechtlichen Zweck der Befragung und Rechtsfolgen hinweisen",
+   "matched_node_ids": [],
+   "match_type": "none",
+   "legal_basis_match": null
+  },
+  {
+   "official_id": "18",
+   "official_name": "Voraussetzungen nach § 24 AufenthG beurteilen",
+   "matched_node_ids": [
+    "N29"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "20",
+   "official_name": "Voraussetzungen nach § 25a AufenthG beurteilen",
+   "matched_node_ids": [
+    "N35"
+   ],
+   "match_type": "exact",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "24",
+   "official_name": "Fiktionsbescheinigung aushändigen",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "36",
+   "official_name": "Erfordernis Anhörung prüfen",
+   "matched_node_ids": [
+    "N40"
+   ],
+   "match_type": "merged",
+   "legal_basis_match": true
+  },
+  {
+   "official_id": "33",
+   "official_name": "Widerspruchsverfahren einleiten",
+   "matched_node_ids": [
+    "N47"
+   ],
+   "match_type": "partial",
+   "legal_basis_match": true
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "node_id": "N01",
+   "reason": "not in official model: start event (need for a permit arises); the FIM catalogue lists activity groups only, no events"
+  },
+  {
+   "node_id": "N02",
+   "reason": "citizen-side step the official model does not list: applicant files the application and evidence (FIM starts with the authority receiving documents, 01)"
+  },
+  {
+   "node_id": "N06",
+   "reason": "not in official model: end event (case handed over because the authority is not competent); FIM lists no events"
+  },
+  {
+   "node_id": "N07",
+   "reason": "not in official model: notice on duties to cooperate under § 82 Abs. 3 AufenthG has no activity group (FIM's only notice is the security-interview notice, 34)"
+  },
+  {
+   "node_id": "N11",
+   "reason": "rule as step: the § 81 Abs. 7 precondition (certificate/title only after identity is secured) turned into a decision gate; FIM has only the capture step (10)"
+  },
+  {
+   "node_id": "N14",
+   "reason": "rule as step: the fiction effects of § 81 Abs. 3/4 arise by law; FIM folds them into issuing the Fiktionsbescheinigung (23)"
+  },
+  {
+   "node_id": "N15",
+   "reason": "not in official model: discretionary order that the previous title continues for late applications (§ 81 Abs. 4 Satz 3)"
+  },
+  {
+   "node_id": "N17",
+   "reason": "rule as step: general duty to investigate ex officio (§ 24 VwVfG, § 79 Abs. 1 AufenthG); FIM splits it into concrete groups (07 Angaben klären, 12 security query)"
+  },
+  {
+   "node_id": "N21",
+   "reason": "not in official model: check for pending criminal or administrative-offence proceedings (§ 79 Abs. 2 AufenthG)"
+  },
+  {
+   "node_id": "N22",
+   "reason": "not in official model: suspension of the decision until criminal proceedings end (§ 79 Abs. 2 AufenthG)"
+  },
+  {
+   "node_id": "N26",
+   "reason": "not in official model: the hardship commission's request precedes the ABH procedure; the commission is not an FIM participant"
+  },
+  {
+   "node_id": "N27",
+   "reason": "not in official model: the hardship order by the supreme Land authority (§ 23a Abs. 1) precedes the ABH procedure; FIM only has the ABH assessing § 23a (17)"
+  },
+  {
+   "node_id": "N33",
+   "reason": "not in official model: prosecutor/court assessment for § 25 Abs. 4a/4b; FIM keeps it inside the § 25 assessment (19) and lists no prosecutor participant"
+  },
+  {
+   "node_id": "N37",
+   "reason": "not in official model: the § 5 general requirements have no activity group of their own; FIM checks them inside identity, authentication and security-query groups (09, 10, 12 cite § 5) and the ground-specific assessments"
+  },
+  {
+   "node_id": "N38",
+   "reason": "rule as step: exercise of discretion is a legal element of the 'kann'/'soll' grounds, not a separate unit of work; in FIM it sits inside the assessments (15-22)"
+  },
+  {
+   "node_id": "N39",
+   "reason": "not in official model: overall grant/refuse gateway; FIM has no decision group, the outcome follows from the assessments (14-22) and leads to the refusal notice (40) or title ordering (28)"
+  },
+  {
+   "node_id": "N42",
+   "reason": "not in official model: separate evaluation of the hearing comments; FIM has only the hearing itself (37)"
+  },
+  {
+   "node_id": "N45",
+   "reason": "citizen-side step the official model does not list: applicant decides whether to lodge an objection"
+  },
+  {
+   "node_id": "N48",
+   "reason": "not in official model: objection decision by the objection authority is a separate procedure; FIM stops at receiving the objection and initiating proceedings (32, 33)"
+  },
+  {
+   "node_id": "N49",
+   "reason": "not in official model: end event (objection rejected)"
+  },
+  {
+   "node_id": "N50",
+   "reason": "not in official model: end event (refusal becomes final)"
+  },
+  {
+   "node_id": "N52",
+   "reason": "not in official model: ancillary provisions (employment permission, residence obligation) have no activity group"
+  },
+  {
+   "node_id": "N54",
+   "reason": "citizen-side step the official model does not list: applicant pays the fee (FIM has only the authority's fee assessment and charging, 43/44)"
+  },
+  {
+   "node_id": "N60",
+   "reason": "not in official model: end event (permit granted)"
+  }
+ ],
+ "missing_participants": [
+  "Dolmetscher",
+  "Bundeskriminalamt (BKA)"
+ ]
+}

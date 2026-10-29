@@ -1,0 +1,484 @@
+{
+ "process": "Antrag Erteilung Aufenthaltserlaubnis aus völkerrechtlichen, humanitären oder politischen Gründen bearbeiten (FIM 99010022001000 v01.00.00)",
+ "participants": [
+  {
+   "name": "Antragstellende Person"
+  },
+  {
+   "name": "Ausländerbehörde"
+  },
+  {
+   "name": "Dolmetscher"
+  },
+  {
+   "name": "Bundeskriminalamt (BKA)"
+  },
+  {
+   "name": "Bundesdruckerei GmbH"
+  },
+  {
+   "name": "Bundesverwaltungsamt (BVA)"
+  },
+  {
+   "name": "Antragstellende Person"
+  }
+ ],
+ "activity_groups": [
+  {
+   "id": "22",
+   "name": "Voraussetzungen nach § 25 AufenthG beurteilen (Zuständigkeit BAMF)",
+   "legal_bases": [
+    "§ 25 Abs. 1-3  AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 25 Aufenthalt aus humanitären Gründen\n(1)\nEinem Ausländer ist eine Aufenthaltserlaubnis zu erteilen, wenn er als Asylberechtigter anerkannt ist. Dies gilt nicht, wenn der Ausländer unter den Vorauss"
+  },
+  {
+   "id": "02",
+   "name": "Zuständigkeit prüfen",
+   "legal_bases": [
+    "§ 71 (1) - (2) AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "§ 71 AufenthG (Zuständigkeit)\n(1)\nFür aufenthalts- und passrechtliche Maßnahmen und Entscheidungen nach diesem Gesetz und nach ausländerrechtlichen Bestimmungen in anderen Gesetzen sind die Ausländerb"
+  },
+  {
+   "id": "23",
+   "name": "Fiktionsbescheinigung ausstellen",
+   "legal_bases": [
+    "§ 81 (5) AufenthG",
+    "§ 25 (1) S. 3, (2) S. 2 AufenthG"
+   ],
+   "participant_roles": [
+    "bearbeitungsart="
+   ],
+   "description": "§ 81 AufenthG (Beantragung des Aufenthaltstitels)\n(5)\nDem Ausländer ist eine Bescheinigung über die Wirkung seiner Antragstellung (Fiktionsbescheinigung) auszustellen.\n \n§ 25 Aufenthalt aus humanitäre"
+  },
+  {
+   "id": "44",
+   "name": "Gebührenerhebung veranlassen",
+   "legal_bases": [
+    "§ 69 AufenthG",
+    "§ 45 AufenthV"
+   ],
+   "participant_roles": [],
+   "description": "§ 69 AufenthG (Gebühren)\n(1) \nFür individuell zurechenbare öffentliche Leistungen nach diesem Gesetz und den zur Durchführung dieses Gesetzes erlassenen Rechtsverordnungen werden Gebühren und Auslagen"
+  },
+  {
+   "id": "43",
+   "name": "Gebührenerhebung beurteilen",
+   "legal_bases": [
+    "§ 69 AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 69 AufenthG (Gebühren)\n(1)\nFür individuell zurechenbare öffentliche Leistungen nach diesem Gesetz und den zur Durchführung dieses Gesetzes erlassenen Rechtsverordnungen werden Gebühren und Auslagen "
+  },
+  {
+   "id": "31",
+   "name": "Information bearbeiten",
+   "legal_bases": [
+    "§ 90b AufenthG",
+    "§ 91d (4)-(5) AufenthG",
+    "§ 6 Abs. 1 Nummer 1 i.V.m. Abs. 2 Satz 1 und Satz 3 Nummer 1 AZRG"
+   ],
+   "participant_roles": [],
+   "description": ""
+  },
+  {
+   "id": "40",
+   "name": "Ablehnungsbescheid erstellen",
+   "legal_bases": [
+    "§ 35 VwVfG",
+    "§ 35a VwVfG",
+    "§ 37 VwVfG",
+    "§ 39 VwVfG"
+   ],
+   "participant_roles": [
+    "bearbeitungsart="
+   ],
+   "description": ""
+  },
+  {
+   "id": "11",
+   "name": "Information an Ausländerzentralregister übermitteln",
+   "legal_bases": [
+    "§ 90b AufenthG",
+    "§ 91d (4)-(5) AufenthG",
+    "§ 6 Abs. 1 Nummer 1 i.V.m. Abs. 2 Satz 1 und Satz 3 Nummer 1 AZRG"
+   ],
+   "participant_roles": [],
+   "description": "§ 90b AufenthG (Datenabgleich zwischen Ausländer- und Meldebehörden)\nDie Ausländer- und Meldebehörden übermitteln einander jährlich die in § 90a Abs. 2 genannten Daten zum Zweck der Datenpflege, sowei"
+  },
+  {
+   "id": "28",
+   "name": "Bestelldaten für Aufenthaltstitel übermitteln",
+   "legal_bases": [
+    "§ 61c AufenthG i.V.m. AufenthV"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 61c AufenthV (Übermittlung der Daten an den Dokumentenhersteller)\n(1)\nNach der Erfassung werden sämtliche Antragsdaten in den Ausländerbehörden zu einem digitalen Datensatz zusammengeführt und an de"
+  },
+  {
+   "id": "32",
+   "name": "Widerspruch entgegennehmen",
+   "legal_bases": [
+    "§ 79 VwVfG"
+   ],
+   "participant_roles": [],
+   "description": ""
+  },
+  {
+   "id": "06",
+   "name": "Antrag auf Vollständigkeit prüfen",
+   "legal_bases": [
+    "§ 86 AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "§ 86 AufenthG (Erhebung personenbezogener Daten)\nDie mit der Ausführung dieses Gesetzes betrauten Behörden dürfen zum Zweck der Ausführung dieses Gesetzes und ausländerrechtlicher Bestimmungen in ande"
+  },
+  {
+   "id": "41",
+   "name": "Ablehnungsbescheid bekannt geben",
+   "legal_bases": [
+    "§ 35 VwVfG",
+    "§ 35a VwVfG",
+    "§ 37 VwVfG",
+    "§ 39 VwVfG"
+   ],
+   "participant_roles": [],
+   "description": ""
+  },
+  {
+   "id": "29",
+   "name": "Aufenthaltstitel aushändigen",
+   "legal_bases": [],
+   "participant_roles": [],
+   "description": "Diese Aktivitätengruppe ist nicht direkt aus dem Gesetz ableitbar. Die oberste Fachbehörde hat entschieden, dass diese Aktivitätengruppe als Empfehlung im Stammprozess bleiben soll."
+  },
+  {
+   "id": "08",
+   "name": "Unterschrift erfassen",
+   "legal_bases": [
+    "§ 78 (1) AufenthG",
+    "§ 78a (4) AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 78 AufenthG (Dokumente mit elektronischem Speicher- und Verarbeitungsmedium)\n(1)\nAufenthaltstitel nach § 4 Absatz 1 Satz 2 Nummer 2 bis 4 werden als eigenständige Dokumente mit elektronischem Speich"
+  },
+  {
+   "id": "25",
+   "name": "Dauer des Aufenthalts festlegen",
+   "legal_bases": [
+    "§ 26 AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 26 AufenthG (Dauer des Aufenthalts)\n(1)\nDie Aufenthaltserlaubnis nach diesem Abschnitt kann für jeweils längstens drei Jahre erteilt und verlängert werden, in den Fällen des § 25 Abs. 4 Satz 1 und A"
+  },
+  {
+   "id": "01",
+   "name": "Unterlagen entgegennehmen",
+   "legal_bases": [
+    "§ 81 (1) AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "§ 81 AufenthG (Beantragung des Aufenthaltstitels)\n(1)\nEin Aufenthaltstitel wird einem Ausländer nur auf seinen Antrag erteilt, soweit nichts anderes bestimmt ist."
+  },
+  {
+   "id": "13",
+   "name": "Auskunft zu möglichen Versagungsgründen oder sonstigen Sicherheitsbedenken erteilen",
+   "legal_bases": [
+    "§ 15 (1) AZRG",
+    "§ 73 AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 15 AZRG (Datenübermittlung an Ausländerbehörden, das Bundesamt für Migration und Flüchtlinge, Polizeibehörden, Staatsanwaltschaften, Luftsicherheitsbehörden, atomrechtliche Genehmigungs- und Aufsich"
+  },
+  {
+   "id": "42",
+   "name": "Antrag weiterleiten",
+   "legal_bases": [],
+   "participant_roles": [],
+   "description": "Diese Aktivitätengruppe ist nicht direkt aus dem Gesetz ableitbar. Die oberste Fachbehörde hat entschieden, dass diese Aktivitätengruppe als Empfehlung im Stammprozess bleiben soll."
+  },
+  {
+   "id": "12",
+   "name": "Auskunft zu möglichen Versagungsgründen oder sonstigen Sicherheitsbedenken einholen",
+   "legal_bases": [
+    "§ 15 (1) AZRG",
+    "§ 73 AufenthG",
+    "§ 5 (1) AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 15 AZRG (Datenübermittlung an Ausländerbehörden, das Bundesamt für Migration und Flüchtlinge, Polizeibehörden, Staatsanwaltschaften, Luftsicherheitsbehörden, atomrechtliche Genehmigungs- und Aufsich"
+  },
+  {
+   "id": "38",
+   "name": "Voraussetzungen für einen anderen Aufenthaltstitel prüfen",
+   "legal_bases": [
+    "§ 60a (2) AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 60a AufenthG (Vorübergehende Aussetzung der Abschiebung (Duldung))\n(2)\nDie Abschiebung eines Ausländers ist auszusetzen, solange die Abschiebung aus tatsächlichen oder rechtlichen Gründen unmöglich "
+  },
+  {
+   "id": "07",
+   "name": "Angaben klären",
+   "legal_bases": [
+    "§ 82 (1) AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 82 AufenthG (Mitwirkungspflichten)\n (1) (...)\nDie Ausländerbehörde kann ihm dafür eine angemessene Frist setzen. Sie setzt ihm eine solche Frist, wenn sie die Bearbeitung eines Antrags auf Erteilung"
+  },
+  {
+   "id": "10",
+   "name": "Fingerabdruck erfassen",
+   "legal_bases": [
+    "§ 49 (1), (6), (6a), (8), (9) AufenthG",
+    "§ 5 AufenthG",
+    "§ 61a AufenthV",
+    "§ 82 (5) AufenthG",
+    "§ 86 AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 49 AufenthG (Überprüfung, Feststellung und Sicherung der Identität)\n(1) \nDie mit dem Vollzug dieses Gesetzes betrauten Behörden dürfen unter den Voraussetzungen des § 48 Abs. 1 die auf dem elektroni"
+  },
+  {
+   "id": "09",
+   "name": "Authentifizierung durchführen",
+   "legal_bases": [
+    "§ 49 AufenthG",
+    "§ 5 AufenthG",
+    "§ 61a AufenthV",
+    "§ 82 (5) AufenthG",
+    "§ 86 AufenthG",
+    "§ 89 (1)-(2) AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "§ 49 AufenthG (Überprüfung, Feststellung und Sicherung der Identität)\n(1)\nDie mit dem Vollzug dieses Gesetzes betrauten Behörden dürfen unter den Voraussetzungen des § 48 Abs. 1 die auf dem elektronis"
+  },
+  {
+   "id": "35",
+   "name": "Sicherheitsrechtliche Befragung durchführen",
+   "legal_bases": [
+    "§ 54 (2) Nr. 7 AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 54 Abs. 2 Nr. 7 AufenthG\n7. in einer Befragung, die der Klärung von Bedenken gegen die Einreise oder den weiteren Aufenthalt dient, der deutschen Auslandsvertretung oder der Ausländerbehörde gegenüb"
+  },
+  {
+   "id": "19",
+   "name": "Voraussetzungen nach § 25 AufenthG beurteilen",
+   "legal_bases": [
+    "§ 25 AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 25 Aufenthalt aus humanitären Gründen\n(1)\nEinem Ausländer ist eine Aufenthaltserlaubnis zu erteilen, wenn er als Asylberechtigter anerkannt ist. Dies gilt nicht, wenn der Ausländer unter den Vorauss"
+  },
+  {
+   "id": "39",
+   "name": "Antrag weiterleiten",
+   "legal_bases": [],
+   "participant_roles": [],
+   "description": "Diese Aktivitätengruppe ist nicht direkt aus dem Gesetz ableitbar. Die oberste Fachbehörde hat entschieden, dass diese Aktivitätengruppe als Empfehlung im Stammprozess bleiben soll."
+  },
+  {
+   "id": "17",
+   "name": "Voraussetzungen nach § 23a AufenthG beurteilen",
+   "legal_bases": [
+    "§ 23a AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 23a Aufenthaltsgewährung in Härtefällen\n(1)\nDie oberste Landesbehörde darf anordnen, dass einem Ausländer, der vollziehbar ausreisepflichtig ist, abweichend von den in diesem Gesetz festgelegten Ert"
+  },
+  {
+   "id": "28",
+   "name": "Aufenthaltstitel produzieren",
+   "legal_bases": [
+    "§ 61c AufenthG i.V.m. AufenthV"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 61c AufenthV (Übermittlung der Daten an den Dokumentenhersteller)\n(1)\nNach der Erfassung werden sämtliche Antragsdaten in den Ausländerbehörden zu einem digitalen Datensatz zusammengeführt und an de"
+  },
+  {
+   "id": "16",
+   "name": "Voraussetzungen nach § 23 AufenthG beurteilen",
+   "legal_bases": [
+    "§ 23 AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 23 Aufenthaltsgewährung durch die obersten Landesbehörden;\nAufnahme bei besonders gelagerten politischen Interessen; Neuansiedlung von Schutzsuchenden\n(1)\nDie oberste Landesbehörde kann aus völkerre"
+  },
+  {
+   "id": "37",
+   "name": "Anhörung durchführen",
+   "legal_bases": [
+    "§ 13 VwVfG",
+    "§ 26 VwVfG",
+    "§ 28 VwVfG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": ""
+  },
+  {
+   "id": "26",
+   "name": "Über die Erteilung des Aufenthaltstitels informieren",
+   "legal_bases": [],
+   "participant_roles": [],
+   "description": "Diese Aktivitätengruppe ist nicht direkt aus dem Gesetz ableitbar. Die oberste Fachbehörde hat entschieden, dass diese Aktivitätengruppe als Empfehlung im Stammprozess bleiben soll."
+  },
+  {
+   "id": "15",
+   "name": "Voraussetzungen nach § 22 AufenthG beurteilen",
+   "legal_bases": [
+    "§ 22 AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 22 Aufnahme aus dem Ausland \nEinem Ausländer kann für die Aufnahme aus dem Ausland aus völkerrechtlichen oder dringenden humanitären Gründen eine Aufenthaltserlaubnis erteilt werden. Eine Aufenthalt"
+  },
+  {
+   "id": "21",
+   "name": "Voraussetzungen nach § 25b AufenthG beurteilen",
+   "legal_bases": [
+    "§ 25b AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 25b Aufenthaltsgewährung bei nachhaltiger Integration\n(1)\nEinem Ausländer, der geduldet oder Inhaber einer Aufenthaltserlaubnis nach § 104c ist, soll abweichend von § 5 Absatz 1 Nummer 1 und Absatz "
+  },
+  {
+   "id": "05",
+   "name": "Amtshilfe zur Überprüfung der Identität leisten",
+   "legal_bases": [
+    "§ 89 (1)-(2) AufenthG"
+   ],
+   "participant_roles": [
+    "mitwirkungspflicht=true",
+    "beteiligungsform="
+   ],
+   "description": "§ 89 AufenthG (Verfahren bei identitätsüberprüfenden, -feststellenden und -sichernden Maßnahmen)\n(1) \nDas Bundeskriminalamt leistet Amtshilfe bei der Auswertung der nach § 49 von den mit der Ausführun"
+  },
+  {
+   "id": "14",
+   "name": "Gründe prüfen",
+   "legal_bases": [
+    "§§ 22-26 AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "Abschnitt 5 Aufenthalt aus völkerrechtlichen, humanitären oder politischen Gründen \n§ 22 Aufnahme aus dem Ausland\n§ 23 Aufenthaltsgewährung durch die obersten Landesbehörden; Aufnahme bei besonders ge"
+  },
+  {
+   "id": "30",
+   "name": "Daten zum Aufenthaltstitel übermitteln",
+   "legal_bases": [
+    "§ 90b AufenthG",
+    "§ 91d (4)-(5) AufenthG",
+    "§ 6 Abs. 1 Nummer 1 i.V.m. Abs. 2 Satz 1 und Satz 3 Nummer 1 AZRG"
+   ],
+   "participant_roles": [],
+   "description": "§ 90b AufenthG (Datenabgleich zwischen Ausländer- und Meldebehörden)\nDie Ausländer- und Meldebehörden übermitteln einander jährlich die in § 90a Abs. 2 genannten Daten zum Zweck der Datenpflege, sowei"
+  },
+  {
+   "id": "34",
+   "name": "Auf sicherheitsrechtlichen Zweck der Befragung und Rechtsfolgen hinweisen",
+   "legal_bases": [
+    "§ 54 (2) Nr. 7 AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "§ 54 Abs. 2 Nr. 7 AufenthG (Ausweisungsinteresse)\n7. in einer Befragung, die der Klärung von Bedenken gegen die Einreise oder den weiteren Aufenthalt dient, der deutschen Auslandsvertretung oder der A"
+  },
+  {
+   "id": "18",
+   "name": "Voraussetzungen nach § 24 AufenthG beurteilen",
+   "legal_bases": [
+    "§ 24 AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 24 Aufenthaltsgewährung zum vorübergehenden Schutz\n(1)\nEinem Ausländer, dem auf Grund eines Beschlusses des Rates der Europäischen Union gemäß der Richtlinie 2001/55/EG vorübergehender Schutz gewähr"
+  },
+  {
+   "id": "20",
+   "name": "Voraussetzungen nach § 25a AufenthG beurteilen",
+   "legal_bases": [
+    "§ 25a AufenthG"
+   ],
+   "participant_roles": [
+    "entscheidungsart="
+   ],
+   "description": "§ 25a Aufenthaltsgewährung bei gut integrierten Jugendlichen und jungen Volljährigen\n(1)\nEinem jugendlichen oder jungen volljährigen Ausländer, der Inhaber einer Aufenthaltserlaubnis nach § 104c oder "
+  },
+  {
+   "id": "24",
+   "name": "Fiktionsbescheinigung aushändigen",
+   "legal_bases": [
+    "§ 81 (5) AufenthG",
+    "§ 25 Abs. 1 S. 3, Abs. 2 S. 2 AufenthG"
+   ],
+   "participant_roles": [],
+   "description": "§ 81 AufenthG (Beantragung des Aufenthaltstitels)\n(5)\nDem Ausländer ist eine Bescheinigung über die Wirkung seiner Antragstellung (Fiktionsbescheinigung) auszustellen.\n \n§ 25 Aufenthalt aus humanitäre"
+  },
+  {
+   "id": "36",
+   "name": "Erfordernis Anhörung prüfen",
+   "legal_bases": [
+    "§ 28 VwVfG"
+   ],
+   "participant_roles": [],
+   "description": ""
+  },
+  {
+   "id": "33",
+   "name": "Widerspruchsverfahren einleiten",
+   "legal_bases": [
+    "§ 79 VwVfG"
+   ],
+   "participant_roles": [],
+   "description": ""
+  }
+ ]
+}

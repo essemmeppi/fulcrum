@@ -1,222 +1,130 @@
-# Can documents alone give a reliable map of a government process?
+# Can documents give a process map the agency will sign?
 
-Validation study for assumption 1 of The Agentic State. Draft, October 2026.
+Validation of assumption 1. October 2026. Three countries, three kinds of reference, one question: when a model reads an agency's documents and draws the process, does the agency's own record say "yes, this is what we do"?
 
-## 1. The claim and what "reliable" means
+## The answer in five lines
 
-The assumption: a reliable map of how a government entity runs a service can be built by reading its documents. Public documents (law, guidance, forms, catalogues) when that is all we have; internal documents (staff guidelines, process descriptions, system rules) when the entity collaborates.
+1. **Steps: yes, with corrections.** Finland, 84-step map from public documents, checked step by step against Kela's internal staff guidelines by two independent judges: 0 to 1 step contradicted, 5 absent, 45 confirmed as steps, 21 confirmed as rules. Australia and Germany give the same picture.
+2. **Order: direction is right, links are missing.** Reversed order is rare (under 1 per cent of pairs on the benchmark, 3 of 84 steps in Finland). The errors are missing and extra links, and triggers that start a branch at the wrong point.
+3. **Actors and automation: not from public documents.** The maps call 30 to 50 per cent of steps "system". The staff guideline confirms 5 of 29, gives 5 to a caseworker, and is silent on 19. This is where "synthesis without reality" shows: the model fills a field the documents never answer.
+4. **Coverage: half.** Public documents recover 40 to 58 per cent of the steps the staff guideline describes. What they miss is uniform across countries: case-by-case data gathering, internal routing, exception handling.
+5. **The lever is not the pipeline shape.** Two-pass and single-pass, three models, give the same error profile. What moves the result: which documents are read (the law and the staff guide carry the order; forms carry none), whether a step has two independent sources (four times the confirmation rate), and whether the pipeline is allowed to invent actors and order.
 
-"Reliable" has to be testable. We use three tests, from weak to strong.
+## 1. What was tested
 
-1. **Extraction test.** Given one text that describes a process, does the pipeline find the steps and their order? This is the standard task in the process-extraction literature, with a gold-labelled benchmark. It shows the pipeline can read. It does not show the map is true.
-2. **Internal-reference test.** Build the map from public documents only. Then compare it with what the entity tells its own staff to do. Every step gets one of five verdicts: described as a step, described only as a rule, described with corrections, contradicted, not mentioned. This is the test that matters for "yes, this is what we do", and it can be run without an interview wherever the staff guideline is published.
-3. **Process-owner test.** A person who runs the process corrects the map step by step. We did not run this. Section 9 gives the protocol and the predictions we commit to before running it.
+| Country, service | Built from | Checked against | Why this reference |
+|---|---|---|---|
+| Finland, general housing allowance (Kela) | 7 public documents: Act, 4 guidance pages and PDFs, form, service catalogue (170k chars) | Kela's staff benefit guideline (83 pages, "primarily for internal use", published as PDF) plus 3 cross-benefit staff guidelines (appeals, recovery, correction; 118 pages) | What the agency tells its own staff |
+| Australia, Rent Assistance (Services Australia) | 19 public pages and factsheets (40k chars) | Operational Blueprint: 8 staff procedure pages with numbered step tables (200k chars) | Screen-level staff procedure |
+| Germany, residence permit on humanitarian grounds | Statute text only: 17 sections of the Residence Act, 7 of the Administrative Procedure Act (78k chars) | The federal FIM reference process model (42 activity groups with legal bases, government-authored) | The government's own process model |
 
-Two secondary properties also matter: **stability** (the same inputs give the same map twice) and **calibration** (the confidence score on a step predicts whether it is confirmed).
+Plus the standard academic benchmark (PET, 45 annotated process descriptions) to show the reading step itself works.
 
-## 2. What is already known
+**Method, in one paragraph.** Maps were built by Claude agents (Haiku, Sonnet, Opus 5.5) from the public documents only; no builder saw a reference. Each step of a map was then given one of five verdicts by a judge that read the whole reference: *described as a step* (who does what), *step exists but a detail differs* (actor, automation, trigger, order, granularity), *only the rule is stated*, *contradicted*, *not mentioned*. Every quote a judge cited was checked by code against the reference text (357 of 357 verbatim in the Finnish round). Two judges (Opus, Sonnet) rated the Finnish map independently: kappa 0.70. Recall was measured the other way round: an agent wrote the process from the staff guideline alone (129 steps) without seeing any map, and a third agent aligned each map to it. All prompts, outputs and scripts are in `process-mapper/research/data/`.
 
-- **Extraction from one text is a solved-enough problem.** On the PET benchmark (45 process descriptions annotated by Bellan, Dragoni and Ghidini, 2022), rule-based and CRF baselines reach F1 0.69 for mention detection and 0.72 for relation extraction. Neuberger and colleagues (2024) report GPT-4o at 0.74 and 0.89 with three examples in the prompt, and Claude 3 Opus at 0.73 and 0.91. Prompt design moves scores by 5 to 8 points; a bad prompt drops relation F1 to 0.56.
-- **Two modellers do not draw the same model from the same text.** The PET authors note that one text admits several correct models. Witt and colleagues (2024) had legally trained coders encode the same statute: similarity between coders was 4% in week one and 58% after they agreed on key terms and validation rules. Reliability is a property of the method, not of the text.
-- **Model quality has several dimensions.** Lauer and colleagues (2026) score BPMN models from language models and humans on 39 metrics: models win on syntax and layout, humans on semantics. Klievtsova and colleagues (2024) count 17 of 21 GPT-4 models as correct on a university test set, but assume the human models are correct.
-- **Written process and practised process differ.** Lipsky's street-level bureaucracy, the "space in the rules" work on Ontario Works, and process-mining studies of de jure versus de facto models all find the same thing: documents say what should happen; staff do what the case needs. Wijnhoven and colleagues (2023) add that an incomplete documented model makes the gap hard to measure.
-- **Comparing two process maps is its own problem.** Dijkman and colleagues (2011) compare label, structure and behaviour similarity; graph edit distance is NP-complete. Weidlich, Mendling and Weske (2011) propose behavioural profiles: for each pair of steps, strict order, reverse order, exclusive, or interleaving. We use the order relation between pairs of steps as the ordering metric throughout.
+## 2. Results
 
-What is not known: whether a map built from public documents of a real public service matches the agency's internal procedure, and which inputs and pipeline choices move that match. That is what this study measures.
+### 2.1 Reading is not the problem
 
-## 3. Data
+PET benchmark, 44 documents, one example in the prompt, three models: activity F1 0.92 to 0.93, actor F1 0.91 to 0.92, direct-successor F1 0.74 to 0.76, ordered-pair F1 0.70 to 0.75. Reversed order: 0.2 to 0.6 per cent of pairs. Published systems score 0.69 to 0.74 on mentions and 0.72 to 0.89 on relations (different metric definitions; the comparison supports only "at or above"). Long descriptions cost order, not steps: successor F1 falls from 0.81 to 0.70 past eight sentences. Model size changes little (the three models agree on 88 to 90 per cent of activities).
 
-| Set | Content | Role |
-|---|---|---|
-| PET v1.1 | 45 English process descriptions, 502 activities, 449 actors, 675 flow relations, gold-annotated | Extraction test |
-| Kela public corpus | 7 public documents on Finland's general housing allowance: Act 938/2014 (Finlex consolidated text, stops at 2017 amendments), 4 citizen guidance pages and PDFs, application form AT 1e, Suomi.fi service record. 170,000 characters | Input to all map builds |
-| Kela internal note | One published procedure note on automated termination when a pension is granted | Marginal-input test |
-| Kela staff guideline | "Yleinen asumistuki" benefit guideline, 83 pages, dated 22 October 2026, "primarily for Kela's internal use", published as PDF on kela.fi | Internal reference |
-| Kela common guidelines | Appeals (38 pages), recovery of overpayments (55 pages), correction and annulment of decisions (25 pages), same series | Internal reference for the appeal, recovery and correction steps |
-| Services Australia public pages | 17 public Rent Assistance pages and 2 factsheets, 40,000 characters | Second jurisdiction input |
-| Services Australia Operational Blueprint | 8 staff procedure pages for Rent Assistance with numbered step tables, 200,000 characters | Second jurisdiction reference |
+### 2.2 Finland: the public map against the agency's own guidelines
 
-The German FIM portal publishes official process models in XProzess format (we downloaded one, for humanitarian residence permits: 42 activity groups with legal bases). No Wohngeld (housing benefit) process is in the catalogue, so we did not use it.
+84 steps, two judges, both rounds (benefit guideline, then the three cross-benefit guidelines for the 24 appeal, recovery and correction steps).
 
-## 4. Methods
+| Verdict | Opus judge | Sonnet judge | Both agree |
+|---|---|---|---|
+| Described as a step | 16 | 16 | 45 (step, or step with a detail wrong) |
+| Step exists, detail differs | 38 | 33 | |
+| Only the rule is stated | 24 | 29 | 21 |
+| Not mentioned | 5 | 5 | 5 |
+| Contradicted | 1 | 1 | mixed: 13 |
 
-All model calls ran as Claude agents (Haiku 5.5, Sonnet 5.5, Opus 5.5) with fixed prompts stored next to the data. No model saw the reference documents while building a map. No judge saw another judge's verdicts. Quotes in every output were checked by code against the source text after whitespace and punctuation normalisation; a quote that does not match is counted as unverified.
+The five absent steps: the online calculator, two State-funding transfers, and two steps from an internal note on a termination robot that the guideline does not cover. The one contradiction: the map had a caseworker decide whether a decision is appealable before an appeal is filed; Kela has no power to refuse an appeal ("Kelalla ei ole toimivaltaa jättää valitusta tutkimatta"); the system prints the appeal bar and any appeal is forwarded to the Board. A rule became a gate.
 
-**E1, extraction test.** Each PET document is given with numbered sentences and tokens. The model returns activities (verb spans), actors (noun-phrase spans), performer links, and successor pairs (B directly after A). One annotated example document is in the prompt and excluded from scoring; 44 documents are scored. Metrics: precision, recall and F1 for activities and actors (strict span match and relaxed overlap match), performer pairs, successor pairs, and ordered pairs. Gold successor pairs are derived by collapsing gateways and conditions between activities. Ordered pairs use reachability: for every pair of gold activities the model found, is A before B in both graphs? Three models, same prompt.
+What "detail differs" means, in four families:
 
-**E2, internal-reference test.** The existing map (84 nodes, 95 edges, 79 rules, built by the two-pass pipeline from the 7 public documents plus the internal note) was checked node by node against the staff guideline by two independent judges (Opus and Sonnet) that read the whole guideline. Each verdict carries verbatim quotes with page numbers. The 24 appeal, recovery and correction nodes were then checked in a second round against the three common guidelines. We report verdict shares, judge agreement (Cohen's kappa), actor and automation disagreements, order contradictions, calibration of the pipeline's confidence score, and the effect of multi-source support. A separate agent built a reference step list from the guideline alone, without seeing the map; a third agent aligned the two.
+- **Actor and automation (largest).** 29 steps assigned to the Kela system: 5 confirmed automatic (annual-review letter, programmatic termination when the review is not returned, Incomes Register and lease-data feeds), 5 given to a caseworker (requesting missing information "primarily by phone", reading background data, valuing assets, judging accepted costs, the inputs to the calculation), 19 silent. The guideline uses "ohjelmallisesti" twice in 83 pages.
+- **Stale law.** The Finlex consolidation stops in 2017. The map carried the 80 per cent rate, the EUR 300 earned-income deduction (ended 31 March 2024) and owner-occupied dwellings (excluded from 2025). The guidance in the corpus had the current values; the synthesis logged the conflict as a question instead of resolving it.
+- **Order and triggers.** Both judges contradict 3 steps: a non-returned annual review is terminated by the program, not routed to a caseworker; an overpayment arises inside a revision or termination decision, not as a separate event; termination dates follow a table of grounds. Several branches (change report, landlord notice, appeal) were started as separate flows that loop back, so the reference's "after the decision" reads as "before" in the map.
+- **Granularity.** 12 steps the guideline splits (correction into five procedures), 7 to 10 it merges (completeness check and eligibility check fold into "map the household's overall situation first").
 
-**E3, pipeline variants and inputs.** Same corpus, different builds: direct single-pass map (three models, three repeats for Sonnet), public documents only versus public plus the internal note, law only, guidance only, form only, and per-document maps merged afterwards. Each build is scored on structure (nodes, edges, dangling edges), evidence (share of quotes that verify), and recall of the guideline-derived reference steps after alignment. Stability is the share of nodes matched between repeats.
+**Two sources beat one.** Steps supported by facts from two or more public documents: confirmed as a step by both judges 25 of 52 (0.48), absent 6 of 52 (0.12). Single-source steps: 4 of 32 (0.13) and 11 of 32 (0.34). The single-pass Opus map shows the same: 2 of 66 multi-source steps absent, 9 of 24 single-source.
 
-**E4, ordering information in documents.** For the reference steps, the position of their first mention in each public document is compared with their process order (Kendall's tau). This measures how much order information each document type carries before any model reads it.
+**The confidence score does not predict confirmation.** Two-pass map: steps rated 0.7 to 0.89 were confirmed as steps 31 per cent of the time, steps rated below 0.7 65 per cent. The rubric scores how explicit the source is, not whether the agency recognises the step. The Opus single-pass score was better behaved (59 per cent at 0.9 and above, 2 per cent absent) but still not a probability.
 
-**E5, second jurisdiction.** Maps built from the Services Australia public pages (Sonnet and Opus) are verified against the Operational Blueprint by one judge. The Blueprint is written at screen and field level, so this test also measures the granularity ceiling of public documents.
+**Recall.** The guideline-only reference has 129 steps (83 caseworker, 15 citizen, 5 automatic, 20 unclear, 3 landlord, 3 other authority). The two-pass map matches 52 of them (40 per cent): appeals 5 of 5, termination 5 of 7, payment 6 of 14, data gathering 7 of 27, decision 2 of 8, intake 3 of 9. What it misses is case-specific caseworker work: cohabitation checks, re-letting consent, imputed minimum income, asset valuation sources, Åland routing, landlord recovery.
 
-## 5. Results: extraction test (E1)
+**What even the staff guideline does not say.** It refers 42 times to a separate process description ("yleisen asumistuen prosessi"), 23 times to situation-specific action instructions, 13 times to case-system registration instructions, all intranet-only. Of the map's 16 open questions, the guideline answers 4, half-answers 10, and 14 of 16 point onward to another internal document. The rules layer is public in Finland; the process layer is not, even for the agency's own published guideline.
 
-44 PET documents, one worked example in the prompt, three models, same prompt. Spans are scored strict (exact tokens) and relaxed (overlap). "Ordered pairs" are pairs of gold activities the model found, with A before B in the gold flow graph; the model is right if it also puts A before B.
+### 2.3 Pipelines and inputs
 
-| Metric | Haiku 5.5 | Sonnet 5.5 | Opus 5.5 | Published reference |
+Same corpus, different builds, all aligned to the 129-step reference by the same kind of judge (Opus). "Order" counts consecutive reference pairs where the generated map has the same order.
+
+| Build | Steps | Reference steps recovered | Generated steps matched | Order right / checked |
 |---|---|---|---|---|
-| Activity F1, strict span | 0.90 | 0.88 | 0.90 | 0.69 (CRF, 7 types); 0.74 (GPT-4o, 7 types) |
-| Activity F1, relaxed | 0.92 | 0.92 | 0.93 | |
-| Actor F1, relaxed | 0.92 | 0.91 | 0.92 | |
-| Performer link F1 | 0.77 | 0.75 | 0.77 | |
-| Direct successor F1 | 0.74 | 0.74 | 0.76 | 0.72 (ML baseline, all 6 relations); 0.89 (GPT-4o) |
-| Ordered-pair F1 | 0.70 | 0.73 | 0.75 | |
-| Ordered pairs reversed | 0.6% | 0.5% | 0.2% | |
+| Two-pass, facts then synthesis (existing pipeline) | 84 | 52 (40%) | 56 (67%) | 33 / 46 |
+| Single pass, Sonnet, run 1 | 100 | 63 (49%) | 77 (77%) | 57 / 60 |
+| Single pass, Sonnet, run 2 | 110 | 65 (50%) | 86 (78%) | 53 / 60 |
+| Single pass, Sonnet, run 3 | 95 | 75 (58%) | 75 (79%) | 53 / 60 |
+| Single pass, Haiku | 77 | 48 (37%) | 58 (75%) | 32 / 45 |
+| Single pass, Opus | 90 | 68 (53%) | 64 (71%) | 49 / 60 |
+| Single pass, Sonnet, public documents plus the internal note | 107 | 67 (52%) | 76 (71%) | 49 / 60 |
+| Law only | 113 | 54 (42%) | 66 (58%) | 43 / 45 |
+| Citizen guidance only | 83 | 53 (41%) | 66 (80%) | 45 / 49 |
+| Application form only | 85 | 39 (30%) | 40 (47%) | 32 / 38 |
+| Per document, then merge | 170 | [fill] | [fill] | [fill] |
+| Claims only: no inferred actor, no inferred order | 60 | 40 (31%) | 44 (73%) | 3 / 20 (15 unconnected) |
 
-The published numbers are not directly comparable: they score seven entity types and six relation types, and the relation scores in Neuberger and colleagues (2024) are computed with gold mentions supplied. Ours score activities and actors only, and the successor score is end to end (the model's own activities, collapsed over gateways). The comparison supports one claim only: current models read a process description at or above the level of the specialised systems in the literature, with one example and no training data.
+Readings.
 
-Three things matter more than the headline numbers.
+- **Pipeline shape does not change the error profile.** Verified against the guideline, the single-pass Opus map (90 steps) gives 15 described, 25 with corrections, 39 rule-only, 11 absent, 0 contradicted; the two-pass map in the same round gave 11, 27, 29, 17, 0. Same families of correction, same stale rules, same "system" guesses (29 system steps, 2 confirmed).
+- **Runs are not stable in size.** Three Sonnet runs on identical inputs: 95 to 110 steps, 44 to 52 of them "system". They recover largely the same reference steps (overlap 0.84 between runs 1 and 3), so the instability is in what gets padded, not in what gets found.
+- **Order comes from the law and the guide.** Kendall's tau between the order of first mention in a document and process order: Act 0.64, benefit guide 0.68, service catalogue 0.70, citizen pages 0.36 to 0.42, form 0.11, parameter page 0.06. The law-only build gets 43 of 45 orders right; the form-only build 32 of 38 only because its loops make everything reachable.
+- **The internal note adds its own branch and nothing else** (67 versus 63 to 75 recovered).
+- **Forbidding inference lowers recall and removes the invented structure.** The claims-only build names no actor for 35 of 60 steps because no public sentence names one, states 40 orders instead of 150 edges, and writes 24 questions. Checked against the benefit guideline (one Opus judge, same rubric), its 60 claims: 16 described as steps, 16 with corrections, 10 rule-only, 18 absent, 0 contradicted, and not one claim with a wrong actor. The absent ones are citizen channel steps (calculator, upload, postal address, status check), the State-funding transfers, and the appeal steps the guideline defers to the cross-benefit guideline. By share, 27 per cent of its claims are described as steps against 13 per cent for the two-pass map in the same round, and 27 per cent need a correction against 32 per cent. It recovers 40 reference steps and connects almost none of them. It is the honest map: everything in it is a sentence, and everything it does not know is a question.
 
-1. **Direction is almost never wrong.** When the model orders two steps, it reverses the true order in 0.2 to 0.6 per cent of pairs. The 25 to 30 per cent of ordering errors are missing links and extra links (a skipped optional step, a loop the text implies but does not state, a parallel branch read as a sequence), not steps in the wrong order.
-2. **Length hurts order, not step detection.** On the 29 documents of eight sentences or fewer, successor F1 is 0.80 to 0.82; on the 15 longer ones it is 0.68 to 0.72. Activity F1 drops by only 0.04. The reading is fine; keeping a long control flow straight is the weak point. A government process is a long document.
-3. **Model size matters little here.** The three models agree on 88 to 90 per cent of activities (Jaccard), and the cheapest is within 0.03 F1 of the largest on every metric. The remaining errors are annotation conventions (whether "waits" or "goes to" is a step; whether a verb in an "if" clause counts), on which the gold is itself inconsistent in places (doc-1.1 has a branch with no incoming flow). These are ambiguities of the task, not of the models.
+### 2.4 Australia and Germany
 
-Conclusion for the assumption: extraction from one text is not the risk. Everything that follows is about multi-document reconstruction, where there is no gold and the authority is the only judge.
+**Australia.** Two public-page maps (Sonnet 60 steps, Opus 65) against the staff procedures: 9 and 6 described as steps, 25 and 24 with corrections, 9 and 14 rule-only, 16 and 21 absent, 1 and 0 contradicted. Of the absent, 6 and 13 are overseas-travel and indexation steps outside the eight procedure pages supplied. The corrections repeat Finland: staff decide eligibility and code the screens, the system only computes the rate; payment continues for 28 days while proof is awaited (the maps hold payment until proof is checked); if a customer ignores the request letter the whole main payment is suspended, not just Rent Assistance. Recall against the Blueprint's 192 non-screen steps: 53 of 135 work steps and 28 of 57 policy steps, mostly partial. Never mentioned in public: internal routing (16 steps), dates and arrears (15), special circumstances (15), handling returned proof (11), verification exemptions (9).
 
-## 6. Results: internal-reference test (E2)
+**Germany.** The law-only map (60 steps) against the government's own process model: 38 of 42 official activities matched (25 exact), with the same legal basis for 29 of 38. The 4 misses all rest on sections not supplied (security interview, federal identity assistance, fallback to another title). 24 of the 60 generated steps match nothing official: events, citizen-side steps, rules written as steps, and 12 steps the official model does not have (hardship commission, prosecutor's assessment, objection decision). Where the government models from the law, a map from the law reproduces it.
 
-### 6.1 Verdicts on the 84 public-document steps
+## 3. What this says about the approach
 
-Two judges read the full 83-page staff guideline and gave each node one verdict. All 357 quotes the judges cited were checked by code against the guideline text; all 357 match verbatim.
+The two-pass design was right about one thing and wrong about another. Right: facts with verbatim quotes are checkable, and they checked (818 of 818 quotes verified; every variant here verified 100 per cent). Wrong: the synthesis step is asked to produce a complete BPMN-shaped graph, so it fills the fields the facts do not fill: actor, automation, trigger, the edge that closes the loop. Those fields are where the agency disagrees. The single-pass builds do the same thing. The problem is the output contract, not the number of passes.
 
-| Verdict | Opus judge | Sonnet judge |
-|---|---|---|
-| Described as a step (who does what) | 11 | 10 |
-| Step exists, material detail differs | 27 | 25 |
-| Only the rule or amount is stated, not the step | 29 | 31 |
-| Not mentioned | 17 | 18 |
-| Contradicted | 0 | 0 |
+Three facts from the data set the design.
 
-Judge agreement: Cohen's kappa 0.67 on the five-way verdict, 0.70 when "described" and "differs" are pooled (raw agreement 0.81). The 16 disagreements are all between "the step exists" and "only the rule is stated"; no node is "exists" for one judge and "absent" for the other, except one (T_FORWARD_APPEAL).
+1. Public documents state *rules* and the *citizen interface* well. They state *who does what inside* almost never (Finland: "ohjelmallisesti" twice in 83 pages of the staff guide; the public pages never). A pipeline that must output an actor for every step will guess, and the guess is wrong or unverifiable 24 times out of 29.
+2. *Order* lives in two document types: the statute and the staff guide. Forms, parameter pages and catalogues carry none. A pipeline that reads them all with equal weight imports noise into the order.
+3. The agency recognises a step when two public documents describe it (0.48 versus 0.13). Triangulation is cheap and it is the strongest single predictor found.
 
-Where both judges agree (68 of 84 nodes):
+## 4. The pipeline to build now
 
-| Both judges say | Nodes | Of the 32 citizen-facing | Of the 52 internal |
-|---|---|---|---|
-| Step exists in the guideline | 29 | 11 | 18 |
-| Only the rule is stated | 22 | 7 | 15 |
-| Not mentioned | 17 | 9 | 8 |
+Not a new architecture. A different contract, enforced by code.
 
-Reading of the table. **No step is contradicted.** The public documents did not produce a false process. **Most steps exist**: 56 of 84 are confirmed as a step by at least one judge, and 22 more are confirmed as a rule the authority applies. **But only 11 to 15 of 84 are described in the guideline as a step with an actor doing it.** The staff guideline is a rules document, not a process document: it refers 42 times to a separate "yleisen asumistuen prosessi" (process description) that lives on the intranet, and 23 times to situation-specific action instructions. The process layer is where the map's remaining uncertainty sits, and it is not public even in a country that publishes its staff guidelines.
+1. **Claims, not graphs.** The unit is "actor A does X when T", each with one sentence. Fields the documents do not fill stay empty: `who: unknown`, `automation: unknown`, no edge. Empty is a result, not a failure.
+2. **Order only from sources that carry it.** Edges come from the statute, the staff guide, and explicit words ("after", "then", "within 14 days of"). Everything else is a *question*, listed with the step it would attach to.
+3. **Two sources per claim.** A claim with one source is marked single-source and goes to the review sheet first. The score is the count of independent documents, not a model's confidence.
+4. **Rules stay rules.** Conditions and amounts are stored as rules linked to the step that applies them, never turned into decision nodes. This removes the one contradiction found in Finland.
+5. **Point-in-time law.** Fetch the consolidation in force on the date of the map, and let a dated guidance page override a parameter in an older consolidation.
+6. **Validation is the product.** The output is a review sheet: one line per claim, one sentence of evidence, four boxes (we do this; differently, how; we do not; ask X). Half a day of a process owner's time turns the map into the agency's statement. The questions list is the agenda.
 
-The 17 "not mentioned" nodes fall in three groups: 12 appeal and recovery-end steps that Kela documents in three cross-benefit guidelines (checked separately in 6.4); 3 steps from the internal note on automated termination (impulse task, robot outcome, state funding), which the benefit guideline does not cover; and 2 the public record overstated (the online calculator as a step; the State funding transfer as a step in the citizen's process).
+Expected effect, from the data: recall of internal steps stays around 40 to 50 per cent from public documents (that is a ceiling of the documents, not the method), contradictions go to zero, wrong actors go to zero, and the number of claims a process owner must correct drops from about half to the share where triggers and granularity differ.
 
-### 6.2 What the map got wrong
+## 5. The live test
 
-The corrections cluster in four kinds. Each is a kind of error that document-based mapping will produce again, so each needs a mitigation.
+Run it with two or three Kela process owners, each independently, on the review sheet above, before any discussion. Measure acceptance per claim, recall against the steps they add, kappa between reviewers, and minutes per claim. Predictions committed now: recognition (box 1 or 2) above 0.85 for citizen-facing claims and 0.75 for internal ones; "we do not do this" below 0.05; reviewers add 15 to 40 steps, mostly data gathering and routing; two-source claims accepted at least twice as often as single-source; fewer than 5 per cent of order pairs reversed; under three minutes per claim. If "we do not do this" exceeds 0.05, the assumption fails in the way that matters.
 
-1. **Actor and automation.** The map assigned 29 nodes to the Kela system or robot. The guideline confirms automation for 5 of them (annual-review letter, programmatic termination on a non-returned review, Incomes Register and lease-data feeds) and gives 5 to a caseworker instead: requesting missing information (done "primarily by phone"), reading background and population-register data, valuing assets, judging accepted housing costs, and the inputs to the calculation. For 19 the guideline is silent. The public record describes the data feeds and lets the reader infer automation; the guideline shows judgment sits in front of every computation. **Mitigation: treat "system" as unproven unless a document says "ohjelmallisesti" or names a robot; the map's agent-mode labels for internal steps must default to "agent prepares, human decides".**
-2. **Stale law.** The Finlex consolidated Act stops at the 2017 amendments. The map carried the 80 per cent rate, the 2010-era deductible parameters, the EUR 300 earned-income deduction (in force only to 31 March 2024) and owner-occupied dwellings (excluded from 1 January 2025), each flagged by a judge. The citizen guidance in the corpus had the current values, and the map's synthesis recorded the conflict as an open question rather than resolving it. **Mitigation: fetch the point-in-time consolidation, and let guidance override the Act on parameters when the Act's consolidation date is older than the guidance.**
-3. **Order and triggers.** Both judges contradict the order at 3 nodes: a non-returned annual review is terminated by the program, not routed to a caseworker; an overpayment arises inside a revision or termination decision, not as a separate system event; termination dates follow a table of grounds rather than one caseworker step. One judge also corrects the "no change" end state: under the protective rule a decision is still issued and payment continues. **Mitigation: these are exactly the places where a process owner's five minutes are worth more than any further document.**
-4. **Granularity.** The judges mark 12 nodes that the guideline splits (decision correction into five procedures; termination into reason-specific rules) and 7 to 10 it merges (completeness check and eligibility check fold into "map the household's overall situation first"). The public record has the right steps at the wrong grain about one time in five.
+## 6. Limits
 
-### 6.3 Calibration and triangulation
-
-The pipeline gave each node a confidence score by rubric. Does the score predict confirmation?
-
-| Pipeline confidence | Nodes | Confirmed as step (Opus) | Confirmed as step or rule (Opus) |
-|---|---|---|---|
-| below 0.70 | 17 | 0.65 | 1.00 |
-| 0.70 to 0.89 | 45 | 0.31 | 0.67 |
-| 0.90 and above | 22 | 0.59 | 0.91 |
-
-The score is not monotone. The low band is small and consists of internal steps the pipeline rated as implied; they turn out to exist. The middle band holds the appeal chain and the State-funding steps, which the benefit guideline does not cover. The rubric scores "how explicit is the source", which is not the same as "how likely is the agency to recognise this step". A calibrated score needs a reference, and this study produces the first one.
-
-Multi-source support predicts confirmation better than the score:
-
-| Support in the public corpus | Nodes | Both judges: exists | Both judges: absent |
-|---|---|---|---|
-| Facts from one source | 32 | 4 (0.13) | 11 (0.34) |
-| Facts from two or more sources | 52 | 25 (0.48) | 6 (0.12) |
-
-A step that two independent public documents describe is four times as likely to be confirmed as a step, and three times less likely to be absent. **This is the operational answer to "reading text does not prove the steps are right": require two documents per step, and treat single-source steps as questions for the process owner.**
-
-### 6.4 The appeal, recovery and correction steps against the cross-benefit guidelines
-
-The 24 nodes that the benefit guideline left unmentioned or rule-only were checked against the three cross-benefit guidelines (appeals, recovery, correction and annulment; 118 pages together).
-
-| Verdict (Opus judge) | Nodes |
-|---|---|
-| Described as a step | 5 |
-| Step exists, material detail differs | 15 |
-| Only the rule is stated | 3 |
-| Contradicted | 1 |
-| Not mentioned | 0 |
-
-[fill sonnet round 2 + agreement]
-
-With the right internal document, nothing is absent. The one contradiction is instructive: the public map had a caseworker decide whether a decision is appealable before the appeal is filed, with an end state "not appealable". The appeals guideline says Kela has no power to refuse an appeal ("Kelalla ei ole toimivaltaa jättää valitusta tutkimatta"); the system prints the appeal bar on the decision, and any appeal filed is processed and forwarded to the Board, which alone may dismiss it. The public documents state the rule (some decisions cannot be appealed) and the map turned a rule into a gate. The 15 corrections are of the same family as in 6.2: collection runs largely by program and only after both decisions are final; a correction against the client needs written consent or an annulment by the Board; a further appeal to the Insurance Court goes back through Kela for self-correction and a statement; recovery decisions above EUR 5,000 need a service-unit director. The actor differs for 9 of the 24 nodes.
-
-Combined over both rounds, the public-document map's 84 nodes end as: 0 absent from the internal record, 1 contradicted, about 70 confirmed as steps (half of them with a correction), and the rest confirmed as rules. The agency's own documents recognise the map; they also correct about every second internal step in some detail.
-
-### 6.5 Recall: what the guideline describes that the public map lacks
-
-[fill alignment]
-
-### 6.6 The 16 open questions
-
-Of the 16 questions the public-document map left open, the guideline answers 4 fully, 10 partly, and 2 not at all; 14 of the 16 point onward to another internal document. Fully answered: the current parameters (70 per cent, the 2024 deductible, the asset test), the Åland regime, the household test in unclear cases, and the trigger for paying the landlord directly. Not answered: the appeal channels and periods, and the combined general-support application. The pattern is the same as for the nodes: the staff guideline settles rules, and defers process.
-
-## 7. Results: pipeline variants and inputs (E3, E4)
-
-### 7.1 How much order is in the documents before any model reads them (E4)
-
-For each public document, the map's nodes were ordered by where their earliest quote sits in that document, and that order was compared with the nodes' depth in the process (Kendall's tau; 1.0 means the document mentions steps in process order, 0 means no relation).
-
-| Document | Nodes it supports | Tau, all nodes | Tau, main flow only |
-|---|---|---|---|
-| Act 938/2014 | 70 | 0.64 | 0.50 |
-| Benefit guide (PDF, English) | 20 | 0.68 | 0.61 |
-| Suomi.fi service record | 7 | 0.70 | 0.70 |
-| Citizen page (English) | 33 | 0.42 | 0.51 |
-| Citizen page (Finnish) | 33 | 0.36 | 0.42 |
-| Internal note on automated termination | 14 | 0.72 | 0.20 |
-| Application form AT 1e | 15 | 0.11 | 0.11 |
-| Income and costs page | 11 | 0.06 | 0.06 |
-
-The Act is written in process order (apply, assess, decide, pay, review, recover, appeal) and carries most of the order information; so does the benefit guide. The form and the parameter page carry none: they are organised by topic. This is why a law-only build gets the skeleton right and a form-only build does not, and why the order of a step should be sourced from the Act or the guide and never from a form. It also says that about a third of the ordering signal in the full map does not come from any document's text order: it comes from the model's reading of conditions and triggers across documents, which is exactly where the three order contradictions in 6.2 sit.
-
-### 7.2 Pipeline and input variants (E3)
-
-[fill E3]
-
-## 8. Results: second jurisdiction (E5)
-
-[fill]
-
-## 9. Protocol for the process-owner test, and predictions
-
-The internal-reference test is the strongest test that can be run without the agency. The process-owner test is the one that settles the assumption, and it should be run as an experiment, not a workshop.
-
-**Participants.** Two to three people who run the process at Kela (a benefit specialist who maintains the guideline, a team lead from a processing unit, one caseworker). Each reviews independently before any discussion.
-
-**Instrument.** The map as a list of steps in process order, each with name, actor, what it consumes and produces, the rule it applies, and the sentence of the public record it rests on. For each step the reviewer ticks one box: *this is what we do*; *we do this but differently* (and writes the difference in one line: actor, trigger, order, split or merge); *we do not do this*; *I do not know, ask X*. At the end of each sub-process: *what is missing here?* The reviewer never sees the pipeline's confidence score, so the score can be tested against the ticks.
-
-**Measures.** Acceptance rate (box 1) and recognition rate (boxes 1 and 2) per step, overall and by visibility, by automation class, and by number of supporting sources; inter-reviewer agreement (kappa); recall against the steps reviewers add; calibration of the confidence score against the ticks; and the time a reviewer needs per step. A separate ordering sheet lists 40 pairs of steps and asks "which comes first, or neither"; the map's order is right or wrong per pair.
-
-**Predictions we commit to before running it**, from the numbers above.
-
-1. Recognition rate (boxes 1 and 2) above 0.85 for citizen-facing steps and above 0.75 for internal steps; acceptance without correction (box 1) between 0.45 and 0.60 overall.
-2. "We do not do this" below 0.05 of steps; the cases will be rules the map turned into gates, as in 6.4.
-3. Reviewers will add 15 to 40 steps, mostly data gathering, case-system registration and situation-specific handling, as in the guideline-derived reference (6.5).
-4. Steps with two or more public sources will be accepted at least twice as often as single-source steps.
-5. Ordering: fewer than 5 per cent of pairs reversed; 15 to 25 per cent "neither, they are parallel" where the map has a sequence.
-6. The pipeline's confidence score will not predict acceptance (rank correlation below 0.2) unless re-based on the measures in 6.3.
-7. A reviewer needs under three minutes per step; a full review of an 84-step map fits in half a day.
-
-If predictions 1, 2 and 5 hold, the assumption holds in the form that matters: the agency recognises its process in a map built from its documents, and corrects it at the margin. If prediction 2 fails, the assumption fails: a map that invents steps the agency does not perform is worse than no map, because it looks authoritative.
-
-## 10. What this means for the assumption
-
-[fill]
-
-## 11. Limitations
-
-[fill]
+- Judges are models, not Kela staff. Two judges agreed at kappa 0.70; the same judge family built the maps, so shared blind spots are possible. Every judge quote was checked against the reference text; verdicts were not.
+- Alignment of maps to the reference is also a model's judgement; each alignment was one run. The size of the reference (129 steps) depends on how finely one agent split the guideline.
+- "Not mentioned" in a staff guideline does not mean "not done". The Finnish guideline defers process to intranet documents; the Australian pages supplied do not cover travel or indexation.
+- One service per country. Finland is a benefit with a published staff guide, Australia a benefit with screen-level procedures, Germany a permit with a government process model. Generalisation beyond means-tested benefits and permits is untested.
+- The PET comparison uses different metric definitions from the published numbers.
 
 ## Files
 
-[fill]
+`process-mapper/research/data/`: prompts (`prompts/`), scripts (`scripts/`), the Finnish verification outputs and reference (`fi/`), variant maps and alignments (`fi/variants/`), Australia (`au/`), Germany (`de/`), benchmark scores (`pet/`). Source corpora are re-fetchable from the URLs in each manifest; the Kela guidelines are at `kela.fi/etti/<name>.pdf`.

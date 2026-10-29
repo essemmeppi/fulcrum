@@ -1,0 +1,1772 @@
+{
+ "reference_to_generated": [
+  {
+   "ref_id": "G01",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G02",
+   "matched_node_ids": [
+    "N11",
+    "N05",
+    "N06",
+    "N07",
+    "N08",
+    "N09",
+    "N10"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference citizen; generated N06=Kela system (N06 is OmaKela authenticating the citizen's login, a sub-step of applying online; the other nodes are citizen)",
+   "note": "N11 submits the application together with its attachments (merges G02 and G04); N05-N10 are partial sub-steps of filling in/filing it (channel choice, login, paper form, form sections)."
+  },
+  {
+   "ref_id": "G03",
+   "matched_node_ids": [
+    "N08"
+   ],
+   "match_type": "merged",
+   "note": "N08 declares identity, household, payee and bank account in one form section (merges G03, G05)."
+  },
+  {
+   "ref_id": "G04",
+   "matched_node_ids": [
+    "N04",
+    "N11"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G05",
+   "matched_node_ids": [
+    "N08"
+   ],
+   "match_type": "merged",
+   "note": "N08 includes whether the allowance is paid to the applicant or the landlord (the authorisation on the application form)."
+  },
+  {
+   "ref_id": "G06",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G07",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G08",
+   "matched_node_ids": [
+    "N12"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G09",
+   "matched_node_ids": [
+    "N22",
+    "N21"
+   ],
+   "match_type": "partial",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N22=Kela system, N21=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "Generated pulls Kela-held and population-register background data; the caseworker's overall mapping of the household situation is not a node."
+  },
+  {
+   "ref_id": "G10",
+   "matched_node_ids": [
+    "N20"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G11",
+   "matched_node_ids": [
+    "N23"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela system; generated N23=landlord (generated models the landlord sending the data, reference models Kela receiving it; same automated data transfer)"
+  },
+  {
+   "ref_id": "G12",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G13",
+   "matched_node_ids": [
+    "N15"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N15=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "N15 checks completeness of required attachments incl. whether the lease copy is needed/present (unless landlord reports it); also covers the completeness test of G16."
+  },
+  {
+   "ref_id": "G14",
+   "matched_node_ids": [
+    "N27"
+   ],
+   "match_type": "merged",
+   "note": "N27 (ask applicant for more information when household/housing/income details unclear) merges G14, G15 and G28."
+  },
+  {
+   "ref_id": "G15",
+   "matched_node_ids": [
+    "N27"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G16",
+   "matched_node_ids": [
+    "N17",
+    "N16",
+    "N15"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N17=Kela system, N16=Kela system, N15=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "N16 = incompleteness branch, N17 = request (OmaKela reminder) for missing information/attachments."
+  },
+  {
+   "ref_id": "G17",
+   "matched_node_ids": [
+    "N18"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G18",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G19",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G20",
+   "matched_node_ids": [
+    "N28"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G21",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G22",
+   "matched_node_ids": [
+    "N32"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N32=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G23",
+   "matched_node_ids": [
+    "N31"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G24",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G25",
+   "matched_node_ids": [
+    "N26"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G26",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G27",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G28",
+   "matched_node_ids": [
+    "N27"
+   ],
+   "match_type": "merged",
+   "note": "Request for clarification of unclear household details covers the living-arrangement clarification."
+  },
+  {
+   "ref_id": "G29",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G30",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G31",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G32",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G33",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G34",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G35",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G36",
+   "matched_node_ids": [
+    "N29"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G37",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G38",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G39",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G40",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G41",
+   "matched_node_ids": [
+    "N40"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N40=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G42",
+   "matched_node_ids": [
+    "N39"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G43",
+   "matched_node_ids": [
+    "N14"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N14=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G44",
+   "matched_node_ids": [
+    "N33",
+    "N34"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N34=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "N34 (sum countable gross income) is a partial component."
+  },
+  {
+   "ref_id": "G45",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G46",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G47",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G48",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G49",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G50",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G51",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G52",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G53",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G54",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G55",
+   "matched_node_ids": [
+    "N24"
+   ],
+   "match_type": "merged",
+   "note": "N24 requests data from third parties incl. banks only if applicant data doubtful (G55) plus employers, pension/insurance institutions, landlord."
+  },
+  {
+   "ref_id": "G56",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G57",
+   "matched_node_ids": [
+    "N35",
+    "N36"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N35=Kela system, N36=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G58",
+   "matched_node_ids": [
+    "N43",
+    "N42",
+    "N41",
+    "N38"
+   ],
+   "match_type": "exact",
+   "note": "N38 (maximum costs), N41 (cap) and N42 (basic deductible) are partial components of the calculation."
+  },
+  {
+   "ref_id": "G59",
+   "matched_node_ids": [
+    "N45"
+   ],
+   "match_type": "merged",
+   "note": "N45 merges reviewing that eligibility checks/calculation are complete (G59) with making the decision (G60)."
+  },
+  {
+   "ref_id": "G60",
+   "matched_node_ids": [
+    "N45",
+    "N46"
+   ],
+   "match_type": "merged",
+   "note": "N45 = grant decision, N46 = rejection decision."
+  },
+  {
+   "ref_id": "G61",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G62",
+   "matched_node_ids": [
+    "N13"
+   ],
+   "match_type": "partial",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N13=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "The 30-day/14-day processing deadline is modelled as a timer at intake rather than as part of deciding."
+  },
+  {
+   "ref_id": "G63",
+   "matched_node_ids": [
+    "N48",
+    "N47"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N48=Kela system, N47=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "Initial grant/rejection decision notices; review, termination and recovery notices (N92, N99, N106) are matched to their own reference steps."
+  },
+  {
+   "ref_id": "G64",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G65",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G66",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G67",
+   "matched_node_ids": [
+    "N69"
+   ],
+   "match_type": "exact",
+   "note": "N69 only distinguishes applicant vs landlord payee."
+  },
+  {
+   "ref_id": "G68",
+   "matched_node_ids": [
+    "N44"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G69",
+   "matched_node_ids": [
+    "N70",
+    "N71",
+    "N66",
+    "N65",
+    "N64"
+   ],
+   "match_type": "exact",
+   "note": "Monthly payment (timer N66) to applicant or landlord; N64/N65 cover retroactive instalments."
+  },
+  {
+   "ref_id": "G70",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G71",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G72",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G73",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G74",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G75",
+   "matched_node_ids": [
+    "N73"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G76",
+   "matched_node_ids": [
+    "N74"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G77",
+   "matched_node_ids": [
+    "N76",
+    "N75"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N76=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G78",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G79",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G80",
+   "matched_node_ids": [
+    "N80"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G81",
+   "matched_node_ids": [
+    "N78"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G82",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G83",
+   "matched_node_ids": [
+    "N82"
+   ],
+   "match_type": "partial",
+   "note": "Only the register-detected route is a node; reported changes flow straight into the threshold check N81."
+  },
+  {
+   "ref_id": "G84",
+   "matched_node_ids": [
+    "N84",
+    "N83"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G85",
+   "matched_node_ids": [
+    "N81"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N81=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G86",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G87",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G88",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G89",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G90",
+   "matched_node_ids": [
+    "N89"
+   ],
+   "match_type": "merged",
+   "note": "N89 re-determines household, income and housing costs together (also part of G92/G98)."
+  },
+  {
+   "ref_id": "G91",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G92",
+   "matched_node_ids": [
+    "N89",
+    "N90",
+    "N91",
+    "N87",
+    "N92"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N90=Kela system, N87=Kela system, N92=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "Generated review sub-flow (refresh data, reassess, recalculate, outcome, notice) is shared by interim and annual review (G98)."
+  },
+  {
+   "ref_id": "G93",
+   "matched_node_ids": [
+    "N88"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N88=Kela system (Kela caseworker vs Kela system treated as the same actor)"
+  },
+  {
+   "ref_id": "G94",
+   "matched_node_ids": [
+    "N94"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G95",
+   "matched_node_ids": [
+    "N95"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G96",
+   "matched_node_ids": [
+    "N96"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G97",
+   "matched_node_ids": [
+    "N99",
+    "N98",
+    "N100"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference Kela system; generated N98=Kela caseworker (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "Non-return leads to the shared termination path (N98 determine ground, N99 decision, N100 stop payment)."
+  },
+  {
+   "ref_id": "G98",
+   "matched_node_ids": [
+    "N87",
+    "N89",
+    "N90"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N87=Kela system, N90=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "Shared with interim review (G92)."
+  },
+  {
+   "ref_id": "G99",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G100",
+   "matched_node_ids": [
+    "N91"
+   ],
+   "match_type": "merged",
+   "note": "N91 decides continue/revise/end for both interim (G92) and annual review."
+  },
+  {
+   "ref_id": "G101",
+   "matched_node_ids": [
+    "N97"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G102",
+   "matched_node_ids": [
+    "N98"
+   ],
+   "match_type": "merged",
+   "note": "N98 determines termination ground and effective month for all grounds (merges G97, G102, G103, G104, G106)."
+  },
+  {
+   "ref_id": "G103",
+   "matched_node_ids": [
+    "N98",
+    "N86"
+   ],
+   "match_type": "merged",
+   "note": "N98 lists 'review information not supplied'; N86 = decide finally when requested clarification not supplied."
+  },
+  {
+   "ref_id": "G104",
+   "matched_node_ids": [
+    "N98"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G105",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G106",
+   "matched_node_ids": [
+    "N98"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G107",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G108",
+   "matched_node_ids": [
+    "N101"
+   ],
+   "match_type": "partial",
+   "note": "Only overpayment detected after termination is a node (N91 also has an overpayment branch)."
+  },
+  {
+   "ref_id": "G109",
+   "matched_node_ids": [
+    "N106",
+    "N103"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N106=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "N103 calculates the overpaid amount; N106 recovery decision (also to other liable persons, G120)."
+  },
+  {
+   "ref_id": "G110",
+   "matched_node_ids": [
+    "N105"
+   ],
+   "match_type": "merged",
+   "note": "N105 identifies liable persons: primarily applicant (G110), then jointly liable adult member (G111), landlord (G117)."
+  },
+  {
+   "ref_id": "G111",
+   "matched_node_ids": [
+    "N105"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G112",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G113",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G114",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G115",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G116",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G117",
+   "matched_node_ids": [
+    "N105"
+   ],
+   "match_type": "merged",
+   "note": "Landlord liability determined within N105; the 'only if the recipient raises it' condition is absent."
+  },
+  {
+   "ref_id": "G118",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G119",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G120",
+   "matched_node_ids": [
+    "N106"
+   ],
+   "match_type": "merged",
+   "match_type_note": "actor differs: reference Kela caseworker; generated N106=Kela system (Kela caseworker vs Kela system treated as the same actor)",
+   "note": "Separate recovery decision to a liable person other than the applicant."
+  },
+  {
+   "ref_id": "G121",
+   "matched_node_ids": [
+    "N109"
+   ],
+   "match_type": "partial",
+   "note": "Only collection through enforcement is modelled."
+  },
+  {
+   "ref_id": "G122",
+   "matched_node_ids": [
+    "N54",
+    "N57",
+    "N59"
+   ],
+   "match_type": "exact",
+   "note": "N54 = appeal filed; N57 (forward to appeals board) and N59 (further appeal to Insurance Court) are partial parts."
+  },
+  {
+   "ref_id": "G123",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G124",
+   "matched_node_ids": [
+    "N58",
+    "N60",
+    "N61"
+   ],
+   "match_type": "exact",
+   "match_type_note": "actor differs: reference other authority; generated N61=Kela system (N61 is Kela implementing the appeal-body outcome, which the reference step includes: 'after which Kela gives a new decision'; N58/N60 are appeal bodies)",
+   "note": "Appeal bodies decide (annulment is one outcome); N61 = Kela implements the appeal-body decision."
+  },
+  {
+   "ref_id": "G125",
+   "matched_node_ids": [
+    "N53",
+    "N52",
+    "N55",
+    "N56"
+   ],
+   "match_type": "exact",
+   "note": "N52/N53 = correct erroneous decision to benefit or detriment; N55/N56 = rectification in the customer's favour on appeal."
+  },
+  {
+   "ref_id": "G126",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G127",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G128",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G129",
+   "matched_node_ids": [],
+   "match_type": "none"
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "node_id": "N01",
+   "reason": "no reference step: inferred start event; the guideline starts from the application itself (G02)"
+  },
+  {
+   "node_id": "N02",
+   "reason": "no reference step: out of scope (optional pre-application calculator estimate)"
+  },
+  {
+   "node_id": "N03",
+   "reason": "no reference step: citizen-side self-assessment of household and choice of applicant; the guideline only states who may apply (G02) and has Kela determine the household (G25)"
+  },
+  {
+   "node_id": "N19",
+   "reason": "no reference step: plausible but absent from guideline (deciding on available information when the applicant does not supply it; the guideline only has waiting for information/deadline, G18)"
+  },
+  {
+   "node_id": "N25",
+   "reason": "no reference step: inferred counterpart step (third parties deliver requested data)"
+  },
+  {
+   "node_id": "N30",
+   "reason": "no reference step: rule as step (dwelling/tenure-type eligibility gateway); the guideline only verifies the tenancy from the lease (G36)"
+  },
+  {
+   "node_id": "N37",
+   "reason": "no reference step: rule as step (income-limit gateway); in the guideline income enters via the basic deductible in the calculation (G58)"
+  },
+  {
+   "node_id": "N49",
+   "reason": "no reference step: inferred citizen step (reading the decision)"
+  },
+  {
+   "node_id": "N50",
+   "reason": "no reference step: inferred citizen accept/contest routing gateway"
+  },
+  {
+   "node_id": "N51",
+   "reason": "no reference step: plausible but absent from guideline (customer contacts Kela about the decision before appealing)"
+  },
+  {
+   "node_id": "N62",
+   "reason": "no reference step: end event"
+  },
+  {
+   "node_id": "N63",
+   "reason": "no reference step: end event"
+  },
+  {
+   "node_id": "N67",
+   "reason": "no reference step: out of scope (reporting the monthly total to the State for funding)"
+  },
+  {
+   "node_id": "N68",
+   "reason": "no reference step: out of scope (State transfers funds to Kela)"
+  },
+  {
+   "node_id": "N72",
+   "reason": "no reference step: inferred wait/hub state (allowance in payment)"
+  },
+  {
+   "node_id": "N77",
+   "reason": "no reference step: Kela-side handling of the tenant's request to end landlord payment; the guideline has the request itself (G78/G74, citizen actor) and hearing the landlord (G79), not this Kela step"
+  },
+  {
+   "node_id": "N79",
+   "reason": "no reference step: inferred start event (a change occurs); the guideline starts from the report (G80)"
+  },
+  {
+   "node_id": "N85",
+   "reason": "no reference step: plausible but absent from guideline (recipient delivers clarification for a suspended payment)"
+  },
+  {
+   "node_id": "N93",
+   "reason": "no reference step: timer/rule (review at least every 12 months); the guideline's step is the review letter (G94)"
+  },
+  {
+   "node_id": "N102",
+   "reason": "no reference step: end event"
+  },
+  {
+   "node_id": "N104",
+   "reason": "no reference step: plausible but absent from guideline (general reasonableness waiver of recovery; the guideline's waiver G118 is a different situation, recovery redirected to the landlord)"
+  },
+  {
+   "node_id": "N107",
+   "reason": "no reference step: plausible but absent from guideline (set-off against later benefits; the guideline's regress from pensioners' housing allowance for the same period, G113, is a different mechanism)"
+  },
+  {
+   "node_id": "N108",
+   "reason": "no reference step: plausible but absent from guideline (liable person repays)"
+  },
+  {
+   "node_id": "N110",
+   "reason": "no reference step: end event"
+  }
+ ],
+ "order_checks": [
+  {
+   "ref_pair": [
+    "G02",
+    "G08"
+   ],
+   "generated_pair": [
+    "N11",
+    "N12"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G09"
+   ],
+   "generated_pair": [
+    "N11",
+    "N21"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G10"
+   ],
+   "generated_pair": [
+    "N11",
+    "N20"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G11"
+   ],
+   "generated_pair": [
+    "N11",
+    "N23"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G11",
+    "G13"
+   ],
+   "generated_pair": [
+    "N23",
+    "N15"
+   ],
+   "same_order": false,
+   "forward_len": 4,
+   "reverse_len": 2
+  },
+  {
+   "ref_pair": [
+    "G13",
+    "G14"
+   ],
+   "generated_pair": [
+    "N15",
+    "N27"
+   ],
+   "same_order": false,
+   "forward_len": 4,
+   "reverse_len": 2
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G15"
+   ],
+   "generated_pair": [
+    "N21",
+    "N27"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": 4
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G16"
+   ],
+   "generated_pair": [
+    "N21",
+    "N15"
+   ],
+   "same_order": false,
+   "forward_len": 4,
+   "reverse_len": 1
+  },
+  {
+   "ref_pair": [
+    "G14",
+    "G17"
+   ],
+   "generated_pair": [
+    "N27",
+    "N18"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G15",
+    "G17"
+   ],
+   "generated_pair": [
+    "N27",
+    "N18"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G16",
+    "G17"
+   ],
+   "generated_pair": [
+    "N17",
+    "N18"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 1
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G20"
+   ],
+   "generated_pair": [
+    "N21",
+    "N28"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G22"
+   ],
+   "generated_pair": [
+    "N21",
+    "N32"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G23"
+   ],
+   "generated_pair": [
+    "N21",
+    "N31"
+   ],
+   "same_order": true,
+   "forward_len": 5,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G25"
+   ],
+   "generated_pair": [
+    "N21",
+    "N26"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G13",
+    "G36"
+   ],
+   "generated_pair": [
+    "N15",
+    "N29"
+   ],
+   "same_order": true,
+   "forward_len": 5,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G04",
+    "G36"
+   ],
+   "generated_pair": [
+    "N11",
+    "N29"
+   ],
+   "same_order": true,
+   "forward_len": 9,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G36",
+    "G41"
+   ],
+   "generated_pair": [
+    "N29",
+    "N40"
+   ],
+   "same_order": true,
+   "forward_len": 11,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G42"
+   ],
+   "generated_pair": [
+    "N26",
+    "N39"
+   ],
+   "same_order": true,
+   "forward_len": 12,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G36",
+    "G43"
+   ],
+   "generated_pair": [
+    "N29",
+    "N14"
+   ],
+   "same_order": false,
+   "forward_len": null,
+   "reverse_len": 6
+  },
+  {
+   "ref_pair": [
+    "G10",
+    "G44"
+   ],
+   "generated_pair": [
+    "N20",
+    "N33"
+   ],
+   "same_order": true,
+   "forward_len": 7,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G44"
+   ],
+   "generated_pair": [
+    "N26",
+    "N33"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G14",
+    "G55"
+   ],
+   "generated_pair": [
+    "N27",
+    "N24"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G55",
+    "G57"
+   ],
+   "generated_pair": [
+    "N24",
+    "N35"
+   ],
+   "same_order": true,
+   "forward_len": 9,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G41",
+    "G58"
+   ],
+   "generated_pair": [
+    "N40",
+    "N41"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 2
+  },
+  {
+   "ref_pair": [
+    "G42",
+    "G58"
+   ],
+   "generated_pair": [
+    "N39",
+    "N41"
+   ],
+   "same_order": false,
+   "forward_len": 2,
+   "reverse_len": 1
+  },
+  {
+   "ref_pair": [
+    "G44",
+    "G58"
+   ],
+   "generated_pair": [
+    "N34",
+    "N38"
+   ],
+   "same_order": true,
+   "forward_len": 4,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G57",
+    "G58"
+   ],
+   "generated_pair": [
+    "N36",
+    "N38"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G17",
+    "G59"
+   ],
+   "generated_pair": [
+    "N18",
+    "N45"
+   ],
+   "same_order": true,
+   "forward_len": 4,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G58",
+    "G60"
+   ],
+   "generated_pair": [
+    "N43",
+    "N45"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G60",
+    "G62"
+   ],
+   "generated_pair": [
+    "N45",
+    "N13"
+   ],
+   "same_order": false,
+   "forward_len": null,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G62",
+    "G63"
+   ],
+   "generated_pair": [
+    "N13",
+    "N48"
+   ],
+   "same_order": true,
+   "forward_len": 6,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G67"
+   ],
+   "generated_pair": [
+    "N48",
+    "N69"
+   ],
+   "same_order": true,
+   "forward_len": 5,
+   "reverse_len": 12
+  },
+  {
+   "ref_pair": [
+    "G05",
+    "G67"
+   ],
+   "generated_pair": [
+    "N08",
+    "N69"
+   ],
+   "same_order": true,
+   "forward_len": 16,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G58",
+    "G68"
+   ],
+   "generated_pair": [
+    "N43",
+    "N44"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G67",
+    "G69"
+   ],
+   "generated_pair": [
+    "N69",
+    "N70"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 3
+  },
+  {
+   "ref_pair": [
+    "G68",
+    "G69"
+   ],
+   "generated_pair": [
+    "N44",
+    "N64"
+   ],
+   "same_order": true,
+   "forward_len": 3,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G69",
+    "G75"
+   ],
+   "generated_pair": [
+    "N70",
+    "N73"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": 4
+  },
+  {
+   "ref_pair": [
+    "G75",
+    "G76"
+   ],
+   "generated_pair": [
+    "N73",
+    "N74"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 3
+  },
+  {
+   "ref_pair": [
+    "G76",
+    "G77"
+   ],
+   "generated_pair": [
+    "N74",
+    "N75"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 3
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G80"
+   ],
+   "generated_pair": [
+    "N48",
+    "N80"
+   ],
+   "same_order": false,
+   "forward_len": null,
+   "reverse_len": 10
+  },
+  {
+   "ref_pair": [
+    "G69",
+    "G81"
+   ],
+   "generated_pair": [
+    "N70",
+    "N78"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": 3
+  },
+  {
+   "ref_pair": [
+    "G80",
+    "G83"
+   ],
+   "generated_pair": [
+    "N80",
+    "N82"
+   ],
+   "same_order": true,
+   "forward_len": 3,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G81",
+    "G83"
+   ],
+   "generated_pair": [
+    "N78",
+    "N82"
+   ],
+   "same_order": true,
+   "forward_len": 3,
+   "reverse_len": 3
+  },
+  {
+   "ref_pair": [
+    "G83",
+    "G84"
+   ],
+   "generated_pair": [
+    "N82",
+    "N83"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": 6
+  },
+  {
+   "ref_pair": [
+    "G83",
+    "G85"
+   ],
+   "generated_pair": [
+    "N82",
+    "N81"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 2
+  },
+  {
+   "ref_pair": [
+    "G85",
+    "G90"
+   ],
+   "generated_pair": [
+    "N81",
+    "N89"
+   ],
+   "same_order": true,
+   "forward_len": 4,
+   "reverse_len": 6
+  },
+  {
+   "ref_pair": [
+    "G92",
+    "G93"
+   ],
+   "generated_pair": [
+    "N87",
+    "N88"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 1
+  },
+  {
+   "ref_pair": [
+    "G94",
+    "G95"
+   ],
+   "generated_pair": [
+    "N94",
+    "N95"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 8
+  },
+  {
+   "ref_pair": [
+    "G95",
+    "G96"
+   ],
+   "generated_pair": [
+    "N95",
+    "N96"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 8
+  },
+  {
+   "ref_pair": [
+    "G96",
+    "G97"
+   ],
+   "generated_pair": [
+    "N96",
+    "N98"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 7
+  },
+  {
+   "ref_pair": [
+    "G96",
+    "G98"
+   ],
+   "generated_pair": [
+    "N96",
+    "N87"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 7
+  },
+  {
+   "ref_pair": [
+    "G98",
+    "G100"
+   ],
+   "generated_pair": [
+    "N90",
+    "N91"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 6
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G101"
+   ],
+   "generated_pair": [
+    "N47",
+    "N97"
+   ],
+   "same_order": true,
+   "forward_len": 4,
+   "reverse_len": 9
+  },
+  {
+   "ref_pair": [
+    "G101",
+    "G102"
+   ],
+   "generated_pair": [
+    "N97",
+    "N98"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G85",
+    "G103"
+   ],
+   "generated_pair": [
+    "N81",
+    "N98"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G80",
+    "G104"
+   ],
+   "generated_pair": [
+    "N80",
+    "N98"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "G81",
+    "G104"
+   ],
+   "generated_pair": [
+    "N78",
+    "N98"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G83",
+    "G106"
+   ],
+   "generated_pair": [
+    "N82",
+    "N98"
+   ],
+   "same_order": true,
+   "forward_len": 2,
+   "reverse_len": 5
+  },
+  {
+   "ref_pair": [
+    "G93",
+    "G108"
+   ],
+   "generated_pair": [
+    "N88",
+    "N101"
+   ],
+   "same_order": true,
+   "forward_len": 7,
+   "reverse_len": 12
+  }
+ ],
+ "summary": {
+  "reference_matched": 65,
+  "reference_total": 129,
+  "match_types": {
+   "none": 64,
+   "merged": 24,
+   "exact": 36,
+   "partial": 5
+  },
+  "generated_matched": 86,
+  "generated_total": 110,
+  "order_same": 53,
+  "order_checked": 60,
+  "order_false": 7,
+  "order_not_connected": 0,
+  "order_pairs_available": 71
+ },
+ "notes": "Matching per prompt_align.md (strict). Kela caseworker and Kela system treated as the same actor; actor differences recorded in match_type_note. Citizen/landlord vs Kela counterparts of the same exchange are not matched (e.g. N77), except the automated landlord->Kela lease-data transfer (G11/N23). order_checks: (predecessor, step) pairs from the reference predecessor lists, in reference order, where both steps are matched and their matched node sets do not share a node (max 60). Path test over all matched nodes on each side using shortest directed paths in the generated graph: same_order true iff a forward path exists and is no longer than the shortest reverse path; false if only the reverse path exists or it is shorter; not_connected if neither. generated_pair is the node pair realising the shorter/forward path."
+}

@@ -1,0 +1,1033 @@
+{
+ "actors": [
+  {
+   "id": "citizen",
+   "name": "Applicant / household (hakija, ruokakunta)",
+   "kind": "citizen"
+  },
+  {
+   "id": "kela_caseworker",
+   "name": "Kela caseworker",
+   "kind": "caseworker"
+  },
+  {
+   "id": "kela_system",
+   "name": "Kela information systems (rule-based calculation)",
+   "kind": "system"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "N01",
+   "name": "Person in a rented dwelling wants housing allowance",
+   "description": "A person who lives permanently in a rented dwelling in Finland becomes a potential claimant of general housing allowance (yleinen asumistuki).",
+   "type": "start_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Voit hakea asumistukea, jos asut vakinaisesti vuokra-asunnossa Suomessa."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N02",
+   "name": "Estimate the allowance with the calculator (laskuri)",
+   "description": "The household optionally estimates the amount of housing allowance with Kela's online calculator before applying; the result is only an estimate.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "voit helpoiten arvioida asumistukesi määrän laskurilla."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Laske asumistuen määrä laskurilla. Laskurin antama tulos on arvio."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N03",
+   "name": "Apply for housing allowance (hakea asumistukea)",
+   "description": "The household applies to Kela for general housing allowance from a chosen start month (the page does not say through which channel the first application is made).",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos esimerkiksi haet asumistukea syyskuun alusta alkaen, elokuussa ansaitsemiasi tuloja ei huomioida asumistuessa."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Einon ja Elisan tulot eivät ylitä tulorajaa, joten he voivat hakea asumistukea."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N04",
+   "name": "Is the dwelling an eligible form of housing?",
+   "description": "Kela checks that the applicant lives permanently in Finland in a rental, right-of-occupancy (asumisoikeus) or part-ownership (osaomistus) dwelling; owner-occupied dwellings are excluded.",
+   "type": "decision",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Voit hakea asumistukea, jos asut vakinaisesti vuokra-asunnossa Suomessa."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Voit hakea asumistukea, jos asut asumisoikeusasunnossa Suomessa."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Voit hakea asumistukea, jos asut osaomistusasunnossa Suomessa."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Omistusasuntoon ei saa yleistä asumistukea."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N05",
+   "name": "Does a written lease exist?",
+   "description": "For rental and part-ownership dwellings Kela requires that the applicant holds a written lease agreement (kirjallinen vuokrasopimus).",
+   "type": "decision",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "document_check",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos haet tukea vuokra-asuntoon, sinulla täytyy olla kirjallinen vuokrasopimus."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos haet tukea osaomistusasuntoon, sinulla täytyy olla kirjallinen vuokrasopimus."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N06",
+   "name": "Is the applicant a student without a qualifying exception?",
+   "description": "Students generally cannot get general housing allowance, unless an exception applies such as living with a child, receiving non-study-grant support, interrupted studies, exhausted study-grant months or terminated study grant.",
+   "type": "decision",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "document_check",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos opiskelet, et yleensä voi saada yleistä asumistukea."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Saat opintojesi ajalta muuta tukea kuin opintotukea, esimerkiksi työttömyystukea, kuntoutusrahaa tai sairauspäivärahaa."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Olet keskeyttänyt opintosi tai käyttänyt loppuun opintotukikuukautesi."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Ahvenanmaalaiset opiskelijat eivät voi saada yleistä asumistukea, jos he asuvat vuokralla."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N07",
+   "name": "Determine the household (ruokakunta) and its members",
+   "description": "Kela establishes who belongs to the household (e.g. spouses form one household with a joint allowance) and the numbers of adults and children; a minor's income and assets count only if the minor applies alone or with a spouse.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Koska Tommi ja Pauliina ovat puolisoja, he kuuluvat samaan ruokakuntaan ja saavat yhteisen asumistuen."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Alaikäisen tulot otetaan huomioon kuitenkin vain, jos alaikäinen hakee tukea yksin tai puolisonsa kanssa."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Perusomavastuu lasketaan ruokakunnan bruttotuloista ja ruokakunnan aikuisten ja lasten määrästä."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N08",
+   "name": "Identify household earned income (palkkatulot and extras)",
+   "description": "Kela identifies the gross wages and pay supplements (benefits in kind, overtime pay, shift allowances, holiday bonuses) of all household members, by the period in which they were earned and including taxable and tax-free income.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistukeen vaikuttavat palkkatulot ja palkan lisäksi maksettavat tulot, esimerkiksi"
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Tulona otetaan huomioon sekä veronalaiset että verottomat tulot. Veronalaiset tulot huomioidaan bruttotuloina."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Tulosi vaikuttavat tukeen sen mukaan, miltä ajalta olet ne ansainnut."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N09",
+   "name": "Estimate entrepreneur income from YEL/MYEL work income",
+   "description": "Where a household member is an entrepreneur, Kela estimates the income as a rule from the work income insured under YEL or MYEL.",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Arvioimme yrittäjän tulot pääsääntöisesti YEL- tai MYEL-vakuutuksen (tyoelake.fi) työtulon perusteella."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N10",
+   "name": "Assess capital income (pääomatulot)",
+   "description": "Kela determines which capital income counts: dividends and interest (book-entry account items above 12.02 EUR/month), recurring share-savings-account yields, recurring capital gains without deducting losses, and rental income.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistukeen vaikuttavat myös pääomatulot, esimerkiksi"
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Ruokakunnan kunkin jäsenen arvo-osuustilillä olevien osakkeiden osinko- ja korkotulot otetaan tulona huomioon, jos ne ovat suuremmat kuin 12,02 e/kk."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Toistuvat luovutusvoitot otetaan tulona huomioon."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Luovutustappioita ei vähennetä luovutusvoittojen määrästä."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N11",
+   "name": "Compute forestry income from average yield",
+   "description": "Forestry income is calculated from the forest's average yield, not from the actual sales income.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Metsätalouden tulot lasketaan metsän keskimääräisen tuoton mukaan. Metsän todellista myyntituloa ei oteta huomioon."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N12",
+   "name": "Assess Kela benefits and pensions counted as income",
+   "description": "Kela determines which benefits and pensions received by any household member count as gross income (e.g. unemployment, sickness, parental benefits and pensions count; social assistance, child benefit and student loan do not).",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Yleisen asumistuen määrään vaikuttavat monet tuet, kuten yleistuki ja opintoraha. Tietyt tuet, kuten toimeentulotuki ja lapsilisä, eivät kuitenkaan vaikuta asumistukeen."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistukeen vaikuttavat ruokakunnan kaikkien asukkaiden saamat tuet."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N13",
+   "name": "Will income stay similar for at least 3 months?",
+   "description": "Kela decides whether the household's income remains similar for at least 3 months from the grant or review (continuing income, jatkuva tulo) or not (average income, keskiarvotulo).",
+   "type": "decision",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Laskemme asumistukeen vaikuttavien tulojesi määrän joko jatkuvana tulona tai keskiarvotulona."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos tulosi eivät pysy samanlaisina 3 kuukauden ajan siitä, kun asumistuki on myönnetty tai tarkistettu, arvioimme sinulle keskiarvotulon."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N14",
+   "name": "Use current income as continuing income (jatkuva tulo)",
+   "description": "If income stays similar for at least 3 months, Kela calculates the allowance on the basis of these incomes; variation from working hours or supplements does not change the income source.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos tulosi pysyvät samanlaisina vähintään 3 kuukauden ajan siitä, kun asumistuki on myönnetty tai tarkistettu, laskemme asumistuen määrän näiden tulojen mukaan. Tätä kutsutaan jatkuvaksi tuloksi."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Sen sijaan tulojen vaihtelu esimerkiksi työaikojen tai lisien vuoksi ei tarkoita sitä, että tulonlähde muuttuu, ja siksi tällaiset tulot katsotaan jatkuviksi tuloiksi."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N15",
+   "name": "Estimate income expected over the next 12 months",
+   "description": "Where income is not stable (e.g. gig work, studying, intermittent unemployment), Kela estimates all income the household is expected to receive during the next 12 months.",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Keskiarvotulo saadaan laskemalla yhteen kaikki tulot, joita sinun arvioidaan saavan seuraavan 12 kuukauden aikana."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Keskiarvotulossa otamme huomioon esimerkiksi sen, että teet keikkatöitä, opiskelet tai olet välillä työttömänä."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N16",
+   "name": "Compute monthly average income (keskiarvotulo)",
+   "description": "Kela divides the estimated 12-month income total by 12 to obtain the monthly average income on which the allowance is based.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Tämä summa jaetaan 12:lla, ja näin muodostuu kuukausittainen keskiarvotulosi, jonka perusteella asumistuki määräytyy."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N17",
+   "name": "Total the household's gross monthly income (T)",
+   "description": "Kela sums the earned income, capital income and benefits of all household members into the household's total gross monthly income (T).",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistukeen vaikuttavat ruokakunnan yhteenlasketut tulot."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "T = ruokakunnan yhteenlasketut tulot"
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistuen määrä lasketaan kuukausitulojesi mukaan."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N18",
+   "name": "Does gross income exceed the income limit?",
+   "description": "Kela compares household gross income with the income limit for the household's composition (adults and children); above the limit no allowance can be paid at all.",
+   "type": "decision",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos ruokakuntasi bruttotulot ovat suuremmat kuin alla esitetty tuloraja, et voi saada lainkaan asumistukea."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Einon ja Elisan tulot eivät ylitä tulorajaa, joten he voivat hakea asumistukea."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N19",
+   "name": "Identify household assets (omaisuus)",
+   "description": "Kela identifies the household's assets that count (deposits after a 2,000 EUR personal allowance, property, housing shares, listed shares and funds, business and farm assets, forests, bonds, insurance investments), excluding e.g. ASP deposits and undivided estates.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistukeen vaikuttavaa omaisuutta ovat esimerkiksi pankkitalletukset, osakkeet ja sijoitukset."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Talletukset. Tilillä olevista talletuksista tehdään kuitenkin 2 000 euron käyttövaravähennys, joka ei vaikuta yleiseen asumistukeen."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Omaisuutena ei kuitenkaan oteta huomioon osuutta jakamattomasta kuolinpesästä, ASP-tilillä olevia talletuksia tai omaisuutta, johon ei ole hallintaoikeutta."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Alaikäisen omaisuus otetaan huomioon vain, jos alaikäinen hakee tukea yksin tai puolisonsa kanssa."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N20",
+   "name": "Deduct long-term debts from assets",
+   "description": "Kela deducts long-term debts such as a housing or student loan from the household's assets before applying the asset limits.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Omaisuudesta vähennetään kuitenkin ensin pitkäaikaiset velat kuten asunto- tai opintolaina."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N21",
+   "name": "Are net assets 50,000 EUR or more?",
+   "description": "If the household's assets are 50,000 EUR or more (after long-term debts), no housing allowance is paid.",
+   "type": "decision",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos ruokakunnallasi on omaisuutta 50 000 euroa tai enemmän, asumistukea ei makseta lainkaan."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N22",
+   "name": "Count 20% of assets above the limit as income",
+   "description": "Assets above 10,000 EUR (one-adult household) or 20,000 EUR (two or more adults) are counted as income at 20% of the excess, spread over the year (e.g. 1,000 EUR/year = 83.33 EUR/month).",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos ruokakuntasi omaisuus ylittää 10 000 tai 20 000 euron rajan, otamme rajan ylittävästä osasta tuloksi huomioon 20 %."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Pekan omaisuudesta yleiseen asumistukeen vaikuttaa siis 1 000 euroa vuodessa eli 83,33 euroa kuukaudessa."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N23",
+   "name": "Determine the accepted rent or usage charge",
+   "description": "Kela takes the rent (or right-of-occupancy usage charge, käyttövastike) paid by the household, removes the electricity share, the subtenant's rent and non-eligible charges (sauna, laundry, parking, internet, furnishing, part-ownership loan interest, employer-paid parts).",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "document_check",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Voit saada asumistukea vuokran maksamiseen."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos vuokraan sisältyy sähkö, vähennämme vuokrasta sähkön osuuden. Asumistukea ei voi saada sähkömaksuihin."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos sinulla on alivuokralainen, asumistuessasi hyväksyttävistä asumismenoista vähennetään alivuokralaisen maksama vuokran määrä."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Vain sinun tai ruokakuntasi jäsenen maksamat maksut voidaan hyväksyä asumismenoiksi."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumistukea ei voi saada osaomistusasunnon osamaksua varten otetun lainan korkoihin."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N24",
+   "name": "Add standard water and heating costs",
+   "description": "If water and heating are paid separately from the rent, Kela adds fixed accepted amounts (water 20 EUR/month per person; heating 46 EUR/month plus 16 EUR per additional person, higher in some regions).",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Voit saada asumistukea vesimaksuihin, jos maksat niitä erikseen vuokran lisäksi."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Vesimaksuksi hyväksytään 20 e/kk henkilöä kohti."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos ruokakunnassa on 1 henkilö, lämmityskuluiksi hyväksytään 46 e/kk. Jos ruokakuntaan kuuluu useampi henkilö, lämmityskuluihin lisätään 16 e/kk jokaista seuraavaa henkilöä kohti."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Pohjois-Pohjanmaan, Kainuun ja Lapin maakunnissa hyväksytään lämmityskuluiksi 1 henkilön ruokakunnassa 50 e/kk ja jokaista seuraavaa henkilöä kohti 17 e/kk."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N25",
+   "name": "Determine household size counted for the maximum housing costs",
+   "description": "Kela counts the household size for the maximum-cost table, adding one person if a household member with a disability needs exceptionally much space because of aids or a carer.",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee apuvälineiden tai hoitajan vuoksi erityisen paljon tilaa, hyväksymme asumismenot yhtä henkilöä suuremman henkilömäärän mukaan."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N26",
+   "name": "Apply the municipality-specific maximum housing costs",
+   "description": "Kela caps the accepted housing costs at the maximum (enimmäisasumismenot) for the municipality group and household size; costs above the cap are not supported.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Asumismenojen määrille on kuntakohtaiset ylärajat. Näitä rajoja kutsutaan myös enimmäisasumismenoiksi."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos asumismenosi ovat suuremmat kuin enimmäisasumismenot, voit silti saada asumistukea. Saat tukea kuitenkin enintään enimmäisasumismenojen mukaan."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Maijan asumistuen määrä lasketaan siis 563 euron kuntakohtaisen ylärajan mukaan."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N27",
+   "name": "Compute basic self-reliance amount (perusomavastuu)",
+   "description": "Kela computes the deductible basic self-reliance amount from household income and the number of adults and children: 0.5 x [T - (667 + 94 x A + 296 x L)], with a different formula in Åland.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Perusomavastuu = 0,5 x [T – (667 + 94 x A + 296 x L)]"
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos asut Ahvenanmaalla, perusomavastuu lasketaan eri kaavalla."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "0,42 x [T - (667 + 111 x A + 246 x L)]"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N28",
+   "name": "Compute the housing allowance amount",
+   "description": "Kela computes the allowance as 0.7 x (accepted housing costs after the cap - basic self-reliance amount), or 0.8 x in Åland.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Yleisen asumistuen määrä lasketaan kaavalla 0,7 x (hyväksyttävät asumismenot – perusomavastuu)."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Ahvenanmaalla asumistuki on enintään 80 % hyväksyttävistä asumismenoista. Asumistuen määrä lasketaan kaavalla 0,8 x (hyväksyttävät asumismenot – perusomavastuu)."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "0,7 x (652 euroa – 472,50 euroa) = 125,65 euroa."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N29",
+   "name": "Grant housing allowance (usually until further notice)",
+   "description": "Housing allowance is granted, as a rule until further notice (toistaiseksi), at the computed amount; the page does not describe who signs off or how the decision is notified.",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "human_signoff",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Arvioimme keskiarvotulon vuodeksi eteenpäin, sillä asumistuki myönnetään yleensä toistaiseksi ja tarkistetaan vuoden välein."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Eino ja Elisa saavat asumistukea 125,65 euroa."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N30",
+   "name": "Annual review of the allowance (tarkistus)",
+   "description": "The allowance is reviewed at one-year intervals, which is why average income is estimated one year ahead.",
+   "type": "timer",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Arvioimme keskiarvotulon vuodeksi eteenpäin, sillä asumistuki myönnetään yleensä toistaiseksi ja tarkistetaan vuoden välein."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N31",
+   "name": "Did household income rise by 400 EUR/month or fall by 200 EUR/month?",
+   "description": "The household monitors whether total income rises by at least 400 EUR/month or falls by at least 200 EUR/month, which obliges it to notify Kela.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Ilmoita meille, jos ruokakuntasi tulot nousevat vähintään 400 e/kk tai laskevat 200 e/kk."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N32",
+   "name": "Report the income change via OmaKela or form AT 1",
+   "description": "The household notifies Kela of the income change in OmaKela or with the form Yleinen asumistuki AT 1.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Ilmoita muutoksista OmaKelassa tai lomakkeella Yleinen asumistuki AT 1 (pdf)."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Ilmoita meille, jos ruokakuntasi tulot nousevat vähintään 400 e/kk tai laskevat 200 e/kk."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N33",
+   "name": "No general housing allowance payable",
+   "description": "End state in which the household is not entitled to general housing allowance (income over the limit, assets of 50,000 EUR or more, owner-occupied dwelling, or student without exception).",
+   "type": "end_event",
+   "actor_id": "kela_system",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos tulot ylittävät tulorajan, et voi saada asumistukea lainkaan."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Jos ruokakunnallasi on omaisuutta 50 000 euroa tai enemmän, asumistukea ei makseta lainkaan."
+    },
+    {
+     "source": "kela-fi-tulot-ja-menot.txt",
+     "quote": "Omistusasuntoon ei saa yleistä asumistukea."
+    }
+   ],
+   "inferred_reason": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "N01",
+   "target": "N02",
+   "condition": "optional: estimate the allowance first"
+  },
+  {
+   "source": "N01",
+   "target": "N03",
+   "condition": "apply directly"
+  },
+  {
+   "source": "N02",
+   "target": "N03",
+   "condition": ""
+  },
+  {
+   "source": "N03",
+   "target": "N04",
+   "condition": ""
+  },
+  {
+   "source": "N04",
+   "target": "N05",
+   "condition": "rental, right-of-occupancy or part-ownership dwelling"
+  },
+  {
+   "source": "N04",
+   "target": "N33",
+   "condition": "owner-occupied dwelling (omistusasunto)"
+  },
+  {
+   "source": "N05",
+   "target": "N06",
+   "condition": "written lease held, or not required (right-of-occupancy dwelling)"
+  },
+  {
+   "source": "N05",
+   "target": "N33",
+   "condition": "no written lease for a rental or part-ownership dwelling"
+  },
+  {
+   "source": "N06",
+   "target": "N07",
+   "condition": "not a student, or student with a qualifying exception"
+  },
+  {
+   "source": "N06",
+   "target": "N33",
+   "condition": "student without an exception (may instead get the study-grant housing supplement, opintotuen asumislisä)"
+  },
+  {
+   "source": "N07",
+   "target": "N08",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N12",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N19",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N23",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N24",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N25",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N09",
+   "condition": "household has entrepreneur income"
+  },
+  {
+   "source": "N07",
+   "target": "N10",
+   "condition": "household has capital income"
+  },
+  {
+   "source": "N07",
+   "target": "N11",
+   "condition": "household has forestry income"
+  },
+  {
+   "source": "N08",
+   "target": "N13",
+   "condition": ""
+  },
+  {
+   "source": "N09",
+   "target": "N13",
+   "condition": ""
+  },
+  {
+   "source": "N10",
+   "target": "N13",
+   "condition": ""
+  },
+  {
+   "source": "N11",
+   "target": "N13",
+   "condition": ""
+  },
+  {
+   "source": "N12",
+   "target": "N13",
+   "condition": ""
+  },
+  {
+   "source": "N13",
+   "target": "N14",
+   "condition": "income stays similar for at least 3 months (continuing income)"
+  },
+  {
+   "source": "N13",
+   "target": "N15",
+   "condition": "income does not stay similar for 3 months (average income)"
+  },
+  {
+   "source": "N15",
+   "target": "N16",
+   "condition": ""
+  },
+  {
+   "source": "N14",
+   "target": "N17",
+   "condition": ""
+  },
+  {
+   "source": "N16",
+   "target": "N17",
+   "condition": ""
+  },
+  {
+   "source": "N17",
+   "target": "N18",
+   "condition": ""
+  },
+  {
+   "source": "N18",
+   "target": "N33",
+   "condition": "gross income above the income limit"
+  },
+  {
+   "source": "N18",
+   "target": "N27",
+   "condition": "gross income at or below the income limit"
+  },
+  {
+   "source": "N19",
+   "target": "N20",
+   "condition": ""
+  },
+  {
+   "source": "N20",
+   "target": "N21",
+   "condition": ""
+  },
+  {
+   "source": "N21",
+   "target": "N33",
+   "condition": "net assets 50,000 EUR or more"
+  },
+  {
+   "source": "N21",
+   "target": "N22",
+   "condition": "net assets below 50,000 EUR"
+  },
+  {
+   "source": "N22",
+   "target": "N27",
+   "condition": "20% of excess assets counted as income"
+  },
+  {
+   "source": "N23",
+   "target": "N26",
+   "condition": ""
+  },
+  {
+   "source": "N24",
+   "target": "N26",
+   "condition": ""
+  },
+  {
+   "source": "N25",
+   "target": "N26",
+   "condition": ""
+  },
+  {
+   "source": "N26",
+   "target": "N28",
+   "condition": ""
+  },
+  {
+   "source": "N27",
+   "target": "N28",
+   "condition": ""
+  },
+  {
+   "source": "N28",
+   "target": "N29",
+   "condition": ""
+  },
+  {
+   "source": "N29",
+   "target": "N31",
+   "condition": ""
+  },
+  {
+   "source": "N31",
+   "target": "N32",
+   "condition": "income rose by at least 400 EUR/month or fell by at least 200 EUR/month"
+  },
+  {
+   "source": "N31",
+   "target": "N30",
+   "condition": "no reportable change: wait for the annual review"
+  },
+  {
+   "source": "N30",
+   "target": "N07",
+   "condition": "annual review: household situation reassessed"
+  },
+  {
+   "source": "N32",
+   "target": "N07",
+   "condition": "reported change leads to reassessment (handling not described in this document)"
+  }
+ ]
+}

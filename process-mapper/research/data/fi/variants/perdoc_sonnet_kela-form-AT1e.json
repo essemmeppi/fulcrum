@@ -1,0 +1,1570 @@
+{
+ "actors": [
+  {
+   "id": "citizen",
+   "name": "Applicant (housing allowance claimant)",
+   "kind": "citizen"
+  },
+  {
+   "id": "household_member",
+   "name": "Other residents of a communal household",
+   "kind": "third_party"
+  },
+  {
+   "id": "landlord",
+   "name": "Landlord",
+   "kind": "third_party"
+  },
+  {
+   "id": "kela_system",
+   "name": "Kela information systems (registers, rules, payment)",
+   "kind": "system"
+  },
+  {
+   "id": "kela_caseworker",
+   "name": "Kela caseworker",
+   "kind": "caseworker"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "N01",
+   "name": "Applicant needs housing allowance",
+   "description": "A person with housing costs decides to apply for general housing allowance on form AT 1e.",
+   "type": "start_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "When to apply: General housing allowance can be granted from the beginning of the month preceding that in which your application is received."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N02",
+   "name": "Change in circumstances while allowance is in payment",
+   "description": "A change in the household's income, residence, housing costs, household composition, occupancy status or student housing supplement eligibility arises and must be notified.",
+   "type": "start_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "State what types of changes in the household have happened or will happen."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "I declare that the information I have given is true and accurate. I will notify any changes."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N03",
+   "name": "One year since allowance awarded or last reviewed",
+   "description": "One year has passed since the housing allowance was awarded or last reviewed, which triggers an annual review application.",
+   "type": "start_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Annual review of the housing allowance because one year has passed since the housing allowance was awarded or last reviewed."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N04",
+   "name": "Moved to Finland without earlier Kela benefits?",
+   "description": "Applicant checks whether they have moved to Finland and have not previously claimed benefits from Kela.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you have moved to Finland and you have not previously claimed benefits from Kela, also complete form Y 77e."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N05",
+   "name": "Complete form Y 77e",
+   "description": "Applicant who has moved to Finland and has no earlier Kela benefits also completes form Y 77e.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you have moved to Finland and you have not previously claimed benefits from Kela, also complete form Y 77e."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N06",
+   "name": "Going abroad?",
+   "description": "Applicant checks whether they are going abroad.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you are going abroad, also complete form Y 38e."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N07",
+   "name": "Complete form Y 38e",
+   "description": "Applicant who is going abroad also completes form Y 38e.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you are going abroad, also complete form Y 38e."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N08",
+   "name": "Enter applicant details (section 1)",
+   "description": "Applicant gives identity code, name, telephone, address, move-in date, cohabiting or separation status and student status with expected graduation.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Personal identity code Family name and given name"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "I am living in a cohabiting relationship since"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Are you a student? No Yes. Estimated time of graduation / (month and year)"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you are about to move, state your new address."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N09",
+   "name": "Choose payee of allowance and retroactive allowance (section 2)",
+   "description": "Applicant chooses whether the housing allowance, and separately the retroactive allowance, is paid to the applicant or the landlord.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Housing allowance is payable to"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Retroactive allowance is payable to the applicant the landlord"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N10",
+   "name": "State landlord's bank account and payment reference number",
+   "description": "If payment goes to the landlord, applicant states the landlord's bank account number and the rent payment reference number, which Kela requires if the landlord has reported one.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Bank account number of the landlord (state the bank account number only if the benefit is payable to the landlord)"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If the landlord has reported a reference number for payment of the rent, Kela can pay the housing allowance to the landlord only if you report the reference number to Kela."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Reference number for the payment"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N11",
+   "name": "State applicant's bank account number",
+   "description": "Applicant states their own bank account number even when the benefit is paid to the landlord.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Applicant’s bank account number (state the bank account number even if the benefit is paid out to the landlord)"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N12",
+   "name": "Choose which benefit to apply for (section 3)",
+   "description": "Applicant chooses between new housing allowance, annual review, or review of allowance in current payment.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Which benefit do you wish to apply for?"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N13",
+   "name": "Apply for new housing allowance",
+   "description": "Applicant who does not currently receive housing allowance applies for a new allowance and states the starting month.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "New housing allowance starting from"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "New housing allowance means that you do not currently receive housing allowance."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N14",
+   "name": "Apply for annual review",
+   "description": "Applicant requests the annual review of the allowance because one year has passed since it was awarded or last reviewed.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Annual review of the housing allowance because one year has passed since the housing allowance was awarded or last reviewed."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N15",
+   "name": "Report changes for review of allowance in current payment",
+   "description": "Applicant requests review of the current allowance and states which household changes (income, residence, housing costs, household members, occupancy status, student housing supplement) have happened or will happen.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Review of housing allowance in current payment."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "State what types of changes in the household have happened or will happen."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Change in the occupancy status of your home (e.g. from rental to owner-occupied) as from ."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N16",
+   "name": "List persons living in the household (section 4)",
+   "description": "Applicant lists spouse and other household members with identity codes or birth dates and student status.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "A household means the people who live permanently in the same flat or house."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Personal identity code or date of birth of spouse"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N17",
+   "name": "Communal household under joint rental agreement?",
+   "description": "Applicant determines whether several persons rented the home under a joint rental agreement and so form a communal household.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If several persons have rented a home under a joint rental agreement, they are considered as a communal household."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N18",
+   "name": "Other residents give power of attorney",
+   "description": "Other residents of a communal household give the applicant a power of attorney to apply on behalf of the household.",
+   "type": "third_party_task",
+   "actor_id": "household_member",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you live in a communal household, you must have a power of attorney from the other residents if you wish to apply for housing allowance on behalf of the household."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N19",
+   "name": "Enclose form AT 5e with application",
+   "description": "Applicant encloses form AT 5e (Power of attorney to represent a communal household) with the application.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Enclose the form AT 5e, Power of attorney to represent a communal household with the application."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Power of attorney to represent a communal household, Kela form AT 5e."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N20",
+   "name": "Notify DVV of address change",
+   "description": "Applicant notifies the Digital and Population Data Services Agency of the change of address for all household members within one week of the change, if the address has changed.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Notify the Digital and Population Data Services Agency of the change of address for all members of the household within one week of the change of address."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Inaccurate address details may cause a delay in the processing of the application."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N21",
+   "name": "State home type, landlord and rent or maintenance charge (section 5)",
+   "description": "Applicant states whether the home is rental, part-ownership or right-of-occupancy, the landlord's name and the rent or maintenance charge with its start date.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "a rental or part-ownership home"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Name of landlord"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Amount of rent or maintenance charge: EUR per month starting from ."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N22",
+   "name": "State separately paid utility costs and subtenant rent",
+   "description": "Applicant states whether water, heating or electricity are paid separately and whether a subtenant pays rent.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "In addition to the rent or maintenance charge, do you pay separately for any of the following?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Does your household have a subtenant?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Monthly rent paid by the subtenant: EUR ."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N23",
+   "name": "Report wages and salaries (section 6)",
+   "description": "Applicant reports gross monthly wages or salaries and employment details of themselves, spouse and other household members.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "State the household income to its gross amount, i.e. before taxes and other deductions."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "State the wage or salary and any wage supplements. If the wage or salary varies, estimate and state the average monthly wage or salary."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N24",
+   "name": "Report foreign pension, scholarships and grants",
+   "description": "Applicant reports any pension from a country other than Finland and any scholarships or grants received by household members.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Pension from some other country than Finland"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Scholarships and grants"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If the grant or scholarship is paid from another country, state the amount of the grant or scholarship in EUR per month."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N25",
+   "name": "Report self-employment",
+   "description": "Applicant reports whether a household member is self-employed, the company, pension insurance status and any business start-up grant.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Are you or is another member of your household self-employed?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Is the self-employed person insured under the YEL (Self-Employed Persons’) or MYEL (Farmers’) Pensions Act?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Does the self-employed person receive a business start-up grant?"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N26",
+   "name": "Report assets (section 7)",
+   "description": "Applicant reports deposits, equity savings accounts, shares, insurance-based investments, fixed assets and housing cooperative shares of the household.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Do you or does another member of your household have any of the following types of assets or capital income?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Money in bank accounts (deposits), bonds or receivables"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Fixed assets (for instance real estate or forest holdings)"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N27",
+   "name": "Report share trading",
+   "description": "Applicant reports share purchases or sales in a book-entry account in the previous 12 months and intended sales of shares, securities or cryptocurrencies in the next 12 months.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Have you or has another member of your household bought or sold shares in a book-entry account in the previous 12 months?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Do you or does another member of your household intend to sell shares in a mutual fund, other securities or cryptocurrencies in the next 12 months?"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N28",
+   "name": "Report rental income",
+   "description": "Applicant reports rental income from all sources, with total rent and deductions stated separately.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Rental income"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you have rental income, the income must be stated for all sources of rental income. State the amount of rent in total and any deductions separately."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N29",
+   "name": "Report other income",
+   "description": "Applicant reports any other type of income not covered above, with recipient, type and monthly amount.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Do you or does another member of your household receive some other type of income than those mentioned above?"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N30",
+   "name": "Report long-term debt",
+   "description": "Applicant reports long-term debt of household members, not consumer or other short-term debt.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Do you or does another member of your household have debt?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "You only have to state long-term debt (not consumer debt or other short-term debt)."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N31",
+   "name": "Report expected changes in income and benefits (section 8)",
+   "description": "Applicant states whether incomes or benefits will change and whether anyone will apply for unemployment allowance, because coming income may affect the allowance.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Will there be changes in your incomes and benefits or the incomes and benefits of other household members?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Will you or another member of your household apply for unemployment allowance from the unemployment fund or from Kela?"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "However, we already now need information on coming incomes because they may affect the amount of housing allowance."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N32",
+   "name": "Does Kela receive rental details electronically from landlord?",
+   "description": "Applicant checks at www.kela.fi/rental-agreement whether Kela receives the rental housing details from the landlord in electronic form.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Kela receives the details on rental housing from certain landlords in electronic form. In this case, the recipient of housing allowance does not need to submit the rental agreement."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "You can check at www.kela.fi/rental-agreement, if we receive the details in electronic form from the landlord."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N33",
+   "name": "Landlord sends rental details to Kela electronically",
+   "description": "Certain landlords send the rental housing details to Kela in electronic form, so no rental agreement copy is needed from the applicant.",
+   "type": "third_party_task",
+   "actor_id": "landlord",
+   "visibility": "external",
+   "automation_class": "register_lookup",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Kela receives the details on rental housing from certain landlords in electronic form."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N34",
+   "name": "Documentation already submitted to Kela earlier?",
+   "description": "Applicant checks whether the relevant documentation was already submitted to Kela earlier, for instance for another benefit.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If you have submitted the relevant documentation to Kela already previously for instance for another benefit, you need not submit the same documentation again."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N35",
+   "name": "Enclose copy of rental or right-of-occupancy agreement",
+   "description": "Applicant encloses a copy of the rental or right-of-occupancy agreement; in reviews of an allowance in payment it is needed only if the agreement terms change and Kela gets no electronic data.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Copy of the rental or right-of-occupancy agreement."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "The rental agreement is needed in reviews of housing allowance in current payment only if the terms of the rental agreement change and Kela does not receive the information from the landlord in electronic form."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N36",
+   "name": "Enclose other documentation on income",
+   "description": "Applicant encloses other documentation on income, specifying what it is.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Other documentation on income. Please specify."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N37",
+   "name": "Keep receipts and documents",
+   "description": "Applicant keeps receipts and documents related to the application because Kela may request them later.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Keep any receipts and documents related to your application because we may request them at a later stage, when necessary."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N38",
+   "name": "Add additional information (section 10)",
+   "description": "Applicant gives extra details on a separate sheet, such as a disabled household member's need for extra living space or an assistant, or members that did not fit in section 4.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Additional information on a separate sheet. Write your name and personal identity code on the sheet."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If your household includes a disabled person who needs extra living space or an assistant, provide details about this at section 10. Additional information."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If there is not enough space here for the details for all household members, report their details at section 10. Additional information."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N39",
+   "name": "Declare information true and sign (section 11)",
+   "description": "Applicant signs with place, date and printed name, declaring the information true and promising to notify any changes.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "I declare that the information I have given is true and accurate. I will notify any changes."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Place and date Signature and printed name of the applicant"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N40",
+   "name": "File online or send by mail?",
+   "description": "Applicant chooses between filing the application and documents online or sending them by mail.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "You can also file the application and related documentation online: www.kela.fi/english."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Send the application and any supporting documents by mail. The address is Kela, PL 10, 00056 KELA."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N41",
+   "name": "File application and documents online",
+   "description": "Applicant files the application and related documentation online at www.kela.fi/english.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "You can also file the application and related documentation online: www.kela.fi/english."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N42",
+   "name": "Mail application and documents to Kela",
+   "description": "Applicant mails the application and supporting documents to Kela, PL 10, 00056 KELA.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Send the application and any supporting documents by mail. The address is Kela, PL 10, 00056 KELA."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N43",
+   "name": "Application received by Kela",
+   "description": "Kela receives the application, online or by mail; the month of receipt fixes the earliest month the allowance can start.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "General housing allowance can be granted from the beginning of the month preceding that in which your application is received."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N44",
+   "name": "Obtain wage and benefit data from national incomes register",
+   "description": "Kela receives the household's wage, salary and benefit information from the national incomes register.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "register_lookup",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If your household receives wages and salaries or benefits, we receive information on them from the national incomes register."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N45",
+   "name": "Use Tax Administration data in income assessment",
+   "description": "Kela uses information from the Tax Administration when assessing the household income.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "register_lookup",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "We also use information from the Tax Administration when assessing the income."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N46",
+   "name": "Reuse information from other benefits",
+   "description": "Kela may use information obtained within the context of another benefit to decide the present matter.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "register_lookup",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Any information obtained within the context of another benefit may also be used to decide the present matter."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N47",
+   "name": "Obtain additional information from outside sources",
+   "description": "Kela may access outside sources to obtain additional information about the applicant's circumstances.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "register_lookup",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Please contact us for more information about which outside sources we may access to obtain additional information about your circumstances and to whom we may provide such information."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N48",
+   "name": "Request receipts and documents later when necessary",
+   "description": "Kela may request the applicant's receipts and documents related to the application at a later stage.",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "external",
+   "automation_class": "document_check",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Keep any receipts and documents related to your application because we may request them at a later stage, when necessary."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N49",
+   "name": "Assess household income",
+   "description": "Kela assesses the household income using register data, Tax Administration data and the applicant's statements.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "We also use information from the Tax Administration when assessing the income."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N50",
+   "name": "Determine allowance amount",
+   "description": "Kela determines the allowance amount, which is affected by household members, a disabled person's extra space or assistant, and current and coming income.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "This information affects the amount of the housing allowance."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "However, we already now need information on coming incomes because they may affect the amount of housing allowance."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N51",
+   "name": "Decide the housing allowance matter",
+   "description": "Kela decides the present matter using the information the applicant gave and the information obtained from other sources.",
+   "type": "caseworker_task",
+   "actor_id": "kela_caseworker",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.5,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Information obtained for the purpose of deciding the present matter may be used for other benefit-related matters, if so required under law."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N52",
+   "name": "Determine allowance start date",
+   "description": "Kela grants the allowance from the first day of a month, at earliest from the beginning of the month preceding the month of receipt of the application.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "General housing allowance can be granted from the beginning of the month preceding that in which your application is received."
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "The allowance is always granted as of the first day of the month."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N53",
+   "name": "Payee valid for payment?",
+   "description": "Kela pays the allowance to the landlord only if the landlord is chosen as payee and any landlord-reported payment reference number has been given; otherwise to the applicant.",
+   "type": "decision",
+   "actor_id": "kela_system",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "If the landlord has reported a reference number for payment of the rent, Kela can pay the housing allowance to the landlord only if you report the reference number to Kela."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N54",
+   "name": "Pay allowance to applicant",
+   "description": "Kela pays the housing allowance to the applicant's bank account.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Housing allowance is payable to"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Applicant’s bank account number (state the bank account number even if the benefit is paid out to the landlord)"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N55",
+   "name": "Pay allowance to landlord",
+   "description": "Kela pays the housing allowance to the landlord's bank account using the payment reference number.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Bank account number of the landlord (state the bank account number only if the benefit is payable to the landlord)"
+    },
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Reference number for the payment"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N56",
+   "name": "Pay retroactive allowance",
+   "description": "Kela pays any retroactive allowance to the applicant or the landlord as chosen on the form.",
+   "type": "system_task",
+   "actor_id": "kela_system",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Retroactive allowance is payable to the applicant the landlord"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N57",
+   "name": "Allowance paid to chosen payee",
+   "description": "The housing allowance, and any retroactive allowance, has been paid to the payee chosen on the form.",
+   "type": "end_event",
+   "actor_id": "kela_system",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.5,
+   "evidence": [
+    {
+     "source": "kela-form-AT1e.txt",
+     "quote": "Housing allowance is payable to"
+    }
+   ],
+   "inferred_reason": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "N01",
+   "target": "N04",
+   "condition": ""
+  },
+  {
+   "source": "N02",
+   "target": "N04",
+   "condition": ""
+  },
+  {
+   "source": "N03",
+   "target": "N04",
+   "condition": ""
+  },
+  {
+   "source": "N04",
+   "target": "N05",
+   "condition": "Moved to Finland and has not previously claimed benefits from Kela"
+  },
+  {
+   "source": "N04",
+   "target": "N06",
+   "condition": "Otherwise"
+  },
+  {
+   "source": "N05",
+   "target": "N06",
+   "condition": ""
+  },
+  {
+   "source": "N06",
+   "target": "N07",
+   "condition": "Going abroad"
+  },
+  {
+   "source": "N06",
+   "target": "N08",
+   "condition": "Not going abroad"
+  },
+  {
+   "source": "N07",
+   "target": "N08",
+   "condition": ""
+  },
+  {
+   "source": "N08",
+   "target": "N09",
+   "condition": ""
+  },
+  {
+   "source": "N09",
+   "target": "N10",
+   "condition": "Allowance and/or retroactive allowance payable to the landlord"
+  },
+  {
+   "source": "N09",
+   "target": "N11",
+   "condition": "Payable to the applicant"
+  },
+  {
+   "source": "N10",
+   "target": "N11",
+   "condition": ""
+  },
+  {
+   "source": "N11",
+   "target": "N12",
+   "condition": ""
+  },
+  {
+   "source": "N12",
+   "target": "N13",
+   "condition": "New housing allowance"
+  },
+  {
+   "source": "N12",
+   "target": "N14",
+   "condition": "Annual review"
+  },
+  {
+   "source": "N12",
+   "target": "N15",
+   "condition": "Review of housing allowance in current payment"
+  },
+  {
+   "source": "N13",
+   "target": "N16",
+   "condition": ""
+  },
+  {
+   "source": "N14",
+   "target": "N16",
+   "condition": ""
+  },
+  {
+   "source": "N15",
+   "target": "N16",
+   "condition": ""
+  },
+  {
+   "source": "N16",
+   "target": "N17",
+   "condition": ""
+  },
+  {
+   "source": "N17",
+   "target": "N18",
+   "condition": "Communal household under a joint rental agreement"
+  },
+  {
+   "source": "N17",
+   "target": "N20",
+   "condition": "Not a communal household"
+  },
+  {
+   "source": "N18",
+   "target": "N19",
+   "condition": ""
+  },
+  {
+   "source": "N19",
+   "target": "N20",
+   "condition": ""
+  },
+  {
+   "source": "N20",
+   "target": "N21",
+   "condition": ""
+  },
+  {
+   "source": "N21",
+   "target": "N22",
+   "condition": ""
+  },
+  {
+   "source": "N22",
+   "target": "N23",
+   "condition": ""
+  },
+  {
+   "source": "N23",
+   "target": "N24",
+   "condition": ""
+  },
+  {
+   "source": "N24",
+   "target": "N25",
+   "condition": ""
+  },
+  {
+   "source": "N25",
+   "target": "N26",
+   "condition": ""
+  },
+  {
+   "source": "N26",
+   "target": "N27",
+   "condition": ""
+  },
+  {
+   "source": "N27",
+   "target": "N28",
+   "condition": ""
+  },
+  {
+   "source": "N28",
+   "target": "N29",
+   "condition": ""
+  },
+  {
+   "source": "N29",
+   "target": "N30",
+   "condition": ""
+  },
+  {
+   "source": "N30",
+   "target": "N31",
+   "condition": ""
+  },
+  {
+   "source": "N31",
+   "target": "N32",
+   "condition": ""
+  },
+  {
+   "source": "N32",
+   "target": "N33",
+   "condition": "Kela receives the rental details from the landlord electronically"
+  },
+  {
+   "source": "N32",
+   "target": "N36",
+   "condition": "Kela receives the rental details from the landlord electronically"
+  },
+  {
+   "source": "N32",
+   "target": "N34",
+   "condition": "Kela does not receive the rental details electronically"
+  },
+  {
+   "source": "N33",
+   "target": "N50",
+   "condition": ""
+  },
+  {
+   "source": "N34",
+   "target": "N36",
+   "condition": "Relevant documentation already submitted to Kela earlier"
+  },
+  {
+   "source": "N34",
+   "target": "N35",
+   "condition": "Not submitted earlier"
+  },
+  {
+   "source": "N35",
+   "target": "N36",
+   "condition": ""
+  },
+  {
+   "source": "N36",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N37",
+   "target": "N38",
+   "condition": ""
+  },
+  {
+   "source": "N38",
+   "target": "N39",
+   "condition": ""
+  },
+  {
+   "source": "N39",
+   "target": "N40",
+   "condition": ""
+  },
+  {
+   "source": "N40",
+   "target": "N41",
+   "condition": "File online"
+  },
+  {
+   "source": "N40",
+   "target": "N42",
+   "condition": "Send by mail"
+  },
+  {
+   "source": "N41",
+   "target": "N43",
+   "condition": ""
+  },
+  {
+   "source": "N42",
+   "target": "N43",
+   "condition": ""
+  },
+  {
+   "source": "N43",
+   "target": "N44",
+   "condition": ""
+  },
+  {
+   "source": "N43",
+   "target": "N45",
+   "condition": ""
+  },
+  {
+   "source": "N43",
+   "target": "N46",
+   "condition": ""
+  },
+  {
+   "source": "N43",
+   "target": "N47",
+   "condition": ""
+  },
+  {
+   "source": "N43",
+   "target": "N48",
+   "condition": "Kela needs receipts or documents at a later stage"
+  },
+  {
+   "source": "N44",
+   "target": "N49",
+   "condition": ""
+  },
+  {
+   "source": "N45",
+   "target": "N49",
+   "condition": ""
+  },
+  {
+   "source": "N46",
+   "target": "N49",
+   "condition": ""
+  },
+  {
+   "source": "N47",
+   "target": "N49",
+   "condition": ""
+  },
+  {
+   "source": "N48",
+   "target": "N51",
+   "condition": ""
+  },
+  {
+   "source": "N49",
+   "target": "N50",
+   "condition": ""
+  },
+  {
+   "source": "N50",
+   "target": "N51",
+   "condition": ""
+  },
+  {
+   "source": "N51",
+   "target": "N52",
+   "condition": ""
+  },
+  {
+   "source": "N52",
+   "target": "N53",
+   "condition": ""
+  },
+  {
+   "source": "N53",
+   "target": "N55",
+   "condition": "Landlord chosen as payee and any landlord-reported reference number given"
+  },
+  {
+   "source": "N53",
+   "target": "N54",
+   "condition": "Applicant chosen as payee"
+  },
+  {
+   "source": "N54",
+   "target": "N56",
+   "condition": ""
+  },
+  {
+   "source": "N55",
+   "target": "N56",
+   "condition": ""
+  },
+  {
+   "source": "N56",
+   "target": "N57",
+   "condition": ""
+  }
+ ]
+}

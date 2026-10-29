@@ -1,0 +1,2270 @@
+{
+ "source": "etuusohje.txt",
+ "notes": "Quotes are verbatim with PDF line breaks normalised to single spaces; page = [p. N] marker in the text file. actor_evidence 'etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)' marks rule-application steps where the guideline names no actor but addresses decision staff.",
+ "steps": [
+  {
+   "id": "G01",
+   "subprocess": "intake",
+   "name": "Choose dwelling if household has two",
+   "description": "A household with two dwellings in Finland chooses which dwelling it applies housing allowance for.",
+   "actor": "citizen",
+   "actor_evidence": "he voivat valita",
+   "kind": "decision",
+   "condition": "Household has two dwellings in Finland",
+   "predecessors": [],
+   "page": "p. 24",
+   "quote": "Jos ruokakunnalla on Suomessa kaksi asuntoa, he voivat valita, kumpaan asuntoon asumistukea haetaan."
+  },
+  {
+   "id": "G02",
+   "subprocess": "intake",
+   "name": "Submit application",
+   "description": "The household representative (tenancy holder, spouse, or person authorised by a community household) applies via OmaKela, on paper form AT1, or orally.",
+   "actor": "citizen",
+   "actor_evidence": "hakemuksen voi tehdä; Yksi ruokakunnan jäsen edustaa ruokakuntaa ja hakee",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [],
+   "page": "p. 25",
+   "quote": "Yleisen asumistuen hakemuksen voi tehdä • asiointipalvelu OmaKelassa • kirjallisesti lomakkeella AT1 (lomakkeen voi täyttää ja tulostaa paperisena www.kela.fi/lomakkeet) • suullisesti (Suullinen hakeminen)"
+  },
+  {
+   "id": "G03",
+   "subprocess": "intake",
+   "name": "Give own bank account number",
+   "description": "The applicant states their own bank account number in the application even if the allowance is to be paid to the landlord.",
+   "actor": "citizen",
+   "actor_evidence": "Hakijan tulee ilmoittaa",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 26",
+   "quote": "Hakijan tulee ilmoittaa hakemuksessa oma tilinumeronsa, vaikka tuki maksettaisiinkin vuokranantajalle."
+  },
+  {
+   "id": "G04",
+   "subprocess": "intake",
+   "name": "Attach required documents",
+   "description": "The applicant supplies attachments: gross income statements (not data available in the Incomes Register), signed lease copy, community-household authorisation AT5, form Y77 (moved to Finland) and/or Y38 (moving/working abroad) as applicable.",
+   "actor": "citizen",
+   "actor_evidence": "Yleisen asumistuen hakemukseen tarvittavia liitteitä",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 26",
+   "quote": "Yleisen asumistuen hakemukseen tarvittavia liitteitä ovat: • selvitykset ruokakunnan bruttotuloista – Asiakkaalta ei pyydetä sellaisia tietoja, jotka saadaan tulorekisteristä."
+  },
+  {
+   "id": "G05",
+   "subprocess": "intake",
+   "name": "Authorise payment to landlord or other payee",
+   "description": "The applicant may give a written authorisation (on the application/review form or free-form) or an oral one for paying the allowance to the landlord named in the lease or to another payee.",
+   "actor": "citizen",
+   "actor_evidence": "hakija voi antaa",
+   "kind": "task",
+   "condition": "Applicant wants allowance paid to landlord/other payee",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 78",
+   "quote": "Kirjallisen valtuutuksen hakija voi antaa tuen hakemisen tai tarkistamisen yhteydessä hakemuslomakkeella tai vapaamuotoisella valtuutuksella."
+  },
+  {
+   "id": "G06",
+   "subprocess": "intake",
+   "name": "Withdraw application",
+   "description": "The applicant may withdraw the application orally or in writing as long as no decision has been issued.",
+   "actor": "citizen",
+   "actor_evidence": "hakija voi perua",
+   "kind": "task",
+   "condition": "No decision issued yet",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 26",
+   "quote": "Asumistuen hakija voi perua hakemuksensa, jos päätöstä ei ole vielä annettu. Perumisen voi tehdä suullisesti tai kirjallisesti."
+  },
+  {
+   "id": "G07",
+   "subprocess": "intake",
+   "name": "Route Åland applications to special unit",
+   "description": "Applications of Åland residents are handled in Kela's special unit Kela-Ahvenanmaa (with Åland-specific maximum costs and formula).",
+   "actor": "caseworker",
+   "actor_evidence": "käsitellään Kelassa (Erityisyksikkö Kela-Ahvenanmaa)",
+   "kind": "decision",
+   "condition": "Applicant lives in Åland",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 25",
+   "quote": "Ahvenanmaalla asuvien yleisen asumistuen hakemukset käsitellään Kelassa (Erityisyksikkö Kela-Ahvenanmaa)."
+  },
+  {
+   "id": "G08",
+   "subprocess": "intake",
+   "name": "Register application data (implied)",
+   "description": "Implied: the guideline links to separate instructions on registering application data (and household, housing-cost, income and asset data) in Kela's system; who/how is not described here.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 26",
+   "quote": "Lue lisää hakemistietojen rekisteröinnistä."
+  },
+  {
+   "id": "G09",
+   "subprocess": "data_gathering",
+   "name": "Map household's overall situation first",
+   "description": "When handling an application the caseworker first maps the whole household's situation using background data already in Kela and the documents under processing.",
+   "actor": "caseworker",
+   "actor_evidence": "Kun käsittelet ... sinun tulee aina ensimmäiseksi kartoittaa; Tutustu",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 4",
+   "quote": "Kun käsittelet yleisen asumistuen hakemusta, sinun tulee aina ensimmäiseksi kartoittaa ruokakunnan kokonaistilanne. • Tutustu jokaisen ruokakunnan jäsenen tilanteeseen ja muodosta käsitys ruokakunnan kokonaistilanteesta Kelassa olevien taustatietojen ja nyt käsiteltävänä olevien asiakirjojen avulla."
+  },
+  {
+   "id": "G10",
+   "subprocess": "data_gathering",
+   "name": "Receive income data from Incomes Register",
+   "description": "Kela receives data (e.g. wages and, since 2021, benefit and pension payments) from the Incomes Register for deciding the application.",
+   "actor": "system_automatic",
+   "actor_evidence": "Kela saa tietoja ... tulorekisteristä",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 26",
+   "quote": "Yleisen asumistuen hakemuksen ratkaisemista varten Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä sekä vuokrasopimuksista vuokrasopimuskyselystä."
+  },
+  {
+   "id": "G11",
+   "subprocess": "data_gathering",
+   "name": "Receive lease data electronically from participating landlords",
+   "description": "Kela receives lease and rent-increase data electronically from landlords who participate in Kela's rental agreement query.",
+   "actor": "system_automatic",
+   "actor_evidence": "Kela saa näiltä vuokranantajilta sähköisesti",
+   "kind": "task",
+   "condition": "Landlord participates in the rental agreement query",
+   "predecessors": [
+    "G02"
+   ],
+   "page": "p. 26",
+   "quote": "koska Kela saa näiltä vuokranantajilta sähköisesti tiedot vuokrasopimuksista ja vuokrankorotuksista."
+  },
+  {
+   "id": "G12",
+   "subprocess": "data_gathering",
+   "name": "Do not request data available from Incomes Register",
+   "description": "Before requesting income information from the customer, the caseworker checks whether it is available from the Incomes Register; such data is not requested from the customer.",
+   "actor": "caseworker",
+   "actor_evidence": "Asiakkaalta ei pyydetä",
+   "kind": "decision",
+   "condition": "Data obtainable from the Incomes Register is not requested from the customer",
+   "predecessors": [
+    "G10"
+   ],
+   "page": "p. 26",
+   "quote": "Asiakkaalta ei pyydetä sellaisia tietoja, jotka saadaan tulorekisteristä."
+  },
+  {
+   "id": "G13",
+   "subprocess": "data_gathering",
+   "name": "Decide whether a lease copy is needed",
+   "description": "A copy of the lease is not needed if the landlord participates in Kela's rental agreement query; otherwise a signed lease copy is required.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Landlord participates in Kela's rental agreement query -> no lease copy needed",
+   "predecessors": [
+    "G11"
+   ],
+   "page": "p. 26",
+   "quote": "Kopiota vuokrasopimuksesta ei tarvita, jos vuokranantaja on mukana Kelan vuokrasopimuskyselyssä"
+  },
+  {
+   "id": "G14",
+   "subprocess": "data_gathering",
+   "name": "Request needed information from applicant",
+   "description": "Because the applicant represents the household, information needed for the application (for all members) is requested from the applicant.",
+   "actor": "caseworker",
+   "actor_evidence": "pyydetään hakijalta",
+   "kind": "task",
+   "condition": "Information missing",
+   "predecessors": [
+    "G12",
+    "G13"
+   ],
+   "page": "p. 26",
+   "quote": "Yleisen asumistuen hakija edustaa ruokakuntaa, joten asumistukihakemuksen tarvittavat tiedot pyydetään hakijalta."
+  },
+  {
+   "id": "G15",
+   "subprocess": "data_gathering",
+   "name": "Clarify unclear matters by phone, message or letter",
+   "description": "The caseworker supplements unclear matters with the customer primarily by telephone, and if needed via the message service or a customer letter.",
+   "actor": "caseworker",
+   "actor_evidence": "Täydennä ... asiakkaalta ensisijaisesti puhelimitse",
+   "kind": "task",
+   "condition": "Matters remain unclear",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 4",
+   "quote": "Täydennä epäselväksi jääneet asiat asiakkaalta ensisijaisesti puhelimitse. Käytä tarvittaessa viestipalvelua tai asiakaskirjettä."
+  },
+  {
+   "id": "G16",
+   "subprocess": "data_gathering",
+   "name": "Request missing information within 30 days",
+   "description": "If an application cannot be processed because it is incomplete, Kela must request the needed information as soon as possible and at the latest on the 30th calendar day after arrival.",
+   "actor": "caseworker",
+   "actor_evidence": "Kelan tulee pyytää hakijalta",
+   "kind": "task",
+   "condition": "Application is incomplete",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 64",
+   "quote": "Jos yleistä asumistukea koskevaa hakemusta ei hakemuksen puutteellisuuden vuoksi voida käsitellä, Kelan tulee pyytää hakijalta hakemuksen ratkaisemiseen tarvittavat tiedot mahdollisimman pian, kuitenkin viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+  },
+  {
+   "id": "G17",
+   "subprocess": "data_gathering",
+   "name": "Provide requested information (implied)",
+   "description": "Implied: the customer delivers the requested information/attachments within the set time; the guideline refers to deadlines and to failure to deliver but does not describe the delivery step itself.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G14",
+    "G15",
+    "G16"
+   ],
+   "page": "p. 65",
+   "quote": "määräaika selvitysten antamiselle on kulunut"
+  },
+  {
+   "id": "G18",
+   "subprocess": "data_gathering",
+   "name": "Wait for information or expiry of deadline",
+   "description": "After requesting information, Kela waits until it has the information or the response deadline has passed; the application must then be decided within 14 calendar days.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "wait",
+   "condition": "",
+   "predecessors": [
+    "G16"
+   ],
+   "page": "p. 65",
+   "quote": "Näissä tilanteissa hakemus on ratkaistava 14 kalenteripäivän kuluessa siitä, kun Kela on saanut käyttöönsä asian ratkaisemiseksi tarvittavat tiedot, tai määräaika selvitysten antamiselle on kulunut."
+  },
+  {
+   "id": "G19",
+   "subprocess": "other",
+   "name": "Consider other benefits and guide customer",
+   "description": "The caseworker also considers other benefits and, where needed, guides the customer to apply for them.",
+   "actor": "caseworker",
+   "actor_evidence": "Huomioi ... ohjaa",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 4",
+   "quote": "Huomioi myös muut etuudet ja ohjaa tarvittaessa hakemaan niitä."
+  },
+  {
+   "id": "G20",
+   "subprocess": "assessment",
+   "name": "Check permanent residence and benefit restrictions",
+   "description": "The caseworker checks whether each person has been deemed permanently resident in Finland (insurance decision) and whether the insurance decision contains benefit restrictions.",
+   "actor": "caseworker",
+   "actor_evidence": "muista tarkistaa; Tarkista",
+   "kind": "decision",
+   "condition": "Person deemed permanently resident and no general housing allowance restriction in the insurance decision",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 12",
+   "quote": "Kun käsittelet yleistä asumistukea, muista tarkistaa, onko henkilön katsottu asuvan Suomessa vakinaisesti. Tarkista myös mahdolliset etuusrajoitukset."
+  },
+  {
+   "id": "G21",
+   "subprocess": "assessment",
+   "name": "Wait for insurance (residence) decision",
+   "description": "For a person moving to Finland, the housing allowance decision can be made only after the insurance decision has been made.",
+   "actor": "caseworker",
+   "actor_evidence": "Voit tehdä asumistukiratkaisun vasta",
+   "kind": "wait",
+   "condition": "Insurance decision not yet made",
+   "predecessors": [
+    "G20"
+   ],
+   "page": "p. 12",
+   "quote": "Voit tehdä asumistukiratkaisun vasta vakuuttamisratkaisun jälkeen."
+  },
+  {
+   "id": "G22",
+   "subprocess": "assessment",
+   "name": "Check exclusion by pensioners' housing allowance",
+   "description": "Allowance is not granted to a single person or couple where (at least one) is entitled to pensioners' housing allowance, or to a household whose all members are so entitled.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Household falls under pensioners' housing allowance -> no general housing allowance",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 9",
+   "quote": "Yleistä asumistukea ei myönnetä (YAL 8 §) • yksin asuvalle henkilölle, jolla on oikeus eläkkeensaajan asumistukeen"
+  },
+  {
+   "id": "G23",
+   "subprocess": "assessment",
+   "name": "Check student's entitlement to student housing supplement",
+   "description": "From 1.8.2025 a student entitled to the study-grant housing supplement cannot get general housing allowance (nor belong to the household), even if not drawing study grant.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Student entitled to housing supplement -> excluded",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 18",
+   "quote": "Yleistä asumistukea ei myönnetä • 1.8.2025 alkaen opiskelijalle, joka opintotukilain mukaan on oikeutettu opintotuen asumislisään."
+  },
+  {
+   "id": "G24",
+   "subprocess": "assessment",
+   "name": "Assess minor's own entitlement",
+   "description": "A minor gets own allowance only if not entitled to housing supplement and self-supporting with own earnings; the caseworker decides on joint allowance for minor cohabitants/siblings accordingly.",
+   "actor": "caseworker",
+   "actor_evidence": "voit myöntää",
+   "kind": "decision",
+   "condition": "Minor not entitled to housing supplement and supports self",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 5",
+   "quote": "Alaikäiselle myönnetään oma yleinen asumistuki vain seuraavissa tilanteissa: • Alaikäisellä ei ole oikeutta opintotuen asumislisään."
+  },
+  {
+   "id": "G25",
+   "subprocess": "assessment",
+   "name": "Determine household composition",
+   "description": "The household is determined primarily by actual residence; a person can belong to only one household; in alternating residence the child's permanent VTJ address decides.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 21",
+   "quote": "Yleisessä asumistuessa henkilö voi kuulua vain yhteen ruokakuntaan kerrallaan. Ratkaisevaa yleisessä asumistuessa on yleensä tosiasiallinen asuminen."
+  },
+  {
+   "id": "G26",
+   "subprocess": "assessment",
+   "name": "Place declared cohabitants in same household",
+   "description": "If register or other data show the customer lives with another person and the customer declares cohabitation, the partners are placed in the same household.",
+   "actor": "caseworker",
+   "actor_evidence": "huomioi",
+   "kind": "decision",
+   "condition": "Customer lives with another person and declares cohabitation",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 8",
+   "quote": "• ilmoittaa olevansa avoliitossa – huomioi avopuolisot samaan ruokakuntaan."
+  },
+  {
+   "id": "G27",
+   "subprocess": "data_gathering",
+   "name": "Review Kela data on possible cohabitation",
+   "description": "If the customer lives with another person but does not declare cohabitation, the caseworker reviews data already in Kela.",
+   "actor": "caseworker",
+   "actor_evidence": "tutustu",
+   "kind": "task",
+   "condition": "Co-resident but cohabitation not declared",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 8",
+   "quote": "• ei ilmoita olevansa avoliitossa – tutustu Kelassa jo oleviin tietoihin"
+  },
+  {
+   "id": "G28",
+   "subprocess": "data_gathering",
+   "name": "Request additional clarification on living arrangements",
+   "description": "Where needed the caseworker requests additional clarification about the living arrangement.",
+   "actor": "caseworker",
+   "actor_evidence": "pyydä",
+   "kind": "task",
+   "condition": "Clarification needed",
+   "predecessors": [
+    "G27"
+   ],
+   "page": "p. 8",
+   "quote": "– pyydä tarvittaessa lisäselvitystä asumisesta"
+  },
+  {
+   "id": "G29",
+   "subprocess": "assessment",
+   "name": "Assess cohabitation case by case",
+   "description": "The caseworker makes a case-by-case overall assessment of cohabitation (dwelling, leases, rent payment, children, shared history), also retroactively and even if not registered at the same address.",
+   "actor": "caseworker",
+   "actor_evidence": "tee harkinta",
+   "kind": "decision",
+   "condition": "Relationship deemed cohabitation -> same household",
+   "predecessors": [
+    "G28"
+   ],
+   "page": "p. 8",
+   "quote": "– tee harkinta avoliitosta tapauskohtaisesti kokonaisharkinnan perusteella."
+  },
+  {
+   "id": "G30",
+   "subprocess": "assessment",
+   "name": "Decide household when cohabitants separate",
+   "description": "When cohabiting partners move apart, household membership is decided according to the applicant's notification.",
+   "actor": "caseworker",
+   "actor_evidence": "ratkaistaan hakijan ilmoituksen mukaisesti",
+   "kind": "decision",
+   "condition": "Cohabitants move apart",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 23",
+   "quote": "Avopuolisoiden muuttaessa erilleen, ruokakuntaan kuuluminen ratkaistaan hakijan ilmoituksen mukaisesti."
+  },
+  {
+   "id": "G31",
+   "subprocess": "data_gathering",
+   "name": "Clarify reason for temporary resident",
+   "description": "The reason for a person temporarily living in the dwelling must be clarified; a genuinely temporary resident (max six months) is not counted in the household.",
+   "actor": "caseworker",
+   "actor_evidence": "tulee selvittää",
+   "kind": "task",
+   "condition": "Someone lives temporarily in the dwelling",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 21",
+   "quote": "Syy tilapäiseen asunnossa asumiseen tulee selvittää. Tilapäinen asukas voi asua asunnossa enintään kuusi kuukautta kuulumatta asumistukiruokakuntaan."
+  },
+  {
+   "id": "G32",
+   "subprocess": "data_gathering",
+   "name": "Request community-household authorisation AT5",
+   "description": "If non-family persons share a joint lease or a non-relative lives permanently in the dwelling, the applicant is first asked to deliver authorisation form AT5.",
+   "actor": "caseworker",
+   "actor_evidence": "pyytää hakijaa toimittamaan",
+   "kind": "task",
+   "condition": "Non-relative lives permanently in dwelling / joint lease of non-family",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 26",
+   "quote": "tulee ensin pyytää hakijaa toimittamaan yhteisöruokakunnan valtuutuslomake AT5."
+  },
+  {
+   "id": "G33",
+   "subprocess": "data_gathering",
+   "name": "Wait for AT5 before continuing",
+   "description": "Processing can continue only once form AT5 has been received.",
+   "actor": "caseworker",
+   "actor_evidence": "Voit jatkaa asian käsittelyä vasta",
+   "kind": "wait",
+   "condition": "",
+   "predecessors": [
+    "G32"
+   ],
+   "page": "p. 26",
+   "quote": "Voit jatkaa asian käsittelyä vasta, kun lomake AT5 on saatu."
+  },
+  {
+   "id": "G34",
+   "subprocess": "assessment",
+   "name": "Remove member living abroad from household",
+   "description": "A member going abroad for more than a year is removed from the household immediately even if still deemed resident (except spouse on work assignment/studying); a member going to work in the EU/EEA who is not resident per the insurance decision is also removed.",
+   "actor": "caseworker",
+   "actor_evidence": "tulee poistaa heti; poista hänet ruokakunnasta",
+   "kind": "decision",
+   "condition": "Member abroad > 1 year, or working in EU/EEA and not permanently resident per insurance decision",
+   "predecessors": [
+    "G25",
+    "G20"
+   ],
+   "page": "p. 15",
+   "quote": "ulkomailla oleskeleva henkilö tulee poistaa heti yleisen asumistuen ruokakunnasta"
+  },
+  {
+   "id": "G35",
+   "subprocess": "assessment",
+   "name": "Split housing costs by head count",
+   "description": "If a person who cannot belong to the household (non-resident, or student entitled to housing supplement) lives in the dwelling, housing costs are divided per head.",
+   "actor": "caseworker",
+   "actor_evidence": "Jaa",
+   "kind": "task",
+   "condition": "Non-member lives in the dwelling",
+   "predecessors": [
+    "G25",
+    "G20",
+    "G23"
+   ],
+   "page": "p. 22",
+   "quote": "Jaa asumiskustannukset ruokakunnan pääluvun mukaan, jos samassa asunnossa asuu"
+  },
+  {
+   "id": "G36",
+   "subprocess": "assessment",
+   "name": "Verify tenancy from signed written lease",
+   "description": "The tenancy and its terms are established from the written lease; only a signed (also electronically signed) lease can be accepted.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Lease must be signed",
+   "predecessors": [
+    "G13",
+    "G04"
+   ],
+   "page": "p. 40",
+   "quote": "Vuokrasuhde ja ehdot selvitetään kirjallisen vuokrasopimuksen avulla. • Vuokrasopimus on sopimus ja allekirjoitukset toimivat sopimuksen hyväksymisen merkkinä, joten vain allekirjoitettu vuokrasopimus voidaan hyväksyä."
+  },
+  {
+   "id": "G37",
+   "subprocess": "data_gathering",
+   "name": "Clarify sublet or re-let situation",
+   "description": "Since the lease title does not always show whether it is a sublet or re-let, the actual situation must be clarified.",
+   "actor": "caseworker",
+   "actor_evidence": "asia tulee selvittää",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G36"
+   ],
+   "page": "p. 31",
+   "quote": "Vuokrasopimuksen nimi ei siis aina välttämättä kerro, onko kyseessä alivuokraus tai jälleenvuokraus, vaan asia tulee selvittää."
+  },
+  {
+   "id": "G38",
+   "subprocess": "data_gathering",
+   "name": "Request original landlord's consent to re-letting",
+   "description": "For a re-tenant, the original landlord's written consent is required as an attachment; further clarifications are requested from the applicant (not needed for municipal/foundation intermediary letting).",
+   "actor": "caseworker",
+   "actor_evidence": "pyydetään asumistuen hakijalta",
+   "kind": "task",
+   "condition": "Applicant is a re-tenant",
+   "predecessors": [
+    "G37"
+   ],
+   "page": "p. 32",
+   "quote": "Jälleenvuokralaisen asumistukihakemuksen liitteeksi tarvitaan asunnon ensivuokralaisen vuokranantajan eli alkuperäisen vuokranantajan kirjallinen suostumus jälleenvuokraukseen. • Lisäselvitykset pyydetään asumistuen hakijalta."
+  },
+  {
+   "id": "G39",
+   "subprocess": "decision",
+   "name": "Reject if re-letting consent not obtained",
+   "description": "If consent or other evidence of permitted re-letting is not obtained, the allowance cannot be granted.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "No consent/evidence obtained",
+   "predecessors": [
+    "G38"
+   ],
+   "page": "p. 32",
+   "quote": "Jos suostumusta tai muuta selvitystä jälleenvuokrauksen luvallisuudesta ei saada, asumistukea ei voida myöntää."
+  },
+  {
+   "id": "G40",
+   "subprocess": "data_gathering",
+   "name": "Request rent receipt when tenancy is doubtful",
+   "description": "At discretion, a rent receipt can be requested if there is special reason to doubt the household's tenancy.",
+   "actor": "caseworker",
+   "actor_evidence": "harkinnan mukaan pyytää",
+   "kind": "decision",
+   "condition": "Special reason to doubt the tenancy",
+   "predecessors": [
+    "G36"
+   ],
+   "page": "p. 26",
+   "quote": "Kuitti vuokrasta voidaan harkinnan mukaan pyytää silloin, jos on erityistä syytä epäillä ruokakunnan vuokrasuhdetta."
+  },
+  {
+   "id": "G41",
+   "subprocess": "assessment",
+   "name": "Determine acceptable housing costs",
+   "description": "Acceptable costs are the rent the household itself pays (to the cent), plus separately paid heating and water at standard norms (actual costs are not investigated), excluding e.g. parking, internet, deposit; the value of electricity included in rent and rent paid by a subtenant are deducted.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G36",
+    "G35"
+   ],
+   "page": "p. 38",
+   "quote": "Vuokra-asunnossa asumismenoiksi hyväksytään • vuokra, jonka ruokakunta itse maksaa – Kuukausivuokra otetaan huomioon sentin tarkkuudella."
+  },
+  {
+   "id": "G42",
+   "subprocess": "assessment",
+   "name": "Assess disabled person's extra space need",
+   "description": "The need for extra space (maximum costs for one more person) is assessed at every decision through case-by-case overall assessment.",
+   "actor": "caseworker",
+   "actor_evidence": "tulee tehdä tapauskohtainen kokonaisharkinta",
+   "kind": "decision",
+   "condition": "Household member needs especially large space due to aids/assistant",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 37",
+   "quote": "Tilantarve arvioidaan jokaisen ratkaisun yhteydessä ja asiakkaan tilanteesta tulee tehdä tapauskohtainen kokonaisharkinta."
+  },
+  {
+   "id": "G43",
+   "subprocess": "assessment",
+   "name": "Determine start date (one-month retroactivity)",
+   "description": "Allowance can be granted at the earliest from the start of the month before the application month (if moved in that month and paid full rent), and not before the tenancy start; only whole calendar months qualify. Longer retroactivity only for a special reason (not ignorance/forgetfulness); if other housing support was rejected/terminated for non-entitlement, from that month (application by end of month after the termination decision).",
+   "actor": "caseworker",
+   "actor_evidence": "voidaan myöntää",
+   "kind": "decision",
+   "condition": "Moved in during the previous month and paid full month's rent; special reason; other housing support rejected/terminated",
+   "predecessors": [
+    "G36"
+   ],
+   "page": "p. 27",
+   "quote": "Yleisessä asumistuessa on kuukauden takautuva hakuaika. • Yleinen asumistuki voidaan myöntää aikaisintaan hakemuksen jättämistä edeltävän kuukauden alusta, jos ruokakunta on muuttanut asuntoon kyseisen kuukauden aikana ja maksanut koko kuukauden vuokran."
+  },
+  {
+   "id": "G44",
+   "subprocess": "assessment",
+   "name": "Estimate each member's income (continuous vs average)",
+   "description": "Income is estimated separately for each member for every grant/review decision, as continuous income if it lasts at least 3 months, otherwise as average income over the next 12 months.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Income continues >= 3 months from grant/review date -> continuous; else average income",
+   "predecessors": [
+    "G10",
+    "G25"
+   ],
+   "page": "p. 41",
+   "quote": "Tulot arvioidaan erikseen jokaiselle ruokakunnan jäsenelle jokaiseen asumistuen myöntö- tai tarkistusratkaisuun joko jatkuvana tulona tai keskiarvotulona."
+  },
+  {
+   "id": "G45",
+   "subprocess": "data_gathering",
+   "name": "Clarify varying wages over a long enough period",
+   "description": "If a member's wages vary monthly, wages must be clarified over a sufficiently long period to determine average monthly income.",
+   "actor": "caseworker",
+   "actor_evidence": "on selvitettävä",
+   "kind": "task",
+   "condition": "Wages vary monthly",
+   "predecessors": [
+    "G44"
+   ],
+   "page": "p. 49",
+   "quote": "Jos ruokakuntaan kuuluvan henkilön palkkatulo vaihtelee kuukausittain, palkkatulot on selvitettävä riittävän pitkältä ajalta keskimääräisen kuukausitulon määrittelemiseksi."
+  },
+  {
+   "id": "G46",
+   "subprocess": "assessment",
+   "name": "Impute minimum income",
+   "description": "Minimum income (amount of unemployment general support) is imputed if the person has not registered as unemployed jobseeker, lack of income is unexplained, and earning capacity is not disproven.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Person not registered as jobseeker / no-income unexplained",
+   "predecessors": [
+    "G44"
+   ],
+   "page": "p. 42",
+   "quote": "Vähimmäistulo arvioidaan henkilön tuloksi, jos • henkilö ei ole hakeutunut työttömäksi työnhakijaksi, vaikka hänellä saattaisi olla oikeus työttömyysetuuteen"
+  },
+  {
+   "id": "G47",
+   "subprocess": "assessment",
+   "name": "Set entrepreneur's income (YEL/MYEL or actual)",
+   "description": "Entrepreneur's income is the YEL/MYEL work income, but actual income may be used if Incomes Register, tax or other register data show it is at least double.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Register data show income >= 2x YEL/MYEL income",
+   "predecessors": [
+    "G44",
+    "G10"
+   ],
+   "page": "p. 45",
+   "quote": "Jos tulorekisterin tietojen, verotustietojen tai muiden rekisteritietojen perusteella ilmenee, että yrittäjän tulot ovat vähintään kaksinkertaiset YEL- tai MYEL-tuloon verrattuna, yrittäjän tulot voidaan ottaa huomioon todellisten tulojen suuruisena."
+  },
+  {
+   "id": "G48",
+   "subprocess": "data_gathering",
+   "name": "Ask applicant by phone about dividends",
+   "description": "For non-listed company dividends not reported in the application, the caseworker may ask the applicant by phone for the amount paid in the previous calendar year.",
+   "actor": "caseworker",
+   "actor_evidence": "Voit ... tiedustella ... puhelimitse hakijalta",
+   "kind": "task",
+   "condition": "Dividend amount not given in application",
+   "predecessors": [
+    "G44"
+   ],
+   "page": "p. 53",
+   "quote": "Voit tarvittaessa tiedustella osingon määrän (edellisen kalenterivuoden aikana maksetut) puhelimitse hakijalta, jos hän ei ole ilmoittanut sitä hakemuksessaan."
+  },
+  {
+   "id": "G49",
+   "subprocess": "assessment",
+   "name": "Estimate unemployment benefit as income",
+   "description": "Unemployment benefit is estimated as income even if the labour policy statement or lay-off certificate is not yet in Kela.",
+   "actor": "caseworker",
+   "actor_evidence": "Arvioi",
+   "kind": "task",
+   "condition": "Member is unemployed",
+   "predecessors": [
+    "G44"
+   ],
+   "page": "p. 57",
+   "quote": "Arvioi työttömyysetuus tuloksi, vaikka työvoimapoliittista lausuntoa tai lomautustodistusta ei vielä ole Kelassa."
+  },
+  {
+   "id": "G50",
+   "subprocess": "data_gathering",
+   "name": "Wait for labour policy statement in unclear cases",
+   "description": "In unclear situations the caseworker waits for the labour policy statement before estimating the income.",
+   "actor": "caseworker",
+   "actor_evidence": "Odota",
+   "kind": "wait",
+   "condition": "Situation unclear",
+   "predecessors": [
+    "G49"
+   ],
+   "page": "p. 57",
+   "quote": "Odota kuitenkin epäselvissä tilanteissa työvoimapoliittista lausuntoa."
+  },
+  {
+   "id": "G51",
+   "subprocess": "data_gathering",
+   "name": "Value housing shares from tax data or Statistics Finland",
+   "description": "Housing shares are valued at fair value primarily from tax data, otherwise from Statistics Finland data.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "Household owns housing shares",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 61",
+   "quote": "Asunto-osakkeet arvostetaan käypään arvoon ensisijaisesti verotustietojen perusteella. • Jos verotustietoa ei ole saatavilla, arvio asunto-osakkeen arvosta tehdään tilastokeskuksen tietojen perusteella."
+  },
+  {
+   "id": "G52",
+   "subprocess": "data_gathering",
+   "name": "Count business assets only once tax data query provides them",
+   "description": "Business/agricultural assets (and newly formed real estate) are taken into account only when the data is obtained from the tax data query.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "wait",
+   "condition": "Assets formed after last confirmed taxation",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 61",
+   "quote": "Elinkeinotoiminnan ja maatalouden varat otetaan huomioon vasta sitten, kun niitä koskevat tiedot saadaan verotustietojen kyselyltä."
+  },
+  {
+   "id": "G53",
+   "subprocess": "data_gathering",
+   "name": "Check widow's assets from estate inventory",
+   "description": "Where needed the caseworker clarifies a widow's assets (and their yield) from the estate inventory deed.",
+   "actor": "caseworker",
+   "actor_evidence": "Selvitä",
+   "kind": "task",
+   "condition": "Undivided estate / widow",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 61",
+   "quote": "Selvitä lesken omaisuus tarvittaessa perukirjasta."
+  },
+  {
+   "id": "G54",
+   "subprocess": "data_gathering",
+   "name": "Look up share/fund quotation on Kauppalehti website",
+   "description": "If needed the caseworker looks up the quoted value of shares/funds at the grant or review date on the Kauppalehti website (70% of value is counted).",
+   "actor": "caseworker",
+   "actor_evidence": "Voit selvittää",
+   "kind": "task",
+   "condition": "Listed shares/funds without previous year-end value",
+   "predecessors": [
+    "G09"
+   ],
+   "page": "p. 62",
+   "quote": "Voit selvittää myöntö- tai tarkistusajankohdan noteeratun arvon Kauppalehden sivulta."
+  },
+  {
+   "id": "G55",
+   "subprocess": "data_gathering",
+   "name": "Inquire deposits from financial institutions",
+   "description": "If sufficient or reliable data are not obtained from the applicant, deposits etc. can be clarified from financial institutions.",
+   "actor": "caseworker",
+   "actor_evidence": "voidaan ... selvittää rahalaitoksilta",
+   "kind": "decision",
+   "condition": "Applicant's information insufficient or unreliable",
+   "predecessors": [
+    "G14"
+   ],
+   "page": "p. 63",
+   "quote": "Jos riittäviä tai luotettavia tietoja ei saada hakijalta, voidaan talletuksia yms. selvittää rahalaitoksilta."
+  },
+  {
+   "id": "G56",
+   "subprocess": "data_gathering",
+   "name": "Obtain insurance investment data",
+   "description": "Insurance investment data are clarified primarily from the applicant and secondarily from the insurance or other company managing it.",
+   "actor": "caseworker",
+   "actor_evidence": "Selvitä",
+   "kind": "task",
+   "condition": "Household has insurance investments",
+   "predecessors": [
+    "G14"
+   ],
+   "page": "p. 64",
+   "quote": "Selvitä tiedot tarvittaessa ensisijaisesti tuen hakijalta ja toissijaisesti kyseistä sijoitusta hoitavasta vakuutus- tai muusta yhtiöstä."
+  },
+  {
+   "id": "G57",
+   "subprocess": "assessment",
+   "name": "Assess assets against limits",
+   "description": "Net assets (after use-fund deduction and debts) above 10,000/20,000 EUR add 20%/12 per month to income; at 50,000 EUR or more there is no entitlement.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Net assets >= 50,000 EUR -> no entitlement; above 10,000/20,000 -> imputed income",
+   "predecessors": [
+    "G51",
+    "G52",
+    "G53",
+    "G54",
+    "G55",
+    "G56"
+   ],
+   "page": "p. 59",
+   "quote": "Jos ruokakunnan omaisuus käyttövaravähennyksen ja velkojen vähentämisen jälkeen on vähintään 50 000 euroa, yleiseen asumistukeen ei ole oikeutta lainkaan."
+  },
+  {
+   "id": "G58",
+   "subprocess": "assessment",
+   "name": "Calculate allowance amount",
+   "description": "Allowance = 70% x (acceptable costs capped at maximum costs for household size and municipality group - basic deductible based on income, adults and children); who/what computes it is not stated.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G41",
+    "G42",
+    "G44",
+    "G57"
+   ],
+   "page": "p. 28",
+   "quote": "Yleinen asumistuki = 0,70 (31.3.2024 asti 0,80) x (hyväksyttävät, kuitenkin enintään enimmäisasumismenot - perusomavastuu)"
+  },
+  {
+   "id": "G59",
+   "subprocess": "decision",
+   "name": "Ensure case is fully clarified before deciding",
+   "description": "The official must ensure the case is carefully clarified and all necessary information and evidence form the basis of the decision.",
+   "actor": "caseworker",
+   "actor_evidence": "Toimihenkilön velvollisuus",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G17",
+    "G18",
+    "G33",
+    "G21"
+   ],
+   "page": "p. 64",
+   "quote": "Toimihenkilön velvollisuus on huolehtia siitä, että vireille pantu asia selvitetään huolellisesti ja ratkaisun pohjaksi tulevat kaikki tarvittavat tiedot ja selvitykset, joilla arvioidaan olevan merkitystä asian ratkaisemiselle."
+  },
+  {
+   "id": "G60",
+   "subprocess": "decision",
+   "name": "Prepare decision proposal (implied)",
+   "description": "Implied: the guideline refers to separate instructions on the decision proposal and making the resolution, suggesting a preparation step before the decision.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G58",
+    "G59"
+   ],
+   "page": "p. 64",
+   "quote": "Lue lisää päätösesityksestä ja ratkaisun tekemisestä."
+  },
+  {
+   "id": "G61",
+   "subprocess": "decision",
+   "name": "Decide grant period (until further notice or fixed-term)",
+   "description": "Allowance is granted until further notice and reviewed within a year; for a special reason (e.g. fixed-term lease ending before annual review) it is granted for a fixed term.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Fixed-term lease or right to benefits ends before annual review -> fixed-term",
+   "predecessors": [
+    "G60"
+   ],
+   "page": "p. 65",
+   "quote": "Yleinen asumistuki myönnetään toistaiseksi ja tarkistetaan viimeistään silloin, kun myönnöstä tai edellisestä tarkistuksesta on kulunut vuosi. Erityisestä syystä asumistuki voidaan myöntää vuotta lyhyemmäksikin ajaksi."
+  },
+  {
+   "id": "G62",
+   "subprocess": "decision",
+   "name": "Decide within processing-time guarantee",
+   "description": "Applications must be decided without undue delay and at the latest on the 30th calendar day after arrival (or within 14 days after requested data arrive).",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G60"
+   ],
+   "page": "p. 64",
+   "quote": "Yleistä asumistukea koskevat hakemukset tulee aina käsitellä mahdollisimman pian ilman aiheetonta viivytystä. Yleistä asumistukea koskevan ns. käsittelyaikatakuun mukaan päätös on annettava viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+  },
+  {
+   "id": "G63",
+   "subprocess": "decision",
+   "name": "Issue written decision to applicant",
+   "description": "A written decision is given to the applicant (representing the household) on grant, rejection, review, termination and recovery, and on transfer of payment to landlord for rent default.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G61",
+    "G62",
+    "G39"
+   ],
+   "page": "p. 64",
+   "quote": "Yleisen asumistuen hakijalla on annettava kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+  },
+  {
+   "id": "G64",
+   "subprocess": "decision",
+   "name": "State annual review date in decision",
+   "description": "The annual review date is communicated to the customer in the grant or review decision.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 72",
+   "quote": "Vuositarkistuksen ajankohta ilmoitetaan asiakkaalle myöntö- tai tarkistuspäätöksessä."
+  },
+  {
+   "id": "G65",
+   "subprocess": "decision",
+   "name": "Send decision copy to guardian or legal representative",
+   "description": "An identical decision is also sent to a minor's guardian when the minor alone forms the household, and to a legal guardian/continuing power of attorney holder; not to the landlord.",
+   "actor": "unclear",
+   "actor_evidence": "lähetetään",
+   "kind": "decision",
+   "condition": "Minor alone in household / applicant has edunvalvoja",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 65",
+   "quote": "Hakijan lisäksi samansisältöinen asumistukipäätös lähetetään myös • alaikäisen huoltajalle, jos alaikäinen muodostaa yksin asumistukiruokakunnan"
+  },
+  {
+   "id": "G66",
+   "subprocess": "intake",
+   "name": "Apply for continuation of fixed-term allowance (AT13)",
+   "description": "If the allowance was granted for a fixed term, continuation is applied for with form AT13.",
+   "actor": "citizen",
+   "actor_evidence": "asumistuen jatkamista haetaan",
+   "kind": "task",
+   "condition": "Allowance granted for a fixed term",
+   "predecessors": [
+    "G61"
+   ],
+   "page": "p. 25",
+   "quote": "Jos yleinen asumistuki on myönnetty määräaikaisena, asumistuen jatkamista haetaan Yleisen asumistuen jatkohakemus -lomakkeella AT13."
+  },
+  {
+   "id": "G67",
+   "subprocess": "payment",
+   "name": "Determine payee",
+   "description": "The allowance is paid to the applicant, the landlord, or another listed payee (right-of-occupancy company, guardian, wellbeing services county, intermediary account with consent); it may not be assigned to another person.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "decision",
+   "condition": "Authorisation / legal ground for other payee",
+   "predecessors": [
+    "G63",
+    "G05"
+   ],
+   "page": "p. 76",
+   "quote": "Asumistuki voidaan maksaa hakijalle, vuokranantajalle tai muulle Muut maksunsaajat - sivulla mainitulle maksunsaajalle."
+  },
+  {
+   "id": "G68",
+   "subprocess": "payment",
+   "name": "Do not pay amounts under 15 EUR",
+   "description": "Allowance is not paid if the monthly amount is under 15 euros.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "decision",
+   "condition": "Amount < 15 EUR",
+   "predecessors": [
+    "G58"
+   ],
+   "page": "p. 77",
+   "quote": "Yleistä asumistukea ei makseta, jos asumistuen määrä on alle 15 euroa."
+  },
+  {
+   "id": "G69",
+   "subprocess": "payment",
+   "name": "Pay allowance monthly",
+   "description": "The allowance is paid monthly on the first weekday of the month; retroactive instalments may be paid on other banking days; payments cannot be cancelled from the bank.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G67",
+    "G68"
+   ],
+   "page": "p. 76",
+   "quote": "Yleinen asumistuki maksetaan kuukausittain. Maksupäivä on kuukauden ensimmäinen arkipäivä. Takautuvat kuukausierät voidaan maksaa myös muuna pankkipäivänä."
+  },
+  {
+   "id": "G70",
+   "subprocess": "payment",
+   "name": "Request bank account number",
+   "description": "Kela asks the customer for an account number when none is given and the allowance is not paid to the landlord.",
+   "actor": "caseworker",
+   "actor_evidence": "pyynnöstä huolimatta",
+   "kind": "task",
+   "condition": "No account number given",
+   "predecessors": [
+    "G03"
+   ],
+   "page": "p. 76",
+   "quote": "hän ei pyynnöstä huolimatta ilmoita tilinumeroa"
+  },
+  {
+   "id": "G71",
+   "subprocess": "payment",
+   "name": "Pay to prepaid card",
+   "description": "If the customer has no bank account or does not give one despite request (and payment is not to landlord), the allowance can be paid to a prepaid card.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "decision",
+   "condition": "No bank account / number not given despite request",
+   "predecessors": [
+    "G70"
+   ],
+   "page": "p. 76",
+   "quote": "Jos asiakkaalla ei ole pankkitiliä tai hän ei pyynnöstä huolimatta ilmoita tilinumeroa tilanteissa, joissa hakemuksen mukaan tukea ei makseta vuokranantajalle, yleinen asumistuki voidaan maksaa prepaid-maksukortille."
+  },
+  {
+   "id": "G72",
+   "subprocess": "payment",
+   "name": "Notify change of account number",
+   "description": "The customer notifies an account change with form Y 121, online or orally; changes are not accepted by e-mail.",
+   "actor": "citizen",
+   "actor_evidence": "Asiakas voi ilmoittaa",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G69"
+   ],
+   "page": "p. 76",
+   "quote": "Asiakas voi ilmoittaa tilinumeron muutoksesta • lomakkeella Y 121 • verkkoasioinnissa • suullisesti. Tilinumeromuutoksia ei oteta vastaan sähköpostitse."
+  },
+  {
+   "id": "G73",
+   "subprocess": "payment",
+   "name": "Pay to wellbeing services county",
+   "description": "The allowance may be paid to the wellbeing services county if it has granted preventive or supplementary social assistance as an advance against the expected benefit.",
+   "actor": "other_authority",
+   "actor_evidence": "hyvinvointialue on myöntänyt",
+   "kind": "decision",
+   "condition": "County advanced social assistance",
+   "predecessors": [
+    "G67"
+   ],
+   "page": "p. 77",
+   "quote": "Yleinen asumistuki voidaan maksaa hyvinvointialueelle, jos hyvinvointialue on myöntänyt ehkäisevää tai täydentävää toimeentulotukea ennakkona odotettavissa olevaa etuutta vastaan."
+  },
+  {
+   "id": "G74",
+   "subprocess": "payment",
+   "name": "Revoke landlord payment authorisation",
+   "description": "The recipient may revoke the authorisation at any time orally or in writing.",
+   "actor": "citizen",
+   "actor_evidence": "Tuensaaja voi ... peruuttaa",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G05"
+   ],
+   "page": "p. 78",
+   "quote": "Tuensaaja voi milloin tahansa peruuttaa antamansa valtuutuksen suullisesti tai kirjallisesti."
+  },
+  {
+   "id": "G75",
+   "subprocess": "payment",
+   "name": "Landlord requests direct payment for rent default",
+   "description": "If the tenant has neglected rent fully or partly for two consecutive months, the landlord may request that the allowance be paid directly to them without the recipient's consent.",
+   "actor": "landlord",
+   "actor_evidence": "vuokranantajan pyynnöstä",
+   "kind": "task",
+   "condition": "Rent unpaid for two consecutive months",
+   "predecessors": [
+    "G69"
+   ],
+   "page": "p. 79",
+   "quote": "Jos vuokralainen laiminlyö vuokran maksamisen kokonaan tai osittain kahden perättäisen kuukauden ajan, tuki voidaan vuokranantajan pyynnöstä maksaa suoraan vuokranantajalle ilman tuensaajan suostumusta (YAL 25 § 2 mom.)."
+  },
+  {
+   "id": "G76",
+   "subprocess": "payment",
+   "name": "Hear recipient before transferring payment",
+   "description": "The caseworker hears the allowance recipient before transferring payment to the landlord.",
+   "actor": "caseworker",
+   "actor_evidence": "Kuule",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G75"
+   ],
+   "page": "p. 79",
+   "quote": "Kuule tuensaajaa ennen maksun siirtämistä vuokranantajalle"
+  },
+  {
+   "id": "G77",
+   "subprocess": "payment",
+   "name": "Issue decision on payment to landlord (not appealable)",
+   "description": "The recipient is given a decision on paying the allowance to the landlord; the decision is not appealable.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Grounds for transfer exist",
+   "predecessors": [
+    "G76"
+   ],
+   "page": "p. 79",
+   "quote": "Tuensaajalle annetaan päätös vuokranantajalle maksamisesta. Päätöksestä ei ole valitusoikeutta."
+  },
+  {
+   "id": "G78",
+   "subprocess": "payment",
+   "name": "Recipient requests payment back to self",
+   "description": "While paid to the landlord due to default, the recipient may request payment to themselves.",
+   "actor": "citizen",
+   "actor_evidence": "tuensaaja pyytää",
+   "kind": "task",
+   "condition": "Allowance paid to landlord on default grounds",
+   "predecessors": [
+    "G77"
+   ],
+   "page": "p. 79",
+   "quote": "Jos tuki on maksussa vuokranantajalle laiminlyönnin perusteella ja tuensaaja pyytää tuen maksamista itselleen."
+  },
+  {
+   "id": "G79",
+   "subprocess": "payment",
+   "name": "Hear landlord before deciding",
+   "description": "The caseworker hears the landlord before deciding on the recipient's request.",
+   "actor": "caseworker",
+   "actor_evidence": "Kuule",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G78"
+   ],
+   "page": "p. 79",
+   "quote": "Kuule vuokranantajaa ennen asian ratkaisua."
+  },
+  {
+   "id": "G80",
+   "subprocess": "review_change",
+   "name": "Report change in circumstances",
+   "description": "The recipient must notify Kela of changes that may affect amount or payment (e.g. income +400 EUR, costs -50 EUR, move, household change, subtenant, housing supplement, moving abroad).",
+   "actor": "citizen",
+   "actor_evidence": "saajan tulee ilmoittaa Kelalle",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 81",
+   "quote": "Lisäksi yleisen asumistuen saajan tulee ilmoittaa Kelalle, jos ruokakunnan olosuhteissa tapahtuu muutos, joka saattaa vaikuttaa yleisen asumistuen määrään tai maksamisen."
+  },
+  {
+   "id": "G81",
+   "subprocess": "review_change",
+   "name": "Landlord notifies end of tenancy or move-out",
+   "description": "The landlord must notify Kela, with dates, if the recipient's right to hold the dwelling ends or the recipient moves out.",
+   "actor": "landlord",
+   "actor_evidence": "Vuokranantajan on ilmoitettava Kelalle",
+   "kind": "task",
+   "condition": "Tenancy ends / tenant moves out",
+   "predecessors": [
+    "G69"
+   ],
+   "page": "p. 79",
+   "quote": "Vuokranantajan on ilmoitettava Kelalle, jos • asumistuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai • asumistuen saaja muuttaa pois asunnosta."
+  },
+  {
+   "id": "G82",
+   "subprocess": "review_change",
+   "name": "Apply for review",
+   "description": "The household representative applies for review of the allowance.",
+   "actor": "citizen",
+   "actor_evidence": "hakee ... tuen tarkistamista",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G80"
+   ],
+   "page": "p. 21",
+   "quote": "Yksi ruokakunnan jäsen edustaa ruokakuntaa ja hakee yleistä asumistukea sekä tuen tarkistamista."
+  },
+  {
+   "id": "G83",
+   "subprocess": "review_change",
+   "name": "Kela receives information on a change",
+   "description": "Kela receives information about a change in the recipient's circumstances that would require termination or reduction.",
+   "actor": "unclear",
+   "actor_evidence": "Kelaan on tullut tieto",
+   "kind": "event",
+   "condition": "",
+   "predecessors": [
+    "G80",
+    "G81"
+   ],
+   "page": "p. 81",
+   "quote": "Asumistuen väliaikainen vähentäminen tai keskeyttäminen tulee kysymykseen silloin, kun Kelaan on tullut tieto tuensaajan olosuhteissa tapahtuneesta muutoksesta, jonka vuoksi tuki olisi lakkautettava tai tuen määrää olisi vähennettävä."
+  },
+  {
+   "id": "G84",
+   "subprocess": "review_change",
+   "name": "Issue interim decision reducing or suspending payment",
+   "description": "If a final decision cannot yet be given, the amount is reduced or payment suspended by registering a review or termination decision as an interim decision (no right of appeal).",
+   "actor": "caseworker",
+   "actor_evidence": "rekisteröimällä tarkistus- tai lakkautusratkaisu",
+   "kind": "decision",
+   "condition": "Change requires review/termination but final decision not yet possible",
+   "predecessors": [
+    "G83"
+   ],
+   "page": "p. 65",
+   "quote": "yleisen asumistuen määrää vähennetään tai sen maksaminen keskeytetään rekisteröimällä tarkistus- tai lakkautusratkaisu, koska ruokakunnan olosuhteissa on tapahtunut muutos, jonka vuoksi asumistuki olisi tarkistettava tai lakkautettava eikä lopullista päätöstä voida vielä antaa."
+  },
+  {
+   "id": "G85",
+   "subprocess": "review_change",
+   "name": "Check interim review grounds",
+   "description": "The caseworker checks whether a review ground exists: income +400/-200 EUR, housing costs +/-50 EUR, move or tenure change, household size/composition, subtenant, start/end of a member's housing supplement right.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "A statutory interim review ground exists",
+   "predecessors": [
+    "G83",
+    "G82"
+   ],
+   "page": "p. 67",
+   "quote": "Välitarkistus voidaan tehdä seuraavien muutosten perusteella: Välitarkistusperuste Tarkistuksen ajankohta Ruokakunnan jatkuvat kuukausitulot nousevat vähintään 400 euroa tai alenevat vähintään 200 euroa."
+  },
+  {
+   "id": "G86",
+   "subprocess": "review_change",
+   "name": "Review when child's placement exceeds a year",
+   "description": "If a household child placed elsewhere by the municipality/wellbeing services county stays away over a year, the allowance is reviewed from the point the placement has lasted a year.",
+   "actor": "caseworker",
+   "actor_evidence": "tarkista tuki",
+   "kind": "task",
+   "condition": "Placement/custody lasts over one year",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 10",
+   "quote": "Jos muualla asuminen jatkuu yli vuoden, tarkista tuki siitä lukien, kun sijoitus tai huostaanotto on jatkunut vuoden."
+  },
+  {
+   "id": "G87",
+   "subprocess": "review_change",
+   "name": "Remove spouse in permanent institutional care",
+   "description": "A spouse found to need permanent institutional care is removed from the household from the start of the following month.",
+   "actor": "caseworker",
+   "actor_evidence": "Poista",
+   "kind": "task",
+   "condition": "Spouse needs permanent institutional care",
+   "predecessors": [
+    "G25"
+   ],
+   "page": "p. 22",
+   "quote": "Poista puoliso ruokakunnasta seuraavan kuukauden alusta lukien, kun hänen on todettu tarvitsevan pysyvää laitoshoitoa."
+  },
+  {
+   "id": "G88",
+   "subprocess": "review_change",
+   "name": "No review for temporary renovation move",
+   "description": "A temporary (max ~6 months) move due to renovation does not require an interim review if the household returns and still has housing costs; if the customer applies, it is reviewed normally.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Temporary move due to renovation, intent to return",
+   "predecessors": [
+    "G85"
+   ],
+   "page": "p. 70",
+   "quote": "Remontista johtuvan tilapäisen, enintään noin kuuden kuukauden muuton vuoksi asumistukeen ei tarvitse tehdä välitarkistusta, jos ruokakunnan on tarkoitus palata takaisin vakinaiseen asuntoonsa ja ruokakunnalla edelleen on asumismenoja."
+  },
+  {
+   "id": "G89",
+   "subprocess": "review_change",
+   "name": "Review when member gains/loses housing supplement right",
+   "description": "The arising of a member's right to student housing supplement is sufficient ground for review; the supplement need not have been applied for.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Member's right to housing supplement starts or ends",
+   "predecessors": [
+    "G85"
+   ],
+   "page": "p. 70",
+   "quote": "Näissä tilanteissa asumislisäoikeuden syntyminen on riittävä peruste asumistuen tarkistamiselle eli asumistuen tarkistaminen ei edellytä asumislisän hakemista."
+  },
+  {
+   "id": "G90",
+   "subprocess": "review_change",
+   "name": "Re-establish each member's income from review date",
+   "description": "In an income-change review each member's continuous or average income is clarified from the review date for the coming period and summed.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G85"
+   ],
+   "page": "p. 71",
+   "quote": "Jokaisen ruokakunnan jäsenen jatkuvat kuukausitulot tai keskiarvotulo selvitetään tarkistamisajankohdasta lukien tulevalle tukikaudelle ja lopuksi ruokakunnan tulot lasketaan yhteen."
+  },
+  {
+   "id": "G91",
+   "subprocess": "review_change",
+   "name": "Apply protection rule for housing-cost increase",
+   "description": "If a housing-cost increase would lower the allowance without a significant income change, no reduction is made: a decision is given and payment continues at the previous amount until the next review.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Cost increase would reduce allowance and no significant income change",
+   "predecessors": [
+    "G85"
+   ],
+   "page": "p. 69",
+   "quote": "Asiasta annetaan päätös ja tuen maksamista jatketaan entisen suuruisena seuraavaan väli- tai vuositarkistukseen saakka."
+  },
+  {
+   "id": "G92",
+   "subprocess": "review_change",
+   "name": "Perform interim review",
+   "description": "All determinants are taken as of the review date, the next annual review moves one year forward, and allowance is paid on the new basis or ends from the review date.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G90",
+    "G89",
+    "G91",
+    "G86",
+    "G87"
+   ],
+   "page": "p. 67",
+   "quote": "Välitarkistuksessa • kaikki määräytymisperusteet otetaan huomioon tarkistuksen aiheuttaneen ajankohdan mukaisina. • seuraavan vuositarkistuksen aika siirtyy vuoden päähän tarkistusajankohdasta."
+  },
+  {
+   "id": "G93",
+   "subprocess": "review_change",
+   "name": "Set effective date of increasing/decreasing review",
+   "description": "An increasing review is made at the earliest from the start of the month before the application; a decreasing review from the date of the change (retroactively).",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Increase vs decrease",
+   "predecessors": [
+    "G92"
+   ],
+   "page": "p. 66",
+   "quote": "Yleiseen asumistukeen tehdään korottava tarkistus yleensä aikaisintaan asumistukihakemuksen jättämistä edeltävän kuukauden alusta."
+  },
+  {
+   "id": "G94",
+   "subprocess": "annual_review",
+   "name": "Send annual review letter (programmatic)",
+   "description": "Kela programmatically sends the recipient a letter before (about two months before) the annual review date.",
+   "actor": "system_automatic",
+   "actor_evidence": "Kela lähettää ohjelmallisesti",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G64"
+   ],
+   "page": "p. 25",
+   "quote": "Kela lähettää ohjelmallisesti ennen vuositarkistusajankohtaa kirjeen asumistuen saajalle."
+  },
+  {
+   "id": "G95",
+   "subprocess": "annual_review",
+   "name": "Return annual review application",
+   "description": "The recipient returns the annual review application before the payment run of the review date.",
+   "actor": "citizen",
+   "actor_evidence": "hakemusta ... palautettu",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G94"
+   ],
+   "page": "p. 72",
+   "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää)"
+  },
+  {
+   "id": "G96",
+   "subprocess": "annual_review",
+   "name": "Check application returned by payment run",
+   "description": "It is checked whether the application was returned by the payment run (at the latest five days before the payment date).",
+   "actor": "system_automatic",
+   "actor_evidence": "ohjelmallisesti; maksatusajoon",
+   "kind": "decision",
+   "condition": "Application returned by payment run?",
+   "predecessors": [
+    "G95"
+   ],
+   "page": "p. 72",
+   "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää), asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+  },
+  {
+   "id": "G97",
+   "subprocess": "annual_review",
+   "name": "Terminate programmatically and issue decision",
+   "description": "If not returned, the allowance is terminated programmatically and a termination decision is issued.",
+   "actor": "system_automatic",
+   "actor_evidence": "lakkautetaan ohjelmallisesti",
+   "kind": "task",
+   "condition": "Application not returned in time",
+   "predecessors": [
+    "G96"
+   ],
+   "page": "p. 72",
+   "quote": "asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+  },
+  {
+   "id": "G98",
+   "subprocess": "annual_review",
+   "name": "Conduct annual review",
+   "description": "The annual review is made on the basis of income, housing costs and other data as of the annual review date.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "Application returned",
+   "predecessors": [
+    "G96"
+   ],
+   "page": "p. 72",
+   "quote": "Vuositarkistus tehdään vuositarkistuksen ajankohdan mukaisten ruokakunnan kuukausitulojen, asumismenojen ja muiden tukeen vaikuttavien tietojen perusteella."
+  },
+  {
+   "id": "G99",
+   "subprocess": "annual_review",
+   "name": "Do only interim review if retroactive change found",
+   "description": "If processing the annual review reveals a change requiring a retroactive interim review, only the interim review is made.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Change requiring retroactive interim review found",
+   "predecessors": [
+    "G98"
+   ],
+   "page": "p. 67",
+   "quote": "Jos vuositarkistushakemuksen käsittelyn yhteydessä huomataan, että ruokakunnan olosuhteissa on tapahtunut muutos ja ruokakunnan yleinen asumistuki tuli tarkistaa takautuvasti välitarkistuksessa, tehdään vain välitarkistus."
+  },
+  {
+   "id": "G100",
+   "subprocess": "annual_review",
+   "name": "Pay on new basis or terminate",
+   "description": "As a result the allowance is paid on new grounds from the review date, or terminated from it if conditions are no longer met.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Conditions still met?",
+   "predecessors": [
+    "G98"
+   ],
+   "page": "p. 72",
+   "quote": "asumistuki maksetaan uusilla perusteilla vuositarkistuksen ajankohdasta lukien tai • asumistuki lakkautetaan vuositarkistuksen ajankohdasta, jos edellytyksiä tuen saamiseen ei enää ole."
+  },
+  {
+   "id": "G101",
+   "subprocess": "termination",
+   "name": "Request termination",
+   "description": "The applicant requests termination orally or in writing.",
+   "actor": "citizen",
+   "actor_evidence": "hakijan suullisen tai kirjallisen pyynnön perusteella",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 73",
+   "quote": "Tuki lakkautetaan asumistuen hakijan suullisen tai kirjallisen pyynnön perusteella."
+  },
+  {
+   "id": "G102",
+   "subprocess": "termination",
+   "name": "Check whether to terminate from an earlier date",
+   "description": "On termination it must be examined whether the allowance should be terminated from an earlier date (retroactive termination possible).",
+   "actor": "caseworker",
+   "actor_evidence": "tulee tutkia",
+   "kind": "decision",
+   "condition": "Grounds existed earlier",
+   "predecessors": [
+    "G101"
+   ],
+   "page": "p. 73",
+   "quote": "Lakkautuksen yhteydessä tulee tutkia, pitäisikö tuki lakkauttaa jo aikaisemmasta ajankohdasta."
+  },
+  {
+   "id": "G103",
+   "subprocess": "termination",
+   "name": "Terminate for failure to supply review information",
+   "description": "The allowance is terminated if the household, despite request, does not deliver information needed for the review within a reasonable time (from the review-ground date).",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Requested review information not supplied in reasonable time",
+   "predecessors": [
+    "G85"
+   ],
+   "page": "p. 72",
+   "quote": "ruokakunta ei toimita pyynnöstä huolimatta kohtuullisessa ajassa asumistuen tarkistuksessa tarvittavia tietoja."
+  },
+  {
+   "id": "G104",
+   "subprocess": "termination",
+   "name": "Terminate after move without review",
+   "description": "If no review is applied for due to change of dwelling, the allowance ends from the month after the move (from the move month if moving on the 1st).",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Household moved and no review applied for",
+   "predecessors": [
+    "G80",
+    "G81"
+   ],
+   "page": "p. 74",
+   "quote": "Jos tukeen ei haeta tarkistusta asunnon vaihdon perusteella, yleinen asumistuki lakkautetaan muuttoa seuraavan kuukauden alusta."
+  },
+  {
+   "id": "G105",
+   "subprocess": "termination",
+   "name": "Terminate due to preventing benefit or free dormitory",
+   "description": "Terminate from the month when a one-person household or all members become entitled to the student housing supplement, when a single person or spouse of a couple becomes entitled to pensioners' housing allowance (even if not payable), or when the right to a free dormitory place arises.",
+   "actor": "caseworker",
+   "actor_evidence": "Lakkauta (p. 74)",
+   "kind": "decision",
+   "condition": "Entitlement to a preventing benefit or free dormitory place arises",
+   "predecessors": [
+    "G83"
+   ],
+   "page": "p. 72",
+   "quote": "ruokakunnalle ei enää ole oikeutta asumistukeen estävän etuuden tai asuntolapaikan vuoksi"
+  },
+  {
+   "id": "G106",
+   "subprocess": "termination",
+   "name": "Terminate when housing costs end or household lives elsewhere",
+   "description": "Terminate from the month housing costs end; if the household lives elsewhere (e.g. abroad) pay an empty dwelling max three months and terminate at latest from the fourth month; a single recipient in institution or prison is paid six months and terminated from the seventh month.",
+   "actor": "caseworker",
+   "actor_evidence": "lakkauta (p. 23)",
+   "kind": "decision",
+   "condition": "No housing costs / household lives elsewhere / single recipient in institution or prison > 6 months",
+   "predecessors": [
+    "G83"
+   ],
+   "page": "p. 72",
+   "quote": "ruokakunta asuu muualla kuin asunnossa, jonka asumismenoihin asumistukea on myönnetty"
+  },
+  {
+   "id": "G107",
+   "subprocess": "termination",
+   "name": "Terminate on death of single recipient",
+   "description": "For a one-person household the allowance is terminated from the start of the month following death.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Single recipient dies",
+   "predecessors": [
+    "G83"
+   ],
+   "page": "p. 75",
+   "quote": "Yleinen asumistuki lakkautetaan yhden hengen ruokakunnalta kuolemaa seuraavan kuukauden alusta."
+  },
+  {
+   "id": "G108",
+   "subprocess": "overpayment_recovery",
+   "name": "Overpayment arises",
+   "description": "An overpayment arises or grows in a review, rectification or termination decision (e.g. retroactive decreasing review after unreported move).",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "event",
+   "condition": "",
+   "predecessors": [
+    "G93",
+    "G104",
+    "G102",
+    "G105",
+    "G92"
+   ],
+   "page": "p. 81",
+   "quote": "Yleisen asumistuen liikamaksua voi syntyä tai liikamaksun määrä voi lisääntyä tarkistus-, oikaisu- tai lakkautusratkaisun yhteydessä."
+  },
+  {
+   "id": "G109",
+   "subprocess": "overpayment_recovery",
+   "name": "Decide recovery of overpayment",
+   "description": "Allowance paid without grounds or in excess must be recovered (written recovery decision).",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Allowance paid without grounds or too much",
+   "predecessors": [
+    "G108"
+   ],
+   "page": "p. 81",
+   "quote": "Jos yleistä asumistukea on maksettu aiheettomasti tai liian suurena, liikaa maksettu etuus on perittävä takaisin."
+  },
+  {
+   "id": "G110",
+   "subprocess": "overpayment_recovery",
+   "name": "Recover primarily from applicant",
+   "description": "The overpayment is recovered primarily from the applicant.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G109"
+   ],
+   "page": "p. 82",
+   "quote": "Liikaa maksettu yleinen asumistuki • peritään takaisin ensisijaisesti hakijalta"
+  },
+  {
+   "id": "G111",
+   "subprocess": "overpayment_recovery",
+   "name": "Recover from jointly liable household member",
+   "description": "If recovery from the applicant fails (e.g. enforcement finds no assets, insolvent estate, zero debt-adjustment programme), recovery can be directed to an adult jointly liable member for debt from their membership period.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Recovery from applicant unsuccessful",
+   "predecessors": [
+    "G110"
+   ],
+   "page": "p. 82",
+   "quote": "Liikaa maksettu yleinen asumistuki voidaan periä yhteisvastuulliselta, jos perintä hakijalta ei onnistu."
+  },
+  {
+   "id": "G112",
+   "subprocess": "overpayment_recovery",
+   "name": "Select jointly liable person by collectability",
+   "description": "The jointly liable person is chosen based on whom recovery is assessed likely to succeed, considering ability to pay.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G111"
+   ],
+   "page": "p. 82",
+   "quote": "peritään takaisin siltä yhteisvastuulliselta, jolta perinnän arvioidaan onnistuvan käytettävissä olevien tietojen perusteella – Arvioinnissa kiinnitetään huomiota yhteisvastuullisen maksukykyyn."
+  },
+  {
+   "id": "G113",
+   "subprocess": "overpayment_recovery",
+   "name": "Recover via regress from pensioners' housing allowance",
+   "description": "Overpayment can be recovered from pensioners' housing allowance for the same period without hearing the customer: offset if same applicant, payment demand if different applicant.",
+   "actor": "caseworker",
+   "actor_evidence": "etuusohjetta käytetään apuna etuuksien ratkaisutyössä (p. 4)",
+   "kind": "decision",
+   "condition": "Same applicant -> regress offset; different -> payment demand",
+   "predecessors": [
+    "G109",
+    "G105"
+   ],
+   "page": "p. 82",
+   "quote": "Yleisen asumistuen liikamaksua voidaan regressisäännöksen perusteella periä samalta ajalta myönnettävästä eläkkeensaajan asumistuesta. Regressimenettelyssä asiakasta ei tarvitse kuulla."
+  },
+  {
+   "id": "G114",
+   "subprocess": "overpayment_recovery",
+   "name": "Ask former landlord to return allowance",
+   "description": "When the recipient has moved and allowance was wrongly paid to the former landlord, the caseworker asks the landlord to return it voluntarily.",
+   "actor": "caseworker",
+   "actor_evidence": "pyydä vuokranantajaa",
+   "kind": "task",
+   "condition": "Allowance paid to former landlord after move",
+   "predecessors": [
+    "G104",
+    "G81"
+   ],
+   "page": "p. 79",
+   "quote": "Kun tuensaaja on muuttanut ja asumistuki on ehditty maksaa virheellisesti entiselle vuokranantajalle, pyydä vuokranantajaa palauttamaan asumistuki."
+  },
+  {
+   "id": "G115",
+   "subprocess": "overpayment_recovery",
+   "name": "Landlord returns or does not return allowance",
+   "description": "The landlord either returns the allowance voluntarily or does not.",
+   "actor": "landlord",
+   "actor_evidence": "vuokranantaja ei palauta",
+   "kind": "decision",
+   "condition": "Landlord returns allowance?",
+   "predecessors": [
+    "G114"
+   ],
+   "page": "p. 79",
+   "quote": "Jos vuokranantaja ei palauta tukea"
+  },
+  {
+   "id": "G116",
+   "subprocess": "overpayment_recovery",
+   "name": "Recipient raises recovery from landlord",
+   "description": "The recipient may raise the matter of recovering from the landlord at any stage of processing.",
+   "actor": "citizen",
+   "actor_evidence": "Tuensaaja voi esittää",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G115"
+   ],
+   "page": "p. 79",
+   "quote": "Tuensaaja voi esittää asian missä tahansa asumistuen käsittelyn vaiheessa."
+  },
+  {
+   "id": "G117",
+   "subprocess": "overpayment_recovery",
+   "name": "Examine conditions for recovery from landlord",
+   "description": "Only if the recipient raises it, the caseworker examines whether statutory conditions for recovering from the landlord are met (paid after rent right ended, landlord neglected notification, or knowingly drew allowance).",
+   "actor": "caseworker",
+   "actor_evidence": "tutki",
+   "kind": "decision",
+   "condition": "Recipient raised it; YAL 31 § 4 mom conditions met?",
+   "predecessors": [
+    "G116"
+   ],
+   "page": "p. 79",
+   "quote": "tutki vuokranantajalta perimisen edellytykset vain, jos tuensaaja itse sitä esittää."
+  },
+  {
+   "id": "G118",
+   "subprocess": "overpayment_recovery",
+   "name": "Give recipient decision waiving recovery",
+   "description": "If the move review created an overpayment, the recipient is given a decision waiving recovery and directing it to the landlord; it is never again recovered from the recipient.",
+   "actor": "caseworker",
+   "actor_evidence": "anna tuensaajalle päätös",
+   "kind": "task",
+   "condition": "Recovery directed to landlord",
+   "predecessors": [
+    "G117"
+   ],
+   "page": "p. 80",
+   "quote": "anna tuensaajalle päätös perinnästä luopumisesta ja perinnän kohdentamisesta vuokranantajaan."
+  },
+  {
+   "id": "G119",
+   "subprocess": "payment",
+   "name": "Pay allowance immediately to recipient",
+   "description": "If the allowance was already reviewed for the move and recovery is then directed at the landlord, the allowance can be paid immediately to the recipient.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "Recovery directed to landlord after move review",
+   "predecessors": [
+    "G117"
+   ],
+   "page": "p. 80",
+   "quote": "Jos asumistuki on ehditty tarkistaa muuton vuoksi ja vasta tämän jälkeen tuki päätetään periä takaisin vuokranantajalta, asumistuki voidaan maksaa heti tuensaajalle."
+  },
+  {
+   "id": "G120",
+   "subprocess": "overpayment_recovery",
+   "name": "Issue recovery decision to landlord",
+   "description": "If conditions are met, the landlord gets a recovery decision for the full amount paid, collected as a lump sum, without reasonableness assessment or separate hearing.",
+   "actor": "caseworker",
+   "actor_evidence": "anna vuokranantajalle takaisinperintäpäätös",
+   "kind": "task",
+   "condition": "Conditions for landlord recovery met",
+   "predecessors": [
+    "G117"
+   ],
+   "page": "p. 80",
+   "quote": "Jos vuokranantajalta perimisen edellytykset täyttyvät, anna vuokranantajalle takaisinperintäpäätös."
+  },
+  {
+   "id": "G121",
+   "subprocess": "overpayment_recovery",
+   "name": "Follow up recovery",
+   "description": "Recovery cases are followed up according to the instructions recorded in the process.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G120",
+    "G110",
+    "G112"
+   ],
+   "page": "p. 80",
+   "quote": "Perintäasioita seurataan prosessiin kirjattujen ohjeiden mukaisesti."
+  },
+  {
+   "id": "G122",
+   "subprocess": "appeal_rectification",
+   "name": "Appeal decision (implied; common guideline)",
+   "description": "Implied: decisions may be appealed per Kela's common appeal guideline (only referenced; interim decisions and landlord-payment decisions for rent default are not appealable).",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 83",
+   "quote": "Etuuksille yhteinen Muutoksenhaku -ohje."
+  },
+  {
+   "id": "G123",
+   "subprocess": "appeal_rectification",
+   "name": "Interim decision during appeal or annulment",
+   "description": "An interim decision can also be given in connection with an appeal or annulment of a decision.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "decision",
+   "condition": "Appeal or annulment pending",
+   "predecessors": [
+    "G122"
+   ],
+   "page": "p. 65",
+   "quote": "Väliaikaisen päätöksen antaminen on mahdollista myös muutoksenhaun ja päätöksen poistamisen yhteydessä."
+  },
+  {
+   "id": "G124",
+   "subprocess": "appeal_rectification",
+   "name": "Appeal body annuls decision",
+   "description": "An appeal body annuls (removes) a housing allowance decision, after which Kela gives a new decision.",
+   "actor": "other_authority",
+   "actor_evidence": "muutoksenhakuelin on poistanut päätöksen",
+   "kind": "event",
+   "condition": "",
+   "predecessors": [
+    "G122"
+   ],
+   "page": "p. 83",
+   "quote": "Yleisen asumistuen päätös, kun muutoksenhakuelin on poistanut päätöksen"
+  },
+  {
+   "id": "G125",
+   "subprocess": "appeal_rectification",
+   "name": "Rectify decision (in favour / to detriment after hearing)",
+   "description": "Referenced common procedures: rectification in the customer's favour and re-examination on new evidence, or rectification to the customer's detriment after hearing them (YAL 38 §).",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 64",
+   "quote": "Oikaisu eduksi ja asian tutkiminen uudelleen uuden selvityksen perusteella"
+  },
+  {
+   "id": "G126",
+   "subprocess": "appeal_rectification",
+   "name": "Simplified rectification for retroactive preventing benefit",
+   "description": "Referenced procedure: lightened rectification when a household member is retroactively granted a benefit that prevents housing allowance.",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "Preventing benefit granted retroactively",
+   "predecessors": [
+    "G63"
+   ],
+   "page": "p. 83",
+   "quote": "Yleisen asumistuen oikaiseminen, kun ruokakuntaan kuuluvalle on myönnetty takautuvasti estävä etuus eli kevennetty oikaisumenettely"
+  },
+  {
+   "id": "G127",
+   "subprocess": "other",
+   "name": "Handle suspected benefit fraud (common guideline)",
+   "description": "Suspected misuse is handled according to Kela's common benefit-fraud guideline and fraud process (only referenced).",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [],
+   "page": "p. 83",
+   "quote": "Etuuksille yhteinen Etuusväärinkäytökset-ohje."
+  },
+  {
+   "id": "G128",
+   "subprocess": "other",
+   "name": "Annually index-adjust maximum housing costs and norms",
+   "description": "Maximum housing costs are reviewed annually by the cost-of-living index and water/heating norms by the national pension index (not done 2024-2027).",
+   "actor": "unclear",
+   "actor_evidence": "",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [],
+   "page": "p. 31",
+   "quote": "Enimmäisasumismenot tarkistetaan vuosittain elinkustannusindeksillä. Vesi- ja lämmitysnormit sekä muut määräytymisperusteet tarkistetaan vuosittain kansaneläkeindeksillä."
+  },
+  {
+   "id": "G129",
+   "subprocess": "other",
+   "name": "Åland government confirms maximum housing costs",
+   "description": "The Åland provincial government confirms the maximum housing costs for Åland municipalities.",
+   "actor": "other_authority",
+   "actor_evidence": "Ahvenanmaan maakuntahallitus vahvistaa",
+   "kind": "task",
+   "condition": "",
+   "predecessors": [],
+   "page": "p. 33",
+   "quote": "Lisäksi Ahvenanmaan maakuntahallitus vahvistaa enimmäisasumismenot Ahvenanmaan kunnille."
+  }
+ ],
+ "data_sources": [
+  {
+   "name": "Tulorekisteri (Incomes Register) - wages, and since 2021 benefits and pensions",
+   "owner": "not stated in guideline",
+   "access": "api",
+   "page": "p. 26",
+   "quote": "Yleisen asumistuen hakemuksen ratkaisemista varten Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä sekä vuokrasopimuksista vuokrasopimuskyselystä."
+  },
+  {
+   "name": "Tulorekisteri benefit/pension payment data (sensitive data such as basic social assistance and disability benefits excluded)",
+   "owner": "not stated in guideline",
+   "access": "api",
+   "page": "p. 55",
+   "quote": "Vuoden 2021 alusta lähtien tulorekisteriin ilmoitetaan palkkatietojen lisäksi myös etuuksien ja eläkkeiden maksutiedot."
+  },
+  {
+   "name": "Vuokrasopimuskysely (Kela rental agreement query) - leases and rent increases",
+   "owner": "participating landlords (data) / Kela (query)",
+   "access": "api",
+   "page": "p. 26",
+   "quote": "Kopiota vuokrasopimuksesta ei tarvita, jos vuokranantaja on mukana Kelan vuokrasopimuskyselyssä, koska Kela saa näiltä vuokranantajilta sähköisesti tiedot vuokrasopimuksista ja vuokrankorotuksista."
+  },
+  {
+   "name": "Verotustiedot / verotustietojen kysely (confirmed taxation data: business, agricultural, real estate, partnership assets, dividends, capital gains)",
+   "owner": "verottaja (tax authority)",
+   "access": "unknown",
+   "page": "p. 61",
+   "quote": "Elinkeinotoiminnan ja maatalouden varat otetaan huomioon vasta sitten, kun niitä koskevat tiedot saadaan verotustietojen kyselyltä."
+  },
+  {
+   "name": "Verottajan nettovarallisuustiedot (business assets net of debts)",
+   "owner": "verottaja",
+   "access": "unknown",
+   "page": "p. 60",
+   "quote": "Elinkeinotoiminnan ja maatalouden varat sekä yhtymäosuuksien varat sisältyvät verottajalta saataviin tietoihin veloilla vähennettyinä eli nettovarallisuutena."
+  },
+  {
+   "name": "Väestörekisteritiedot / VTJ address (cohabitation, child's permanent address)",
+   "owner": "not stated in guideline",
+   "access": "unknown",
+   "page": "p. 8",
+   "quote": "Jos asiakas väestörekisteritietojen tai muiden tietojen mukaan tosiasiallisesti asuu samassa asunnossa toisen henkilön kanssa ja"
+  },
+  {
+   "name": "Kela's existing background data on the household",
+   "owner": "Kela",
+   "access": "manual_lookup",
+   "page": "p. 4",
+   "quote": "Tutustu jokaisen ruokakunnan jäsenen tilanteeseen ja muodosta käsitys ruokakunnan kokonaistilanteesta Kelassa olevien taustatietojen ja nyt käsiteltävänä olevien asiakirjojen avulla."
+  },
+  {
+   "name": "Vakuuttamisratkaisu (insurance / residence decision, incl. benefit restrictions)",
+   "owner": "Kela (insurance decision)",
+   "access": "manual_lookup",
+   "page": "p. 12",
+   "quote": "Kun käsittelet yleistä asumistukea, muista tarkistaa, onko henkilön katsottu asuvan Suomessa vakinaisesti. Tarkista myös mahdolliset etuusrajoitukset."
+  },
+  {
+   "name": "ETK A1 certificate (not usable as basis for general housing allowance)",
+   "owner": "ETK",
+   "access": "unknown",
+   "page": "p. 11",
+   "quote": "Yleinen asumistuki ei kuulu asetuksen soveltamisalaan, joten yleistä asumistukea ei voida myöntää ETK:n päätöksen perusteella."
+  },
+  {
+   "name": "Application (OmaKela / form AT1 / oral)",
+   "owner": "applicant (household representative)",
+   "access": "citizen_supplied",
+   "page": "p. 25",
+   "quote": "Yleisen asumistuen hakemuksen voi tehdä • asiointipalvelu OmaKelassa • kirjallisesti lomakkeella AT1"
+  },
+  {
+   "name": "Gross income statements of the household",
+   "owner": "applicant",
+   "access": "citizen_supplied",
+   "page": "p. 26",
+   "quote": "selvitykset ruokakunnan bruttotuloista – Asiakkaalta ei pyydetä sellaisia tietoja, jotka saadaan tulorekisteristä."
+  },
+  {
+   "name": "Signed lease / right-of-occupancy / part-ownership agreement copy",
+   "owner": "applicant",
+   "access": "citizen_supplied",
+   "page": "p. 26",
+   "quote": "kopio allekirjoitetusta vuokrasopimuksesta, asumisoikeussopimuksesta tai osaomistussopimuksesta"
+  },
+  {
+   "name": "Community household authorisation form AT5",
+   "owner": "applicant / co-residents",
+   "access": "citizen_supplied",
+   "page": "p. 26",
+   "quote": "yhteisöruokakunnan valtuutus (lomake AT5)."
+  },
+  {
+   "name": "Form Y77 (notification of moving to Finland)",
+   "owner": "applicant",
+   "access": "citizen_supplied",
+   "page": "p. 26",
+   "quote": "Ilmoitus Suomeen muutosta (Y77), kun yleistä asumistukea haetaan ensimmäistä kertaa Suomeen muuton jälkeen eikä oikeutta Kelan etuuksiin ole vielä selvitetty."
+  },
+  {
+   "name": "Form Y38 (moving abroad / working abroad)",
+   "owner": "applicant",
+   "access": "citizen_supplied",
+   "page": "p. 26",
+   "quote": "Muutto ulkomaille tai työskentely ulkomailla -lomake (Y38), jos kyseessä on muutto ulkomaille tai oleskelu ulkomailla"
+  },
+  {
+   "name": "Rent receipt (on suspicion)",
+   "owner": "applicant",
+   "access": "citizen_supplied",
+   "page": "p. 26",
+   "quote": "Kuitti vuokrasta voidaan harkinnan mukaan pyytää silloin, jos on erityistä syytä epäillä ruokakunnan vuokrasuhdetta."
+  },
+  {
+   "name": "Original landlord's written consent to re-letting",
+   "owner": "original landlord via applicant",
+   "access": "citizen_supplied",
+   "page": "p. 32",
+   "quote": "Jälleenvuokralaisen asumistukihakemuksen liitteeksi tarvitaan asunnon ensivuokralaisen vuokranantajan eli alkuperäisen vuokranantajan kirjallinen suostumus jälleenvuokraukseen."
+  },
+  {
+   "name": "Continuation application form AT13",
+   "owner": "recipient",
+   "access": "citizen_supplied",
+   "page": "p. 25",
+   "quote": "Jos yleinen asumistuki on myönnetty määräaikaisena, asumistuen jatkamista haetaan Yleisen asumistuen jatkohakemus -lomakkeella AT13."
+  },
+  {
+   "name": "Account number change (form Y 121, online service, orally; not e-mail)",
+   "owner": "recipient",
+   "access": "citizen_supplied",
+   "page": "p. 76",
+   "quote": "Asiakas voi ilmoittaa tilinumeron muutoksesta • lomakkeella Y 121 • verkkoasioinnissa • suullisesti."
+  },
+  {
+   "name": "Customer contacts by telephone, message service, customer letter",
+   "owner": "customer",
+   "access": "citizen_supplied",
+   "page": "p. 4",
+   "quote": "Täydennä epäselväksi jääneet asiat asiakkaalta ensisijaisesti puhelimitse. Käytä tarvittaessa viestipalvelua tai asiakaskirjettä."
+  },
+  {
+   "name": "Customer's bank statement / other evidence for dividends",
+   "owner": "customer",
+   "access": "citizen_supplied",
+   "page": "p. 53",
+   "quote": "Jos arvioit osinkotulon henkilön tiliotteen tai muun selvityksen perusteella, käytä bruttomäärää."
+  },
+  {
+   "name": "Share counts per company (application and partly tax data)",
+   "owner": "applicant; tax authority",
+   "access": "citizen_supplied",
+   "page": "p. 62",
+   "quote": "Henkilön omistamien osakkeiden lukumäärät yhtiöittäin saat hakemukselta sekä osittain myös verotustiedoista."
+  },
+  {
+   "name": "Tilastokeskus (Statistics Finland) data for housing share valuation",
+   "owner": "Tilastokeskus",
+   "access": "unknown",
+   "page": "p. 61",
+   "quote": "Jos verotustietoa ei ole saatavilla, arvio asunto-osakkeen arvosta tehdään tilastokeskuksen tietojen perusteella."
+  },
+  {
+   "name": "Kauppalehti website (share and fund quotations)",
+   "owner": "Kauppalehti",
+   "access": "manual_lookup",
+   "page": "p. 63",
+   "quote": "Voit selvittää rahastojen vuoden viimeisen pörssipäivän arvot Kauppalehden sivulta."
+  },
+  {
+   "name": "Financial institutions (deposit inquiries)",
+   "owner": "rahalaitokset (banks)",
+   "access": "manual_lookup",
+   "page": "p. 63",
+   "quote": "Jos riittäviä tai luotettavia tietoja ei saada hakijalta, voidaan talletuksia yms. selvittää rahalaitoksilta."
+  },
+  {
+   "name": "Insurance or other company managing an insurance investment",
+   "owner": "insurer",
+   "access": "manual_lookup",
+   "page": "p. 64",
+   "quote": "Selvitä tiedot tarvittaessa ensisijaisesti tuen hakijalta ja toissijaisesti kyseistä sijoitusta hoitavasta vakuutus- tai muusta yhtiöstä."
+  },
+  {
+   "name": "Perukirja (estate inventory deed)",
+   "owner": "estate / customer",
+   "access": "unknown",
+   "page": "p. 61",
+   "quote": "Selvitä lesken omaisuus tarvittaessa perukirjasta."
+  },
+  {
+   "name": "Työvoimapoliittinen lausunto / lomautustodistus (labour policy statement / lay-off certificate)",
+   "owner": "not stated in guideline",
+   "access": "unknown",
+   "page": "p. 57",
+   "quote": "Arvioi työttömyysetuus tuloksi, vaikka työvoimapoliittista lausuntoa tai lomautustodistusta ei vielä ole Kelassa."
+  },
+  {
+   "name": "Verohallinto confirmed average forest yield (per municipality)",
+   "owner": "Verohallinto",
+   "access": "unknown",
+   "page": "p. 47",
+   "quote": "Verohallinto vahvistaa keskimääräisen tuoton vuosittain."
+  },
+  {
+   "name": "Verohallitus annual valuation bases for fringe benefits",
+   "owner": "verohallitus",
+   "access": "unknown",
+   "page": "p. 49",
+   "quote": "Luontoisedut arvioidaan tuloksi noudattaen verohallituksen vuosittain vahvistamia ennakonpidätyksessä noudatettavia luontoisetujen laskentaperusteita."
+  },
+  {
+   "name": "VOPR dividend tip in confirmed taxation data",
+   "owner": "verottaja",
+   "access": "unknown",
+   "page": "p. 53",
+   "quote": "VOPR-osingoista on vinkkitieto vahvistetun verotuksen tiedoissa."
+  },
+  {
+   "name": "Landlord's mandatory notification of tenancy end / move-out",
+   "owner": "landlord",
+   "access": "unknown",
+   "page": "p. 79",
+   "quote": "Vuokranantajan on ilmoitettava Kelalle, jos • asumistuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai • asumistuen saaja muuttaa pois asunnosta."
+  },
+  {
+   "name": "Landlord's request for direct payment due to rent default",
+   "owner": "landlord",
+   "access": "unknown",
+   "page": "p. 79",
+   "quote": "tuki voidaan vuokranantajan pyynnöstä maksaa suoraan vuokranantajalle ilman tuensaajan suostumusta (YAL 25 § 2 mom.)."
+  },
+  {
+   "name": "Building authority certificate (holiday home as only permanent dwelling)",
+   "owner": "rakennusviranomainen",
+   "access": "unknown",
+   "page": "p. 30",
+   "quote": "asunto täyttää rakennusviranomaisen todistuksen mukaan vakinaiselle asunnolle asetetut tekniset ja terveydelliset vaatimukset"
+  },
+  {
+   "name": "Ahvenanmaan maakuntahallitus maximum housing costs for Åland",
+   "owner": "Ahvenanmaan maakuntahallitus",
+   "access": "unknown",
+   "page": "p. 33",
+   "quote": "Lisäksi Ahvenanmaan maakuntahallitus vahvistaa enimmäisasumismenot Ahvenanmaan kunnille."
+  },
+  {
+   "name": "Guardian appointment by court / guardianship authority",
+   "owner": "tuomioistuin tai holhousviranomainen",
+   "access": "unknown",
+   "page": "p. 77",
+   "quote": "Yleinen asumistuki maksetaan edunvalvojalle, jos tuomioistuin tai holhousviranomainen on määrännyt hakijalle edunvalvojan hoitamaan taloudellisia asioita."
+  },
+  {
+   "name": "Wellbeing services county advance social assistance",
+   "owner": "hyvinvointialue",
+   "access": "unknown",
+   "page": "p. 77",
+   "quote": "Yleinen asumistuki voidaan maksaa hyvinvointialueelle, jos hyvinvointialue on myöntänyt ehkäisevää tai täydentävää toimeentulotukea ennakkona odotettavissa olevaa etuutta vastaan."
+  }
+ ],
+ "automation_statements": [
+  {
+   "what": "Annual review letter is sent to the recipient by program (explicitly 'ohjelmallisesti').",
+   "page": "p. 25",
+   "quote": "Kela lähettää ohjelmallisesti ennen vuositarkistusajankohtaa kirjeen asumistuen saajalle."
+  },
+  {
+   "what": "If the annual review application is not returned by the payment run, the allowance is terminated by program and a termination decision is issued (explicitly 'ohjelmallisesti').",
+   "page": "p. 72",
+   "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää), asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+  },
+  {
+   "what": "Lease and rent-increase data arrive electronically from landlords in the rental agreement query (electronic, not explicitly called automatic).",
+   "page": "p. 26",
+   "quote": "koska Kela saa näiltä vuokranantajilta sähköisesti tiedot vuokrasopimuksista ja vuokrankorotuksista."
+  },
+  {
+   "what": "Kela receives wage data from the Incomes Register for deciding applications (register feed; not explicitly called automatic).",
+   "page": "p. 26",
+   "quote": "Yleisen asumistuen hakemuksen ratkaisemista varten Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä sekä vuokrasopimuksista vuokrasopimuskyselystä."
+  },
+  {
+   "what": "Benefits and pensions are reported to the Incomes Register since 2021 (register data flow; not explicitly automatic).",
+   "page": "p. 55",
+   "quote": "Vuoden 2021 alusta lähtien tulorekisteriin ilmoitetaan palkkatietojen lisäksi myös etuuksien ja eläkkeiden maksutiedot."
+  },
+  {
+   "what": "Assets formed after the last taxation are counted only when the tax data query returns them (query-based data; mechanism not stated).",
+   "page": "p. 62",
+   "quote": "Tällaiset kiinteistöt otetaan huomioon omaisuutena vasta sitten, kun niitä koskevat tiedot saadaan verotustietojen kyselyltä."
+  },
+  {
+   "what": "Interim reduction/suspension is effected by registering a review or termination decision in the system (system registration; not stated as automatic).",
+   "page": "p. 65",
+   "quote": "yleisen asumistuen määrää vähennetään tai sen maksaminen keskeytetään rekisteröimällä tarkistus- tai lakkautusratkaisu"
+  }
+ ]
+}
