@@ -9,9 +9,15 @@
       "Turkmen"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "Afghanistan ministry \"procedures manual\" procurement health education land registration"
+    "discovery_log": "searches/af.json",
+    "area_search_log": "areas/af.json"
   },
   {
     "id": "al",
@@ -21,9 +27,34 @@
       "Albanian"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": [],
-    "query": "Albania government manual procedures procurement education health land registration"
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "al",
+        "assessment": "unknown",
+        "service": "Procurement",
+        "area": "government_operations",
+        "url": "https://www.app.gov.al/legislation/public-procurement/procurement-manuals/",
+        "title": "Procurement manuals",
+        "authority": "Public Procurement Agency",
+        "document_date": "not checked",
+        "depth": "unverified",
+        "access": "blocked",
+        "locator": "Direct index timed out",
+        "finding": "Government manual listing identified in discovery.",
+        "limitations": "Manual contents and applicability not verified."
+      }
+    ],
+    "discovery_log": "searches/al.json",
+    "area_search_log": "areas/al.json"
   },
   {
     "id": "dz",
@@ -33,9 +64,15 @@
       "Arabic"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "Algeria manuel procédures administration marchés publics santé état civil"
+    "discovery_log": "searches/dz.json",
+    "area_search_log": "areas/dz.json"
   },
   {
     "id": "ad",
@@ -45,9 +82,15 @@
       "Catalan"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "Andorra manual procediments administració contractació serveis"
+    "discovery_log": "searches/ad.json",
+    "area_search_log": "areas/ad.json"
   },
   {
     "id": "ao",
@@ -57,9 +100,15 @@
       "Portuguese"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "Angola manual procedimentos administração contratação serviços públicos"
+    "discovery_log": "searches/ao.json",
+    "area_search_log": "areas/ao.json"
   },
   {
     "id": "ag",
@@ -69,9 +118,15 @@
       "English"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "\"Antigua and Barbuda\" government \"manual\" procurement procedures services"
+    "discovery_log": "searches/ag.json",
+    "area_search_log": "areas/ag.json"
   },
   {
     "id": "ar",
@@ -82,9 +137,15 @@
       "Spanish"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "Argentina gobierno \"manual de procedimientos\" salud educación registro compras"
+    "discovery_log": "searches/ar.json",
+    "area_search_log": "areas/ar.json"
   },
   {
     "id": "am",
@@ -94,9 +155,15 @@
       "Armenian"
     ],
     "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
     "evidence": [],
-    "query": "Armenia government \"procedures\" \"manual\" public services procurement"
+    "discovery_log": "searches/am.json",
+    "area_search_log": "areas/am.json"
   },
   {
     "id": "au",
@@ -105,9 +172,58 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "ABSTUDY claims and enquiries processing",
+      "Assistance for Isolated Children: parental income assessment"
+    ],
+    "verified_areas": [
+      "social_services"
+    ],
+    "evidence": [
+      {
+        "country_id": "au",
+        "assessment": "strong_evidence",
+        "service": "Assistance for Isolated Children: parental income assessment",
+        "area": "social_services",
+        "url": "https://operational.servicesaustralia.gov.au/public/Pages/income-assests-and-rates-of-payment/108-02010030-03.html",
+        "title": "AIC parental income test — process tables",
+        "authority": "Services Australia",
+        "document_date": "version date not displayed in inspected excerpt",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Table 1, steps 1–7",
+        "finding": "Staff action tables name processing teams, case-system screens, eligibility branches, evidence requests and termination points.",
+        "limitations": "Linked intranet tools are not public; this is a component of AIC administration, not a validated complete map.",
+        "function_type": "external_service"
+      },
+      {
+        "country_id": "au",
+        "assessment": "strong_evidence",
+        "service": "ABSTUDY claims and enquiries processing",
+        "area": "social_services",
+        "url": "https://operational.servicesaustralia.gov.au/public/Pages/students-and-trainees/010-02020010-03.html",
+        "title": "ABSTUDY processing arrangements — process",
+        "authority": "Services Australia",
+        "document_date": "version date not displayed in inspected excerpt",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Table 1, items 1–4",
+        "finding": "Specifies enquiry channels, staff queues, escalation, record creation and callback actions for education assistance.",
+        "limitations": "Education-related financial assistance is counted under social benefits, not as a second education-service area. Linked operational tools remain inaccessible.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/au.json",
+    "area_search_log": "areas/au.json"
   },
   {
     "id": "at",
@@ -116,9 +232,16 @@
     "languages": [
       "Austro-Bavarian German"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/at.json",
+    "area_search_log": "areas/at.json"
   },
   {
     "id": "az",
@@ -128,9 +251,16 @@
       "Azerbaijani",
       "Russian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/az.json",
+    "area_search_log": "areas/az.json"
   },
   {
     "id": "bs",
@@ -139,9 +269,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bs.json",
+    "area_search_log": "areas/bs.json"
   },
   {
     "id": "bh",
@@ -150,9 +287,35 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "promising_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "some_internal_detail_or_unresolved_applicability",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "bh",
+        "assessment": "promising_evidence",
+        "service": "Planning and infrastructure applications",
+        "area": "land_environment",
+        "url": "https://planning.bh/pdf/uppm/Urban%20Planning%20and%20Development%20Authority%20Procedures%20Manual_English%202023.pdf",
+        "title": "Unified Planning Procedures Manual",
+        "authority": "Urban Planning and Development Authority",
+        "document_date": "June 2023",
+        "depth": "some_internal_detail",
+        "access": "read_pdf_and_diagram",
+        "locator": "Agricultural engineering requirements and PDF p. 54",
+        "finding": "Technical reviews, required evidence and infrastructure conditions are public; the inspected table is an engineering calculation sequence.",
+        "limitations": "Does not yet establish a complete internal case-handling workflow. Separate Tender Board staff guide returned 403."
+      }
+    ],
+    "discovery_log": "searches/bh.json",
+    "area_search_log": "areas/bh.json"
   },
   {
     "id": "bd",
@@ -161,9 +324,35 @@
     "languages": [
       "Bengali"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "bd",
+        "assessment": "unknown",
+        "service": "Hi-tech park project registration",
+        "area": "revenue_business",
+        "url": "https://bhtpa.gov.bd/sites/default/files/files/bhtpa.portal.gov.bd/notices/7d24a4f4_40f2_49cb_b6b4_2c63023dce01/2021-09-22-07-27-ab6e68e2d473be34d25036dc947a5c6e.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/bd.json",
+    "area_search_log": "areas/bd.json"
   },
   {
     "id": "bb",
@@ -172,9 +361,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bb.json",
+    "area_search_log": "areas/bb.json"
   },
   {
     "id": "by",
@@ -184,9 +380,16 @@
       "Belarusian",
       "Russian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/by.json",
+    "area_search_log": "areas/by.json"
   },
   {
     "id": "be",
@@ -197,9 +400,16 @@
       "French",
       "German"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/be.json",
+    "area_search_log": "areas/be.json"
   },
   {
     "id": "bz",
@@ -210,9 +420,16 @@
       "English",
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bz.json",
+    "area_search_log": "areas/bz.json"
   },
   {
     "id": "bj",
@@ -221,9 +438,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bj.json",
+    "area_search_log": "areas/bj.json"
   },
   {
     "id": "bt",
@@ -232,9 +456,16 @@
     "languages": [
       "Dzongkha"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bt.json",
+    "area_search_log": "areas/bt.json"
   },
   {
     "id": "bo",
@@ -246,9 +477,16 @@
       "Quechua",
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bo.json",
+    "area_search_log": "areas/bo.json"
   },
   {
     "id": "ba",
@@ -259,9 +497,16 @@
       "Croatian",
       "Serbian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ba.json",
+    "area_search_log": "areas/ba.json"
   },
   {
     "id": "bw",
@@ -271,9 +516,16 @@
       "English",
       "Tswana"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bw.json",
+    "area_search_log": "areas/bw.json"
   },
   {
     "id": "br",
@@ -282,9 +534,39 @@
     "languages": [
       "Portuguese"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Health ministry document registration and case-file creation"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "br",
+        "assessment": "strong_evidence",
+        "service": "Health ministry document registration and case-file creation",
+        "area": "government_operations",
+        "url": "https://bvsms.saude.gov.br/bvs/publicacoes/procedimentos_internos_servico_protocolo_1ed.pdf",
+        "title": "Manual de procedimentos internos de serviços de protocolo",
+        "authority": "Ministry of Health",
+        "document_date": "2015 reprint",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Document receipt and registration sections, PDF pp. 9–12",
+        "finding": "Staff check incoming documents, identify urgency, apply deadlines and create/number case files.",
+        "limitations": "Back-office records workflow; historical edition does not establish current digital-system behaviour.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/br.json",
+    "area_search_log": "areas/br.json"
   },
   {
     "id": "bn",
@@ -293,9 +575,16 @@
     "languages": [
       "Malay"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bn.json",
+    "area_search_log": "areas/bn.json"
   },
   {
     "id": "bg",
@@ -304,9 +593,35 @@
     "languages": [
       "Bulgarian"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "promising_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "some_internal_detail_or_unresolved_applicability",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "bg",
+        "assessment": "promising_evidence",
+        "service": "Administrative service centre and complaint handling",
+        "area": "government_operations",
+        "url": "https://www.mlsp.government.bg/uploads/3/administrativno-obsluzhvane/ao-2509final.pdf",
+        "title": "Internal rules for administrative servicing",
+        "authority": "Ministry of Labour and Social Policy",
+        "document_date": "2025-09-29",
+        "depth": "some_internal_detail",
+        "access": "read_pdf",
+        "locator": "Articles 10–21",
+        "finding": "Defines front-office arrangements, receiving requests, staff responsibilities and feedback handling.",
+        "limitations": "Cross-cutting service-centre rules; a specific substantive service still needs a procedure."
+      }
+    ],
+    "discovery_log": "searches/bg.json",
+    "area_search_log": "areas/bg.json"
   },
   {
     "id": "bf",
@@ -315,9 +630,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bf.json",
+    "area_search_log": "areas/bf.json"
   },
   {
     "id": "bi",
@@ -327,9 +649,16 @@
       "French",
       "Kirundi"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/bi.json",
+    "area_search_log": "areas/bi.json"
   },
   {
     "id": "kh",
@@ -338,9 +667,16 @@
     "languages": [
       "Khmer"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/kh.json",
+    "area_search_log": "areas/kh.json"
   },
   {
     "id": "cm",
@@ -350,9 +686,35 @@
       "English",
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "cm",
+        "assessment": "unknown",
+        "service": "Environment ministry administrative procedures",
+        "area": "land_environment",
+        "url": "https://minepded.gov.cm/wp-content/uploads/2020/02/MANUEL-DE-PROCEDURES-DES-SERVICES-DECONCENTRES.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/cm.json",
+    "area_search_log": "areas/cm.json"
   },
   {
     "id": "ca",
@@ -362,9 +724,39 @@
       "English",
       "French"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Reconsideration of immigration refusals"
+    ],
+    "verified_areas": [
+      "identity_rights"
+    ],
+    "evidence": [
+      {
+        "country_id": "ca",
+        "assessment": "strong_evidence",
+        "service": "Reconsideration of immigration refusals",
+        "area": "identity_rights",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/service-delivery/reconsideration-after-refusal.html",
+        "title": "Reconsideration after refusal",
+        "authority": "IRCC",
+        "document_date": "2023-08-29",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Main procedure and GCMS Notes requirements",
+        "finding": "Explains officer discretion, routing to the original or delegated decision maker and mandatory case-system recording.",
+        "limitations": "A bounded reconsideration workflow; other visa processing stages need additional manuals.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/ca.json",
+    "area_search_log": "areas/ca.json"
   },
   {
     "id": "cv",
@@ -373,9 +765,16 @@
     "languages": [
       "Portuguese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cv.json",
+    "area_search_log": "areas/cv.json"
   },
   {
     "id": "cf",
@@ -385,9 +784,39 @@
       "French",
       "Sango"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Public loan negotiation and debt registration"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "cf",
+        "assessment": "strong_evidence",
+        "service": "Public loan negotiation and debt registration",
+        "area": "government_operations",
+        "url": "https://www.finances.gouv.cf/sites/default/files/2025-11/RCA%20MANUEL%20DE%20PROCEDURE%20DE%20GESTION%20DE%20LA%20DETTE%20pdf.pdf",
+        "title": "Manuel de procédures de gestion de la dette publique",
+        "authority": "Ministry of Finance / DDPE",
+        "document_date": "undated; hosted under 2025-11",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "PDF pp. 6–9, front-office procedures",
+        "finding": "Tables specify responsible units, ordered tasks, indicative deadlines, inputs, outputs and SYGADE/Excel registration.",
+        "limitations": "Some document date fields are blank; indicative timelines are not observed performance.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/cf.json",
+    "area_search_log": "areas/cf.json"
   },
   {
     "id": "td",
@@ -397,9 +826,16 @@
       "Arabic",
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/td.json",
+    "area_search_log": "areas/td.json"
   },
   {
     "id": "cl",
@@ -408,9 +844,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cl.json",
+    "area_search_log": "areas/cl.json"
   },
   {
     "id": "cn",
@@ -419,9 +862,16 @@
     "languages": [
       "Chinese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cn.json",
+    "area_search_log": "areas/cn.json"
   },
   {
     "id": "co",
@@ -430,9 +880,35 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "co",
+        "assessment": "unknown",
+        "service": "Migration agency processes",
+        "area": "identity_rights",
+        "url": "https://www.migracioncolombia.gov.co/planeacion-y-estadistica/procesos-y-procedimientos",
+        "title": "Procesos y procedimientos",
+        "authority": "Migración Colombia",
+        "document_date": "live index",
+        "depth": "unverified",
+        "access": "index_only",
+        "locator": "Integrated management system and process-map sections",
+        "finding": "Official process repository and organisational process-map description opened.",
+        "limitations": "Individual service procedures and depth have not been inspected. This is a lead, not a strong or promising-evidence classification."
+      }
+    ],
+    "discovery_log": "searches/co.json",
+    "area_search_log": "areas/co.json"
   },
   {
     "id": "km",
@@ -443,9 +919,35 @@
       "Comorian",
       "French"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "promising_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "some_internal_detail_or_unresolved_applicability",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "km",
+        "assessment": "promising_evidence",
+        "service": "PAGF procurement and financial administration",
+        "area": "government_operations",
+        "url": "https://finances.gouv.km/wp-content/uploads/2024/12/CKM1107-Manuel-des-procedures-version-revisee-Copil-112023-VAno.pdf",
+        "title": "Manuel de procédures du PAGF",
+        "authority": "Ministry of Finance",
+        "document_date": "updated 2023-11-25",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Chapter 5, section 3.4, PDF p. 50",
+        "finding": "Detailed procedure tables link procurement actions to project actors and approval stages.",
+        "limitations": "A donor-financed project's procedures; routine national service applicability is unestablished. Kept outside the strong country count."
+      }
+    ],
+    "discovery_log": "searches/km.json",
+    "area_search_log": "areas/km.json"
   },
   {
     "id": "cg",
@@ -456,9 +958,16 @@
       "Kikongo",
       "Lingala"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cg.json",
+    "area_search_log": "areas/cg.json"
   },
   {
     "id": "cr",
@@ -467,9 +976,39 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "International humanitarian assistance receipt, transit and dispatch"
+    ],
+    "verified_areas": [
+      "public_services"
+    ],
+    "evidence": [
+      {
+        "country_id": "cr",
+        "assessment": "strong_evidence",
+        "service": "International humanitarian assistance receipt, transit and dispatch",
+        "area": "public_services",
+        "url": "https://www.pgrweb.go.cr/DocsDescargar/Normas/No%20AC-6-06102017/Version1/Manua-proc-recepcion-transito-envio-asistencia-humanitaria.pdf",
+        "title": "Manual de procedimientos para asistencia humanitaria y técnica internacional",
+        "authority": "CNE / inter-agency CATAI",
+        "document_date": "2017 approval record; edition date not independently resolved",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf_and_diagram",
+        "locator": "PDF p. 13, printed pp. 24–25; diagram visually inspected",
+        "finding": "A swimlane blueprint assigns ordered actions and handoffs to customs, emergency and coordination bodies.",
+        "limitations": "Historical approval record; current implementation and revisions need checking.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/cr.json",
+    "area_search_log": "areas/cr.json"
   },
   {
     "id": "hr",
@@ -478,9 +1017,16 @@
     "languages": [
       "Croatian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/hr.json",
+    "area_search_log": "areas/hr.json"
   },
   {
     "id": "cu",
@@ -489,9 +1035,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cu.json",
+    "area_search_log": "areas/cu.json"
   },
   {
     "id": "cy",
@@ -501,9 +1054,16 @@
       "Greek",
       "Turkish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cy.json",
+    "area_search_log": "areas/cy.json"
   },
   {
     "id": "cz",
@@ -513,9 +1073,16 @@
       "Czech",
       "Slovak"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cz.json",
+    "area_search_log": "areas/cz.json"
   },
   {
     "id": "cd",
@@ -528,9 +1095,16 @@
       "Swahili",
       "Tshiluba"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/cd.json",
+    "area_search_log": "areas/cd.json"
   },
   {
     "id": "dk",
@@ -539,9 +1113,16 @@
     "languages": [
       "Danish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/dk.json",
+    "area_search_log": "areas/dk.json"
   },
   {
     "id": "dj",
@@ -551,9 +1132,16 @@
       "Arabic",
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/dj.json",
+    "area_search_log": "areas/dj.json"
   },
   {
     "id": "dm",
@@ -562,9 +1150,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/dm.json",
+    "area_search_log": "areas/dm.json"
   },
   {
     "id": "do",
@@ -573,9 +1168,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/do.json",
+    "area_search_log": "areas/do.json"
   },
   {
     "id": "ec",
@@ -584,9 +1186,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ec.json",
+    "area_search_log": "areas/ec.json"
   },
   {
     "id": "eg",
@@ -595,9 +1204,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/eg.json",
+    "area_search_log": "areas/eg.json"
   },
   {
     "id": "sv",
@@ -606,9 +1222,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sv.json",
+    "area_search_log": "areas/sv.json"
   },
   {
     "id": "gq",
@@ -619,9 +1242,16 @@
       "Portuguese",
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gq.json",
+    "area_search_log": "areas/gq.json"
   },
   {
     "id": "er",
@@ -632,9 +1262,16 @@
       "English",
       "Tigrinya"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/er.json",
+    "area_search_log": "areas/er.json"
   },
   {
     "id": "ee",
@@ -643,9 +1280,16 @@
     "languages": [
       "Estonian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ee.json",
+    "area_search_log": "areas/ee.json"
   },
   {
     "id": "sz",
@@ -655,9 +1299,16 @@
       "English",
       "Swazi"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sz.json",
+    "area_search_log": "areas/sz.json"
   },
   {
     "id": "et",
@@ -666,9 +1317,16 @@
     "languages": [
       "Amharic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/et.json",
+    "area_search_log": "areas/et.json"
   },
   {
     "id": "fj",
@@ -679,9 +1337,39 @@
       "Fiji Hindi",
       "Fijian"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Planned relocation of climate-vulnerable communities"
+    ],
+    "verified_areas": [
+      "land_environment"
+    ],
+    "evidence": [
+      {
+        "country_id": "fj",
+        "assessment": "strong_evidence",
+        "service": "Planned relocation of climate-vulnerable communities",
+        "area": "land_environment",
+        "url": "https://fijiclimatechangeportal.gov.fj/wp-content/uploads/2023/04/Standard-Operating-Procedures-for-Planned-Relocation-in-the-Republic-of-Fiji-1.pdf",
+        "title": "SOP for Planned Relocation in Fiji",
+        "authority": "Fiji Government / relocation lead ministry",
+        "document_date": "March 2023",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "PDF p. 47, section III 3.1–3.2 and phase tables",
+        "finding": "Defines staged implementation, required actions, process considerations, outputs, responsible agencies and indicative timelines.",
+        "limitations": "Complex, discretionary inter-agency process; a detailed SOP is not evidence of executable automation.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/fj.json",
+    "area_search_log": "areas/fj.json"
   },
   {
     "id": "fi",
@@ -691,9 +1379,35 @@
       "Finnish",
       "Swedish"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "promising_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "some_internal_detail_or_unresolved_applicability",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "fi",
+        "assessment": "promising_evidence",
+        "service": "General housing allowance",
+        "area": "social_services",
+        "url": "https://www.kela.fi/yleinen-asumistuki",
+        "title": "Housing allowance guidance and prior staff-guideline validation",
+        "authority": "Kela",
+        "document_date": "live guidance; staff-guide edition in earlier research",
+        "depth": "some_internal_detail",
+        "access": "read_web_and_prior_research",
+        "locator": "Prior study: research/assumption-1-validation.md sections 2.2–2.3; current guidance",
+        "finding": "Earlier repository research checked a map against published Kela staff instructions; public application and calculation guidance remains available.",
+        "limitations": "Staff-guideline URL could not be reopened in this pass. Earlier study is model-judged, not agency validation; intranet-only process instructions remain gaps."
+      }
+    ],
+    "discovery_log": "searches/fi.json",
+    "area_search_log": "areas/fi.json"
   },
   {
     "id": "fr",
@@ -702,9 +1416,35 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "fr",
+        "assessment": "unknown",
+        "service": "Energy infrastructure permits and agency instructions",
+        "area": "land_environment",
+        "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/2025-07_Manuel%20des%20proc%C3%A9dures%20PCI-TEN-E_V1_1.pdf",
+        "title": "Energy-infrastructure procedure manual lead",
+        "authority": "Ecological transition ministry",
+        "document_date": "2025 title; unverified",
+        "depth": "unverified",
+        "access": "failed_404",
+        "locator": "Candidate PDF link",
+        "finding": "Search found a government procedure-manual lead; direct download returned 404.",
+        "limitations": "Legacy France profile contains further agency-instruction leads. Its tier is not carried into the new count."
+      }
+    ],
+    "discovery_log": "searches/fr.json",
+    "area_search_log": "areas/fr.json"
   },
   {
     "id": "ga",
@@ -713,9 +1453,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ga.json",
+    "area_search_log": "areas/ga.json"
   },
   {
     "id": "gm",
@@ -724,9 +1471,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gm.json",
+    "area_search_log": "areas/gm.json"
   },
   {
     "id": "ge",
@@ -735,9 +1489,16 @@
     "languages": [
       "Georgian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ge.json",
+    "area_search_log": "areas/ge.json"
   },
   {
     "id": "de",
@@ -746,9 +1507,39 @@
     "languages": [
       "German"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Asylum application processing"
+    ],
+    "verified_areas": [
+      "identity_rights"
+    ],
+    "evidence": [
+      {
+        "country_id": "de",
+        "assessment": "strong_evidence",
+        "service": "Asylum application processing",
+        "area": "identity_rights",
+        "url": "https://www.asyl.net/fileadmin/user_upload/2023-01-01_BAMF_Dienstanweisung_Asyl.pdf",
+        "title": "Dienstanweisung Asyl",
+        "authority": "BAMF; public copy hosted by asyl.net",
+        "document_date": "2023-01-01",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "PDF pp. 105–107, interpreting and hearing instructions",
+        "finding": "Internal instructions describe hearing arrangements, interpreter handling, exceptions, rescheduling and case-file recording.",
+        "limitations": "Government-authored document on a civil-society mirror. Newer 2026 releases were found as leads; this edition is historical.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/de.json",
+    "area_search_log": "areas/de.json"
   },
   {
     "id": "gh",
@@ -757,9 +1548,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gh.json",
+    "area_search_log": "areas/gh.json"
   },
   {
     "id": "gr",
@@ -768,9 +1566,16 @@
     "languages": [
       "Greek"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gr.json",
+    "area_search_log": "areas/gr.json"
   },
   {
     "id": "gd",
@@ -779,9 +1584,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gd.json",
+    "area_search_log": "areas/gd.json"
   },
   {
     "id": "gt",
@@ -790,9 +1602,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gt.json",
+    "area_search_log": "areas/gt.json"
   },
   {
     "id": "gn",
@@ -801,9 +1620,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gn.json",
+    "area_search_log": "areas/gn.json"
   },
   {
     "id": "gw",
@@ -813,9 +1639,35 @@
       "Portuguese",
       "Upper Guinea Creole"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "gw",
+        "assessment": "unknown",
+        "service": "Public service HR management",
+        "area": "government_operations",
+        "url": "https://funcaopublica.gw/wp-content/uploads/2021/06/Manual-de-Procedimentos-20201010_MP-VALIDADO-APROVADO.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/gw.json",
+    "area_search_log": "areas/gw.json"
   },
   {
     "id": "gy",
@@ -824,9 +1676,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/gy.json",
+    "area_search_log": "areas/gy.json"
   },
   {
     "id": "ht",
@@ -836,9 +1695,16 @@
       "French",
       "Haitian Creole"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ht.json",
+    "area_search_log": "areas/ht.json"
   },
   {
     "id": "hn",
@@ -847,9 +1713,35 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "hn",
+        "assessment": "unknown",
+        "service": "Secretariat document and administrative work",
+        "area": "government_operations",
+        "url": "https://pgr.gob.hn/wp-content/uploads/2025/09/03-MP-Secretaria-General-SG-001-2025.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/hn.json",
+    "area_search_log": "areas/hn.json"
   },
   {
     "id": "hu",
@@ -858,9 +1750,16 @@
     "languages": [
       "Hungarian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/hu.json",
+    "area_search_log": "areas/hu.json"
   },
   {
     "id": "is",
@@ -869,9 +1768,16 @@
     "languages": [
       "Icelandic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/is.json",
+    "area_search_log": "areas/is.json"
   },
   {
     "id": "in",
@@ -882,9 +1788,39 @@
       "Hindi",
       "Tamil"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Industrial Entrepreneur Memorandum acknowledgement"
+    ],
+    "verified_areas": [
+      "revenue_business"
+    ],
+    "evidence": [
+      {
+        "country_id": "in",
+        "assessment": "strong_evidence",
+        "service": "Industrial Entrepreneur Memorandum acknowledgement",
+        "area": "revenue_business",
+        "url": "https://www.dpiit.gov.in/static/uploads/2025/07/7ad768d1c11071b6ea30d185b849853d.pdf",
+        "title": "SOP for obtaining IEM acknowledgement",
+        "authority": "DPIIT, Ministry of Commerce and Industry",
+        "document_date": "November 2023",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Sections 3.4–4.4, PDF pp. 3–4",
+        "finding": "Names officer approval chain, clarification deadlines, rejection grounds and Part-A/Part-B processing.",
+        "limitations": "Eligibility thresholds and current legal status need reconciliation before mapping for execution.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/in.json",
+    "area_search_log": "areas/in.json"
   },
   {
     "id": "id",
@@ -893,9 +1829,35 @@
     "languages": [
       "Indonesian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "id",
+        "assessment": "unknown",
+        "service": "Health ministry legal-information operations",
+        "area": "government_operations",
+        "url": "https://jdih.kemkes.go.id/sop-jdih",
+        "title": "SOP JDIH",
+        "authority": "Ministry of Health",
+        "document_date": "live index",
+        "depth": "unverified",
+        "access": "index_only",
+        "locator": "SOP landing page",
+        "finding": "Official SOP landing page opened.",
+        "limitations": "The readable page did not expose individual procedure documents; no municipal SOP is counted as national evidence."
+      }
+    ],
+    "discovery_log": "searches/id.json",
+    "area_search_log": "areas/id.json"
   },
   {
     "id": "ir",
@@ -904,9 +1866,16 @@
     "languages": [
       "Persian (Farsi)"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ir.json",
+    "area_search_log": "areas/ir.json"
   },
   {
     "id": "iq",
@@ -917,9 +1886,16 @@
       "Aramaic",
       "Sorani"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/iq.json",
+    "area_search_log": "areas/iq.json"
   },
   {
     "id": "ie",
@@ -929,9 +1905,35 @@
       "English",
       "Irish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "ie",
+        "assessment": "unknown",
+        "service": "Social protection decisions",
+        "area": "social_services",
+        "url": "https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-decision-making-and-natural-justice/",
+        "title": "Operational Guidelines: Decision Making and Natural Justice",
+        "authority": "Department of Social Protection",
+        "document_date": "not checked",
+        "depth": "unverified",
+        "access": "blocked",
+        "locator": "Direct page returned 403",
+        "finding": "Official operational-guidance collection appears in search results.",
+        "limitations": "Direct content fetch was blocked. Not included in positive count."
+      }
+    ],
+    "discovery_log": "searches/ie.json",
+    "area_search_log": "areas/ie.json"
   },
   {
     "id": "il",
@@ -941,9 +1943,16 @@
       "Arabic",
       "Hebrew"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/il.json",
+    "area_search_log": "areas/il.json"
   },
   {
     "id": "it",
@@ -952,9 +1961,39 @@
     "languages": [
       "Italian"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Public procurement and supplier management"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "it",
+        "assessment": "strong_evidence",
+        "service": "Public procurement and supplier management",
+        "area": "government_operations",
+        "url": "https://www.aci.it/laci/la-federazione/amministrazione-trasparente/archiviofile/aci/Attivita_e_procedimenti/Procedimenti/Manuale_procedure_negoziali.pdf",
+        "title": "Manuale delle procedure negoziali",
+        "authority": "Automobile Club d’Italia (ACI)",
+        "document_date": "2012-11-21",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Article 12–13, PDF p. 12",
+        "finding": "Assigns contracting responsibility, procurement-system registration and supplier-list maintenance to named functions.",
+        "limitations": "Historical manual predates major procurement-law changes; evidence of publication, not a current executable specification.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/it.json",
+    "area_search_log": "areas/it.json"
   },
   {
     "id": "ci",
@@ -963,9 +2002,39 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Treasury crisis communication and operational management"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "ci",
+        "assessment": "strong_evidence",
+        "service": "Treasury crisis communication and operational management",
+        "area": "government_operations",
+        "url": "https://tresor.gouv.ci/tres/wp-content/uploads/2026/03/Manuel-de-procedures-DGTCP.pdf",
+        "title": "Manuel de procédures de la DGTCP, 7e édition",
+        "authority": "Ministry of Finance / DGTCP",
+        "document_date": "May 2025",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "PDF p. 64, task-sequence table",
+        "finding": "Named staff and crisis committee handle detection, recording, escalation, response or closure; includes evidence-retention requirements.",
+        "limitations": "445-page manual; only selected procedures inspected. Other listed functions are leads, not verified breadth.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/ci.json",
+    "area_search_log": "areas/ci.json"
   },
   {
     "id": "jm",
@@ -975,9 +2044,16 @@
       "English",
       "Jamaican Patois"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/jm.json",
+    "area_search_log": "areas/jm.json"
   },
   {
     "id": "jp",
@@ -986,9 +2062,16 @@
     "languages": [
       "Japanese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/jp.json",
+    "area_search_log": "areas/jp.json"
   },
   {
     "id": "jo",
@@ -997,9 +2080,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/jo.json",
+    "area_search_log": "areas/jo.json"
   },
   {
     "id": "kz",
@@ -1009,9 +2099,16 @@
       "Kazakh",
       "Russian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/kz.json",
+    "area_search_log": "areas/kz.json"
   },
   {
     "id": "ke",
@@ -1021,9 +2118,16 @@
       "English",
       "Swahili"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ke.json",
+    "area_search_log": "areas/ke.json"
   },
   {
     "id": "ki",
@@ -1033,9 +2137,16 @@
       "English",
       "Gilbertese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ki.json",
+    "area_search_log": "areas/ki.json"
   },
   {
     "id": "xk",
@@ -1045,9 +2156,16 @@
       "Albanian",
       "Serbian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/xk.json",
+    "area_search_log": "areas/xk.json"
   },
   {
     "id": "kw",
@@ -1056,9 +2174,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/kw.json",
+    "area_search_log": "areas/kw.json"
   },
   {
     "id": "kg",
@@ -1068,9 +2193,35 @@
       "Kyrgyz",
       "Russian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "kg",
+        "assessment": "unknown",
+        "service": "Metrology and standardisation services",
+        "area": "revenue_business",
+        "url": "https://www.nism.gov.kg/media/SubActivity/2022-08-04/%D0%90%D0%B4%D0%BC._%D1%80%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82_5-45.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/kg.json",
+    "area_search_log": "areas/kg.json"
   },
   {
     "id": "la",
@@ -1079,9 +2230,16 @@
     "languages": [
       "Lao"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/la.json",
+    "area_search_log": "areas/la.json"
   },
   {
     "id": "lv",
@@ -1090,9 +2248,16 @@
     "languages": [
       "Latvian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/lv.json",
+    "area_search_log": "areas/lv.json"
   },
   {
     "id": "lb",
@@ -1102,9 +2267,35 @@
       "Arabic",
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "lb",
+        "assessment": "unknown",
+        "service": "Pharmaceutical inspections",
+        "area": "public_services",
+        "url": "https://moph.gov.lb/userfiles/files/HealthCareSystem/Pharmaceuticals/QualityAssuranceofPharmaceuticalProducts/InspectionGuideline.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/lb.json",
+    "area_search_log": "areas/lb.json"
   },
   {
     "id": "ls",
@@ -1114,9 +2305,16 @@
       "English",
       "Sotho"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ls.json",
+    "area_search_log": "areas/ls.json"
   },
   {
     "id": "lr",
@@ -1125,9 +2323,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/lr.json",
+    "area_search_log": "areas/lr.json"
   },
   {
     "id": "ly",
@@ -1136,9 +2341,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ly.json",
+    "area_search_log": "areas/ly.json"
   },
   {
     "id": "li",
@@ -1147,9 +2359,16 @@
     "languages": [
       "German"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/li.json",
+    "area_search_log": "areas/li.json"
   },
   {
     "id": "lt",
@@ -1158,9 +2377,35 @@
     "languages": [
       "Lithuanian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "lt",
+        "assessment": "unknown",
+        "service": "EU investment fund administration",
+        "area": "government_operations",
+        "url": "https://vrm.lrv.lt/uploads/vrm/documents/files/LT_versija/Teisine_informacija/Teises_aktai/Proceduru%20vadovas%202019-01-09.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/lt.json",
+    "area_search_log": "areas/lt.json"
   },
   {
     "id": "lu",
@@ -1171,9 +2416,16 @@
       "German",
       "Luxembourgish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/lu.json",
+    "area_search_log": "areas/lu.json"
   },
   {
     "id": "mg",
@@ -1183,9 +2435,35 @@
       "French",
       "Malagasy"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "mg",
+        "assessment": "unknown",
+        "service": "Public service expenditure",
+        "area": "government_operations",
+        "url": "https://www.dgbf.mg/wp-content/uploads/2022/11/Manuel-de-procedures-SPE-version-Aout-2022.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/mg.json",
+    "area_search_log": "areas/mg.json"
   },
   {
     "id": "mw",
@@ -1195,9 +2473,16 @@
       "Chewa",
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mw.json",
+    "area_search_log": "areas/mw.json"
   },
   {
     "id": "my",
@@ -1207,9 +2492,16 @@
       "English",
       "Malay"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/my.json",
+    "area_search_log": "areas/my.json"
   },
   {
     "id": "mv",
@@ -1218,9 +2510,16 @@
     "languages": [
       "Maldivian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mv.json",
+    "area_search_log": "areas/mv.json"
   },
   {
     "id": "ml",
@@ -1229,9 +2528,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ml.json",
+    "area_search_log": "areas/ml.json"
   },
   {
     "id": "mt",
@@ -1241,9 +2547,16 @@
       "English",
       "Maltese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mt.json",
+    "area_search_log": "areas/mt.json"
   },
   {
     "id": "mh",
@@ -1253,9 +2566,16 @@
       "English",
       "Marshallese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mh.json",
+    "area_search_log": "areas/mh.json"
   },
   {
     "id": "mr",
@@ -1264,9 +2584,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mr.json",
+    "area_search_log": "areas/mr.json"
   },
   {
     "id": "mu",
@@ -1277,9 +2604,39 @@
       "French",
       "Mauritian Creole"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Tax compliance examinations and objections"
+    ],
+    "verified_areas": [
+      "revenue_business"
+    ],
+    "evidence": [
+      {
+        "country_id": "mu",
+        "assessment": "strong_evidence",
+        "service": "Tax compliance examinations and objections",
+        "area": "revenue_business",
+        "url": "https://www.mra.mu/download/SOPcompliance.pdf",
+        "title": "SOP for Compliance Departments",
+        "authority": "Mauritius Revenue Authority",
+        "document_date": "December 2012",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Chapter 2.1, PDF p. 9; objection chapter listed",
+        "finding": "Describes case selection, evidence requests, examination and assessment/objection processes.",
+        "limitations": "Explicitly informative and without legal force; historical edition must be checked against current practice.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/mu.json",
+    "area_search_log": "areas/mu.json"
   },
   {
     "id": "mx",
@@ -1288,9 +2645,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mx.json",
+    "area_search_log": "areas/mx.json"
   },
   {
     "id": "fm",
@@ -1299,9 +2663,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/fm.json",
+    "area_search_log": "areas/fm.json"
   },
   {
     "id": "md",
@@ -1310,9 +2681,16 @@
     "languages": [
       "Moldavian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/md.json",
+    "area_search_log": "areas/md.json"
   },
   {
     "id": "mc",
@@ -1321,9 +2699,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mc.json",
+    "area_search_log": "areas/mc.json"
   },
   {
     "id": "mn",
@@ -1332,9 +2717,16 @@
     "languages": [
       "Mongolian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mn.json",
+    "area_search_log": "areas/mn.json"
   },
   {
     "id": "me",
@@ -1343,9 +2735,16 @@
     "languages": [
       "Montenegrin"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/me.json",
+    "area_search_log": "areas/me.json"
   },
   {
     "id": "ma",
@@ -1355,9 +2754,35 @@
       "Arabic",
       "Berber"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "ma",
+        "assessment": "unknown",
+        "service": "Health programme financial and supply management",
+        "area": "public_services",
+        "url": "https://www.sante.gov.ma/Publications/Guides-Manuels/Documents/2021/Manuel%20proc%C3%A9dures%20Programme%20Fonds%20mondial%20VF%202021.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/ma.json",
+    "area_search_log": "areas/ma.json"
   },
   {
     "id": "mz",
@@ -1366,9 +2791,16 @@
     "languages": [
       "Portuguese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mz.json",
+    "area_search_log": "areas/mz.json"
   },
   {
     "id": "mm",
@@ -1377,9 +2809,59 @@
     "languages": [
       "Burmese"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Electricity usage permit for a transformer",
+      "Fumigation licensing"
+    ],
+    "verified_areas": [
+      "public_services",
+      "revenue_business"
+    ],
+    "evidence": [
+      {
+        "country_id": "mm",
+        "assessment": "strong_evidence",
+        "service": "Fumigation licensing",
+        "area": "revenue_business",
+        "url": "https://www.dica.gov.mm/wp-content/uploads/2024/12/book_oss_sop_white.pdf",
+        "title": "Standard Operation Procedures of the One-Stop Service",
+        "authority": "Myanmar Investment Commission / participating national departments",
+        "document_date": "2022",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "Section 7, procedure 2.5, printed pp. 7-16–7-17",
+        "finding": "Applicant documents lead to technical inspection, director review, fee advice and licence issuance by the director general.",
+        "limitations": "Nationally issued compilation; present legal and operational applicability unvalidated.",
+        "function_type": "external_service"
+      },
+      {
+        "country_id": "mm",
+        "assessment": "strong_evidence",
+        "service": "Electricity usage permit for a transformer",
+        "area": "public_services",
+        "url": "https://www.dica.gov.mm/wp-content/uploads/2024/12/book_oss_sop_white.pdf",
+        "title": "Standard Operation Procedures of the One-Stop Service",
+        "authority": "Ministry of Electricity and Energy / participating electricity offices",
+        "document_date": "2022",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "Section 15, printed pp. 15-3–15-4",
+        "finding": "Lists applicant evidence and sequential document, network-capacity and district technical reviews.",
+        "limitations": "Nationally issued procedure with local delivery offices; no regional or municipal government is counted.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/mm.json",
+    "area_search_log": "areas/mm.json"
   },
   {
     "id": "na",
@@ -1396,9 +2878,16 @@
       "Ndonga",
       "Tswana"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/na.json",
+    "area_search_log": "areas/na.json"
   },
   {
     "id": "nr",
@@ -1408,9 +2897,16 @@
       "English",
       "Nauru"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/nr.json",
+    "area_search_log": "areas/nr.json"
   },
   {
     "id": "np",
@@ -1419,9 +2915,16 @@
     "languages": [
       "Nepali"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/np.json",
+    "area_search_log": "areas/np.json"
   },
   {
     "id": "nl",
@@ -1430,9 +2933,16 @@
     "languages": [
       "Dutch"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/nl.json",
+    "area_search_log": "areas/nl.json"
   },
   {
     "id": "nz",
@@ -1443,9 +2953,59 @@
       "Māori",
       "New Zealand Sign Language"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Government procurement planning",
+      "Skilled residence visa decisions"
+    ],
+    "verified_areas": [
+      "government_operations",
+      "identity_rights"
+    ],
+    "evidence": [
+      {
+        "country_id": "nz",
+        "assessment": "strong_evidence",
+        "service": "Skilled residence visa decisions",
+        "area": "identity_rights",
+        "url": "https://www.oag.parliament.nz/2024/skilled-residence-visas/docs/skilled-residence-visas.pdf",
+        "title": "Immigration New Zealand: managing skilled residence visa decisions",
+        "authority": "Controller and Auditor-General",
+        "document_date": "November 2024",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Part 2 and application-processing diagram",
+        "finding": "Audit describes application allocation, assessment and decision stages; operational manual is also publicly indexed.",
+        "limitations": "Audit is evidence about a specific period, not a guarantee that current delivery is identical.",
+        "function_type": "external_service"
+      },
+      {
+        "country_id": "nz",
+        "assessment": "strong_evidence",
+        "service": "Government procurement planning",
+        "area": "government_operations",
+        "url": "https://www.procurement.govt.nz/guides/guide-to-procurement/plan-your-procurement/",
+        "title": "Plan your procurement",
+        "authority": "New Zealand Government Procurement",
+        "document_date": "live page; publication date not resolved",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Requirements, procurement plan and market approach sections",
+        "finding": "Gives operational planning tasks, decision choices, supporting documents and approvals within the procurement lifecycle.",
+        "limitations": "Cross-government recommended process; individual agencies may differ.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/nz.json",
+    "area_search_log": "areas/nz.json"
   },
   {
     "id": "ni",
@@ -1454,9 +3014,39 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Medical supplies request, authorisation and return"
+    ],
+    "verified_areas": [
+      "public_services"
+    ],
+    "evidence": [
+      {
+        "country_id": "ni",
+        "assessment": "strong_evidence",
+        "service": "Medical supplies request, authorisation and return",
+        "area": "public_services",
+        "url": "https://www.minsa.gob.ni/sites/default/files/publicaciones/Manual%20de%20Procedimientos-2022.pdf",
+        "title": "Manual para manejo y control interno de insumos médicos",
+        "authority": "Ministry of Health",
+        "document_date": "July 2022",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "PDF pp. 25–28, brigades and CEYE procedures",
+        "finding": "Names requesters, pharmacy and supplies approvers, forms, consumption checks and return/recording of unused supplies.",
+        "limitations": "Health logistics rather than patient admission or benefit adjudication.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/ni.json",
+    "area_search_log": "areas/ni.json"
   },
   {
     "id": "ne",
@@ -1465,9 +3055,35 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "ne",
+        "assessment": "unknown",
+        "service": "Public enterprise procurement",
+        "area": "government_operations",
+        "url": "https://www.armp-niger.org/fileadmin/armp/pdf/MANUEL_DE_PROCEDURES_ARMP_NIGER_VERSION_FINALE_ADO_1.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/ne.json",
+    "area_search_log": "areas/ne.json"
   },
   {
     "id": "ng",
@@ -1476,9 +3092,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ng.json",
+    "area_search_log": "areas/ng.json"
   },
   {
     "id": "kp",
@@ -1487,9 +3110,16 @@
     "languages": [
       "Korean"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/kp.json",
+    "area_search_log": "areas/kp.json"
   },
   {
     "id": "mk",
@@ -1498,9 +3128,16 @@
     "languages": [
       "Macedonian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/mk.json",
+    "area_search_log": "areas/mk.json"
   },
   {
     "id": "no",
@@ -1511,9 +3148,39 @@
       "Norwegian Nynorsk",
       "Sami"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Domestic and international adoption applications"
+    ],
+    "verified_areas": [
+      "social_services"
+    ],
+    "evidence": [
+      {
+        "country_id": "no",
+        "assessment": "strong_evidence",
+        "service": "Domestic and international adoption applications",
+        "area": "social_services",
+        "url": "https://www.bufdir.no/fagstotte/produkter/adopsjonsrundskriv/",
+        "title": "Rundskriv 2020-08: adoption case handling",
+        "authority": "Bufdir",
+        "document_date": "revised June 2026",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Sections 5 and 7.6",
+        "finding": "Assigns assessment, appeal, permission issuance and transfer after a final decision to named authorities.",
+        "limitations": "Includes regional offices of national bodies and municipal participants; it does not establish municipal publication coverage.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/no.json",
+    "area_search_log": "areas/no.json"
   },
   {
     "id": "om",
@@ -1522,9 +3189,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/om.json",
+    "area_search_log": "areas/om.json"
   },
   {
     "id": "pk",
@@ -1534,9 +3208,16 @@
       "English",
       "Urdu"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/pk.json",
+    "area_search_log": "areas/pk.json"
   },
   {
     "id": "pw",
@@ -1546,9 +3227,16 @@
       "English",
       "Palauan"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/pw.json",
+    "area_search_log": "areas/pw.json"
   },
   {
     "id": "ps",
@@ -1557,9 +3245,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ps.json",
+    "area_search_log": "areas/ps.json"
   },
   {
     "id": "pa",
@@ -1568,9 +3263,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/pa.json",
+    "area_search_log": "areas/pa.json"
   },
   {
     "id": "pg",
@@ -1581,9 +3283,16 @@
       "Hiri Motu",
       "Tok Pisin"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/pg.json",
+    "area_search_log": "areas/pg.json"
   },
   {
     "id": "py",
@@ -1593,9 +3302,16 @@
       "Guaraní",
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/py.json",
+    "area_search_log": "areas/py.json"
   },
   {
     "id": "pe",
@@ -1606,9 +3322,39 @@
       "Quechua",
       "Spanish"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Import clearance for consumption"
+    ],
+    "verified_areas": [
+      "revenue_business"
+    ],
+    "evidence": [
+      {
+        "country_id": "pe",
+        "assessment": "strong_evidence",
+        "service": "Import clearance for consumption",
+        "area": "revenue_business",
+        "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm",
+        "title": "DESPA-PG.01 Importación para el Consumo, v8",
+        "authority": "SUNAT",
+        "document_date": "effective 2020-08-31; change log linked",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Procedure sections on document requests and continuation of clearance",
+        "finding": "Names customs officers, reassignment, system records, notifications and inspection/clearance conditions.",
+        "limitations": "Versioned procedure; inspect change log and amendments for a point-in-time map.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/pe.json",
+    "area_search_log": "areas/pe.json"
   },
   {
     "id": "ph",
@@ -1618,9 +3364,35 @@
       "English",
       "Filipino"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "ph",
+        "assessment": "unknown",
+        "service": "Irrigation agency public affairs",
+        "area": "government_operations",
+        "url": "https://www.nia.gov.ph/sites/default/files/pdf_reader/PAIS%20Operations%20Manual.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/ph.json",
+    "area_search_log": "areas/ph.json"
   },
   {
     "id": "pl",
@@ -1629,9 +3401,16 @@
     "languages": [
       "Polish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/pl.json",
+    "area_search_log": "areas/pl.json"
   },
   {
     "id": "pt",
@@ -1640,9 +3419,16 @@
     "languages": [
       "Portuguese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/pt.json",
+    "area_search_log": "areas/pt.json"
   },
   {
     "id": "qa",
@@ -1651,9 +3437,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/qa.json",
+    "area_search_log": "areas/qa.json"
   },
   {
     "id": "ro",
@@ -1662,9 +3455,39 @@
     "languages": [
       "Romanian"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Direct procurement by a national ministry medical facility"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "ro",
+        "assessment": "strong_evidence",
+        "service": "Direct procurement by a national ministry medical facility",
+        "area": "government_operations",
+        "url": "https://dm.mai.gov.ro/wp-content/uploads/sites/4/2024/02/PO-CMDTA-18-Procedura-operationala-privind-achizitia-de-produse-servicii-lucrari-prin-achizitie-directa.pdf",
+        "title": "PO-CMDTA-18: direct procurement",
+        "authority": "Interior Ministry Medical Directorate / CMDTA Ploiești",
+        "document_date": "hosted February 2024; signed edition date requires checking",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "Section 5.B and procurement responsibility sections",
+        "finding": "Describes necessity documents, beneficiary structures, procurement staff and threshold-triggered changes of procedure.",
+        "limitations": "A local facility of a national ministry, not a municipality. Cannot be generalised to all national agencies.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/ro.json",
+    "area_search_log": "areas/ro.json"
   },
   {
     "id": "ru",
@@ -1673,9 +3496,16 @@
     "languages": [
       "Russian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ru.json",
+    "area_search_log": "areas/ru.json"
   },
   {
     "id": "rw",
@@ -1686,9 +3516,39 @@
       "French",
       "Kinyarwanda"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "E-procurement supplier information modification approval"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "rw",
+        "assessment": "strong_evidence",
+        "service": "E-procurement supplier information modification approval",
+        "area": "government_operations",
+        "url": "https://www.rppa.gov.rw/fileadmin/user_upload/RPPA/Publications/Circulars/RPPA_ADMINISTRATIVE_PROCEDURE_MANUAL_APPROVED.pdf",
+        "title": "RPPA Administrative Procedures Manual",
+        "authority": "Rwanda Public Procurement Authority",
+        "document_date": "March 2022",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Procedure 2, PDF p. 55",
+        "finding": "Step/responsibility/timeline table specifies Umucyo changes, approval or rejection, reasons and re-registration.",
+        "limitations": "Other sections and the separate civil-registration SOP require their own checks.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/rw.json",
+    "area_search_log": "areas/rw.json"
   },
   {
     "id": "kn",
@@ -1697,9 +3557,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/kn.json",
+    "area_search_log": "areas/kn.json"
   },
   {
     "id": "lc",
@@ -1708,9 +3575,39 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Public procurement evaluation and award"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "lc",
+        "assessment": "strong_evidence",
+        "service": "Public procurement evaluation and award",
+        "area": "government_operations",
+        "url": "https://www.finance.gov.lc/resources/download/2251",
+        "title": "Saint Lucia Public Procurement Manual",
+        "authority": "Procurement Administration Unit, Department of Finance",
+        "document_date": "April 2025",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Sections 7.5.3–7.5.5, PDF p. 37",
+        "finding": "Defines evaluation responsibilities, retained reports, clarification constraints and escalation when bids are rejected.",
+        "limitations": "The evaluation-plan form reference includes a placeholder; agency-level variants remain untested.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/lc.json",
+    "area_search_log": "areas/lc.json"
   },
   {
     "id": "vc",
@@ -1719,9 +3616,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/vc.json",
+    "area_search_log": "areas/vc.json"
   },
   {
     "id": "ws",
@@ -1731,9 +3635,39 @@
       "English",
       "Samoan"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Civil service attendance monitoring and personnel administration"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "ws",
+        "assessment": "strong_evidence",
+        "service": "Civil service attendance monitoring and personnel administration",
+        "area": "government_operations",
+        "url": "https://www.psc.gov.ws/wp-content/uploads/2016/01/WCE-FINAL-LATEST-APPROVED-BY-CAB-26-Jan-2016.pdf",
+        "title": "Government of Samoa HRM Policies & Procedures",
+        "authority": "Office of the Public Service Commission",
+        "document_date": "2015; file identifies cabinet approval 2016",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "PDF pp. 15–17, attendance roles and actions",
+        "finding": "Managers review attendance, HR submits records and the CEO takes specified follow-up action.",
+        "limitations": "Historical public-service personnel manual; current determinations may supersede parts.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/ws.json",
+    "area_search_log": "areas/ws.json"
   },
   {
     "id": "sm",
@@ -1742,9 +3676,16 @@
     "languages": [
       "Italian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sm.json",
+    "area_search_log": "areas/sm.json"
   },
   {
     "id": "sa",
@@ -1753,9 +3694,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sa.json",
+    "area_search_log": "areas/sa.json"
   },
   {
     "id": "sn",
@@ -1764,9 +3712,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sn.json",
+    "area_search_log": "areas/sn.json"
   },
   {
     "id": "rs",
@@ -1775,9 +3730,16 @@
     "languages": [
       "Serbian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/rs.json",
+    "area_search_log": "areas/rs.json"
   },
   {
     "id": "sc",
@@ -1788,9 +3750,16 @@
       "French",
       "Seychellois Creole"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sc.json",
+    "area_search_log": "areas/sc.json"
   },
   {
     "id": "sl",
@@ -1799,9 +3768,35 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "sl",
+        "assessment": "unknown",
+        "service": "Monitoring and evaluation of public programmes",
+        "area": "government_operations",
+        "url": "https://named.gov.sl/wp-content/uploads/2023/01/SOPManual_FinalDraft_17Feb2020-1.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/sl.json",
+    "area_search_log": "areas/sl.json"
   },
   {
     "id": "sg",
@@ -1813,9 +3808,16 @@
       "Malay",
       "Tamil"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sg.json",
+    "area_search_log": "areas/sg.json"
   },
   {
     "id": "sk",
@@ -1824,9 +3826,16 @@
     "languages": [
       "Slovak"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sk.json",
+    "area_search_log": "areas/sk.json"
   },
   {
     "id": "si",
@@ -1835,9 +3844,16 @@
     "languages": [
       "Slovene"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/si.json",
+    "area_search_log": "areas/si.json"
   },
   {
     "id": "sb",
@@ -1846,9 +3862,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sb.json",
+    "area_search_log": "areas/sb.json"
   },
   {
     "id": "so",
@@ -1858,9 +3881,39 @@
       "Arabic",
       "Somali"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Customs declaration, inspection, payment and release"
+    ],
+    "verified_areas": [
+      "revenue_business"
+    ],
+    "evidence": [
+      {
+        "country_id": "so",
+        "assessment": "strong_evidence",
+        "service": "Customs declaration, inspection, payment and release",
+        "area": "revenue_business",
+        "url": "https://revenuedirectorate.gov.so/sites/default/files/pdf/Standard%20Operating%20Procedures%20on%20the%20Process%20of%20Customs%20Declarations%20Through%20SOMCAS.pdf",
+        "title": "SOP on customs declarations through SOMCAS",
+        "authority": "Federal Ministry of Finance / Customs",
+        "document_date": "date not resolved in inspected sections",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Business process, PDF pp. 7–9; procedure tables pp. 11–24",
+        "finding": "Assigns manifest, declaration, examination, valuation, amendment, cashier, release and exit tasks to named roles; distinguishes system routing and human checks.",
+        "limitations": "SOP describes intended operation. Regional implementation and actual system behaviour require validation.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/so.json",
+    "area_search_log": "areas/so.json"
   },
   {
     "id": "za",
@@ -1879,9 +3932,16 @@
       "Xhosa",
       "Zulu"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/za.json",
+    "area_search_log": "areas/za.json"
   },
   {
     "id": "kr",
@@ -1890,9 +3950,16 @@
     "languages": [
       "Korean"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/kr.json",
+    "area_search_log": "areas/kr.json"
   },
   {
     "id": "ss",
@@ -1901,9 +3968,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ss.json",
+    "area_search_log": "areas/ss.json"
   },
   {
     "id": "es",
@@ -1912,9 +3986,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/es.json",
+    "area_search_log": "areas/es.json"
   },
   {
     "id": "lk",
@@ -1924,9 +4005,16 @@
       "Sinhala",
       "Tamil"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/lk.json",
+    "area_search_log": "areas/lk.json"
   },
   {
     "id": "sd",
@@ -1936,9 +4024,16 @@
       "Arabic",
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sd.json",
+    "area_search_log": "areas/sd.json"
   },
   {
     "id": "sr",
@@ -1947,9 +4042,16 @@
     "languages": [
       "Dutch"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sr.json",
+    "area_search_log": "areas/sr.json"
   },
   {
     "id": "se",
@@ -1958,9 +4060,16 @@
     "languages": [
       "Swedish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/se.json",
+    "area_search_log": "areas/se.json"
   },
   {
     "id": "ch",
@@ -1972,9 +4081,16 @@
       "Romansh",
       "Swiss German"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ch.json",
+    "area_search_log": "areas/ch.json"
   },
   {
     "id": "sy",
@@ -1983,9 +4099,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/sy.json",
+    "area_search_log": "areas/sy.json"
   },
   {
     "id": "st",
@@ -1994,9 +4117,39 @@
     "languages": [
       "Portuguese"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "National health service internal requisition and supply"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "st",
+        "assessment": "strong_evidence",
+        "service": "National health service internal requisition and supply",
+        "area": "government_operations",
+        "url": "https://minsaude.st/wp-content/uploads/2022/09/Manual-de-procedimentos-SNS_Vfinal_jan2020.pdf",
+        "title": "Manual de procedimentos para o Serviço Nacional de Saúde",
+        "authority": "Ministry of Health",
+        "document_date": "November 2019 / file January 2020",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web_and_pdf",
+        "locator": "Section 2.7.3.1, printed pp. 78–79",
+        "finding": "Requester, administrative assistant and approval steps lead to signed delivery records, goods release and consumption filing.",
+        "limitations": "Back-office workflow; this does not establish end-to-end clinical service coverage.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/st.json",
+    "area_search_log": "areas/st.json"
   },
   {
     "id": "tw",
@@ -2005,9 +4158,16 @@
     "languages": [
       "Chinese"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tw.json",
+    "area_search_log": "areas/tw.json"
   },
   {
     "id": "tj",
@@ -2017,9 +4177,16 @@
       "Russian",
       "Tajik"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tj.json",
+    "area_search_log": "areas/tj.json"
   },
   {
     "id": "tz",
@@ -2029,9 +4196,39 @@
       "English",
       "Swahili"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Social welfare desk referrals and case closure at transport hubs"
+    ],
+    "verified_areas": [
+      "social_services"
+    ],
+    "evidence": [
+      {
+        "country_id": "tz",
+        "assessment": "strong_evidence",
+        "service": "Social welfare desk referrals and case closure at transport hubs",
+        "area": "social_services",
+        "url": "https://www.jamii.go.tz/uploads/documents/sw-1753363346-Final%20SOP%202025%20EDITED%20FINAL.pdf",
+        "title": "National SOP for Social Welfare Service Desk in Transport Hubs",
+        "authority": "Ministry of Community Development, Gender, Women and Special Groups",
+        "document_date": "May 2025",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Sections 1.6, 2.6.1–2.7; PDF pp. 21 and 28",
+        "finding": "Names social-welfare officers, intake/referral functions, referral forms, follow-up and closure.",
+        "limitations": "National standard with distributed delivery; observed case-handling quality remains untested.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/tz.json",
+    "area_search_log": "areas/tz.json"
   },
   {
     "id": "th",
@@ -2040,9 +4237,39 @@
     "languages": [
       "Thai"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Labour economics analysis and indicator production"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "th",
+        "assessment": "strong_evidence",
+        "service": "Labour economics analysis and indicator production",
+        "area": "government_operations",
+        "url": "https://www.mol.go.th/wp-content/uploads/sites/2/2026/05/1.%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%99%E0%B8%A8%E0%B8%A1.-.pdf",
+        "title": "Macroeconomic Labour Policy Group work manual",
+        "authority": "Ministry of Labour",
+        "document_date": "hosted May 2026; edition date not resolved",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "PDF pp. 13–15, work-process tables",
+        "finding": "Tables connect input providers, resources, work steps, outputs, recipients and time/quality standards.",
+        "limitations": "Policy-support workflow, not a citizen-facing service; Thai-language interpretation merits native-speaker review.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/th.json",
+    "area_search_log": "areas/th.json"
   },
   {
     "id": "tl",
@@ -2052,9 +4279,16 @@
       "Portuguese",
       "Tetum"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tl.json",
+    "area_search_log": "areas/tl.json"
   },
   {
     "id": "tg",
@@ -2063,9 +4297,16 @@
     "languages": [
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tg.json",
+    "area_search_log": "areas/tg.json"
   },
   {
     "id": "to",
@@ -2075,9 +4316,16 @@
       "English",
       "Tongan"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/to.json",
+    "area_search_log": "areas/to.json"
   },
   {
     "id": "tt",
@@ -2086,9 +4334,16 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tt.json",
+    "area_search_log": "areas/tt.json"
   },
   {
     "id": "tn",
@@ -2097,9 +4352,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tn.json",
+    "area_search_log": "areas/tn.json"
   },
   {
     "id": "tm",
@@ -2109,9 +4371,16 @@
       "Russian",
       "Turkmen"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tm.json",
+    "area_search_log": "areas/tm.json"
   },
   {
     "id": "tv",
@@ -2121,9 +4390,35 @@
       "English",
       "Tuvaluan"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "tv",
+        "assessment": "unknown",
+        "service": "Learning project implementation",
+        "area": "public_services",
+        "url": "https://cpmo.gov.tv/wp-content/uploads/2022/09/TULEP_Processes_and_Procedures_Manual.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/tv.json",
+    "area_search_log": "areas/tv.json"
   },
   {
     "id": "tr",
@@ -2132,9 +4427,16 @@
     "languages": [
       "Turkish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/tr.json",
+    "area_search_log": "areas/tr.json"
   },
   {
     "id": "ug",
@@ -2144,9 +4446,35 @@
       "English",
       "Swahili"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "ug",
+        "assessment": "unknown",
+        "service": "Public investment financing",
+        "area": "government_operations",
+        "url": "https://www.finance.go.ug/sites/default/files/2025-12/SOPs%20Guidelines%20July%20Web.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/ug.json",
+    "area_search_log": "areas/ug.json"
   },
   {
     "id": "ua",
@@ -2155,9 +4483,16 @@
     "languages": [
       "Ukrainian"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ua.json",
+    "area_search_log": "areas/ua.json"
   },
   {
     "id": "ae",
@@ -2166,9 +4501,35 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "promising_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "some_internal_detail_or_unresolved_applicability",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "ae",
+        "assessment": "promising_evidence",
+        "service": "Federal procurement",
+        "area": "government_operations",
+        "url": "https://mof.gov.ae/wp-content/uploads/2024/12/MoF-English-Procurement-Bylaws-11.12.2024.pdf",
+        "title": "Cabinet Resolution 122/2024: procurement implementing regulations",
+        "authority": "UAE Cabinet / Ministry of Finance",
+        "document_date": "2024",
+        "depth": "some_internal_detail",
+        "access": "read_web",
+        "locator": "31-page implementing regulations",
+        "finding": "Federal implementing rules describe procurement governance and procedural requirements.",
+        "limitations": "Legal requirements alone do not establish the staff-level implementation or systems workflow."
+      }
+    ],
+    "discovery_log": "searches/ae.json",
+    "area_search_log": "areas/ae.json"
   },
   {
     "id": "gb",
@@ -2177,9 +4538,39 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Skilled Worker visa applications"
+    ],
+    "verified_areas": [
+      "identity_rights"
+    ],
+    "evidence": [
+      {
+        "country_id": "gb",
+        "assessment": "strong_evidence",
+        "service": "Skilled Worker visa applications",
+        "area": "identity_rights",
+        "url": "https://www.gov.uk/government/publications/skilled-worker-visa-caseworker-guidance/skilled-worker-caseworker-guidance-accessible",
+        "title": "Skilled Worker caseworker guidance, v20",
+        "authority": "Home Office / UKVI",
+        "document_date": "2026-08-03",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Validity, suitability, evidence and decision sections",
+        "finding": "Explicit staff guidance distinguishes rejection/refusal conditions, caseworker checks and decision requirements.",
+        "limitations": "Rule interpretation and complete operational routing must still be mapped and reconciled.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/gb.json",
+    "area_search_log": "areas/gb.json"
   },
   {
     "id": "us",
@@ -2188,9 +4579,39 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Workplace safety inspections"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "us",
+        "assessment": "strong_evidence",
+        "service": "Workplace safety inspections",
+        "area": "government_operations",
+        "url": "https://www.osha.gov/fom/chapter-3",
+        "title": "Field Operations Manual, chapter 3",
+        "authority": "OSHA",
+        "document_date": "live manual; chapter date not resolved",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "Opening conference and conduct-of-inspection sections",
+        "finding": "Assigns inspection preparation, employer/employee contact, alternative conference arrangements and inspection sequencing to compliance officers.",
+        "limitations": "Federal OSHA scope; state-plan authorities are not counted.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/us.json",
+    "area_search_log": "areas/us.json"
   },
   {
     "id": "uy",
@@ -2199,9 +4620,39 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Medical-technology company licensing and renewal"
+    ],
+    "verified_areas": [
+      "public_services"
+    ],
+    "evidence": [
+      {
+        "country_id": "uy",
+        "assessment": "strong_evidence",
+        "service": "Medical-technology company licensing and renewal",
+        "area": "public_services",
+        "url": "https://www.gub.uy/ministerio-salud-publica/sites/ministerio-salud-publica/files/documentos/publicaciones/manual-habilitacion-de-empresas_parte1.pdf",
+        "title": "Manual de habilitación/renovación de empresas",
+        "authority": "Ministry of Public Health, Technology Evaluation Department",
+        "document_date": "2016",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "Section 4, PDF p. 4; licensing process sections",
+        "finding": "Assigns licensing, specialist advice and inspections to named departments and links inspection reports to licensing outcomes.",
+        "limitations": "Historical version; document identifier contains a placeholder. Current approval and applicability require checking.",
+        "function_type": "external_service"
+      }
+    ],
+    "discovery_log": "searches/uy.json",
+    "area_search_log": "areas/uy.json"
   },
   {
     "id": "uz",
@@ -2211,9 +4662,16 @@
       "Russian",
       "Uzbek"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/uz.json",
+    "area_search_log": "areas/uz.json"
   },
   {
     "id": "vu",
@@ -2224,9 +4682,35 @@
       "English",
       "French"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "vu",
+        "assessment": "unknown",
+        "service": "Customs single window",
+        "area": "revenue_business",
+        "url": "https://customs.vanuatu.gov.vu/images/VSMS/docs/Standard%20Operating%20Procedure%20%20-%20VSMS.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/vu.json",
+    "area_search_log": "areas/vu.json"
   },
   {
     "id": "va",
@@ -2236,9 +4720,16 @@
       "Italian",
       "Latin"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/va.json",
+    "area_search_log": "areas/va.json"
   },
   {
     "id": "ve",
@@ -2247,9 +4738,16 @@
     "languages": [
       "Spanish"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ve.json",
+    "area_search_log": "areas/ve.json"
   },
   {
     "id": "vn",
@@ -2258,9 +4756,35 @@
     "languages": [
       "Vietnamese"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "promising_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "some_internal_detail_or_unresolved_applicability",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "function_type": "government_operations",
+        "country_id": "vn",
+        "assessment": "promising_evidence",
+        "service": "Biosafety and biodiversity administrative permits",
+        "area": "land_environment",
+        "url": "https://nbca.gov.vn/wp-content/uploads/2026/04/Phu-luc_Quy-trinh-noi-bo-BTTN.pdf",
+        "title": "Internal administrative procedure annex",
+        "authority": "Ministry of Agriculture and Environment / NBCA",
+        "document_date": "2026; approval fields incomplete",
+        "depth": "detailed_operational_procedure",
+        "access": "read_web",
+        "locator": "PDF pp. 4–5, step 1 and responsibilities",
+        "finding": "Named units receive and transfer applications; the annex sets out internal processing stages.",
+        "limitations": "Approval number and date are blank on the cover. Operational adoption and final version remain unverified."
+      }
+    ],
+    "discovery_log": "searches/vn.json",
+    "area_search_log": "areas/vn.json"
   },
   {
     "id": "ye",
@@ -2269,9 +4793,16 @@
     "languages": [
       "Arabic"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "not_verified",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [],
+    "discovery_log": "searches/ye.json",
+    "area_search_log": "areas/ye.json"
   },
   {
     "id": "zm",
@@ -2280,9 +4811,35 @@
     "languages": [
       "English"
     ],
-    "discovery_status": "not_searched",
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
     "assessment": "unknown",
-    "evidence": []
+    "verification_status": "selected_sources_reviewed",
+    "depth": "unknown",
+    "verified_services": [],
+    "verified_areas": [],
+    "evidence": [
+      {
+        "country_id": "zm",
+        "assessment": "unknown",
+        "service": "Devolved district health services (national standard)",
+        "area": "public_services",
+        "url": "https://www.cabinet.gov.zm/wp-content/uploads/2024/12/SOP-FOR-HEALTH-SERVICES_Dec-6.pdf",
+        "title": "Candidate operational manual",
+        "authority": "Publisher on linked government site; verify document authorship",
+        "document_date": "not verified",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "unverified",
+        "access": "download_failed",
+        "locator": "See download-checks.json",
+        "finding": "A candidate procedure document was identified in discovery; download or PDF extraction failed.",
+        "limitations": "Content, currency and service depth remain unverified; excluded from positive counts.",
+        "function_type": "unclassified"
+      }
+    ],
+    "discovery_log": "searches/zm.json",
+    "area_search_log": "areas/zm.json"
   },
   {
     "id": "zw",
@@ -2305,8 +4862,38 @@
       "Xhosa",
       "Zimbabwean Sign Language"
     ],
-    "discovery_status": "not_searched",
-    "assessment": "unknown",
-    "evidence": []
+    "discovery_status": "searched",
+    "six_area_discovery": "searched_not_exhaustively_verified",
+    "assessment": "strong_evidence",
+    "verification_status": "selected_sources_reviewed",
+    "depth": "detailed_operational_procedure",
+    "verified_services": [
+      "Public procurement bid opening and evaluation"
+    ],
+    "verified_areas": [
+      "government_operations"
+    ],
+    "evidence": [
+      {
+        "country_id": "zw",
+        "assessment": "strong_evidence",
+        "service": "Public procurement bid opening and evaluation",
+        "area": "government_operations",
+        "url": "https://www.praz.org.zw/wp-content/uploads/2024/07/Zimbabwe_Procurement_Manual.pdf",
+        "title": "Zimbabwe Public Procurement Guidelines",
+        "authority": "Procurement Regulatory Authority of Zimbabwe",
+        "document_date": "cover issued 2019-05-29",
+        "checked_at": "2026-10-31",
+        "government_level": "national",
+        "depth": "detailed_operational_procedure",
+        "access": "read_pdf",
+        "locator": "Modules 5–6; PDF pp. 54–56",
+        "finding": "Defines bid-opening tasks, secure handling, committee handoff and staged evaluation with failure exits.",
+        "limitations": "Some internal footer dates are placeholders; verify the applicable issued version before reuse.",
+        "function_type": "government_operations"
+      }
+    ],
+    "discovery_log": "searches/zw.json",
+    "area_search_log": "areas/zw.json"
   }
 ]

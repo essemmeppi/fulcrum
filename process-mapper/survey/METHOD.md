@@ -25,3 +25,11 @@ The six-area screen is complete only when each area has a recorded check. Initia
 The detailed `countries/*.json` profiles and their seven-layer tiers are legacy leads. The opportunity count uses verified service evidence, not those tiers. The validation study in `../research/assumption-1-validation.md` held procedural sources out for experiments; the production screen includes them. Model judges and quote matching do not establish agency validation. Document dates and legal versions must be reconciled before executing a workflow.
 
 Working evidence and search logs are saved under `screening/`. No inference of live digital-twin feasibility is made from document availability.
+
+## First-pass interpretation
+
+The baseline consists of one broad procedural-document discovery query and six area-specific English-language queries per registry country. Native-language procedural searches supplement this in many countries, but coverage is uneven. Search batches pool results, so the presence of a result is not proof of evidence in every queried area. The saved queries show what was attempted; breadth counts only individually inspected evidence.
+
+Strong evidence means readable, government-authored operational material for a named function, with internal actions, actors and order or branching. Public copies of previously disclosed government manuals on credible non-government hosts qualify; record authorship, host and edition separately. Strong is a publication-evidence label, not an accuracy, currency or commercial-readiness rating. It includes enabling functions such as procurement and records administration; report those separately from direct public-service opportunities.
+
+Older manuals can establish strong publication evidence while remaining unsuitable for a current map until versions are reconciled. A draft, narrow project manual or general procedural regulation is held in the promising group when adoption, applicability or implementation detail is unresolved. An index or blocked link remains an unknown with a lead. No country is classified as lacking useful data from this first-pass search.

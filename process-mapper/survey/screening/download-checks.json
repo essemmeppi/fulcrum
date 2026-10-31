@@ -1,0 +1,278 @@
+[
+  {
+    "country_id": "ar",
+    "area": "government_operations",
+    "service": "Social development procurement",
+    "url": "https://www.argentina.gob.ar/normativa/394560_res2376_pdf/archivo",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "country_id": "bd",
+    "area": "revenue_business",
+    "service": "Hi-tech park project registration",
+    "url": "https://bhtpa.gov.bd/sites/default/files/files/bhtpa.portal.gov.bd/notices/7d24a4f4_40f2_49cb_b6b4_2c63023dce01/2021-09-22-07-27-ab6e68e2d473be34d25036dc947a5c6e.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)>"
+  },
+  {
+    "country_id": "bg",
+    "area": "government_operations",
+    "service": "Administrative service handling",
+    "url": "https://www.mlsp.government.bg/uploads/3/administrativno-obsluzhvane/ao-2509final.pdf",
+    "access": "downloaded",
+    "pages": 11,
+    "chars": 29399,
+    "sha256": "450c948f2287b6dc5f6411b40c63f388f5d50047ccb57d6295499fa6e37095dc",
+    "local_text": "/tmp/fulcrum-screen-bg.txt"
+  },
+  {
+    "country_id": "cf",
+    "area": "government_operations",
+    "service": "Public debt and state guarantees",
+    "url": "https://www.finances.gouv.cf/sites/default/files/2025-11/RCA%20MANUEL%20DE%20PROCEDURE%20DE%20GESTION%20DE%20LA%20DETTE%20pdf.pdf",
+    "access": "downloaded",
+    "pages": 54,
+    "chars": 103825,
+    "sha256": "5803d1d2da5c0c17f91a803aee4b8cdc26f4d3284866c023f0c94ccdcd1737c7",
+    "local_text": "/tmp/fulcrum-screen-cf.txt"
+  },
+  {
+    "country_id": "ci",
+    "area": "government_operations",
+    "service": "Treasury operations",
+    "url": "https://tresor.gouv.ci/tres/wp-content/uploads/2026/03/Manuel-de-procedures-DGTCP.pdf",
+    "access": "downloaded",
+    "pages": 445,
+    "chars": 845328,
+    "sha256": "f953c7cb7680a567fd45e6005802e2d64bd4717a484fcae072a40e30a2af630b",
+    "local_text": "/tmp/fulcrum-screen-ci.txt"
+  },
+  {
+    "country_id": "cr",
+    "area": "public_services",
+    "service": "Humanitarian assistance receipt and dispatch",
+    "url": "https://www.pgrweb.go.cr/DocsDescargar/Normas/No%20AC-6-06102017/Version1/Manua-proc-recepcion-transito-envio-asistencia-humanitaria.pdf",
+    "access": "downloaded",
+    "pages": 41,
+    "chars": 25025,
+    "sha256": "69529fe0f8383b9013dfc3428e1a978c09b83b81d49941411f0d33e26de30429",
+    "local_text": "/tmp/fulcrum-screen-cr.txt"
+  },
+  {
+    "country_id": "fj",
+    "area": "land_environment",
+    "service": "Planned relocation",
+    "url": "https://fijiclimatechangeportal.gov.fj/wp-content/uploads/2023/04/Standard-Operating-Procedures-for-Planned-Relocation-in-the-Republic-of-Fiji-1.pdf",
+    "access": "downloaded",
+    "pages": 137,
+    "chars": 337674,
+    "sha256": "cd7a300072791c3947bc208c0f5b7f95c4291eaddd4ff4cfb675f216d8112d95",
+    "local_text": "/tmp/fulcrum-screen-fj.txt"
+  },
+  {
+    "country_id": "fr",
+    "area": "land_environment",
+    "service": "Cross-border energy infrastructure permits",
+    "url": "https://www.ecologie.gouv.fr/sites/default/files/documents/2025-07_Manuel%20des%20proc%C3%A9dures%20PCI-TEN-E_V1_1.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+    "country_id": "gw",
+    "area": "government_operations",
+    "service": "Public service HR management",
+    "url": "https://funcaopublica.gw/wp-content/uploads/2021/06/Manual-de-Procedimentos-20201010_MP-VALIDADO-APROVADO.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "country_id": "hn",
+    "area": "government_operations",
+    "service": "Secretariat document and administrative work",
+    "url": "https://pgr.gob.hn/wp-content/uploads/2025/09/03-MP-Secretaria-General-SG-001-2025.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 406: Not Acceptable"
+  },
+  {
+    "country_id": "kg",
+    "area": "revenue_business",
+    "service": "Metrology and standardisation services",
+    "url": "https://www.nism.gov.kg/media/SubActivity/2022-08-04/%D0%90%D0%B4%D0%BC._%D1%80%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82_5-45.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+    "country_id": "lb",
+    "area": "public_services",
+    "service": "Pharmaceutical inspections",
+    "url": "https://moph.gov.lb/userfiles/files/HealthCareSystem/Pharmaceuticals/QualityAssuranceofPharmaceuticalProducts/InspectionGuideline.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "country_id": "lt",
+    "area": "government_operations",
+    "service": "EU investment fund administration",
+    "url": "https://vrm.lrv.lt/uploads/vrm/documents/files/LT_versija/Teisine_informacija/Teises_aktai/Proceduru%20vadovas%202019-01-09.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "country_id": "lu",
+    "area": "government_operations",
+    "service": "AMIF grant financial administration",
+    "url": "https://gouvernement.lu/dam-assets/documents/actualites/2023/05-mai/16-appel-fonds-amif/manuel-des-procdures-financires-amif.pdf",
+    "access": "downloaded",
+    "pages": 71,
+    "chars": 128976,
+    "sha256": "12ed185b0e92d8ee0400886c90634802838255694199b405eda52783c1896359",
+    "local_text": "/tmp/fulcrum-screen-lu.txt"
+  },
+  {
+    "country_id": "mg",
+    "area": "government_operations",
+    "service": "Public service expenditure",
+    "url": "https://www.dgbf.mg/wp-content/uploads/2022/11/Manuel-de-procedures-SPE-version-Aout-2022.pdf",
+    "access": "failed",
+    "error": "PdfStreamError: Stream has ended unexpectedly"
+  },
+  {
+    "country_id": "ma",
+    "area": "public_services",
+    "service": "Health programme financial and supply management",
+    "url": "https://www.sante.gov.ma/Publications/Guides-Manuels/Documents/2021/Manuel%20proc%C3%A9dures%20Programme%20Fonds%20mondial%20VF%202021.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error [Errno 61] Connection refused>"
+  },
+  {
+    "country_id": "ne",
+    "area": "government_operations",
+    "service": "Public enterprise procurement",
+    "url": "https://www.armp-niger.org/fileadmin/armp/pdf/MANUEL_DE_PROCEDURES_ARMP_NIGER_VERSION_FINALE_ADO_1.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "country_id": "ph",
+    "area": "government_operations",
+    "service": "Irrigation agency public affairs",
+    "url": "https://www.nia.gov.ph/sites/default/files/pdf_reader/PAIS%20Operations%20Manual.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 404: Not Found"
+  },
+  {
+    "country_id": "ro",
+    "area": "government_operations",
+    "service": "Interior ministry medical directorate direct procurement",
+    "url": "https://dm.mai.gov.ro/wp-content/uploads/sites/4/2024/02/PO-CMDTA-18-Procedura-operationala-privind-achizitia-de-produse-servicii-lucrari-prin-achizitie-directa.pdf",
+    "access": "downloaded",
+    "pages": 25,
+    "chars": 68952,
+    "sha256": "4074655484f1b6c4e5b8e51874a015053d39fe86ccf3455b0cefaf260e1de195",
+    "local_text": "/tmp/fulcrum-screen-ro.txt"
+  },
+  {
+    "country_id": "sl",
+    "area": "government_operations",
+    "service": "Monitoring and evaluation of public programmes",
+    "url": "https://named.gov.sl/wp-content/uploads/2023/01/SOPManual_FinalDraft_17Feb2020-1.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error [Errno 8] nodename nor servname provided, or not known>"
+  },
+  {
+    "country_id": "st",
+    "area": "public_services",
+    "service": "National health service administration",
+    "url": "https://minsaude.st/wp-content/uploads/2022/09/Manual-de-procedimentos-SNS_Vfinal_jan2020.pdf",
+    "access": "downloaded",
+    "pages": 279,
+    "chars": 469766,
+    "sha256": "06f30b2a8cf7f5f186203660fee367e0c7f8b23559036d1f70b79f1038e3fe2b",
+    "local_text": "/tmp/fulcrum-screen-st.txt"
+  },
+  {
+    "country_id": "tz",
+    "area": "social_services",
+    "service": "Social welfare desk case handling in transport hubs",
+    "url": "https://www.jamii.go.tz/uploads/documents/sw-1753363346-Final%20SOP%202025%20EDITED%20FINAL.pdf",
+    "access": "downloaded",
+    "pages": 50,
+    "chars": 62633,
+    "sha256": "7d341abed26b4be7ff3fec81b04b7d57f2e7271b938e5bc09a8198db162738d9",
+    "local_text": "/tmp/fulcrum-screen-tz.txt"
+  },
+  {
+    "country_id": "ug",
+    "area": "government_operations",
+    "service": "Public investment financing",
+    "url": "https://www.finance.go.ug/sites/default/files/2025-12/SOPs%20Guidelines%20July%20Web.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 403: Forbidden"
+  },
+  {
+    "country_id": "uy",
+    "area": "public_services",
+    "service": "Health technology company licensing",
+    "url": "https://www.gub.uy/ministerio-salud-publica/sites/ministerio-salud-publica/files/documentos/publicaciones/manual-habilitacion-de-empresas_parte1.pdf",
+    "access": "downloaded",
+    "pages": 23,
+    "chars": 35332,
+    "sha256": "0d950b1ad9e7a3d5d960510c72d8a5b8c7137fdfc070c91b3e0e24cc16a2bd18",
+    "local_text": "/tmp/fulcrum-screen-uy.txt"
+  },
+  {
+    "country_id": "vu",
+    "area": "revenue_business",
+    "service": "Customs single window",
+    "url": "https://customs.vanuatu.gov.vu/images/VSMS/docs/Standard%20Operating%20Procedure%20%20-%20VSMS.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error timed out>"
+  },
+  {
+    "country_id": "zm",
+    "area": "public_services",
+    "service": "Devolved district health services (national standard)",
+    "url": "https://www.cabinet.gov.zm/wp-content/uploads/2024/12/SOP-FOR-HEALTH-SERVICES_Dec-6.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1002)>"
+  },
+  {
+    "country_id": "zw",
+    "area": "government_operations",
+    "service": "Public procurement",
+    "url": "https://www.praz.org.zw/wp-content/uploads/2024/07/Zimbabwe_Procurement_Manual.pdf",
+    "access": "downloaded",
+    "pages": 104,
+    "chars": 171119,
+    "sha256": "ba587bc2a1b8949bc8001d9a98d6b67e495b97d36bc8b1ba4bb5376cd659b463",
+    "local_text": "/tmp/fulcrum-screen-zw.txt"
+  },
+  {
+    "country_id": "ws",
+    "area": "government_operations",
+    "service": "Civil service recruitment",
+    "url": "https://www.psc.gov.ws/wp-content/uploads/2016/01/WCE-FINAL-LATEST-APPROVED-BY-CAB-26-Jan-2016.pdf",
+    "access": "downloaded",
+    "pages": 119,
+    "chars": 197959,
+    "sha256": "422b4d9dcb3f23ec3a7d50791f67598663f1dd2bc9995b3e45135709d46f3c78",
+    "local_text": "/tmp/fulcrum-screen-ws.txt"
+  },
+  {
+    "country_id": "tv",
+    "area": "public_services",
+    "service": "Learning project implementation",
+    "url": "https://cpmo.gov.tv/wp-content/uploads/2022/09/TULEP_Processes_and_Procedures_Manual.pdf",
+    "access": "failed",
+    "error": "HTTPError: HTTP Error 406: Not Acceptable"
+  },
+  {
+    "country_id": "cm",
+    "area": "land_environment",
+    "service": "Environment ministry administrative procedures",
+    "url": "https://minepded.gov.cm/wp-content/uploads/2020/02/MANUEL-DE-PROCEDURES-DES-SERVICES-DECONCENTRES.pdf",
+    "access": "failed",
+    "error": "URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1002)>"
+  }
+]

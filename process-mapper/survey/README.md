@@ -1,5 +1,7 @@
 # Public-record survey
 
+**Current national opportunity research:** [results and limits](screening/report.md) · [all 197 countries](screening/countries.md). The seven-layer pipeline below is legacy scaffolding, not the current opportunity-counting method.
+
 Answers one question before any mapping is attempted: for which governments, authorities and
 services could an accurate process map be built from public documents alone, without the
 government's cooperation?
