@@ -1,0 +1,2312 @@
+[
+  {
+    "id": "af",
+    "name": "Afghanistan",
+    "region": "Asia",
+    "languages": [
+      "Dari",
+      "Pashto",
+      "Turkmen"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Afghanistan ministry \"procedures manual\" procurement health education land registration"
+  },
+  {
+    "id": "al",
+    "name": "Albania",
+    "region": "Europe",
+    "languages": [
+      "Albanian"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Albania government manual procedures procurement education health land registration"
+  },
+  {
+    "id": "dz",
+    "name": "Algeria",
+    "region": "Africa",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Algeria manuel procédures administration marchés publics santé état civil"
+  },
+  {
+    "id": "ad",
+    "name": "Andorra",
+    "region": "Europe",
+    "languages": [
+      "Catalan"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Andorra manual procediments administració contractació serveis"
+  },
+  {
+    "id": "ao",
+    "name": "Angola",
+    "region": "Africa",
+    "languages": [
+      "Portuguese"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Angola manual procedimentos administração contratação serviços públicos"
+  },
+  {
+    "id": "ag",
+    "name": "Antigua and Barbuda",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "\"Antigua and Barbuda\" government \"manual\" procurement procedures services"
+  },
+  {
+    "id": "ar",
+    "name": "Argentina",
+    "region": "Americas",
+    "languages": [
+      "Guaraní",
+      "Spanish"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Argentina gobierno \"manual de procedimientos\" salud educación registro compras"
+  },
+  {
+    "id": "am",
+    "name": "Armenia",
+    "region": "Asia",
+    "languages": [
+      "Armenian"
+    ],
+    "discovery_status": "searched",
+    "assessment": "unknown",
+    "evidence": [],
+    "query": "Armenia government \"procedures\" \"manual\" public services procurement"
+  },
+  {
+    "id": "au",
+    "name": "Australia",
+    "region": "Oceania",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "at",
+    "name": "Austria",
+    "region": "Europe",
+    "languages": [
+      "Austro-Bavarian German"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "az",
+    "name": "Azerbaijan",
+    "region": "Asia",
+    "languages": [
+      "Azerbaijani",
+      "Russian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bs",
+    "name": "Bahamas",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bh",
+    "name": "Bahrain",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bd",
+    "name": "Bangladesh",
+    "region": "Asia",
+    "languages": [
+      "Bengali"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bb",
+    "name": "Barbados",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "by",
+    "name": "Belarus",
+    "region": "Europe",
+    "languages": [
+      "Belarusian",
+      "Russian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "be",
+    "name": "Belgium",
+    "region": "Europe",
+    "languages": [
+      "Dutch",
+      "French",
+      "German"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bz",
+    "name": "Belize",
+    "region": "Americas",
+    "languages": [
+      "Belizean Creole",
+      "English",
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bj",
+    "name": "Benin",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bt",
+    "name": "Bhutan",
+    "region": "Asia",
+    "languages": [
+      "Dzongkha"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bo",
+    "name": "Bolivia",
+    "region": "Americas",
+    "languages": [
+      "Aymara",
+      "Guaraní",
+      "Quechua",
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ba",
+    "name": "Bosnia and Herzegovina",
+    "region": "Europe",
+    "languages": [
+      "Bosnian",
+      "Croatian",
+      "Serbian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bw",
+    "name": "Botswana",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "Tswana"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "br",
+    "name": "Brazil",
+    "region": "Americas",
+    "languages": [
+      "Portuguese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bn",
+    "name": "Brunei",
+    "region": "Asia",
+    "languages": [
+      "Malay"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bg",
+    "name": "Bulgaria",
+    "region": "Europe",
+    "languages": [
+      "Bulgarian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bf",
+    "name": "Burkina Faso",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "bi",
+    "name": "Burundi",
+    "region": "Africa",
+    "languages": [
+      "French",
+      "Kirundi"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kh",
+    "name": "Cambodia",
+    "region": "Asia",
+    "languages": [
+      "Khmer"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cm",
+    "name": "Cameroon",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ca",
+    "name": "Canada",
+    "region": "Americas",
+    "languages": [
+      "English",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cv",
+    "name": "Cape Verde",
+    "region": "Africa",
+    "languages": [
+      "Portuguese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cf",
+    "name": "Central African Republic",
+    "region": "Africa",
+    "languages": [
+      "French",
+      "Sango"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "td",
+    "name": "Chad",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cl",
+    "name": "Chile",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cn",
+    "name": "China",
+    "region": "Asia",
+    "languages": [
+      "Chinese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "co",
+    "name": "Colombia",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "km",
+    "name": "Comoros",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "Comorian",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cg",
+    "name": "Congo",
+    "region": "Africa",
+    "languages": [
+      "French",
+      "Kikongo",
+      "Lingala"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cr",
+    "name": "Costa Rica",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "hr",
+    "name": "Croatia",
+    "region": "Europe",
+    "languages": [
+      "Croatian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cu",
+    "name": "Cuba",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cy",
+    "name": "Cyprus",
+    "region": "Europe",
+    "languages": [
+      "Greek",
+      "Turkish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cz",
+    "name": "Czechia",
+    "region": "Europe",
+    "languages": [
+      "Czech",
+      "Slovak"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "cd",
+    "name": "DR Congo",
+    "region": "Africa",
+    "languages": [
+      "French",
+      "Kikongo",
+      "Lingala",
+      "Swahili",
+      "Tshiluba"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "dk",
+    "name": "Denmark",
+    "region": "Europe",
+    "languages": [
+      "Danish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "dj",
+    "name": "Djibouti",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "dm",
+    "name": "Dominica",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "do",
+    "name": "Dominican Republic",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ec",
+    "name": "Ecuador",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "eg",
+    "name": "Egypt",
+    "region": "Africa",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sv",
+    "name": "El Salvador",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gq",
+    "name": "Equatorial Guinea",
+    "region": "Africa",
+    "languages": [
+      "French",
+      "Portuguese",
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "er",
+    "name": "Eritrea",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "English",
+      "Tigrinya"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ee",
+    "name": "Estonia",
+    "region": "Europe",
+    "languages": [
+      "Estonian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sz",
+    "name": "Eswatini",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "Swazi"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "et",
+    "name": "Ethiopia",
+    "region": "Africa",
+    "languages": [
+      "Amharic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "fj",
+    "name": "Fiji",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Fiji Hindi",
+      "Fijian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "fi",
+    "name": "Finland",
+    "region": "Europe",
+    "languages": [
+      "Finnish",
+      "Swedish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "fr",
+    "name": "France",
+    "region": "Europe",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ga",
+    "name": "Gabon",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gm",
+    "name": "Gambia",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ge",
+    "name": "Georgia",
+    "region": "Asia",
+    "languages": [
+      "Georgian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "de",
+    "name": "Germany",
+    "region": "Europe",
+    "languages": [
+      "German"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gh",
+    "name": "Ghana",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gr",
+    "name": "Greece",
+    "region": "Europe",
+    "languages": [
+      "Greek"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gd",
+    "name": "Grenada",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gt",
+    "name": "Guatemala",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gn",
+    "name": "Guinea",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gw",
+    "name": "Guinea-Bissau",
+    "region": "Africa",
+    "languages": [
+      "Portuguese",
+      "Upper Guinea Creole"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gy",
+    "name": "Guyana",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ht",
+    "name": "Haiti",
+    "region": "Americas",
+    "languages": [
+      "French",
+      "Haitian Creole"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "hn",
+    "name": "Honduras",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "hu",
+    "name": "Hungary",
+    "region": "Europe",
+    "languages": [
+      "Hungarian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "is",
+    "name": "Iceland",
+    "region": "Europe",
+    "languages": [
+      "Icelandic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "in",
+    "name": "India",
+    "region": "Asia",
+    "languages": [
+      "English",
+      "Hindi",
+      "Tamil"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "id",
+    "name": "Indonesia",
+    "region": "Asia",
+    "languages": [
+      "Indonesian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ir",
+    "name": "Iran",
+    "region": "Asia",
+    "languages": [
+      "Persian (Farsi)"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "iq",
+    "name": "Iraq",
+    "region": "Asia",
+    "languages": [
+      "Arabic",
+      "Aramaic",
+      "Sorani"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ie",
+    "name": "Ireland",
+    "region": "Europe",
+    "languages": [
+      "English",
+      "Irish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "il",
+    "name": "Israel",
+    "region": "Asia",
+    "languages": [
+      "Arabic",
+      "Hebrew"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "it",
+    "name": "Italy",
+    "region": "Europe",
+    "languages": [
+      "Italian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ci",
+    "name": "Ivory Coast",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "jm",
+    "name": "Jamaica",
+    "region": "Americas",
+    "languages": [
+      "English",
+      "Jamaican Patois"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "jp",
+    "name": "Japan",
+    "region": "Asia",
+    "languages": [
+      "Japanese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "jo",
+    "name": "Jordan",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kz",
+    "name": "Kazakhstan",
+    "region": "Asia",
+    "languages": [
+      "Kazakh",
+      "Russian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ke",
+    "name": "Kenya",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "Swahili"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ki",
+    "name": "Kiribati",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Gilbertese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "xk",
+    "name": "Kosovo",
+    "region": "Europe",
+    "languages": [
+      "Albanian",
+      "Serbian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kw",
+    "name": "Kuwait",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kg",
+    "name": "Kyrgyzstan",
+    "region": "Asia",
+    "languages": [
+      "Kyrgyz",
+      "Russian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "la",
+    "name": "Laos",
+    "region": "Asia",
+    "languages": [
+      "Lao"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lv",
+    "name": "Latvia",
+    "region": "Europe",
+    "languages": [
+      "Latvian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lb",
+    "name": "Lebanon",
+    "region": "Asia",
+    "languages": [
+      "Arabic",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ls",
+    "name": "Lesotho",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "Sotho"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lr",
+    "name": "Liberia",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ly",
+    "name": "Libya",
+    "region": "Africa",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "li",
+    "name": "Liechtenstein",
+    "region": "Europe",
+    "languages": [
+      "German"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lt",
+    "name": "Lithuania",
+    "region": "Europe",
+    "languages": [
+      "Lithuanian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lu",
+    "name": "Luxembourg",
+    "region": "Europe",
+    "languages": [
+      "French",
+      "German",
+      "Luxembourgish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mg",
+    "name": "Madagascar",
+    "region": "Africa",
+    "languages": [
+      "French",
+      "Malagasy"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mw",
+    "name": "Malawi",
+    "region": "Africa",
+    "languages": [
+      "Chewa",
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "my",
+    "name": "Malaysia",
+    "region": "Asia",
+    "languages": [
+      "English",
+      "Malay"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mv",
+    "name": "Maldives",
+    "region": "Asia",
+    "languages": [
+      "Maldivian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ml",
+    "name": "Mali",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mt",
+    "name": "Malta",
+    "region": "Europe",
+    "languages": [
+      "English",
+      "Maltese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mh",
+    "name": "Marshall Islands",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Marshallese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mr",
+    "name": "Mauritania",
+    "region": "Africa",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mu",
+    "name": "Mauritius",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "French",
+      "Mauritian Creole"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mx",
+    "name": "Mexico",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "fm",
+    "name": "Micronesia",
+    "region": "Oceania",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "md",
+    "name": "Moldova",
+    "region": "Europe",
+    "languages": [
+      "Moldavian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mc",
+    "name": "Monaco",
+    "region": "Europe",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mn",
+    "name": "Mongolia",
+    "region": "Asia",
+    "languages": [
+      "Mongolian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "me",
+    "name": "Montenegro",
+    "region": "Europe",
+    "languages": [
+      "Montenegrin"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ma",
+    "name": "Morocco",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "Berber"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mz",
+    "name": "Mozambique",
+    "region": "Africa",
+    "languages": [
+      "Portuguese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mm",
+    "name": "Myanmar",
+    "region": "Asia",
+    "languages": [
+      "Burmese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "na",
+    "name": "Namibia",
+    "region": "Africa",
+    "languages": [
+      "Afrikaans",
+      "English",
+      "German",
+      "Herero",
+      "Khoekhoe",
+      "Kwangali",
+      "Lozi",
+      "Ndonga",
+      "Tswana"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "nr",
+    "name": "Nauru",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Nauru"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "np",
+    "name": "Nepal",
+    "region": "Asia",
+    "languages": [
+      "Nepali"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "nl",
+    "name": "Netherlands",
+    "region": "Europe",
+    "languages": [
+      "Dutch"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "nz",
+    "name": "New Zealand",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Māori",
+      "New Zealand Sign Language"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ni",
+    "name": "Nicaragua",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ne",
+    "name": "Niger",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ng",
+    "name": "Nigeria",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kp",
+    "name": "North Korea",
+    "region": "Asia",
+    "languages": [
+      "Korean"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "mk",
+    "name": "North Macedonia",
+    "region": "Europe",
+    "languages": [
+      "Macedonian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "no",
+    "name": "Norway",
+    "region": "Europe",
+    "languages": [
+      "Norwegian Bokmål",
+      "Norwegian Nynorsk",
+      "Sami"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "om",
+    "name": "Oman",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pk",
+    "name": "Pakistan",
+    "region": "Asia",
+    "languages": [
+      "English",
+      "Urdu"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pw",
+    "name": "Palau",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Palauan"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ps",
+    "name": "Palestine",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pa",
+    "name": "Panama",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pg",
+    "name": "Papua New Guinea",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Hiri Motu",
+      "Tok Pisin"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "py",
+    "name": "Paraguay",
+    "region": "Americas",
+    "languages": [
+      "Guaraní",
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pe",
+    "name": "Peru",
+    "region": "Americas",
+    "languages": [
+      "Aymara",
+      "Quechua",
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ph",
+    "name": "Philippines",
+    "region": "Asia",
+    "languages": [
+      "English",
+      "Filipino"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pl",
+    "name": "Poland",
+    "region": "Europe",
+    "languages": [
+      "Polish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "pt",
+    "name": "Portugal",
+    "region": "Europe",
+    "languages": [
+      "Portuguese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "qa",
+    "name": "Qatar",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ro",
+    "name": "Romania",
+    "region": "Europe",
+    "languages": [
+      "Romanian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ru",
+    "name": "Russia",
+    "region": "Europe",
+    "languages": [
+      "Russian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "rw",
+    "name": "Rwanda",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "French",
+      "Kinyarwanda"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kn",
+    "name": "Saint Kitts and Nevis",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lc",
+    "name": "Saint Lucia",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "vc",
+    "name": "Saint Vincent and the Grenadines",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ws",
+    "name": "Samoa",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Samoan"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sm",
+    "name": "San Marino",
+    "region": "Europe",
+    "languages": [
+      "Italian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sa",
+    "name": "Saudi Arabia",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sn",
+    "name": "Senegal",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "rs",
+    "name": "Serbia",
+    "region": "Europe",
+    "languages": [
+      "Serbian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sc",
+    "name": "Seychelles",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "French",
+      "Seychellois Creole"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sl",
+    "name": "Sierra Leone",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sg",
+    "name": "Singapore",
+    "region": "Asia",
+    "languages": [
+      "Chinese",
+      "English",
+      "Malay",
+      "Tamil"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sk",
+    "name": "Slovakia",
+    "region": "Europe",
+    "languages": [
+      "Slovak"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "si",
+    "name": "Slovenia",
+    "region": "Europe",
+    "languages": [
+      "Slovene"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sb",
+    "name": "Solomon Islands",
+    "region": "Oceania",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "so",
+    "name": "Somalia",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "Somali"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "za",
+    "name": "South Africa",
+    "region": "Africa",
+    "languages": [
+      "Afrikaans",
+      "English",
+      "Northern Sotho",
+      "Southern Ndebele",
+      "Southern Sotho",
+      "Swazi",
+      "Tsonga",
+      "Tswana",
+      "Venda",
+      "Xhosa",
+      "Zulu"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "kr",
+    "name": "South Korea",
+    "region": "Asia",
+    "languages": [
+      "Korean"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ss",
+    "name": "South Sudan",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "es",
+    "name": "Spain",
+    "region": "Europe",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "lk",
+    "name": "Sri Lanka",
+    "region": "Asia",
+    "languages": [
+      "Sinhala",
+      "Tamil"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sd",
+    "name": "Sudan",
+    "region": "Africa",
+    "languages": [
+      "Arabic",
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sr",
+    "name": "Suriname",
+    "region": "Americas",
+    "languages": [
+      "Dutch"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "se",
+    "name": "Sweden",
+    "region": "Europe",
+    "languages": [
+      "Swedish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ch",
+    "name": "Switzerland",
+    "region": "Europe",
+    "languages": [
+      "French",
+      "Italian",
+      "Romansh",
+      "Swiss German"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "sy",
+    "name": "Syria",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "st",
+    "name": "São Tomé and Príncipe",
+    "region": "Africa",
+    "languages": [
+      "Portuguese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tw",
+    "name": "Taiwan",
+    "region": "Asia",
+    "languages": [
+      "Chinese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tj",
+    "name": "Tajikistan",
+    "region": "Asia",
+    "languages": [
+      "Russian",
+      "Tajik"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tz",
+    "name": "Tanzania",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "Swahili"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "th",
+    "name": "Thailand",
+    "region": "Asia",
+    "languages": [
+      "Thai"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tl",
+    "name": "Timor-Leste",
+    "region": "Asia",
+    "languages": [
+      "Portuguese",
+      "Tetum"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tg",
+    "name": "Togo",
+    "region": "Africa",
+    "languages": [
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "to",
+    "name": "Tonga",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Tongan"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tt",
+    "name": "Trinidad and Tobago",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tn",
+    "name": "Tunisia",
+    "region": "Africa",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tm",
+    "name": "Turkmenistan",
+    "region": "Asia",
+    "languages": [
+      "Russian",
+      "Turkmen"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tv",
+    "name": "Tuvalu",
+    "region": "Oceania",
+    "languages": [
+      "English",
+      "Tuvaluan"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "tr",
+    "name": "Türkiye",
+    "region": "Asia",
+    "languages": [
+      "Turkish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ug",
+    "name": "Uganda",
+    "region": "Africa",
+    "languages": [
+      "English",
+      "Swahili"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ua",
+    "name": "Ukraine",
+    "region": "Europe",
+    "languages": [
+      "Ukrainian"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ae",
+    "name": "United Arab Emirates",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "gb",
+    "name": "United Kingdom",
+    "region": "Europe",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "us",
+    "name": "United States",
+    "region": "Americas",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "uy",
+    "name": "Uruguay",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "uz",
+    "name": "Uzbekistan",
+    "region": "Asia",
+    "languages": [
+      "Russian",
+      "Uzbek"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "vu",
+    "name": "Vanuatu",
+    "region": "Oceania",
+    "languages": [
+      "Bislama",
+      "English",
+      "French"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "va",
+    "name": "Vatican City",
+    "region": "Europe",
+    "languages": [
+      "Italian",
+      "Latin"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ve",
+    "name": "Venezuela",
+    "region": "Americas",
+    "languages": [
+      "Spanish"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "vn",
+    "name": "Vietnam",
+    "region": "Asia",
+    "languages": [
+      "Vietnamese"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "ye",
+    "name": "Yemen",
+    "region": "Asia",
+    "languages": [
+      "Arabic"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "zm",
+    "name": "Zambia",
+    "region": "Africa",
+    "languages": [
+      "English"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  },
+  {
+    "id": "zw",
+    "name": "Zimbabwe",
+    "region": "Africa",
+    "languages": [
+      "Chewa",
+      "Chibarwe",
+      "English",
+      "Kalanga",
+      "Khoisan",
+      "Ndau",
+      "Northern Ndebele",
+      "Shona",
+      "Sotho",
+      "Tonga",
+      "Tsonga",
+      "Tswana",
+      "Venda",
+      "Xhosa",
+      "Zimbabwean Sign Language"
+    ],
+    "discovery_status": "not_searched",
+    "assessment": "unknown",
+    "evidence": []
+  }
+]

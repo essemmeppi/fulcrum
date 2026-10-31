@@ -225,20 +225,20 @@ def scores_dict(layer_scores: list[LayerScore]) -> dict[str, int]:
 
 
 def tier_for(scores: dict[str, int]) -> int:
-    """Map layer scores to the expected map quality.
+    """Screen source availability; this does not establish map accuracy.
 
-    0  no map: law or guidance missing
+    0  insufficient evidence found: law or guidance missing
     1  external skeleton: law and guidance; internal steps inferred
     2  full external process: plus forms and (appeals or catalogue)
-    3  internal steps documented: plus internal >= 2 and (statistics or appeals >= 2)
-    4  refreshable: tier 3 plus machine-readable law and catalogue
+    3  internal mapping candidate: plus internal >= 2 and (statistics or appeals >= 2)
+    4  structured-source candidate: tier 3 plus machine-readable law and catalogue
     """
     s = scores
     if s["legislation"] < 1 or s["guidance"] < 1:
         return 0
     if s["forms"] < 1 or max(s["appeals"], s["catalogue"]) < 1:
         return 1
-    if s["internal"] < 2 or max(s["statistics"], s["appeals"] - 1) < 1:
+    if s["internal"] < 2 or max(s["statistics"], s["appeals"]) < 2:
         return 2
     if s["legislation"] >= 3 and s["catalogue"] >= 3:
         return 4
@@ -246,9 +246,9 @@ def tier_for(scores: dict[str, int]) -> int:
 
 
 TIER_LABELS = {
-    0: "no map",
-    1: "external skeleton",
-    2: "full external process",
-    3: "internal steps documented",
-    4: "refreshable",
+    0: "insufficient evidence found",
+    1: "external skeleton candidate",
+    2: "external process candidate",
+    3: "internal mapping candidate",
+    4: "structured-source candidate",
 }

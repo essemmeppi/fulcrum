@@ -109,6 +109,7 @@ def run_country(client, country_id: str, args) -> Path:
     prof = survey_call(client, prompt, CountryProfile, model=args.model, effort=args.effort, max_searches=args.max_searches)
     prof.country_id, prof.country_name = country_id, c["name"]
     _stamp(prof, args.model)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(prof.model_dump_json(indent=2))
     return out
 
@@ -136,6 +137,7 @@ def run_authority(client, country_id: str, authority_id: str, args) -> Path:
     prof = survey_call(client, prompt, AuthorityProfile, model=args.model, effort=args.effort, max_searches=args.max_searches)
     prof.country_id, prof.authority_id = country_id, authority_id
     _stamp(prof, args.model)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(prof.model_dump_json(indent=2))
     return out
@@ -195,6 +197,7 @@ def run_service(client, service_id: str, args) -> Path:
     ss = survey_call(client, prompt, ServiceSourceSet, model=args.model, effort=args.effort, max_searches=args.max_searches)
     ss.service_id, ss.country_id, ss.authority_id, ss.authority_name = service_id, country_id, authority_id, ap.name
     _stamp(ss, args.model)
+    out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(ss.model_dump_json(indent=2))
     export_sources_yaml(ss)
     return out

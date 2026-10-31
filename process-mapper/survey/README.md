@@ -4,11 +4,15 @@ Answers one question before any mapping is attempted: for which governments, aut
 services could an accurate process map be built from public documents alone, without the
 government's cooperation?
 
-The mapper (`mapper/`) is the measurement of record: a map's `report.json` says how many internal
-steps were documented, at what confidence, and what stayed open. This survey predicts that outcome
-cheaply for every national government, so the mapper can be pointed where it will succeed, and so the
-rest can be counted as unmappable without further work. No sampling, no extrapolation: every
-country, every national authority, every service they list.
+Start with [METHOD.md](METHOD.md) for the scope, thresholds, discovery protocol and counting rules.
+The mapper (`mapper/`) measures source grounding, not operational truth. This survey screens
+publication availability; only a service-level mapping exercise tests whether those sources support
+a map. Government validation remains a separate later stage.
+
+Current coverage is partial. National profiles must not be extrapolated to regions, municipalities,
+all agencies, or all services. The report includes all 197 registry entries in `coverage.csv`, with
+unsurveyed countries explicitly unknown. Existing profiles are preliminary and not independently
+reverified. Regional and municipal inventories have not yet been built.
 
 ## Three passes
 
@@ -37,11 +41,11 @@ The tier is computed in code (`schema.tier_for`), never by the model:
 
 | Tier | Condition | Expected map |
 |---|---|---|
-| 0 | law or guidance missing | none |
-| 1 | law and guidance | external steps documented, internal steps inferred |
-| 2 | plus forms, and appeals or catalogue | full external process, rules with parameters |
-| 3 | plus internal >= 2, and statistics or appeals >= 2 | internal steps documented (the Finland case) |
-| 4 | tier 3 plus machine-readable law and catalogue API | map can be refreshed automatically |
+| 0 | law or guidance not found | insufficient evidence found, not proof of impossibility |
+| 1 | law and guidance | external skeleton candidate |
+| 2 | plus forms, and appeals or catalogue | external process candidate |
+| 3 | plus internal >= 2, and statistics or appeals >= 2 | internal mapping candidate; needs service-level testing |
+| 4 | tier 3 plus layer scores >= 3 for law and catalogue | structured-source candidate; refreshability untested |
 
 What the Finland map showed about source value, and what the prompts therefore prioritise:
 legislation carried most internal-step provenance and nearly all flows; guidance carried most rule

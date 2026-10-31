@@ -42,7 +42,7 @@ def main() -> None:
     for cid, cp in countries.items():
         s = scores_dict(cp.layer_scores)
         rows.append({"country_id": cid, "country": cp.country_name, "region": by_country.get(cid, {}).get("region", ""),
-                     "tier": tier_for(s), **s, "authorities_listed": len(cp.authorities),
+                     "status": "preliminary_unverified", "tier": tier_for(s), **s, "authorities_listed": len(cp.authorities),
                      "procedure_publication_duty": cp.foi.procedure_publication_duty,
                      "catalogue_api": any(c.machine_readable for c in cp.catalogues),
                      "law_api": any(l.machine_readable for l in cp.legal_information)})
@@ -58,9 +58,12 @@ def main() -> None:
     for r in rows:
         regions.setdefault(r["region"], Counter())[r["tier"]] += 1
 
-    md = ["# Public-record survey: national level", "",
+    md = ["# Public-record survey: national screening", "",
+          "These are preliminary publication-availability signals, not verified mapping accuracy or country-wide coverage. Existing profiles have not been independently rechecked.", "",
+          f"Not surveyed: {len(REGISTRY) - len(rows)} countries. Regional and municipal governments: not inventoried; totals and coverage unknown.", "",
+          "A national score does not apply to every authority, service, region or municipality. A missing profile is unknown, never tier 0. Tier 4 indicates structured sources, not an automatically refreshable process map.", "",
           f"Countries surveyed: {len(rows)} of {len(REGISTRY)}. Authorities surveyed: {len(authorities)}. Services surveyed: {len(services)}.", "",
-          "## Countries by tier", "", "| Tier | Meaning | Countries |", "|---|---|---|"]
+          "## Preliminary candidates by tier", "", "| Tier | Meaning | Countries |", "|---|---|---|"]
     for t in range(4, -1, -1):
         names = ", ".join(r["country"] for r in rows if r["tier"] == t)
         md.append(f"| {t} | {TIER_LABELS[t]} | {tiers.get(t, 0)}: {names} |")
@@ -83,6 +86,19 @@ def main() -> None:
         for s_ in services:
             s = scores_dict(s_.layer_scores)
             md.append(f"| {s_.service_id} | {tier_for(s)} | {len(s_.sources)} | {sum(1 for x in s_.sources if x.layer == 'internal')} |")
+
+    md += ["", "## Complete country coverage ledger", "",
+           "All registry countries are included in coverage.csv; missing profiles remain not_surveyed with blank scores."]
+    coverage_fields = ["country_id", "country", "region", "status", "tier", *LAYERS]
+    row_by_id = {r["country_id"]: r for r in rows}
+    with (SURVEY / "coverage.csv").open("w", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=coverage_fields, extrasaction="ignore")
+        writer.writeheader()
+        for c in REGISTRY:
+            writer.writerow(row_by_id.get(c["id"], {
+                "country_id": c["id"], "country": c["name"], "region": c["region"],
+                "status": "not_surveyed",
+            }))
 
     (SURVEY / "report.md").write_text("\n".join(md) + "\n")
     print("\n".join(md[:12]))

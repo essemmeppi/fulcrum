@@ -1,0 +1,4 @@
+country_id,country,region,status,tier,catalogue,legislation,guidance,forms,internal,statistics,appeals,authorities_listed,procedure_publication_duty,catalogue_api,law_api
+fr,France,Europe,preliminary_unverified,4,3,3,3,2,3,2,3,45,False,True,True
+us,United States,Americas,preliminary_unverified,3,1,3,3,2,3,3,2,105,True,True,True
+pe,Peru,Americas,preliminary_unverified,3,2,2,2,1,3,2,2,57,True,False,False
