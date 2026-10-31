@@ -1,0 +1,2284 @@
+{
+  "country_id": "us",
+  "country_name": "United States",
+  "surveyed_at": "",
+  "model": "",
+  "government_structure": "Federal. Surveyed at the federal level only. The federal government delivers directly: social security retirement/disability/SSI (SSA), federal tax (IRS), immigration benefits (USCIS, field offices and service centers), veterans' benefits (VA/VBA), Medicare (CMS), patents/trademarks (USPTO), passports (State/Consular Affairs), federal student aid (FSA), small-business loans (SBA), disaster assistance (FEMA), federal workers' compensation (OWCP), railroad retirement (RRB), pension insurance (PBGC), customs (CBP). States deliver unemployment insurance ('There is no federal unemployment program', usa.gov/unemployment-benefits), vital records (CDC NCHS: 'The federal government does not distribute certificates'), business entity formation (SBA: 'Most states require you to register with the Secretary of State'), Medicaid and SNAP (state agencies under federal CMS/FNS rules; FNS and Medicaid pages returned 403/404 so the split is backed here only by the DOL ETA/FNS instruction series found) and driver licensing. Federal registrations for firms: EIN (IRS), BOI (FinCEN), trademarks (USPTO).",
+  "official_languages": [
+    "English"
+  ],
+  "web_languages": [
+    "English",
+    "Spanish (partial: usa.gov/es, uscis.gov/es, IRS publications in several languages)"
+  ],
+  "legal_information": [
+    {
+      "name": "eCFR (Electronic Code of Federal Regulations)",
+      "url": "https://www.ecfr.gov/",
+      "publisher": "Office of the Federal Register / GPO",
+      "machine_readable": true,
+      "api_url": "https://www.ecfr.gov/api/versioner/v1/titles.json",
+      "languages": [
+        "en"
+      ],
+      "note": "Versioner API serves point-in-time full XML of any title/part/section (e.g. /api/versioner/v1/full/2026-10-29/title-20.xml?part=404&section=404.1520 returned DIV8 XML of 20 CFR 404.1520, the five-step disability evaluation), structure JSON per title, and a versions endpoint listing amendment dates. titles.json shows up_to_date_as_of 2026-10-29. Developer docs page redirects to unblock.federalregister.gov for automated clients but the API itself answers.",
+      "consolidated_texts": true,
+      "consolidation_lag": "Daily; titles.json reports up_to_date_as_of 2026-10-29 on 2026-10-31",
+      "covers_regulations": true,
+      "format": "xml"
+    },
+    {
+      "name": "United States Code (Office of the Law Revision Counsel)",
+      "url": "https://uscode.house.gov/browse.html",
+      "publisher": "Office of the Law Revision Counsel, U.S. House of Representatives",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Consolidated codification of general and permanent federal statutes; site banner says 'current through Public Law 119-136 (October 22, 2026)' and that the website 'is currently operating in a temporary format' with the Downloads pages (USLM XML/XHTML release points) returning 404 during this survey. Bulk XML of the Code is also in govinfo bulkdata (USCODE not in the json listing opened; PLAW/STATUTE/COMPS are).",
+      "consolidated_texts": true,
+      "consolidation_lag": "Current through P.L. 119-136 of 2026-10-22, i.e. about one week",
+      "covers_regulations": false,
+      "format": "mixed"
+    },
+    {
+      "name": "Federal Register (daily gazette) and FederalRegister.gov API",
+      "url": "https://www.federalregister.gov/",
+      "publisher": "Office of the Federal Register / GPO",
+      "machine_readable": true,
+      "api_url": "https://www.federalregister.gov/api/v1/documents.json",
+      "languages": [
+        "en"
+      ],
+      "note": "Official daily gazette of rules, proposed rules, notices and presidential documents. JSON API returns documents with html_url, type, agencies; /api/v1/agencies.json returned 473 agency records with homepage URLs. Full-text pages and developer docs redirect automated clients to unblock.federalregister.gov; govinfo hosts the same issues as PDF/XML.",
+      "consolidated_texts": false,
+      "consolidation_lag": "",
+      "covers_regulations": true,
+      "format": "mixed"
+    },
+    {
+      "name": "govinfo (GPO) with Bulk Data Repository and API",
+      "url": "https://www.govinfo.gov/bulkdata",
+      "publisher": "Government Publishing Office",
+      "machine_readable": true,
+      "api_url": "https://api.govinfo.gov/collections?api_key=DEMO_KEY",
+      "languages": [
+        "en"
+      ],
+      "note": "Bulk XML/JSON collections listed by /bulkdata/json: CFR, FR, ECFR, PLAW, STATUTE, COMPS (statute compilations), BILLS, BILLSTATUS, GOVMAN etc. CFR bulk folder has annual editions 2026 back. API (api.govinfo.gov) lists collections with package counts (e.g. BILLS 291,951).",
+      "consolidated_texts": true,
+      "consolidation_lag": "CFR annual edition plus ECFR daily feed",
+      "covers_regulations": true,
+      "format": "xml"
+    }
+  ],
+  "catalogues": [
+    {
+      "name": "USA.gov / USAGov en Español",
+      "url": "https://www.usa.gov/",
+      "publisher": "General Services Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "note": "Topic directory (20 topic areas) linking to agency pages; not a procedure register. No steps/forms/deadlines fields per record; no API found.",
+      "scope": "national_and_subnational",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "topic",
+        "short description",
+        "links to agency pages"
+      ]
+    },
+    {
+      "name": "USAGov Benefit Finder (successor of Benefits.gov)",
+      "url": "https://www.usa.gov/benefit-finder",
+      "publisher": "General Services Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en",
+        "es"
+      ],
+      "note": "benefits.gov now 301-redirects to usa.gov/benefit-finder. Questionnaire over 12 categories returning benefit programs 'and information on how to apply'; program count not stated; no API or export found.",
+      "scope": "national_and_subnational",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "program name",
+        "category",
+        "eligibility questions",
+        "how to apply link"
+      ]
+    },
+    {
+      "name": "reginfo.gov Information Collection Review inventory (Paperwork Reduction Act)",
+      "url": "https://www.reginfo.gov/public/do/PRAMain",
+      "publisher": "OMB Office of Information and Regulatory Affairs",
+      "machine_readable": true,
+      "api_url": "https://www.reginfo.gov/public/do/PRAXML",
+      "languages": [
+        "en"
+      ],
+      "note": "Not a service catalogue but the closest structured federal register of every approved form/information collection: searchable by OMB control number, agency, form number, burden hours, affected public, obligation to respond; ICR XML Reports page exists. Record field list not verified from a record page (search page opened).",
+      "scope": "national",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "OMB control number",
+        "agency/sub-agency",
+        "title",
+        "form number(s)",
+        "type of request",
+        "burden hours/responses/respondents",
+        "affected public",
+        "obligation to respond",
+        "expiration date",
+        "Federal Register notice citation"
+      ]
+    }
+  ],
+  "foi": {
+    "law_exists": true,
+    "law_name": "Freedom of Information Act, 5 U.S.C. 552",
+    "law_url": "https://www.justice.gov/oip/freedom-information-act-5-usc-552",
+    "proactive_publication_duties": [
+      "552(a)(1): publish in the Federal Register descriptions of organization, where and how the public may obtain information or make requests, 'the general course and method by which its functions are channeled and determined', 'rules of procedure, descriptions of forms available or the places at which forms may be obtained', substantive rules and statements of general policy",
+      "552(a)(2): make available electronically final opinions and orders in adjudicated cases, statements of policy and interpretations not published in the FR, 'administrative staff manuals and instructions to staff that affect a member of the public', frequently requested records (requested 3+ times), and an index of these"
+    ],
+    "procedure_publication_duty": true,
+    "disclosure_platforms": [
+      {
+        "name": "FOIA.gov (DOJ Office of Information Policy)",
+        "url": "https://www.foia.gov/about.html",
+        "publisher": "Department of Justice",
+        "machine_readable": true,
+        "api_url": "https://api.foia.gov/api/agency_components",
+        "languages": [
+          "en"
+        ],
+        "note": "Central request portal; agency annual FOIA report data as NIEM XML (/api/annual-report-xml/[agency]/[year]); agency components API (api.data.gov key required, confirmed by API_KEY_MISSING response). Not a public log of request texts."
+      },
+      {
+        "name": "USCIS Electronic Reading Room",
+        "url": "https://www.uscis.gov/records/electronic-reading-room",
+        "publisher": "USCIS",
+        "machine_readable": false,
+        "api_url": "",
+        "languages": [
+          "en"
+        ],
+        "note": "2,061 entries: policy memoranda, Credible Fear and Reasonable Fear Procedures Manuals (2025-04-02), FOIA logs, AAO decisions, statistics; filter by ~60 topics."
+      },
+      {
+        "name": "DHS FOIA Library",
+        "url": "https://www.dhs.gov/foia-library",
+        "publisher": "Department of Homeland Security",
+        "machine_readable": false,
+        "api_url": "",
+        "languages": [
+          "en"
+        ],
+        "note": "Frequently requested records, policy memos and directives, FOIA logs, component libraries (CBP, ICE, USCIS)."
+      },
+      {
+        "name": "IRS FOIA Library",
+        "url": "https://www.irs.gov/privacy-disclosure/foia-library",
+        "publisher": "Internal Revenue Service",
+        "machine_readable": false,
+        "api_url": "",
+        "languages": [
+          "en"
+        ],
+        "note": "552(a)(2) index: Internal Revenue Manual, Chief Counsel notices and advice, audit technique guides, training and desk guides, FOIA logs, frequently requested documents."
+      },
+      {
+        "name": "MuckRock (non-governmental FOIA request platform with public logs)",
+        "url": "https://www.muckrock.com/foi/list/",
+        "publisher": "MuckRock Foundation",
+        "machine_readable": true,
+        "api_url": "https://www.muckrock.com/api_v1/",
+        "languages": [
+          "en"
+        ],
+        "note": "Site and API returned 403 (Cloudflare) to this survey; existence of API and public request archive known only from search snippets (2019 MuckRock release notes). Not verified by opening."
+      }
+    ]
+  },
+  "internal_guidance_practice": "Systematic and legally driven: 5 U.S.C. 552(a)(2) obliges agencies to publish 'administrative staff manuals and instructions to staff that affect a member of the public', and the largest service agencies do so as enumerable online manuals. SSA: Program Operations Manual System (POMS) on secure.ssa.gov/apps10/poms.nsf, the field-office/DDS staff manual organised Part > Chapter > Subchapter > Section with transmittal numbers and effective dates (e.g. DI 11005.001 'Field Office Disability Interviews', TN 134 05-26, instructs interviewers to review MBR, SSID, DDSQ, HACPS and ARPS queries); parts include SM 'Systems and Methods', MS 'Modernized System Operations Manual' and DX 'Data Exchange', i.e. descriptions of what the case systems do; HALLEX (hearing and Appeals Council procedures, now renumbered HA 01xxx within POMS, e.g. HA 01280.020 'Decision Writing Instructions' TN I-2-267 01-06-2025); Emergency Messages and Chief Judge Bulletins are also listed. IRS: Internal Revenue Manual (Parts 1-39) in HTML per section plus a directory of ZIP source files per section (irs.gov/downloads/irm, e.g. irm03-012-003r.zip), stated to be provided to meet E-FOIA. USCIS: Policy Manual (12 volumes, 'USCIS officers are expected to follow it', Volume 1 Part E Adjudications with chapters on Evidence, Discretionary Analysis, Rendering a Decision, Post-Decision Actions, current as of 2026-10-27), replacing the Adjudicator's Field Manual (retired 2020; crosswalk and remaining AFM PDFs; old AFM URL now 404), plus Credible/Reasonable Fear Procedures Manuals in the reading room. VA: M21-1 Adjudication Procedures Manual is published via the KnowVA knowledge base (JavaScript-only; could not be read here) and a 2016 Federal Register notice 2016-06257 'Web Automated Reference Material System' (FR API) documents the public access. CMS: Internet-Only Manuals (100-01 to 100-25, e.g. 100-04 Medicare Claims Processing Manual, 39 chapters as PDF; 100-08 Program Integrity Manual; 100-07 State Operations Manual) with yearly transmittal listings. DOL OWCP: FECA Procedure Manual Part 2 (claims adjudication, development, payment, case management, appeals, 'automated systems'). USPTO: MPEP (9th ed. rev. 01.2024, HTML/PDF/zip). SBA: SOP 50 10 v8.1 (7(a)/504 loan origination, DOCX). OPM: CSRS/FERS Handbook (47 chapters for agency personnel/payroll offices). Education/FSA: FSA Handbook (web and PDF, 1995-96 to 2026-27). EOIR: Policy Manual (court/Board practice manuals, OPPMs, docketing manual). FEMA: Public Assistance Program and Policy Guide and other policies. DOL ETA advisories (TEGL/UIPL to state agencies), FNS SNAP guidance, HUD handbooks, State Department FAM/FAH, SSA forms and rulings pages could not be opened (403/404/503/JS) and are recorded as open questions. Automation descriptions: POMS SM/MS parts and FECA 'automated systems' chapters are the only system-level descriptions found; no agency publishes automation rates.",
+  "internal_guidance_examples": [
+    {
+      "name": "POMS - Program Operations Manual System (SSA)",
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/partlist!OpenView",
+      "publisher": "Social Security Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Enumerable Domino views: partlist, chapterlist!openview&restricttocategory=NN, subchapterlist, section URLs lnx/0411005001 (DI 11005.001). Parts: RM, GN, RS, DI, SI, HI, SM (Systems and Methods), NL (Notices), PM, QR, VB, PR/PS (legal opinion precedents), SL, MS (Modernized System Operations Manual), DX (Data Exchange). DI part lists ~50 chapters; DI 110 subchapter list alone has 247 entries. Also hosts HALLEX (HA), Emergency Messages, Chief Judge Bulletins and POMS Archives. www.ssa.gov is Akamai-blocked for automated clients; secure.ssa.gov answers."
+    },
+    {
+      "name": "HALLEX - Hearings, Appeals and Litigation Law manual (SSA OHO/Appeals Council)",
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501280000",
+      "publisher": "Social Security Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Chapter HA 01280 'Administrative Law Judge Decisions' lists sections with transmittal numbers and dates (e.g. HA 01280.020 Decision Writing Instructions TN I-2-267 01-06-2025). Legacy www.ssa.gov/OP_Home/hallex URLs return 403 to automated clients."
+    },
+    {
+      "name": "Internal Revenue Manual (IRM)",
+      "url": "https://www.irs.gov/irm",
+      "publisher": "Internal Revenue Service",
+      "machine_readable": true,
+      "api_url": "https://www.irs.gov/downloads/irm",
+      "languages": [
+        "en"
+      ],
+      "note": "Parts 1-11, 13, 20-22, 25, 30-39 (Chief Counsel Directives). HTML per section (irm_01-001-001 pattern) and ZIP source files per section (irm03-012-003r.zip), posted continuously (2026-09-29 to 2026-10-30 on page 1 of 50-per-page listing). Site states versions are provided to meet E-FOIA."
+    },
+    {
+      "name": "USCIS Policy Manual",
+      "url": "https://www.uscis.gov/policy-manual",
+      "publisher": "U.S. Citizenship and Immigration Services",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en",
+        "es (partial)"
+      ],
+      "note": "12 volumes; Volume 1 Part E Adjudications (Record of Proceeding, Jurisdiction, Burden of Proof, Evidence, Discretionary Analysis, Rendering a Decision, Post-Decision Actions), current as of 2026-10-27; 'Recent Updates' list of policy alerts; printable version; replaces the Adjudicator's Field Manual (crosswalk PDF)."
+    },
+    {
+      "name": "USCIS Electronic Reading Room (procedures manuals, SOP-type records)",
+      "url": "https://www.uscis.gov/records/electronic-reading-room",
+      "publisher": "U.S. Citizenship and Immigration Services",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "2,061 entries incl. Credible Fear Procedures Manual and Reasonable Fear Procedures Manual (2025-04-02), policy memoranda, FOIA logs."
+    },
+    {
+      "name": "M21-1 Adjudication Procedures Manual (VBA, via KnowVA)",
+      "url": "https://www.knowva.ebenefits.va.gov/system/templates/selfservice/va_ssnew/help/customer/locale/en-US/portal/554400000001018/topic/554400000004049/M21-1-Adjudication-Procedures-Manual",
+      "publisher": "Veterans Benefits Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Page requires JavaScript ('Javascript is not enabled') so content could not be read; public access documented by Federal Register notice 2016-06257 'Web Automated Reference Material System' (located through the FR API; full text blocked). Treat as present but unverified."
+    },
+    {
+      "name": "CMS Internet-Only Manuals (IOMs)",
+      "url": "https://www.cms.gov/medicare/regulations-guidance/manuals/internet-only-manuals-ioms",
+      "publisher": "Centers for Medicare & Medicaid Services",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "'day-to-day operating instructions, policies, and procedures' used by CMS components, contractors, MA organizations and state survey agencies. 100-04 Medicare Claims Processing Manual = 39 PDF chapters (https://www.cms.gov/regulations-and-guidance/guidance/manuals/internet-only-manuals-ioms-items/cms018912). Transmittals listed by year 2013-2026 (https://www.cms.gov/medicare/regulations-guidance/transmittals). RSS available."
+    },
+    {
+      "name": "FECA Procedure Manual (DOL OWCP)",
+      "url": "https://www.dol.gov/agencies/owcp/FECA/regs/compliance/DFECfolio/FECA-PT2",
+      "publisher": "Department of Labor, Office of Workers' Compensation Programs",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Part 2 chapters 2-0100 to 2-1800: adjudication of claims, payment of compensation, case/disability management, appeals, file maintenance, automated systems."
+    },
+    {
+      "name": "Manual of Patent Examining Procedure (MPEP)",
+      "url": "https://www.uspto.gov/web/offices/pac/mpep/index.html",
+      "publisher": "U.S. Patent and Trademark Office",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Chapters 100-2900, HTML and PDF per section, zip of full revision, archives 1948-2023; 9th ed. rev. 01.2024."
+    },
+    {
+      "name": "SBA SOP 50 10 (7(a) and 504 loan origination)",
+      "url": "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      "publisher": "Small Business Administration, Office of Capital Access",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Version 8.1 effective 2026-10-01 as DOCX; prior versions 5-5(K) and 8 as PDF."
+    },
+    {
+      "name": "CSRS/FERS Handbook for Personnel and Payroll Offices",
+      "url": "https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/",
+      "publisher": "Office of Personnel Management",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "47 chapters (coverage, service credit, computation, disability, death benefits, record keeping) mostly PDF; base version April 1998 with later chapter revisions."
+    },
+    {
+      "name": "Federal Student Aid Handbook",
+      "url": "https://fsapartners.ed.gov/knowledge-center/fsa-handbook",
+      "publisher": "Department of Education, Federal Student Aid",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Web format for 2024-25 to 2026-27, PDF editions back to 1995-96; for financial aid administrators."
+    },
+    {
+      "name": "EOIR Policy Manual",
+      "url": "https://www.justice.gov/eoir/eoir-policy-manual",
+      "publisher": "DOJ Executive Office for Immigration Review",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Seven parts: Immigration Court Practice Manual, Board Practice Manual, OCAHO manual, Policy Memoranda (OPPMs), Uniform Docketing System Manual; last updated 2026-03-18."
+    },
+    {
+      "name": "FEMA guidance documents (PAPPG and policies)",
+      "url": "https://www.fema.gov/about/reports-and-data/guidance",
+      "publisher": "Federal Emergency Management Agency",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Public Assistance Program and Policy Guide v3.1 (PDF), Damage Assessment Operations Manual, Transitional Sheltering Assistance policy etc. Individual Assistance Program and Policy Guide not found on this page."
+    }
+  ],
+  "appeals_sources": [
+    {
+      "name": "Board of Veterans' Appeals decisions (search.usa.gov affiliate bvadecisions)",
+      "url": "https://search.usa.gov/search/docs?affiliate=bvadecisions&query=service+connection+knee",
+      "publisher": "Department of Veterans Affairs",
+      "machine_readable": true,
+      "api_url": "https://www.va.gov/sitemap_bva.xml",
+      "languages": [
+        "en"
+      ],
+      "note": "Full-text search; results are plain-text decisions at predictable URLs, e.g. https://www.va.gov/vetapp26/Files4/A26031219.txt (Citation Nr A26031219, decision 2026-04-06, left knee service connection / CUE). data.gov dataset metadata says 1992-2014 but 2026 decisions are served. BVA sitemap XML listed in search results JSON."
+    },
+    {
+      "name": "USCIS Administrative Appeals Office non-precedent decisions",
+      "url": "https://www.uscis.gov/administrative-appeals/aao-decisions/aao-non-precedent-decisions",
+      "publisher": "U.S. Citizenship and Immigration Services",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "169,839 redacted PDF decisions since 2005, filter by form type and month/year, free-text search."
+    },
+    {
+      "name": "BIA / Attorney General precedent decisions and OCAHO decisions",
+      "url": "https://www.justice.gov/eoir/ag-bia-decisions",
+      "publisher": "DOJ Executive Office for Immigration Review",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Volumes 8-30 of precedent decisions as HTML/PDF with cumulative indexes; non-precedent BIA decisions not published here."
+    },
+    {
+      "name": "U.S. Tax Court DAWSON opinions and orders",
+      "url": "https://dawson.ustaxcourt.gov/",
+      "publisher": "United States Tax Court",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Search Orders & Opinions and Find a Case; today's opinions/orders pages (linked from ustaxcourt.gov)."
+    },
+    {
+      "name": "MSPB decisions (precedential and nonprecedential)",
+      "url": "https://www.mspb.gov/decisions/precedential.htm",
+      "publisher": "Merit Systems Protection Board",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Separate advanced search tools for precedential and nonprecedential decisions (federal employee appeals, incl. OPM retirement decisions)."
+    },
+    {
+      "name": "NLRB Board decisions",
+      "url": "https://www.nlrb.gov/cases-decisions/decisions/board-decisions",
+      "publisher": "National Labor Relations Board",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Full-text search, PDF slip opinions, 3,332 listing pages; unpublished decisions on a separate page."
+    },
+    {
+      "name": "CourtListener (Free Law Project) API for federal court opinions and PACER/RECAP dockets",
+      "url": "https://wiki.free.law/c/courtlistener/help/api/rest/v4/overview",
+      "publisher": "Free Law Project (non-governmental)",
+      "machine_readable": true,
+      "api_url": "https://www.courtlistener.com/api/rest/v4/",
+      "languages": [
+        "en"
+      ],
+      "note": "JSON/XML REST API over 3,359 jurisdictions incl. federal district and appellate courts that review SSA, VA, USCIS and IRS decisions; rate-limited free tier."
+    },
+    {
+      "name": "HHS Departmental Appeals Board / Medicare Appeals Council decisions",
+      "url": "https://www.hhs.gov/about/agencies/dab/decisions/index.html",
+      "publisher": "Department of Health and Human Services",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Returned 403 to this survey; not verified."
+    },
+    {
+      "name": "SSA Appeals Council Requests for Review (aggregate data only)",
+      "url": "https://catalog.data.gov/dataset/appeals-council-requests-for-review-current-report",
+      "publisher": "Social Security Administration",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "SSA does not publish individual ALJ or Appeals Council decisions; only counts of requests for review (FY2012 on) found. Social Security Rulings/Acquiescence Rulings pages on www.ssa.gov were 403 to this survey."
+    }
+  ],
+  "audit_office": [
+    {
+      "name": "Government Accountability Office (GAO) reports and testimonies",
+      "url": "https://www.gao.gov/assets/a269972.html",
+      "publisher": "U.S. Government Accountability Office",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "gao.gov product and listing pages return 403 (Akamai) to automated clients, but asset files open: GAO-08-40 'Social Security Disability: Better Planning, Management, and Evaluation Could Help Address Backlogs' (Dec 2007) walks through field office intake, DDS determination, reconsideration, ALJ hearing and Appeals Council with a process flow figure. Older GAO reports are mirrored on govinfo (GAOREPORTS collection)."
+    },
+    {
+      "name": "Oversight.gov (Council of the Inspectors General) IG report archive",
+      "url": "https://www.oversight.gov/reports",
+      "publisher": "CIGIE",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Returned HTTP 406 to this survey; not verified. SSA OIG audit PDFs are served from oig-files.ssa.gov (seen in search results, not opened)."
+    }
+  ],
+  "statistics_sources": [
+    {
+      "name": "SSA Open Data: Combined Title II/XVI initial disability average processing time (monthly)",
+      "url": "https://catalog.data.gov/dataset/combined-title-ii-disability-and-title-xvi-blind-and-disabled-average-processing-time-data",
+      "publisher": "Social Security Administration",
+      "machine_readable": true,
+      "api_url": "https://www.ssa.gov/data/fy16-onwards-CDP-Time-Monthly.csv",
+      "languages": [
+        "en"
+      ],
+      "note": "Monthly CSV, CC0, FY2008 onward; also processing-center and state DDS workload datasets. ssa.gov/open/data pages are 403 to automated clients; data.gov record opened."
+    },
+    {
+      "name": "USCIS Immigration and Citizenship Data",
+      "url": "https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data",
+      "publisher": "U.S. Citizenship and Immigration Services",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Quarterly XLSX per form: receipts, approvals, denials, pending, processing time (FY2026 Q3 published 2026-09-08); monthly CSV appropriations report incl. cases pending over six months; RSS. Processing-times tool egov.uscis.gov is Cloudflare-blocked to automated clients."
+    },
+    {
+      "name": "IRS Data Book (Publication 55-B)",
+      "url": "https://www.irs.gov/statistics/soi-tax-stats-irs-data-book",
+      "publisher": "Internal Revenue Service",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Annual XLSX tables: returns filed, refunds, taxpayer service, examinations, collections, penalties, appeals; FY2016-FY2025 plus all-years archive."
+    },
+    {
+      "name": "VBA Annual Benefits Report",
+      "url": "https://www.benefits.va.gov/REPORTS/abr/",
+      "publisher": "Veterans Benefits Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "FY2025 PDF (May 2026) with per-program sections (compensation, pension, education, insurance, home loan, VR&E); BVA 'Decision Wait Times' page at department.va.gov/board-of-veterans-appeals/."
+    },
+    {
+      "name": "DOL ETA Unemployment Insurance Data Dashboard",
+      "url": "https://oui.doleta.gov/unemploy/DataDashboard.asp",
+      "publisher": "Department of Labor, Employment and Training Administration",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "State-run UI program: weekly claims, nonmonetary determinations, benefits timeliness and quality, core measures, benefit accuracy measurement."
+    },
+    {
+      "name": "FOIA.gov annual report data (XML)",
+      "url": "https://www.foia.gov/developer/",
+      "publisher": "Department of Justice",
+      "machine_readable": true,
+      "api_url": "https://www.foia.gov/api/annual-report-xml/DOJ/2021",
+      "languages": [
+        "en"
+      ],
+      "note": "FOIA request volumes and processing times per agency as NIEM XML."
+    },
+    {
+      "name": "Performance.gov CX High Impact Service Providers",
+      "url": "https://www.performance.gov/cx/hisps/",
+      "publisher": "OMB / GSA",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Lists HISPs and their designated services (IRS filing, CBP Global Entry, FEMA disaster assistance, FSA FAFSA/PSLF, FNS WIC, State passports, CMS Medicare onboarding...) under OMB A-11 s.280; customer feedback dashboard URL opened returned 404."
+    }
+  ],
+  "procurement_portals": [
+    {
+      "name": "SAM.gov Contract Opportunities",
+      "url": "https://www.sam.gov/content/opportunities",
+      "publisher": "General Services Administration",
+      "machine_readable": true,
+      "api_url": "https://open.gsa.gov/api/get-opportunities-public-api/",
+      "languages": [
+        "en"
+      ],
+      "note": "'Anyone may search contract opportunities without an account'; Get Opportunities Public API (api.data.gov key) returns notices with resourceLinks to attachments; whether attachments download without login was not stated on the pages opened. Also Entity Management and Exclusions APIs."
+    },
+    {
+      "name": "USAspending.gov (award data, API)",
+      "url": "https://www.usaspending.gov/",
+      "publisher": "Department of the Treasury",
+      "machine_readable": true,
+      "api_url": "https://api.usaspending.gov/",
+      "languages": [
+        "en"
+      ],
+      "note": "Page content not readable in this survey (title only); API root returned Not Found at /api/v2/ without endpoint. Unverified."
+    }
+  ],
+  "rules_as_code": [
+    {
+      "name": "PolicyEngine US (policyengine-us, OpenFisca-Core fork)",
+      "url": "https://github.com/PolicyEngine/policyengine-us",
+      "publisher": "PolicyEngine (non-governmental, AGPL-3.0)",
+      "machine_readable": true,
+      "api_url": "https://policyengine.org/us",
+      "languages": [
+        "en"
+      ],
+      "note": "Rules engine for US federal and state tax-benefit system; policyengine-core README states 'A fork of OpenFisca-Core'. Programs confirmed from policyengine.org: income tax (QBI, charitable), Medicaid/CHIP/ACA, TANF, benefit cliffs; conflicts between statute and forms recorded in a register."
+    },
+    {
+      "name": "IRS Tax Withholding Estimator (official calculator, logic not published)",
+      "url": "https://www.irs.gov/individuals/tax-withholding-estimator",
+      "publisher": "Internal Revenue Service",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Interactive estimator producing a pre-filled W-4; no methodology or source published on the page."
+    }
+  ],
+  "open_data_portals": [
+    {
+      "name": "Data.gov",
+      "url": "https://catalog.data.gov/dataset?q=processing+times",
+      "publisher": "General Services Administration",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "535,269 datasets; SSA, USCIS, VA datasets with CSV/JSON. CKAN API endpoints tried (/api/3/action/package_search, /api/action/package_search) returned Not Found; API availability unverified."
+    },
+    {
+      "name": "data.va.gov (Socrata)",
+      "url": "https://www.data.va.gov/dataset/Board-of-Veterans-Appeals-Decisions/rw54-s8nj",
+      "publisher": "Department of Veterans Affairs",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "Socrata portal; the BVA decisions dataset URL returned 404 content wrapper (dataset page may have moved)."
+    },
+    {
+      "name": "GSA Open APIs catalogue",
+      "url": "https://open.gsa.gov/api/",
+      "publisher": "General Services Administration",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "en"
+      ],
+      "note": "SAM.gov opportunities/entity/exclusions APIs, Site Scanning API, Touchpoints forms API; no service-catalogue API ('Acquisition Gateway Listings API... not yet available')."
+    }
+  ],
+  "authorities": [
+    {
+      "id": "ssa",
+      "name": "Social Security Administration",
+      "name_en": "Social Security Administration",
+      "url": "https://www.ssa.gov/",
+      "domains": [
+        "social_security",
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Retirement, survivors, disability (SSDI), SSI, Medicare enrollment, SSN cards. www.ssa.gov 403 to automated clients; secure.ssa.gov (POMS) opened."
+    },
+    {
+      "id": "irs",
+      "name": "Internal Revenue Service",
+      "name_en": "Internal Revenue Service",
+      "url": "https://www.irs.gov/",
+      "domains": [
+        "tax"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Federal tax returns, refunds, EIN, tax-exempt status, appeals; IRM and FOIA library opened."
+    },
+    {
+      "id": "uscis",
+      "name": "U.S. Citizenship and Immigration Services",
+      "name_en": "U.S. Citizenship and Immigration Services",
+      "url": "https://www.uscis.gov/",
+      "domains": [
+        "immigration",
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Green cards, naturalization, work authorization, asylum, 105 forms; Policy Manual and AAO decisions opened."
+    },
+    {
+      "id": "vba",
+      "name": "Veterans Benefits Administration",
+      "name_en": "Veterans Benefits Administration",
+      "url": "https://www.benefits.va.gov/",
+      "domains": [
+        "social_security",
+        "pensions",
+        "education",
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Disability compensation, pension, education (GI Bill), home loan guaranty, insurance, VR&E; Annual Benefits Report opened."
+    },
+    {
+      "id": "vha",
+      "name": "Veterans Health Administration",
+      "name_en": "Veterans Health Administration",
+      "url": "https://www.va.gov/health-care/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "VA health care enrollment; homepage not opened (va.gov forms page opened)."
+    },
+    {
+      "id": "bva",
+      "name": "Board of Veterans' Appeals",
+      "name_en": "Board of Veterans' Appeals",
+      "url": "https://department.va.gov/board-of-veterans-appeals/",
+      "domains": [
+        "justice",
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Appeal board; decisions searchable."
+    },
+    {
+      "id": "cms",
+      "name": "Centers for Medicare & Medicaid Services",
+      "name_en": "Centers for Medicare & Medicaid Services",
+      "url": "https://www.cms.gov/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Medicare (direct, via contractors), Medicaid/CHIP (state-run), HealthCare.gov marketplace; IOMs opened."
+    },
+    {
+      "id": "fsa-ed",
+      "name": "Federal Student Aid",
+      "name_en": "Federal Student Aid (Department of Education)",
+      "url": "https://studentaid.gov/",
+      "domains": [
+        "education"
+      ],
+      "delivers_services_to_public": true,
+      "note": "FAFSA, federal loans, repayment, PSLF; studentaid.gov returned 503, fsapartners.ed.gov opened."
+    },
+    {
+      "id": "uspto",
+      "name": "U.S. Patent and Trademark Office",
+      "name_en": "U.S. Patent and Trademark Office",
+      "url": "https://www.uspto.gov/",
+      "domains": [
+        "licences",
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Patents and trademarks; MPEP opened, TMEP URL 404."
+    },
+    {
+      "id": "sba",
+      "name": "Small Business Administration",
+      "name_en": "Small Business Administration",
+      "url": "https://www.sba.gov/",
+      "domains": [
+        "business_registry",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "7(a)/504 loans, disaster loans, certifications; SOP 50 10 opened on legacy.sba.gov."
+    },
+    {
+      "id": "cbp",
+      "name": "U.S. Customs and Border Protection",
+      "name_en": "U.S. Customs and Border Protection",
+      "url": "https://www.cbp.gov/",
+      "domains": [
+        "customs",
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Imports/ACE, Global Entry, I-94; CROSS rulings page opened, directives page 403."
+    },
+    {
+      "id": "ice",
+      "name": "U.S. Immigration and Customs Enforcement",
+      "name_en": "U.S. Immigration and Customs Enforcement",
+      "url": "https://www.ice.gov/",
+      "domains": [
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "SEVP (student visa schools), detention/bond; homepage not opened (listed in FR agencies API)."
+    },
+    {
+      "id": "eoir",
+      "name": "Executive Office for Immigration Review",
+      "name_en": "Executive Office for Immigration Review",
+      "url": "https://www.justice.gov/eoir",
+      "domains": [
+        "immigration",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Immigration courts and BIA; Policy Manual and decisions opened."
+    },
+    {
+      "id": "consular",
+      "name": "Bureau of Consular Affairs (Department of State)",
+      "name_en": "Bureau of Consular Affairs",
+      "url": "https://travel.state.gov/",
+      "domains": [
+        "civil_registry",
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Passports, visas, consular reports of birth abroad; travel.state.gov 403 and fam.state.gov 503/TLS error to this survey; listed as HISP on performance.gov."
+    },
+    {
+      "id": "fema",
+      "name": "Federal Emergency Management Agency",
+      "name_en": "Federal Emergency Management Agency",
+      "url": "https://www.fema.gov/",
+      "domains": [
+        "housing",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Individual and public disaster assistance, NFIP flood insurance; guidance page opened."
+    },
+    {
+      "id": "owcp",
+      "name": "Office of Workers' Compensation Programs",
+      "name_en": "Office of Workers' Compensation Programs (DOL)",
+      "url": "https://www.dol.gov/agencies/owcp",
+      "domains": [
+        "social_security",
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "FECA, Black Lung, Energy workers, Longshore claims; FECA Procedure Manual opened."
+    },
+    {
+      "id": "eta",
+      "name": "Employment and Training Administration",
+      "name_en": "Employment and Training Administration (DOL)",
+      "url": "https://www.dol.gov/agencies/eta",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Federal oversight of state UI and workforce programs, foreign labor certification (direct), TAA; advisories pages 403; UI data dashboard opened."
+    },
+    {
+      "id": "whd",
+      "name": "Wage and Hour Division",
+      "name_en": "Wage and Hour Division (DOL)",
+      "url": "https://www.dol.gov/agencies/whd",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Wage complaints, H-2A/H-2B employer compliance; not opened (FR agencies API)."
+    },
+    {
+      "id": "osha",
+      "name": "Occupational Safety and Health Administration",
+      "name_en": "Occupational Safety and Health Administration",
+      "url": "https://www.osha.gov/",
+      "domains": [
+        "employment",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Complaints, whistleblower claims, permits; not opened."
+    },
+    {
+      "id": "ebsa",
+      "name": "Employee Benefits Security Administration",
+      "name_en": "Employee Benefits Security Administration (DOL)",
+      "url": "https://www.dol.gov/agencies/ebsa",
+      "domains": [
+        "pensions",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Benefit claims assistance, Form 5500; HISP per performance.gov."
+    },
+    {
+      "id": "vets",
+      "name": "Veterans' Employment and Training Service",
+      "name_en": "Veterans' Employment and Training Service (DOL)",
+      "url": "https://www.dol.gov/agencies/vets",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "USERRA complaints; not opened."
+    },
+    {
+      "id": "opm",
+      "name": "Office of Personnel Management",
+      "name_en": "Office of Personnel Management",
+      "url": "https://www.opm.gov/",
+      "domains": [
+        "pensions",
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Federal retirement annuities (CSRS/FERS), FEHB, USAJOBS; retirement center and CSRS/FERS Handbook opened."
+    },
+    {
+      "id": "rrb",
+      "name": "U.S. Railroad Retirement Board",
+      "name_en": "U.S. Railroad Retirement Board",
+      "url": "https://rrb.gov/",
+      "domains": [
+        "social_security",
+        "pensions",
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Retirement, survivor, disability, unemployment and sickness benefits for railroad workers; opened."
+    },
+    {
+      "id": "pbgc",
+      "name": "Pension Benefit Guaranty Corporation",
+      "name_en": "Pension Benefit Guaranty Corporation",
+      "url": "https://www.pbgc.gov/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Benefit applications/appeals for trusteed plans, premium filing for sponsors; opened."
+    },
+    {
+      "id": "fns",
+      "name": "Food and Nutrition Service",
+      "name_en": "Food and Nutrition Service (USDA)",
+      "url": "https://www.fns.usda.gov/",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "SNAP, WIC, school meals via states; FNS pages returned 403/404 to this survey."
+    },
+    {
+      "id": "usda-fsa",
+      "name": "Farm Service Agency",
+      "name_en": "Farm Service Agency (USDA)",
+      "url": "https://www.fsa.usda.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Farm loans and program payments via county offices; handbooks page returned 503."
+    },
+    {
+      "id": "nrcs",
+      "name": "Natural Resources Conservation Service",
+      "name_en": "Natural Resources Conservation Service (USDA)",
+      "url": "https://www.nrcs.usda.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Conservation program contracts; not opened."
+    },
+    {
+      "id": "rd",
+      "name": "USDA Rural Development (Rural Housing, Utilities, Business-Cooperative Services)",
+      "name_en": "USDA Rural Development",
+      "url": "https://www.rd.usda.gov/",
+      "domains": [
+        "housing",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Single-family housing direct/guaranteed loans, rural business loans; not opened."
+    },
+    {
+      "id": "aphis",
+      "name": "Animal and Plant Health Inspection Service",
+      "name_en": "Animal and Plant Health Inspection Service (USDA)",
+      "url": "https://www.aphis.usda.gov/",
+      "domains": [
+        "licences",
+        "customs"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Import/export permits for plants and animals; not opened."
+    },
+    {
+      "id": "ams",
+      "name": "Agricultural Marketing Service",
+      "name_en": "Agricultural Marketing Service (USDA)",
+      "url": "https://www.ams.usda.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Organic certification, PACA licences, grading services; usa.gov index opened."
+    },
+    {
+      "id": "forest-service",
+      "name": "U.S. Forest Service",
+      "name_en": "U.S. Forest Service (USDA)",
+      "url": "https://www.fs.usda.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Recreation special use permits (HISP); not opened."
+    },
+    {
+      "id": "hud",
+      "name": "Department of Housing and Urban Development / Federal Housing Administration",
+      "name_en": "HUD / FHA",
+      "url": "https://www.hud.gov/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "FHA mortgage insurance, housing vouchers via PHAs, fair housing complaints; HUDCLIPS handbooks pages opened but listing not rendered."
+    },
+    {
+      "id": "ginnie-mae",
+      "name": "Government National Mortgage Association",
+      "name_en": "Ginnie Mae",
+      "url": "https://www.ginniemae.gov/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Issuer approvals for MBS; not opened (FR agencies API)."
+    },
+    {
+      "id": "fha-fhfa",
+      "name": "Federal Housing Finance Agency",
+      "name_en": "Federal Housing Finance Agency",
+      "url": "https://www.fhfa.gov/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Regulator; listed for completeness, not opened."
+    },
+    {
+      "id": "fda",
+      "name": "Food and Drug Administration",
+      "name_en": "Food and Drug Administration",
+      "url": "https://www.fda.gov/",
+      "domains": [
+        "licences",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Drug/device approvals, facility registration; not opened."
+    },
+    {
+      "id": "hrsa",
+      "name": "Health Resources and Services Administration",
+      "name_en": "Health Resources and Services Administration",
+      "url": "https://www.hrsa.gov/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "National Practitioner Data Bank, vaccine injury compensation, 340B registration; not opened."
+    },
+    {
+      "id": "ihs",
+      "name": "Indian Health Service",
+      "name_en": "Indian Health Service",
+      "url": "https://www.ihs.gov/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Direct health care, Purchased/Referred Care (HISP); not opened."
+    },
+    {
+      "id": "acf",
+      "name": "Administration for Children and Families",
+      "name_en": "Administration for Children and Families (HHS)",
+      "url": "https://www.acf.hhs.gov/",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "TANF, child support (state-run), Office of Refugee Resettlement; usa.gov index opened; HISP from FY25."
+    },
+    {
+      "id": "acl",
+      "name": "Administration for Community Living",
+      "name_en": "Administration for Community Living",
+      "url": "https://acl.gov/",
+      "domains": [
+        "social_security",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Older Americans Act programs via states; usa.gov index opened."
+    },
+    {
+      "id": "samhsa",
+      "name": "Substance Abuse and Mental Health Services Administration",
+      "name_en": "SAMHSA",
+      "url": "https://www.samhsa.gov/",
+      "domains": [
+        "health",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Opioid treatment program certification; not opened."
+    },
+    {
+      "id": "hhs-dab",
+      "name": "HHS Departmental Appeals Board (incl. Medicare Appeals Council)",
+      "name_en": "HHS Departmental Appeals Board",
+      "url": "https://www.hhs.gov/about/agencies/dab/index.html",
+      "domains": [
+        "justice",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Appeal board; pages 403 to this survey."
+    },
+    {
+      "id": "omha",
+      "name": "Office of Medicare Hearings and Appeals",
+      "name_en": "Office of Medicare Hearings and Appeals",
+      "url": "https://www.hhs.gov/about/agencies/omha/index.html",
+      "domains": [
+        "justice",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "ALJ level of Medicare appeals; not opened."
+    },
+    {
+      "id": "fcc",
+      "name": "Federal Communications Commission",
+      "name_en": "Federal Communications Commission",
+      "url": "https://www.fcc.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Spectrum/broadcast/amateur licences, equipment authorization; not opened (FR agencies API)."
+    },
+    {
+      "id": "faa",
+      "name": "Federal Aviation Administration",
+      "name_en": "Federal Aviation Administration",
+      "url": "https://www.faa.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Pilot certificates, aircraft registration, drone registration; not opened."
+    },
+    {
+      "id": "fmcsa",
+      "name": "Federal Motor Carrier Safety Administration",
+      "name_en": "Federal Motor Carrier Safety Administration",
+      "url": "https://www.fmcsa.dot.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "USDOT numbers, operating authority, medical examiner registry; not opened."
+    },
+    {
+      "id": "nhtsa",
+      "name": "National Highway Traffic Safety Administration",
+      "name_en": "National Highway Traffic Safety Administration",
+      "url": "https://www.nhtsa.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Vehicle importer registration, recalls; not opened."
+    },
+    {
+      "id": "marad",
+      "name": "Maritime Administration",
+      "name_en": "Maritime Administration",
+      "url": "https://www.maritime.dot.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Title XI loans, mariner programs; not opened."
+    },
+    {
+      "id": "uscg",
+      "name": "U.S. Coast Guard",
+      "name_en": "U.S. Coast Guard",
+      "url": "https://www.uscg.mil/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Merchant mariner credentials, vessel documentation; not opened."
+    },
+    {
+      "id": "tsa",
+      "name": "Transportation Security Administration",
+      "name_en": "Transportation Security Administration",
+      "url": "https://www.tsa.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "TSA PreCheck, TWIC, HAZMAT endorsement threat assessments; not opened."
+    },
+    {
+      "id": "ttb",
+      "name": "Alcohol and Tobacco Tax and Trade Bureau",
+      "name_en": "Alcohol and Tobacco Tax and Trade Bureau",
+      "url": "https://www.ttb.gov/",
+      "domains": [
+        "licences",
+        "tax"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Permits for producers/importers, label approval (COLA), excise tax; not opened."
+    },
+    {
+      "id": "atf",
+      "name": "Bureau of Alcohol, Tobacco, Firearms and Explosives",
+      "name_en": "ATF",
+      "url": "https://www.atf.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Federal firearms and explosives licences, NFA applications; not opened."
+    },
+    {
+      "id": "dea",
+      "name": "Drug Enforcement Administration",
+      "name_en": "Drug Enforcement Administration",
+      "url": "https://www.dea.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Controlled substance registrations; not opened."
+    },
+    {
+      "id": "fbi-cjis",
+      "name": "FBI Criminal Justice Information Services",
+      "name_en": "FBI CJIS",
+      "url": "https://www.fbi.gov/services/cjis",
+      "domains": [
+        "justice",
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Identity history summary checks (background checks), NICS; not opened."
+    },
+    {
+      "id": "bop",
+      "name": "Federal Bureau of Prisons",
+      "name_en": "Federal Bureau of Prisons",
+      "url": "https://www.bop.gov/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Inmate locator, administrative remedy; not opened."
+    },
+    {
+      "id": "ojp",
+      "name": "Office of Justice Programs (incl. Office for Victims of Crime)",
+      "name_en": "Office of Justice Programs",
+      "url": "https://www.ojp.gov/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Public Safety Officers' Benefits, grants; not opened."
+    },
+    {
+      "id": "copyright",
+      "name": "U.S. Copyright Office",
+      "name_en": "U.S. Copyright Office",
+      "url": "https://www.copyright.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Copyright registration; not opened (FR agencies API)."
+    },
+    {
+      "id": "fincen",
+      "name": "Financial Crimes Enforcement Network",
+      "name_en": "FinCEN",
+      "url": "https://www.fincen.gov/",
+      "domains": [
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Beneficial ownership information reporting, MSB registration; referenced on SBA registration page."
+    },
+    {
+      "id": "fiscal",
+      "name": "Bureau of the Fiscal Service",
+      "name_en": "Bureau of the Fiscal Service (Treasury)",
+      "url": "https://www.fiscal.treasury.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "TreasuryDirect savings bonds, Treasury Offset Program, federal payments; not opened."
+    },
+    {
+      "id": "ofac",
+      "name": "Office of Foreign Assets Control",
+      "name_en": "Office of Foreign Assets Control",
+      "url": "https://ofac.treasury.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Sanctions licences; not opened."
+    },
+    {
+      "id": "cdfi",
+      "name": "CDFI Fund",
+      "name_en": "Community Development Financial Institutions Fund",
+      "url": "https://www.cdfifund.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Certification and awards (HISP per performance.gov); not opened."
+    },
+    {
+      "id": "occ",
+      "name": "Office of the Comptroller of the Currency",
+      "name_en": "Office of the Comptroller of the Currency",
+      "url": "https://www.occ.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Bank charters, consumer complaints; not opened."
+    },
+    {
+      "id": "fdic",
+      "name": "Federal Deposit Insurance Corporation",
+      "name_en": "Federal Deposit Insurance Corporation",
+      "url": "https://www.fdic.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Deposit insurance applications, consumer complaints; not opened."
+    },
+    {
+      "id": "ncua",
+      "name": "National Credit Union Administration",
+      "name_en": "National Credit Union Administration",
+      "url": "https://www.ncua.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Credit union charters; not opened."
+    },
+    {
+      "id": "cfpb",
+      "name": "Consumer Financial Protection Bureau",
+      "name_en": "Consumer Financial Protection Bureau",
+      "url": "https://www.consumerfinance.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Consumer complaint handling; not opened."
+    },
+    {
+      "id": "sec",
+      "name": "Securities and Exchange Commission",
+      "name_en": "Securities and Exchange Commission",
+      "url": "https://www.sec.gov/",
+      "domains": [
+        "licences",
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "EDGAR filings, registrations; not opened."
+    },
+    {
+      "id": "ftc",
+      "name": "Federal Trade Commission",
+      "name_en": "Federal Trade Commission",
+      "url": "https://www.ftc.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Consumer complaints, HSR filings, identity theft reports; not opened."
+    },
+    {
+      "id": "eeoc",
+      "name": "Equal Employment Opportunity Commission",
+      "name_en": "Equal Employment Opportunity Commission",
+      "url": "https://www.eeoc.gov/",
+      "domains": [
+        "employment",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Discrimination charges, federal sector appeals; decisions URL tried returned 404."
+    },
+    {
+      "id": "nlrb",
+      "name": "National Labor Relations Board",
+      "name_en": "National Labor Relations Board",
+      "url": "https://www.nlrb.gov/",
+      "domains": [
+        "employment",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Representation petitions and unfair labor practice charges; decisions opened."
+    },
+    {
+      "id": "mspb",
+      "name": "Merit Systems Protection Board",
+      "name_en": "Merit Systems Protection Board",
+      "url": "https://www.mspb.gov/",
+      "domains": [
+        "employment",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Federal employee appeals; decisions page opened."
+    },
+    {
+      "id": "flra",
+      "name": "Federal Labor Relations Authority",
+      "name_en": "Federal Labor Relations Authority",
+      "url": "https://www.flra.gov/",
+      "domains": [
+        "employment",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Not opened (FR agencies API)."
+    },
+    {
+      "id": "census",
+      "name": "U.S. Census Bureau",
+      "name_en": "U.S. Census Bureau",
+      "url": "https://www.census.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Survey response, age search (proof of age), HISP; not opened."
+    },
+    {
+      "id": "ita",
+      "name": "International Trade Administration",
+      "name_en": "International Trade Administration",
+      "url": "https://www.trade.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Export assistance, AD/CVD; HISP; not opened."
+    },
+    {
+      "id": "bis",
+      "name": "Bureau of Industry and Security",
+      "name_en": "Bureau of Industry and Security",
+      "url": "https://www.bis.gov/",
+      "domains": [
+        "licences",
+        "customs"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Export licences (SNAP-R); not opened."
+    },
+    {
+      "id": "noaa-nmfs",
+      "name": "National Oceanic and Atmospheric Administration / NMFS",
+      "name_en": "NOAA Fisheries",
+      "url": "https://www.fisheries.noaa.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Fishing permits; not opened."
+    },
+    {
+      "id": "eda",
+      "name": "Economic Development Administration",
+      "name_en": "Economic Development Administration",
+      "url": "https://www.eda.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Grants; not opened."
+    },
+    {
+      "id": "mbda",
+      "name": "Minority Business Development Agency",
+      "name_en": "Minority Business Development Agency",
+      "url": "https://www.mbda.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Not opened."
+    },
+    {
+      "id": "nps",
+      "name": "National Park Service",
+      "name_en": "National Park Service",
+      "url": "https://www.nps.gov/",
+      "domains": [
+        "licences",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Passes, permits, reservations (recreation.gov); HISP; not opened."
+    },
+    {
+      "id": "fws",
+      "name": "U.S. Fish and Wildlife Service",
+      "name_en": "U.S. Fish and Wildlife Service",
+      "url": "https://www.fws.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Wildlife import/export permits, duck stamps; HISP; not opened."
+    },
+    {
+      "id": "blm",
+      "name": "Bureau of Land Management",
+      "name_en": "Bureau of Land Management",
+      "url": "https://www.blm.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Grazing, mining claims, oil and gas leases, permits; not opened."
+    },
+    {
+      "id": "bia",
+      "name": "Bureau of Indian Affairs",
+      "name_en": "Bureau of Indian Affairs",
+      "url": "https://www.bia.gov/",
+      "domains": [
+        "social_security",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Probate, trust assets, tribal services; HISP; not opened."
+    },
+    {
+      "id": "btfa",
+      "name": "Bureau of Trust Funds Administration",
+      "name_en": "Bureau of Trust Funds Administration (Interior)",
+      "url": "https://www.doi.gov/btfa",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Individual Indian Money accounts; HISP; not opened."
+    },
+    {
+      "id": "usbr",
+      "name": "Bureau of Reclamation",
+      "name_en": "Bureau of Reclamation",
+      "url": "https://www.usbr.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Water contracts; not opened."
+    },
+    {
+      "id": "osmre",
+      "name": "Office of Surface Mining Reclamation and Enforcement",
+      "name_en": "OSMRE",
+      "url": "https://www.osmre.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Not opened."
+    },
+    {
+      "id": "epa",
+      "name": "Environmental Protection Agency",
+      "name_en": "Environmental Protection Agency",
+      "url": "https://www.epa.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Pesticide registration, permits (NPDES via states), vehicle certification; not opened."
+    },
+    {
+      "id": "nrc",
+      "name": "Nuclear Regulatory Commission",
+      "name_en": "Nuclear Regulatory Commission",
+      "url": "https://www.nrc.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Materials and reactor licences; not opened."
+    },
+    {
+      "id": "ferc",
+      "name": "Federal Energy Regulatory Commission",
+      "name_en": "Federal Energy Regulatory Commission",
+      "url": "https://www.ferc.gov/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Hydropower and pipeline authorizations; not opened."
+    },
+    {
+      "id": "doe",
+      "name": "Department of Energy (loan programs, weatherization via states)",
+      "name_en": "Department of Energy",
+      "url": "https://www.energy.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Not opened."
+    },
+    {
+      "id": "usps",
+      "name": "United States Postal Service",
+      "name_en": "United States Postal Service",
+      "url": "https://www.usps.com/",
+      "domains": [
+        "other",
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Mail, PO boxes, passport acceptance, change of address; not opened (FR agencies API)."
+    },
+    {
+      "id": "sss",
+      "name": "Selective Service System",
+      "name_en": "Selective Service System",
+      "url": "https://www.sss.gov/",
+      "domains": [
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Draft registration and status letters; not opened."
+    },
+    {
+      "id": "dcsa",
+      "name": "Defense Counterintelligence and Security Agency",
+      "name_en": "Defense Counterintelligence and Security Agency",
+      "url": "https://www.dcsa.mil/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Background investigations (HISP); not opened."
+    },
+    {
+      "id": "dfas",
+      "name": "Defense Finance and Accounting Service",
+      "name_en": "Defense Finance and Accounting Service",
+      "url": "https://www.dfas.mil/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Military retired pay and annuities; not opened."
+    },
+    {
+      "id": "tricare",
+      "name": "Defense Health Agency / TRICARE",
+      "name_en": "Defense Health Agency",
+      "url": "https://www.tricare.mil/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Military health coverage; not opened."
+    },
+    {
+      "id": "usace",
+      "name": "U.S. Army Corps of Engineers (Regulatory)",
+      "name_en": "U.S. Army Corps of Engineers",
+      "url": "https://www.usace.army.mil/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Section 404/10 permits; usa.gov index opened."
+    },
+    {
+      "id": "nara",
+      "name": "National Archives and Records Administration",
+      "name_en": "National Archives and Records Administration",
+      "url": "https://www.archives.gov/",
+      "domains": [
+        "civil_registry",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Military service records (NPRC), FOIA; usa.gov index opened."
+    },
+    {
+      "id": "gsa",
+      "name": "General Services Administration",
+      "name_en": "General Services Administration",
+      "url": "https://www.gsa.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "SAM.gov registration, Login.gov, USA.gov, forms library; opened."
+    },
+    {
+      "id": "exim",
+      "name": "Export-Import Bank of the United States",
+      "name_en": "Export-Import Bank",
+      "url": "https://www.exim.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Export credit insurance and loans; not opened."
+    },
+    {
+      "id": "dfc",
+      "name": "U.S. International Development Finance Corporation",
+      "name_en": "DFC",
+      "url": "https://www.dfc.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Not opened (FR agencies API)."
+    },
+    {
+      "id": "peace-corps",
+      "name": "Peace Corps",
+      "name_en": "Peace Corps",
+      "url": "https://www.peacecorps.gov/",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Volunteer applications; not opened."
+    },
+    {
+      "id": "americorps",
+      "name": "AmeriCorps",
+      "name_en": "AmeriCorps",
+      "url": "https://americorps.gov/",
+      "domains": [
+        "employment",
+        "education"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Service positions and education awards; usa.gov index opened."
+    },
+    {
+      "id": "fec",
+      "name": "Federal Election Commission",
+      "name_en": "Federal Election Commission",
+      "url": "https://www.fec.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Committee registration and filings; not opened."
+    },
+    {
+      "id": "ustc",
+      "name": "United States Tax Court",
+      "name_en": "United States Tax Court",
+      "url": "https://www.ustaxcourt.gov/",
+      "domains": [
+        "justice",
+        "tax"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Tax disputes; DAWSON opened."
+    },
+    {
+      "id": "tas",
+      "name": "Taxpayer Advocate Service",
+      "name_en": "Taxpayer Advocate Service",
+      "url": "https://www.taxpayeradvocate.irs.gov/",
+      "domains": [
+        "tax"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Case assistance and Annual Report to Congress (ten most serious problems); opened."
+    },
+    {
+      "id": "cisomb",
+      "name": "Office of the Citizenship and Immigration Services Ombudsman",
+      "name_en": "CIS Ombudsman",
+      "url": "https://www.dhs.gov/topics/cis-ombudsman",
+      "domains": [
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Case assistance requests; no case decisions published; opened."
+    },
+    {
+      "id": "usdfc-abmc",
+      "name": "American Battle Monuments Commission",
+      "name_en": "American Battle Monuments Commission",
+      "url": "https://www.abmc.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Burial/memorial records; usa.gov index opened."
+    },
+    {
+      "id": "nca",
+      "name": "National Cemetery Administration",
+      "name_en": "National Cemetery Administration (VA)",
+      "url": "https://www.cem.va.gov/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Burial benefits and pre-need eligibility; not opened."
+    }
+  ],
+  "layer_scores": [
+    {
+      "layer": "catalogue",
+      "score": 1,
+      "reason": "No national procedure register. USA.gov is a topic directory with links; the Benefit Finder (benefits.gov now redirects to it) returns program lists with 'how to apply' links but no structured steps, deadlines, fees or legal basis fields, and no API or export was found. The PRA inventory on reginfo.gov is a structured register of forms, not of services.",
+      "evidence_urls": [
+        "https://www.usa.gov/",
+        "https://www.usa.gov/benefit-finder",
+        "https://www.reginfo.gov/public/do/PRAMain",
+        "https://open.gsa.gov/api/"
+      ]
+    },
+    {
+      "layer": "legislation",
+      "score": 3,
+      "reason": "Consolidated in-force texts with APIs: eCFR versioner API serves point-in-time XML of any CFR section (opened 20 CFR 404.1520) with structure and version endpoints, up to date as of 2026-10-29; US Code consolidated through P.L. 119-136 (2026-10-22); Federal Register JSON API; govinfo bulk XML for CFR, FR, ECFR, PLAW, STATUTE, COMPS. Caveat: uscode.house.gov download pages 404 ('temporary format') and federalregister.gov HTML pages redirect automated clients to an unblock page.",
+      "evidence_urls": [
+        "https://www.ecfr.gov/api/versioner/v1/titles.json",
+        "https://www.ecfr.gov/api/versioner/v1/full/2026-10-29/title-20.xml?part=404&section=404.1520",
+        "https://uscode.house.gov/browse.html",
+        "https://www.federalregister.gov/api/v1/documents.json?per_page=1",
+        "https://www.govinfo.gov/bulkdata",
+        "https://api.govinfo.gov/collections?api_key=DEMO_KEY"
+      ]
+    },
+    {
+      "layer": "guidance",
+      "score": 3,
+      "reason": "Detailed per-service guidance for the main agencies, enumerable and partly bilingual: USCIS all-forms listing (105 forms, each with purpose, instructions and online filing) and Policy Manual with Spanish nodes; IRS forms-and-publications library (3,137 items, sortable, paginated); USA.gov EN/ES topic pages; VA forms search; PBGC, RRB service pages; VA publishes a BVA sitemap XML. SSA public guidance pages could not be opened (403) and are not counted.",
+      "evidence_urls": [
+        "https://www.uscis.gov/forms/all-forms",
+        "https://www.irs.gov/forms-instructions-and-publications",
+        "https://www.usa.gov/",
+        "https://www.uscis.gov/policy-manual",
+        "https://www.pbgc.gov/",
+        "https://rrb.gov/"
+      ]
+    },
+    {
+      "layer": "forms",
+      "score": 2,
+      "reason": "Forms libraries for the main agencies: IRS (3,137 PDF forms/publications), USCIS (105 forms with PDF, instructions, ~21 filed online), GSA Standard/Optional Forms library, VA find-forms; government-wide PRA inventory on reginfo.gov with OMB control numbers, form numbers and burden data and an ICR XML reports page. No machine-readable field definitions found (IRS MeF schemas not checked); SSA forms page 403.",
+      "evidence_urls": [
+        "https://www.irs.gov/forms-instructions-and-publications",
+        "https://www.uscis.gov/forms/all-forms",
+        "https://www.gsa.gov/reference/forms",
+        "https://www.reginfo.gov/public/do/PRASearch",
+        "https://www.va.gov/find-forms/"
+      ]
+    },
+    {
+      "layer": "internal",
+      "score": 3,
+      "reason": "FOIA 552(a)(2) requires publication of staff manuals, and the main agencies publish them as enumerable repositories: SSA POMS (Domino views by part/chapter/subchapter/section with transmittals; includes SM/MS system-operation parts and HALLEX), IRS IRM (HTML per section plus ZIP source-file directory), USCIS Policy Manual and reading-room procedures manuals (2,061 entries), CMS IOMs with transmittals, DOL FECA Procedure Manual, USPTO MPEP, SBA SOP 50 10, OPM CSRS/FERS Handbook, FSA Handbook, EOIR Policy Manual, FEMA PAPPG. VA M21-1 exists on KnowVA but is JavaScript-only and unread.",
+      "evidence_urls": [
+        "https://secure.ssa.gov/apps10/poms.nsf/partlist!OpenView",
+        "https://secure.ssa.gov/apps10/poms.nsf/lnx/0411005001",
+        "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501280000",
+        "https://www.irs.gov/irm",
+        "https://www.irs.gov/downloads/irm",
+        "https://www.uscis.gov/policy-manual",
+        "https://www.uscis.gov/policy-manual/volume-1-part-e",
+        "https://www.uscis.gov/records/electronic-reading-room",
+        "https://www.cms.gov/medicare/regulations-guidance/manuals/internet-only-manuals-ioms",
+        "https://www.dol.gov/agencies/owcp/FECA/regs/compliance/DFECfolio/FECA-PT2",
+        "https://www.uspto.gov/web/offices/pac/mpep/index.html",
+        "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+        "https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/",
+        "https://fsapartners.ed.gov/knowledge-center/fsa-handbook",
+        "https://www.justice.gov/eoir/eoir-policy-manual",
+        "https://www.justice.gov/oip/freedom-information-act-5-usc-552"
+      ]
+    },
+    {
+      "layer": "statistics",
+      "score": 3,
+      "reason": "Open data on cases and outcomes: SSA monthly initial-disability processing-time CSV (CC0) and DDS workload data on data.gov; USCIS quarterly XLSX per form with receipts, approvals, denials, pending and processing time plus monthly CSV; IRS Data Book XLSX (returns, examinations, appeals, service); VBA Annual Benefits Report; DOL UI dashboard (timeliness, nonmonetary determinations); FOIA.gov XML. Automation rates: not found anywhere.",
+      "evidence_urls": [
+        "https://catalog.data.gov/dataset/combined-title-ii-disability-and-title-xvi-blind-and-disabled-average-processing-time-data",
+        "https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data",
+        "https://www.irs.gov/statistics/soi-tax-stats-irs-data-book",
+        "https://www.benefits.va.gov/REPORTS/abr/",
+        "https://oui.doleta.gov/unemploy/DataDashboard.asp",
+        "https://www.foia.gov/developer/"
+      ]
+    },
+    {
+      "layer": "appeals",
+      "score": 2,
+      "reason": "Searchable full-text databases of appeal-board and court decisions: BVA decisions as plain-text files at predictable URLs (opened A26031219, 2026-04-06), AAO 169,839 non-precedent decisions, BIA precedents, Tax Court DAWSON, MSPB, NLRB, and CourtListener API for federal courts. Not 3 because the largest benefit adjudicator (SSA ALJ/Appeals Council) publishes no decisions (only aggregate counts), there is no general ombudsman and the CIS Ombudsman publishes no case outcomes, HHS DAB/Medicare Appeals Council pages were 403, and government bulk access is limited to sitemaps/data.gov records.",
+      "evidence_urls": [
+        "https://search.usa.gov/search/docs?affiliate=bvadecisions&query=service+connection+knee",
+        "https://www.va.gov/vetapp26/Files4/A26031219.txt",
+        "https://www.uscis.gov/administrative-appeals/aao-decisions/aao-non-precedent-decisions",
+        "https://www.justice.gov/eoir/ag-bia-decisions",
+        "https://www.ustaxcourt.gov/",
+        "https://www.mspb.gov/decisions/precedential.htm",
+        "https://www.nlrb.gov/cases-decisions/decisions/board-decisions",
+        "https://wiki.free.law/c/courtlistener/help/api/rest/v4/overview",
+        "https://catalog.data.gov/dataset/appeals-council-requests-for-review-current-report",
+        "https://www.dhs.gov/topics/cis-ombudsman"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "eCFR versioner API serves point-in-time XML of 20 CFR 404.1520 (five-step disability evaluation) and titles.json reports up_to_date_as_of 2026-10-29",
+      "url": "https://www.ecfr.gov/api/versioner/v1/full/2026-10-29/title-20.xml?part=404&section=404.1520",
+      "layer": "legislation",
+      "note": "Requires Accept-Encoding compression header; versions endpoint lists amendment dates"
+    },
+    {
+      "claim": "US Code Online is current through Public Law 119-136 (October 22, 2026); site in 'temporary format', download pages 404",
+      "url": "https://uscode.house.gov/browse.html",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "Federal Register JSON API returns documents with document_number, type and html_url; agencies endpoint returns 473 agencies with homepage URLs",
+      "url": "https://www.federalregister.gov/api/v1/agencies.json",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "govinfo bulk data JSON listing includes CFR, FR, ECFR, PLAW, STATUTE, COMPS, BILLS collections; CFR bulk folder has 2026 edition",
+      "url": "https://www.govinfo.gov/bulkdata",
+      "layer": "legislation",
+      "note": "Requires Accept: application/json for /bulkdata/json"
+    },
+    {
+      "claim": "USA.gov is a 20-topic directory with Spanish version; Benefit Finder gives program lists with how-to-apply links; benefits.gov 301-redirects to it",
+      "url": "https://www.usa.gov/benefit-finder",
+      "layer": "catalogue",
+      "note": "No API found"
+    },
+    {
+      "claim": "reginfo.gov ICR search exposes OMB control number, agency, form number, burden, affected public and obligation to respond; ICR XML Reports page exists",
+      "url": "https://www.reginfo.gov/public/do/PRASearch",
+      "layer": "forms",
+      "note": ""
+    },
+    {
+      "claim": "5 U.S.C. 552(a)(2) requires agencies to make available 'administrative staff manuals and instructions to staff that affect a member of the public'",
+      "url": "https://www.justice.gov/oip/freedom-information-act-5-usc-552",
+      "layer": "internal",
+      "note": "Basis for procedure_publication_duty = true"
+    },
+    {
+      "claim": "POMS part list: RM, GN, RS, DI, SI, HI, SM Systems and Methods, NL, PM, QR, VB, PR, PS, SL, MS Modernized System Operations Manual, DX Data Exchange; also HALLEX, Emergency Messages, Chief Judge Bulletins",
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/partlist!OpenView",
+      "layer": "internal",
+      "note": "Enumerable via chapterlist!openview&restricttocategory=NN"
+    },
+    {
+      "claim": "POMS DI 11005.001 Field Office Disability Interviews (TN 134, 05-26, effective 2023-08-01) instructs interviewers to review MBR, SSID, DDSQ, HACPS and ARPS queries before the interview",
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/0411005001",
+      "layer": "internal",
+      "note": "Section-level staff procedure naming case systems"
+    },
+    {
+      "claim": "POMS DI 110 subchapter listing holds 247 entries",
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/subchapterlist!openview&restricttocategory=04110",
+      "layer": "internal",
+      "note": "Scale indicator"
+    },
+    {
+      "claim": "HALLEX chapter HA 01280 Administrative Law Judge Decisions lists sections with transmittal numbers (e.g. HA 01280.020 Decision Writing Instructions TN I-2-267 01-06-2025)",
+      "url": "https://secure.ssa.gov/apps10/poms.nsf/lnx/2501280000",
+      "layer": "internal",
+      "note": "www.ssa.gov/OP_Home/hallex returns 403 to automated clients"
+    },
+    {
+      "claim": "Internal Revenue Manual has Parts 1-39 with HTML per section; site says versions are provided to meet E-FOIA",
+      "url": "https://www.irs.gov/irm",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "IRS publishes IRM source files as ZIP per section (irm03-012-003r.zip), paginated listing, posted 2026-09-29 to 2026-10-30",
+      "url": "https://www.irs.gov/downloads/irm",
+      "layer": "internal",
+      "note": "Enumerable repository"
+    },
+    {
+      "claim": "USCIS Policy Manual: 12 volumes, officers expected to follow it, replaces the AFM (crosswalk PDF), Recent Updates list",
+      "url": "https://www.uscis.gov/policy-manual",
+      "layer": "internal",
+      "note": "Old AFM URL now 404"
+    },
+    {
+      "claim": "USCIS Policy Manual Vol.1 Part E Adjudications has chapters on Evidence, Discretionary Analysis, Rendering a Decision, Post-Decision Actions; current as of 2026-10-27",
+      "url": "https://www.uscis.gov/policy-manual/volume-1-part-e",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "USCIS Electronic Reading Room holds 2,061 entries including Credible Fear and Reasonable Fear Procedures Manuals (2025-04-02)",
+      "url": "https://www.uscis.gov/records/electronic-reading-room",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "CMS Internet-Only Manuals 100-01 to 100-25 are 'day-to-day operating instructions, policies, and procedures' for CMS components, contractors and state agencies",
+      "url": "https://www.cms.gov/medicare/regulations-guidance/manuals/internet-only-manuals-ioms",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "Medicare Claims Processing Manual (100-04) is 39 PDF chapters",
+      "url": "https://www.cms.gov/regulations-and-guidance/guidance/manuals/internet-only-manuals-ioms-items/cms018912",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "CMS transmittals listed by year 2013-2026 communicate manual changes",
+      "url": "https://www.cms.gov/medicare/regulations-guidance/transmittals",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "FECA Procedure Manual Part 2 covers adjudication, payment, case management, appeals, automated systems (chapters 2-0100 to 2-1800)",
+      "url": "https://www.dol.gov/agencies/owcp/FECA/regs/compliance/DFECfolio/FECA-PT2",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "MPEP 9th ed. rev. 01.2024 in HTML/PDF/zip with archives 1948-2023",
+      "url": "https://www.uspto.gov/web/offices/pac/mpep/index.html",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "SBA SOP 50 10 v8.1 (effective 2026-10-01) contains 7(a) and 504 loan origination policies and procedures, DOCX",
+      "url": "https://legacy.sba.gov/document/sop-50-10-lender-development-company-loan-programs",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "OPM CSRS/FERS Handbook: 47 chapters for agency personnel and payroll offices",
+      "url": "https://www.opm.gov/retirement-center/publications-forms/csrsfers-handbook/",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "FSA Handbook available as web format 2024-27 and PDF back to 1995-96",
+      "url": "https://fsapartners.ed.gov/knowledge-center/fsa-handbook",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "EOIR Policy Manual (7 parts, OPPMs, docketing manual) last updated 2026-03-18",
+      "url": "https://www.justice.gov/eoir/eoir-policy-manual",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "FEMA guidance page lists PAPPG v3.1, Damage Assessment Operations Manual and policies as PDF",
+      "url": "https://www.fema.gov/about/reports-and-data/guidance",
+      "layer": "internal",
+      "note": "IAPPG not on this page"
+    },
+    {
+      "claim": "M21-1 Adjudication Procedures Manual on KnowVA requires JavaScript; content not readable",
+      "url": "https://www.knowva.ebenefits.va.gov/system/templates/selfservice/va_ssnew/help/customer/locale/en-US/portal/554400000001018/topic/554400000004049/M21-1-Adjudication-Procedures-Manual",
+      "layer": "internal",
+      "note": "FR notice 2016-06257 'Web Automated Reference Material System' located via FR API"
+    },
+    {
+      "claim": "GAO-08-40 (2007) describes SSA disability process from field office through DDS, reconsideration, ALJ hearing to Appeals Council with a flow figure; gao.gov product pages 403 but asset text opens",
+      "url": "https://www.gao.gov/assets/a269972.html",
+      "layer": "internal",
+      "note": "Audit as process description"
+    },
+    {
+      "claim": "USCIS lists 105 forms with purpose, Form Details and File Online buttons (about 21 online)",
+      "url": "https://www.uscis.gov/forms/all-forms",
+      "layer": "forms",
+      "note": ""
+    },
+    {
+      "claim": "IRS forms and publications library lists 3,137 items as PDF with sort and pagination",
+      "url": "https://www.irs.gov/forms-instructions-and-publications",
+      "layer": "forms",
+      "note": ""
+    },
+    {
+      "claim": "GSA Forms Library indexes Standard, Optional and GSA forms with revision dates",
+      "url": "https://www.gsa.gov/reference/forms",
+      "layer": "forms",
+      "note": ""
+    },
+    {
+      "claim": "SSA monthly combined disability processing time is a CC0 CSV series on data.gov, FY2008 onward, updated monthly",
+      "url": "https://catalog.data.gov/dataset/combined-title-ii-disability-and-title-xvi-blind-and-disabled-average-processing-time-data",
+      "layer": "statistics",
+      "note": "ssa.gov/open/data 403 to automated clients"
+    },
+    {
+      "claim": "USCIS publishes quarterly XLSX per form with receipts, approvals, denials, pending and processing time, plus monthly CSV appropriations report",
+      "url": "https://www.uscis.gov/tools/reports-and-studies/immigration-and-citizenship-data",
+      "layer": "statistics",
+      "note": "FY2026 Q3 published 2026-09-08"
+    },
+    {
+      "claim": "IRS Data Book provides XLSX tables on returns, service, compliance, collections, appeals, FY2016-FY2025",
+      "url": "https://www.irs.gov/statistics/soi-tax-stats-irs-data-book",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "VBA Annual Benefits Report FY2025 (May 2026) PDF by program",
+      "url": "https://www.benefits.va.gov/REPORTS/abr/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "DOL UI Data Dashboard links state-level nonmonetary determinations, benefits timeliness and quality, core measures",
+      "url": "https://oui.doleta.gov/unemploy/DataDashboard.asp",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "Performance.gov lists HISPs and their services (IRS filing, CBP Global Entry, FEMA disaster assistance, FSA FAFSA, FNS WIC, passports)",
+      "url": "https://www.performance.gov/cx/hisps/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "BVA decisions are full-text searchable via search.usa.gov affiliate bvadecisions, served as .txt at va.gov/vetapp26/...",
+      "url": "https://search.usa.gov/search/docs?affiliate=bvadecisions&query=service+connection+knee",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "BVA decision A26031219 (2026-04-06) decides CUE and rating for left knee service connection",
+      "url": "https://www.va.gov/vetapp26/Files4/A26031219.txt",
+      "layer": "appeals",
+      "note": "Opened one benefit decision"
+    },
+    {
+      "claim": "AAO non-precedent decisions database holds about 169,839 PDF decisions since 2005",
+      "url": "https://www.uscis.gov/administrative-appeals/aao-decisions/aao-non-precedent-decisions",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "BIA/AG precedent decisions volumes 8-30 with cumulative indexes",
+      "url": "https://www.justice.gov/eoir/ag-bia-decisions",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Tax Court opinions and orders searchable in DAWSON",
+      "url": "https://www.ustaxcourt.gov/",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "NLRB Board decisions full-text searchable, PDF, 3,332 listing pages",
+      "url": "https://www.nlrb.gov/cases-decisions/decisions/board-decisions",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "SSA publishes only aggregate Appeals Council request-for-review counts, not decisions",
+      "url": "https://catalog.data.gov/dataset/appeals-council-requests-for-review-current-report",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "CourtListener REST API v4 serves case law and PACER data as JSON/XML over 3,359 jurisdictions",
+      "url": "https://wiki.free.law/c/courtlistener/help/api/rest/v4/overview",
+      "layer": "appeals",
+      "note": "Non-governmental"
+    },
+    {
+      "claim": "FOIA.gov developer page: agency components API (key required) and annual report XML per agency/year",
+      "url": "https://www.foia.gov/developer/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "SAM.gov: anyone may search contract opportunities without an account; public opportunities API returns attachment resourceLinks",
+      "url": "https://open.gsa.gov/api/get-opportunities-public-api/",
+      "layer": null,
+      "note": "Attachment download without login not confirmed"
+    },
+    {
+      "claim": "policyengine-core README: 'A fork of OpenFisca-Core'; policyengine-us models US federal and state tax-benefit rules (AGPL-3.0)",
+      "url": "https://github.com/PolicyEngine/policyengine-core",
+      "layer": null,
+      "note": "Non-governmental rules-as-code"
+    },
+    {
+      "claim": "Unemployment insurance: 'There is no federal unemployment program'; each state runs its own",
+      "url": "https://www.usa.gov/unemployment-benefits",
+      "layer": null,
+      "note": "Government structure"
+    },
+    {
+      "claim": "Vital records: 'The federal government does not distribute certificates'; states/territories issue them",
+      "url": "https://www.cdc.gov/nchs/w2w/index.htm",
+      "layer": null,
+      "note": "Government structure"
+    },
+    {
+      "claim": "Business entity formation is with state Secretaries of State; federal registrations are EIN (IRS), BOI (FinCEN), trademarks (USPTO)",
+      "url": "https://www.sba.gov/business-guide/launch-your-business/register-your-business",
+      "layer": null,
+      "note": "Government structure"
+    }
+  ],
+  "best_documented_domains": [
+    "social_security",
+    "tax",
+    "immigration",
+    "pensions",
+    "health"
+  ],
+  "notes": "Federal level only. Access conditions matter for any automated mapping: www.ssa.gov (incl. forms, rulings, HALLEX legacy, open data pages), gao.gov product pages, acus.gov, dol.gov/agencies/eta, fns.usda.gov, hhs.gov/dab, cbp.gov/document, travel.state.gov and egov.uscis.gov returned 403 (Akamai/Cloudflare) to this survey's clients; federalregister.gov HTML redirects to an unblock page; knowva.ebenefits.va.gov is JavaScript-only; muckrock.com 403; oversight.gov 406; studentaid.gov, fsa.usda.gov, acus.law.stanford.edu 503. The APIs (eCFR, Federal Register, govinfo, data.gov records) and secure.ssa.gov (POMS/HALLEX) answered. Web search budget was exhausted before DOL ETA advisories, FNS SNAP guidance and SSA forms could be confirmed. Authorities not opened are marked in their notes; their URLs come from the Federal Register agencies API listing or performance.gov HISP list.",
+  "open_questions": [
+    "M21-1 Adjudication Procedures Manual: confirm readability of the KnowVA public version (JavaScript app) and whether it is enumerable; the 2016 FR notice 2016-06257 should state parity with the internal version (full text blocked).",
+    "SSA: www.ssa.gov forms library, Social Security Rulings, Acquiescence Rulings, Emergency Messages and Open Data pages could not be opened (403); verify from a browser and check whether ssa.gov/open/data offers CSV directly.",
+    "DOL ETA advisories (TEGL/UIPL) and FNS SNAP policy memos: pages 403/404; confirm listing pages, counts and whether they describe state-agency procedures.",
+    "HHS Departmental Appeals Board and Medicare Appeals Council decision databases (403) and OMHA: confirm search and coverage.",
+    "GAO: find the current reports/testimonies search (products pages 403) and any API; check recent performance audits of USCIS, VA and SSA processing.",
+    "ACUS Federal Administrative Adjudication Database (acus.gov 403, Stanford mirror 503): confirm fields per adjudication scheme and export.",
+    "Data.gov CKAN API endpoint (package_search returned Not Found on two paths); confirm the current API base.",
+    "IRS Modernized e-File schemas and USCIS online-filing form definitions: check whether machine-readable form field specifications exist (would raise forms to 3).",
+    "SAM.gov: confirm that opportunity attachments download without an account; locate tender documents for SSA/USCIS case-management systems.",
+    "Automation rates: no agency publication found on automated decision shares (e.g. SSA Quick Disability Determination, IRS automated underreporter); check SSA Annual Performance Report and TIGTA/SSA OIG audits.",
+    "HUD HUDCLIPS handbook listings and State Department FAM/FAH (fam.state.gov 503/TLS error) not read; both are expected internal procedure sources.",
+    "USCIS processing-times tool (egov.uscis.gov) Cloudflare-blocked; confirm historic processing-time downloads."
+  ]
+}
