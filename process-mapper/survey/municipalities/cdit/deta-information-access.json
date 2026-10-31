@@ -1,0 +1,204 @@
+{
+  "service_id": "ro-tm-deta-information-access",
+  "municipality": "Deta",
+  "as_of": "2026-10-31",
+  "status": "partial_review_ledger_not_validated_map",
+  "scope": "Requests and administrative complaints; proactive publication and court proceedings are adjacent processes, not mapped here.",
+  "source_registry": "screen.json",
+  "independence_note": "Independent document origin is counted; mirrored laws and the same portal forms are not independent corroboration.",
+  "claims": [
+    {
+      "id": "L1",
+      "kind": "responsibility",
+      "statement": "Access is provided through the public-relations unit or a designated person.",
+      "actor": "public_relations_or_designated_person",
+      "source_id": "law-544",
+      "locator": "Art. 3",
+      "quote": "prin intermediul compartimentului pentru relații publice sau al persoanei desemnate în acest scop.",
+      "application": "national legal structure; local role mapping unvalidated",
+      "independent_origin_count": 1,
+      "automation": "unknown",
+      "validated": false,
+      "quote_verified": false
+    },
+    {
+      "id": "L2",
+      "kind": "rule",
+      "statement": "The authority ROF defines the organisation and duties of its public-relations unit.",
+      "actor": "authority",
+      "source_id": "law-544",
+      "locator": "Art. 4(2)",
+      "quote": "prin regulamentul de organizare și funcționare",
+      "application": "national legal structure; Deta ROF unread",
+      "independent_origin_count": 1,
+      "automation": "unknown",
+      "validated": false,
+      "quote_verified": false
+    },
+    {
+      "id": "D1",
+      "kind": "channel",
+      "statement": "Deta lists an electronic public-information request form.",
+      "actor": "requester",
+      "source_id": "deta-catalogue",
+      "locator": "Relations with public / request link",
+      "quote": "Cerere in baza legii 544/2001",
+      "application": "listed channel; form contents behind login",
+      "independent_origin_count": 1,
+      "automation": "unknown",
+      "validated": false,
+      "quote_verified": false
+    },
+    {
+      "id": "D2",
+      "kind": "exception_channel",
+      "statement": "Deta lists complaints for no reply and a negative reply.",
+      "actor": "requester",
+      "source_id": "deta-catalogue",
+      "locator": "Relations with public / complaint links",
+      "quote": null,
+      "application": "catalogue observation; not a verified sequence",
+      "independent_origin_count": 1,
+      "automation": "unknown",
+      "validated": false,
+      "quote_verified": false
+    },
+    {
+      "id": "D3",
+      "kind": "actor_lead",
+      "statement": "The town hall publishes a person responsible for information access.",
+      "actor": "designated_information_officer",
+      "source_id": "deta-foi",
+      "locator": "Responsible person line",
+      "quote": "Persoana responsabilă pentru Legea 544-2001",
+      "application": "current designation and actual desk role need confirmation",
+      "independent_origin_count": 1,
+      "automation": "unknown",
+      "validated": false,
+      "quote_verified": false
+    }
+  ],
+  "historical_national_process_skeleton": [
+    {
+      "id": "H1",
+      "action": "Receive requests",
+      "actor": "public_information_role",
+      "locator": "Art.20(1)"
+    },
+    {
+      "id": "H2",
+      "action": "Register written requests and acknowledge receipt",
+      "actor": "public_information_role",
+      "locator": "Art.20(4)"
+    },
+    {
+      "id": "H3",
+      "action": "Assess whether information is already published, available on request, or exempt",
+      "actor": "public_information_role",
+      "locator": "Art.21(1)"
+    },
+    {
+      "id": "H4",
+      "action": "Point requester to already published information",
+      "actor": "public_information_role",
+      "locator": "Art.21(2)"
+    },
+    {
+      "id": "H5",
+      "action": "Route other requests to competent internal units",
+      "actor": "public_information_role",
+      "locator": "Art.22(1)"
+    },
+    {
+      "id": "H6",
+      "action": "Receive unit response and draft reply",
+      "actor": "public_information_role",
+      "locator": "Art.23(1)"
+    },
+    {
+      "id": "H7",
+      "action": "Register and transmit reply",
+      "actor": "unknown",
+      "locator": "Art.23(2)"
+    },
+    {
+      "id": "H8",
+      "action": "Forward out-of-competence requests and inform requester",
+      "actor": "public_information_role",
+      "locator": "Art.24"
+    },
+    {
+      "id": "H9",
+      "action": "Analyse administrative complaint",
+      "actor": "complaint_commission",
+      "locator": "Art.35"
+    }
+  ],
+  "historical_skeleton_source_id": "hg123-historical",
+  "historical_skeleton_warning": "Paraphrased research notes, not quote-verified claims; current applicability and local execution unverified. Do not feed to executable workflow. No deadlines admitted.",
+  "order_evidence": [
+    {
+      "before": "H2",
+      "after": "H3",
+      "source_id": "hg123-historical",
+      "locator": "Art.21(1)",
+      "status": "explicit_historical_only"
+    }
+  ],
+  "open_questions": [
+    "Which consolidated law and implementing norms apply on the map date, and which historical provisions were amended?",
+    "Which current Deta ROF provisions and local dispositions assign the information-access role?",
+    "Who registers, routes, gathers information, reviews exemptions, signs and sends each response?",
+    "Do portal, email, paper and verbal requests enter the same register and workflow?",
+    "Which acknowledgement, deadline and reminder functions actually run automatically?",
+    "Who handles administrative complaints, and what is the current commission mandate?",
+    "What are the current volumes, delays, refusals and complaint outcomes?",
+    "Which variants and exceptions are missing from this partial ledger?"
+  ],
+  "review_options": [
+    "we do this",
+    "differently: describe",
+    "we do not",
+    "ask: person or role"
+  ],
+  "change_log": [
+    {
+      "source_id": "law-544",
+      "added": [
+        "L1",
+        "L2"
+      ],
+      "notes": "Readable national provisions establish the role and explicit need for local ROF; no desk or automation inferred."
+    },
+    {
+      "source_id": "deta-catalogue",
+      "added": [
+        "D1",
+        "D2"
+      ],
+      "notes": "Local catalogue adds channels; individual form links redirect to login."
+    },
+    {
+      "source_id": "deta-foi",
+      "added": [
+        "D3"
+      ],
+      "notes": "Role designation lead; current status unknown."
+    },
+    {
+      "source_id": "hg123-historical",
+      "added_notes": [
+        "H1",
+        "H2",
+        "H3",
+        "H4",
+        "H5",
+        "H6",
+        "H7",
+        "H8",
+        "H9"
+      ],
+      "notes": "Procedural national source adds internal structure, but kept outside verified/current claim set until versioned acquisition and quote checks."
+    }
+  ]
+}
