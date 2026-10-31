@@ -1,0 +1,586 @@
+{
+  "$defs": {
+    "AuthorityStub": {
+      "description": "A national authority worth surveying in the authority pass.",
+      "properties": {
+        "id": {
+          "description": "Short slug, ascii, e.g. 'kela', 'dwp', 'ssa'",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "name_en": {
+          "default": "",
+          "title": "Name En",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "domains": {
+          "default": [],
+          "description": "Policy domains: social_security, tax, pensions, health, immigration, business_registry, civil_registry, customs, employment, education, licences, housing, justice, other",
+          "items": {
+            "type": "string"
+          },
+          "title": "Domains",
+          "type": "array"
+        },
+        "delivers_services_to_public": {
+          "default": true,
+          "title": "Delivers Services To Public",
+          "type": "boolean"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "url"
+      ],
+      "title": "AuthorityStub",
+      "type": "object"
+    },
+    "Evidence": {
+      "properties": {
+        "claim": {
+          "description": "One checkable statement, e.g. 'Finlex serves consolidated acts as Akoma Ntoso XML'",
+          "title": "Claim",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "layer": {
+          "anyOf": [
+            {
+              "enum": [
+                "catalogue",
+                "legislation",
+                "guidance",
+                "forms",
+                "internal",
+                "statistics",
+                "appeals"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Layer"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim",
+        "url"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "FoiRegime": {
+      "properties": {
+        "law_exists": {
+          "default": false,
+          "title": "Law Exists",
+          "type": "boolean"
+        },
+        "law_name": {
+          "default": "",
+          "title": "Law Name",
+          "type": "string"
+        },
+        "law_url": {
+          "default": "",
+          "title": "Law Url",
+          "type": "string"
+        },
+        "proactive_publication_duties": {
+          "default": [],
+          "description": "What bodies must publish without being asked, e.g. 'procedure descriptions with deadlines and forms' (Italy d.lgs 33/2013 art. 35)",
+          "items": {
+            "type": "string"
+          },
+          "title": "Proactive Publication Duties",
+          "type": "array"
+        },
+        "procedure_publication_duty": {
+          "default": false,
+          "description": "True if the law obliges bodies to publish descriptions of their administrative procedures",
+          "title": "Procedure Publication Duty",
+          "type": "boolean"
+        },
+        "disclosure_platforms": {
+          "default": [],
+          "description": "Request platforms with public logs (Alaveteli instances, government disclosure logs)",
+          "items": {
+            "$ref": "#/$defs/NamedSystem"
+          },
+          "title": "Disclosure Platforms",
+          "type": "array"
+        }
+      },
+      "title": "FoiRegime",
+      "type": "object"
+    },
+    "LayerScore": {
+      "properties": {
+        "layer": {
+          "enum": [
+            "catalogue",
+            "legislation",
+            "guidance",
+            "forms",
+            "internal",
+            "statistics",
+            "appeals"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "score": {
+          "maximum": 3,
+          "minimum": 0,
+          "title": "Score",
+          "type": "integer"
+        },
+        "reason": {
+          "description": "Why this score, naming the systems or document types found",
+          "title": "Reason",
+          "type": "string"
+        },
+        "evidence_urls": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "layer",
+        "score",
+        "reason"
+      ],
+      "title": "LayerScore",
+      "type": "object"
+    },
+    "LegalInformationSystem": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "publisher": {
+          "default": "",
+          "title": "Publisher",
+          "type": "string"
+        },
+        "machine_readable": {
+          "default": false,
+          "description": "API, bulk download or structured XML/JSON",
+          "title": "Machine Readable",
+          "type": "boolean"
+        },
+        "api_url": {
+          "default": "",
+          "title": "Api Url",
+          "type": "string"
+        },
+        "languages": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "consolidated_texts": {
+          "default": false,
+          "description": "In-force consolidated versions, not only the original acts",
+          "title": "Consolidated Texts",
+          "type": "boolean"
+        },
+        "consolidation_lag": {
+          "default": "",
+          "description": "How current the consolidation is, if known",
+          "title": "Consolidation Lag",
+          "type": "string"
+        },
+        "covers_regulations": {
+          "default": false,
+          "description": "Secondary legislation / decrees / ministerial regulations included",
+          "title": "Covers Regulations",
+          "type": "boolean"
+        },
+        "format": {
+          "default": "unknown",
+          "enum": [
+            "akn_xml",
+            "xml",
+            "html",
+            "pdf",
+            "mixed",
+            "unknown"
+          ],
+          "title": "Format",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ],
+      "title": "LegalInformationSystem",
+      "type": "object"
+    },
+    "NamedSystem": {
+      "description": "A website, register or portal that matters for one layer.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "publisher": {
+          "default": "",
+          "title": "Publisher",
+          "type": "string"
+        },
+        "machine_readable": {
+          "default": false,
+          "description": "API, bulk download or structured XML/JSON",
+          "title": "Machine Readable",
+          "type": "boolean"
+        },
+        "api_url": {
+          "default": "",
+          "title": "Api Url",
+          "type": "string"
+        },
+        "languages": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ],
+      "title": "NamedSystem",
+      "type": "object"
+    },
+    "ServiceCatalogue": {
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "publisher": {
+          "default": "",
+          "title": "Publisher",
+          "type": "string"
+        },
+        "machine_readable": {
+          "default": false,
+          "description": "API, bulk download or structured XML/JSON",
+          "title": "Machine Readable",
+          "type": "boolean"
+        },
+        "api_url": {
+          "default": "",
+          "title": "Api Url",
+          "type": "string"
+        },
+        "languages": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        },
+        "scope": {
+          "default": "unknown",
+          "enum": [
+            "national",
+            "national_and_subnational",
+            "unknown"
+          ],
+          "title": "Scope",
+          "type": "string"
+        },
+        "record_count_estimate": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Record Count Estimate"
+        },
+        "fields_per_record": {
+          "default": [],
+          "description": "What a record holds: steps, forms, deadlines, legal basis, fees, responsible unit, channels ...",
+          "items": {
+            "type": "string"
+          },
+          "title": "Fields Per Record",
+          "type": "array"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ],
+      "title": "ServiceCatalogue",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "country_id": {
+      "description": "ISO 3166-1 alpha-2, lower case",
+      "title": "Country Id",
+      "type": "string"
+    },
+    "country_name": {
+      "title": "Country Name",
+      "type": "string"
+    },
+    "surveyed_at": {
+      "default": "",
+      "title": "Surveyed At",
+      "type": "string"
+    },
+    "model": {
+      "default": "",
+      "title": "Model",
+      "type": "string"
+    },
+    "government_structure": {
+      "description": "Unitary or federal; which tier delivers the main citizen services (benefits, permits, registrations)",
+      "title": "Government Structure",
+      "type": "string"
+    },
+    "official_languages": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Official Languages",
+      "type": "array"
+    },
+    "web_languages": {
+      "default": [],
+      "description": "Languages in which government sites publish",
+      "items": {
+        "type": "string"
+      },
+      "title": "Web Languages",
+      "type": "array"
+    },
+    "legal_information": {
+      "default": [],
+      "description": "Official legal databases and gazettes",
+      "items": {
+        "$ref": "#/$defs/LegalInformationSystem"
+      },
+      "title": "Legal Information",
+      "type": "array"
+    },
+    "catalogues": {
+      "default": [],
+      "description": "Service catalogues, procedure registers, single digital gateways",
+      "items": {
+        "$ref": "#/$defs/ServiceCatalogue"
+      },
+      "title": "Catalogues",
+      "type": "array"
+    },
+    "foi": {
+      "$ref": "#/$defs/FoiRegime",
+      "default": {
+        "law_exists": false,
+        "law_name": "",
+        "law_url": "",
+        "proactive_publication_duties": [],
+        "procedure_publication_duty": false,
+        "disclosure_platforms": []
+      }
+    },
+    "internal_guidance_practice": {
+      "default": "",
+      "description": "Do major agencies publish staff instructions, decision-maker guides, procedure manuals? Name examples",
+      "title": "Internal Guidance Practice",
+      "type": "string"
+    },
+    "internal_guidance_examples": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Internal Guidance Examples",
+      "type": "array"
+    },
+    "appeals_sources": {
+      "default": [],
+      "description": "Court, tribunal and ombudsman decision databases that cover administrative decisions",
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Appeals Sources",
+      "type": "array"
+    },
+    "audit_office": {
+      "default": [],
+      "description": "Supreme audit institution and its report archive",
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Audit Office",
+      "type": "array"
+    },
+    "statistics_sources": {
+      "default": [],
+      "description": "Where administrative statistics on services live (volumes, processing times)",
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Statistics Sources",
+      "type": "array"
+    },
+    "procurement_portals": {
+      "default": [],
+      "description": "Public procurement portals where tender documents for case systems can be read",
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Procurement Portals",
+      "type": "array"
+    },
+    "rules_as_code": {
+      "default": [],
+      "description": "OpenFisca packages, published calculators, rule repositories",
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Rules As Code",
+      "type": "array"
+    },
+    "open_data_portals": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Open Data Portals",
+      "type": "array"
+    },
+    "authorities": {
+      "description": "Every national authority that delivers services to people or firms; be exhaustive, this list drives the next pass",
+      "items": {
+        "$ref": "#/$defs/AuthorityStub"
+      },
+      "title": "Authorities",
+      "type": "array"
+    },
+    "layer_scores": {
+      "description": "One entry per layer, all seven",
+      "items": {
+        "$ref": "#/$defs/LayerScore"
+      },
+      "title": "Layer Scores",
+      "type": "array"
+    },
+    "evidence": {
+      "default": [],
+      "description": "Claims with URLs that back the scores",
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "best_documented_domains": {
+      "default": [],
+      "description": "Policy domains where the public record is richest",
+      "items": {
+        "type": "string"
+      },
+      "title": "Best Documented Domains",
+      "type": "array"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    },
+    "open_questions": {
+      "default": [],
+      "description": "What this pass could not determine and where to look",
+      "items": {
+        "type": "string"
+      },
+      "title": "Open Questions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "country_id",
+    "country_name",
+    "government_structure",
+    "authorities",
+    "layer_scores"
+  ],
+  "title": "CountryProfile",
+  "type": "object"
+}

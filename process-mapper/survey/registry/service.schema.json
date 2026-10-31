@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "CandidateSource": {
+      "properties": {
+        "id": {
+          "description": "Short slug unique within the service, e.g. 'law-938-2014', 'kela-form-AT1e'",
+          "title": "Id",
+          "type": "string"
+        },
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "html",
+            "pdf",
+            "akn_xml",
+            "ptv_api",
+            "api_json",
+            "xml",
+            "docx",
+            "other"
+          ],
+          "title": "Kind",
+          "type": "string"
+        },
+        "layer": {
+          "enum": [
+            "catalogue",
+            "legislation",
+            "guidance",
+            "forms",
+            "internal",
+            "statistics",
+            "appeals"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "publisher": {
+          "title": "Publisher",
+          "type": "string"
+        },
+        "language": {
+          "title": "Language",
+          "type": "string"
+        },
+        "why": {
+          "default": "",
+          "description": "What this source is expected to contribute: steps, parameters, inputs, internal automation, deadlines ...",
+          "title": "Why",
+          "type": "string"
+        },
+        "currency": {
+          "default": "",
+          "description": "Date or version if visible; note if stale",
+          "title": "Currency",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "title",
+        "url",
+        "kind",
+        "layer",
+        "publisher",
+        "language"
+      ],
+      "title": "CandidateSource",
+      "type": "object"
+    },
+    "LayerScore": {
+      "properties": {
+        "layer": {
+          "enum": [
+            "catalogue",
+            "legislation",
+            "guidance",
+            "forms",
+            "internal",
+            "statistics",
+            "appeals"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "score": {
+          "maximum": 3,
+          "minimum": 0,
+          "title": "Score",
+          "type": "integer"
+        },
+        "reason": {
+          "description": "Why this score, naming the systems or document types found",
+          "title": "Reason",
+          "type": "string"
+        },
+        "evidence_urls": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "layer",
+        "score",
+        "reason"
+      ],
+      "title": "LayerScore",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "service_id": {
+      "title": "Service Id",
+      "type": "string"
+    },
+    "service_name": {
+      "title": "Service Name",
+      "type": "string"
+    },
+    "service_name_en": {
+      "default": "",
+      "title": "Service Name En",
+      "type": "string"
+    },
+    "country_id": {
+      "title": "Country Id",
+      "type": "string"
+    },
+    "authority_id": {
+      "title": "Authority Id",
+      "type": "string"
+    },
+    "authority_name": {
+      "title": "Authority Name",
+      "type": "string"
+    },
+    "surveyed_at": {
+      "default": "",
+      "title": "Surveyed At",
+      "type": "string"
+    },
+    "model": {
+      "default": "",
+      "title": "Model",
+      "type": "string"
+    },
+    "sources": {
+      "description": "Every public document that describes how the service runs; exhaustive, all languages",
+      "items": {
+        "$ref": "#/$defs/CandidateSource"
+      },
+      "title": "Sources",
+      "type": "array"
+    },
+    "layer_scores": {
+      "items": {
+        "$ref": "#/$defs/LayerScore"
+      },
+      "title": "Layer Scores",
+      "type": "array"
+    },
+    "missing": {
+      "default": [],
+      "description": "Document types that should exist but were not found, and where they might be",
+      "items": {
+        "type": "string"
+      },
+      "title": "Missing",
+      "type": "array"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "service_id",
+    "service_name",
+    "country_id",
+    "authority_id",
+    "authority_name",
+    "sources",
+    "layer_scores"
+  ],
+  "title": "ServiceSourceSet",
+  "type": "object"
+}

@@ -1,0 +1,446 @@
+{
+  "$defs": {
+    "DocumentRepository": {
+      "properties": {
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "enumerable": {
+          "description": "Listing, sitemap, search with pagination, or predictable ids",
+          "title": "Enumerable",
+          "type": "boolean"
+        },
+        "formats": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Formats",
+          "type": "array"
+        },
+        "approx_documents": {
+          "anyOf": [
+            {
+              "type": "integer"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Approx Documents"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "url",
+        "enumerable"
+      ],
+      "title": "DocumentRepository",
+      "type": "object"
+    },
+    "Evidence": {
+      "properties": {
+        "claim": {
+          "description": "One checkable statement, e.g. 'Finlex serves consolidated acts as Akoma Ntoso XML'",
+          "title": "Claim",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "layer": {
+          "anyOf": [
+            {
+              "enum": [
+                "catalogue",
+                "legislation",
+                "guidance",
+                "forms",
+                "internal",
+                "statistics",
+                "appeals"
+              ],
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null,
+          "title": "Layer"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "claim",
+        "url"
+      ],
+      "title": "Evidence",
+      "type": "object"
+    },
+    "LayerScore": {
+      "properties": {
+        "layer": {
+          "enum": [
+            "catalogue",
+            "legislation",
+            "guidance",
+            "forms",
+            "internal",
+            "statistics",
+            "appeals"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "score": {
+          "maximum": 3,
+          "minimum": 0,
+          "title": "Score",
+          "type": "integer"
+        },
+        "reason": {
+          "description": "Why this score, naming the systems or document types found",
+          "title": "Reason",
+          "type": "string"
+        },
+        "evidence_urls": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Evidence Urls",
+          "type": "array"
+        }
+      },
+      "required": [
+        "layer",
+        "score",
+        "reason"
+      ],
+      "title": "LayerScore",
+      "type": "object"
+    },
+    "NamedSystem": {
+      "description": "A website, register or portal that matters for one layer.",
+      "properties": {
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "publisher": {
+          "default": "",
+          "title": "Publisher",
+          "type": "string"
+        },
+        "machine_readable": {
+          "default": false,
+          "description": "API, bulk download or structured XML/JSON",
+          "title": "Machine Readable",
+          "type": "boolean"
+        },
+        "api_url": {
+          "default": "",
+          "title": "Api Url",
+          "type": "string"
+        },
+        "languages": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Languages",
+          "type": "array"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "url"
+      ],
+      "title": "NamedSystem",
+      "type": "object"
+    },
+    "PublishedDocument": {
+      "properties": {
+        "title": {
+          "title": "Title",
+          "type": "string"
+        },
+        "url": {
+          "title": "Url",
+          "type": "string"
+        },
+        "kind": {
+          "description": "staff_manual, procedure_note, decision_maker_guide, system_description, audit_report, ombudsman_decision, tribunal_decision, annual_report, statistics, tender_spec, foi_release, other",
+          "title": "Kind",
+          "type": "string"
+        },
+        "layer": {
+          "enum": [
+            "catalogue",
+            "legislation",
+            "guidance",
+            "forms",
+            "internal",
+            "statistics",
+            "appeals"
+          ],
+          "title": "Layer",
+          "type": "string"
+        },
+        "language": {
+          "default": "",
+          "title": "Language",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "url",
+        "kind",
+        "layer"
+      ],
+      "title": "PublishedDocument",
+      "type": "object"
+    },
+    "ServiceStub": {
+      "properties": {
+        "id": {
+          "description": "Slug: <iso2>-<authority>-<service>, ascii, e.g. 'fi-kela-general-housing-allowance'",
+          "title": "Id",
+          "type": "string"
+        },
+        "name": {
+          "title": "Name",
+          "type": "string"
+        },
+        "name_en": {
+          "default": "",
+          "title": "Name En",
+          "type": "string"
+        },
+        "url": {
+          "description": "The main guidance page for the service",
+          "title": "Url",
+          "type": "string"
+        },
+        "legal_basis": {
+          "default": [],
+          "items": {
+            "type": "string"
+          },
+          "title": "Legal Basis",
+          "type": "array"
+        },
+        "domain": {
+          "default": "",
+          "title": "Domain",
+          "type": "string"
+        },
+        "note": {
+          "default": "",
+          "title": "Note",
+          "type": "string"
+        }
+      },
+      "required": [
+        "id",
+        "name",
+        "url"
+      ],
+      "title": "ServiceStub",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "country_id": {
+      "title": "Country Id",
+      "type": "string"
+    },
+    "authority_id": {
+      "title": "Authority Id",
+      "type": "string"
+    },
+    "name": {
+      "title": "Name",
+      "type": "string"
+    },
+    "name_en": {
+      "default": "",
+      "title": "Name En",
+      "type": "string"
+    },
+    "url": {
+      "title": "Url",
+      "type": "string"
+    },
+    "surveyed_at": {
+      "default": "",
+      "title": "Surveyed At",
+      "type": "string"
+    },
+    "model": {
+      "default": "",
+      "title": "Model",
+      "type": "string"
+    },
+    "domains": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Domains",
+      "type": "array"
+    },
+    "document_repositories": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/DocumentRepository"
+      },
+      "title": "Document Repositories",
+      "type": "array"
+    },
+    "internal_documents": {
+      "default": [],
+      "description": "Staff instructions, procedure notes, decision-maker guides, system descriptions found",
+      "items": {
+        "$ref": "#/$defs/PublishedDocument"
+      },
+      "title": "Internal Documents",
+      "type": "array"
+    },
+    "forms_library": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Forms Library",
+      "type": "array"
+    },
+    "statistics": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/PublishedDocument"
+      },
+      "title": "Statistics",
+      "type": "array"
+    },
+    "appeals": {
+      "default": [],
+      "description": "Where decisions about this authority's cases are published",
+      "items": {
+        "$ref": "#/$defs/NamedSystem"
+      },
+      "title": "Appeals",
+      "type": "array"
+    },
+    "audit_and_oversight": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/PublishedDocument"
+      },
+      "title": "Audit And Oversight",
+      "type": "array"
+    },
+    "foi_releases": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/PublishedDocument"
+      },
+      "title": "Foi Releases",
+      "type": "array"
+    },
+    "procurement_documents": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/PublishedDocument"
+      },
+      "title": "Procurement Documents",
+      "type": "array"
+    },
+    "services": {
+      "description": "Every service this authority delivers to people or firms; exhaustive",
+      "items": {
+        "$ref": "#/$defs/ServiceStub"
+      },
+      "title": "Services",
+      "type": "array"
+    },
+    "services_count_estimate": {
+      "anyOf": [
+        {
+          "type": "integer"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "description": "If the list is cut short, the estimated total",
+      "title": "Services Count Estimate"
+    },
+    "layer_scores": {
+      "items": {
+        "$ref": "#/$defs/LayerScore"
+      },
+      "title": "Layer Scores",
+      "type": "array"
+    },
+    "evidence": {
+      "default": [],
+      "items": {
+        "$ref": "#/$defs/Evidence"
+      },
+      "title": "Evidence",
+      "type": "array"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    },
+    "open_questions": {
+      "default": [],
+      "items": {
+        "type": "string"
+      },
+      "title": "Open Questions",
+      "type": "array"
+    }
+  },
+  "required": [
+    "country_id",
+    "authority_id",
+    "name",
+    "url",
+    "services",
+    "layer_scores"
+  ],
+  "title": "AuthorityProfile",
+  "type": "object"
+}
