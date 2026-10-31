@@ -4,200 +4,200 @@ Initial discovery searches exist for every country; unknown means unresolved, no
 
 | Country | Assessment | Observed depth | Detailed functions / areas | Evidence or verification lead |
 |---|---|---|---|---|
-| Afghanistan | Unknown | unknown | 0 / 0 | Not verified |
-| Albania | Unknown | unknown | 0 / 0 | [Procurement manuals](https://www.app.gov.al/legislation/public-procurement/procurement-manuals/) |
-| Algeria | Unknown | unknown | 0 / 0 | Not verified |
-| Andorra | Unknown | unknown | 0 / 0 | Not verified |
-| Angola | Unknown | unknown | 0 / 0 | Not verified |
-| Antigua and Barbuda | Unknown | unknown | 0 / 0 | Not verified |
-| Argentina | Unknown | unknown | 0 / 0 | Not verified |
-| Armenia | Unknown | unknown | 0 / 0 | Not verified |
+| Afghanistan | Strong publication evidence | detailed operational procedure | 1 / 1 | [National Health Management Information System – Procedures Manual Part I & II](https://moph.gov.af/sites/default/files/2019-07/HMIS%20Procedures%20Manual%20I%20%20II%20-%20English-Revised-20110823%20%28final%29.pdf) |
+| Albania | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Udhëzim Nr. 682, datë 30.5.2025, 'Për miratimin e modelit të kërkesës për shërbime kadastrale dhe procedurat standarde të veprimeve me regjistrin elektronik të kërkesave'](https://www.ashk.gov.al/wp-content/uploads/2025/07/udhezim-2025-05-30-682.pdf) |
+| Algeria | Unknown | unknown | 0 / 0 | [The dematerialisation of public procurement procedures: the case of some EPAs in Algeria (2024)](https://asjp.cerist.dz/en/downArticle/83/14/1/251401) |
+| Andorra | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Internal Quality Assurance System (IQAS) Manual, doc. 1_23-045](https://www.aqua.ad/sites/default/files/2024-06/1_23-045_Manual%20SGIQ_AQUA_EN_0.pdf) |
+| Angola | Unknown | unknown | 0 / 0 | [Manual de Serviços SIAC](https://www.siac.gv.ao/downloads/SIAC_Manual_de_Servicos.pdf) |
+| Antigua and Barbuda | Public-facing evidence inspected only | unknown | 0 / 0 | [Customs Declaration User Manual (ASYCUDA World)](https://customs.gov.ag/docs/DECLARATION%20MANUAL.pdf) |
+| Argentina | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de Procedimientos Gestión de Compras y Contrataciones, Ministerio de Desarrollo Social de la Nación (IF-2023-142390609-APN-DGA#MDS, annex to Res. 2376)](https://servicios.infoleg.gob.ar/infolegInternet/anexos/390000-394999/394560/res2376.pdf) |
+| Armenia | Unknown | unknown | 0 / 0 | [Methodological guides and manuals (decentralization.am)](https://decentralization.am/en/news/methodological-guides-and-manuals) |
 | Australia | Strong publication evidence | detailed operational procedure | 2 / 1 | [AIC parental income test — process tables](https://operational.servicesaustralia.gov.au/public/Pages/income-assests-and-rates-of-payment/108-02010030-03.html) |
-| Austria | Unknown | unknown | 0 / 0 | Not verified |
-| Azerbaijan | Unknown | unknown | 0 / 0 | Not verified |
-| Bahamas | Unknown | unknown | 0 / 0 | Not verified |
+| Austria | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Österreichisches Informationssicherheitshandbuch, Version 4](https://sicherheitshandbuch.gv.at/siha.php) |
+| Azerbaijan | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Qərar № 191 'Mərkəzi icra hakimiyyəti orqanları tərəfindən konkret sahələr üzrə elektron xidmətlər göstərilməsi Qaydaları' və 'Elektron xidmət növlərinin Siyahısı'](https://www.migration.gov.az/content/pdf/4283aef6174057dfdf02833ff9334797.pdf) |
+| Bahamas | Public-facing evidence inspected only | unknown | 0 / 0 | [Design and Construction Guidelines and Plan Preparation Manual for Subdivisions in the Commonwealth of The Bahamas](https://cdn.bahamas.gov.bs/tenant/tenantministryofworksutilities/documents/DesignGuidelines-20250526030940.pdf) |
 | Bahrain | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Unified Planning Procedures Manual](https://planning.bh/pdf/uppm/Urban%20Planning%20and%20Development%20Authority%20Procedures%20Manual_English%202023.pdf) |
-| Bangladesh | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://bhtpa.gov.bd/sites/default/files/files/bhtpa.portal.gov.bd/notices/7d24a4f4_40f2_49cb_b6b4_2c63023dce01/2021-09-22-07-27-ab6e68e2d473be34d25036dc947a5c6e.pdf) |
-| Barbados | Unknown | unknown | 0 / 0 | Not verified |
-| Belarus | Unknown | unknown | 0 / 0 | Not verified |
-| Belgium | Unknown | unknown | 0 / 0 | Not verified |
-| Belize | Unknown | unknown | 0 / 0 | Not verified |
-| Benin | Unknown | unknown | 0 / 0 | Not verified |
-| Bhutan | Unknown | unknown | 0 / 0 | Not verified |
-| Bolivia | Unknown | unknown | 0 / 0 | Not verified |
-| Bosnia and Herzegovina | Unknown | unknown | 0 / 0 | Not verified |
-| Botswana | Unknown | unknown | 0 / 0 | Not verified |
+| Bangladesh | Strong publication evidence | detailed operational procedure | 1 / 1 | [Tuberculosis Preventive Treatment Standard Operating Procedure](https://www.ntp.gov.bd/wp-content/uploads/2022/03/TPT_SOP.pdf) |
+| Barbados | Strong publication evidence | detailed operational procedure | 1 / 1 | [Commercial Declaration Standard Operating Procedure](https://asycuda.customs.gov.bb/documents/DeclarationProcedureSop.pdf) |
+| Belarus | Unknown | unknown | 0 / 0 | [Об утверждении регламентов административных процедур (Постановление, Национальный правовой Интернет-портал 20.04.2024, 8/41384)](https://www.nb-rb.by/legislation/documents/pp_499-2023.pdf) |
+| Belgium | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Protocols and guidelines - For a Healthy Belgium (Belgian Medical Regulation Manual, standing orders for paramedics and nurses)](https://www.healthybelgium.be/en/key-data-in-healthcare/preparedness-and-responses-to-crisis-situations/quality-and-innovation/protocols-and-guidelines) |
+| Belize | Strong publication evidence | detailed operational procedure | 1 / 1 | [Records and Information Management Procedures Manual](https://www.archives.gov.bz/wp-content/uploads/2020/03/Bze-Archives-and-Records-Service-Records-and-Information-Management-Procedures-Manual-2006.pdf) |
+| Benin | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel de procédures d'exécution de la dépense publique en mode programme (dernière version)](https://budgetbenin.bj/wp-content/uploads/2022/08/MANUEL-DE-PROCEDURE-DEXECUION-DE-LA-DEPENSE-PUBLIQUE-EN-MODE-PROGRAMME.pdf) |
+| Bhutan | Strong publication evidence | detailed operational procedure | 1 / 1 | [Standard Operating Procedure for Directorate Services, Ministry of Labour and Human Resources](https://www.moice.gov.bt/wp-content/uploads/2022/09/Directorate-Services-SoP-August-2022.pdf) |
+| Bolivia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de Procesos y Procedimientos de la Dirección General del Servicio Civil (Código 001, Versión 1)](https://mintrabajo.gob.bo/wp-content/uploads/2025/10/MANUAL-DE-PROCESOS_ULTIMO-30.03.23.pdf) |
+| Bosnia and Herzegovina | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manual for the Use of the Competency Framework in the Recruitment and Selection for the Civil Services of Bosnia and Herzegovina](https://files.ads.gov.ba/public/a02c7b23-8053-4723-8bdb-2cc0642e1d20.pdf) |
+| Botswana | Public-facing evidence inspected only | unknown | 0 / 0 | [Guidelines on Drug Registration Applications in Botswana, First Revised Edition](https://www.moh.gov.bw/Publications/registration%20guidelines.pdf) |
 | Brazil | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de procedimentos internos de serviços de protocolo](https://bvsms.saude.gov.br/bvs/publicacoes/procedimentos_internos_servico_protocolo_1ed.pdf) |
-| Brunei | Unknown | unknown | 0 / 0 | Not verified |
+| Brunei | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Government Contracts Manual, First Edition](https://www.agc.gov.bn/wp-content/uploads/2026/06/CD-Contracts-Manual.pdf) |
 | Bulgaria | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Internal rules for administrative servicing](https://www.mlsp.government.bg/uploads/3/administrativno-obsluzhvane/ao-2509final.pdf) |
-| Burkina Faso | Unknown | unknown | 0 / 0 | Not verified |
-| Burundi | Unknown | unknown | 0 / 0 | Not verified |
-| Cambodia | Unknown | unknown | 0 / 0 | Not verified |
-| Cameroon | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://minepded.gov.cm/wp-content/uploads/2020/02/MANUEL-DE-PROCEDURES-DES-SERVICES-DECONCENTRES.pdf) |
+| Burkina Faso | Unknown | unknown | 0 / 0 | [Guide d'exécution DEB (Direction Générale du Budget)](https://dgb.gov.bf/edocman/Guide_d%27ex%2B%C2%ABcution_DEB%20FINAL.pdf) |
+| Burundi | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manuel de Passation de Marchés (MPM) – PRODECI-TURIKUMWE](https://prodeci.bi/documents/manuel-de-passation-de-march-s-mpm-.pdf) |
+| Cambodia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Standard Operating Procedures on Procurement for All Externally Financed Projects/Programs in Cambodia, Volume II (Sub-Decree No. 181 ANK.BK)](https://oldwebsite.pfm.gov.kh/document/publication/2021-03-17/SOP%20on%20Procurement%20For%20all%20Externally%20Financed%20Projects%20Programs%20in%20Cambodia%20Volume%20II.pdf) |
+| Cameroon | Unknown | unknown | 0 / 0 | [Manuel de Procédures Administratives du Ministère de l'Environnement, de la Protection de la Nature et du Développement Durable](https://minepded.gov.cm/wp-content/uploads/2020/02/MANUEL-DE-PROCEDURES-DES-SERVICES-DECONCENTRES.pdf) |
 | Canada | Strong publication evidence | detailed operational procedure | 1 / 1 | [Reconsideration after refusal](https://www.canada.ca/en/immigration-refugees-citizenship/corporate/publications-manuals/operational-bulletins-manuals/service-delivery/reconsideration-after-refusal.html) |
-| Cape Verde | Unknown | unknown | 0 / 0 | Not verified |
+| Cape Verde | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual of Procedures for the Implementation of Public-Private Partnerships in Cabo Verde](https://www.mf.gov.cv/documents/20126/4649451/Manual_de_Procedimentos_PPP_em_Cabo_Verde_UASE_VFinali%CC%81ssima_19.07.2024_EN.pdf/c9d75972-1dba-d1a0-1eb8-af676fd07bb7?download=true&t=1723027216476&version=1.0) |
 | Central African Republic | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel de procédures de gestion de la dette publique](https://www.finances.gouv.cf/sites/default/files/2025-11/RCA%20MANUEL%20DE%20PROCEDURE%20DE%20GESTION%20DE%20LA%20DETTE%20pdf.pdf) |
-| Chad | Unknown | unknown | 0 / 0 | Not verified |
-| Chile | Unknown | unknown | 0 / 0 | Not verified |
-| China | Unknown | unknown | 0 / 0 | Not verified |
-| Colombia | Unknown | unknown | 0 / 0 | [Procesos y procedimientos](https://www.migracioncolombia.gov.co/planeacion-y-estadistica/procesos-y-procedimientos) |
+| Chad | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manuel de procédures administratives, financières et comptables – ITIE Tchad (version définitive)](https://www.itie-tchad.com/wp-content/uploads/2022/03/MANUEL-ITIE-TCHAD_VF.pdf) |
+| Chile | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de Procedimientos de la Dirección del Trabajo en Mediación Laboral, Versión 1.0 (implemented by Orden de Servicio N° 2000-13/2025)](https://www.dt.gob.cl/portal/1626/articles-120303_recurso_14.pdf) |
+| China | Strong publication evidence | detailed operational procedure | 1 / 1 | [中国人民银行行政许可事项服务指南 - 银行间债券市场结算代理人审批事项服务指南](https://www.pbc.gov.cn/zhengwugongkai/4081330/4081344/4081407/4081699/4089741/4089848/2025080819051255162/2020060818495083555.pdf) |
+| Colombia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Procedimiento: Atención de peticiones, consultas y solicitudes de información (Sistema de Gestión Integrado SFC)](https://www.superfinanciera.gov.co/loader.php?lServicio=Tools2&lTipo=descargas&lFuncion=descargar&idFile=1081207) |
 | Comoros | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manuel de procédures du PAGF](https://finances.gouv.km/wp-content/uploads/2024/12/CKM1107-Manuel-des-procedures-version-revisee-Copil-112023-VAno.pdf) |
-| Congo | Unknown | unknown | 0 / 0 | Not verified |
+| Congo | Strong publication evidence | detailed operational procedure | 1 / 1 | [Décret n° 2020-651 portant approbation du manuel de procédures d'enrôlement biométrique des agents civils de l'Etat recensés (Journal officiel n° 49-2020, with manual annexed)](https://www.unicongo.cg/wp-content/uploads/2023/03/congo-jo-2020-49.pdf) |
 | Costa Rica | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de procedimientos para asistencia humanitaria y técnica internacional](https://www.pgrweb.go.cr/DocsDescargar/Normas/No%20AC-6-06102017/Version1/Manua-proc-recepcion-transito-envio-asistencia-humanitaria.pdf) |
-| Croatia | Unknown | unknown | 0 / 0 | Not verified |
-| Cuba | Unknown | unknown | 0 / 0 | Not verified |
-| Cyprus | Unknown | unknown | 0 / 0 | Not verified |
-| Czechia | Unknown | unknown | 0 / 0 | Not verified |
-| DR Congo | Unknown | unknown | 0 / 0 | Not verified |
-| Denmark | Unknown | unknown | 0 / 0 | Not verified |
-| Djibouti | Unknown | unknown | 0 / 0 | Not verified |
-| Dominica | Unknown | unknown | 0 / 0 | Not verified |
-| Dominican Republic | Unknown | unknown | 0 / 0 | Not verified |
-| Ecuador | Unknown | unknown | 0 / 0 | Not verified |
-| Egypt | Unknown | unknown | 0 / 0 | Not verified |
-| El Salvador | Unknown | unknown | 0 / 0 | Not verified |
-| Equatorial Guinea | Unknown | unknown | 0 / 0 | Not verified |
-| Eritrea | Unknown | unknown | 0 / 0 | Not verified |
-| Estonia | Unknown | unknown | 0 / 0 | Not verified |
-| Eswatini | Unknown | unknown | 0 / 0 | Not verified |
-| Ethiopia | Unknown | unknown | 0 / 0 | Not verified |
+| Croatia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Poslovi i postupanja pravosudne policije – Priručnik za polaznike temeljnog tečaja za službenike pravosudne policije](https://mpudt.gov.hr/UserDocsImages/dokumenti/Zatvorski%20sustav/Centar%20za%20izobrazbu/PRIRU%C4%8CNIK%20Poslovi%20i%20postupanja%20pravosudne%20policije.pdf) |
+| Cuba | Unknown | unknown | 0 / 0 | [Adjudicator's Field Manual (USCIS)](https://www.uscis.gov/sites/default/files/document/policy-manual-afm/afm23-external.pdf) |
+| Cyprus | Unknown | unknown | 0 / 0 | [Cyprus PIM Manual, Version 3.0, April 2018 (Manual for the Pre-selection and Appraisal of Public Investment Projects)](https://www.mof.gov.cy/mof/dggrowth/dggrowth.nsf/All/EBDFA397AE51E72FC22588FA00439F4D/%24file/Cyprus%20-%20PIM%20Manual%20-Version%203%200_%20April%202018.pdf?OpenElement=) |
+| Czechia | Public-facing evidence inspected only | unknown | 0 / 0 | [National Electronic Tool (NEN) – Manual for suppliers](https://czechaid.gov.cz/wp-content/uploads/2023/05/Manual-for-Suppliers.pdf) |
+| DR Congo | Unknown | unknown | 0 / 0 | [Arrêté interministériel du 23 mars 2006 portant manuel de procédures harmonisées applicables au GUICE](https://portal.commerce.gouv.cd/media/Arr%C3%AAt%C3%A9%20Interminist%C3%A9riel%20du%2023%20mars%202006%20portant%20manuel%20de%20proc%C3%A9dures%20harmonis%C3%A9es%20applicables%20au%20GUICE.pdf) |
+| Denmark | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Vejledning om retssikkerhed og administration på det sociale område, VEJ nr 10283 af 07/12/2017 (Historisk)](https://www.retsinformation.dk/api/pdf/196381) |
+| Djibouti | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Décret n° 2010-0085/PRE portant approbation du Manuel de Procédures pour la Passation des Marchés Publics et de la Charte d'Ethique et de Transparence](https://www.journalofficiel.dj/texte-juridique/decret-n2010-0085-pre-portant-approbation-du-manuel-de-procedures-pour-la-passation-des-marches-publics-et-approbation-de-la-charte-dethique-et-de-transparence-applicable-dans-le-domaine-des-m/) |
+| Dominica | Strong publication evidence | detailed operational procedure | 1 / 1 | [Fourth Annual Report, Integrity Commission, Appendix 9: Manual of Procedure - Filing and Processing of Declarations](https://integritycommission.gov.dm/phocadownload/integrity_commission_fourth_annual_report_nov_2012.pdf) |
+| Dominican Republic | Unknown | unknown | 0 / 0 | [Manual de Procedimientos para las Instituciones Educativas Privadas en la República Dominicana](https://www.ministeriodeeducacion.gob.do/media/banners/e5b16faf4a22f2d05f386c2c2d6f56335f2fd2dbmanual-de-procedimiento-digital-fpdf.pdf) |
+| Ecuador | Unknown | unknown | 0 / 0 | [Manual de Proceso de Gestión de Procesos (Versión 1)](https://www.habitatyvivienda.gob.ec/wp-content/uploads/downloads/2022/12/Manual-de-Procesos-de-Gestion-de-Procesos.pdf) |
+| Egypt | Unknown | unknown | 0 / 0 | [دليل إجراءات المنافيست (Manifest procedures guide)](https://customs.gov.eg/PDF_Docs/CustomsGuidingManuals/10.pdf) |
+| El Salvador | Unknown | unknown | 0 / 0 | [Manual de Procedimientos Administrativos para el Sistema Financiero del Nivel Superior del Ministerio de Salud: Descripción de los Procedimientos y Flujogramas (Acuerdo Ejecutivo 2626, 20/10/2025)](https://asp.salud.gob.sv/regulacion/pdf/manual/manualdeprocedimientosadministrativosparaelsistemafinancierodelnivelsuperiordelministeriodesaluddescripciondelosprocedimientosyflujogramas-AE-2626-20102025_v1.pdf) |
+| Equatorial Guinea | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Orden Ministerial Núm. 11/2020 por la que se aprueba el Sistema Aduanero Automatizado para la tramitación de los procedimientos relativos a la entrada y salida de mercancías](https://www.guineaecuatorialpress.com/noticias/orden_por_la_que_se_aprueba_sistema_aduanero_automatizado_para_la_tramitacion_de_los_procedimientos_relativos_a_la_entrada_y_salida_de_mercancias) |
+| Eritrea | Unknown | unknown | 0 / 0 | [State of Eritrea Customs Procedure Codes (CPCs) Manual 2007](https://ericustoms.wordpress.com/wp-content/uploads/2022/04/eritrea-cpcs-manual_2007.pdf) |
+| Estonia | Public-facing evidence inspected only | unknown | 0 / 0 | [Tax information exchange (Estonian Tax and Customs Board handbook)](https://emta.ee/en/node/382/handbook/16/pdf) |
+| Eswatini | Unknown | unknown | 0 / 0 | [KINGDOM OF SWAZILAND - PAC 2021 Report](https://www.gov.sz/images/Parliament/PAC-2021-Report.pdf) |
+| Ethiopia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Woreda Participatory Land Use Planning (WPLUP) in Pastoral and Agro-Pastoral Areas – Volume I: Manual](https://moa.gov.et/wp-content/uploads/2024/11/201811_Woreda-Participatory-Land-Use-Planning-WPLUP-in-Pastoral-and-Agro-Pastoral-Areas-Volume-1.pdf) |
 | Fiji | Strong publication evidence | detailed operational procedure | 1 / 1 | [SOP for Planned Relocation in Fiji](https://fijiclimatechangeportal.gov.fj/wp-content/uploads/2023/04/Standard-Operating-Procedures-for-Planned-Relocation-in-the-Republic-of-Fiji-1.pdf) |
 | Finland | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Housing allowance guidance and prior staff-guideline validation](https://www.kela.fi/yleinen-asumistuki) |
-| France | Unknown | unknown | 0 / 0 | [Energy-infrastructure procedure manual lead](https://www.ecologie.gouv.fr/sites/default/files/documents/2025-07_Manuel%20des%20proc%C3%A9dures%20PCI-TEN-E_V1_1.pdf) |
-| Gabon | Unknown | unknown | 0 / 0 | Not verified |
-| Gambia | Unknown | unknown | 0 / 0 | Not verified |
-| Georgia | Unknown | unknown | 0 / 0 | Not verified |
+| France | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manuel des procédures pour l'octroi des autorisations applicables aux projets d'intérêt commun ou mutuel au titre du règlement (UE) 2022/869 – Infrastructures de transport et de stockage d'hydrogène et de dioxyde de carbone](https://www.ecologie.gouv.fr/sites/default/files/documents/2025-07_Manuel%20des%20proc%C3%A9dures%20PCI-TEN-E_V1_0.pdf) |
+| Gabon | Unknown | unknown | 0 / 0 | [Gabon/Traite des personnes : le Manuel de procédures opérationnelles standardisées remis au ministre de la Justice (AGP news article)](https://agpgabon.ga/gabon-traite-des-personnes-le-manuel-de-procedures-operationnelles-standardisees-remis-au-ministre-de-la-justice/) |
+| Gambia | Unknown | unknown | 0 / 0 | [Personnel Procedures Manual](https://pmo.gov.gm/sites/default/files/2020-10/Personnel%20Procedures%20Manual.pdf) |
+| Georgia | Unknown | unknown | 0 / 0 | [Strategic Environmental Assessment Guidelines for the Spatial Planning Sector of Georgia (news item)](https://nea.gov.ge/En/News/1282) |
 | Germany | Strong publication evidence | detailed operational procedure | 1 / 1 | [Dienstanweisung Asyl](https://www.asyl.net/fileadmin/user_upload/2023-01-01_BAMF_Dienstanweisung_Asyl.pdf) |
-| Ghana | Unknown | unknown | 0 / 0 | Not verified |
-| Greece | Unknown | unknown | 0 / 0 | Not verified |
-| Grenada | Unknown | unknown | 0 / 0 | Not verified |
-| Guatemala | Unknown | unknown | 0 / 0 | Not verified |
-| Guinea | Unknown | unknown | 0 / 0 | Not verified |
-| Guinea-Bissau | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://funcaopublica.gw/wp-content/uploads/2021/06/Manual-de-Procedimentos-20201010_MP-VALIDADO-APROVADO.pdf) |
-| Guyana | Unknown | unknown | 0 / 0 | Not verified |
-| Haiti | Unknown | unknown | 0 / 0 | Not verified |
-| Honduras | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://pgr.gob.hn/wp-content/uploads/2025/09/03-MP-Secretaria-General-SG-001-2025.pdf) |
-| Hungary | Unknown | unknown | 0 / 0 | Not verified |
-| Iceland | Unknown | unknown | 0 / 0 | Not verified |
+| Ghana | Strong publication evidence | detailed operational procedure | 1 / 1 | [Public Procurement Manual - Public Procurement Act, 2003 (Act 663)](https://ppa.gov.gh/wp-content/uploads/2019/01/FINAL-MANUAL-PPB.pdf) |
+| Greece | Strong publication evidence | detailed operational procedure | 1 / 1 | [Έγκριση για την Εκτέλεση Εργασιών σε Μνημείο ή Αρχαιολογικό Χώρο από Τρίτο Φορέα (National Registry of Administrative Procedures 'Mitos')](https://mitos.gov.gr/index.php/ΔΔ:Έγκριση_για_την_Εκτέλεση_Εργασιών_σε_Μνημείο_ή_Αρχαιολογικό_Χώρο_από_Τρίτο_Φορέα) |
+| Grenada | Unknown | unknown | 0 / 0 | [Cabinet Procedures Manual](https://www.gov.gd/cabinetoffice/pdf/Cabinet_Procedures_Manual.pdf) |
+| Guatemala | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de Normas Técnicas y Procedimientos Catastrales del Registro de Información Catastral de Guatemala](https://portal.ric.gob.gt/sites/default/files/2021-08/manual%20de%20normas%20t%C3%A9cnicas_0.pdf) |
+| Guinea | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel SIGP – Finances : Engagements (Système Intégré de Gestion et de Planification)](https://sigp.sante.gov.gn/manuel/finances/engagements) |
+| Guinea-Bissau | Unknown | unknown | 0 / 0 | [Manual de Procedimentos de Gestão dos Recursos Humanos da Administração Pública (MPGRHAP GW), 3ª versão](https://funcaopublica.gw/wp-content/uploads/2021/06/Manual-de-Procedimentos-20201010_MP-VALIDADO-APROVADO.pdf) |
+| Guyana | Public-facing evidence inspected only | unknown | 0 / 0 | [Central Immigration and Passport Office launches new 10-Year Guyana Passport](https://dpi.gov.gy/central-immigration-and-passport-office-launches-new-10-year-co-operative-republic-of-guyana-passport/) |
+| Haiti | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel Opérationnel du Financement basé sur les Résultats en Haïti](https://mspp.gouv.ht/site/downloads/Manuel%20Ope%C2%81rationnel%20du%20Financement%20Base%C2%81%20sur%20les%20Re%C2%81sultats%20en%20Haiti.pdf) |
+| Honduras | Unknown | unknown | 0 / 0 | [Manual de Procedimientos Secretaría General, Secretaría de Estado en el Despacho de la Presidencia (MP-SEGOB-SG-001)](https://www.onadici.gob.hn/wp-content/uploads/2024/01/MANUAL-DE-PROCEDIMIENTOS-SECRETARIA-GENERAL.pdf) |
+| Hungary | Public-facing evidence inspected only | unknown | 0 / 0 | [EH manual for case uploading - student](https://www.oif.gov.hu/index.php/factsheets/eh-manual-for-case-uploading-student) |
+| Iceland | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Children's prosperity handbook – Implementing the children's prosperity law](https://island.is/en/manuals/childrens-prosperity-handbook/implementing-the-childrens-prosperity-law?selectedItemId=328yt2O5579NBuyr3cFtrb) |
 | India | Strong publication evidence | detailed operational procedure | 1 / 1 | [SOP for obtaining IEM acknowledgement](https://www.dpiit.gov.in/static/uploads/2025/07/7ad768d1c11071b6ea30d185b849853d.pdf) |
-| Indonesia | Unknown | unknown | 0 / 0 | [SOP JDIH](https://jdih.kemkes.go.id/sop-jdih) |
-| Iran | Unknown | unknown | 0 / 0 | Not verified |
-| Iraq | Unknown | unknown | 0 / 0 | Not verified |
-| Ireland | Unknown | unknown | 0 / 0 | [Operational Guidelines: Decision Making and Natural Justice](https://www.gov.ie/en/department-of-social-protection/publications/operational-guidelines-decision-making-and-natural-justice/) |
-| Israel | Unknown | unknown | 0 / 0 | Not verified |
+| Indonesia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Lampiran Peraturan Menteri PAN-RB Nomor 35 Tahun 2012 tentang Pedoman Penyusunan Standar Operasional Prosedur Administrasi Pemerintahan (Berita Negara 2012 No. 649)](https://www.kemhan.go.id/itjen/wp-content/uploads/2017/03/bn649-2012lamp.pdf) |
+| Iran | Unknown | unknown | 0 / 0 | [جمع‌بندی نهایی عناوین خدمات کلان، زیرخدمات و فرآیندهای استانداری‌ها (اردیبهشت ۱۴۰۳)](https://nkhorasan.ir/wp-content/uploads/2023/09/%D8%AC%D9%85%D8%B9-%D8%A8%D9%86%D8%AF%DB%8C-%D9%86%D9%87%D8%A7%DB%8C%DB%8C-%D8%B9%D9%86%D8%A7%D9%88%DB%8C%D9%86-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%DA%A9%D9%84%D8%A7%D9%86%D8%8C-%D8%B2%DB%8C%D8%B1-%D8%AE%D8%AF%D9%85%D8%A7%D8%AA-%D9%88-%D9%81%D8%B1%D8%A7%DB%8C%D9%86%D8%AF%D9%87%D8%A7%DB%8C-%D8%A7%D8%B3%D8%AA%D8%A7%D9%86%D8%AF%D8%A7%D8%B1%DB%8C%D9%87%D8%A7-%D8%A7%D8%B1%D8%AF%DB%8C%D8%A8%D9%87%D8%B4%D8%AA-1403.pdf) |
+| Iraq | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [دليل إجراءات شؤون الطلبة وضوابط القبول وشروطه للسنة الدراسية 2026/2027 (Student Affairs Procedures and Admission Rules Guide)](https://mohesr.gov.iq/ar/assets/img/uploaded_files/006009002026.pdf) |
+| Ireland | Unknown | unknown | 0 / 0 | [Operational Guidelines (Department of Social Protection collection)](https://www.gov.ie/en/department-of-social-protection/collections/operational-guidelines/) |
+| Israel | Strong publication evidence | detailed operational procedure | 1 / 1 | [Surveillance of Accredited Organizations, Procedure Number 2-671001, Version 21](https://www.israc.gov.il/_Uploads/dbsAttachedFiles/2-671001-2.pdf) |
 | Italy | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuale delle procedure negoziali](https://www.aci.it/laci/la-federazione/amministrazione-trasparente/archiviofile/aci/Attivita_e_procedimenti/Procedimenti/Manuale_procedure_negoziali.pdf) |
 | Ivory Coast | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel de procédures de la DGTCP, 7e édition](https://tresor.gouv.ci/tres/wp-content/uploads/2026/03/Manuel-de-procedures-DGTCP.pdf) |
-| Jamaica | Unknown | unknown | 0 / 0 | Not verified |
-| Japan | Unknown | unknown | 0 / 0 | Not verified |
-| Jordan | Unknown | unknown | 0 / 0 | Not verified |
-| Kazakhstan | Unknown | unknown | 0 / 0 | Not verified |
-| Kenya | Unknown | unknown | 0 / 0 | Not verified |
-| Kiribati | Unknown | unknown | 0 / 0 | Not verified |
-| Kosovo | Unknown | unknown | 0 / 0 | Not verified |
-| Kuwait | Unknown | unknown | 0 / 0 | Not verified |
-| Kyrgyzstan | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.nism.gov.kg/media/SubActivity/2022-08-04/%D0%90%D0%B4%D0%BC._%D1%80%D0%B5%D0%B3%D0%BB%D0%B0%D0%BC%D0%B5%D0%BD%D1%82_5-45.pdf) |
-| Laos | Unknown | unknown | 0 / 0 | Not verified |
-| Latvia | Unknown | unknown | 0 / 0 | Not verified |
-| Lebanon | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://moph.gov.lb/userfiles/files/HealthCareSystem/Pharmaceuticals/QualityAssuranceofPharmaceuticalProducts/InspectionGuideline.pdf) |
-| Lesotho | Unknown | unknown | 0 / 0 | Not verified |
-| Liberia | Unknown | unknown | 0 / 0 | Not verified |
-| Libya | Unknown | unknown | 0 / 0 | Not verified |
-| Liechtenstein | Unknown | unknown | 0 / 0 | Not verified |
-| Lithuania | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://vrm.lrv.lt/uploads/vrm/documents/files/LT_versija/Teisine_informacija/Teises_aktai/Proceduru%20vadovas%202019-01-09.pdf) |
-| Luxembourg | Unknown | unknown | 0 / 0 | Not verified |
-| Madagascar | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.dgbf.mg/wp-content/uploads/2022/11/Manuel-de-procedures-SPE-version-Aout-2022.pdf) |
-| Malawi | Unknown | unknown | 0 / 0 | Not verified |
-| Malaysia | Unknown | unknown | 0 / 0 | Not verified |
-| Maldives | Unknown | unknown | 0 / 0 | Not verified |
-| Mali | Unknown | unknown | 0 / 0 | Not verified |
-| Malta | Unknown | unknown | 0 / 0 | Not verified |
-| Marshall Islands | Unknown | unknown | 0 / 0 | Not verified |
-| Mauritania | Unknown | unknown | 0 / 0 | Not verified |
+| Jamaica | Strong publication evidence | detailed operational procedure | 1 / 1 | [Government of Jamaica Handbook of Public Sector Procurement Procedures, Volume 2 of 4: Procedures for the Procurement of Goods, General Services & Works](https://procureja.gov.jm/wp-content/uploads/2022/04/Handbook-of-Public-Sector-Procurement-Procedures-Volume-2-Procurement-of-Goods-General-Services-and-Works.pdf) |
+| Japan | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [代行機関番号付番申請における事務処理上の手順](https://www.mhlw.go.jp/bunya/shakaihosho/iryouseido01/pdf/info03f-27.pdf) |
+| Jordan | Unknown | unknown | 0 / 0 | [دليل اجراءات قسم المشاريع الدولية (Procedures manual of the International Projects Department)](https://opendata.gov.jo/dataset/MIGRATED-2753-2021/resource/cd7fb8e4-d9ea-4373-bec0-7413fd1fdc95/download/-.pdf) |
+| Kazakhstan | Unknown | unknown | 0 / 0 | [Отчет о результатах проведения общественного мониторинга качества оказания государственных услуг 2021 год](https://www.gov.kz/uploads/2022/7/21/81f82928b550f14642a8e963fbd97463_original.10003310.pdf) |
+| Kenya | Strong publication evidence | detailed operational procedure | 1 / 1 | [Standard Operating Procedures on Online Child Sexual Exploitation and Abuse in Kenya (SOPs 2024)](https://www.socialprotection.go.ke/sites/default/files/Downloads/Standard%20operating%20procedures%20on%20OCSEA%20in%20Kenya%20signed%20doc.pdf) |
+| Kiribati | Strong publication evidence | detailed operational procedure | 1 / 1 | [Immigration Procedures, Certified under the Immigration Act 2019, Version 1](https://www.mfa.gov.ki/wp-content/uploads/2020/11/Immigration-Procedures-2020.pdf) |
+| Kosovo | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Udhëzim Administrativ (MPB) Nr. 07/2016 për Procedurat e Pajisjes me Pasaportë](https://gzk.rks-gov.net/ActDocumentDetail.aspx?ActID=12654) |
+| Kuwait | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [دليل اجراءات العمل (المناقصات والعقود)](https://www.moi.gov.kw/main/content/docs/finance/ar/procedures-guide.pdf) |
+| Kyrgyzstan | Strong publication evidence | detailed operational procedure | 1 / 1 | [Административный регламент государственной услуги «Тиражирование статистических данных (бумажной версии)...» (утверждён приказом Нацстаткома КР от 26 апреля 2019 г. № 52)](https://stat.gov.kg/media/files/008b43ee-8894-4e71-91ea-c884e2c191c1.pdf) |
+| Laos | Strong publication evidence | detailed operational procedure | 1 / 1 | [Instruction on Electronic Customs Declaration No. 00097/CD (unofficial translation)](https://www.laotradeportal.gov.la/upload/files/2017_MOF_00097_ENG.pdf) |
+| Latvia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Iekšējie noteikumi: Kārtība, kādā veic gala labuma guvēju atlasi, piešķir atbalstu ... projekta Nr.1.2.3.1/1/23/I/001 'MVU inovatīvas uzņēmējdarbības attīstība' eksporta atbalsta nodrošināšanai ietvaros](https://s3.storage.pub.lvdc.gov.lv/liaa-bucket/shared/business.gov.lv/eiis-files/cms_uploads/Iek%C5%A1%C4%93jie%20noteikumi%20PDF.pdf) |
+| Lebanon | Strong publication evidence | detailed operational procedure | 1 / 1 | [دليل إجراءات المعاملات الإدارية في دائرة التفتيش الصيدلي (Guide to administrative transaction procedures in the Pharmaceutical Inspection Department)](https://moph.gov.lb/userfiles/files/HealthCareSystem/Pharmaceuticals/QualityAssuranceofPharmaceuticalProducts/InspectionGuideline.pdf) |
+| Lesotho | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [The Lesotho Qualifications Framework (LQF) Procedures Manual](https://www.che.ac.ls/wp-content/uploads/2026/08/LQF-Final_Cabinet-Approved-Signed-1.pdf) |
+| Liberia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Public Procurement and Concessions Act, 2005 as amended and restated in 2010 – Implementation Manual (Revised Step by Step Procedural Manual)](https://ppcc.gov.lr/sites/default/files/documents/Revised%20_Step%20by%20Step%20Procedural%20Manual.pdf) |
+| Libya | Unknown | unknown | 0 / 0 | [AC-PEL-ATO-014 (Libyan Civil Aviation Authority advisory circular)](https://caa.gov.ly/en/wp-content/uploads/pdf/AC-PEL-ATO-014.pdf) |
+| Liechtenstein | Public-facing evidence inspected only | unknown | 0 / 0 | [FMA-Wegleitung 2021/3 – Antrag auf Genehmigung des Wechsels des Eigentümers/Anteilseigners oder eines Mitglieds der Verwaltung oder der Geschäftsleitung](https://www.fma-li.li/fma-li/documents/rechtsgrundlagen/wegleitungen/fma-wl-2021-3-antrag-auf-genehmigung-des-wechsels-des-eigentuemers_anteilseigners-oder-eines-mitglieds-der-verwaltung-oder-eines-mitglieds-der-geschaeftsleitung.pdf) |
+| Lithuania | Unknown | unknown | 0 / 0 | [Procedūrų vadovas 2019-01-09](https://vrm.lrv.lt/uploads/vrm/documents/files/LT_versija/Teisine_informacija/Teises_aktai/Proceduru%20vadovas%202019-01-09.pdf) |
+| Luxembourg | Public-facing evidence inspected only | unknown | 0 / 0 | [Fonds Asile, Migration et Intégration (AMIF) - Manuel des procédures financières - Règles d'éligibilité des coûts](https://gouvernement.lu/dam-assets/documents/actualites/2023/05-mai/16-appel-fonds-amif/manuel-des-procdures-financires-amif.pdf) |
+| Madagascar | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel de procédure du traitement des opérations de garanties sur emprunts, de rétrocessions et de prêts directs du Gouvernement Central](https://www.mef.gov.mg/assets/file/accueil/2025/MANUEL_DE_PROCEDURE.pdf) |
+| Malawi | Strong publication evidence | detailed operational procedure | 1 / 1 | [Standard Operating Procedures for HIV Viral Load Monitoring, Version 1](https://dms.hiv.health.gov.mw/dataset/ecf90481-dd0d-40b8-8fce-3112b78bc6e2/resource/7f0217dd-2c26-4e2b-9fa0-2ff93fb86570/download/malawi-viral-load-standard-operating-procedures-manual-ver-1.pdf) |
+| Malaysia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Prosedur Operasi Standard dan Garis Panduan Kebenaran Beroperasi serta Pergerakan Pekerja bagi Syarikat/Premis Dobi, Hardware, Elektrik & Elektronik dalam Tempoh Perintah Kawalan Pergerakan 2020](https://www.miti.gov.my/miti/resources/Prosedur_Operasi_Standard_Am_dan_Garis_Panduan_Kebenaran_Beroperasi_serta_Pergerakan_Pekerja_bagi_Syarikat_%40_Premis_Dobi%2C_Hardware%2C_Elektrik_dan_Elektronik_dalam_Tempoh_Perintah_Kawalan_Pergerakan.pdf) |
+| Maldives | Strong publication evidence | detailed operational procedure | 1 / 1 | [Year End Procedure Manual, Version 3](https://www.finance.gov.mv/public/attachments/gZTmCmjVtklaMpAcRoix1cImOF5cKA33Hc9ZFr69.pdf) |
+| Mali | Unknown | unknown | 0 / 0 | [Manuel de procédures de programmation des investissements publics au Mali](https://dnpd.gouv.ml/images/documents/rapport/MANUEL_PROCEDURE_PROGRAMMATION.pdf) |
+| Malta | Unknown | unknown | 0 / 0 | [Manual on Transport and Travel Policies and Procedures](https://finance.gov.mt/wp-content/uploads/2023/04/Manual_on_Transport_and_Travel_Policies_and_Procedures.pdf) |
+| Marshall Islands | Unknown | unknown | 0 / 0 | [Title 14 Ministry of Education – School System Rules and Regulations 2015](https://pacificdata.org/data/dataset/aad9ce43-0f09-4b43-8cb4-391c46ffd7bd/resource/21d89637-dd38-4bf8-9b1a-e8d9115bdfb5/download/school-system-rules-and-regulations-2015.pdf) |
+| Mauritania | Unknown | unknown | 0 / 0 | [Manuel de gestion et des procédures de délivrance des documents administratifs au niveau communal](https://www.dgct.mr/modules/cms/posts/159-Fr.VF%20_Manuel%20_Gestion%20%26%20_Proc%C3%A9dures_D%C3%A9livrance%20_Documents%20__Administratifs_MIDEC.pdf) |
 | Mauritius | Strong publication evidence | detailed operational procedure | 1 / 1 | [SOP for Compliance Departments](https://www.mra.mu/download/SOPcompliance.pdf) |
-| Mexico | Unknown | unknown | 0 / 0 | Not verified |
-| Micronesia | Unknown | unknown | 0 / 0 | Not verified |
-| Moldova | Unknown | unknown | 0 / 0 | Not verified |
-| Monaco | Unknown | unknown | 0 / 0 | Not verified |
-| Mongolia | Unknown | unknown | 0 / 0 | Not verified |
-| Montenegro | Unknown | unknown | 0 / 0 | Not verified |
-| Morocco | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.sante.gov.ma/Publications/Guides-Manuels/Documents/2021/Manuel%20proc%C3%A9dures%20Programme%20Fonds%20mondial%20VF%202021.pdf) |
-| Mozambique | Unknown | unknown | 0 / 0 | Not verified |
+| Mexico | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de Procedimientos del Secretariado Técnico del Consejo Nacional para la Prevención de Accidentes](https://www.gob.mx/cms/uploads/attachment/file/782093/MP-STCONAPRA-2018__1_.pdf) |
+| Micronesia | Unknown | unknown | 0 / 0 | [Exchange of Tax Information Regulations](https://dofa.gov.fm/wp-content/uploads/2025/07/Exchange-of-Tax-Information-Regulations.pdf) |
+| Moldova | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manual Operațional al Agenției Feroviare (Anexă la ordinul nr. 4 din 06.02.2025)](https://af.gov.md/sites/default/files/media/documents/2025-07/MANUAL%20OPERATIONAL.pdf) |
+| Monaco | Public-facing evidence inspected only | unknown | 0 / 0 | [Settling in the Principality of Monaco – Monaco Welcome & Business Office brochure](https://documents.gouv.mc/www/mwbo/brochure/en/sources/projet/Brochure-MWBO-EN.pdf) |
+| Mongolia | Unknown | unknown | 0 / 0 | [Жирэмсэн, төрөх, төрсний дараах үед үзүүлэх тусламж, үйлчилгээний журам (Minister of Health Order A/292)](https://moh.gov.mn/uploads/files/0237e6f31c7d3277ebf41a0bb469ee3d614f394a.pdf) |
+| Montenegro | Unknown | unknown | 0 / 0 | [Regulatory Impact Analysis (RIA) Manual](https://wapi.gov.me/download-preview/20d3e265-dbcb-4f09-b11d-06ef6fb36f0a?version=1.0) |
+| Morocco | Unknown | unknown | 0 / 0 | [Manuel de procédures de gestion financière, budgétaire, RH et approvisionnements (Programme Fonds mondial) 2021](https://www.sante.gov.ma/Publications/Guides-Manuels/Documents/2021/Manuel%20proc%C3%A9dures%20Programme%20Fonds%20mondial%20VF%202021.pdf) |
+| Mozambique | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manual de Procedimentos - Instituto de Cereais de Moçambique, IP](https://icm.gov.mz/wp-content/uploads/2022/02/Manual-Procedimentos-2.pdf) |
 | Myanmar | Strong publication evidence | detailed operational procedure | 2 / 2 | [Standard Operation Procedures of the One-Stop Service](https://www.dica.gov.mm/wp-content/uploads/2024/12/book_oss_sop_white.pdf) |
-| Namibia | Unknown | unknown | 0 / 0 | Not verified |
-| Nauru | Unknown | unknown | 0 / 0 | Not verified |
-| Nepal | Unknown | unknown | 0 / 0 | Not verified |
-| Netherlands | Unknown | unknown | 0 / 0 | Not verified |
+| Namibia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Registry Manual (Edited 2018)](https://nan.gov.na/documents/3219017/3228702/REGISTRY%2BCLERKS%2BMANUAL%2B2018.pdf/9f9d9548-4e5f-7900-25d6-ef94bcaa7e63?t=1707290218692) |
+| Nauru | Strong publication evidence | detailed operational procedure | 1 / 1 | [Government of Nauru – Public Procurement Manual – Version 1](https://www.nauru.gov.nr/media/45579/procurement_manual.pdf) |
+| Nepal | Public-facing evidence inspected only | unknown | 0 / 0 | [User Manual (External) - Industry Management Information System](https://www.doind.gov.np/uploads/notices/Notices-20250805135221307.pdf) |
+| Netherlands | Strong publication evidence | detailed operational procedure | 1 / 1 | [Werkinstructies Registratie Niet-ingezetenen (WIR), Versie 1.6](https://www.rvig.nl/sites/default/files/2023-04/Werkinstructie%20Registratie%20Niet-ingezetenen.pdf) |
 | New Zealand | Strong publication evidence | detailed operational procedure | 2 / 2 | [Immigration New Zealand: managing skilled residence visa decisions](https://www.oag.parliament.nz/2024/skilled-residence-visas/docs/skilled-residence-visas.pdf) |
 | Nicaragua | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual para manejo y control interno de insumos médicos](https://www.minsa.gob.ni/sites/default/files/publicaciones/Manual%20de%20Procedimientos-2022.pdf) |
-| Niger | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.armp-niger.org/fileadmin/armp/pdf/MANUEL_DE_PROCEDURES_ARMP_NIGER_VERSION_FINALE_ADO_1.pdf) |
-| Nigeria | Unknown | unknown | 0 / 0 | Not verified |
-| North Korea | Unknown | unknown | 0 / 0 | Not verified |
-| North Macedonia | Unknown | unknown | 0 / 0 | Not verified |
+| Niger | Unknown | unknown | 0 / 0 | [Avis de manifestation d'intérêt pour le recrutement de consultants pour l'élaboration d'un Manuel de Procédures (FDIF)](https://hcintic.education.gouv.ne/index.php/communiques-de-presse/939-avis-de-manifestation-d-interet-pour-le-recrutement-de-consultants-ou-cabinets-de-consultants-pour-l-elaboration-d-un-manuel-de-procedures-administratives-comptables-et-financieres-pour-le-fonds-de-developpement-de-l-inclusion-financiere-fdif) |
+| Nigeria | Strong publication evidence | detailed operational procedure | 1 / 1 | [Standard Operating Procedure for Towing, Payment and Release of Road Obstruction/Abandoned Vehicles by Field Commands](https://frsc.gov.ng/wp-content/uploads/2019/11/FINALa.pdf) |
+| North Korea | Unknown | unknown | 0 / 0 | [Financial Services and General Government appropriations hearing (US Congress)](https://www.congress.gov/117/chrg/CHRG-117shrg49104036/CHRG-117shrg49104036.pdf) |
+| North Macedonia | Unknown | unknown | 0 / 0 | [Прирачник за овластен економски оператор (AEO Handbook)](https://customs.gov.mk/images/documents/aeo/PriracnikOEO.pdf) |
 | Norway | Strong publication evidence | detailed operational procedure | 1 / 1 | [Rundskriv 2020-08: adoption case handling](https://www.bufdir.no/fagstotte/produkter/adopsjonsrundskriv/) |
-| Oman | Unknown | unknown | 0 / 0 | Not verified |
-| Pakistan | Unknown | unknown | 0 / 0 | Not verified |
-| Palau | Unknown | unknown | 0 / 0 | Not verified |
-| Palestine | Unknown | unknown | 0 / 0 | Not verified |
-| Panama | Unknown | unknown | 0 / 0 | Not verified |
-| Papua New Guinea | Unknown | unknown | 0 / 0 | Not verified |
-| Paraguay | Unknown | unknown | 0 / 0 | Not verified |
+| Oman | Strong publication evidence | detailed operational procedure | 1 / 1 | [Project Management Manual (PMM)](https://www.ptlc.gov.om/en/Document/Guidline/Project%20Management%20Manual.pdf) |
+| Pakistan | Strong publication evidence | detailed operational procedure | 1 / 1 | [A Manual of Pension Procedures (revised edition 2006)](https://agpr.gov.pk/SiteImage/Policy/A%20Manual%20on%20Pension%20Procedures%20%28NEW%29.pdf) |
+| Palau | Strong publication evidence | detailed operational procedure | 1 / 1 | [Executive Order No. 422 – Republic of Palau Travel Policies and Procedures for the Executive Branch of the National Government](https://www.palaugov.pw/wp-content/uploads/2019/05/Executive-Order-No.-422-re.-Travel-Policies-and-Procedures.pdf) |
+| Palestine | Public-facing evidence inspected only | unknown | 0 / 0 | [بوابة الخدمات الإلكترونية - طلب تسجيل جمعية خيرية/هيئة أهلية](https://moidev.moi.gov.ps/Procedures.aspx?SEQ_ID=174) |
+| Panama | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de Procedimientos: Atención Primaria, Modelo de Gestión Fiscalía Metropolitana, Versión 2.0](https://ministeriopublico.gob.pa/wp-content/uploads/2023/07/RES.-N%C2%B001-DE-01-01-2023-MANUAL-DE-ATENCION-PRIMARIA-22-de-diciembre-ULTIMA-REVISION.pdf) |
+| Papua New Guinea | Unknown | unknown | 0 / 0 | [Financial Instruction 12 of 2024: Terminating Paymaster & AP Processing](https://www.finance.gov.pg/wp-content/uploads/2024/12/FI-12-of-2024-Terminating-Paymaster-AP-Processing-13.11.2024.pdf) |
+| Paraguay | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual Consular 2025](https://www.mre.gov.py/wp-content/uploads/normativa-institucional/9_MANUALCONSULAR_Ultima_Version_abril_2025.pdf) |
 | Peru | Strong publication evidence | detailed operational procedure | 1 / 1 | [DESPA-PG.01 Importación para el Consumo, v8](https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm) |
-| Philippines | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.nia.gov.ph/sites/default/files/pdf_reader/PAIS%20Operations%20Manual.pdf) |
-| Poland | Unknown | unknown | 0 / 0 | Not verified |
-| Portugal | Unknown | unknown | 0 / 0 | Not verified |
-| Qatar | Unknown | unknown | 0 / 0 | Not verified |
+| Philippines | Strong publication evidence | detailed operational procedure | 1 / 1 | [Revenue Office Manual of Operations in Granting Tax Exemption on Importations (e-TESLite), Revised May 2022](https://www.dof.gov.ph/wp-content/uploads/2024/08/MANUAL-OF-OPERATIONS-IN-GRANTING-TAX-EXEMPTION-ON-IMPORTATIONS-e-TESLite-2.pdf) |
+| Poland | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Rozporządzenie Prezesa Rady Ministrów z dnia 18 stycznia 2011 r. w sprawie instrukcji kancelaryjnej, jednolitych rzeczowych wykazów akt oraz instrukcji w sprawie organizacji i zakresu działania archiwów zakładowych (Dz.U. 2011 Nr 14 poz. 67) – Załącznik nr 1 Instrukcja kancelaryjna](https://isap.sejm.gov.pl/isap.nsf/download.xsp/WDU20110140067/O/D20110067.pdf) |
+| Portugal | Strong publication evidence | detailed operational procedure | 1 / 1 | [Spending Reviews Manual 1 on Design & Implementation (Supporting the implementation of spending reviews in Portugal)](https://www.gpeari.gov.pt/documents/35086/372556/SR_Manual_1_Design%2B%26%2Bimplementation_V1.pdf/a88a7920-647a-7508-45b4-23c11c4c038f?t=1718634679433) |
+| Qatar | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [House Connection & Secondary Works Manual 2023](https://www.ashghal.gov.qa/ServicesLibrary/Arabic/House%20Connection%20manual.pdf) |
 | Romania | Strong publication evidence | detailed operational procedure | 1 / 1 | [PO-CMDTA-18: direct procurement](https://dm.mai.gov.ro/wp-content/uploads/sites/4/2024/02/PO-CMDTA-18-Procedura-operationala-privind-achizitia-de-produse-servicii-lucrari-prin-achizitie-directa.pdf) |
-| Russia | Unknown | unknown | 0 / 0 | Not verified |
+| Russia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Приказ Минюста России от 30.12.2021 № 274 Об утверждении Административного регламента осуществления Министерством юстиции РФ государственного контроля (надзора) за соответствием деятельности некоммерческих организаций...](https://minjust.gov.ru/ru/documents/7759/) |
 | Rwanda | Strong publication evidence | detailed operational procedure | 1 / 1 | [RPPA Administrative Procedures Manual](https://www.rppa.gov.rw/fileadmin/user_upload/RPPA/Publications/Circulars/RPPA_ADMINISTRATIVE_PROCEDURE_MANUAL_APPROVED.pdf) |
-| Saint Kitts and Nevis | Unknown | unknown | 0 / 0 | Not verified |
+| Saint Kitts and Nevis | Unknown | unknown | 0 / 0 | [Declaration Manual - Processing the SAD (ASYCUDA)](https://skncustoms.com/Asycuda%20Manuals/Declaration%20Manual%20Processing%20the%20SAD.pdf) |
 | Saint Lucia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Saint Lucia Public Procurement Manual](https://www.finance.gov.lc/resources/download/2251) |
-| Saint Vincent and the Grenadines | Unknown | unknown | 0 / 0 | Not verified |
+| Saint Vincent and the Grenadines | Public-facing evidence inspected only | unknown | 0 / 0 | [Saint Vincent and the Grenadines Customs Procedure Codes (CPC) Manual](https://customs.gov.vc/downloads/c-p-codes.pdf) |
 | Samoa | Strong publication evidence | detailed operational procedure | 1 / 1 | [Government of Samoa HRM Policies & Procedures](https://www.psc.gov.ws/wp-content/uploads/2016/01/WCE-FINAL-LATEST-APPROVED-BY-CAB-26-Jan-2016.pdf) |
-| San Marino | Unknown | unknown | 0 / 0 | Not verified |
-| Saudi Arabia | Unknown | unknown | 0 / 0 | Not verified |
-| Senegal | Unknown | unknown | 0 / 0 | Not verified |
-| Serbia | Unknown | unknown | 0 / 0 | Not verified |
-| Seychelles | Unknown | unknown | 0 / 0 | Not verified |
-| Sierra Leone | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://named.gov.sl/wp-content/uploads/2023/01/SOPManual_FinalDraft_17Feb2020-1.pdf) |
-| Singapore | Unknown | unknown | 0 / 0 | Not verified |
-| Slovakia | Unknown | unknown | 0 / 0 | Not verified |
-| Slovenia | Unknown | unknown | 0 / 0 | Not verified |
-| Solomon Islands | Unknown | unknown | 0 / 0 | Not verified |
+| San Marino | Public-facing evidence inspected only | unknown | 0 / 0 | [Manuale d'uso – Area di competenza Procedure Concorsuali (IOL)](https://www.gov.sm/pub1/GovSM/dam/jcr%3A1af8f232-4b9d-48bf-b02b-b795b0d8b474/Manuale%20utente%20IOL%20Procedure%20Concorsuali.pdf) |
+| Saudi Arabia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [EXPRO National Manual of Assets and Facilities Management, Volume 8 Chapter 4: Procurement Methods (EOM-ZI0-PR-000001 Rev 001)](https://expro.gov.sa/api/uploads/Procurement%20Methods.pdf) |
+| Senegal | Unknown | unknown | 0 / 0 | [Manuel de procédures de la mise en oeuvre ... (Ministère de l'Economie, des Finances et du Plan)](https://budget.sec.gouv.sn/documents/public_download/5be07606-8ea8-4a20-9fdb-3d680a610b4d/telechargement) |
+| Serbia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Приручник за спровођење Закона о јединственом бирачком списку](https://mduls.gov.rs/wp-content/uploads/Prirucnik-JBS-20122019-web.pdf) |
+| Seychelles | Strong publication evidence | detailed operational procedure | 1 / 1 | [Government of Seychelles Accounting Manual, Version March 2020](https://www.finance.gov.sc/wp-content/uploads/2025/09/Accounting-Manual-2020-March-2020.pdf) |
+| Sierra Leone | Unknown | unknown | 0 / 0 | [Standard Operating Procedures for Monitoring and Evaluation of Government Projects and Programmes (SOP Manual, Final Draft 17 Feb 2020)](https://named.gov.sl/wp-content/uploads/2023/01/SOPManual_FinalDraft_17Feb2020-1.pdf) |
+| Singapore | Unknown | unknown | 0 / 0 | [STS Handbook - updated 19 Aug 2024](https://www.customs.gov.sg/files/businesses/seb/STS_Handbook.pdf) |
+| Slovakia | Strong publication evidence | detailed operational procedure | 1 / 1 | [Metodický pokyn na prípravu a predkladanie materiálov na rokovanie vlády SR](https://www.economy.gov.sk/uploads/files/XiArQZ3U.pdf) |
+| Slovenia | Public-facing evidence inspected only | unknown | 0 / 0 | [Internal Transit Procedure: A Detailed Description (1st edition)](https://www.fu.gov.si/fileadmin/Internet/Carina/Podrocja/Tranzit_in_status_blaga/Opis/Internal_transit_procedure.doc) |
+| Solomon Islands | Unknown | unknown | 0 / 0 | [Thematic Audit Report on COVID-19 Related Procurement in a State of Public Emergency by Three Ministries (National Parliament Paper No.4 of 2023)](https://oag.gov.sb/documents/audits/performance-audits/338-thematic-audit-report-on-covid-19-related-procurement-in-a-state-of-public-emergency-by-three-ministries/file.html) |
 | Somalia | Strong publication evidence | detailed operational procedure | 1 / 1 | [SOP on customs declarations through SOMCAS](https://revenuedirectorate.gov.so/sites/default/files/pdf/Standard%20Operating%20Procedures%20on%20the%20Process%20of%20Customs%20Declarations%20Through%20SOMCAS.pdf) |
-| South Africa | Unknown | unknown | 0 / 0 | Not verified |
-| South Korea | Unknown | unknown | 0 / 0 | Not verified |
-| South Sudan | Unknown | unknown | 0 / 0 | Not verified |
-| Spain | Unknown | unknown | 0 / 0 | Not verified |
-| Sri Lanka | Unknown | unknown | 0 / 0 | Not verified |
-| Sudan | Unknown | unknown | 0 / 0 | Not verified |
-| Suriname | Unknown | unknown | 0 / 0 | Not verified |
-| Sweden | Unknown | unknown | 0 / 0 | Not verified |
-| Switzerland | Unknown | unknown | 0 / 0 | Not verified |
-| Syria | Unknown | unknown | 0 / 0 | Not verified |
+| South Africa | Strong publication evidence | detailed operational procedure | 1 / 1 | [The Standard Operating Procedures for the Establishment, Operational Management and Capacity Building of the District-Based Support Teams (DBST)](https://www.education.gov.za/LinkClick.aspx?fileticket=FZsnyxgRVqg%3D&mid=2372&portalid=0&tabid=617) |
+| South Korea | Unknown | unknown | 0 / 0 | [민원처리 안내 (civil_affairs.pdf)](https://www.mnd.go.kr/mbshome/mbs/mnd/download/civil_affairs.pdf) |
+| South Sudan | Strong publication evidence | detailed operational procedure | 1 / 1 | [Public Procurement and Disposal of Assets Manual - Trial Edition](https://ppdaa.gov.ss/sites/default/files/2025-12/PPDAM_Approved%20by%20Board_12Dec2025.pdf) |
+| Spain | Strong publication evidence | detailed operational procedure | 1 / 1 | [Resolución de 14 de diciembre de 1992, de la Secretaría de Estado para la Administración Pública, por la que se dispone la publicación del Manual de Procedimientos de Gestión de Recursos Humanos en materia de vacaciones, permisos y licencias, comisiones de servicios y reingresos al servicio activo](https://www.boe.es/buscar/doc.php?id=BOE-A-1993-1258) |
+| Sri Lanka | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Standard Operating Procedures for Automobile Manufacturing Industry, Government of Sri Lanka, Version 2](https://www.industry.gov.lk/web/wp-content/uploads/2022/02/sopv2-1.pdf) |
+| Sudan | Unknown | unknown | 0 / 0 | [Humanitarian Aid Commission – General Manual (دليل الإجراءات للمنظمات الطوعية)](https://www.hac.gov.sd/ar/GeneralManual) |
+| Suriname | Public-facing evidence inspected only | unknown | 0 / 0 | [Procedures en vergunningen (FAQ)](https://gov.sr/thema/procedures-en-vergunningen/) |
+| Sweden | Strong publication evidence | detailed operational procedure | 1 / 1 | [Vägledning för handläggning av vapenärenden, Dokumentversion 1.3](https://polisen.se/f7629ed359dad7f5400157bf030386a7/siteassets/dokument/vagledning-for-handlaggning-av-vapenarenden.pdf) |
+| Switzerland | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manuel sur la nationalité, Chapitre 1: Bases légales et autorités](https://www.sem.admin.ch/dam/sem/fr/data/rechtsgrundlagen/weisungen/buergerrecht/hb-bueg-kap1-f.pdf) |
+| Syria | Public-facing evidence inspected only | unknown | 0 / 0 | [دليل المستخدم (User Guide), SME Development Commission platform](https://smeda.gov.sy/user-guide.php) |
 | São Tomé and Príncipe | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de procedimentos para o Serviço Nacional de Saúde](https://minsaude.st/wp-content/uploads/2022/09/Manual-de-procedimentos-SNS_Vfinal_jan2020.pdf) |
-| Taiwan | Unknown | unknown | 0 / 0 | Not verified |
-| Tajikistan | Unknown | unknown | 0 / 0 | Not verified |
+| Taiwan | Strong publication evidence | detailed operational procedure | 1 / 1 | [銓審請任 SOP 十一：行政院所屬各主管機關常務副首長、主任秘書、司處長及所屬一級機關職務列簡任第12職等以上首長人員之職務代理人報核簡化事項 (item ED11)](https://www.dgpa.gov.tw/FileConversion?filename=dgpa/files/202604/45271345-db15-4451-8d95-9fc870814c4c.doc&nfix=pdf) |
+| Tajikistan | Unknown | unknown | 0 / 0 | [Operational Activities – Tajikistan National Mine Action Centre](https://mineaction.tj/pillars/mine_clearance_operations/) |
 | Tanzania | Strong publication evidence | detailed operational procedure | 1 / 1 | [National SOP for Social Welfare Service Desk in Transport Hubs](https://www.jamii.go.tz/uploads/documents/sw-1753363346-Final%20SOP%202025%20EDITED%20FINAL.pdf) |
 | Thailand | Strong publication evidence | detailed operational procedure | 1 / 1 | [Macroeconomic Labour Policy Group work manual](https://www.mol.go.th/wp-content/uploads/sites/2/2026/05/1.%E0%B8%84%E0%B8%B9%E0%B9%88%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%81%E0%B8%A5%E0%B8%B8%E0%B9%88%E0%B8%A1%E0%B8%87%E0%B8%B2%E0%B8%99-%E0%B8%99%E0%B8%A8%E0%B8%A1.-.pdf) |
-| Timor-Leste | Unknown | unknown | 0 / 0 | Not verified |
-| Togo | Unknown | unknown | 0 / 0 | Not verified |
-| Tonga | Unknown | unknown | 0 / 0 | Not verified |
-| Trinidad and Tobago | Unknown | unknown | 0 / 0 | Not verified |
-| Tunisia | Unknown | unknown | 0 / 0 | Not verified |
-| Turkmenistan | Unknown | unknown | 0 / 0 | Not verified |
-| Tuvalu | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://cpmo.gov.tv/wp-content/uploads/2022/09/TULEP_Processes_and_Procedures_Manual.pdf) |
-| Türkiye | Unknown | unknown | 0 / 0 | Not verified |
-| Uganda | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.finance.go.ug/sites/default/files/2025-12/SOPs%20Guidelines%20July%20Web.pdf) |
-| Ukraine | Unknown | unknown | 0 / 0 | Not verified |
+| Timor-Leste | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Decreto do Governo N.º 14/2017 de 29 de Março – Procedimento para a Apresentação de Proposta para a Classificação de Área Protegida (Jornal da República Série I, N.º 12)](https://www.mj.gov.tl/jornal/public/docs/2017/serie_1/SERIE_I_NO_12.pdf) |
+| Togo | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manuel de procédures de dédouanement de la Direction des Opérations Douanières de Lomé-Port (DODLP), Réf. OTR/Pr-Pd/DLP/Man/002, Version 002](https://togotrade.gouv.tg/media/Manuel%20de%20proc%C3%A9dure%20Douane%20_1.pdf) |
+| Tonga | Strong publication evidence | detailed operational procedure | 1 / 1 | [Cabinet Manual of His Majesty's Cabinet (CAP. 1.1.01)](https://ago.gov.to/cms/images/LEGISLATION/SUBORDINATE/2017/2017-2103/CabinetManualofHisMajestysCabinet_2.pdf) |
+| Trinidad and Tobago | Public-facing evidence inspected only | unknown | 0 / 0 | [eAppointment Application - Citizen User Manual](https://homelandsecurity.gov.tt/wp-content/uploads/2023/08/eAppointment-User-Manual-CitizenImmigration.pdf) |
+| Tunisia | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Manuel de procédures pour l'octroi d'une autorisation d'exercice de l'activité d'opérateur d'un réseau virtuel des télécommunications](https://www.mtc.gov.tn/fileadmin/Investisseurs/Manuel_de_Procedures_Dossier_MVNO_V2.pdf) |
+| Turkmenistan | Unknown | unknown | 0 / 0 | [Закон Туркменистана Об электронном правительстве](https://maslahat.gov.tm/api/v1/uploads/laws/1680527117540254317.pdf) |
+| Tuvalu | Strong publication evidence | detailed operational procedure | 1 / 1 | [Financial Instructions, 2022 Revised Edition (CAP 4.20.1)](https://tuvalu-legislation.tv/cms/images/LEGISLATION/SUBORDINATE/1991/1991-0011/1991-0011_2.pdf) |
+| Türkiye | Strong publication evidence | detailed operational procedure | 1 / 1 | [Araştırma Uygulama İzinleri İş Akış Şeması (Doküman No İAŞ3.03)](https://ttkb.meb.gov.tr/KYS/is_akis_semalari/ias3.03.pdf) |
+| Uganda | Strong publication evidence | detailed operational procedure | 1 / 1 | [The EAC Single Customs Territory (SCT) Business Process Manual (Uganda Customs), BPM No. URA/SCT001-2019](https://ura.go.ug/storage/2023/08/The-SCT-Process-Manual-URA-V-1-12-09-2019-.pdf) |
+| Ukraine | Strong publication evidence | detailed operational procedure | 1 / 1 | [Наказ Мінекономіки від 07.11.2025 № 1151 Про затвердження інформаційних та технологічних карток адміністративних послуг у сфері управління відходами](https://me.gov.ua/download/f91369d1-8ec9-4cb1-b511-301b11eff1be/file.pdf) |
 | United Arab Emirates | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Cabinet Resolution 122/2024: procurement implementing regulations](https://mof.gov.ae/wp-content/uploads/2024/12/MoF-English-Procurement-Bylaws-11.12.2024.pdf) |
 | United Kingdom | Strong publication evidence | detailed operational procedure | 1 / 1 | [Skilled Worker caseworker guidance, v20](https://www.gov.uk/government/publications/skilled-worker-visa-caseworker-guidance/skilled-worker-caseworker-guidance-accessible) |
 | United States | Strong publication evidence | detailed operational procedure | 1 / 1 | [Field Operations Manual, chapter 3](https://www.osha.gov/fom/chapter-3) |
 | Uruguay | Strong publication evidence | detailed operational procedure | 1 / 1 | [Manual de habilitación/renovación de empresas](https://www.gub.uy/ministerio-salud-publica/sites/ministerio-salud-publica/files/documentos/publicaciones/manual-habilitacion-de-empresas_parte1.pdf) |
-| Uzbekistan | Unknown | unknown | 0 / 0 | Not verified |
-| Vanuatu | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://customs.vanuatu.gov.vu/images/VSMS/docs/Standard%20Operating%20Procedure%20%20-%20VSMS.pdf) |
-| Vatican City | Unknown | unknown | 0 / 0 | Not verified |
-| Venezuela | Unknown | unknown | 0 / 0 | Not verified |
+| Uzbekistan | Public-facing evidence inspected only | unknown | 0 / 0 | [Receiving a Pension (life situation)](https://my.gov.uz/en/life-situations/570cf2ef-f353-4efa-931a-9accaa99adc8) |
+| Vanuatu | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Procurement Operations Manual – Scope of Application (MCA-Vanuatu)](https://mcavanuatu.gov.vu/MCA%20CONTENTS/procurement/Scope%20of%20Application%20of%20Procurement%20Operations%20Manual.pdf) |
+| Vatican City | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Vademecum on certain points of procedure in treating cases of sexual abuse of minors committed by clerics (Version 1.0)](https://www.vatican.va/roman_curia/congregations/cfaith/documents/rc_con_cfaith_doc_20200716_vademecum-casi-abuso_en.html) |
+| Venezuela | Unknown | unknown | 0 / 0 | [Actuaciones - Anexo al Informe de Gestión 2021](https://www.cgr.gob.ve/descargar/pdf...informes...actuaciones...2021...IG21_01_apendice_18_08.pdf/pdf...informes...actuaciones...2021...IG21_01_apendice_18_08.pdf) |
 | Vietnam | Promising, unresolved detail/applicability | some internal detail or unresolved applicability | 0 / 0 | [Internal administrative procedure annex](https://nbca.gov.vn/wp-content/uploads/2026/04/Phu-luc_Quy-trinh-noi-bo-BTTN.pdf) |
-| Yemen | Unknown | unknown | 0 / 0 | Not verified |
-| Zambia | Unknown | unknown | 0 / 0 | [Candidate operational manual](https://www.cabinet.gov.zm/wp-content/uploads/2024/12/SOP-FOR-HEALTH-SERVICES_Dec-6.pdf) |
+| Yemen | Unknown | unknown | 0 / 0 | [Policies of the Administration of Human Resources (HR policies manual contents)](https://caqa.gov.ye/en/caqa/council_departments/department_of_human_resources/policies_of_the_adminstration_of_human_resource1) |
+| Zambia | Public-facing evidence inspected only | unknown | 0 / 0 | [ZamMobile: User Manual Version 1.0](https://zamgov.gsb.gov.zm/docs/ZamGov%20User%20Manual.pdf) |
 | Zimbabwe | Strong publication evidence | detailed operational procedure | 1 / 1 | [Zimbabwe Public Procurement Guidelines](https://www.praz.org.zw/wp-content/uploads/2024/07/Zimbabwe_Procurement_Manual.pdf) |
