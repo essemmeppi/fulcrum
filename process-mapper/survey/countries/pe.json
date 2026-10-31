@@ -1,0 +1,1427 @@
+{
+  "country_id": "pe",
+  "country_name": "Peru",
+  "surveyed_at": "",
+  "model": "",
+  "government_structure": "Unitary, decentralised republic. National-level bodies deliver tax and customs (SUNAT), contributory pensions (ONP), health insurance (EsSalud, SIS), identity and civil registration (RENIEC; civil registration also through municipal Oficinas de Registro del Estado Civil operating under RENIEC directives), immigration (Migraciones), business and property registration (SUNARP), social programmes (MIDIS: Pension 65, Juntos) and sector licensing. Regional governments and municipalities deliver construction and operating licences, local taxes and some civil-registry and licensing functions; every entity at all three tiers must approve a TUPA (Texto Unico de Procedimientos Administrativos) under Ley 27444 and publish it in El Peruano and on gob.pe (DS 004-2023-MINAM, opened on El Peruano, shows a TUPA modification published that way).",
+  "official_languages": [
+    "Spanish",
+    "Quechua",
+    "Aymara"
+  ],
+  "web_languages": [
+    "Spanish"
+  ],
+  "legal_information": [
+    {
+      "name": "SPIJ - Sistema Peruano de Informacion Juridica",
+      "url": "https://spij.minjus.gob.pe/",
+      "publisher": "Ministerio de Justicia y Derechos Humanos",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Official digital edition of national legislation. El Peruano (10/02/2025) states it holds more than 500,000 norms, of which more than 210,000 are free access ('Normativa de Acceso Libre'); the remainder requires a paid subscription. Texts described as 'sistematizadas y actualizadas'; downloads in Word and PDF; content search and date-range search. The site returned HTTP 503 to every automated fetch in this survey, so the consolidated view and free/paid boundary could not be checked directly. No API found.",
+      "consolidated_texts": true,
+      "consolidation_lag": "unknown; RM 0327-2025-JUS (Sept 2025) approved guidelines for updating SPIJ (search result only)",
+      "covers_regulations": true,
+      "format": "mixed"
+    },
+    {
+      "name": "Buscador El Peruano - Normas Legales",
+      "url": "https://busquedas.elperuano.pe/dispositivo/NL/2162962-1",
+      "publisher": "Editora Peru (Diario Oficial El Peruano)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Official gazette search. Each norm has an identifier (e.g. 2162962-1) and is served as HTML full text, PDF and 'Cuadernillo'; metadata: title, publication date, norm type, number. Original texts as published, not consolidated. Free, no login. Covers decrees, ministerial resolutions and agency resolutions (e.g. ONP Resolucion Jefatural 141-2021-ONP/JF at NL/2023376-1). No API documented; the domain's safety check was rate-limited at the end of the survey.",
+      "consolidated_texts": false,
+      "consolidation_lag": "",
+      "covers_regulations": true,
+      "format": "mixed"
+    },
+    {
+      "name": "Archivo Digital de la Legislacion del Peru",
+      "url": "https://www.leyes.congreso.gob.pe/",
+      "publisher": "Congreso de la Republica",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es",
+        "qu"
+      ],
+      "note": "Laws, legislative decrees, emergency decrees and regional laws from 1904 to date, plus 19th-century legislation; a vigente / no vigente flag; search by number, date, title. Opened Ley 27444 (Documentos/Leyes/27444.pdf) and Ley 27806 (27806.pdf): both are scanned gazette PDFs of the original act (11 April 2001 and 3 August 2002), not consolidated. Includes a collection of laws in Quechua.",
+      "consolidated_texts": false,
+      "consolidation_lag": "",
+      "covers_regulations": false,
+      "format": "pdf"
+    },
+    {
+      "name": "SUNAT Legislacion (tributaria y aduanera)",
+      "url": "https://www.sunat.gob.pe/legislacion/index.html",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Agency legal portal: Resoluciones de Superintendencia by year (1996-2016 index pages at /legislacion/superin/<year>/indices/indcor.htm), tax and customs legislation sections, customs procedure manuals (see internal_guidance_examples). HTML with embedded change logs ('control de cambios').",
+      "consolidated_texts": true,
+      "consolidation_lag": "procedure pages carry amendment references up to RS 079-2026",
+      "covers_regulations": true,
+      "format": "html"
+    }
+  ],
+  "catalogues": [
+    {
+      "name": "GOB.PE - Plataforma Digital Unica del Estado Peruano (catalogo de tramites y servicios)",
+      "url": "https://www.gob.pe/tramites",
+      "publisher": "PCM - Secretaria de Gobierno y Transformacion Digital",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "National single portal where every entity's procedures and TUPA are published (article 4 of DS 004-2023-MINAM, opened on El Peruano: 'El presente Decreto Supremo y su Anexo se publican en la Plataforma Digital Unica del Estado Peruano'). The site returned HTTP 418 to every automated fetch (including /robots.txt and /sitemap.xml), so no record could be opened and field structure, record count and any API could not be verified. Searches for a gob.pe API or TUPA open-data export found none.",
+      "scope": "national_and_subnational",
+      "record_count_estimate": null,
+      "fields_per_record": []
+    },
+    {
+      "name": "TUPA - Texto Unico de Procedimientos Administrativos (per entity) and SUT - Sistema Unico de Tramites",
+      "url": "https://www.sunat.gob.pe/legislacion/tupa/index.html",
+      "publisher": "Each entity; SUT administered by PCM Secretaria de Gestion Publica (DL 1203)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es",
+        "qu"
+      ],
+      "note": "Ley 27444 art. 43 (TUO DS 004-2019-JUS) obliges every public entity to approve a TUPA listing each procedure with requisitos, derecho de tramitacion, plazo, calificacion (automatic / prior evaluation with positive or negative silence) and responsible unit, in the standard format approved by PCM (DS 062-2009-PCM; RSGP 004-2020-PCM-SGP). TUPAs are approved by decree/resolution published in El Peruano and on gob.pe (DS 004-2023-MINAM opened). SUNAT's TUPA page lists TUPA editions 2007-2017 as PDFs plus a Quechua summary of main procedures. The SUT (sgp.pcm.gob.pe/sistema-unico-de-tramites/) is the official repository entities use to draft and standardise TUPAs; its page returned 503 and no public consultation or API was found.",
+      "scope": "national_and_subnational",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "requisitos",
+        "derecho de tramitacion (fee)",
+        "plazo",
+        "calificacion / silencio administrativo",
+        "autoridad competente",
+        "instancias de resolucion de recursos",
+        "formularios",
+        "base legal"
+      ]
+    }
+  ],
+  "foi": {
+    "law_exists": true,
+    "law_name": "Ley 27806, Ley de Transparencia y Acceso a la Informacion Publica (TUO DS 021-2019-JUS)",
+    "law_url": "https://www.leyes.congreso.gob.pe/Documentos/Leyes/27806.pdf",
+    "proactive_publication_duties": [
+      "Portal de Transparencia Estandar (DS 063-2010-PCM, opened at minedu.gob.pe copy): standard formats for management information; rubros listed on transparencia.gob.pe: Datos generales (directorio, normas emitidas, marco legal), Planeamiento y organizacion (ROF, organigrama, MAPRO/mapa de procesos, TUPA, PEI, POI), Presupuesto, Proyectos de inversion e INFObras, Participacion ciudadana, Personal, Contratacion de bienes y servicios, Actividades oficiales, Registro de visitas, Acceso a la informacion publica, Informacion focalizada",
+      "EsSalud's PTE 'Planeamiento y organizacion' page links its ROF, organigrama, 'Manual de Procedimientos (MAPRO) / Mapa de procesos institucional', TUPA, PEI and POI, showing that TUPA and procedure manuals are published under the PTE scheme",
+      "Ley 27444 art. 43: every entity must approve and publish its TUPA (procedures, requisitos, fees, plazos, calificacion) in El Peruano and on gob.pe"
+    ],
+    "procedure_publication_duty": true,
+    "disclosure_platforms": [
+      {
+        "name": "Portal de Transparencia Estandar (PTE)",
+        "url": "https://www.transparencia.gob.pe/",
+        "publisher": "PCM / Ministerio de Justicia - ANTAIP",
+        "machine_readable": false,
+        "api_url": "",
+        "languages": [
+          "es"
+        ],
+        "note": "Homepage: '13594 personas de 2350 entidades publican informacion en este Portal'. Per-entity pages (e.g. ?id_entidad=107 for EsSalud) link normas emitidas, instrumentos de gestion, access-to-information request statistics; no public log of individual requests or responses was found."
+      },
+      {
+        "name": "Plataforma de Transparencia y Acceso a Informacion Publica (ANTAIP, Facilita Peru) / PAIP (OGP commitment PE0128)",
+        "url": "https://www.gob.pe/institucion/antaip/pages/22539-acceder-a-la-plataforma-de-transparencia-y-acceso-a-informacion-publica",
+        "publisher": "ANTAIP - Ministerio de Justicia y Derechos Humanos",
+        "machine_readable": false,
+        "api_url": "",
+        "languages": [
+          "es"
+        ],
+        "note": "Government request form being rolled out entity by entity (search result; page not opened because gob.pe returns HTTP 418). ANTAIP annual report: more than 410,000 requests handled in 2025. No Alaveteli instance for Peru found; no public log of requests and answers found."
+      }
+    ]
+  },
+  "internal_guidance_practice": "Yes, systematically for the main agencies, with important gaps. SUNAT publishes its customs operating procedures in full as HTML on its own site: 28 'procedimientos generales' DESPA-PG, about 20 'procedimientos asociados' DESPA-PE and 16 RECA (collection) procedures, each versioned with approving resolution, change log and roughly 100-150 numbered steps that state what 'el funcionario aduanero' does and what 'el sistema informatico' does automatically (DESPA-PG.01 v8: 'El sistema informatico asigna el canal de control, en aplicacion de tecnicas de gestion de riesgo'; DESPA-PE.00.09 v5 describes reception, assignment by the DCA head, laboratory analysis, 45-working-day deadline). EsSalud publishes 109 'Manuales de Procesos y Procedimientos' (2019-2023, PDF, listed with status) and 7 Manuales de Operaciones, plus all Gerencia General resolutions approving internal directivas (Normatividad Institucional page, 2022-2024) and a Compendio Normativo. RENIEC's new 172-page Directiva DI-001-GTAR-DRC 'Gestion Tecnica de Registros Civiles y Archivo Registral' (2026) is marked 'INFORMACION PUBLICA' and tells registrars how to qualify births, marriages, deaths and rectifications in the SIRCM system; the earlier DI-008-DRC/001 'Procedimientos del Registro Civil' is also public. ONP's pension-qualification directives (Directiva 005-2021-ONP/JF, 001-2022, 006-2022 'Calificacion de Prestaciones Previsionales del SNP', 005-2022 on fiscalizacion de expedientes, lineamientos 2026 for DL 20530 transfers) are approved by Resolucion Jefatural published with annex in El Peruano, gob.pe/onp and the PTE. Migraciones hosts its Resoluciones de Superintendencia under a 'Normativa Interna' folder on migraciones.gob.pe (RS063-2020 opened). Gaps: SUNAT's internal-tax side (tributos internos) exposes guidance (orientacion.sunat.gob.pe) and resolutions but no equivalent step-level procedure manual was found; Pension 65 directivas (DI-GOPE-01/02 'Afiliacion de Usuarios', Directiva 001-2025-MIDIS/PENSION65) are cited in published resolutions but their text sits on gob.pe, which could not be opened; descriptions of what case systems (ONP's NSP, RENIEC SIRCM, SUNAT SIGAD) do automatically appear only inside these procedures, not as separate system descriptions.",
+  "internal_guidance_examples": [
+    {
+      "name": "SUNAT - Procedimientos de despacho aduanero (DESPA-PG index)",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/index.html",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Index of 28 general procedures DESPA-PG.01-29 grouped by regime (importacion, exportacion, perfeccionamiento, deposito, transito, regimenes especiales, otros) plus links to procedimientos asociados, circulares, resoluciones and derogados. Predictable URLs /legislacion/procedim/despacho/<cat>/<sub>/procGeneral/despa-pg.NN.htm."
+    },
+    {
+      "name": "SUNAT - DESPA-PG.01 Importacion para el Consumo (version 8)",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Approved RS 084-2020, in force 31/08/2020, amended up to RS 079-2026. Sections Objetivo, Alcance, Responsabilidad, Definiciones, Base legal, Disposiciones generales A-O, Descripcion A-D (tramitacion, revision documentaria, reconocimiento fisico, regularizacion, revision post levante), ~130 numbered steps naming officer actions ('El funcionario aduanero asignado para la revision documentaria efectua las siguientes acciones') and system actions ('El sistema informatico valida los datos de la informacion transmitida')."
+    },
+    {
+      "name": "SUNAT - Procedimientos asociados DESPA-PE (e.g. DESPA-PE.00.09 Clasificacion Arancelaria v5)",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/despa-pe.00.09.htm",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Index at /legislacion/procedim/despacho/procAsociados/index.html lists about 20 DESPA-PE procedures with version numbers. DESPA-PE.00.09 (RS 000050-2021) describes unit-level steps: Recepcion Documental assigns the expediente, 'La jefatura de la DCA asigna el expediente a un funcionario aduanero', laboratory reports in 15 working days, ruling within 45 working days, systems MPV-SUNAT, SIGAD, buzon electronico."
+    },
+    {
+      "name": "SUNAT - Procedimientos de recaudacion aduanera RECA-PG / RECA-PE",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/recauda/index.html",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "4 general and 12 specific procedures: determination and control of customs debt, control de ingresos, extincion por pago, garantias, reclamos tributarios (RECA-PG.04), devoluciones (RECA-PG.05), plus linked resolutions (cobranza coactiva, FRAES) and a derogados archive."
+    },
+    {
+      "name": "EsSalud - Manuales de Procesos y Procedimientos",
+      "url": "http://www.essalud.gob.pe/manuales-de-procesos-y-procedimientos/",
+      "publisher": "EsSalud",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "109 numbered manuals (E01-E05 estrategicos, M01-M04 misionales, S01-S08 soporte) with unit, status (Validado / Por validar / En proceso de aprobacion), publication and update dates 2019-2023, each a PDF under /transparencia/procesos_procedimientos/ often paired with the approving resolution; includes Gerencia de Prestaciones Economicas (benefits), Gerencia Central de Logistica, hospital clinical processes."
+    },
+    {
+      "name": "EsSalud - Manuales de Operaciones (MOPE)",
+      "url": "http://www.essalud.gob.pe/manual-de-operaciones-mope/",
+      "publisher": "EsSalud",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "7 operations manuals for networks and hospitals (Red Prestacional Lambayeque, Sabogal, INCOR, etc.), each with approving and amending RPE resolutions and updated text as PDF."
+    },
+    {
+      "name": "EsSalud - Normatividad Institucional (resoluciones de Gerencia General que aprueban directivas)",
+      "url": "https://www.essalud.gob.pe/normatividad-institucional/",
+      "publisher": "EsSalud",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Lists Presidencia Ejecutiva and Gerencia General resolutions 2019-2024 as PDFs (e.g. RGG 943-GG-ESSALUD-2023 approving Directiva 06-GG-ESSALUD-2023 'Sistema Nacional de Cuidado Cardiovascular', 18 pages, opened). Directiva 21-GCPP-ESSALUD-2020 governs how EsSalud formulates and approves directivas and procedimientos internos. A Compendio Normativo (compendionormativo.essalud.gob.pe) exists but returned 503. The MINSA site mirrors hundreds of EsSalud resolutions 1999-2023."
+    },
+    {
+      "name": "RENIEC - Directiva DI-001-GTAR-DRC Gestion Tecnica de Registros Civiles y Archivo Registral (primera version, 2026)",
+      "url": "https://img.lpderecho.pe/wp-content/uploads/2026/09/Directiva-DI-001-GTAR-DRC-LPderecho.pdf",
+      "publisher": "RENIEC Direccion de Registros Civiles (copy mirrored by LP Derecho; official copy on the RENIEC portal per El Peruano 16/09/2026)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es",
+        "qu"
+      ],
+      "note": "172-page registrar manual approved by Resolucion Secretarial D000040-2026-RENIEC/SGEN, marked 'INFORMACION PUBLICA' and 'Toda copia ... fuera del Portal WEB del RENIEC es una COPIA NO CONTROLADA'. Sections on registradores civiles, manual vs automated inscriptions in the SIRCM system, bilingual registry, mobile registry, calificacion registral for births/marriages/deaths, rectificacion administrativa, reposicion, cancelacion, observacion administrativa. Replaces DI-008-DRC/001 'Procedimientos del Registro Civil' (Dec 2022) 90 days after issue."
+    },
+    {
+      "name": "ONP - Directiva sobre la Calificacion de Prestaciones Previsionales del Sistema Nacional de Pensiones (RJ 141-2021-ONP/JF, 017-2022-ONP/JF, 097-2022-ONP/JF)",
+      "url": "https://busquedas.elperuano.pe/dispositivo/NL/2023376-1",
+      "publisher": "ONP",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "RJ 141-2021 (El Peruano 21/12/2021) approves Directiva 005-2021-ONP/JF and orders publication of the resolution and annex in El Peruano, gob.pe/onp and the PTE; RJ 017-2022 (lpderecho mirror opened) replaces it citing Directiva 001-2021-JF/ONP on ONP normative instruments; RJ 097-2022 approves Directiva 006-2022-ONP/JF (gob.pe CDN returned 403). Directive annex text not read in this survey. Related: RJ 096-2022 Directiva 005-2022 fiscalizacion de expedientes administrativos del SNP; RJ 089-2022 Directiva 003-2022 calculo actuarial."
+    },
+    {
+      "name": "ONP - RJ 000056-2026-JF-ONP Lineamientos para la remision de informacion y documentacion por entidades que pagan pensiones DL 20530",
+      "url": "https://img.lpderecho.pe/wp-content/uploads/2026/04/Resolucion-Jefatural-000056-2026-JF-ONP-LPDerecho.pdf",
+      "publisher": "ONP (El Peruano separata especial 18/04/2026)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Full annex published as a 'separata especial' in El Peruano; article 2 'Disponese que la presente Resolucion sea puesta de conocimiento de los servidores de la entidad'; article 3 orders publication on gob.pe/onp and transparencia.gob.pe. Shows that ONP operating lineamientos are published in full."
+    },
+    {
+      "name": "Migraciones - Normativa Interna (Resoluciones de Superintendencia)",
+      "url": "https://www.migraciones.gob.pe/Normativa%20Interna/Resoluciones%20de%20Superintendencia/2020/RS063-2020.pdf",
+      "publisher": "Superintendencia Nacional de Migraciones",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Predictable folder /Normativa Interna/Resoluciones de Superintendencia/<year>/RSnnn-<year>.pdf (directory listing itself is empty). RS063-2020 opened: a 7-page digitally signed resolution declaring lesividad of a residence visa, reciting ROF art. 48-49 verification functions of the Subgerencia de Verificacion y Fiscalizacion. Search results also show RS 229-2018, 404-2018, 064/065/132/163-2019 approving lineamientos on calidades migratorias."
+    },
+    {
+      "name": "SUNAT - RS 026-2001/SUNAT Reordenamiento de la politica de fiscalizacion o verificacion",
+      "url": "https://www.sunat.gob.pe/legislacion/superin/2001/026.htm",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Example of a tax-side (tributos internos) institutional rule: when audits start, suspend and end ('deberan ser culminadas dentro del plazo de quince (15) dias habiles'); it does not give step-level staff procedures. No step-level tax-side procedure manual was found."
+    }
+  ],
+  "appeals_sources": [
+    {
+      "name": "Tribunal Fiscal - Busqueda de Resoluciones (RTF)",
+      "url": "https://apps4.mineco.gob.pe/ServiciosTF/nuevo_busq_rtf.htm",
+      "publisher": "Ministerio de Economia y Finanzas - Tribunal Fiscal",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Search by RTF or expediente number, Sala (1-13, Quejas, Aduanas), year 1964-2026 and administration (SUNAT tributos internos, SUNAT aduanas, tributos municipales, otras). No free-text search field on this form (a separate nuevo_Contenido.htm is cited by third parties). RTF notified by publication appear as dated PDFs under mef.gob.pe/contenidos/tribu_fisc/jurisprude/notifica/. Annual 'Boletin de Jurisprudencia Fiscal' compendia (2023 opened: RTF 07112-2-2023 on loss of a fraccionamiento, RTF 00861-12-2023 on a refund request) and observance-mandatory precedents (art. 154 Codigo Tributario)."
+    },
+    {
+      "name": "INDECOPI - Buscador de Resoluciones",
+      "url": "https://jurisprudencia.indecopi.gob.pe/buscadorResoluciones/",
+      "publisher": "INDECOPI",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Access to 'todas las resoluciones' by category: Tribunal del Indecopi, Propiedad Intelectual, Proteccion al Consumidor, Defensa de la Competencia, sentencias del Poder Judicial, laudos. The Comision de Eliminacion de Barreras Burocraticas rules on unlawful procedure requirements (e.g. Resolucion 0011-2025/SEL-INDECOPI declaring an EsSalud reimbursement deadline illegal, search result). Page showed a temporary technical-problems notice."
+    },
+    {
+      "name": "Tribunal Constitucional - Jurisprudencia Sistematizada",
+      "url": "https://jurisprudencia.sedetc.gob.pe/",
+      "publisher": "Tribunal Constitucional",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Constitutional amparo decisions (pension cases against ONP are a large share) are published here and under tc.gob.pe/jurisprudencia/; the search application is JavaScript-only ('Loading...') and the yearly directories returned 503, so coverage and search fields could not be verified."
+    },
+    {
+      "name": "Poder Judicial - Jurisprudencia Nacional Sistematizada",
+      "url": "https://jurisprudencia.pj.gob.pe/jurisprudenciaweb/faces/page/inicio.xhtml",
+      "publisher": "Poder Judicial",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Contencioso-administrativo and Supreme Court casaciones; returned HTTP 403 to automated fetch, not verified."
+    },
+    {
+      "name": "Defensoria del Pueblo - Observatorio de Informes Defensoriales",
+      "url": "https://www.defensoria.gob.pe/observatorio-informes-defensoriales/",
+      "publisher": "Defensoria del Pueblo",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Ombudsman publishes thematic supervision reports (Informe Defensorial 289 on the school feeding programme, 07/10/2026, PDF, describes food-release and contracting procedures) with year tabs and Power BI indicators; individual case resolutions are not published (only 'Consulta tu caso' for the complainant)."
+    },
+    {
+      "name": "Tribunal del Servicio Civil (SERVIR), Tribunal Registral (SUNARP), Tribunal de Transparencia (TTAIP), Tribunal de Fiscalizacion Laboral (SUNAFIL), Tribunal de Contrataciones (OSCE/OECE)",
+      "url": "https://www.gob.pe/23932-autoridad-nacional-del-servicio-civil-tribunal-del-servicio-civil-tsc",
+      "publisher": "various",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Sector appeal boards whose decisions are published on gob.pe collections; servir.gob.pe redirected to this gob.pe URL which returned HTTP 418, sunarp.gob.pe and sunafil.gob.pe returned 503, and the search budget ran out before their decision databases could be verified."
+    }
+  ],
+  "audit_office": [
+    {
+      "name": "Contraloria General de la Republica - Buscador de Informes de Control",
+      "url": "https://www.contraloria.gob.pe/",
+      "publisher": "Contraloria General de la Republica",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Supreme audit institution. Its site, appscontraloria.contraloria.gob.pe (not resolvable from this session) and doc.contraloria.gob.pe (empty response) could not be read; the 503 on the main site prevented opening any performance audit. Search results surfaced only an OCI (internal control organ) report Informe 024-2024-OCI/0635-SVC on ONP (vLex) and an ONP resolution on anti-fraud mechanisms. Whether 'auditorias de desempeno' describe agency processes is not established."
+    }
+  ],
+  "statistics_sources": [
+    {
+      "name": "Plataforma Nacional de Datos Abiertos - ONP and RENIEC service datasets",
+      "url": "https://www.datosabiertos.gob.pe/search/type/dataset?query=ONP",
+      "publisher": "PCM; datasets by ONP, RENIEC, SUNAT, MTPE, RREE",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "About 100 ONP datasets (monthly CSV: afiliados SNP DL 19990, pensionistas y beneficiarios, bonos de reconocimiento, SCTR, ejecucion presupuestal); RENIEC 'Tramites realizados por los ciudadanos en las oficinas de atencion' (csv/xlsx), DNI procedures for vulnerable groups; RREE consular procedures; SUNAT padron RUC and electronic-invoice registers. No processing-time or decision-outcome series found; data.json endpoint timed out."
+    },
+    {
+      "name": "SUNAT - Estadisticas y Estudios (Nota Tributaria)",
+      "url": "https://www.sunat.gob.pe/estadisticasestudios/index.html",
+      "publisher": "SUNAT",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Monthly revenue (Ingresos Tributarios del Gobierno Central, August 2026), foreign trade, refunds as a revenue line; chart images, no per-procedure volumes or processing times on the page."
+    },
+    {
+      "name": "INEI - Microdatos",
+      "url": "https://proyectos.inei.gob.pe/microdatos/",
+      "publisher": "Instituto Nacional de Estadistica e Informatica",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Survey microdata (SPSS, Excel, PDF documentation); no administrative service statistics. inei.gob.pe redirects to gob.pe/inei (418)."
+    },
+    {
+      "name": "ANTAIP - Informe anual sobre solicitudes de acceso a la informacion publica",
+      "url": "https://www.gob.pe/institucion/antaip/informes-publicaciones/4192792-15-datos-del-informe-anual-sobre-solicitudes-de-acceso-a-la-informacion-publica-2022",
+      "publisher": "ANTAIP",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Annual totals of FOI requests (410,000+ in 2025 per El Peruano); page not opened (gob.pe 418)."
+    }
+  ],
+  "procurement_portals": [
+    {
+      "name": "SEACE - Buscador Publico",
+      "url": "https://prod2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml",
+      "publisher": "OECE (formerly OSCE)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "Public tender search; third-party guides state bases can be downloaded without login, but prod2 returned 403 and prodapp2 returned 503 to automated fetch, so this is unverified."
+    },
+    {
+      "name": "Contrataciones Abiertas (OCDS downloads)",
+      "url": "https://contratacionesabiertas.osce.gob.pe/descargas",
+      "publisher": "OECE",
+      "machine_readable": true,
+      "api_url": "https://data.open-contracting.org/en/publication/135",
+      "languages": [
+        "es"
+      ],
+      "note": "OCDS bulk data (CSV, XLSX, JSON) on awarded procedures; the host does not resolve from this session, confirmed only via the Open Contracting Partnership registry entry in search results."
+    }
+  ],
+  "rules_as_code": [],
+  "open_data_portals": [
+    {
+      "name": "Plataforma Nacional de Datos Abiertos",
+      "url": "https://www.datosabiertos.gob.pe/",
+      "publisher": "PCM - Secretaria de Gobierno y Transformacion Digital",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "es"
+      ],
+      "note": "DKAN-based; facet counts 3,651 datasets, 17,523 resources, 406 entities, 27 harvest sources. 23 hits for 'tramites' (RENIEC, RREE, regional and municipal procedure counts), 19 for 'SUNAT' (padron RUC, CPE and SEE registers), ~100 ONP datasets. CKAN-style /api/3/action returned 404 and /data.json timed out, so no API verified."
+    }
+  ],
+  "authorities": [
+    {
+      "id": "sunat",
+      "name": "Superintendencia Nacional de Aduanas y de Administracion Tributaria",
+      "name_en": "National Customs and Tax Administration",
+      "url": "https://www.sunat.gob.pe/",
+      "domains": [
+        "tax",
+        "customs",
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "RUC registration, tax returns, refunds, fraccionamiento, customs clearance; orientacion.sunat.gob.pe guidance; customs procedure manuals online."
+    },
+    {
+      "id": "onp",
+      "name": "Oficina de Normalizacion Previsional",
+      "name_en": "Pension Normalisation Office",
+      "url": "https://www.gob.pe/onp",
+      "domains": [
+        "pensions",
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Sistema Nacional de Pensiones DL 19990, DL 20530, bonos de reconocimiento; onp.gob.pe redirects to gob.pe/onp (HTTP 418 to automated fetch)."
+    },
+    {
+      "id": "essalud",
+      "name": "Seguro Social de Salud - EsSalud",
+      "name_en": "Social Health Insurance",
+      "url": "https://www.essalud.gob.pe/",
+      "domains": [
+        "health",
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Contributory health insurance, subsidios (incapacidad temporal, maternidad, lactancia, sepelio), CITT certificates; 109 process manuals online."
+    },
+    {
+      "id": "sis",
+      "name": "Seguro Integral de Salud",
+      "name_en": "Comprehensive Health Insurance",
+      "url": "https://www.sis.gob.pe/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Subsidised health insurance affiliation; site returned 503."
+    },
+    {
+      "id": "reniec",
+      "name": "Registro Nacional de Identificacion y Estado Civil",
+      "name_en": "National Registry of Identification and Civil Status",
+      "url": "https://www.gob.pe/reniec",
+      "domains": [
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "DNI, births, marriages, deaths; reniec.gob.pe redirects to gob.pe/reniec (418). Registrar directive DI-001-GTAR-DRC public."
+    },
+    {
+      "id": "migraciones",
+      "name": "Superintendencia Nacional de Migraciones",
+      "name_en": "National Migration Superintendency",
+      "url": "https://www.gob.pe/migraciones",
+      "domains": [
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Passports, carne de extranjeria, calidad migratoria, residence; migraciones.gob.pe redirects to gob.pe (418) but keeps a 'Normativa Interna' PDF folder."
+    },
+    {
+      "id": "sunarp",
+      "name": "Superintendencia Nacional de los Registros Publicos",
+      "name_en": "National Superintendency of Public Registries",
+      "url": "https://www.sunarp.gob.pe/",
+      "domains": [
+        "business_registry",
+        "housing",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Company, property, vehicle and personal registries; Tribunal Registral. Site returned 503."
+    },
+    {
+      "id": "indecopi",
+      "name": "Instituto Nacional de Defensa de la Competencia y de la Proteccion de la Propiedad Intelectual",
+      "name_en": "INDECOPI",
+      "url": "https://jurisprudencia.indecopi.gob.pe/buscadorResoluciones/",
+      "domains": [
+        "licences",
+        "justice",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Trademarks, patents, consumer complaints, bureaucratic-barrier complaints; www.indecopi.gob.pe not resolvable from this session."
+    },
+    {
+      "id": "servir",
+      "name": "Autoridad Nacional del Servicio Civil",
+      "name_en": "National Civil Service Authority",
+      "url": "https://www.gob.pe/23932-autoridad-nacional-del-servicio-civil-tribunal-del-servicio-civil-tsc",
+      "domains": [
+        "employment",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Tribunal del Servicio Civil appeals for public employees; servir.gob.pe redirects to gob.pe (418)."
+    },
+    {
+      "id": "sunafil",
+      "name": "Superintendencia Nacional de Fiscalizacion Laboral",
+      "name_en": "National Labour Inspection Superintendency",
+      "url": "https://www.sunafil.gob.pe/",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Labour complaints, inspections, Tribunal de Fiscalizacion Laboral; site returned 503."
+    },
+    {
+      "id": "mtpe",
+      "name": "Ministerio de Trabajo y Promocion del Empleo",
+      "name_en": "Ministry of Labour and Employment Promotion",
+      "url": "https://www.gob.pe/mtpe",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Employment services, foreign worker contracts, planillas; MTPE datasets on datosabiertos opened. URL not opened (gob.pe 418)."
+    },
+    {
+      "id": "midis-pension65",
+      "name": "Programa Nacional de Asistencia Solidaria Pension 65 (MIDIS)",
+      "name_en": "Pension 65 non-contributory pension programme",
+      "url": "https://www.gob.pe/pension65",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Non-contributory pension; RDE D000002-2026-MIDIS/P65-DE (payment calendar) opened on El Peruano; affiliation directive DI-GOPE-01/02 cited. URL not opened (418)."
+    },
+    {
+      "id": "midis-juntos",
+      "name": "Programa Nacional de Apoyo Directo a los mas Pobres - Juntos (MIDIS)",
+      "name_en": "Juntos conditional cash transfer",
+      "url": "https://www.gob.pe/juntos",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "URL not opened (gob.pe 418); listed from search results."
+    },
+    {
+      "id": "midis-contigo",
+      "name": "Programa Nacional de entrega de la pension no contributiva a personas con discapacidad severa - Contigo (MIDIS)",
+      "name_en": "Contigo disability pension",
+      "url": "https://www.gob.pe/contigo",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "URL not opened (gob.pe 418)."
+    },
+    {
+      "id": "sisfoh",
+      "name": "Sistema de Focalizacion de Hogares / Direccion General de Focalizacion (MIDIS)",
+      "name_en": "Household targeting system",
+      "url": "https://www.gob.pe/midis",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Socio-economic classification used by Pension 65, Juntos, SIS; URL not opened (418)."
+    },
+    {
+      "id": "conadis",
+      "name": "Consejo Nacional para la Integracion de la Persona con Discapacidad",
+      "name_en": "National Disability Council",
+      "url": "https://www.conadisperu.gob.pe/",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Disability registration and certificates; site returned 503."
+    },
+    {
+      "id": "sbs",
+      "name": "Superintendencia de Banca, Seguros y AFP",
+      "name_en": "Banking, Insurance and Pension Fund Superintendency",
+      "url": "https://www.sbs.gob.pe/",
+      "domains": [
+        "pensions",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Private pension system (AFP) affiliation and transfers, credit reports; site redirect loop."
+    },
+    {
+      "id": "sunedu",
+      "name": "Superintendencia Nacional de Educacion Superior Universitaria",
+      "name_en": "SUNEDU",
+      "url": "https://www.gob.pe/sunedu",
+      "domains": [
+        "education",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Degree registration and recognition; redirects to gob.pe (418)."
+    },
+    {
+      "id": "pronabec",
+      "name": "Programa Nacional de Becas y Credito Educativo",
+      "name_en": "National Scholarship and Student Loan Programme",
+      "url": "https://www.gob.pe/pronabec",
+      "domains": [
+        "education"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Student finance (Beca 18, credito educativo); redirects to gob.pe (418)."
+    },
+    {
+      "id": "minedu",
+      "name": "Ministerio de Educacion",
+      "name_en": "Ministry of Education",
+      "url": "https://www.gob.pe/minedu",
+      "domains": [
+        "education"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Teacher procedures, certificates, titulos; URL not opened (418)."
+    },
+    {
+      "id": "minsa",
+      "name": "Ministerio de Salud (incl. DIGEMID, DIGESA)",
+      "name_en": "Ministry of Health",
+      "url": "https://www.minsa.gob.pe/",
+      "domains": [
+        "health",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Sanitary registrations of medicines and food, health professional registrations; site returned 404 on root in this session but hosts EsSalud norm mirrors."
+    },
+    {
+      "id": "mivivienda",
+      "name": "Fondo MIVIVIENDA",
+      "name_en": "MIVIVIENDA housing fund",
+      "url": "https://www.mivivienda.com.pe/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Housing subsidies (Bono Familiar Habitacional, Techo Propio); portal page opened."
+    },
+    {
+      "id": "cofopri",
+      "name": "Organismo de Formalizacion de la Propiedad Informal",
+      "name_en": "COFOPRI",
+      "url": "https://www.cofopri.gob.pe/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Land titling; site returned 503."
+    },
+    {
+      "id": "bn",
+      "name": "Banco de la Nacion",
+      "name_en": "National Bank",
+      "url": "https://www.bn.com.pe/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Pays pensions and state fees, accounts for public servants; site opened."
+    },
+    {
+      "id": "agrobanco",
+      "name": "Banco Agropecuario",
+      "name_en": "Agricultural Bank",
+      "url": "https://www.agrobanco.com.pe/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Farm credit; site in Spanish, Quechua and Aymara."
+    },
+    {
+      "id": "senasa",
+      "name": "Servicio Nacional de Sanidad Agraria",
+      "name_en": "National Agricultural Health Service",
+      "url": "https://www.senasa.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Phytosanitary and animal-health permits; page body empty on fetch."
+    },
+    {
+      "id": "sanipes",
+      "name": "Organismo Nacional de Sanidad Pesquera",
+      "name_en": "National Fisheries Health Agency",
+      "url": "https://www.gob.pe/sanipes",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Redirects to gob.pe (418)."
+    },
+    {
+      "id": "produce",
+      "name": "Ministerio de la Produccion",
+      "name_en": "Ministry of Production",
+      "url": "https://www.gob.pe/produce",
+      "domains": [
+        "licences",
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Fishing licences, MYPE registry (REMYPE); URL not opened (418)."
+    },
+    {
+      "id": "mincetur",
+      "name": "Ministerio de Comercio Exterior y Turismo",
+      "name_en": "Ministry of Foreign Trade and Tourism",
+      "url": "https://www.gob.pe/mincetur",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Tourism and trade authorisations, VUCE single window; URL not opened (418)."
+    },
+    {
+      "id": "mtc",
+      "name": "Ministerio de Transportes y Comunicaciones",
+      "name_en": "Ministry of Transport and Communications",
+      "url": "https://www.mtc.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Driving licences (with regional governments), transport and telecom authorisations; site returned 503."
+    },
+    {
+      "id": "sutran",
+      "name": "Superintendencia de Transporte Terrestre de Personas, Carga y Mercancias",
+      "name_en": "SUTRAN",
+      "url": "https://www.gob.pe/sutran",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Transport fines and inspections; redirects to gob.pe (418)."
+    },
+    {
+      "id": "osinergmin",
+      "name": "Organismo Supervisor de la Inversion en Energia y Mineria",
+      "name_en": "OSINERGMIN",
+      "url": "https://www.osinergmin.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Energy user complaints and registrations; page opened (title only)."
+    },
+    {
+      "id": "osiptel",
+      "name": "Organismo Supervisor de Inversion Privada en Telecomunicaciones",
+      "name_en": "OSIPTEL",
+      "url": "https://www.osiptel.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Telecom user complaints (TRASU); Portal del Usuario opened."
+    },
+    {
+      "id": "sunass",
+      "name": "Superintendencia Nacional de Servicios de Saneamiento",
+      "name_en": "SUNASS",
+      "url": "https://www.gob.pe/sunass",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Water user complaints; redirects to gob.pe (418)."
+    },
+    {
+      "id": "ositran",
+      "name": "Organismo Supervisor de la Inversion en Infraestructura de Transporte de Uso Publico",
+      "name_en": "OSITRAN",
+      "url": "https://www.gob.pe/ositran",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "URL not opened (418)."
+    },
+    {
+      "id": "oefa",
+      "name": "Organismo de Evaluacion y Fiscalizacion Ambiental",
+      "name_en": "Environmental Assessment and Enforcement Agency",
+      "url": "https://www.gob.pe/oefa",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Environmental complaints and sanctions; redirects to gob.pe (418)."
+    },
+    {
+      "id": "ana",
+      "name": "Autoridad Nacional del Agua",
+      "name_en": "National Water Authority",
+      "url": "https://www.ana.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Water-use licences; site returned 503."
+    },
+    {
+      "id": "serfor",
+      "name": "Servicio Nacional Forestal y de Fauna Silvestre",
+      "name_en": "SERFOR",
+      "url": "https://www.gob.pe/serfor",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Forestry and wildlife permits; redirects to gob.pe (418)."
+    },
+    {
+      "id": "sernanp",
+      "name": "Servicio Nacional de Areas Naturales Protegidas",
+      "name_en": "SERNANP",
+      "url": "https://www.gob.pe/sernanp",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "TUPA modified by DS 004-2023-MINAM (opened on El Peruano); URL not opened (418)."
+    },
+    {
+      "id": "ingemmet",
+      "name": "Instituto Geologico, Minero y Metalurgico",
+      "name_en": "INGEMMET",
+      "url": "https://www.ingemmet.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Mining concessions; host not resolvable from this session."
+    },
+    {
+      "id": "inacal",
+      "name": "Instituto Nacional de Calidad",
+      "name_en": "National Quality Institute",
+      "url": "https://www.inacal.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Accreditation, metrology, technical standards; site opened."
+    },
+    {
+      "id": "oece",
+      "name": "Organismo Especializado para las Contrataciones Publicas Eficientes (ex OSCE)",
+      "name_en": "Public Procurement Agency",
+      "url": "https://prod2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml",
+      "domains": [
+        "licences",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Supplier registry (RNP), SEACE, Tribunal de Contrataciones; SEACE returned 403."
+    },
+    {
+      "id": "pj",
+      "name": "Poder Judicial",
+      "name_en": "Judiciary",
+      "url": "https://www.gob.pe/pj",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Court filings, antecedentes judiciales; pj.gob.pe redirects to gob.pe (418)."
+    },
+    {
+      "id": "mpfn",
+      "name": "Ministerio Publico - Fiscalia de la Nacion",
+      "name_en": "Public Prosecutor's Office",
+      "url": "https://www.mpfn.gob.pe/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Complaints, forensic certificates; site returned 503."
+    },
+    {
+      "id": "inpe",
+      "name": "Instituto Nacional Penitenciario",
+      "name_en": "National Penitentiary Institute",
+      "url": "https://www.inpe.gob.pe/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Antecedentes penitenciarios; site returned 503."
+    },
+    {
+      "id": "pnp",
+      "name": "Policia Nacional del Peru (incl. antecedentes policiales)",
+      "name_en": "National Police",
+      "url": "https://www.gob.pe/policia",
+      "domains": [
+        "justice",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Police record certificates, firearms via SUCAMEC; URL not opened (418)."
+    },
+    {
+      "id": "sucamec",
+      "name": "Superintendencia Nacional de Control de Servicios de Seguridad, Armas, Municiones y Explosivos",
+      "name_en": "SUCAMEC",
+      "url": "https://www.gob.pe/sucamec",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Firearms and private security licences; URL not opened (418)."
+    },
+    {
+      "id": "minjus",
+      "name": "Ministerio de Justicia y Derechos Humanos (ANTAIP, TTAIP, SPIJ, Defensa Publica)",
+      "name_en": "Ministry of Justice and Human Rights",
+      "url": "https://spij.minjus.gob.pe/",
+      "domains": [
+        "justice",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "FOI authority and appeals tribunal, legal database, public defence; SPIJ returned 503."
+    },
+    {
+      "id": "rree",
+      "name": "Ministerio de Relaciones Exteriores (servicios consulares, apostilla)",
+      "name_en": "Ministry of Foreign Affairs",
+      "url": "https://www.gob.pe/rree",
+      "domains": [
+        "civil_registry",
+        "immigration",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Apostilles, legalisations, consular registrations; datasets on datosabiertos opened. URL not opened (418)."
+    },
+    {
+      "id": "onpe",
+      "name": "Oficina Nacional de Procesos Electorales",
+      "name_en": "National Office of Electoral Processes",
+      "url": "https://www.onpe.gob.pe/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Electoral duty certificates and fines; site returned 403."
+    },
+    {
+      "id": "jne",
+      "name": "Jurado Nacional de Elecciones",
+      "name_en": "National Elections Jury",
+      "url": "https://www.gob.pe/jne",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Dispensas electorales, party registry; URL not opened (418)."
+    },
+    {
+      "id": "defensoria",
+      "name": "Defensoria del Pueblo",
+      "name_en": "Ombudsman",
+      "url": "https://www.defensoria.gob.pe/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Complaints against public bodies; site opened."
+    },
+    {
+      "id": "contraloria",
+      "name": "Contraloria General de la Republica",
+      "name_en": "Comptroller General",
+      "url": "https://www.contraloria.gob.pe/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Supreme audit institution; site returned 503."
+    },
+    {
+      "id": "pcm-sgp",
+      "name": "Presidencia del Consejo de Ministros - Secretaria de Gestion Publica (SUT, TUPA format) and Secretaria de Gobierno y Transformacion Digital (gob.pe)",
+      "name_en": "Prime Minister's Office - public management and digital government secretariats",
+      "url": "http://sgp.pcm.gob.pe/sistema-unico-de-tramites/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Owns the SUT TUPA repository and the gob.pe platform; SUT page returned 503."
+    },
+    {
+      "id": "sencico",
+      "name": "Servicio Nacional de Capacitacion para la Industria de la Construccion",
+      "name_en": "SENCICO",
+      "url": "https://www.sencico.gob.pe/",
+      "domains": [
+        "education",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Site returned 503."
+    },
+    {
+      "id": "apn",
+      "name": "Autoridad Portuaria Nacional",
+      "name_en": "National Port Authority",
+      "url": "https://www.apn.gob.pe/",
+      "domains": [
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Host not resolvable from this session."
+    },
+    {
+      "id": "inabif",
+      "name": "Programa Integral Nacional para el Bienestar Familiar (MIMP)",
+      "name_en": "INABIF",
+      "url": "https://www.gob.pe/inabif",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Family welfare services; URL not opened (418)."
+    }
+  ],
+  "layer_scores": [
+    {
+      "layer": "catalogue",
+      "score": 2,
+      "reason": "Every entity must publish a TUPA with requisitos, fees, plazos and calificacion (Ley 27444 art. 43; standard format DS 062-2009-PCM), published in El Peruano and on gob.pe, and gob.pe serves a national tramites catalogue covering national and subnational bodies. No API or bulk export of TUPA/gob.pe records was found, SUT has no public consultation, and gob.pe could not be opened (HTTP 418), so the score rests on the TUPA norms opened on El Peruano and SUNAT's TUPA page.",
+      "evidence_urls": [
+        "https://busquedas.elperuano.pe/dispositivo/NL/2162962-1",
+        "https://www.sunat.gob.pe/legislacion/tupa/index.html",
+        "https://www.gob.pe/tramites",
+        "https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=107&id_tema=5&ver="
+      ]
+    },
+    {
+      "layer": "legislation",
+      "score": 2,
+      "reason": "SPIJ offers updated ('sistematizadas y actualizadas') texts, 210,000+ norms free of 500,000+, in Word/PDF, but with a paid tier and no API; El Peruano serves every norm as HTML/PDF by identifier (original texts); the Congress archive serves original acts as scanned PDFs with a vigencia flag; SUNAT keeps its procedures and resolutions as HTML with change logs. No Akoma Ntoso/XML or bulk access found.",
+      "evidence_urls": [
+        "https://elperuano.pe/noticia/263905-accede-facil-y-rapido-a-la-normativa-nacional-con-el-sistema-peruano-de-informacion-juridica",
+        "https://busquedas.elperuano.pe/dispositivo/NL/2162962-1",
+        "https://www.leyes.congreso.gob.pe/",
+        "https://www.leyes.congreso.gob.pe/Documentos/Leyes/27444.pdf",
+        "https://www.sunat.gob.pe/legislacion/index.html"
+      ]
+    },
+    {
+      "layer": "guidance",
+      "score": 2,
+      "reason": "orientacion.sunat.gob.pe gives about 100 topic pages for persons, firms and customs (RUC, devoluciones, fraccionamiento, recursos impugnatorios), Spanish only with one English page; gob.pe hosts per-service guidance pages for every entity (seen only through search results such as 'Cambiar calidad migratoria residente', since gob.pe returned 418). Detailed per-service guidance exists for the main agencies but no multilingual structured enumeration was verified.",
+      "evidence_urls": [
+        "https://orientacion.sunat.gob.pe/",
+        "https://www.gob.pe/13119-cambiar-calidad-migratoria-residente-solicitar-cambio-de-calidad-migratoria-de-formacion-residente"
+      ]
+    },
+    {
+      "layer": "forms",
+      "score": 1,
+      "reason": "Forms are published as PDF annexes of TUPAs and resolutions (DS 004-2023-MINAM sets 'formularios' for SERNANP; DESPA-PE.00.09 references Formato A declaration fields; RENIEC directive section 6.9 'formatos y formularios aplicables'). Forms libraries on gob.pe and SUNAT's formularios section could not be opened, so only scattered PDF forms are evidenced.",
+      "evidence_urls": [
+        "https://busquedas.elperuano.pe/dispositivo/NL/2162962-1",
+        "https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/despa-pe.00.09.htm",
+        "https://img.lpderecho.pe/wp-content/uploads/2026/09/Directiva-DI-001-GTAR-DRC-LPderecho.pdf"
+      ]
+    },
+    {
+      "layer": "internal",
+      "score": 3,
+      "reason": "SUNAT publishes its customs operating procedures (28 DESPA-PG, ~20 DESPA-PE, 16 RECA) as versioned HTML with officer and system steps and an enumerable index; EsSalud lists 109 Manuales de Procesos y Procedimientos and 7 MOPE as PDFs plus all directive-approving resolutions; RENIEC's 172-page registrar directive DI-001-GTAR-DRC is public; ONP's pension-qualification directives and lineamientos are approved by Resolucion Jefatural and published with annex in El Peruano, gob.pe/onp and the PTE; Migraciones keeps a Normativa Interna PDF folder. Enumerable repositories exist for SUNAT customs and EsSalud. Gap: no step-level manual for SUNAT internal taxes and no separate system descriptions.",
+      "evidence_urls": [
+        "https://www.sunat.gob.pe/legislacion/procedim/despacho/index.html",
+        "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm",
+        "https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/despa-pe.00.09.htm",
+        "https://www.sunat.gob.pe/legislacion/procedim/recauda/index.html",
+        "http://www.essalud.gob.pe/manuales-de-procesos-y-procedimientos/",
+        "http://www.essalud.gob.pe/manual-de-operaciones-mope/",
+        "https://www.essalud.gob.pe/normatividad-institucional/",
+        "https://img.lpderecho.pe/wp-content/uploads/2026/09/Directiva-DI-001-GTAR-DRC-LPderecho.pdf",
+        "https://busquedas.elperuano.pe/dispositivo/NL/2023376-1",
+        "https://img.lpderecho.pe/wp-content/uploads/2026/04/Resolucion-Jefatural-000056-2026-JF-ONP-LPDerecho.pdf",
+        "https://www.migraciones.gob.pe/Normativa%20Interna/Resoluciones%20de%20Superintendencia/2020/RS063-2020.pdf"
+      ]
+    },
+    {
+      "layer": "statistics",
+      "score": 2,
+      "reason": "datosabiertos.gob.pe carries about 100 ONP datasets (monthly affiliates, pensioners, bonos, SCTR) and RENIEC/RREE counts of tramites by office as CSV; SUNAT publishes monthly revenue and trade statistics. Per-service volumes exist; processing times, decision outcomes and automation rates were not found.",
+      "evidence_urls": [
+        "https://www.datosabiertos.gob.pe/search/type/dataset?query=ONP",
+        "https://www.datosabiertos.gob.pe/search/type/dataset?query=tramites",
+        "https://www.datosabiertos.gob.pe/search/type/dataset?query=SUNAT",
+        "https://www.sunat.gob.pe/estadisticasestudios/index.html"
+      ]
+    },
+    {
+      "layer": "appeals",
+      "score": 2,
+      "reason": "Tribunal Fiscal decisions are searchable by number, sala, year (from 1964) and administration, with dated PDF notifications and annual compendia; INDECOPI has a resolution search across all its bodies; Defensoria publishes thematic reports but not case decisions. TC and PJ databases and the sector tribunals (SERVIR, Registral, TTAIP, SUNAFIL) could not be verified; no bulk access found.",
+      "evidence_urls": [
+        "https://apps4.mineco.gob.pe/ServiciosTF/nuevo_busq_rtf.htm",
+        "https://www.mef.gob.pe/contenidos/tribu_fisc/jurisprude/boletines/compedio/2023/Compendio-2023.pdf",
+        "https://jurisprudencia.indecopi.gob.pe/buscadorResoluciones/",
+        "https://www.defensoria.gob.pe/observatorio-informes-defensoriales/",
+        "https://www.defensoria.gob.pe/informes/informe-defensorial-n-289/"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "DS 004-2023-MINAM modifying the SERNANP TUPA is served by El Peruano as HTML, PDF and Cuadernillo and states the decree and annex are published on gob.pe and the TUPA on El Peruano's Normas Legales",
+      "url": "https://busquedas.elperuano.pe/dispositivo/NL/2162962-1",
+      "layer": "catalogue",
+      "note": "'El presente Decreto Supremo y su Anexo se publican en la Plataforma Digital Unica del Estado Peruano'"
+    },
+    {
+      "claim": "SUNAT's TUPA page links TUPA editions 2017, 2015, 2013, 2009, 2007 and a PDF of main procedures in Quechua",
+      "url": "https://www.sunat.gob.pe/legislacion/tupa/index.html",
+      "layer": "catalogue",
+      "note": ""
+    },
+    {
+      "claim": "gob.pe returns HTTP 418 to automated fetches of /tramites, /robots.txt and /sitemap.xml",
+      "url": "https://www.gob.pe/tramites",
+      "layer": "catalogue",
+      "note": "catalogue records could not be opened"
+    },
+    {
+      "claim": "SPIJ holds more than 500,000 norms, more than 210,000 free, 'debidamente sistematizadas y actualizadas', downloadable as Word and PDF",
+      "url": "https://elperuano.pe/noticia/263905-accede-facil-y-rapido-a-la-normativa-nacional-con-el-sistema-peruano-de-informacion-juridica",
+      "layer": "legislation",
+      "note": "SPIJ itself returned 503"
+    },
+    {
+      "claim": "The Congress archive serves Ley 27444 as a scanned gazette PDF dated 11 April 2001 (original text) and Ley 27806 as a scanned gazette PDF dated 3 August 2002",
+      "url": "https://www.leyes.congreso.gob.pe/Documentos/Leyes/27444.pdf",
+      "layer": "legislation",
+      "note": "pdftotext of both files shows gazette headers; no consolidated version"
+    },
+    {
+      "claim": "The Congress archive marks norms as vigente or no vigente and covers laws, legislative decrees, emergency decrees and regional laws from 1904",
+      "url": "https://www.leyes.congreso.gob.pe/",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "orientacion.sunat.gob.pe organises about 100 guidance topics under Personas, Empresas and Aduanas, Spanish only except one English page",
+      "url": "https://orientacion.sunat.gob.pe/",
+      "layer": "guidance",
+      "note": ""
+    },
+    {
+      "claim": "SUNAT's customs clearance index lists 28 DESPA-PG general procedures with predictable URLs",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/index.html",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "DESPA-PG.01 v8 (RS 084-2020) describes ~130 numbered steps including 'El sistema informatico asigna el canal de control, en aplicacion de tecnicas de gestion de riesgo' and 'El funcionario aduanero asignado para la revision documentaria efectua las siguientes acciones'",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/importacion/importac/procGeneral/despa-pg.01.htm",
+      "layer": "internal",
+      "note": "amendments referenced up to RS 079-2026"
+    },
+    {
+      "claim": "DESPA-PE.00.09 v5 (RS 000050-2021) describes unit assignment, laboratory analysis, deadlines (45 working days) and systems (MPV-SUNAT, SIGAD, buzon electronico)",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/despacho/procAsociados/despa-pe.00.09.htm",
+      "layer": "internal",
+      "note": "'La jefatura de la DCA asigna el expediente a un funcionario aduanero'"
+    },
+    {
+      "claim": "SUNAT's RECA index lists 4 general and 12 specific collection procedures including RECA-PG.04 Reclamos Tributarios and RECA-PG.05 Devoluciones",
+      "url": "https://www.sunat.gob.pe/legislacion/procedim/recauda/index.html",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "EsSalud lists 109 Manuales de Procesos y Procedimientos (2019-2023) as PDFs with status and approving resolution",
+      "url": "http://www.essalud.gob.pe/manuales-de-procesos-y-procedimientos/",
+      "layer": "internal",
+      "note": "includes Gerencia de Prestaciones Economicas (entry 93)"
+    },
+    {
+      "claim": "EsSalud lists 7 Manuales de Operaciones with approving RPE resolutions as PDFs",
+      "url": "http://www.essalud.gob.pe/manual-de-operaciones-mope/",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "EsSalud's Normatividad Institucional page lists Gerencia General resolutions 2022-2024 approving internal directivas as PDFs",
+      "url": "https://www.essalud.gob.pe/normatividad-institucional/",
+      "layer": "internal",
+      "note": "RGG 943-GG-ESSALUD-2023 opened: 18 pages, approves Directiva 06-GG-ESSALUD-2023 and cites Directiva 21-GCPP-ESSALUD-2020 on how directivas are formulated"
+    },
+    {
+      "claim": "EsSalud's PTE page links MAPRO / mapa de procesos, TUPA, ROF, PEI and POI",
+      "url": "https://www.transparencia.gob.pe/enlaces/pte_transparencia_enlaces.aspx?id_entidad=107&id_tema=5&ver=",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "RENIEC Directiva DI-001-GTAR-DRC is a 172-page public registrar manual (version 01, 02/08/2026) covering calificacion registral of births, marriages, deaths and rectifications in the SIRCM",
+      "url": "https://img.lpderecho.pe/wp-content/uploads/2026/09/Directiva-DI-001-GTAR-DRC-LPderecho.pdf",
+      "layer": "internal",
+      "note": "'INFORMACION PUBLICA ... Toda copia de este documento que se encuentre fuera del Portal WEB del RENIEC es una COPIA NO CONTROLADA'"
+    },
+    {
+      "claim": "RENIEC approved DI-001-GTAR-DRC by Resolucion Secretarial D000040-2026-RENIEC/SGEN, replacing DI-008-DRC/001 'Procedimientos del Registro Civil', to be published on the RENIEC portal",
+      "url": "https://elperuano.pe/noticia/304835-registros-civiles-reniec-aprueba-nuevos-lineamientos-para-inscripcion-y-rectificacion-de-acta",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "ONP RJ 141-2021-ONP/JF approves Directiva 005-2021-ONP/JF on calificacion de prestaciones previsionales and orders publication of resolution and annex in El Peruano, gob.pe/onp and the PTE",
+      "url": "https://busquedas.elperuano.pe/dispositivo/NL/2023376-1",
+      "layer": "internal",
+      "note": "annex not reproduced on the HTML page"
+    },
+    {
+      "claim": "ONP RJ 017-2022-ONP/JF re-approves the Directiva sobre la Calificacion de Prestaciones Previsionales del SNP and cites Directiva 001-2021-JF/ONP regulating ONP normative instruments",
+      "url": "https://img.lpderecho.pe/wp-content/uploads/2022/01/Resolucion-17-2022-PGEPG-LPDerecho.pdf",
+      "layer": "internal",
+      "note": "El Peruano 31/01/2022"
+    },
+    {
+      "claim": "ONP RJ 000056-2026-JF-ONP publishes full operating lineamientos as an El Peruano separata especial and orders they be made known to ONP staff",
+      "url": "https://img.lpderecho.pe/wp-content/uploads/2026/04/Resolucion-Jefatural-000056-2026-JF-ONP-LPDerecho.pdf",
+      "layer": "internal",
+      "note": "'Disponese que la presente Resolucion sea puesta de conocimiento de los servidores de la entidad'"
+    },
+    {
+      "claim": "Migraciones hosts Resoluciones de Superintendencia as PDFs under a 'Normativa Interna' folder on its own domain",
+      "url": "https://www.migraciones.gob.pe/Normativa%20Interna/Resoluciones%20de%20Superintendencia/2020/RS063-2020.pdf",
+      "layer": "internal",
+      "note": "RS063-2020, 21/02/2020, digitally signed, 7 pages"
+    },
+    {
+      "claim": "SUNAT RS 026-2001/SUNAT sets institutional audit-policy rules but not step-level staff procedures",
+      "url": "https://www.sunat.gob.pe/legislacion/superin/2001/026.htm",
+      "layer": "internal",
+      "note": "no tax-side MAPRO found"
+    },
+    {
+      "claim": "Pension 65 RDE D000002-2026-MIDIS/P65-DE (payment calendar) cites Directiva 001-2025-MIDIS/PENSION65 and orders publication on gob.pe/pension65",
+      "url": "https://busquedas.elperuano.pe/dispositivo/NL/2475800-1",
+      "layer": "internal",
+      "note": "directive text not opened"
+    },
+    {
+      "claim": "The Tribunal Fiscal search form offers RTF/expediente number, Sala, year 1964-2026 and administration filters",
+      "url": "https://apps4.mineco.gob.pe/ServiciosTF/nuevo_busq_rtf.htm",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "The 2023 Boletin de Jurisprudencia Fiscal summarises selected RTF by topic, e.g. RTF 07112-2-2023 on loss of a fraccionamiento and RTF 00861-12-2023 on a refund request",
+      "url": "https://www.mef.gob.pe/contenidos/tribu_fisc/jurisprude/boletines/compedio/2023/Compendio-2023.pdf",
+      "layer": "appeals",
+      "note": "43 pages"
+    },
+    {
+      "claim": "INDECOPI's buscador covers all its resolutions by category (Tribunal, Propiedad Intelectual, Proteccion al Consumidor, Defensa de la Competencia, sentencias PJ, laudos)",
+      "url": "https://jurisprudencia.indecopi.gob.pe/buscadorResoluciones/",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Defensoria's observatory lists Informes Defensoriales by year with PDFs; Informe 289 (07/10/2026) describes food-release and contracting procedures of the school feeding programme",
+      "url": "https://www.defensoria.gob.pe/informes/informe-defensorial-n-289/",
+      "layer": "appeals",
+      "note": "individual case decisions not published"
+    },
+    {
+      "claim": "datosabiertos.gob.pe (DKAN) shows 3,651 datasets, 17,523 resources, 406 entities, 27 harvest sources",
+      "url": "https://www.datosabiertos.gob.pe/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "ONP publishes about 100 monthly CSV datasets on affiliates, pensioners, bonos and budget execution on datosabiertos.gob.pe",
+      "url": "https://www.datosabiertos.gob.pe/search/type/dataset?query=ONP",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "RENIEC publishes 'Tramites realizados por los ciudadanos en las oficinas de atencion' as csv/xlsx on datosabiertos.gob.pe",
+      "url": "https://www.datosabiertos.gob.pe/search/type/dataset?query=tramites",
+      "layer": "statistics",
+      "note": "23 hits for 'tramites'"
+    },
+    {
+      "claim": "SUNAT's Estadisticas y Estudios page gives monthly revenue and trade totals but no processing-time series",
+      "url": "https://www.sunat.gob.pe/estadisticasestudios/index.html",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "The PTE homepage lists the standard rubros and states 13,594 people from 2,350 entities publish on it",
+      "url": "https://www.transparencia.gob.pe/",
+      "layer": null,
+      "note": "FOI proactive publication"
+    },
+    {
+      "claim": "DS 063-2010-PCM creates the PTE with standard formats under Ley 27806, delegating content rules to the Secretaria de Gestion Publica",
+      "url": "https://www.minedu.gob.pe/normatividad/decretos/DS-063-2010-PCM.php",
+      "layer": null,
+      "note": ""
+    },
+    {
+      "claim": "The PTE legal-framework page lists Ley 27806, Ley 29091 (publication of legal documents on the Portal del Estado), DS 063-2010-PCM, RM 200-2010-PCM and RM 252-2013-PCM",
+      "url": "https://www.transparencia.gob.pe/contenidos/pte_transparencia_contenido_marco.aspx?n_o=4",
+      "layer": null,
+      "note": ""
+    },
+    {
+      "claim": "SEACE public search returned HTTP 403 and 503 to automated fetch",
+      "url": "https://prod2.seace.gob.pe/seacebus-uiwd-pub/buscadorPublico/buscadorPublico.xhtml",
+      "layer": null,
+      "note": "procurement unverified"
+    },
+    {
+      "claim": "Contraloria's site returned HTTP 503 and its report search host does not resolve from this session",
+      "url": "https://www.contraloria.gob.pe/",
+      "layer": null,
+      "note": "audit layer unverified"
+    }
+  ],
+  "best_documented_domains": [
+    "customs",
+    "health (EsSalud)",
+    "civil_registry",
+    "pensions",
+    "tax"
+  ],
+  "notes": "Access constraints shaped this pass: gob.pe (the single national portal that hosts every entity's tramites, TUPA, normas and informes) answers HTTP 418 to automated fetches, its CDN answers 403, and SPIJ, SUNARP, SEACE, Contraloria, Poder Judicial, SIS, SUNAFIL, MTC and several others answered 503/403; curl with a browser user agent was refused by the session's policy. Findings therefore rest on agency-owned domains (sunat.gob.pe, essalud.gob.pe, migraciones.gob.pe, mef.gob.pe, defensoria.gob.pe), El Peruano, transparencia.gob.pe, datosabiertos.gob.pe and mirrors (lpderecho.pe, minsa.gob.pe). Peru's structural strengths: a legal duty on every entity to publish a TUPA (Ley 27444 art. 43) and a PTE scheme under which entities link ROF, MAPRO/mapa de procesos and TUPA; and a strong practice of approving internal directivas by resolution published in El Peruano with the full annex. SUNAT customs procedures are the richest internal-step source found in any layer (versioned HTML with officer and system steps and change logs). Government sites publish in Spanish; Quechua appears only in SUNAT's TUPA summary, Agrobanco and RENIEC's bilingual registry provisions.",
+  "open_questions": [
+    "gob.pe catalogue: open a tramite record and the per-institution 'normas-legales' and 'informes-publicaciones' listings from a browser or an allowed network to record fields, counts and whether an API or sitemap exists (gob.pe returned 418 here).",
+    "TUPA data: check whether the SUT (sgp.pcm.gob.pe) or datosabiertos.gob.pe exposes TUPA records in bulk; nothing was found by search.",
+    "SPIJ: confirm from spij.minjus.gob.pe (503 here) that free-tier texts are consolidated 'texto actualizado' versions and whether any XML/API exists.",
+    "SUNAT internal taxes: search sunat.gob.pe/legislacion and the SUNAT PTE page for a Manual de Procedimientos or step-level procedures for devoluciones, fiscalizacion and RUC (only RS 026-2001 policy rules and orientation pages found).",
+    "ONP: read the annex of Directiva 006-2022-ONP/JF (RJ 097-2022, on cdn.www.gob.pe, 403 here) to confirm it describes qualification stages, areas and the NSP system; list ONP directivas on gob.pe/institucion/onp/normas-legales.",
+    "Pension 65 / Juntos: obtain Directiva DI-GOPE-01/02 'Afiliacion de Usuarios' and Directiva 001-2025-MIDIS/PENSION65 from gob.pe/pension65.",
+    "Contraloria: open the Buscador de Informes de Control and one 'auditoria de desempeno' (hosts blocked here) to see whether it describes agency processes.",
+    "Appeals: verify TC Jurisprudencia Sistematizada, PJ jurisprudencia, and the decision databases of the Tribunal del Servicio Civil, Tribunal Registral, TTAIP, Tribunal de Fiscalizacion Laboral and Tribunal de Contrataciones; search budget was exhausted before this.",
+    "Procurement: confirm SEACE bases download without login and look for case-system tenders (ONP NSP, RENIEC SIRCM, SUNAT) in contratacionesabiertas.osce.gob.pe OCDS data.",
+    "Forms: check SUNAT 'formularios' and gob.pe form attachments to decide whether a forms library exists for the main agencies (score 1 is provisional).",
+    "Statistics: look for processing-time or backlog series in ONP, RENIEC and Migraciones annual reports or PEI/POI evaluations on gob.pe (ONP 'Informe de Evaluacion de Resultados PEI-POI 2022' surfaced in search).",
+    "Rules as code: no OpenFisca package or published calculator logic for Peru was found; check SUNAT online calculators and ONP 'calcula tu pension' for published rules."
+  ]
+}
