@@ -111,7 +111,7 @@ All six areas received a bounded check. This is not exhaustive search saturation
 | petitions:11: Forward misdirected petition and notify petitioner | public_relations | [Art.6^1](https://legislatie.just.ro/Public/DetaliiDocument/290817) |
 | petitions:12: Combine duplicate pending petitions | unknown | [Art.10(1)](https://legislatie.just.ro/Public/DetaliiDocument/290817) |
 | petitions:13: Close identical repeat after response | unknown | [Art.10(2)](https://legislatie.just.ro/Public/DetaliiDocument/290817) |
-| petitions:14: Route anonymous harassment allegations for specialised analysis | harassment_role_or_commission | [Art.7(2)-(4)](https://legislatie.just.ro/Public/DetaliiDocument/290817) |
+| petitions:14: Refer anonymous harassment allegations to the designated officer or commission (exception to filing anonymous petitions) | designated_harassment_officer_or_commission | [Art.7(2)-(4)](https://legislatie.just.ro/Public/DetaliiDocument/290817) |
 
 **Explicit partial order:**
 - petitions:2 → petitions:3 (registered petition; Art.6(2)).
@@ -163,11 +163,11 @@ All six areas received a bounded check. This is not exhaustive search saturation
 
 | Claim | Actor in source | Evidence |
 |---|---|---|
-| public-meetings:1: Publish meeting notice and agenda | civil_society_role | [Art.8(1)-(2)](https://legislatie.just.ro/public/detaliidocument/41571) |
-| public-meetings:2: Notify interested prior contributors | civil_society_role | [Art.8(1)(b),(2)](https://legislatie.just.ro/public/detaliidocument/41571) |
+| public-meetings:1: Publish meeting notice and agenda | designated_civil_society_role | [Art.8(1)-(2)](https://legislatie.just.ro/public/detaliidocument/41571) |
+| public-meetings:2: Notify interested prior contributors | designated_civil_society_role | [Art.8(1)(b),(2)](https://legislatie.just.ro/public/detaliidocument/41571) |
 | public-meetings:3: Manage attendance priority within capacity | meeting_chair | [Art.8(3)-(4)](https://legislatie.just.ro/public/detaliidocument/41571) |
 | public-meetings:4: Give participants opportunity to speak | meeting_chair | [Art.9](https://legislatie.just.ro/public/detaliidocument/41571) |
-| public-meetings:5: Adopt administrative decisions | competent_authority | [Art.10(1)](https://legislatie.just.ro/public/detaliidocument/41571) |
+| public-meetings:5: Adopt administrative decisions | authority | [Art.10(1)](https://legislatie.just.ro/public/detaliidocument/41571) |
 | public-meetings:6: Prepare minutes | authority | [Art.12(1)](https://legislatie.just.ro/public/detaliidocument/41571) |
 | public-meetings:7: Archive minutes | authority | [Art.12(1)](https://legislatie.just.ro/public/detaliidocument/41571) |
 | public-meetings:8: Publish minutes and voting record where applicable | authority | [Art.11](https://legislatie.just.ro/public/detaliidocument/41571) |

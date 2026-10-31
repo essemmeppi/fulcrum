@@ -88,7 +88,7 @@ process('petitions','Petition handling','petitions','national_procedure_with_loc
 ('Forward misdirected petition and notify petitioner','public_relations','petitions27','Art.6^1'),
 ('Combine duplicate pending petitions','unknown','petitions27','Art.10(1)'),
 ('Close identical repeat after response','unknown','petitions27','Art.10(2)'),
-('Route anonymous harassment allegations for specialised analysis','harassment_role_or_commission','petitions27','Art.7(2)-(4)'),
+('Refer anonymous harassment allegations to the designated officer or commission (exception to filing anonymous petitions)','designated_harassment_officer_or_commission','petitions27','Art.7(2)-(4)'),
 ],[(2,3,'registered petition','petitions27','Art.6(2)'),(3,4,'received by specialist unit','petitions27','Art.12(1)'),(4,5,'staff assignment','petitions27','Art.12(2)')],
 [('Ordinary reply: 30 days; justified extension up to 15, or 30 for energy/gas, with prior notification.','petitions27','Art.8-9'),('Anonymous petitions are generally closed, but harassment exception added in 2024 must be handled.','petitions27','Art.7'),('Reply includes legal basis; subject of complaint and subordinates cannot resolve it.','petitions27','Art.11;13')],
 ['Which Deta intake is a petition rather than FOI or a service application?','Who is delegated to sign?','How are recusal and harassment exceptions routed?'],['catalogue','org-local'])
@@ -109,11 +109,11 @@ process('consultation','Consulting on draft normative acts','normative-consultat
 ['Which local employee maintains the register?','Are website, office and media notices synchronised?','What evidence supports urgency exceptions?'],['transparency-local','transparency-report2025'])
 
 process('public-meetings','Public meeting participation and minutes','public-meetings','national_procedure_with_local_report','Law 52; local 2025 reported meeting activity',[
-('Publish meeting notice and agenda','civil_society_role','transparency52','Art.8(1)-(2)'),
-('Notify interested prior contributors','civil_society_role','transparency52','Art.8(1)(b),(2)'),
+('Publish meeting notice and agenda','designated_civil_society_role','transparency52','Art.8(1)-(2)'),
+('Notify interested prior contributors','designated_civil_society_role','transparency52','Art.8(1)(b),(2)'),
 ('Manage attendance priority within capacity','meeting_chair','transparency52','Art.8(3)-(4)'),
 ('Give participants opportunity to speak','meeting_chair','transparency52','Art.9'),
-('Adopt administrative decisions','competent_authority','transparency52','Art.10(1)'),
+('Adopt administrative decisions','authority','transparency52','Art.10(1)'),
 ('Prepare minutes','authority','transparency52','Art.12(1)'),
 ('Archive minutes','authority','transparency52','Art.12(1)'),
 ('Publish minutes and voting record where applicable','authority','transparency52','Art.11'),
