@@ -1,3 +1,13 @@
+# Expanded municipal research
+
+Start with [FINDINGS.md](FINDINGS.md) for the expanded pass: 10 partial workflow sheets across eight families, 87 source-located action claims, 52 provisional families/leads and seven search targets. The initial screen below is retained as research history; the new portfolio supersedes its coverage assessment.
+
+No workflows are municipality-validated. Current local grant evidence has now been read; the earlier statement that no local operational procedure was inspected no longer describes the expanded pass. The old information-access ledger remains an initial snapshot; use `deta-portfolio.json` for the amended national norms.
+
+Rebuild generated files with `python build_portfolio.py` from this directory. The builder validates IDs, source references and explicit links. It does not perform independent quote verification.
+
+---
+
 # CDIT municipal mapping pilot for ADR Vest
 
 Screen date: 2026-10-31. Research baseline: `1e67353d1455dbedc5950ffe0fd3cfae5777c0ac`.

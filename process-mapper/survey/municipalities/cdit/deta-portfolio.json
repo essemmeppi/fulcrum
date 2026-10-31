@@ -1,0 +1,2254 @@
+{
+  "municipality": "Deta",
+  "scope": "CDIT member town hall; ADR Vest investment discovery",
+  "as_of": "2026-10-31",
+  "baseline_commit": "1e67353d1455dbedc5950ffe0fd3cfae5777c0ac",
+  "sources": [
+    {
+      "id": "norms544",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/256296",
+      "title": "HG 123/2002 implementing norms",
+      "scope": "national",
+      "version": "Consolidation 28 June 2022; inspected amendments to Arts.20-27 and 34",
+      "depth": "internal_legal_procedure",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "norms544"
+    },
+    {
+      "id": "petitions27",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/290817",
+      "title": "OG 27/2002 petitions",
+      "scope": "national",
+      "version": "Consolidation 1 December 2024, including harassment exception",
+      "depth": "internal_legal_procedure",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "petitions27"
+    },
+    {
+      "id": "transparency52",
+      "url": "https://legislatie.just.ro/public/detaliidocument/41571",
+      "title": "Law 52/2003 transparency",
+      "scope": "national",
+      "version": "Consolidation displayed 2 March 2022",
+      "depth": "legal_procedure",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "transparency52"
+    },
+    {
+      "id": "tax207",
+      "url": "https://static.anaf.ro/static/10/Anaf/legislatie/Cod_Procedura_Fiscala_2023.htm",
+      "title": "Law 207/2015 fiscal procedure",
+      "scope": "national",
+      "version": "Page header says updated through OUG 38/2026; URL year is not version date",
+      "depth": "legal_procedure",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "tax207"
+    },
+    {
+      "id": "grant-reg2025",
+      "url": "https://www.detatm.ro/wp-content/uploads/2025/05/REGULAMENT-2025.pdf",
+      "title": "Deta grant regulation, HCL 65/29 April 2025",
+      "scope": "Deta",
+      "version": "Adopted 2025 edition; not assumed applicable to post-amendment 2026 calls",
+      "depth": "internal_local_procedure",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "grant-reg2025"
+    },
+    {
+      "id": "grant-eval2025",
+      "url": "https://www.detatm.ro/wp-content/uploads/2025/05/Anexa-9-Procedura-de-conformitate-evaluare-si-selectie-2025.pdf",
+      "title": "Deta grant conformity and evaluation annex",
+      "scope": "Deta",
+      "version": "2025 edition; same rule package as grant regulation",
+      "depth": "internal_local_procedure",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "grant-reg2025"
+    },
+    {
+      "id": "grant-report2025",
+      "url": "https://www.detatm.ro/wp-content/uploads/2026/01/Raport-anual-2025-1.pdf",
+      "title": "Deta annual grant report 2025",
+      "scope": "Deta",
+      "version": "Report year 2025; uploaded January 2026",
+      "depth": "reported_outputs",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "grant-report2025"
+    },
+    {
+      "id": "transparency-local",
+      "url": "https://www.detatm.ro/info-interes-public/transparenta-decizionala/",
+      "title": "Deta consultation register",
+      "scope": "Deta",
+      "version": "Dated entries include 2026; individual notices not all read",
+      "depth": "local_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "transparency-local"
+    },
+    {
+      "id": "transparency-report2025",
+      "url": "https://www.detatm.ro/wp-content/uploads/2026/03/Raport-anual-privind-transparenta-decizionala-2025.pdf",
+      "title": "Deta transparency report 2025",
+      "scope": "Deta",
+      "version": "Report year 2025; uploaded March 2026",
+      "depth": "self_reported_statistics",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "transparency-report2025"
+    },
+    {
+      "id": "tax-local",
+      "url": "https://www.detatm.ro/info-interes-public/formulare-si-acte-necesare/taxe-si-impozite/",
+      "title": "Deta tax forms",
+      "scope": "Deta",
+      "version": "Undated; observed on screen date",
+      "depth": "forms_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "tax-local"
+    },
+    {
+      "id": "catalogue",
+      "url": "https://deta.regista.ro/formulare",
+      "title": "Deta electronic catalogue",
+      "scope": "Deta",
+      "version": "Undated; individual forms gated by login",
+      "depth": "catalogue",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "catalogue"
+    },
+    {
+      "id": "foi-local",
+      "url": "https://www.detatm.ro/info-interes-public/legea-544-2001/",
+      "title": "Deta information-access page",
+      "scope": "Deta",
+      "version": "Undated; current personnel designation unconfirmed",
+      "depth": "local_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "foi-local"
+    },
+    {
+      "id": "urban-local",
+      "url": "https://www.detatm.ro/info-interes-public/formulare-si-acte-necesare/urbanism/",
+      "title": "Deta urbanism forms",
+      "scope": "Deta",
+      "version": "Undated; references older law; form existence is not current legal validity",
+      "depth": "forms_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "urban-local"
+    },
+    {
+      "id": "agricultural-local",
+      "url": "https://www.detatm.ro/info-interes-public/formulare-si-acte-necesare/agricol/",
+      "title": "Deta agricultural forms",
+      "scope": "Deta",
+      "version": "Undated",
+      "depth": "forms_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "agricultural-local"
+    },
+    {
+      "id": "hr-local",
+      "url": "https://www.detatm.ro/info-interes-public/concursuri-si-salarizare/",
+      "title": "Deta recruitment publications",
+      "scope": "Deta",
+      "version": "2026 index inspected; mapped completed sequence is explicitly June 2021",
+      "depth": "historical_reported_sequence",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "hr-local"
+    },
+    {
+      "id": "org-local",
+      "url": "https://www.detatm.ro/primarie/structura-organizatorica/",
+      "title": "Deta organisation",
+      "scope": "Deta",
+      "version": "Organigram links through 2024; 2026 reorganisation draft found separately",
+      "depth": "organisation_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "org-local"
+    },
+    {
+      "id": "procurement-local",
+      "url": "https://www.detatm.ro/info-interes-public/achizitii-publice/achizitii-publice-2026/",
+      "title": "Deta 2026 procurement",
+      "scope": "Deta",
+      "version": "2026 catering and site-supervision notices",
+      "depth": "local_index",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "procurement-local"
+    },
+    {
+      "id": "catering-norms",
+      "url": "https://www.detatm.ro/wp-content/uploads/2026/01/2.-Norme-interne-Atribuire-contract-servicii-catering.pdf",
+      "title": "Deta catering internal norms",
+      "scope": "Deta",
+      "version": "January 2026 scan, 8 pages",
+      "depth": "untranscribed_scan",
+      "access": "pdf_accessible_text_unavailable",
+      "checked_at": "2026-10-31",
+      "independence_group": "catering-norms"
+    },
+    {
+      "id": "health-education",
+      "url": "https://www.detatm.ro/info-interes-public/achizitii-publice/achizitii-publice-2026/",
+      "title": "School catering / recovery-centre procurement leads",
+      "scope": "Deta",
+      "version": "2026; service execution not read",
+      "depth": "index_only",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "procurement-local"
+    },
+    {
+      "id": "waste-local",
+      "url": "https://www.detatm.ro/",
+      "title": "Deta waste-service operator notice",
+      "scope": "Deta",
+      "version": "Search result only this pass; not process evidence",
+      "depth": "lead",
+      "access": "search_lead",
+      "checked_at": "2026-10-31",
+      "independence_group": "waste-local"
+    },
+    {
+      "id": "civil-law119",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/8624",
+      "title": "Law 119/1996 civil status",
+      "scope": "national",
+      "version": "Portal displays consolidation 6 July 2026; operative sections failed to open",
+      "depth": "lead",
+      "access": "partial_header_only",
+      "checked_at": "2026-10-31",
+      "independence_group": "civil-law119"
+    },
+    {
+      "id": "budget-local",
+      "url": "https://www.detatm.ro/info-interes-public/bugetul-si-executie/",
+      "title": "Deta budgets",
+      "scope": "Deta",
+      "version": "Search lead; financial execution not reconstructed",
+      "depth": "lead",
+      "access": "search_lead",
+      "checked_at": "2026-10-31",
+      "independence_group": "budget-local"
+    },
+    {
+      "id": "deta-heating",
+      "url": "https://www.detatm.ro/info-interes-public/formulare-si-acte-necesare/asistenta-sociala/",
+      "title": "Deta social-benefit and housing forms",
+      "scope": "Deta",
+      "version": "Heating guidance explicitly 2021-22; other forms undated",
+      "depth": "historical_guidance_and_forms",
+      "access": "read",
+      "checked_at": "2026-10-31",
+      "independence_group": "deta-heating"
+    },
+    {
+      "id": "grant-law350",
+      "url": "https://legislatie.just.ro/Public/DetaliiDocument/66812",
+      "title": "Law 350/2005 grants",
+      "scope": "national",
+      "version": "Portal note: Law91 of 10 June 2026 applies to procedures initiated after entry into force; operative amendment not fully inspected",
+      "depth": "version_note_only",
+      "access": "partial_header_read",
+      "checked_at": "2026-10-31",
+      "independence_group": "grant-law350"
+    }
+  ],
+  "workflows": [
+    {
+      "id": "foi",
+      "name": "Public-information request handling",
+      "family": "information-access",
+      "evidence_level": "national_procedure_with_local_channel",
+      "temporal_scope": "Amended norms; Deta actual routing unvalidated",
+      "claims": [
+        {
+          "id": "foi:1",
+          "statement": "Receive request",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.20(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:2",
+          "statement": "Register request immediately",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.20(4)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:3",
+          "statement": "Communicate registration number and date",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.20(5)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:4",
+          "statement": "Assess information-access scope",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.21(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:5",
+          "statement": "Reclassify qualifying requests as petitions",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.21(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:6",
+          "statement": "Notify requests outside both regimes",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.21(3)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:7",
+          "statement": "Direct requester to published information",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.21(4)-(5)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:8",
+          "statement": "Route request to information-holding units",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.22(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:9",
+          "statement": "Check exemptions",
+          "actor": "competent_unit",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.22(1)-(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:10",
+          "statement": "Anonymise exempt material in mixed records",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.22(2^1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:11",
+          "statement": "Receive unit response",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.23(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:12",
+          "statement": "Draft reply",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.23(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:13",
+          "statement": "Register reply",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.23(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:14",
+          "statement": "Send reply",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.23(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:15",
+          "statement": "Forward out-of-competence request",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.24"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi:16",
+          "statement": "Notify external forwarding",
+          "actor": "public_information_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.24"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "foi:2",
+          "target": "foi:3",
+          "condition": "after registration",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.20(5)"
+          }
+        },
+        {
+          "source": "foi:2",
+          "target": "foi:4",
+          "condition": "after receipt and registration",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.21(1)"
+          }
+        },
+        {
+          "source": "foi:4",
+          "target": "foi:5",
+          "condition": "qualifies as petition",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.21(2)"
+          }
+        },
+        {
+          "source": "foi:4",
+          "target": "foi:6",
+          "condition": "outside both regimes",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.21(3)"
+          }
+        },
+        {
+          "source": "foi:4",
+          "target": "foi:7",
+          "condition": "already published",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.21(4)"
+          }
+        },
+        {
+          "source": "foi:8",
+          "target": "foi:9",
+          "condition": "not proactively published",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.22(1)"
+          }
+        },
+        {
+          "source": "foi:11",
+          "target": "foi:12",
+          "condition": "unit response received",
+          "evidence": {
+            "source_id": "norms544",
+            "locator": "Art.23(1)"
+          }
+        }
+      ],
+      "rules": [
+        {
+          "statement": "10-day reply / extension notice; 30-day extended reply; 5-day refusal; deadline calculation in Art.16(2)-(3).",
+          "source_id": "norms544",
+          "locator": "Art.16"
+        },
+        {
+          "statement": "Postal registration number communicated on request; immediate verbal answers have a separate branch.",
+          "source_id": "norms544",
+          "locator": "Art.20(3),(5)"
+        }
+      ],
+      "local_evidence": [
+        "catalogue",
+        "foi-local"
+      ],
+      "open_questions": [
+        "Who owns each Deta desk task and signs the reply?",
+        "Do email, paper and Regista share a register?",
+        "What local software and redaction review are used?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "foi-complaint",
+      "name": "Information-access administrative complaints",
+      "family": "information-access",
+      "evidence_level": "national_procedure_with_local_channel",
+      "temporal_scope": "Amended norms; no Deta commission mandate read",
+      "claims": [
+        {
+          "id": "foi-complaint:1",
+          "statement": "Submit complaint to institution head",
+          "actor": "requester",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.32-33"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:2",
+          "statement": "Receive complaint",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(a)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:3",
+          "statement": "Analyse complaint",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(a)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:4",
+          "statement": "Conduct administrative investigation",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(b)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:5",
+          "statement": "Determine merits",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(c)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:6",
+          "statement": "Propose remedy and disciplinary referral when justified",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(d)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:7",
+          "statement": "Draft reasoned reply",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(e);34"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "foi-complaint:8",
+          "statement": "Send reply",
+          "actor": "review_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "norms544",
+              "locator": "Art.35(2)(e);34"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [],
+      "rules": [
+        {
+          "statement": "Complaint within 30 days of learning of refusal; reply within 15 days of registration regardless of outcome.",
+          "source_id": "norms544",
+          "locator": "Art.33-34"
+        }
+      ],
+      "local_evidence": [
+        "catalogue",
+        "foi-local"
+      ],
+      "open_questions": [
+        "Which Deta disposition establishes the commission?",
+        "What is the local complaint register and recusal process?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "petitions",
+      "name": "Petition handling",
+      "family": "petitions",
+      "evidence_level": "national_procedure_with_local_intake_lead",
+      "temporal_scope": "Consolidated 1 December 2024; local assignment unvalidated",
+      "claims": [
+        {
+          "id": "petitions:1",
+          "statement": "Receive petition",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:2",
+          "statement": "Register petition",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:3",
+          "statement": "Forward to specialist unit with reply deadline",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:4",
+          "statement": "Assign petition to specialist staff",
+          "actor": "specialist_unit_head",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.12(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:5",
+          "statement": "Investigate and resolve assigned petition",
+          "actor": "specialist_staff",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.5;12(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:6",
+          "statement": "Monitor timely reply preparation",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6(3)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:7",
+          "statement": "Sign reply",
+          "actor": "institution_head_or_delegate",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.13"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:8",
+          "statement": "Co-sign reply",
+          "actor": "specialist_unit_head",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.13"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:9",
+          "statement": "Dispatch reply",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6(4)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:10",
+          "statement": "Archive petition",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6(4)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:11",
+          "statement": "Forward misdirected petition and notify petitioner",
+          "actor": "public_relations",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.6^1"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:12",
+          "statement": "Combine duplicate pending petitions",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.10(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:13",
+          "statement": "Close identical repeat after response",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.10(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "petitions:14",
+          "statement": "Route anonymous harassment allegations for specialised analysis",
+          "actor": "harassment_role_or_commission",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "petitions27",
+              "locator": "Art.7(2)-(4)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "petitions:2",
+          "target": "petitions:3",
+          "condition": "registered petition",
+          "evidence": {
+            "source_id": "petitions27",
+            "locator": "Art.6(2)"
+          }
+        },
+        {
+          "source": "petitions:3",
+          "target": "petitions:4",
+          "condition": "received by specialist unit",
+          "evidence": {
+            "source_id": "petitions27",
+            "locator": "Art.12(1)"
+          }
+        },
+        {
+          "source": "petitions:4",
+          "target": "petitions:5",
+          "condition": "staff assignment",
+          "evidence": {
+            "source_id": "petitions27",
+            "locator": "Art.12(2)"
+          }
+        }
+      ],
+      "rules": [
+        {
+          "statement": "Ordinary reply: 30 days; justified extension up to 15, or 30 for energy/gas, with prior notification.",
+          "source_id": "petitions27",
+          "locator": "Art.8-9"
+        },
+        {
+          "statement": "Anonymous petitions are generally closed, but harassment exception added in 2024 must be handled.",
+          "source_id": "petitions27",
+          "locator": "Art.7"
+        },
+        {
+          "statement": "Reply includes legal basis; subject of complaint and subordinates cannot resolve it.",
+          "source_id": "petitions27",
+          "locator": "Art.11;13"
+        }
+      ],
+      "local_evidence": [
+        "catalogue",
+        "org-local"
+      ],
+      "open_questions": [
+        "Which Deta intake is a petition rather than FOI or a service application?",
+        "Who is delegated to sign?",
+        "How are recusal and harassment exceptions routed?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "consultation",
+      "name": "Consulting on draft normative acts",
+      "family": "normative-consultation",
+      "evidence_level": "national_procedure_with_local_report",
+      "temporal_scope": "Law 52 consolidation displayed 2022; local report 2025",
+      "claims": [
+        {
+          "id": "consultation:1",
+          "statement": "Publish draft notice and supporting material",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(1)-(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:2",
+          "statement": "Send drafts to registered recipients",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:3",
+          "statement": "Receive written recommendations",
+          "actor": "designated_civil_society_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(7)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:4",
+          "statement": "Record recommendations in register",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(5)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:5",
+          "statement": "Organise debate when qualifying written request requires it",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(9)-(10)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:6",
+          "statement": "Analyse all recommendations",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(12)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:7",
+          "statement": "Finalise draft after consultation",
+          "actor": "unknown",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(8)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:8",
+          "statement": "Send finalised draft for review",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(8)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:9",
+          "statement": "Publish debate material and final adopted text",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.7(10)(d)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "consultation:10",
+          "statement": "Explain non-adoption of written recommendations",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.12(3)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "consultation:7",
+          "target": "consultation:8",
+          "condition": "only after finalisation",
+          "evidence": {
+            "source_id": "transparency52",
+            "locator": "Art.7(8)"
+          }
+        }
+      ],
+      "rules": [
+        {
+          "statement": "Ordinary notice at least 30 working days before review; at least 10 calendar days for written recommendations.",
+          "source_id": "transparency52",
+          "locator": "Art.7(2),(4)"
+        },
+        {
+          "statement": "Urgent circumstances can shorten ordinary period; qualifying debate request and disclosure deadlines remain distinct rules.",
+          "source_id": "transparency52",
+          "locator": "Art.7(9)-(13)"
+        }
+      ],
+      "local_evidence": [
+        "transparency-local",
+        "transparency-report2025"
+      ],
+      "open_questions": [
+        "Which local employee maintains the register?",
+        "Are website, office and media notices synchronised?",
+        "What evidence supports urgency exceptions?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "public-meetings",
+      "name": "Public meeting participation and minutes",
+      "family": "public-meetings",
+      "evidence_level": "national_procedure_with_local_report",
+      "temporal_scope": "Law 52; local 2025 reported meeting activity",
+      "claims": [
+        {
+          "id": "public-meetings:1",
+          "statement": "Publish meeting notice and agenda",
+          "actor": "civil_society_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.8(1)-(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:2",
+          "statement": "Notify interested prior contributors",
+          "actor": "civil_society_role",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.8(1)(b),(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:3",
+          "statement": "Manage attendance priority within capacity",
+          "actor": "meeting_chair",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.8(3)-(4)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:4",
+          "statement": "Give participants opportunity to speak",
+          "actor": "meeting_chair",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.9"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:5",
+          "statement": "Adopt administrative decisions",
+          "actor": "competent_authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.10(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:6",
+          "statement": "Prepare minutes",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.12(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:7",
+          "statement": "Archive minutes",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.12(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "public-meetings:8",
+          "statement": "Publish minutes and voting record where applicable",
+          "actor": "authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "transparency52",
+              "locator": "Art.11"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [],
+      "rules": [
+        {
+          "statement": "Meeting announcement at least 3 days beforehand.",
+          "source_id": "transparency52",
+          "locator": "Art.8(1)(a)"
+        }
+      ],
+      "local_evidence": [
+        "transparency-report2025"
+      ],
+      "open_questions": [
+        "Obtain council ROF for voting, agenda approval and legal review.",
+        "Who prepares and checks minutes?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "fiscal-certificate",
+      "name": "Local fiscal certificate",
+      "family": "tax-certificate",
+      "evidence_level": "national_rules_with_local_forms",
+      "temporal_scope": "ANAF displayed update through OUG 38/2026",
+      "claims": [
+        {
+          "id": "fiscal-certificate:1",
+          "statement": "Request local fiscal certificate",
+          "actor": "taxpayer_or_authorised_requester",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.159(1);160(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "fiscal-certificate:2",
+          "statement": "Issue certificate using local tax-claims records",
+          "actor": "local_fiscal_authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.159(2)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "fiscal-certificate:3",
+          "statement": "Present certificate where required",
+          "actor": "taxpayer",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.159(4)-(5)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [],
+      "rules": [
+        {
+          "statement": "Issuance within two working days; validity 30 days.",
+          "source_id": "tax207",
+          "locator": "Art.159(3)"
+        },
+        {
+          "statement": "Third-party consent, succession and electronic-verification exceptions require separate variants.",
+          "source_id": "tax207",
+          "locator": "Art.159(5)-(7);160"
+        }
+      ],
+      "local_evidence": [
+        "tax-local",
+        "catalogue"
+      ],
+      "open_questions": [
+        "Who checks identity, consent and discrepancies locally?",
+        "Is issuance actually automated?",
+        "Which current local form and signature procedure apply?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "tax-refund",
+      "name": "Local tax overpayment refund",
+      "family": "tax-refund",
+      "evidence_level": "national_rules_with_local_form",
+      "temporal_scope": "ANAF displayed update through OUG 38/2026; local form listed",
+      "claims": [
+        {
+          "id": "tax-refund:1",
+          "statement": "Request refund of undue payment",
+          "actor": "taxpayer",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.168(1)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "tax-refund:2",
+          "statement": "Offset outstanding obligations before refund",
+          "actor": "competent_fiscal_authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.168(8);167"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "tax-refund:3",
+          "statement": "Communicate offset decision",
+          "actor": "competent_fiscal_authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.167(8)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "tax-refund:4",
+          "statement": "Refund remaining eligible sum",
+          "actor": "competent_fiscal_authority",
+          "actor_scope": "national_legal_role",
+          "evidence": [
+            {
+              "source_id": "tax207",
+              "locator": "Art.168(1),(8)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "tax-refund:2",
+          "target": "tax-refund:4",
+          "condition": "outstanding obligations offset first",
+          "evidence": {
+            "source_id": "tax207",
+            "locator": "Art.168(8)"
+          }
+        }
+      ],
+      "rules": [],
+      "local_evidence": [
+        "tax-local"
+      ],
+      "open_questions": [
+        "Obtain local refund procedure and current form fields.",
+        "Who establishes entitlement and approves payment?",
+        "How is treasury execution reconciled?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "grant-award",
+      "name": "Local nonprofit grant selection and award",
+      "family": "local-grants",
+      "evidence_level": "local_operational_regulation",
+      "temporal_scope": "2025 programme edition; 2026 legal amendment unresolved",
+      "claims": [
+        {
+          "id": "grant-award:1",
+          "statement": "Publish annual programme",
+          "actor": "organising_authority",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.17(a)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:2",
+          "statement": "Publish call and documentation",
+          "actor": "organising_authority",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.17(b)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:3",
+          "statement": "Submit application at registry",
+          "actor": "applicant",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.17(c);18"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:4",
+          "statement": "Forward registered documents to commission secretariat",
+          "actor": "unknown",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.32"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:5",
+          "statement": "Return late submissions",
+          "actor": "commission_secretariat",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.32"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:6",
+          "statement": "Check conformity",
+          "actor": "evaluation_commission",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-eval2025",
+              "locator": "p.1 conformity"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:7",
+          "statement": "Request eligibility evidence if needed",
+          "actor": "evaluation_commission",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-eval2025",
+              "locator": "p.1 footnote"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:8",
+          "statement": "Score eligible proposals",
+          "actor": "evaluation_commission",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.33"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:9",
+          "statement": "Re-evaluate excessive scoring differences",
+          "actor": "evaluation_commission",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-eval2025",
+              "locator": "p.2 footnote"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:10",
+          "statement": "Submit winners minutes for endorsement",
+          "actor": "evaluation_commission",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.34"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:11",
+          "statement": "Communicate selection result",
+          "actor": "commission_secretary",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.35"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:12",
+          "statement": "Conclude funding contract",
+          "actor": "funding_authority_and_selected_applicant",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.36"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-award:13",
+          "statement": "Publish award notice",
+          "actor": "organising_authority",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.17(i)"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "grant-award:1",
+          "target": "grant-award:2",
+          "condition": "listed programme stages",
+          "evidence": {
+            "source_id": "grant-reg2025",
+            "locator": "Art.17(a)-(b)"
+          }
+        },
+        {
+          "source": "grant-award:3",
+          "target": "grant-award:4",
+          "condition": "as registered",
+          "evidence": {
+            "source_id": "grant-reg2025",
+            "locator": "Art.32"
+          }
+        },
+        {
+          "source": "grant-award:4",
+          "target": "grant-award:5",
+          "condition": "late",
+          "evidence": {
+            "source_id": "grant-reg2025",
+            "locator": "Art.32"
+          }
+        },
+        {
+          "source": "grant-award:6",
+          "target": "grant-award:8",
+          "condition": "conformity passed",
+          "evidence": {
+            "source_id": "grant-eval2025",
+            "locator": "p.1 footnote"
+          }
+        },
+        {
+          "source": "grant-award:8",
+          "target": "grant-award:9",
+          "condition": "score gap exceeds 10",
+          "evidence": {
+            "source_id": "grant-eval2025",
+            "locator": "p.2 footnote"
+          }
+        },
+        {
+          "source": "grant-award:11",
+          "target": "grant-award:12",
+          "condition": "after result communication",
+          "evidence": {
+            "source_id": "grant-reg2025",
+            "locator": "Art.36"
+          }
+        }
+      ],
+      "rules": [
+        {
+          "statement": "At least 65/100 points; scoring gap above 10 triggers re-evaluation.",
+          "source_id": "grant-eval2025",
+          "locator": "p.2"
+        },
+        {
+          "statement": "Result communication within 10 days; contracting within 20 days of communication.",
+          "source_id": "grant-reg2025",
+          "locator": "Art.35-36"
+        }
+      ],
+      "local_evidence": [
+        "grant-reg2025",
+        "grant-eval2025",
+        "grant-report2025"
+      ],
+      "open_questions": [
+        "Resolve Art.17 result/endorsement ordering against Arts.34-35.",
+        "Obtain 2026 applicable call and rules after national amendment.",
+        "Who records checks and manages conflicts of interest?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "grant-settlement",
+      "name": "Grant reporting, instalments and control",
+      "family": "local-grants",
+      "evidence_level": "local_operational_regulation",
+      "temporal_scope": "2025 programme edition; payment desk detail incomplete",
+      "claims": [
+        {
+          "id": "grant-settlement:1",
+          "statement": "Submit intermediate report and supporting evidence",
+          "actor": "beneficiary",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.40;43"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-settlement:2",
+          "statement": "Provide next instalment after justification",
+          "actor": "funding_authority",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.40"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-settlement:3",
+          "statement": "Submit final project report",
+          "actor": "beneficiary",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.43"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-settlement:4",
+          "statement": "Withhold final settlement for missing timely report",
+          "actor": "unknown",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.44"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-settlement:5",
+          "statement": "Exercise financial control",
+          "actor": "municipal_specialist_staff",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.48"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-settlement:6",
+          "statement": "Audit use of funds",
+          "actor": "specialist_units_or_auditors_or_commission",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.49"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "grant-settlement:7",
+          "statement": "Retain complete project file",
+          "actor": "beneficiary",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "grant-reg2025",
+              "locator": "Art.49"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "grant-settlement:1",
+          "target": "grant-settlement:2",
+          "condition": "prior tranche justified; first tranche excepted",
+          "evidence": {
+            "source_id": "grant-reg2025",
+            "locator": "Art.40"
+          }
+        }
+      ],
+      "rules": [
+        {
+          "statement": "Advance capped at 50%; final reporting within 15 days of completion and by 15 December; retain file five years.",
+          "source_id": "grant-reg2025",
+          "locator": "Art.41-43;49"
+        }
+      ],
+      "local_evidence": [
+        "grant-report2025"
+      ],
+      "open_questions": [
+        "Who validates evidence and approves each payment?",
+        "What treasury/accounting steps intervene?",
+        "What are the recovery and complaint procedures?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    },
+    {
+      "id": "recruitment-history",
+      "name": "Completed municipal recruitment sequence",
+      "family": "recruitment",
+      "evidence_level": "historical_local_output_sequence",
+      "temporal_scope": "One June 2021 municipal competition; not current recruitment rules",
+      "claims": [
+        {
+          "id": "recruitment-history:1",
+          "statement": "Select applications",
+          "actor": "unknown",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "hr-local",
+              "locator": "17 June 2021 final report: selection 4 June"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "recruitment-history:2",
+          "statement": "Conduct written examination",
+          "actor": "unknown",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "hr-local",
+              "locator": "17 June 2021 final report: written 11 June"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "recruitment-history:3",
+          "statement": "Conduct interview",
+          "actor": "unknown",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "hr-local",
+              "locator": "17 June 2021 final report: interview 15 June"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        },
+        {
+          "id": "recruitment-history:4",
+          "statement": "Publish final result",
+          "actor": "unknown",
+          "actor_scope": "local_document_role",
+          "evidence": [
+            {
+              "source_id": "hr-local",
+              "locator": "17 June 2021 final report"
+            }
+          ],
+          "evidence_check": "source_located_manual_read",
+          "quote_verified": null,
+          "automation": "unknown",
+          "local_execution_validated": false
+        }
+      ],
+      "explicit_links": [
+        {
+          "source": "recruitment-history:1",
+          "target": "recruitment-history:2",
+          "condition": "dated outputs 4 June then 11 June 2021",
+          "evidence": {
+            "source_id": "hr-local",
+            "locator": "17 June 2021 final report"
+          }
+        },
+        {
+          "source": "recruitment-history:2",
+          "target": "recruitment-history:3",
+          "condition": "11 June then 15 June 2021",
+          "evidence": {
+            "source_id": "hr-local",
+            "locator": "17 June 2021 final report"
+          }
+        },
+        {
+          "source": "recruitment-history:3",
+          "target": "recruitment-history:4",
+          "condition": "15 June then 17 June 2021",
+          "evidence": {
+            "source_id": "hr-local",
+            "locator": "17 June 2021 final report"
+          }
+        }
+      ],
+      "rules": [],
+      "local_evidence": [
+        "hr-local"
+      ],
+      "open_questions": [
+        "Read current 2026 vacancy notice and applicable recruitment law.",
+        "Which stages differ for civil servants and contractual employees?",
+        "What appeals and no-candidate branches apply?"
+      ],
+      "complete": false,
+      "operationally_validated": false
+    }
+  ],
+  "evidence_contract": {
+    "source_located_manual_read": "Researcher paraphrase tied to inspected passage; not independently quote-verified.",
+    "no_closed_graph": "Only explicit supported links included; missing sequence is a question.",
+    "automation": "Unknown throughout; legal permission is not observed implementation.",
+    "law_vs_execution": "National legal roles remain national roles until mapped to local positions.",
+    "independence": "Regulation and its annexes share an origin; output reports corroborate activity, not each desk step.",
+    "completion": "All workflows partial and none validated by municipality. No recall percentage or all-process count claimed."
+  },
+  "statistics": [
+    {
+      "source_id": "grant-report2025",
+      "period": "2025",
+      "measure": "Listed funding contracts",
+      "value": 11
+    },
+    {
+      "source_id": "grant-report2025",
+      "period": "2025",
+      "measure": "Sum of listed allocations in lei",
+      "value": 220000,
+      "method": "Sum 20000+40000+15000+10000+15000+30000+8000+45000+9000+20000+8000; allocations, not audited disbursements"
+    },
+    {
+      "source_id": "transparency-report2025",
+      "period": "2025",
+      "measure": "Publicly announced draft acts",
+      "value": 130
+    },
+    {
+      "source_id": "transparency-report2025",
+      "period": "2025",
+      "measure": "Public debates reported",
+      "value": 4
+    },
+    {
+      "source_id": "transparency-report2025",
+      "period": "2025",
+      "measure": "Public meetings reported",
+      "value": 27
+    },
+    {
+      "source_id": "transparency-report2025",
+      "period": "2025",
+      "measure": "Recommendations received reported",
+      "value": 0
+    }
+  ],
+  "unresolved_conflicts": [
+    {
+      "subject": "Information-access deadlines",
+      "finding": "Older CNCAN copy uses working-day wording; amended Art.16 uses days with explicit calculation provisions.",
+      "resolution": "Use amended norms as legal baseline; preserve old source as historical."
+    },
+    {
+      "subject": "Grant version",
+      "finding": "Local HCL edition is 2025; national law portal signals Law 91/2026 applies to procedures started after its entry into force.",
+      "resolution": "2025 map retained; no assumption of applicability to a new 2026 call."
+    },
+    {
+      "subject": "Grant ordering",
+      "finding": "Art.17 lists communication before principal credit officer review; Arts.34-35 describe minutes to mayor and later notice.",
+      "resolution": "Do not force endorsement/communication sequence; ask owner."
+    },
+    {
+      "subject": "Public-information annual report routing",
+      "finding": "HG830/2022 includes conditional repeal of earlier reporting route once implementing order takes effect.",
+      "resolution": "Do not configure annual-routing workflow until order applicability checked."
+    },
+    {
+      "subject": "Organisation",
+      "finding": "2026 draft reorganisation is more recent than 2024 organigram links, but draft adoption not checked.",
+      "resolution": "Draft does not supersede approved organisation by date alone."
+    },
+    {
+      "subject": "Fiscal code filename",
+      "finding": "ANAF URL says 2023 but header reports OUG38/2026.",
+      "resolution": "Record content version independently of filename."
+    }
+  ],
+  "counts": {
+    "inventory_rows": 59,
+    "evidence_backed_candidates": 52,
+    "search_targets": 7,
+    "workflow_sheets": 10,
+    "families_with_sheets": 8,
+    "claims": 87,
+    "explicit_links": 22,
+    "sources": 24,
+    "agency_validated": 0
+  }
+}
