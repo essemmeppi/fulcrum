@@ -1,0 +1,626 @@
+{
+ "nodes": [
+  {
+   "id": "C01",
+   "name": "Estimate the allowance with the online calculator",
+   "description": "The applicant may use Kela's calculator to get an estimate of the allowance; the result is only an estimate.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C02",
+   "name": "Submit communal-household power of attorney (AT 5e) with the application",
+   "description": "A roommate who represents a communal household completes form AT 5e and submits it with the application.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C03",
+   "name": "Notify move to Finland (form Y 77e)",
+   "description": "An applicant who has moved to Finland and has not claimed Kela benefits before also completes form Y 77e.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C04",
+   "name": "Decide whether a person who moved to Finland is permanently resident",
+   "description": "Kela considers whether a person who moved to Finland is permanently resident, which decides whether they can belong to the household.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C05",
+   "name": "Report move abroad or stay abroad (form Y 38e)",
+   "description": "The applicant tells Kela in OmaKela or on form Y 38e about moving to or staying in another country.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C06",
+   "name": "Check whether the landlord sends rental agreement data to Kela",
+   "description": "The applicant checks the published list of landlords that send rental agreement information directly to Kela.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C07",
+   "name": "Landlord provides rental agreement details to Kela electronically",
+   "description": "Certain landlords provide rental housing details to Kela in electronic form, so the recipient need not submit the rental agreement.",
+   "actor_id": "landlord",
+   "type": "task"
+  },
+  {
+   "id": "C08",
+   "name": "Attach a copy of the signed rental agreement",
+   "description": "The applicant sends a copy of the signed rental agreement with the application when Kela does not get it from the landlord.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C09",
+   "name": "Apply online in OmaKela",
+   "description": "The applicant applies for general housing allowance in the OmaKela e-service.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C10",
+   "name": "Apply with the combined online form (general social security benefit + housing allowance)",
+   "description": "The applicant may use the new online form to apply for general social security benefit and general housing allowance at the same time.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C11",
+   "name": "Submit supporting documents in OmaKela",
+   "description": "The applicant submits supporting documents in OmaKela, photographing paper documents.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C12",
+   "name": "Apply on paper form AT 1e",
+   "description": "An applicant who cannot use OmaKela applies on form AT 1e.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C13",
+   "name": "Fill in, print and sign the form",
+   "description": "The applicant fills in, prints and signs the paper application.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C14",
+   "name": "Post the form and supporting documents to Kela",
+   "description": "The applicant posts the form and supporting documents to Kela, PL 10, 00056 KELA.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C15",
+   "name": "Declare household income (gross) in the application",
+   "description": "The applicant states household income at its gross amount, including tax-exempt income.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C16",
+   "name": "Notify the Digital and Population Data Services Agency of the change of address",
+   "description": "The applicant notifies the Digital and Population Data Services Agency of the new address of all household members within one week.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C17",
+   "name": "Consent to payment of the allowance to the landlord",
+   "description": "The applicant may consent to Kela paying the allowance directly to the landlord's account.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C18",
+   "name": "Inform the applicant in advance of data sources and disclosures",
+   "description": "Kela must tell the applicant in advance where data about them may be obtained and to whom it is regularly disclosed.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C19",
+   "name": "Process the application",
+   "description": "The application must be processed without undue delay (the provision does not name who processes it).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C20",
+   "name": "Obtain wage and salary data from the Incomes Register",
+   "description": "Kela gets wage and salary information from the Incomes Register and uses it when processing the application.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C21",
+   "name": "Request necessary information from authorities, pension bodies, employers, landlords and others",
+   "description": "Kela (and the appeal body) may request, free of charge and despite secrecy rules, information needed to decide the case from the bodies listed in 42 § 1 mom.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C22",
+   "name": "Inform the applicant before requesting data from financial institutions",
+   "description": "Before a request to a financial institution is made, the applicant or recipient must be informed (the provision does not say by whom).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C23",
+   "name": "Request data from financial institutions in writing",
+   "description": "A request for data from financial institutions must be made in writing.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C24",
+   "name": "Send a reminder about missing supporting documents in OmaKela",
+   "description": "The applicant gets a reminder in OmaKela if supporting documents are missing (the text does not say who or what sends it).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C25",
+   "name": "Ask the applicant for more information",
+   "description": "Kela may ask the applicant for more information when needed.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C26",
+   "name": "Decide on the information available to Kela",
+   "description": "The application can be decided on the information Kela has if the applicant refuses to give the information or explanation required.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C27",
+   "name": "Determine income as continuous income or average income",
+   "description": "Kela calculates the household income that affects the allowance either as continuous income or as average income.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C28",
+   "name": "Calculate the allowance amount",
+   "description": "Kela deducts the basic deductible from the housing costs when calculating the allowance; the allowance is 70% of the remaining acceptable housing costs.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C29",
+   "name": "Issue a written decision",
+   "description": "A written decision is given to the applicant on granting, rejecting, reviewing, terminating or recovering housing allowance (the provision does not name who issues it).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C30",
+   "name": "Check decision, amount and payment date in OmaKela",
+   "description": "The applicant can check in OmaKela whether Kela has decided, the amount and the payment date.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C31",
+   "name": "Notify the State of the month's housing allowance total",
+   "description": "Five working days before the payment day Kela must notify the State of the amount of housing allowances payable that month.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C32",
+   "name": "State transfers the notified amount to Kela",
+   "description": "On the basis of Kela's notification the State pays Kela the notified amount at least one banking day before the payment day.",
+   "actor_id": "other_authority",
+   "type": "task"
+  },
+  {
+   "id": "C33",
+   "name": "Pay the allowance monthly to the recipient's or the landlord's account",
+   "description": "Kela pays the allowance into the recipient's or the landlord's bank account on the first banking day of the month.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C34",
+   "name": "Decide to pay the allowance to the landlord without the recipient's consent",
+   "description": "Kela may decide to pay the allowance directly to the landlord without authorisation if the recipient has failed to pay rent for at least two consecutive months.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C35",
+   "name": "Contact the recipient before paying the allowance to the landlord",
+   "description": "When rent has been left unpaid for two months in a row, Kela contacts the recipient before paying the allowance to the landlord.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C36",
+   "name": "Stop paying the landlord at the tenant's request",
+   "description": "Payment directly to the landlord is stopped at the tenant's request when there is no longer a ground for it (the provision does not name who stops it).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C37",
+   "name": "Landlord notifies Kela that the tenancy ends or the tenant moves out",
+   "description": "When the allowance is paid to the landlord, the landlord must notify Kela if the recipient's right of occupancy ends or the recipient moves out.",
+   "actor_id": "landlord",
+   "type": "task"
+  },
+  {
+   "id": "C38",
+   "name": "Withhold retroactive allowance against housing allowance for pensioners already paid",
+   "description": "Retroactively granted allowance may be withheld to Kela to the extent it matches housing allowance for pensioners paid for the same period.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C39",
+   "name": "Report changes in circumstances",
+   "description": "A recipient must notify Kela of changes in the circumstances of the household, such as income or housing costs.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C40",
+   "name": "Review the allowance because circumstances changed",
+   "description": "The allowance must also be reviewed when one of the changes listed in 27 § 2 mom occurs (income, housing costs, move or tenure, household size or subtenant).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C41",
+   "name": "Request termination of the allowance",
+   "description": "A recipient who no longer needs the allowance tells Kela to stop it (OmaKela notification, OmaKela message or form AT 6e).",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C42",
+   "name": "Terminate the allowance",
+   "description": "The allowance is terminated on the grounds and from the dates listed in 29 § (the provision does not name who terminates it).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C43",
+   "name": "Annual review of the allowance",
+   "description": "The amount of the allowance is reviewed when a year has passed since it started or was last reviewed.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C44",
+   "name": "Send annual review instructions to the recipient",
+   "description": "Kela sends instructions for the annual review to the recipient's OmaKela about two months before the review.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C45",
+   "name": "Submit the information for the annual review",
+   "description": "The recipient sends the information for the annual review on the general housing allowance application (OmaKela or post).",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C46",
+   "name": "Temporarily suspend or reduce payment",
+   "description": "Payment may be suspended in part or in full if there is good reason to assume the recipient is no longer entitled to all or part of it.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C47",
+   "name": "Recover overpaid allowance",
+   "description": "Allowance paid without grounds or in too large an amount must be recovered (the provision does not name who recovers it).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C48",
+   "name": "Recover the overpayment from another adult household member",
+   "description": "If necessary Kela may also recover the overpayment from another household member who was an adult when the overpayment occurred.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C49",
+   "name": "Issue a separate recovery decision to a non-applicant",
+   "description": "When recovery is directed at someone other than the applicant, that person gets their own recovery decision.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C50",
+   "name": "Waive recovery in full or in part",
+   "description": "Recovery may be waived if reasonable and not caused by fraud, or if the amount is small.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C51",
+   "name": "Recover allowance from the landlord",
+   "description": "Allowance paid without grounds may also be recovered from the landlord in the cases listed in 31 § 4 mom.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C52",
+   "name": "Appeal in writing to the Social Security Appeal Board",
+   "description": "A person dissatisfied with Kela's decision may appeal in writing to the Social Security Appeal Board; the appeal is delivered to Kela.",
+   "actor_id": "citizen",
+   "type": "task"
+  },
+  {
+   "id": "C53",
+   "name": "Rectify the decision when Kela accepts all appeal claims",
+   "description": "If Kela accepts all claims in the appeal it must issue a rectification decision.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C54",
+   "name": "Forward the appeal and Kela's statement to the appeal body",
+   "description": "If Kela does not rectify the decision, it forwards the appeal and its statement to the appeal body within 30 days of the end of the appeal period.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C55",
+   "name": "Appeal body handles the appeal",
+   "description": "Appeals are handled by the Social Security Appeal Board and the Insurance Court.",
+   "actor_id": "other_authority",
+   "type": "task"
+  },
+  {
+   "id": "C56",
+   "name": "Further appeal to the Insurance Court",
+   "description": "The Appeal Board's decision may be appealed to the Insurance Court (the provision does not name the appellant).",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C57",
+   "name": "Remove an erroneous decision and decide again",
+   "description": "If a decision rests on clearly wrong or incomplete information, an obviously wrong application of law or a procedural error, Kela may remove it and decide again.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C58",
+   "name": "Re-examine a final decision on new evidence",
+   "description": "If new evidence appears in a case about a refused or increased allowance, Kela must examine the case again and may grant or increase the allowance.",
+   "actor_id": "unknown",
+   "type": "task"
+  },
+  {
+   "id": "C59",
+   "name": "Annul a final decision and order the case re-heard",
+   "description": "On demand of a party or Kela, the Social Security Appeal Board may annul a final Kela decision and order the case to be heard again.",
+   "actor_id": "other_authority",
+   "type": "task"
+  },
+  {
+   "id": "C60",
+   "name": "Decide again after a benefit that prevents payment was granted retroactively",
+   "description": "If a benefit that prevents payment of housing allowance is granted retroactively, Kela may decide the case again after hearing the party, without their consent.",
+   "actor_id": "unknown",
+   "type": "task"
+  }
+ ],
+ "edges": [
+  {
+   "source": "C02",
+   "target": "C09",
+   "condition": ""
+  },
+  {
+   "source": "C03",
+   "target": "C04",
+   "condition": ""
+  },
+  {
+   "source": "C06",
+   "target": "C08",
+   "condition": ""
+  },
+  {
+   "source": "C12",
+   "target": "C13",
+   "condition": ""
+  },
+  {
+   "source": "C13",
+   "target": "C14",
+   "condition": ""
+  },
+  {
+   "source": "C09",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C20",
+   "target": "C19",
+   "condition": ""
+  },
+  {
+   "source": "C18",
+   "target": "C21",
+   "condition": ""
+  },
+  {
+   "source": "C22",
+   "target": "C23",
+   "condition": ""
+  },
+  {
+   "source": "C25",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C25",
+   "target": "C26",
+   "condition": ""
+  },
+  {
+   "source": "C46",
+   "target": "C26",
+   "condition": ""
+  },
+  {
+   "source": "C19",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C29",
+   "target": "C33",
+   "condition": ""
+  },
+  {
+   "source": "C31",
+   "target": "C33",
+   "condition": ""
+  },
+  {
+   "source": "C31",
+   "target": "C32",
+   "condition": ""
+  },
+  {
+   "source": "C32",
+   "target": "C33",
+   "condition": ""
+  },
+  {
+   "source": "C17",
+   "target": "C33",
+   "condition": ""
+  },
+  {
+   "source": "C35",
+   "target": "C33",
+   "condition": ""
+  },
+  {
+   "source": "C34",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C34",
+   "target": "C36",
+   "condition": ""
+  },
+  {
+   "source": "C39",
+   "target": "C40",
+   "condition": ""
+  },
+  {
+   "source": "C40",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C41",
+   "target": "C42",
+   "condition": ""
+  },
+  {
+   "source": "C42",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C44",
+   "target": "C43",
+   "condition": ""
+  },
+  {
+   "source": "C45",
+   "target": "C43",
+   "condition": ""
+  },
+  {
+   "source": "C45",
+   "target": "C42",
+   "condition": ""
+  },
+  {
+   "source": "C43",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C39",
+   "target": "C47",
+   "condition": ""
+  },
+  {
+   "source": "C33",
+   "target": "C47",
+   "condition": ""
+  },
+  {
+   "source": "C47",
+   "target": "C48",
+   "condition": ""
+  },
+  {
+   "source": "C48",
+   "target": "C49",
+   "condition": ""
+  },
+  {
+   "source": "C47",
+   "target": "C50",
+   "condition": ""
+  },
+  {
+   "source": "C47",
+   "target": "C29",
+   "condition": ""
+  },
+  {
+   "source": "C29",
+   "target": "C52",
+   "condition": ""
+  },
+  {
+   "source": "C52",
+   "target": "C53",
+   "condition": ""
+  },
+  {
+   "source": "C52",
+   "target": "C54",
+   "condition": ""
+  },
+  {
+   "source": "C54",
+   "target": "C55",
+   "condition": ""
+  },
+  {
+   "source": "C55",
+   "target": "C56",
+   "condition": ""
+  }
+ ]
+}

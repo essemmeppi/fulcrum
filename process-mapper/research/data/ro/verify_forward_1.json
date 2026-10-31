@@ -1,0 +1,630 @@
+[
+ {
+  "claim_id": "C01",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "(1) ajutor pentru înc ălzirea locuinței cu gaze naturale, denumit în continuare ajutor pentru încălzirea cu gaz;"
+   },
+   {
+    "page": "p. 4",
+    "quote": "(3) ajutor pentru încălzirea locuinței cu energie electrică"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Simeria procedure covers only gas, wood/coal/petroleum and electricity aid plus the energy supplement; it has no district-heating (thermal energy) workflow and no step where the town hall sends forms to suppliers by 15 September.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C02",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "(1) ajutor pentru înc ălzirea locuinței cu gaze naturale, denumit în continuare ajutor pentru încălzirea cu gaz;"
+   },
+   {
+    "page": "p. 4",
+    "quote": "(3) ajutor pentru încălzirea locuinței cu energie electrică"
+   },
+   {
+    "page": "p. 25",
+    "quote": "(1) Pun la dispoziția beneficiarilor formularele de cerere pentru acordarea ajutorului de încălzire și a suplimentului de încălzire și declarația pe propria răspundere"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Suppliers play no role in distributing forms. DAS staff hand the forms to applicants at the DAS office, and thermal-energy aid is outside the procedure's scope.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C03",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 25",
+    "quote": "(1) Pun la dispoziția beneficiarilor formularele de cerere pentru acordarea ajutorului de încălzire și a suplimentului de încălzire și declarația pe propria răspundere"
+   },
+   {
+    "page": "p. 31",
+    "quote": "Beneficiarul solicită cererea tip și lista documentelor ce trebuie depuse la DAS"
+   },
+   {
+    "page": "p. 14",
+    "quote": "reprezentantul legal al familiei sau persoana si ngură se prezintă la sediul Direcției de Asistență Socială Simeria, unde primește toate informațiile necesare acordării acestui beneficiu."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "das_staff",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Confirmed. DAS staff hand out the application/self-declaration forms at the DAS Simeria office when the beneficiary asks for them (per the flowcharts). This covers gas, wood/solid-fuel and electricity aid and the supplement.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C04",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 14",
+    "quote": "-Informațiile și modelele tipizate se postează și pe site-ul Primăriei orașului Simeria."
+   },
+   {
+    "page": "p. 16",
+    "quote": "pagina web http://www.primariasimeria.ro/DAS/ - secțiunea Formulare tip-Subvenție_căldură."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Partly confirmed. Information and form templates are posted on the Primăria Simeria website (DAS page, 'Formulare tip-Subvenție_căldură' section). The procedure does not mention AJPIS websites or name who posts the forms (passive voice; implicitly DAS).",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "claim_id": "C05",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "1.4 Procedura descrie modul în care se asigur ă sprijin și consiliere în vederea acordării dreptului și asigură continuitatea activității."
+   },
+   {
+    "page": "p. 4",
+    "quote": "se re alizează informarea beneficiarilor privind condi țiile de acordare a dreptului, termenele ș i actele necesare"
+   },
+   {
+    "page": "p. 25",
+    "quote": "(2) Informează beneficiarii referitor l a condițiile de acordare a ajutorului de înc ălzire/ suplimentului de înc ălzire precum și cuantumul ajutoarelor de înc ălzire/ suplimentelor de încălzire acordate"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "das_staff",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "DAS staff inform and counsel applicants on conditions, deadlines, required documents and aid amounts. The procedure never explicitly describes helping applicants fill in the forms: the applicant completes the form and staff check it against a checklist.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "claim_id": "C06",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 15",
+    "quote": "Cererea și declaraț ia pe propria r ăspundere pentru acordarea ajutorului pentru înc ălzirea locuinței se depun e individual la Dire cția de Asisten ță Socială Simeria."
+   },
+   {
+    "page": "p. 15",
+    "quote": "Depunerea cererilor -declarațiilor se fac e o singur ă dată, de regulă pană la d ata de 15 octombrie a fiecărui sezo n rece."
+   },
+   {
+    "page": "p. 31",
+    "quote": "Beneficiarul completează cererea tip la care anexează actele necesare și o vizează la impozite și taxe și Registrul Agricol"
+   },
+   {
+    "page": "p. 15",
+    "quote": "Solicitarea acestor ajutoare se poate face pe tot parcursul sezonului rece"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "citizen",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Filing is individual and in person at DAS Simeria; the owners'/tenants'-association route is never mentioned. Before filing, the applicant must get the form endorsed by the Taxes and Agricultural Register departments; this has no counterpart among the claimed predecessors (C02, C78). The 15 October rule and in-season filing match, with rights starting in the filing month if filed by the 20th, otherwise the next month.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "claim_id": "C07",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 15",
+    "quote": "Preluarea cererilor se face la Direcția de Asistență Socială Simeria, Piața Unirii, Bloc 5, Parter, telefon 0254 262 076, mobil 0726370342, între orele 8.00- 14.00 (Luni -Joi) și 8.00- 13.00 (vineri)."
+   },
+   {
+    "page": "p. 16",
+    "quote": "e-mail das@primariasimeria.ro sau spas.simeria@gmail.com și pe pagina web http://www.primariasimeria.ro/DAS/ - secțiunea Formulare tip-Subvenție_căldură."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Only in-person intake at the DAS office during set hours is described. There is no electronic filing channel; the DAS e-mail addresses are listed only for further information.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "claim_id": "C08",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 15",
+    "quote": "În cazul în care solicitantul este beneficiar sau, dup ă caz, primește ajutor social și/sau alocație pentru susținerea familiei și solicită ajutorul pentru încălzirea locuinței și suplimentul pentru energie,"
+   },
+   {
+    "page": "p. 15",
+    "quote": "acesta completează formularul de cerere pr evăzut în anexa la la normele metodologice aprobate prin Hotărârea Guvernului României nr. 50/2011"
+   },
+   {
+    "page": "p. 12",
+    "quote": "(3) Cerere-declarație pe propria răspundere pentru modificarea cererii de acordare a unor drepturi de asistență socială sau pentru acordarea unor noi drepturi"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "citizen",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Confirmed. The procedure cites the annex as 'anexa la' (an OCR rendering of 1a) to HG 50/2011 and lists the modification form among its documents (5.2(3), Anexa 2(2)).",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C09",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "page": "p. 15",
+    "quote": "la stabilirea dreptului, se iau în considerare documentele doveditoare priv ind componen ța familiei și veniturile membrilor acesteia care au fost deja depuse pentru stabilirea dreptului la ajutorul social"
+   },
+   {
+    "page": "p. 22",
+    "quote": "acesta se acord ă luând în considerare documentele doveditoare privind componen ța familiei ș i veniturile membr ilor acesteia."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Stated twice, in the passive voice, as a rule. No actor and no operational step (e.g. DAS retrieving the VMG/ASF file) is described.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C10",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 21",
+    "quote": "primarii solicită acte doveditoare care atestă identitatea și veniturile realizate de membrii familiei."
+   },
+   {
+    "page": "p. 25",
+    "quote": "(3) Preiau cererile de acor dare și documentele justificative care stau la b aza acordării ajutorului de încălzire și al suplimentului de încălzire de la beneficiari"
+   },
+   {
+    "page": "p. 16",
+    "quote": "ultima factură de energie electrică pentru ajutor și supliment (ajutorul se acordă doar cu dovada debranșării de la rețeaua de gaze naturale) - copie"
+   },
+   {
+    "page": "p. 17",
+    "quote": "Talon autoturism / motocicletă - copie"
+   },
+   {
+    "page": "p. 17",
+    "quote": "Pentru beneficiarii ajutorului de încălzire cu lemne este necesar ca beneficiarii să prezinte un extras de cont pe numele titularului cererii pentru situa ția în care solicită supliment pentru lemne;"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_procedure": "das_staff",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The procedure repeats the legal formula 'primarii solicită', but in practice DAS staff hand out the document list, collect the documents and check them against a checklist. The required list is broader than claimed: property/use title is always required; vehicle registration, a bank statement (wood supplement) and, for electricity aid, proof of disconnection from the gas network are added.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "claim_id": "C11",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 15",
+    "quote": "se va uti liza aplicația PatrimVen a Agenției Naționale de Administrație Fiscală Hunedoara, de către personalul Direcției de Asistență Socială Simeria cu atribuții în acest sens."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "There is no taking over of family/income documents from other institutions instead of the applicant's papers, and no consent mechanism; applicants must still file all income proofs. The nearest step is DAS staff checking incomes and assets in ANAF's PatrimVen, which is a check, not a substitute.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "claim_id": "C12",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 14",
+    "quote": "-Informațiile se afișează la afișierul DAS Simeria într-un loc special amenajat"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "There is no list of electronically retrievable documents. Only general information is posted on the DAS notice board (not the town-hall seat), and templates go on the Primăria website. The list of required documents is handed out at DAS on request.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "claim_id": "C13",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 21",
+    "quote": "Primarul stabilește dreptul la ajutor pentru încălzire, solicitând informații altor instituții/autorități"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "No protocols are mentioned. The procedure only restates that the mayor may request information from other institutions. In practice it relies on internal visas (Taxes, Agricultural Register) and ANAF's PatrimVen.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "claim_id": "C14",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 24",
+    "quote": "(1) Emite dispozițiile de stabilire a dreptului la ajutorul pentru înc ălzire , indiferent de sistemul de încălzire utilizat, pe întreaga perioadă a sezonului rece, în condițiile Legii nr.226/2021"
+   },
+   {
+    "page": "p. 22",
+    "quote": "Întocmirea referatelor de acordare/modificarea/suspendarea/încetare și a proiectului de dispoziție se face de personalul cu atribuții în fișa postului din cadrul DAS Simeria"
+   },
+   {
+    "page": "p. 22",
+    "quote": "Proiectele de dispoziție sunt înaintate spre a fi vizate de legalitate de către secretarul general al orașului Simeria și apoi se elaborează dispozițiile care sunt semnate de primar."
+   },
+   {
+    "page": "p. 31",
+    "quote": "CAPLJ întocmește, înregistrează şi comunică dispoziţia beneficiarului"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "mayor",
+  "order_check": "supported",
+  "granularity": "procedure_splits_it",
+  "corrections": "The mayor signs, but the procedure splits the step: DAS staff write the referat and draft disposition, the Secretary General endorses legality, CAPLJ drafts and registers the final disposition, then the mayor signs. The annex-table rule is not stated; dispositions may be issued individually or collectively.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "claim_id": "C15",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 25",
+    "quote": "(5) În cazul solicitării ajutorului pentru energie electrică, anchetele sociale se efectuează obligatoriu, pentru toate situaț iile, în termen de 1 5 zile luc rătoare de la data înregistrării cererii"
+   },
+   {
+    "page": "p. 25",
+    "quote": "(6) Anchetele sociale se realizează la domiciliul sau re ședința t itularului ajutorului , pentru verificarea sistemului de încălzire utilizat."
+   },
+   {
+    "page": "p. 24",
+    "quote": "dispune efectuarea de anchete sociale la interval de 6 luni sau ori de câte ori este nevoie."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_procedure": "das_staff",
+  "order_check": "silent",
+  "granularity": "procedure_merges_it",
+  "corrections": "The mandatory home inquiry for electricity aid is listed among DAS staff duties and is triggered by registration of the application; no mayoral order is described. The mayor's power to order inquiries (6.1(5)) covers 6-monthly or as-needed monitoring. Ordering and performing are merged into one staff step.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "claim_id": "C16",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 21",
+    "quote": "În cazul solicitării ajutorului pentru energie electrică, anchetele sociale se efectuează obligatoriu, pentru toate situațiile, în termen de 15 zile lucrătoare de la data înregistrării cererii, în vederea verificării sistemului de încălzire utilizat."
+   },
+   {
+    "page": "p. 21",
+    "quote": "Fac excepție beneficiarii de ajutor social"
+   },
+   {
+    "page": "p. 33",
+    "quote": "Efectuează ancheta socială pentru fiecare"
+   },
+   {
+    "page": "p. 29",
+    "quote": "(3) Model anchetă socială pentru obținerea ajutorului de înc ălzire cu gaze naturale, energie electrică, combustibili solizi și sau petrolieri și a suplimentului de energie"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "das_staff",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Confirmed: DAS staff, within 15 working days of registration, with the VMG/ASF exception. The procedure uses its own annexed model (Anexa 2(3)), not the HG 50/2011 annex 2. Gas and wood flowcharts show inquiries only 'după caz', and there is no prior mayoral order (C15).",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "claim_id": "C17",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 24",
+    "quote": "(3) Pentru solicitan ții care nu înde plinesc condițiile de aco rdare a ajut orului pentru încălzire, în termenul prevăzut la alin. (15 ), primarul le comunică acestora dispoziția motivată privind respingerea cererii."
+   },
+   {
+    "page": "p. 22",
+    "quote": "primarii le comunic ă acestora dispoziția motivată privind respingerea cererii."
+   },
+   {
+    "page": "p. 31",
+    "quote": "redactează referatul de acordare/respingere/modificare /încetare"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "mayor",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Confirmed, with the mayor as actor. The deadline cross-reference is garbled ('alin. (15)'); the 15 November date appears for initial dispositions in 6.1(2). DAS drafts the rejection referat, and the flowcharts show CAPLJ physically communicating dispositions.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "claim_id": "C18",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 22",
+    "quote": "Proiectele de dispoziție sunt înaintate spre a fi vizate de legalitate de către secretarul general al orașului Simeria și apoi se elaborează dispozițiile care sunt semnate de primar."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The prefect is never mentioned. The only pre-signature control is the Secretary General's legality visa, and communication to holders has no prior step involving the prefect.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "claim_id": "C19",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 22",
+    "quote": "Dispoziția primarului se comunic ă titularilor pana în data de 15 noiembrie pentru ce i care au depus cereri confor m art.16 din Legea nr.226/2021."
+   },
+   {
+    "page": "p. 22",
+    "quote": "Pentru cei care au depus cereri în perioada sezonului rece, comunicarea dispozițiilor către beneficiari se face în termen de 5 zile de la data emiterii lor , și pot fi emis e individual sau colecti v"
+   },
+   {
+    "page": "p. 31",
+    "quote": "CAPLJ întocmește, înregistrează şi comunică dispoziţia beneficiarului"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "other",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Deadlines match: by 15 November for the initial wave, within 5 days of issue in-season. Per the flowcharts, CAPLJ (the town hall's legal department) communicates the disposition. Channels via suppliers or owners' associations, and e-mail, are not mentioned. The procedure adds that dispositions may be individual or collective, issued once for the whole season.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "claim_id": "C20",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "page": "p. 22",
+    "quote": "Titularii ajutoarelor pentru înc ălzire sunt obliga ți s ă comunice primarului orice modificare intervenită în componența familiei și a veniturilo r acesteia, în termen de 5 zile de la data la care a int ervenit modificarea."
+   },
+   {
+    "page": "p. 22",
+    "quote": "Comunica rea modific ărilor se face prin depunerea u nei noi declarații pe propria r ăspundere, urmând a se emite o nouă dispoziție de că tre primar."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "citizen",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Confirmed: within 5 days, by a new self-declaration addressed to the mayor. Filing via owners' associations is not mentioned. Changes take effect from the month after they occur.",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "claim_id": "C21",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 24",
+    "quote": "(4) Emite Dispoziții de modificar e a valorii ajutorului de încălzire, conform Leg ii nr.226/2021, în cazul intervenirii unor modificări."
+   },
+   {
+    "page": "p. 24",
+    "quote": "Dispoziția primarului se comunică titularului în termen de 5 zile de la emitere"
+   },
+   {
+    "page": "p. 22",
+    "quote": "Modificările sa u încetarea dreptul ui la ajutorul pentru înc ălzire se fac începând cu luna următoare celei în care au in tervenit modific ările."
+   },
+   {
+    "page": "p. 24",
+    "quote": "pri marul emite o nouă dispoziție scrisă, pe care o comunic ă agenției teritoriale î n termen de 5 zile de la emitere."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "mayor",
+  "order_check": "supported",
+  "granularity": "procedure_splits_it",
+  "corrections": "The mayor issues modification dispositions, communicated within 5 days of issue. As for C14, DAS staff write a modification referat and CAPLJ drafts the disposition. Changes apply from the following month. When a monitoring inquiry finds a change, the new disposition also goes to the territorial agency (AJPIS) within 5 days.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "claim_id": "C22",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 23",
+    "quote": "primarii au obliga ția de a transmite agen țiilor teritoriale în scris ș i format electronic, situa ția centralizatoare privind titularii ajutoarelor, separat pentru fiecare sistem de încălzire."
+   },
+   {
+    "page": "p. 23",
+    "quote": "11. Transmiterea situațiilor către furnizorii de energie electrică, gaze naturale. Agenției Județene pentru Plăți și Inspecție Socială Hunedoara-Deva, precum și Direcției Economice"
+   },
+   {
+    "page": "p. 23",
+    "quote": "Se face de către persoanele din cadrul Serviciului Beneficii Sociale care au aceste atribuții consemnate în fișa postului."
+   },
+   {
+    "page": "p. 24",
+    "quote": "(8) Situația centralizatoare se aprob ă de că tre primar și se transmite, agenției teritoriale"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_procedure": "das_staff",
+  "order_check": "silent",
+  "granularity": "procedure_splits_it",
+  "corrections": "DAS Social Benefits staff draw up and send the monthly statements after the mayor approves them. Recipients are AJPIS Hunedoara, the gas and electricity suppliers and the town hall's Economic Directorate; owners' associations are not included. Disposition numbers and supplier client codes are not listed as statement contents.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "claim_id": "C23",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "(1) ajutor pentru înc ălzirea locuinței cu gaze naturale, denumit în continuare ajutor pentru încălzirea cu gaz;"
+   },
+   {
+    "page": "p. 4",
+    "quote": "(3) ajutor pentru încălzirea locuinței cu energie electrică"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "No thermal-energy metering, findings report (proces-verbal) or owners'-association role appears; district heating is outside the procedure's scope.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C24",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "(1) ajutor pentru înc ălzirea locuinței cu gaze naturale, denumit în continuare ajutor pentru încălzirea cu gaz;"
+   },
+   {
+    "page": "p. 4",
+    "quote": "(3) ajutor pentru încălzirea locuinței cu energie electrică"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Owners'/tenants' associations and consumption splitting are never mentioned; thermal-energy aid is outside the procedure's scope.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C25",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "(1) ajutor pentru înc ălzirea locuinței cu gaze naturale, denumit în continuare ajutor pentru încălzirea cu gaz;"
+   },
+   {
+    "page": "p. 4",
+    "quote": "(3) ajutor pentru încălzirea locuinței cu energie electrică"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "No transmission of split consumption from associations to suppliers is described; thermal-energy aid is outside the procedure's scope.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "claim_id": "C26",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 26",
+    "quote": "(15) Întocmesc BORDEROUL cuprinzând beneficiar ii ajut orului pentru înc ălzirea locuinței cu gaze naturale și cuantumul efectiv al acestuia"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The supplier never computes the actual monthly aid from consumption. DAS staff set the aid by income bracket, and 6.3(15)-(16) has DAS staff draw up a borderou with the 'cuantumul efectiv' for gas and electricity.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "claim_id": "C27",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "page": "p. 16",
+    "quote": "ultima factură de gaz pentru ajutor și supliment - copie"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_procedure": "not stated",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Supplier invoices appear only as documents the applicant attaches. Suppliers issuing monthly invoices that show the aid is not described.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "claim_id": "C28",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "page": "p. 31",
+    "quote": "Furnizorul întocmește borderoul centralizator de acordare a ajutorului"
+   },
+   {
+    "page": "p. 25",
+    "quote": "(9) Certifică borderoul centralizator prevăzut la art. 20 alin 2 din Legea nr.226/2021"
+   },
+   {
+    "page": "p. 25",
+    "quote": "(10) În termen de 5 zile de la prim ire, certifică și transmit e un exemplar agen țiilor teritoriale, pe baza c ăruia acestea achit ă la furnizori sumele reprezentând ajutoarele pentru gaze naturale"
+   },
+   {
+    "page": "p. 26",
+    "quote": "(15) Întocmesc BORDEROUL cuprinzând beneficiar ii ajut orului pentru înc ălzirea locuinței cu gaze naturale și cuantumul efectiv al acestuia"
+   },
+   {
+    "page": "p. 31",
+    "quote": "DAS Transmite electronic /letric borderoul centralizatorul furnizorului de servicii şi AJPIS"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_procedure": "supplier",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Per the gas and electricity flowcharts, the supplier draws up the borderou; the mayor certifies it within 5 days of receipt and sends a copy to AJPIS, which pays the supplier. But 6.3(15)-(16) also has DAS staff drawing up a borderou, and the flowchart has DAS sending a borderou to the supplier and AJPIS. Three copies and 'payment document' are not mentioned; this applies to gas and electricity, not thermal energy.",
+  "reviewer_confidence": 0.55
+ }
+]

@@ -1,0 +1,1612 @@
+{
+ "reference_to_generated": [
+  {
+   "ref_id": "B001",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N10",
+    "N02"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B002",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N01"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B003",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N10",
+    "N11"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B004",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B005",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B007",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25",
+    "N42"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B008",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B009",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N10"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B010",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B011",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B012",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B013",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B017",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N13",
+    "N14",
+    "N15",
+    "N16",
+    "N17",
+    "N18",
+    "N19"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B018",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N30"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B020",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N14"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B022",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B023",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N15"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B024",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N14"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B026",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B027",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N11",
+    "N12"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B028",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N32"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B029",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B030",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B033",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B034",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B035",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B037",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B038",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B040",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B043",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N29"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B044",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B045",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B046",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B047",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B048",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N39"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B049",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B050",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N14"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B051",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B052",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N19"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B053",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B054",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N18"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B055",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N18"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B059",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N15"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B061",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N15"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B062",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B063",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B064",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N17"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B065",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B066",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B067",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B068",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B069",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B070",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B071",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N20"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B072",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N14"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B073",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B074",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B075",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B076",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B077",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B078",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N21"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B079",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B080",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B081",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B082",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B083",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B084",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N10"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B085",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B088",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N32"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B089",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B091",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N15"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B092",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N15",
+    "N03"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B093",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B095",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N19"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B097",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N15"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B098",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N19"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B102",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B105",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B107",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B116",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B118",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N21"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B126",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N16"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B127",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B129",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B137",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B138",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B140",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B142",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B143",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B144",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N24",
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B148",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N16",
+    "N23"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B149",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N22"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B151",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N14",
+    "N15",
+    "N16"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B155",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N16",
+    "N23"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B156",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N06"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B158",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N23"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B164",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B166",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B167",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B168",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B169",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B175",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B181",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B182",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B183",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B184",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B185",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B187",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N28"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B188",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N28"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B189",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N26"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B190",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B191",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B192",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N29"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B195",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B196",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B199",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B200",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B201",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B202",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B203",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B205",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N31"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B206",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N31",
+    "N32"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B207",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N31",
+    "N32",
+    "N27"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B208",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B209",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B210",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B211",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N24"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B212",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B213",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N32"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B215",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B216",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N29"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B217",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B218",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B219",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N25"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B220",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B221",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N33"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "B222",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N29"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B226",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B227",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B228",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B229",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B232",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B235",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B239",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B242",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N20"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B245",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B248",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B249",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N64"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B257",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B265",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N34"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B266",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B267",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N20"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B268",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B269",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N21"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B270",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B271",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B272",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B273",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B275",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B277",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B278",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N35"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B281",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N37"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B283",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B284",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B285",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B286",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B287",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B289",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B290",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B291",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B292",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B293",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B294",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B295",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B299",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B300",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B301",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B303",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B304",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B305",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N42"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B306",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B307",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B308",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B309",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B310",
+   "granularity": "policy_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B311",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N46"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "B312",
+   "granularity": "policy_level",
+   "matched_node_ids": [
+    "N48"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B313",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B314",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B317",
+   "granularity": "work_step_level",
+   "matched_node_ids": [
+    "N30",
+    "N49"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "B322",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "B324",
+   "granularity": "work_step_level",
+   "matched_node_ids": [],
+   "match_type": "none"
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "node_id": "N04",
+   "reason": "Customer-side self-assessment of whether a rent change is covered by EVoR; the Blueprint has only the provider verifying via EVoR (B156) and staff checking for a VEE/EVoR record (B157), not a customer decision."
+  },
+  {
+   "node_id": "N05",
+   "reason": "Customer consent to the housing provider using EVoR is not described anywhere in the Blueprint pages."
+  },
+  {
+   "node_id": "N07",
+   "reason": "The 15-50 day EVoR reporting window and the customer fallback to self-reporting do not appear in the Blueprint."
+  },
+  {
+   "node_id": "N08",
+   "reason": "Customer check on whether rent is paid by Centrepay; the Blueprint mentions Centrepay only as agency-side actions (B081 start of Centrepay for transitioned tenants, B300 staff follow-up), not a customer decision."
+  },
+  {
+   "node_id": "N09",
+   "reason": "Customer updating their own Centrepay deduction; the Blueprint only has staff-side Centrepay follow-up (B300), a different actor."
+  },
+  {
+   "node_id": "N36",
+   "reason": "Considering fraud charges for deliberate non-disclosure; the Blueprint treats fraud only as suspected document fraud at verification (B179, B213, B214: code RVR and DOC), not prosecution."
+  },
+  {
+   "node_id": "N38",
+   "reason": "Customer repaying an overpayment; the Blueprint covers debt activity transfer and Debt Staff zeroing or refunds (B281, B290, B292), not customer repayment."
+  },
+  {
+   "node_id": "N40",
+   "reason": "Sending the RA outcome notice; the Blueprint mentions suspension/cancellation letters and notices of decision only as context (B047, B232, B248), with no step that issues the outcome notice."
+  },
+  {
+   "node_id": "N45",
+   "reason": "End state \"overpayment repaid\" has no counterpart; the Blueprint stops at raising/transferring debt activity."
+  },
+  {
+   "node_id": "N47",
+   "reason": "Issuing the rent/accommodation review letter; the Blueprint only says customers may be selected for an RA Profile review (B311) and routes such contacts to a specialist team (B142, B143)."
+  },
+  {
+   "node_id": "N50",
+   "reason": "Overseas travel trigger; the Blueprint pages in the reference cover only domestic travellers (B009, B055) and contain no portability/overseas travel procedure."
+  },
+  {
+   "node_id": "N51",
+   "reason": "Customer telling the agency about overseas travel plans; no overseas travel step in the Blueprint (B009 is notification of domestic address changes while travelling)."
+  },
+  {
+   "node_id": "N52",
+   "reason": "Immigration department departure report; no overseas travel or departure-data step in the Blueprint."
+  },
+  {
+   "node_id": "N53",
+   "reason": "Decision on leaving Australia to live overseas; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N54",
+   "reason": "Overseas portability check (main payment payable overseas, still renting in Australia); not in the Blueprint pages."
+  },
+  {
+   "node_id": "N55",
+   "reason": "Overseas study portability rule; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N56",
+   "reason": "Continuing RA during overseas study; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N57",
+   "reason": "Continuing RA overseas for up to 26 weeks; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N58",
+   "reason": "Return-before-26-weeks decision; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N59",
+   "reason": "26-week overseas limit timer; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N60",
+   "reason": "Immigration department return report; not in the Blueprint pages."
+  },
+  {
+   "node_id": "N61",
+   "reason": "March/September indexation trigger; the Blueprint pages contain no indexation step."
+  },
+  {
+   "node_id": "N62",
+   "reason": "CPI update of thresholds and maximum rates; the Blueprint describes the rate formula (B265) but no indexation step."
+  },
+  {
+   "node_id": "N63",
+   "reason": "Trigger event \"customer thinks the decision is wrong\" has no counterpart; the Blueprint touches reviews of decisions only through the 13-week deemed-review rule (B249) and referral (B196)."
+  },
+  {
+   "node_id": "N65",
+   "reason": "Staff reconsidering the RA decision; the Blueprint only refers reviews of decisions to other teams (B196) and mentions the Review Officer timeframe (B249), with no review-of-decision step."
+  }
+ ],
+ "summary": {
+  "work_step_matched": 53,
+  "work_step_total": 135,
+  "policy_matched": 28,
+  "policy_total": 57,
+  "generated_matched": 40,
+  "generated_total": 65
+ },
+ "method": "Matched = any match_type other than none. exact: a generated node (or nodes jointly) means the same unit of work with the same actor class (staff and system treated as one actor; customer and landlord kept separate). merged: the generated node lumps this reference step together with other distinct reference steps (coarser node). partial: the generated node covers only part of the step, a related action with different scope or trigger, or a criterion only partly encoded. generated_matched counts nodes matched by any work/policy step plus nodes matched only by screen_or_field_level steps (listed in screen_level_support).",
+ "match_type_counts": {
+  "work_step_level": {
+   "exact": 7,
+   "merged": 11,
+   "none": 82,
+   "partial": 35
+  },
+  "policy_level": {
+   "exact": 10,
+   "merged": 7,
+   "partial": 11,
+   "none": 29
+  }
+ },
+ "screen_level_support": [
+  {
+   "node_id": "N41",
+   "ref_ids": [
+    "B263",
+    "B274"
+   ]
+  },
+  {
+   "node_id": "N43",
+   "ref_ids": [
+    "B319"
+   ]
+  },
+  {
+   "node_id": "N44",
+   "ref_ids": [
+    "B193",
+    "B320",
+    "B321"
+   ]
+  }
+ ],
+ "unmatched_work_step_groups": [
+  {
+   "group": "Internal triage and routing of work (system choice, failed online updates, RDS and address-end-date triggers, whether an AC update is needed, hand-offs to trained officers or specialist review teams, duplicate and failed-review work items)",
+   "count": 16,
+   "ref_ids": [
+    "B004",
+    "B005",
+    "B008",
+    "B010",
+    "B012",
+    "B022",
+    "B026",
+    "B030",
+    "B093",
+    "B142",
+    "B143",
+    "B196",
+    "B301",
+    "B304",
+    "B313",
+    "B314"
+   ]
+  },
+  {
+   "group": "Date of event/effect, arrears and debt reconciliation (DOV/DOE, KE10772, duplicate-payment offsets, DVA clearance, Debt Staff hand-offs)",
+   "count": 15,
+   "ref_ids": [
+    "B102",
+    "B105",
+    "B107",
+    "B275",
+    "B277",
+    "B284",
+    "B285",
+    "B286",
+    "B287",
+    "B289",
+    "B290",
+    "B291",
+    "B292",
+    "B293",
+    "B295"
+   ]
+  },
+  {
+   "group": "Special customer and housing circumstances (aged care means test, ministers of religion, transitional/NDIS SDA/NRAS/community housing, government sub-tenant follow-up, business run from home, homelessness)",
+   "count": 15,
+   "ref_ids": [
+    "B063",
+    "B069",
+    "B077",
+    "B079",
+    "B080",
+    "B082",
+    "B116",
+    "B127",
+    "B129",
+    "B199",
+    "B201",
+    "B202",
+    "B203",
+    "B322",
+    "B324"
+   ]
+  },
+  {
+   "group": "Processing returned verification (scanning and allocation, manual changes on the Rent Certificate, routing by payment type and RA status, holds, in-person lease intake, finalising scanned images)",
+   "count": 11,
+   "ref_ids": [
+    "B175",
+    "B195",
+    "B217",
+    "B218",
+    "B226",
+    "B227",
+    "B228",
+    "B229",
+    "B235",
+    "B239",
+    "B257"
+   ]
+  },
+  {
+   "group": "Verification exemptions, waivers and alternative proof (COVID-19 waiver, hardship/emergency, Renting Declaration SU336M, SHA advice of rent paid, exemption and not-needed advice, RA continuing 28 days pending proof)",
+   "count": 9,
+   "ref_ids": [
+    "B034",
+    "B140",
+    "B164",
+    "B167",
+    "B168",
+    "B183",
+    "B185",
+    "B190",
+    "B209"
+   ]
+  },
+  {
+   "group": "Case-record checks, safeguards and finalisation (customer/partner record review, income management, FDV, living-arrangements couple check, corrections, finalising and follow-up actions)",
+   "count": 9,
+   "ref_ids": [
+    "B011",
+    "B013",
+    "B083",
+    "B085",
+    "B089",
+    "B137",
+    "B138",
+    "B299",
+    "B300"
+   ]
+  },
+  {
+   "group": "Q164 non-response follow-up (check prior Q164, address check, manual review maturing, contact attempts, suspension of the qualifying payment)",
+   "count": 7,
+   "ref_ids": [
+    "B035",
+    "B038",
+    "B044",
+    "B045",
+    "B046",
+    "B047",
+    "B049"
+   ]
+  }
+ ]
+}

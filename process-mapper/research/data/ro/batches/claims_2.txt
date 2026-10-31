@@ -1,0 +1,251 @@
+CLAIM C29
+  name: Primarul certifică borderoul şi îl trimite la AJPIS
+  what: Within 5 days of receipt the mayor certifies the borderou and sends one copy to AJPIS; one stays with the mayor, one goes back to the supplier.
+  who: mayor (evidence: 'primarii'); automation: unknown
+  trigger: borderou received from supplier
+  stated predecessors: C28 (Furnizorul întocmeşte borderoul centralizator); C28 (Furnizorul întocmeşte borderoul centralizator); C82 (Transmiterea cererilor către furnizorii de energie)
+  stated successors: C30 (AJPIS plăteşte furnizorii); C30 (AJPIS plăteşte furnizorii); C61 (Includerea borderoului în PIEE); C65 (AJPIS constituie baza de date a beneficiarilor)
+  sources (4): r1_hg-1073-2021-norms.txt: «În termen de 5 zile de la primire, primarii certifică şi transmit un exemplar agenţiilor teritoriale»; r1_hg-1073-2021-norms.txt: «Unul dintre celelalte două exemplare certificate rămâne la primar, iar celălalt se remite furnizorului.»
+
+CLAIM C30
+  name: AJPIS plăteşte furnizorii
+  what: AJPIS pays the suppliers the heating-aid amounts on the basis of the certified borderou.
+  who: ajpis (evidence: 'agenţiile teritoriale (AJPIS)'); automation: unknown
+  trigger: certified borderou received
+  stated predecessors: C29 (Primarul certifică borderoul şi îl trimite la AJPIS); C29 (Primarul certifică borderoul şi îl trimite la AJPIS); C27 (Furnizorul emite factura cu ajutorul evidenţiat)
+  stated successors: none stated
+  sources (6): r1_hg-1073-2021-norms.txt: «pe baza căruia acestea achită la furnizori sumele reprezentând ajutoarele pentru energie termică»; r2_law-226-2021.txt: «Decontarea sumelor cu titlu de ajutor pentru încălzire, prevăzut la art. 6 alin. (2) lit. a) -c), şi a suplimentului pentru energie se realizează lunar de către»
+
+CLAIM C31
+  name: SPAS întocmeşte situaţia centralizatoare pentru combustibili solizi
+  what: Each month the public social-assistance service draws up, from the mayor's dispositions, the centralizing statement of solid/petroleum-fuel aid beneficiaries and amounts (a payment document drafted in an electronic system).
+  who: das_staff (evidence: 'serviciul public de asistenţă socială'); automation: unknown
+  trigger: monthly
+  stated predecessors: C14 (Primarul stabileşte dreptul prin dispoziţie)
+  stated successors: none stated
+  sources (2): r1_hg-1073-2021-norms.txt: «Pe baza dispoziţiilor prevăzute la art. 5 alin. (1), serviciul public de asistenţă socială întocmeşte lunar situaţia centralizatoare cuprinzând beneficiarii aju»; r1_hg-1073-2021-norms.txt: «constituie document de plată şi se redactează în sistem electronic, fără modificări manuale»
+
+CLAIM C32
+  name: Transmiterea situaţiei combustibili solizi la AJPIS
+  what: The solid-fuel centralizing statement is sent to AJPIS monthly, by the 15th, for the previous month.
+  who: mayor (evidence: 'primarii (Law 226/2021 art. 29(3)); the norms used the passive voice'); automation: unknown
+  trigger: by the 15th of each month
+  stated predecessors: none stated
+  stated successors: C33 (AJPIS transferă sumele către primărie (combustibili solizi))
+  sources (2): r1_hg-1073-2021-norms.txt: «Situaţia centralizatoare prevăzută la alin. (2) se transmite agenţiilor teritoriale lunar, până la data de 15 a fiecărei luni pentru luna anterioară.»; r2_law-226-2021.txt: «primarii transmit agenţiilor teritoriale situaţia centralizatoare prevăzută la art. 17 alin. (3) , actualizată lunar conform prevederilor art. 17 alin. (7).»
+
+CLAIM C33
+  name: AJPIS transferă sumele către primărie (combustibili solizi)
+  what: AJPIS transfers the state-budget sums for solid-fuel aid to the town hall on the basis of the centralizing statement.
+  who: ajpis (evidence: 'agenţiile teritoriale'); automation: unknown
+  trigger: statement received
+  stated predecessors: C32 (Transmiterea situaţiei combustibili solizi la AJPIS)
+  stated successors: C34 (Primăria plăteşte ajutorul pentru combustibili solizi titularului); C34 (Primăria plăteşte ajutorul pentru combustibili solizi titularului)
+  sources (2): r1_hg-1073-2021-norms.txt: «din sumele transferate de la bugetul de stat cu această destinaţie de agenţiile teritoriale, în baza situaţiei centralizatoare prevăzute la alin. (2).»; r2_law-226-2021.txt: «Fondurile necesare pentru plata ajutorului pentru încălzire, prevăzut la art. 6 alin. (2) lit. d), se asigură din transferuri de la bugetul de stat către bugete»
+
+CLAIM C34
+  name: Primăria plăteşte ajutorul pentru combustibili solizi titularului
+  what: The town hall where the home is located pays the solid/petroleum-fuel aid directly to the holder.
+  who: other (evidence: 'primăria/primăriile (town hall); the norms do not say which department'); automation: unknown
+  trigger: funds transferred; once, at the start of the season (or for the remaining months)
+  stated predecessors: C33 (AJPIS transferă sumele către primărie (combustibili solizi)); C33 (AJPIS transferă sumele către primărie (combustibili solizi))
+  stated successors: none stated
+  sources (5): r1_hg-1073-2021-norms.txt: «Plata se va efectua direct titularului de către primăria în a cărei rază teritorială are locuinţa»; r2_law-226-2021.txt: «Contravaloarea ajutorului pentru încălzire prevăzut la alin. (2) lit. d) se plăteşte titularului.»
+
+CLAIM C35
+  name: Solicitarea suplimentului pentru energie
+  what: The energy supplement is requested by application and self-declaration, together with the heating aid or separately, at any time during the year.
+  who: citizen (evidence: 'familiile şi persoanele singure (Law 226/2021 art. 26(1))'); automation: unknown
+  trigger: any time in the year
+  stated predecessors: none stated
+  stated successors: C36 (Dispoziţie unică pentru ajutor şi supliment)
+  sources (6): r1_hg-1073-2021-norms.txt: «Suplimentul pentru energie se acordă pe bază de cerere şi declaraţie pe propria răspundere»; r1_hg-1073-2021-norms.txt: «se poate solicita fie împreună cu ajutorul pentru încălzire, fie separat, pe parcursul anului.»
+
+CLAIM C36
+  name: Dispoziţie unică pentru ajutor şi supliment
+  what: The mayor establishes the supplement by disposition; when requested with the heating aid, one disposition covers both rights.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: supplement application filed; decision within 30 days
+  stated predecessors: C35 (Solicitarea suplimentului pentru energie)
+  stated successors: C19 (Comunicarea dispoziţiei către titular)
+  sources (3): r1_hg-1073-2021-norms.txt: «În situaţia în care suplimentul pentru energie se solicită odată cu ajutorul pentru încălzire, dispoziţia primarului va conţine ambele drepturi.»; r2_law-226-2021.txt: «În termen de maximum 30 de zile de la data depunerii cererii, primarul emite dispoziţia de acordare sau de respingere a cererii, pe care o comunică titularului »
+
+CLAIM C37
+  name: Situaţiile centralizatoare pentru supliment
+  what: Each month the social-assistance service (or the designated person) draws up the centralizing statements of supplement beneficiaries, per energy source.
+  who: das_staff (evidence: 'serviciul public de asistenţă socială condus de primar sau persoana cu atribuţii în domeniul asistenţei sociale din aparatul primarului'); automation: unknown
+  trigger: monthly
+  stated predecessors: none stated
+  stated successors: C38 (Primarul aprobă situaţia pentru supliment şi o transmite)
+  sources (2): r1_hg-1073-2021-norms.txt: «Pentru acordarea suplimentului pentru energie, serviciul public de asistenţă socială condus de primar sau, după caz, persoana cu atribuţii în domeniul asistenţe»; r1_hg-1073-2021-norms.txt: «întocmeşte lunar situaţiile centralizatoare cuprinzând beneficiarii acestui drept, pe surse de energie»
+
+CLAIM C38
+  name: Primarul aprobă situaţia pentru supliment şi o transmite
+  what: The mayor approves the supplement statement; it is sent to AJPIS and, for thermal/gas/electricity supplement, to the suppliers.
+  who: mayor (evidence: "approval: primar; the transmitting actor is not named ('se transmite')"); automation: unknown
+  trigger: statement drawn up
+  stated predecessors: C37 (Situaţiile centralizatoare pentru supliment)
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «Situaţia centralizatoare se aprobă de către primar şi se transmite agenţiei teritoriale, iar în cazul suplimentului prevăzut la art. 25 alin. (1) lit. a) - c) ş»
+
+CLAIM C39
+  name: Furnizorul scade suplimentul din factură
+  what: Invoices for thermal energy, gas or electricity, in and outside the cold season, include the supplement amount, which is deducted.
+  who: supplier (evidence: "the supplier's invoice ('factura ... emisă'); actor implicit"); automation: unknown
+  trigger: monthly billing, all year
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (3): r1_hg-1073-2021-norms.txt: «va conţine şi suma reprezentând suplimentul pentru energie, care se scade din aceasta.»; r3_pub-scobinti-anunt.txt: «Ajutorul pentru încălzire și suplimentul pentru energie, în cazul energiei termice în sistem centralizat, gazelor naturale și energiei electrice se decontează l»
+
+CLAIM C40
+  name: Furnizorul întocmeşte borderoul pentru supliment
+  what: Suppliers draw up payment borderouri listing supplement beneficiaries (annexes 18-20), in 3 copies: AJPIS, mayor, supplier.
+  who: supplier (evidence: 'furnizorii de energie termică, gaze naturale şi energie electrică'); automation: unknown
+  trigger: monthly
+  stated predecessors: none stated
+  stated successors: C43 (AJPIS solicită credite bugetare de la ANPIS)
+  sources (3): r1_hg-1073-2021-norms.txt: «Pentru plata suplimentului de energie furnizorii de energie termică în sistem centralizat, gaze naturale şi energie electrică întocmesc borderouri de plată cu b»; r1_hg-1073-2021-norms.txt: «Situaţia se întocmeşte în 3 exemplare, în original, din care unul se transmite agenţiei pentru plăţi şi inspecţie socială judeţene»
+
+CLAIM C41
+  name: Plata suplimentului direct furnizorului
+  what: The supplement for thermal energy, gas and electricity is paid directly to the supplier.
+  who: ajpis (evidence: 'agenţiile teritoriale settle monthly (Law 226/2021 art. 29(1))'); automation: unknown
+  trigger: supplement types art. 25(1)(a)-(c)
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (3): r1_hg-1073-2021-norms.txt: «direct furnizorului, în cazul suplimentului prevăzut la art. 25 alin. (1) lit. a) - c);»; r2_law-226-2021.txt: «şi a suplimentului pentru energie se realizează lunar de către agenţiile teritoriale pe baza borderoului»
+
+CLAIM C42
+  name: Plata suplimentului pentru combustibili solizi titularului
+  what: The supplement for solid/petroleum fuels is paid directly to the holder by the home town hall, from sums transferred by AJPIS.
+  who: other (evidence: 'primăria de domiciliu'); automation: unknown
+  trigger: supplement type art. 25(1)(d)
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (3): r1_hg-1073-2021-norms.txt: «direct titularului, în cazul suplimentului prevăzut la art. 25 alin. (1) lit. d), de către primăria de domiciliu, din sumele transferate de la bugetul de stat c»; r2_law-226-2021.txt: «direct titularului, în cazul suplimentului prevăzut la alin. (1) lit. d).»
+
+CLAIM C43
+  name: AJPIS solicită credite bugetare de la ANPIS
+  what: AJPIS requests the budget credits from ANPIS on the basis of the suppliers' borderouri (paper and electronic).
+  who: ajpis (evidence: 'agenţiile teritoriale'); automation: unknown
+  trigger: borderouri received
+  stated predecessors: C28 (Furnizorul întocmeşte borderoul centralizator); C40 (Furnizorul întocmeşte borderoul pentru supliment)
+  stated successors: C44 (ANPIS centralizează necesarul de credite)
+  sources (2): r1_hg-1073-2021-norms.txt: «Agenţiile teritoriale, pe baza borderourilor prevăzute la art. 15 alin. (2), art. 20 alin. (2), art. 24 alin. (2) şi art. 30 alin. (2), solicită Agenţiei Naţion»; r1_hg-1073-2021-norms.txt: «Borderourile se transmit atât în format letric, cât şi în format electronic.»
+
+CLAIM C44
+  name: ANPIS centralizează necesarul de credite
+  what: Monthly, ANPIS sends the Ministry of Labour the nationally centralized budget-credit need.
+  who: ajpis (evidence: 'Agenţia Naţională pentru Plăţi şi Inspecţie Socială (ANPIS)'); automation: unknown
+  trigger: monthly, after AJPIS requests
+  stated predecessors: C43 (AJPIS solicită credite bugetare de la ANPIS)
+  stated successors: C45 (Ministerul Muncii solicită deschiderea creditelor)
+  sources (1): r1_hg-1073-2021-norms.txt: «Lunar, pe baza solicitărilor de credite bugetare transmise de agenţiile teritoriale, Agenţia Naţională pentru Plăţi şi Inspecţie Socială transmite Ministerului »
+
+CLAIM C45
+  name: Ministerul Muncii solicită deschiderea creditelor
+  what: The Ministry of Labour sends the Ministry of Finance, monthly, the documentation for opening budget credits.
+  who: other (evidence: 'Ministerul Muncii şi Protecţiei Sociale'); automation: unknown
+  trigger: monthly
+  stated predecessors: C44 (ANPIS centralizează necesarul de credite)
+  stated successors: C46 (AJPIS virează sumele)
+  sources (1): r1_hg-1073-2021-norms.txt: «Ministerul Muncii şi Protecţiei Sociale transmite lunar Ministerului Finanţelor documentaţia pentru deschiderea de credite bugetare.»
+
+CLAIM C46
+  name: AJPIS virează sumele
+  what: On the basis of the opened budget credits, AJPIS transfers the amounts allocated for heating aid.
+  who: ajpis (evidence: 'agenţiile teritoriale'); automation: unknown
+  trigger: budget credits opened
+  stated predecessors: C45 (Ministerul Muncii solicită deschiderea creditelor)
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «În baza creditelor bugetare deschise, agenţiile teritoriale virează sumele alocate cu titlu de ajutoare pentru încălzirea locuinţei»
+
+CLAIM C47
+  name: Furnizorii transmit situaţia titularilor pentru decontare
+  what: Thermal and gas suppliers send AJPIS monthly, with the borderouri, the list of aid holders for which reimbursement is requested (annex 25), in the agreed electronic format.
+  who: supplier (evidence: 'furnizorii de energie termică şi gaze naturale'); automation: unknown
+  trigger: monthly, together with the borderouri
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (2): r1_hg-1073-2021-norms.txt: «furnizorii de energie termică şi gaze naturale transmit lunar agenţiei teritoriale, odată cu borderourile»; r1_hg-1073-2021-norms.txt: «se transmite în formatul electronic agreat cu agenţiile teritoriale.»
+
+CLAIM C48
+  name: Primarii transmit rapoarte statistice
+  what: Mayors send statistical reports on heating aid at the start (December) and end (April) of the cold season and on AJPIS request; for the supplement, quarterly.
+  who: mayor (evidence: 'primarii'); automation: unknown
+  trigger: December, April, on request; supplement quarterly
+  stated predecessors: none stated
+  stated successors: C49 (AJPIS întocmeşte raportul statistic judeţean); C50 (Raportul statistic naţional către Minister)
+  sources (2): r1_hg-1073-2021-norms.txt: «primarii transmit, la începutul sezonului rece, în luna decembrie a fiecărui an şi la sfârşitul acestuia, respectiv în luna aprilie a fiecărui an, precum şi la »; r1_hg-1073-2021-norms.txt: «În cazul suplimentului pentru energie, rapoartele statistice se transmit trimestrial»
+
+CLAIM C49
+  name: AJPIS întocmeşte raportul statistic judeţean
+  what: From the mayors' reports, AJPIS compiles a county statistical report and sends it to ANPIS.
+  who: ajpis (evidence: 'agenţiile teritoriale'); automation: unknown
+  trigger: mayors' reports received
+  stated predecessors: C48 (Primarii transmit rapoarte statistice)
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «Pe baza rapoartelor statistice prevăzute la art. 32, agenţiile teritoriale întocmesc un raport statistic la nivelul judeţului, respectiv al municipiului Bucureş»
+
+CLAIM C50
+  name: Raportul statistic naţional către Minister
+  what: The national centralized statistical report is sent to the Ministry of Labour monthly, by the 15th of the month after the mayors' reports.
+  who: unknown (evidence: "passive voice ('se transmite'); actor not named"); automation: unknown
+  trigger: by the 15th of the following month
+  stated predecessors: C48 (Primarii transmit rapoarte statistice)
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «Raportul statistic centralizat la nivelul întregii ţări se transmite Ministerului Muncii şi Protecţiei Sociale, lunar până la data de 15 a lunii următoare celei»
+
+CLAIM C51
+  name: Dispoziţia primarului privind debitul
+  what: For unduly paid amounts the mayor issues a disposition stating the amount owed and the reason for the debt.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: undue payment identified
+  stated predecessors: none stated
+  stated successors: C52 (Decizia AJPIS de recuperare a sumelor necuvenite)
+  sources (1): r1_hg-1073-2021-norms.txt: «având la bază dispoziţia primarului, în care se indică suma datorată şi motivul constituirii debitului.»
+
+CLAIM C52
+  name: Decizia AJPIS de recuperare a sumelor necuvenite
+  what: Recovery of unduly paid heating aid/supplement is made by decision of the AJPIS executive director.
+  who: ajpis (evidence: 'directorul executiv al agenţiei teritoriale pentru plăţi şi inspecţie socială'); automation: unknown
+  trigger: mayor's debt disposition received
+  stated predecessors: C51 (Dispoziţia primarului privind debitul)
+  stated successors: none stated
+  sources (2): r1_hg-1073-2021-norms.txt: «recuperarea sumelor plătite necuvenit cu titlu de ajutor pentru încălzire şi/sau supliment pentru energie se face prin decizie a directorului executiv al agenţi»; r2_law-226-2021.txt: «Recuperarea sumelor plătite necuvenit cu titlu de ajutor pentru încălzire, prevăzut la art. 6 alin. (2), şi de supliment pentru energie, prevăzut la art. 25, se»
+
+CLAIM C53
+  name: Primarul dispune anchete sociale periodice de verificare
+  what: For the purposes of art. 33(7) of the law a social inquiry is carried out on the HG 50/2011 annex 2 model.
+  who: mayor (evidence: 'primarii dispun (Law 226/2021 art. 33(7)); the performing service is not named there'); automation: unknown
+  trigger: every 6 months or whenever needed
+  stated predecessors: none stated
+  stated successors: C66 (Primarul emite nouă dispoziţie după ancheta periodică)
+  sources (2): r1_hg-1073-2021-norms.txt: «În aplicarea prevederilor art. 33 alin. (7) din lege, ancheta socială se efectuează potrivit modelului prevăzut în anexa nr. 2»; r2_law-226-2021.txt: «În vederea urmăririi respectării condiţiilor de acordare a dreptului la ajutor pentru încălzire şi la suplimentul pentru energie, primarii dispun efectuarea de »
+
+CLAIM C54
+  name: Ajutoare suplimentare din bugetul local
+  what: Local authorities may grant extra aid from their own budgets (homes outside the legal definition, common-area heating share, energy audit support).
+  who: other (evidence: 'autorităţile administraţiei publice locale'); automation: unknown
+  trigger: local decision (art. 9(1) of the law)
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (2): r1_hg-1073-2021-norms.txt: «Autorităţile administraţiei publice locale, în baza art. 9 alin. (1) din lege, pot acorda din bugetele proprii ajutoare după cum urmează»; r2_law-226-2021.txt: «Autorităţile administraţiei publice locale pot acorda din bugetele proprii ajutor pentru încălzire familiilor şi persoanelor singure ale căror locuinţe nu se în»
+
+CLAIM C55
+  name: Ajutorul local inclus în factură
+  what: When the local authority grants local-budget aid (types a and b), the supplier's invoice to the beneficiary includes it.
+  who: supplier (evidence: 'furnizor'); automation: unknown
+  trigger: local aid granted
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «cuantumul acestora va fi cuprins în factura transmisă de furnizor beneficiarului.»
+
+CLAIM C56
+  name: Alegerea modalităţii de plată
+  what: In the form the applicant chooses the payment method (postal order or bank account) for aid not paid through thermal/gas/electricity suppliers.
+  who: citizen (evidence: 'solicitantul (form, Cap. 6)'); automation: unknown
+  trigger: aid paid to the holder (e.g. solid fuels)
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «Modalitatea de plată al ajutoarelor (cu excepţia ajutoarelor pentru»

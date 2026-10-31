@@ -1,0 +1,627 @@
+[
+ {
+  "node_id": "S_OVERPAYMENT",
+  "verdict": "confirmed_rule_only",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "Takaisinperintätilanne syntyy aina, kun etuutta on maksettu aiheettomasti tai määrältään liian suurena."
+   },
+   {
+    "page": "p. 4",
+    "quote": "etuutta on muusta syystä, esimerkiksi ratkaisu-, kirjoitus-, tiedonsiirto- tai laskuvirheen vuoksi, maksettu liikaa."
+   }
+  ],
+  "actor_check": "unknown",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "order_note": "The guideline only defines when a recovery situation arises; it does not describe a detection event preceding the assessment. It does require that an erroneous base decision be corrected before the recovery matter is decided (p. 12), which the map does not place before this node's successor.",
+  "granularity": "unknown",
+  "corrections": "The guideline states only the condition (benefit paid without grounds or too large, with a list of causes such as wrong-basis decision, retroactive other benefit, unreported or late-processed change of circumstances, payment during a required suspension, clerical/calculation error). It never says the benefit processing system or OmaKela identifies the overpayment or that this is rule-automated; staff handle overpayments as Oiwa 'liikamaksutyö' work items.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "T_ASSESS_RECOVERY",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "Takaisinperintäpäätöstä annettaessa tehdään kohtuullistamisharkinta aina, paitsi vilppitapauksissa."
+   },
+   {
+    "page": "p. 5",
+    "quote": "Kun harkitset takaisinperinnän kohtuullistamista, selvitä etuudensaajan kokonaistilanne."
+   },
+   {
+    "page": "p. 12",
+    "quote": "Kun etuutta on maksettu liikaa virheellisen päätöksen perusteella, liikamaksun takaisinperiminen edellyttää, että päätös oikaistaan ennen takaisinperintäasian ratkaisemista."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Assessment before the decision is consistent (the waiver/reduction consideration is made when the recovery decision is given). But the guideline requires a hearing before the matter is resolved (p. 11) and prior correction of an erroneous base decision (p. 12); neither precedes this node in the map.",
+  "granularity": "guideline_splits_it",
+  "corrections": "The waiver/reduction consideration (kohtuullistamisharkinta) is an explicit staff step (second-person instruction, result and reasoning recorded in the Oiwa overpayment-work comment) and is skipped in fraud cases. However, the correct overpayment amount comes from first correcting the base decision, not from this assessment, and the hearing is a separate step. For GHA the guideline gives joint-and-several liability (Kela may collect the whole claim from any liable debtor, p. 14), not a 'primarily applicant, else spouse' ordering.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "D_RECOVER",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 4",
+    "quote": "Lähtökohtana on, että liikaa maksettu etuus peritään takaisin."
+   },
+   {
+    "page": "p. 5",
+    "quote": "Takaisinperinnästä voidaan luopua kokonaan tai sen määrää voidaan alentaa, jos etuudensaaja tai hänen edustajansa ei ole menetellyt vilpillisesti ja alentaminen tai luopuminen katsotaan kohtuulliseksi."
+   },
+   {
+    "page": "p. 6",
+    "quote": "Jos liikaa maksettu määrä on vähäinen, takaisinperinnästä voidaan luopua."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Branching on recover vs waive after assessment and before issuing the decision matches the guideline, where the consideration is made when giving the decision (after the hearing).",
+  "granularity": "guideline_merges_it",
+  "corrections": "The branch conditions match the rules (fraud blocks waiver/reduction on fairness grounds; minor amount, usually up to EUR 150, allows waiver unless repeated overpayments; a single fraud does not block minor-amount waiver). But the outcome is not binary: the amount can also be reduced (alentaa), and the guideline treats the consideration as part of giving the recovery decision rather than a separate gateway. Competence: officer entitled to decide the benefit up to EUR 5,000, above that the unit manager or designee on presentation (p. 38).",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "T_RECOVERY_DECISION",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 12",
+    "quote": "Takaisinperinnästä annetaan kirjallinen päätös."
+   },
+   {
+    "page": "p. 13",
+    "quote": "Kun liikaa maksettua tukea ei peritä hakijalta vaan muulta ruokakunnan jäseneltä, hänelle annetaan takaisinperinnästä oma valituskelpoinen päätös. Päätöksen antaa Perintäkeskus."
+   },
+   {
+    "page": "p. 38",
+    "quote": "Kyseisen etuuden ratkaisemiseen oikeutettu toimihenkilö saa päättää liikamaksun takaisinperinnästä tai siitä luopumisesta, jos liikamaksun määrä on enintään 5000 euroa."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_guideline": "Case-handling unit's official for the GHA applicant (over EUR 5,000: unit manager or designee on presentation); Perintäkeskus (Recovery Centre) for other household members / joint debtors (also p. 39)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Decision after waiver consideration is fine, but the guideline adds preconditions the map lacks: the decision may be given only after the hearing deadline has expired and not while an appeal against the underlying benefit decision is pending (unless the 5-year limit from payment is about to expire) (p. 12).",
+  "granularity": "same",
+  "corrections": "A written, appealable decision is confirmed, with human decision authority and the 5-year limit (payments older than 5 years counted back from the decision date cannot be recovered, p. 7). Material difference: for GHA, the separate appealable decision to a household member other than the applicant is issued by the Perintäkeskus, not by the benefit caseworker. Appeal instructions are attached programmatically to the decision (p. 13).",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "T_NOTIFY_RECOVERY",
+  "verdict": "confirmed_rule_only",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 24",
+    "quote": "Takaisinperintäpäätös ei ole tullut lainvoimaiseksi. Tästä on kysymys silloin, kun postitse lähetetty takaisinperintäpäätös tai sen perusteena oleva etuuspäätös palautuu Kelalle."
+   },
+   {
+    "page": "p. 30",
+    "quote": "Takaisinperintäpäätös lähetetään pesänhoitajaosakkaalle."
+   },
+   {
+    "page": "p. 13",
+    "quote": "Takaisinperintäpäätökseen liitetään ohjelmallisesti valitusosoitus."
+   }
+  ],
+  "actor_check": "unknown",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "order_note": "Sending follows the decision and affects finality (a postal decision that is returned has not become final), consistent with the map order.",
+  "granularity": "unknown",
+  "corrections": "The guideline does not describe a delivery step with an actor or system: it only implies the decision is posted (and returned post prevents finality, p. 24), that estate decisions go to the estate manager (p. 30), and that appeal instructions are attached programmatically (p. 13). The Appeals guideline (Muutoksenhaku p. 8) adds that the 7-day deemed-receipt rule applies to decisions delivered by post or electronically ('paperless decision'). Nothing confirms OmaKela delivery or that the benefit system sends it.",
+  "reviewer_confidence": 0.5
+ },
+ {
+  "node_id": "T_COLLECT",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 39",
+    "quote": "Takaisinperintäpäätöksen antamisen jälkeen perintäkeskus hoitaa kaikki perintätoimenpiteet kuten esimerkiksi"
+   },
+   {
+    "page": "p. 41",
+    "quote": "Saatavan perintä siirtyy ohjelmallisesti perintäkeskuksen vastuulle, kun saatava on erääntynyt ja siitä lähetetään ohjelmallisesti maksukehotus"
+   },
+   {
+    "page": "p. 22",
+    "quote": "Jos kuittaamismahdollisuutta ei ole eikä etuudensaaja tai hänen edustajansa noudata kertamaksu- tai osamaksukehotuksiakaan, Kela siirtää perinnän yleensä ulosottoviranomaisen suoritettavaksi."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "different",
+  "order_check": "supported",
+  "order_note": "Collection after the decision is right, but the guideline allows enforcement only once the decision is final (p. 21-22; Muutoksenhaku p. 26 and 33: no collection measures while an in-time appeal is pending, except sending a collection letter). The straight T_NOTIFY_RECOVERY to T_COLLECT edge has no finality gate.",
+  "granularity": "guideline_splits_it",
+  "corrections": "Perintäkeskus does the post-decision collection work (payment reminders, hearing/consent for offsetting, payment plans, enforcement applications), but: it takes over only when the claim is overdue, mostly by programmatic transfer, while the case-handling unit sets lump-sum/offset in the decision and the benefit handler offsets retroactive instalments (p. 16, 20); enforcement itself is done by the enforcement authority (Kela only files the application, mostly programmatically, p. 24); payment-plan monitoring is programmatic (p. 17). So 'judgment' is only partly right and the node merges several actions by different actors.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "E_WAIVED",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 12",
+    "quote": "Kun takaisinperinnästä luovutaan kokonaan, päätös annetaan, jos etuudensaaja tai hänen edustajansa on tietoinen takaisinperinnän vireilläolosta."
+   },
+   {
+    "page": "p. 35",
+    "quote": "Jos perinnästä luovutaan Kelan aloitteesta, asiakkaalle ilmoitetaan luopumisesta kirjeellä."
+   },
+   {
+    "page": "p. 36",
+    "quote": "Jos asiakas on vaatinut takaisinperinnästä luopumista, asiakkaalle annetaan luopumisesta tai vaatimuksen hylkäämisestä perusteltu päätös valitusosoituksin."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "different",
+  "order_check": "supported",
+  "order_note": "Waiver as an outcome of the recovery-or-waive consideration matches; waiver after a recovery decision is a separate later path decided by Perintäkeskus (p. 39).",
+  "granularity": "guideline_splits_it",
+  "corrections": "Waiver is not a silent end state: a written decision is given when the customer is aware recovery is pending, or a letter when Kela waives on its own initiative (and a reasoned appealable decision if the customer demanded waiver). It is a discretionary staff decision under the competence rules (p. 38), not a deterministic rule, except the minor-amount case. The guideline also separates waiver at decision stage (case-handling unit) from later waiver after the decision (Perintäkeskus decides, p. 39).",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "E_RECOVERED",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Takaisinperintä",
+  "evidence": [
+   {
+    "page": "p. 33",
+    "quote": "Takaisinperintäsaatava vanhentuu 5 vuoden kuluttua lainvoimaiseksi tulleen takaisinperintäpäätöksen antamisesta."
+   },
+   {
+    "page": "p. 44",
+    "quote": "Perintäkeskus katkaisee vanhentumisen, ilmoittaa vanhentuneesta saatavasta velalliselle ja lopettaa perintätoimenpiteet rekisteröimällä takaisinperintäjärjestelmään luopumisen."
+   },
+   {
+    "page": "p. 44",
+    "quote": "Perintäkeskus päättää, voidaanko jäljellä olevan saatavan perintä lopettaa toivottomana vai jatketaanko perintää."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "different",
+  "order_check": "supported",
+  "order_note": "Claim closure after the collection stage is consistent; closure by expiry or by stopping collection is decided and registered by Perintäkeskus.",
+  "granularity": "guideline_splits_it",
+  "corrections": "The guideline describes closure by expiry (5 years from the final decision unless interrupted; absolute 15 or 20 years) as active Perintäkeskus work: it examines expiry, interrupts it where needed, notifies the debtor by letter and registers a waiver to end collection; cases due to expire are picked programmatically three times a year into Oiwa work items (p. 44), so it is not a purely automatic end. It also names another closure path the node omits: stopping hopeless collection (p. 44) or waiving after the decision (p. 35). Full payment, offset or enforcement as closing events are not described as steps.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "S_DISSATISFIED",
+  "verdict": "confirmed_rule_only",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 3",
+    "quote": "Muutoksenhaun tarkoituksena on antaa oikeusturvaa asiakkaalle, joka on tyytymätön saamaansa päätökseen."
+   },
+   {
+    "page": "p. 10",
+    "quote": "Siten esimerkiksi yleisessä asumistuessa valituksen voi tehdä kuka tahansa ruokakunnan täysivaltainen jäsen."
+   },
+   {
+    "page": "p. 15",
+    "quote": "Jos asiakas kirjallisesti ilmaisee olevansa tyytymätön saamaansa päätökseen, on kyse valituksesta."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "silent",
+  "order_note": "Start event; the guideline adds that Kela staff must first recognise whether a letter is an appeal (intention check, written form) before treating it as one.",
+  "granularity": "same",
+  "corrections": "Dissatisfaction as a trigger is a stated rule, not a described action. Standing is broader than 'applicant / household representative': for GHA any full-capacity household member may appeal, and an agent, legal representative or estate may act; Kela itself may also appeal Board decisions. A written statement of dissatisfaction within the appeal period counts as an appeal (p. 15).",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "D_APPEALABLE",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 6",
+    "quote": "Etuusjärjestelmä huomioi laista johtuvan valituskiellon ja lisää tätä koskevan maininnan päätökseen automaattisesti."
+   },
+   {
+    "page": "p. 6",
+    "quote": "Esimerkkinä voidaan mainita päätös yleisen asumistuen maksamisesta vuokranantajalle vuokranmaksun laiminlyönnin perusteella."
+   },
+   {
+    "page": "p. 7",
+    "quote": "On huomattava, että Kelalla ei ole toimivaltaa jättää valitusta tutkimatta, vaan se kuuluu yksinomaan muutoksenhakuelimelle."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_guideline": "Benefit system (Etuusjärjestelmä) automatically, when the decision is issued; the appeal body (not Kela) decides whether an appeal against a non-appealable decision is examined",
+  "automation_check": "same",
+  "order_check": "contradicted",
+  "order_note": "The guideline fixes appealability at decision issuance (appeal instructions attached, or the appeal prohibition and its basis stated in the decision, p. 7), before any dissatisfaction. After a party appeals a non-appealable decision Kela still processes and forwards the appeal (p. 7).",
+  "granularity": "guideline_merges_it",
+  "corrections": "The conditions (interim decisions, e.g. those given in connection with an appeal, and the landlord-payment decision) are correct, and the check is automated, but it is performed by the benefit system when the decision is issued, not by a caseworker after the party is dissatisfied. Kela has no competence to screen out or dismiss an appeal against a non-appealable decision; it must be handled and forwarded.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "T_APPEAL_SUBMIT",
+  "verdict": "confirmed_step",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 8",
+    "quote": "Valituksen on oltava perillä Kelassa 37 päivän kuluessa siitä, kun päätös on lähetetty asiakkaalle."
+   },
+   {
+    "page": "p. 10",
+    "quote": "Valitus toimitetaan aina ensiksi Kelaan itseoikaisumahdollisuuden tutkimista varten."
+   },
+   {
+    "page": "p. 13",
+    "quote": "Valitus kannattaa kuitenkin tehdä ensisijaisesti OmaKelassa kohdassa Valita päätöksestä."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Appeal is filed with Kela first, which then examines self-rectification (p. 10, 16), matching the map.",
+  "granularity": "same",
+  "corrections": "The step and deadline match (30-day appeal period plus 7-day deemed receipt = 37 days from sending; the appeal must arrive at Kela). Minor details: the 7-day presumption applies to both postal and electronic ('paperless') decisions; OmaKela is the preferred channel with a Kela paper form as alternative; the appeal must be in writing (oral appeals are not accepted); an appeal mistakenly sent to the appeal body within time is treated as timely and forwarded to Kela; a late appeal is still handled and forwarded.",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "T_SELF_RECT_EXAMINE",
+  "verdict": "confirmed_step",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 16",
+    "quote": "Valituskirjelmän ja muun käytettävissä olevan selvityksen perusteella tutkitaan, voidaanko valituksenalainen päätös oikaista."
+   },
+   {
+    "page": "p. 16",
+    "quote": "Itseoikaisumahdollisuus tutkitaan, vaikka valitus olisi myöhässä."
+   },
+   {
+    "page": "p. 21",
+    "quote": "Kelalla on velvollisuus itseoikaista päätös, jos edellytykset sille täyttyvät."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Appeal is delivered to Kela first precisely so that Kela can examine self-rectification (p. 10, 16).",
+  "granularity": "same",
+  "corrections": "Step confirmed. Details: the examination is not a full re-handling (based on the appeal and available evidence, further evidence may be requested, cross-use of other benefits' documents allowed but they must be listed for the appeal body); it also applies to late appeals; and Kela must keep examining self-rectification after the case has moved to the appeal body when new evidence arrives (p. 26). The guideline does not name the role beyond 'Kela'; the resolution expert (ratkaisuasiantuntija) is its target reader (p. 3).",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "D_ACCEPT_ALL",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 17",
+    "quote": "Kelan tulee antaa itseoikaisupäätös, jos asiakkaan kaikki valituksessa esittämät vaatimukset voidaan hyväksyä."
+   },
+   {
+    "page": "p. 17",
+    "quote": "Kela voi antaa väliaikaisen päätöksen, jos osa valituksessa esitetyistä vaatimuksista voidaan hyväksyä."
+   },
+   {
+    "page": "p. 17",
+    "quote": "Vaikka Kela olisi itseoikaisupäätöksellä hyväksynyt kaikki muut valituksessa esitetyt vaatimukset, mutta oikeudenkäyntikuluvaatimusta ei ole hyväksytty, ei valituksen käsittely raukea."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Gateway after the self-rectification examination matches the guideline.",
+  "granularity": "guideline_splits_it",
+  "corrections": "The binary branch hides a three-way outcome: all demands accepted (appealable self-rectification decision, appeal lapses), partly accepted (interim decision, then forward), none accepted (forward with no new decision). In unclear or interpretive cases an interim decision must be given instead of a self-rectification decision. If a demand for litigation costs is not accepted the appeal is forwarded even though all other demands were accepted by a self-rectification decision, so the two branches are not mutually exclusive. Rectification cannot be made to the customer's detriment (p. 17).",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "T_RECTIFY_DECISION",
+  "verdict": "confirmed_step",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 17",
+    "quote": "Kelan tulee antaa itseoikaisupäätös, jos asiakkaan kaikki valituksessa esittämät vaatimukset voidaan hyväksyä."
+   },
+   {
+    "page": "p. 17",
+    "quote": "Oikaisupäätös korvaa valituksenalaisen päätöksen. Oikaisupäätökseen voi hakea muutosta valittamalla."
+   },
+   {
+    "page": "p. 17",
+    "quote": "Oikaisupäätöksen johdosta valituksen käsittely raukeaa, eikä valitusta siirretä muutoksenhakuelimelle käsiteltäväksi."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "order_note": "Follows the all-demands-accepted branch as in the guideline.",
+  "granularity": "same",
+  "corrections": "Confirmed: Kela issues an appealable self-rectification decision that replaces the contested decision and ends the appeal. The guideline does not state human sign-off or automation. If the self-rectification decision is given while the appeal is already pending at the appeal body, the appeal does not lapse by itself; the appeal body must still issue a decision on lapse (p. 27). Exception: an unaccepted litigation-cost demand keeps the appeal alive (p. 17).",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "T_FORWARD_APPEAL",
+  "verdict": "confirmed_step",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 20",
+    "quote": "Valituslausunnon tarkoituksena on kertoa muutoksenhakuelimelle tiiviissä muodossa valituksen käsittelyn kannalta olennaiset asiat."
+   },
+   {
+    "page": "p. 24",
+    "quote": "Valituslausunnon ja muiden muutoksenhaun asiakirjojen tulee olla perillä muutoksenhakuelimessä 30 päivän kuluessa valitusajan päättymisestä."
+   },
+   {
+    "page": "p. 24",
+    "quote": "Valitusasiakirjat on kuitenkin toimitettava viimeistään 60 päivän kuluessa muutoksenhakuelimelle."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Forwarding follows the not-all-accepted branch; the guideline adds that Kela hears the customer on the statement at the same time as it sends the documents (p. 24), a parallel step missing in the map.",
+  "granularity": "guideline_splits_it",
+  "corrections": "Step and time limits match, with two precisions: the deadline refers to arrival at the appeal body, not dispatch; the 30-day limit may be exceeded for obtaining further evidence up to 60 days, but not when waiting for a Kela expert physician's assessment or an employment authority statement. The guideline separates statement writing (p. 20-22), assembling documents (p. 22-23), hearing the customer (p. 24) and forwarding; an interim decision, if any, is sent along with the documents (p. 17).",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "T_SSAB_DECIDE",
+  "verdict": "confirmed_step",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 3",
+    "quote": "Muutoksenhakulautakunnat käsittelevät Kelan päätöstä koskevat valitukset."
+   },
+   {
+    "page": "p. 3",
+    "quote": "Asumisen tuet – Eläkkeensaajan asumistuki – Yleinen asumistuki"
+   },
+   {
+    "page": "p. 29",
+    "quote": "Muutoksenhakuelin voi antaa valituksen johdosta erityyppisiä ratkaisuja."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Board decision follows Kela's forwarding and the customer hearing, as in the map.",
+  "granularity": "same",
+  "corrections": "Confirmed: the Social Security Appeal Board (Samu) decides GHA appeals. The map's single onward path understates the outcomes the guideline lists: appeal rejected (usually no action by Kela), Kela decision changed (Kela implements), case returned or decision annulled (Kela must give a new appealable decision), appeal not examined (e.g. late or premature), or lapse after self-rectification or withdrawal (p. 29-32). Kela may also appeal a Board decision (p. 33).",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "D_FURTHER_APPEAL",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 33",
+    "quote": "Sekä asiakkaalla että Kelalla on oikeus valittaa muutoksenhakulautakunnan päätöksestä vakuutusoikeuteen."
+   },
+   {
+    "page": "p. 34",
+    "quote": "Kela voi harkintansa mukaan valittaa lautakunnan päätöksestä vakuutusoikeuteen."
+   },
+   {
+    "page": "p. 26",
+    "quote": "Kelan ja muutoksenhakulautakuntien päätökset tulevat lainvoimaisiksi valitusajan kuluttua umpeen, ellei niistä ole valitettu."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_guideline": "Either the customer or Kela itself (Kela decides at its discretion and must appeal within 30 days of the Board decision's actual arrival, with no 7-day presumption)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Follows the Board decision; finality arises when the appeal period lapses (p. 26).",
+  "granularity": "same",
+  "corrections": "The further-appeal right is confirmed, but it belongs to both the customer and Kela, not only to the applicant; Kela uses it only if the Board decision is clearly erroneous and of wider principle significance (p. 34). The second branch is also too narrow: the Board decision becomes final when the appeal period lapses, and implementation is needed only for some outcome types (p. 29-32).",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "T_IC_APPEAL",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 3",
+    "quote": "Muutoksenhakulautakunnan päätökseen voi edelleen hakea muutosta valittamalla vakuutusoikeuteen."
+   },
+   {
+    "page": "p. 33",
+    "quote": "Valitus käsitellään periaatteessa samalla tavalla kuin valitettaessa ensimmäisen kerran Kelan päätöksestä lautakuntaan."
+   },
+   {
+    "page": "p. 34",
+    "quote": "Käytännössä itseoikaisumahdollisuuden tutkiminen voi tarkoittaa sitä, että jos Samu on hyväksynyt asiakkaan vaatimuksia, pannaan ne täytäntöön Kelan antamalla väliaikaisella päätöksellä."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "contradicted",
+  "order_note": "The guideline inserts Kela's own work between the customer's further appeal and the Insurance Court's decision: examination of self-rectification, statement, hearing of the customer and sending documents (p. 33-34, 23). The map goes directly from T_IC_APPEAL to T_IC_DECIDE.",
+  "granularity": "same",
+  "corrections": "The customer's further appeal to the Insurance Court is confirmed and is handled in principle like the first appeal (so, by analogy, delivered to Kela first; the guideline does not state the filing route explicitly). In the Insurance Court Kela's decisions must be interim even if the demands are fully accepted (except in some general support matters, p. 27); the customer's appeal usually blocks implementation of the Board decision (p. 33).",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "T_IC_DECIDE",
+  "verdict": "confirmed_step",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 3",
+    "quote": "Vakuutusoikeuden päätökseen ei voi hakea muutosta."
+   },
+   {
+    "page": "p. 26",
+    "quote": "Koska vakuutusoikeuden päätöksestä ei voi valittaa, tulee se välittömästi lainvoimaiseksi."
+   },
+   {
+    "page": "p. 31",
+    "quote": "Vakuutusoikeus voi myös palauttaa asian alemmalle muutoksenhakuelimelle käsiteltäväksi."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Insurance Court decides after the further appeal; its decision is immediately final.",
+  "granularity": "same",
+  "corrections": "Confirmed: the Insurance Court is the last appeal instance and its decision is immediately final. Not always a final merits decision: it can also remand the case to the Board (relatively rare; Kela then waits for the Board's request or decision, p. 31). On annulment of the court's own decision the two guidelines differ (Muutoksenhaku p. 5 says the Supreme Administrative Court may annul an Insurance Court decision; Päätöksen oikaisu ja poistaminen p. 13 says the Insurance Court itself is asked), relevant to the node's annulment rule.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "T_IMPLEMENT",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 30",
+    "quote": "Jos Kelan päätöstä on muutettu eikä muutoksenhakuelin ole jättänyt Kelalle ratkaistavaksi mitään seikkaa, tulee Kelan panna muutoksenhakuelimen päätös täytäntöön."
+   },
+   {
+    "page": "p. 30",
+    "quote": "Hylkäävä päätös ei yleensä aiheuta Kelassa toimenpiteitä."
+   },
+   {
+    "page": "p. 32",
+    "quote": "Pääsääntöisesti tulee odottaa, että muutoksenhakuelimen päätös tulee lainvoimaiseksi, ennen kuin sen täytäntöönpanoon ryhdytään."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "order_note": "Implementation follows a final appellate decision, as in the map; the guideline normally waits for finality and then acts according to the decision type.",
+  "granularity": "guideline_splits_it",
+  "corrections": "The implementation step is described (contrary to the node's inferred_reason) but conditional on the decision type: only a changed Kela decision is implemented (e.g. paying the amount ordered by the appeal body, p. 30); a rejection or a non-examination normally requires no action; a returned or annulled decision requires a new appealable decision, which must not be confused with an implementation decision (p. 6); a rejected recovery appeal leads to sending the collection letter, and a rejected base-decision appeal to a new overpayment hearing (p. 30). Implementation can also precede finality when the appeal is granted and Kela will not appeal (p. 33).",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "E_NOT_APPEALABLE",
+  "verdict": "contradicted",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 6",
+    "quote": "Laissa on säädetty tiettyjä poikkeuksia valituskelpoisuudesta. Muutoksenhaun tai poistohakemuksen yhteydessä annetusta väliaikaisesta päätöksestä ei voi valittaa."
+   },
+   {
+    "page": "p. 7",
+    "quote": "Tällaisessa tilanteessa valitus käsitellään Kelassa normaalisti."
+   },
+   {
+    "page": "p. 7",
+    "quote": "On huomattava, että Kelalla ei ole toimivaltaa jättää valitusta tutkimatta, vaan se kuuluu yksinomaan muutoksenhakuelimelle."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_guideline": "Appeal body (leaves the appeal unexamined); Kela cannot end the matter, and the customer is not the actor of an end state",
+  "automation_check": "unknown",
+  "order_check": "contradicted",
+  "order_note": "Reaching this end state from D_APPEALABLE after the party is dissatisfied is not what the guideline describes: an appeal against a non-appealable decision is still handled normally and forwarded.",
+  "granularity": "same",
+  "corrections": "The rule that interim decisions and the landlord-payment decision cannot be appealed is confirmed, but the process does not end there. If a customer appeals such a decision, Kela must process the appeal normally and forward it (unless it self-rectifies or the customer withdraws); the appeal body then normally leaves it unexamined (p. 7, p. 32). The map should end in the appeal body's non-examination, not in a Kela-side 'not appealable' end event.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "E_APPEAL_CLOSED",
+  "verdict": "confirmed_rule_only",
+  "source_doc": "Muutoksenhaku",
+  "evidence": [
+   {
+    "page": "p. 26",
+    "quote": "Asia on ratkaistu lainvoimaisesti, kun asiaa koskevasta päätöksestä ei voi enää valittaa."
+   },
+   {
+    "page": "p. 30",
+    "quote": "Hylkäävä päätös ei yleensä aiheuta Kelassa toimenpiteitä."
+   },
+   {
+    "page": "p. 32",
+    "quote": "Kelan kannalta rauettamispäätös ei yleensä aiheuta toimenpiteitä."
+   }
+  ],
+  "actor_check": "unknown",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "order_note": "Closure follows the final appellate decision, consistent with the map.",
+  "granularity": "guideline_splits_it",
+  "corrections": "Only the finality rule is stated; no 'close the appeal' step performed by a Kela caseworker or system is described. The appeal can end in several ways with different Kela consequences: lapse after self-rectification or withdrawal, non-examination, rejection (no implementation), change (implementation), return or annulment (new appealable decision). 'Final decision implemented' is therefore only one of the end states.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "S_NEW_EVIDENCE",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Päätöksen oikaisu ja poistaminen",
+  "evidence": [
+   {
+    "page": "p. 3",
+    "quote": "Oikaisutilanne syntyy joko silloin, kun asiakkaalle aiemmin annettuun päätökseen tulee uutta tietoa tai kun huomataan, että Kelasta tai muusta tahosta johtuvasta syystä tiedot asiakkaalle aiemmin annetussa päätöksessä ovat virheellisiä."
+   },
+   {
+    "page": "p. 3",
+    "quote": "Asiakkaan huomatessa virheen päätöksessä, hän voi ottaa yhteyttä Kelaan erilaisia palvelukanavia käyttäen."
+   },
+   {
+    "page": "p. 3",
+    "quote": "Joskus etuusasian käsittelyn yhteydessä Kelassa huomataan, että yksi tai useampi aiemmin annettu päätös onkin virheellinen."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_guideline": "The customer (via OmaKela, phone, in writing or e-mail), Kela staff, or third parties such as an unemployment fund or insurer who supply new information",
+  "automation_check": "same",
+  "order_check": "silent",
+  "order_note": "Start event; the guideline's next step is to determine whether the earlier decision is erroneous (correction) or not (revision), which is not modelled.",
+  "granularity": "same",
+  "corrections": "The trigger is confirmed but is not limited to the Kela caseworker: the customer can notice and report the error, and third parties can supply new information. Also, new information does not always mean a correction: if the earlier decision was not erroneous (later change of circumstances, earlier cessation date) the benefit is revised (tarkistus), not corrected, and the map's trigger merges the two.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "T_REEXAMINE",
+  "verdict": "confirmed_with_corrections",
+  "source_doc": "Päätöksen oikaisu ja poistaminen",
+  "evidence": [
+   {
+    "page": "p. 3",
+    "quote": "Kun aiemmin annettuun päätökseen tulee uutta tietoa, tulee tutkia se, onko kyseessä oikaisu- vai tarkistustilanne."
+   },
+   {
+    "page": "p. 7",
+    "quote": "Kun ilmenee uutta selvitystä, joka koskee lainvoimaista päätöstä, Kelan on tutkittava oma-aloitteisesti, onko päätöstä mahdollista oikaista asiakkaan eduksi."
+   },
+   {
+    "page": "p. 15",
+    "quote": "Jos Kelaan saapuu asiakkaan aloitteesta tehty poistohakemus, asiakkaan hakemus toimitetaan Kelasta suoraan muutoksenhakuelimelle ilman Kelan lausuntoa."
+   }
+  ],
+  "actor_check": "same",
+  "automation_check": "same",
+  "order_check": "supported",
+  "order_note": "Examination before issuing a decision matches, but for a correction to the customer's detriment the guideline inserts a written consent request (and, if refused or unanswered, an annulment application to the appeal body) before a new decision (p. 8-12).",
+  "granularity": "guideline_splits_it",
+  "corrections": "Kela's duty to re-examine on its own initiative when new evidence concerns a final decision, and the error-versus-revision test, are confirmed. 'Annulment request' is wrong as an input to Kela's re-examination: annulment (poisto) is decided by the appeal body; Kela only applies for it (after consent is not obtained) and a customer's own annulment application is forwarded by Kela directly to the appeal body without a Kela statement (p. 9, 14, 15). The guideline also splits this into separate procedures: correction to the customer's advantage (no time limit), correction to the detriment (written consent, 5-year limit), the lighter procedure for a retroactively granted precluding benefit (in GHA only for certain benefits, p. 13-14), and the new-evidence handling (p. 5-8).",
+  "reviewer_confidence": 0.8
+ }
+]

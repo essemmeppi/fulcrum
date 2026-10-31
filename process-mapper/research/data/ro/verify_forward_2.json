@@ -1,0 +1,566 @@
+[
+  {
+    "claim_id": "C29",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 25",
+        "quote": "(10) În termen de 5 zile de la prim ire, certifică și transmit e un exemplar agen țiilor teritoriale, pe baza c ăruia acestea achit ă la furnizori sumele reprezentând ajutoarele pentru gaze naturale"
+      },
+      {
+        "page": "p. 25",
+        "quote": "(9) Certifică borderoul centralizator prevăzut la art. 20 alin 2 din Legea nr.226/2021"
+      },
+      {
+        "page": "p. 31",
+        "quote": "Furnizorul întocmește borderoul centralizator de acordare a ajutorului"
+      },
+      {
+        "page": "p. 31",
+        "quote": "DAS Transmite electronic /letric borderoul centralizatorul furnizorului de servicii şi AJPIS"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "mayor",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Mayor's certification and transmission of one copy to AJPIS within 5 days of receipt is stated (6.1(9)-(10)), but only for gas aid and with no mention of the three copies (mayor/supplier). The flowcharts 1A/1C show DAS sending the borderou electronically/on paper to the supplier and AJPIS, and 6.3(15)-(16) also have DAS staff drawing up a BORDEROU, so who produces the borderou the mayor receives is internally ambiguous.",
+    "reviewer_confidence": 0.72
+  },
+  {
+    "claim_id": "C30",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 25",
+        "quote": "pe baza c ăruia acestea achit ă la furnizori sumele reprezentând ajutoarele pentru gaze naturale"
+      },
+      {
+        "page": "p. 31",
+        "quote": "Virează sumele stabilite către furnizor AJPIS"
+      },
+      {
+        "page": "p. 33",
+        "quote": "Virează sumele stabilite către furnizor AJPIS"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "ajpis",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Confirmed: AJPIS pays the suppliers on the basis of the mayor-certified borderou (6.1(10)) and the gas/electricity flowcharts show AJPIS transferring the amounts to the supplier. 6.1(10) names only gas aid.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "claim_id": "C31",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "(11) Întocmesc situa ția lunara privind beneficiarii si c uantumul ajutorului pe ntru combustibili solizi sau lichizi"
+      },
+      {
+        "page": "p. 23",
+        "quote": "9. Întocmirea situațiilor centralizatoare lunare privind titularii ajutoarelor, venitul net lunar pe membru de familie, valoarea ajutorului calculată, în condițiile stabilite de ordonanță, pe tipuri de încălzire."
+      },
+      {
+        "page": "p. 27",
+        "quote": "(1) Compartimentul întocmește statul d e plat ă pentru ajutorul de încălzire cu lemne ș i suplimentul de încălzire cu lemne."
+      },
+      {
+        "page": "p. 32",
+        "quote": "DAS întocmește statele de plată"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "das_staff",
+    "order_check": "supported",
+    "granularity": "procedure_splits_it",
+    "corrections": "DAS/Serviciul Beneficii Sociale staff draw up the monthly solid-fuel statement, but the procedure does not call it a payment document or mention an electronic system: payment goes through a separate payroll (stat de plată) drawn up by the economic-financial compartment (6.7; flowchart 1B attributes it to DAS).",
+    "reviewer_confidence": 0.72
+  },
+  {
+    "claim_id": "C32",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 25",
+        "quote": "(11) În vederea plății ajutorului pentru combustibili solizi și/sau petrolieri în condițiile prevederilor alin. (2), primarii tra nsmit agen țiilor teritoriale situa ția centralizatoare prev ăzută la art. 17 alin. (3)"
+      },
+      {
+        "page": "p. 25",
+        "quote": "din Legea nr.226/2021, actualizat ă lunar"
+      },
+      {
+        "page": "p. 23",
+        "quote": "Pentru acordarea ajutoarelor p entru înc ălzire, primarii au obliga ția de a transmite agen țiilor teritoriale în scris ș i format electronic, situa ția centralizatoare privind titularii ajutoarelor, separat pentru fiecare sistem de încălzire."
+      },
+      {
+        "page": "p. 23",
+        "quote": "11. Transmiterea situațiilor către furnizorii de energie electrică, gaze naturale. Agenției Județene pentru Plăți și Inspecție Socială Hunedoara-Deva"
+      },
+      {
+        "page": "p. 23",
+        "quote": "Se face de către persoanele din cadrul Serviciului Beneficii Sociale care au aceste atribuții consemnate în fișa postului."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "mayor",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Mayors transmit the monthly-updated solid-fuel statement to AJPIS (6.1(11)), in writing and electronic format; the 'by the 15th, for the previous month' deadline is not stated. Operationally, step 11 says Serviciul Beneficii Sociale staff send the statements to AJPIS.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "claim_id": "C33",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 13",
+        "quote": "(5) Fondurile necesa re pentru plata ajutorului pentru încălzire pentru combu stibili solizi și/sau petrolieri se asigură din transferuri de la bugetul de stat către bugetele locale"
+      },
+      {
+        "page": "p. 32",
+        "quote": "AJPIS virează sumele necesare"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "ajpis",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Confirmed for the wood/solid-fuel flow: AJPIS transfers the necessary sums (flowchart 1B), funded by state-budget transfers to local budgets (5.4(5)); the recipient is shown only as Direcția Economică, not named as the town hall.",
+    "reviewer_confidence": 0.72
+  },
+  {
+    "claim_id": "C34",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 23",
+        "quote": "Direcției Economice sau altor compartimente din cadrul aparatului de specialitate al primarului, în vederea efectuării plăților ajutoarelor către beneficiari"
+      },
+      {
+        "page": "p. 27",
+        "quote": "(1) Compartimentul întocmește statul d e plat ă pentru ajutorul de încălzire cu lemne ș i suplimentul de încălzire cu lemne."
+      },
+      {
+        "page": "p. 28",
+        "quote": "(8) Direcția economică Persoana desemnată cu efectuarea plăților"
+      },
+      {
+        "page": "p. 32",
+        "quote": "DAS întocmește statele de plată"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "other",
+    "order_check": "supported",
+    "granularity": "procedure_splits_it",
+    "corrections": "The town-hall payment is split: a payroll (stat de plată) is drawn up by the economic-financial compartment (DAS in flowchart 1B) and the statements go to Direcția Economică / the person designated to make payments, who pays the beneficiaries. No timing (once at season start) is stated.",
+    "reviewer_confidence": 0.62
+  },
+  {
+    "claim_id": "C35",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 20",
+        "quote": "Acest supliment de energie poate fi solicitat împreun ă cu ajutorul pentr u înc ălzirea locuinței sau separat și se acordă lunar, pe tot parcursul anului."
+      },
+      {
+        "page": "p. 12",
+        "quote": "(4) Cerere și declarație pe propria răspundere pentru suplimentul pentru energie"
+      },
+      {
+        "page": "p. 25",
+        "quote": "(3) Preiau cererile de acor dare și documentele justificative care stau la b aza acordării ajutorului de încălzire și al suplimentului de încălzire de la beneficiari"
+      },
+      {
+        "page": "p. 15",
+        "quote": "Depunerea cererilor -declarațiilor se fac e o singur ă dată, de regulă pană la d ata de 15 octombrie a fiecărui sezo n rece."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "citizen",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Confirmed: the supplement is requested by application and self-declaration, with the heating aid or separately, and DAS staff take the applications. The procedure says the supplement is granted monthly all year but does not say requests may be filed any time; it frames filing as once, as a rule by 15 October.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "claim_id": "C36",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 24",
+        "quote": "(7) Stabilește prin Dispoziție dreptul la suplimentul de energie în condi țiile art.26 din Legea nr.226 /2021"
+      },
+      {
+        "page": "p. 12",
+        "quote": "(8) Dispoziții de acordare/modificare/încetare ajutor de încălzire și supliment de energie"
+      },
+      {
+        "page": "p. 22",
+        "quote": "Întocmirea referatelor de acordare/modificarea/suspendarea/încetare și a proiectului de dispoziție se face de personalul cu atribuții în fișa postului din cadrul DAS Simeria"
+      },
+      {
+        "page": "p. 22",
+        "quote": "Proiectele de dispoziție sunt înaintate spre a fi vizate de legalitate de către secretarul general al orașului Simeria și apoi se elaborează dispozițiile care sunt semnate de primar."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "mayor",
+    "order_check": "supported",
+    "granularity": "procedure_splits_it",
+    "corrections": "The mayor establishes the supplement by disposition (6.1(7)), but the procedure splits the decision: DAS staff draft the referat and draft disposition, the Secretary General gives the legality visa, then the mayor signs. The single combined disposition is only implied by the joint document name, and no 30-day limit is stated.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "claim_id": "C37",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "(12) Întocmesc situația lunara privind beneficiarii si cuantumul suplimentului pentru gaze naturale"
+      },
+      {
+        "page": "p. 26",
+        "quote": "(13) Întocmesc situația lunara privind beneficiarii si c uantumul suplimentului pentru energie electrică"
+      },
+      {
+        "page": "p. 26",
+        "quote": "(14) Întocmesc situația lunara privind beneficiarii si cuantumul suplimentului pentru combustibili solizi si /sau lichizi"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "das_staff",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Confirmed: DAS employees with heating-aid duties draw up the monthly supplement statements, one per energy source (gas, electricity, solid fuels). No thermal-energy statement is listed.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "claim_id": "C38",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 24",
+        "quote": "(8) Situația centralizatoare se aprob ă de că tre primar și se transmite, agenției teritoriale iar în cazu l suplimentului pentru energ ie termică, gaze naturale și"
+      },
+      {
+        "page": "p. 25",
+        "quote": "energie electrică sau în c az că singura sursă de utilizare este energia electrică și furnizorilor"
+      },
+      {
+        "page": "p. 23",
+        "quote": "11. Transmiterea situațiilor către furnizorii de energie electrică, gaze naturale. Agenției Județene pentru Plăți și Inspecție Socială Hunedoara-Deva"
+      },
+      {
+        "page": "p. 23",
+        "quote": "Se face de către persoanele din cadrul Serviciului Beneficii Sociale care au aceste atribuții consemnate în fișa postului."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "mayor",
+    "order_check": "supported",
+    "granularity": "procedure_splits_it",
+    "corrections": "The mayor approves the statement (6.1(8)), which is sent to AJPIS and, for thermal/gas/electricity supplement, to the suppliers. The procedure names Serviciul Beneficii Sociale staff as the ones who send the statements (step 11), so approval and transmission have different actors.",
+    "reviewer_confidence": 0.72
+  },
+  {
+    "claim_id": "C39",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The procedure does not describe suppliers including or deducting the supplement on invoices; invoices appear only as supporting documents applicants file.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "claim_id": "C40",
+    "verdict": "not_mentioned",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "(15) Întocmesc BORDEROUL cuprinzând beneficiar ii ajut orului pentru înc ălzirea locuinței cu gaze naturale"
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "No supplier borderou for the supplement (annexes 18-20, 3 copies) is described. The only borderouri are for gas/electricity heating aid, drawn up by DAS staff (6.3(15)-(16)) or by the supplier (flowcharts); for the supplement, DAS draws up monthly statements.",
+    "reviewer_confidence": 0.72
+  },
+  {
+    "claim_id": "C41",
+    "verdict": "not_mentioned",
+    "evidence": [
+      {
+        "page": "p. 13",
+        "quote": "(4) Fondurile necesare pentru plata ajutorului pentru înc ălzire pentru gaze naturale ș i energie electrică și a s uplimentului pentru energie se asigur ă din bugetul de stat, prin bugetul Ministerului Muncii și Protecției Sociale"
+      },
+      {
+        "page": "p. 24",
+        "quote": "(8) Situația centralizatoare se aprob ă de că tre primar și se transmite, agenției teritoriale iar în cazu l suplimentului pentru energ ie termică, gaze naturale și"
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The procedure never states that the supplement is paid directly to the supplier. It gives only the state-budget funding source and says the supplement statement also goes to the suppliers.",
+    "reviewer_confidence": 0.62
+  },
+  {
+    "claim_id": "C42",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 27",
+        "quote": "(1) Compartimentul întocmește statul d e plat ă pentru ajutorul de încălzire cu lemne ș i suplimentul de încălzire cu lemne."
+      },
+      {
+        "page": "p. 12",
+        "quote": "(13) Stat de plată (ajutor și supliment încălzire lemne-combustibili solizi și sau petrolieri)"
+      },
+      {
+        "page": "p. 17",
+        "quote": "Pentru beneficiarii ajutorului de încălzire cu lemne este necesar ca beneficiarii să prezinte un extras de cont pe numele titularului cererii pentru situa ția în care solicită supliment pentru lemne;"
+      },
+      {
+        "page": "p. 32",
+        "quote": "AJPIS virează sumele necesare"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "other",
+    "order_check": "silent",
+    "granularity": "procedure_splits_it",
+    "corrections": "The solid-fuel supplement is paid to the holder through a payroll (stat de plată) drawn up by the economic-financial compartment. Holders requesting the wood supplement must provide a bank statement in their name, which implies payment to a bank account; the procedure does not say the funds come from AJPIS transfers for the supplement specifically (5.4(4) lists supplement funding as the state budget via the Ministry).",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "claim_id": "C43",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Budget-credit requests from AJPIS to ANPIS are not mentioned.",
+    "reviewer_confidence": 0.9
+  },
+  {
+    "claim_id": "C44",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "ANPIS centralising the credit need is not mentioned (the ledger also codes ANPIS as 'ajpis').",
+    "reviewer_confidence": 0.9
+  },
+  {
+    "claim_id": "C45",
+    "verdict": "not_mentioned",
+    "evidence": [
+      {
+        "page": "p. 13",
+        "quote": "(4) Fondurile necesare pentru plata ajutorului pentru înc ălzire pentru gaze naturale ș i energie electrică și a s uplimentului pentru energie se asigur ă din bugetul de stat, prin bugetul Ministerului Muncii și Protecției Sociale"
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The Ministry of Labour appears only as the budget through which funds are provided; its monthly request to the Ministry of Finance is not described.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "claim_id": "C46",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 32",
+        "quote": "AJPIS virează sumele necesare"
+      },
+      {
+        "page": "p. 31",
+        "quote": "Virează sumele stabilite către furnizor AJPIS"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "ajpis",
+    "order_check": "silent",
+    "granularity": "procedure_merges_it",
+    "corrections": "The procedure shows a single AJPIS transfer box per flow (to the supplier for gas/electricity, 'sumele necesare' for wood), triggered by the borderou/statement. It never mentions opened budget credits, so this ledger step is merged with C30/C33.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "claim_id": "C47",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "(18) Întocmesc situația cu titularii de ajutor pentru încălzirea locuinței/supliment pentru energie, în evidență, și pentru care se solicită decontarea sumelor în luna"
+      },
+      {
+        "page": "p. 25",
+        "quote": "6.3 Angajații cu atribuții referitoare la ajutorul de încălzire"
+      },
+      {
+        "page": "p. 23",
+        "quote": "Se face de către persoanele din cadrul Serviciului Beneficii Sociale care au aceste atribuții consemnate în fișa postului."
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_procedure": "das_staff",
+    "order_check": "silent",
+    "granularity": "procedure_splits_it",
+    "corrections": "In Simeria the list of aid/supplement holders for which settlement is requested (annex 25 equivalent) is drawn up by DAS employees (6.3(18)), not by the suppliers, and is sent out by Serviciul Beneficii Sociale staff (step 11). No electronic format or 'with the borderouri' timing is stated.",
+    "reviewer_confidence": 0.62
+  },
+  {
+    "claim_id": "C48",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "(17) Întocmesc raportările statistice cu privire la ajutoarele de încălzire cu gaz, energie electrică, c ombustibili solizi pe care le transmi t institu țiilor abilitate la termenele prevăzute de lege."
+      },
+      {
+        "page": "p. 23",
+        "quote": "10. Întocmirea rapoartelor statistice lunare, a evidențelor pentru plata ajutoarelor pentru combustibili solizi sau petrolieri acordate pe perioada sezonului rece,"
+      },
+      {
+        "page": "p. 31",
+        "quote": "Întocmește situația statistică"
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_procedure": "das_staff",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "DAS/Serviciul Beneficii Sociale staff, not the mayor, draw up the statistical reports and send them 'to the authorised institutions at the legal deadlines'. The procedure calls them monthly ('rapoartelor statistice lunare') and does not mention December/April, on-request or quarterly supplement reports.",
+    "reviewer_confidence": 0.68
+  },
+  {
+    "claim_id": "C49",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The AJPIS county statistical report is not mentioned.",
+    "reviewer_confidence": 0.9
+  },
+  {
+    "claim_id": "C50",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The national statistical report to the Ministry is not mentioned.",
+    "reviewer_confidence": 0.9
+  },
+  {
+    "claim_id": "C51",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Unduly paid amounts and debt dispositions are not covered. The procedure mentions new dispositions only for changes, suspension or termination after inquiries (6.1(6)).",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "claim_id": "C52",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Recovery of undue payments by AJPIS decision is not mentioned.",
+    "reviewer_confidence": 0.9
+  },
+  {
+    "claim_id": "C53",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 24",
+        "quote": "(5) În vederea urm ăririi respect ării condi țiilor de acordare a dreptului la ajutor pentru încălzire și la suplimentul pentru energie, dispune efectuarea de anchete sociale la interval de 6 luni sau ori de câte ori este nevoie."
+      },
+      {
+        "page": "p. 25",
+        "quote": "(7) În vederea urmăririi respectării condițiilor de acordare a dreptului la ajutor pentru încălzire și la suplimentul pentru energie, efectuează de anchete sociale la interv al de 6 luni sau ori de câte o ri este nevoie."
+      },
+      {
+        "page": "p. 24",
+        "quote": "se constat ă situații ce conduc la modificarea cuantu mului, suspendarea sau încetarea dreptului la ajutorul pentru înc ălzire și la suplimentul pentru energie, pri marul emite o nouă dispoziție scrisă"
+      },
+      {
+        "page": "p. 29",
+        "quote": "(3) Model anchetă socială pentru obținerea ajutorului de înc ălzire cu gaze naturale, energie electrică, combustibili solizi și sau petrolieri și a suplimentului de energie"
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_procedure": "mayor",
+    "order_check": "supported",
+    "granularity": "procedure_splits_it",
+    "corrections": "The mayor orders periodic inquiries every 6 months or as needed (6.1(5)), but DAS employees perform them (6.3(7)), with one inquiry for applicants who also receive VMG/ASF. The inquiry form is the procedure's own model (Anexa 2(3)), not explicitly HG 50/2011 annex 2.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "claim_id": "C54",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 13",
+        "quote": "(6) Fondurile necesare pentru plata drepturilor pentru familiile ș i persoanele singure care nu se încadreaz ă în defini ția prev ăzută la cap 4.1, alin (6) din prezenta procedură se asigură din bugetele locale."
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Only the funding rule appears: rights for those outside the legal definition are paid from local budgets. No local decision step is described, and the common-area heating share and energy-audit support are not mentioned.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "claim_id": "C55",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Local-budget aid shown on supplier invoices is not mentioned.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "claim_id": "C56",
+    "verdict": "not_mentioned",
+    "evidence": [
+      {
+        "page": "p. 17",
+        "quote": "Pentru beneficiarii ajutorului de încălzire cu lemne este necesar ca beneficiarii să prezinte un extras de cont pe numele titularului cererii pentru situa ția în care solicită supliment pentru lemne;"
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_procedure": "not stated",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The procedure does not describe choosing between a postal order and a bank account. It only requires wood-heating applicants who request the wood supplement to provide a bank statement in the holder's name, which points to bank-account payment.",
+    "reviewer_confidence": 0.6
+  }
+]

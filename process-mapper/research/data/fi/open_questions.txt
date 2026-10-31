@@ -1,0 +1,63 @@
+Q1: Which version of 938/2014 is in force: the supplied consolidated text shows an 80 % rate, 2010-level maximum housing costs and deductible (555 + 92A + 205L) and allows owner-occupied homes, while current guidance and Kela's internal note use 70 %, new cap tables, 0.5 × [T − (667 + 94A + 296L)], an asset test and exclude owner-occupied homes; the internal note also cites § 8 a.
+  why it matters: An agent computing amounts or eligibility will produce wrong results if it applies the superseded parameters.
+  map's guess of where the answer lives: Finlex current consolidated text and 2024 amending acts; Kela benefit guideline (etuusohje) for general housing allowance
+
+Q2: How many municipality groups currently exist and which cap and income-limit table applies to each municipality (guidance shows three mainland tables plus an 80 % table, the Act text four groups)?
+  why it matters: The maximum housing costs and income limit depend directly on the municipality group.
+  map's guess of where the answer lives: Kela maximum housing costs page (kela.fi/maximum-housing-costs), annual government decree on maximum housing costs
+
+Q3: Is the 80 % table (470/687/871/1,032 €) and the 0.42 × [T − (667 + 111A + 246L)] formula the Åland regime, and what other Åland-specific rules apply?
+  why it matters: Åland residents are calculated differently and the sources do not label these tables explicitly.
+  map's guess of where the answer lives: Kela guidance for Åland / Åland-specific legislation
+
+Q4: Who makes decisions on new applications, annual reviews and change-based revisions – a caseworker, or automated decision-making beyond the documented impulse terminations?
+  why it matters: Determines where an agent may act autonomously and where human sign-off is legally required.
+  map's guess of where the answer lives: Kela deployment decisions for automated decision-making (käyttöönottopäätökset) and internal process descriptions
+
+Q5: What does the case system do automatically at intake (registration, missing-attachment reminders, Incomes Register and landlord data matching, pre-calculation)?
+  why it matters: Internal steps are poorly documented; automation boundaries affect agent design.
+  map's guess of where the answer lives: Kela internal process documentation and case-system specifications
+
+Q6: How are discrepancies between declared income and Incomes Register or tax data resolved, and when is the taxation fallback or the imputed labour-market-subsidy income used?
+  why it matters: Income determination is the most discretionary calculation step.
+  map's guess of where the answer lives: Kela benefit guideline (etuusohje) on income assessment
+
+Q7: How is household membership assessed in unclear cases (cohabitation evidence, separations, shared flats with mixed leases)?
+  why it matters: Household composition drives every calculation and is judgment-heavy.
+  map's guess of where the answer lives: Kela benefit guideline; Social Security Appeal Board and Insurance Court case law
+
+Q8: What are actual processing times and service-level targets versus the 30-day statutory maximum?
+  why it matters: Needed for timers, escalation and citizen communication.
+  map's guess of where the answer lives: Kela statistics (Kelasto), Kela annual reports
+
+Q9: How does Kela learn that rent has been unpaid for two months – via landlord notification, form, or other channel?
+  why it matters: The trigger of the § 25(2) landlord-payment path is entirely undocumented (inferred node).
+  map's guess of where the answer lives: Kela guidance for landlords; internal procedure notes
+
+Q10: Which pension and rehabilitation benefits trigger automatic termination, and what exclusion rules send cases to a caseworker?
+  why it matters: Defines the scope of the automated decision path.
+  map's guess of where the answer lives: Kela processing rules document (käsittelysäännöt) referenced in the deployment decision
+
+Q11: What counts as 'reasonable time' for annual review information, and how far before the review date must the application arrive?
+  why it matters: Late submission leads to termination; the exact cut-off is needed for timers.
+  map's guess of where the answer lives: Kela benefit guideline; annual review instruction messages
+
+Q12: Which data sources (Tax Administration, pension insurers, employers, unemployment funds) are queried electronically and routinely, versus only on request?
+  why it matters: Determines whether lookups are agent-executable.
+  map's guess of where the answer lives: Kela data exchange agreements and technical access connection decisions under § 46
+
+Q13: What is the appeal period and filing channel for appeals to the Insurance Court, and how are automated decisions' rectification requests (Administrative Procedure Act ch. 7 a) handled relative to the § 34 appeal route?
+  why it matters: Not in the supplied facts; needed for correct appeal instructions.
+  map's guess of where the answer lives: Act on the Social Security Appeal Board, Act on Administrative Court Procedure, appeal instructions attached to decisions
+
+Q14: How are overpayments detected (data matching, landlord notices, annual review) and who in Kela decides on waiver?
+  why it matters: Recovery start triggers and decision authority are undocumented.
+  map's guess of where the answer lives: Kela control and recovery unit guidelines
+
+Q15: How does processing of the combined general support (yleistuki) and housing allowance application differ from a standalone application?
+  why it matters: The combined channel may change intake, data reuse and decision timing.
+  map's guess of where the answer lives: Kela internal process documentation for the combined application
+
+Q16: Is a decision issued when the amount is below 15 € (rejection versus 'granted but not paid'), and how is a revision that drops below 15 € handled?
+  why it matters: Affects decision type and appealability of below-minimum outcomes.
+  map's guess of where the answer lives: Kela benefit guideline

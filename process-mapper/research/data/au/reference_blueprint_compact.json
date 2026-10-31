@@ -1,0 +1,4111 @@
+{
+ "steps": [
+  {
+   "id": "B001",
+   "subprocess": "trigger",
+   "name": "Customer notifies change of accommodation circumstances",
+   "description": "A customer on a qualifying payment tells Services Australia about a change such as principal home, rent amount, living arrangements or relationship status.",
+   "actor": "customer",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": []
+  },
+  {
+   "id": "B002",
+   "subprocess": "trigger",
+   "name": "Customer lodges a new claim that collects accommodation details",
+   "description": "A new claim for a qualifying payment collects accommodation details, which must be recorded on the AC screen within the claim.",
+   "actor": "customer",
+   "kind": "event",
+   "granularity": "policy_level",
+   "predecessors": []
+  },
+  {
+   "id": "B003",
+   "subprocess": "trigger",
+   "name": "Customer updates accommodation details online",
+   "description": "The customer uses the online Address, Accommodation and Contact service to update accommodation details.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": []
+  },
+  {
+   "id": "B004",
+   "subprocess": "trigger",
+   "name": "Online update fails to auto-complete and is allocated for finalisation",
+   "description": "When an online update does not complete automatically it is allocated to staff for finalisation as a failed online update.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B003"
+   ]
+  },
+  {
+   "id": "B005",
+   "subprocess": "trigger",
+   "name": "RDS/OHO rent deduction transaction received above the RA threshold",
+   "description": "A Rent Deduction Scheme transaction for an Other Housing Organisation deduction is sent to Services Australia and starts an automatic RA assessment when it exceeds the RA threshold.",
+   "actor": "unclear",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": []
+  },
+  {
+   "id": "B006",
+   "subprocess": "verification",
+   "name": "System auto-updates AC screen with deduction amount and COA code",
+   "description": "The AC screen is automatically updated with the deduction amount and verification code COA so that an SU523HD is generated.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B005"
+   ]
+  },
+  {
+   "id": "B007",
+   "subprocess": "review",
+   "name": "System starts RA and creates a 28-day review for return of the form",
+   "description": "RA starts on the coded details and a review is created for return of the SU523HD 28 days from the date the activity is finalised.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B006"
+   ]
+  },
+  {
+   "id": "B008",
+   "subprocess": "change",
+   "name": "RA address end date reached without a new address (Error E036AT)",
+   "description": "When AC details reach the end date recorded on the ADS screen and no other address is recorded, staff follow the RA address has ended / Error E036AT procedure.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": []
+  },
+  {
+   "id": "B009",
+   "subprocess": "change",
+   "name": "Travelling customer notifies each change of address",
+   "description": "Customers who travel must notify Services Australia every time they change address (and may bring rent receipts with an SU336M for each address change).",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": []
+  },
+  {
+   "id": "B010",
+   "subprocess": "other",
+   "name": "Choose Customer First or Process Direct for the update",
+   "description": "Staff must use Customer First for accommodation updates unless they are in a Process Direct transaction, a claim activity, or are directed to another system.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B001",
+    "B002",
+    "B004",
+    "B008",
+    "B009"
+   ]
+  },
+  {
+   "id": "B011",
+   "subprocess": "change",
+   "name": "Check customer and partner record before the accommodation assessment",
+   "description": "Before starting, staff check the customer and/or partner record for reviews, income management, aged care or blind pension status, and unchanged homeowner new claims.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B010"
+   ]
+  },
+  {
+   "id": "B012",
+   "subprocess": "review",
+   "name": "Route to RA profile review or ACI procedure",
+   "description": "If there is an accommodation/rent review or the enquiry concerns a recently completed review, staff use the RA profile review or Accommodation Circumstance Intervention procedure and this procedure ends.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B011"
+   ]
+  },
+  {
+   "id": "B013",
+   "subprocess": "other",
+   "name": "Complete income management priority needs assessment",
+   "description": "For income managed customers a priority needs assessment is completed before the accommodation assessment.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B011"
+   ]
+  },
+  {
+   "id": "B014",
+   "subprocess": "eligibility",
+   "name": "Check Aged Care/Means Assessment Status",
+   "description": "Where the benefit status line is RCA/CUR-MTA or RCA/CUR-DSS or an aged care means assessment is in progress, staff check the aged care means assessment status.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B011"
+   ]
+  },
+  {
+   "id": "B015",
+   "subprocess": "eligibility",
+   "name": "Check Blind - Income & Asset Exempt field on PDI screen",
+   "description": "For DSB/CUR or AGB/CUR customers staff check whether the blind pensioner is exempt from the income and assets tests (exempt customers must be tested before RA can be assessed).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B011"
+   ]
+  },
+  {
+   "id": "B016",
+   "subprocess": "verification",
+   "name": "Delete provisional NCL verification line for unchanged homeowner new claim",
+   "description": "Where a homeowner lodges a new claim with no change to address or accommodation, staff delete the provisional NCL line and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B011"
+   ]
+  },
+  {
+   "id": "B017",
+   "subprocess": "eligibility",
+   "name": "Check RA qualification using the supporting Blueprints and A-Z index",
+   "description": "Staff use Qualification for payment of RA and the A-Z list of RA terms, screens and coding options when updating accommodation details and assessing RA.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B011",
+    "B013",
+    "B014",
+    "B015"
+   ]
+  },
+  {
+   "id": "B018",
+   "subprocess": "verification",
+   "name": "Check whether verification is now received for a completed AC update",
+   "description": "Staff check whether an AC update was already completed and verification has now been received.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B019",
+   "subprocess": "verification",
+   "name": "Update Verification field with the determined code",
+   "description": "If verification has arrived for a completed update, staff update the Verification field with the determined code and complete the update (Table 4).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B018"
+   ]
+  },
+  {
+   "id": "B020",
+   "subprocess": "eligibility",
+   "name": "Check customer/partner status on an RA qualifying payment",
+   "description": "Staff check whether the customer and/or partner has claimed, or is CUR, SUS, ASS or CZR on, a qualifying payment (Age Pension, CP, DSP, ABSTUDY, Austudy, YA, SpB, FTB, PP, JSP, FHA).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B018"
+   ]
+  },
+  {
+   "id": "B021",
+   "subprocess": "accommodation_details",
+   "name": "Update AC screen for a notional FTB rate in the Parental Income Test",
+   "description": "Where parents not on a qualifying payment give rent details for a child's ABSTUDY, YA or AIC claim and a notional FTB rate is needed for the Parental Income Test, staff update the AC screen.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B020"
+   ]
+  },
+  {
+   "id": "B022",
+   "subprocess": "change",
+   "name": "Decide whether the AC screen needs updating",
+   "description": "For customers on a qualifying payment, staff apply exclusions (e.g. student parental-home change, temporary address without RA, respite care fees, HEAS loan-only) and decide whether an update is needed and whether it is a new claim.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B020"
+   ]
+  },
+  {
+   "id": "B023",
+   "subprocess": "eligibility",
+   "name": "Check whether the primary payment rate (DSP or away-from-home) needs review",
+   "description": "For students with a term address or DSP customers under 21 who only advise a change in parental home details, staff check whether an away-from-home or DSP rate review is needed instead of an AC update.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B022"
+   ]
+  },
+  {
+   "id": "B024",
+   "subprocess": "eligibility",
+   "name": "Decide on AC update for customers not on a qualifying payment",
+   "description": "Where neither member is on a qualifying payment (pre-claim contact, CSHC, LIC, EHC, Mobility Allowance, CA, CCS) usually no AC update is made, and details are not updated outside a claim.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B020"
+   ]
+  },
+  {
+   "id": "B025",
+   "subprocess": "accommodation_details",
+   "name": "Code AC screen with common couple information for a PPL-only claim",
+   "description": "When processing PPL-only claims and linking a partner, the AC screen may be coded to record common information for the couple (accommodation details are not collected in a PPL claim).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B024"
+   ]
+  },
+  {
+   "id": "B026",
+   "subprocess": "change",
+   "name": "Record on a DOC that no accommodation update is required",
+   "description": "If no update is required staff record the information on a DOC; an address-only change is handled under Changing address (CLK).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B022",
+    "B024",
+    "B025"
+   ]
+  },
+  {
+   "id": "B027",
+   "subprocess": "change",
+   "name": "Determine how the customer is notifying the change",
+   "description": "Staff route by whether the customer can update online, cannot update online, has a failed online update, is correcting information, has provided rent verification or documents, or has a verification question.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B022"
+   ]
+  },
+  {
+   "id": "B028",
+   "subprocess": "change",
+   "name": "Assess whether supplied documentation is sufficient to update the AC screen",
+   "description": "When a customer provides documentation advising a change (e.g. new rent liability or sharing arrangement with dates), staff decide whether there is enough information to update.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B027"
+   ]
+  },
+  {
+   "id": "B029",
+   "subprocess": "change",
+   "name": "Make genuine attempts to contact the customer to clarify the change",
+   "description": "If more information is needed to clarify the documented change, staff make genuine attempts to contact the customer.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B028"
+   ]
+  },
+  {
+   "id": "B030",
+   "subprocess": "change",
+   "name": "Ask the customer to update accommodation details online",
+   "description": "Where enough information is available, staff may ask the customer to update their accommodation details online and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B028",
+    "B029"
+   ]
+  },
+  {
+   "id": "B031",
+   "subprocess": "accommodation_details",
+   "name": "Update accommodation in the Change in Contact Details workflow",
+   "description": "Staff open the Change in Contact Details workflow and select Accommodation under Update Options to update the AC screen.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B027",
+    "B028",
+    "B029"
+   ]
+  },
+  {
+   "id": "B032",
+   "subprocess": "verification",
+   "name": "Update Verification field when the customer provides rent verification",
+   "description": "Where the customer has provided rent verification, staff update the Verification field and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B027"
+   ]
+  },
+  {
+   "id": "B033",
+   "subprocess": "verification",
+   "name": "Manually issue another Rent Certificate (SU523HD) on request",
+   "description": "When a customer with a rent verification question needs another Rent Certificate, staff manually issue one.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B027"
+   ]
+  },
+  {
+   "id": "B034",
+   "subprocess": "verification",
+   "name": "Provide rent verification information to the customer",
+   "description": "For other rent verification questions staff provide verification information and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B027"
+   ]
+  },
+  {
+   "id": "B035",
+   "subprocess": "change",
+   "name": "Check whether a Q164 letter was previously issued and the manual review is due",
+   "description": "Staff check if a Q164 request-to-contact letter was already issued for this update and whether its manual review has become due (same check in Table 1 Step 11 and Table 2 Step 3).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B028",
+    "B029",
+    "B088"
+   ]
+  },
+  {
+   "id": "B036",
+   "subprocess": "change",
+   "name": "Keep the activity on Hold for the allowable time",
+   "description": "If the manual review is still on hold or not yet due, staff set the activity status to Hold for the allowable time and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B035"
+   ]
+  },
+  {
+   "id": "B037",
+   "subprocess": "change",
+   "name": "Make genuine attempts to contact the customer for missing AC details",
+   "description": "When details are needed to complete the AC update (Table 2 path), staff make genuine attempts to contact the customer; if successful the update continues at Table 2 Step 11.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B035"
+   ]
+  },
+  {
+   "id": "B038",
+   "subprocess": "change",
+   "name": "Check address information before sending a letter",
+   "description": "Staff check whether the address on record is correct and whether new address details were provided with the update.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B035",
+    "B037"
+   ]
+  },
+  {
+   "id": "B039",
+   "subprocess": "change",
+   "name": "Check and update postal address on the Address Details (AD) screen",
+   "description": "Staff check the AD screen and add, end-date or redirect the postal address (send all mail here) so the letter reaches the customer.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B038"
+   ]
+  },
+  {
+   "id": "B040",
+   "subprocess": "change",
+   "name": "Send a Q164 letter and record a DOC",
+   "description": "Staff send a Q164 letter explaining what details the customer must give, record a DOC of what is needed, and close the scanned image if applicable.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B038",
+    "B039"
+   ]
+  },
+  {
+   "id": "B041",
+   "subprocess": "change",
+   "name": "Place the started AC update on Hold",
+   "description": "In the Table 2 path, staff set the status of the started AC screen update to Hold for the allowable time.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B040"
+   ]
+  },
+  {
+   "id": "B042",
+   "subprocess": "review",
+   "name": "Create a manual review on the Review Registration (RVR) screen",
+   "description": "In Customer First staff register a manual review: payment type, reason, due date the day after the Q164 due date, source INT, receipt date today, set note text and keywords #AAC, Q164 and FNTPD.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B040",
+    "B041"
+   ]
+  },
+  {
+   "id": "B043",
+   "subprocess": "change",
+   "name": "Customer responds to the Q164 within the allowable time",
+   "description": "The customer has the allowable time to contact the agency and provide the required information.",
+   "actor": "customer",
+   "kind": "wait",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B042"
+   ]
+  },
+  {
+   "id": "B044",
+   "subprocess": "review",
+   "name": "Manual review matures and Workload Management allocates it",
+   "description": "The review matures on the coded due date and Workload Management allocates it for manual action.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B043"
+   ]
+  },
+  {
+   "id": "B045",
+   "subprocess": "change",
+   "name": "Attempt to contact the customer before ceasing the qualifying payment",
+   "description": "Before suspending or cancelling the RA qualifying payment, staff make genuine attempts to contact the customer.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B044",
+    "B035"
+   ]
+  },
+  {
+   "id": "B046",
+   "subprocess": "change",
+   "name": "Complete the manual review and continue the AC update",
+   "description": "If contact is successful, staff complete the manual review and continue the accommodation update.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B045"
+   ]
+  },
+  {
+   "id": "B047",
+   "subprocess": "change",
+   "name": "Check postal address so the suspension/cancellation letter reaches the customer",
+   "description": "Before ceasing payment, staff make sure the suspension or cancellation letter will go to a current address, updating the postal address if needed.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B045"
+   ]
+  },
+  {
+   "id": "B048",
+   "subprocess": "payment",
+   "name": "Suspend or cancel the qualifying payment for failing to respond (FRC)",
+   "description": "Staff suspend/cancel the customer's payment from today using reason FRC, via ISP suspension or FTB cancellation procedures.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B047"
+   ]
+  },
+  {
+   "id": "B049",
+   "subprocess": "review",
+   "name": "Record suspension/cancellation Fast Note and complete the manual review",
+   "description": "Staff record details in the suspension/cancellation Fast Note and complete the manual review.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B048"
+   ]
+  },
+  {
+   "id": "B050",
+   "subprocess": "eligibility",
+   "name": "Criterion: customer or partner receives a qualifying payment",
+   "description": "RA is payable only with an income support payment, more than base rate FTB Part A (or FTB A but for a regular care child), or ABSTUDY Schooling B/Tertiary.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B051",
+   "subprocess": "eligibility",
+   "name": "Criterion: customer pays rent",
+   "description": "Rent is a regular amount paid by the customer or partner for the right to occupy their home (private rent, lodgings, some care and retirement village fees, site, mooring and hire fees).",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B052",
+   "subprocess": "eligibility",
+   "name": "Criterion: living in the principal home being rented (or acceptable temporary accommodation)",
+   "description": "RA is assessed on rent for one principal home and stops for a former address after a move even if the lease continues; temporary accommodation can qualify if the reason is acceptable.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B053",
+   "subprocess": "eligibility",
+   "name": "Criterion: security of tenure makes the customer a homeowner",
+   "description": "Customers with security of tenure (interest in owning trust/company, rent-to-buy option, part-owner) are ineligible homeowners even if paying rent.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B054",
+   "subprocess": "eligibility",
+   "name": "Criterion: homeowner exemptions",
+   "description": "Ineligible homeowners get no RA unless exempt (caravan/boat with site or mooring fees, sold home and renting while buying/building, temporarily absent and paying rent); if one member of a homeowner couple is ineligible, neither is.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B055",
+   "subprocess": "eligibility",
+   "name": "Criterion: travellers who vacated the principal home",
+   "description": "Customers who vacate the principal home to travel (e.g. caravan or boat) are assessed under the traveller and vacation of principal home rules.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B056",
+   "subprocess": "eligibility",
+   "name": "Check ABSTUDY dependent/independent status on the NIH screen",
+   "description": "Staff read the NIH Action field (IND/HOM independent, AFH away from home, otherwise dependent); ABSTUDY customers under 22 at home on a dependent rate, accommodated independent, or single 22-24 at home are not eligible.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B017",
+    "B091"
+   ]
+  },
+  {
+   "id": "B057",
+   "subprocess": "eligibility",
+   "name": "Check ABSTUDY precluding course on the EDCH screen",
+   "description": "ABSTUDY students in Masters/Doctorate, Schooling A, part-time, testing and assessment or lawful custody awards are not entitled to RA; staff check course codes on the Education Course History screen.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B056"
+   ]
+  },
+  {
+   "id": "B058",
+   "subprocess": "eligibility",
+   "name": "Check Youth Allowance dependent/independent status on the NIH screen",
+   "description": "YA customers on a dependent at-home rate or who are accommodated independent persons are not eligible; independent or away-from-home rate customers are (22+ are automatically independent).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B017",
+    "B091"
+   ]
+  },
+  {
+   "id": "B059",
+   "subprocess": "eligibility",
+   "name": "Criterion: couples where one or both receive YA or ABSTUDY",
+   "description": "A partner living in their parental home who is dependent or an accommodated independent person is not eligible; an independent partner is eligible.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B060",
+   "subprocess": "eligibility",
+   "name": "Check DSP independence status on the PDI screen and Incentive Allowance",
+   "description": "DSP customers (or partners) receiving Incentive Allowance are ineligible; staff check the PDI Independent Living code and apply the age rules (16-17, 18-20, 21+) for living in the parental home.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B017",
+    "B091"
+   ]
+  },
+  {
+   "id": "B061",
+   "subprocess": "eligibility",
+   "name": "Criterion: single JSP customers under 25 living in the parental home are not eligible",
+   "description": "JobSeeker Payment customers aged under 25 who are single and live in the parental home cannot get RA.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B062",
+   "subprocess": "eligibility",
+   "name": "Criterion: aged care (temporary/respite or permanent funded bed)",
+   "description": "Customers living permanently in subsidised aged care (RCA/CUR) are not eligible; temporary/respite moves and other care receivers are assessed under separate procedures.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017",
+    "B014"
+   ]
+  },
+  {
+   "id": "B063",
+   "subprocess": "eligibility",
+   "name": "Customer lodges an Aged Care Means Test Assessment request",
+   "description": "Where RCA/CUR is not on the benefit status line, the customer may need to lodge a request for an Aged Care Means Test Assessment.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B062"
+   ]
+  },
+  {
+   "id": "B064",
+   "subprocess": "eligibility",
+   "name": "Criterion: retirement village entry contribution decides homeowner status",
+   "description": "The entry contribution determines homeowner status; non-homeowners can get RA on fees and charges that are a condition of occupancy.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B065",
+   "subprocess": "eligibility",
+   "name": "Criterion: shared equity housing compared with the Extra Allowable Amount",
+   "description": "Share purchase at or above the Extra Allowable Amount makes the customer a homeowner; below it, RA can be paid on compulsory regular fees.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B066",
+   "subprocess": "eligibility",
+   "name": "Assess refugees on net rent after subsidy; SRSS recipients not paid RA",
+   "description": "Care is needed for refugees (rent-free first 4 weeks, then subsidy, RA on net rent, interpreter if needed); SRSS customers are not paid RA but may get Rental Assistance Allowance.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B067",
+   "subprocess": "eligibility",
+   "name": "Customer provides evidence that a rent-to-buy agreement has lapsed",
+   "description": "Rent-to-buy gives security of tenure (homeowner, no RA); the customer becomes eligible if the agreement lapses without buying and must provide evidence of the change.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B068",
+   "subprocess": "eligibility",
+   "name": "Criterion: no RA during a compliance preclusion period",
+   "description": "Customers in a job seeker or student compliance preclusion period do not receive RA; a partner keeps only their half.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B069",
+   "subprocess": "eligibility",
+   "name": "Customer provides employment agreement (minister of religion)",
+   "description": "RA claims from ministers of religion are assessed case by case; the customer provides the whole employment agreement and any Schedule of stipends.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B070",
+   "subprocess": "eligibility",
+   "name": "Criterion: HEAS loan-only customers are not eligible",
+   "description": "Customers who receive their whole payment as a Home Equity Access Scheme loan cannot get RA.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B071",
+   "subprocess": "eligibility",
+   "name": "Criterion: relationship qualifier codes allow individual RA for separated couples",
+   "description": "With an illness, temporary, psychiatric care, respite or gaol relationship qualifier code on the MS screen, RA can be assessed individually where each pays rent above the threshold at a separate address.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B072",
+   "subprocess": "eligibility",
+   "name": "Criterion: base-rate-only FTB Part A does not attract RA",
+   "description": "RA is not payable with base-rate-only FTB Part A, though ISP customers may get RA with their primary payment in limited cases.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B073",
+   "subprocess": "eligibility",
+   "name": "Criterion: government rent to a state/territory housing authority is not eligible",
+   "description": "Customers leasing from an SHA pay government rent and are not eligible whatever the amount; who receives the rent is decisive; sub-tenants may qualify.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B074",
+   "subprocess": "eligibility",
+   "name": "Criterion: proportional rate under an International Social Security Agreement is not eligible",
+   "description": "RA is not payable to Australian residents paid a proportional rate under an ISSA (it may be with a direct deduction rate); correct agreement coding ensures non-payment.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B075",
+   "subprocess": "eligibility",
+   "name": "Criterion: community and disability housing tenants are not government tenants",
+   "description": "Tenants of community or disability housing organisations (e.g. NSW Aboriginal Housing Office) are not government tenants/sub-tenants; disability housing may still be exempt accommodation.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B076",
+   "subprocess": "eligibility",
+   "name": "Criterion: transitional housing depends on who retains the rent",
+   "description": "Rent passed on to the SHA is government rent (not eligible); rent retained by the community housing organisation is eligible.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B077",
+   "subprocess": "eligibility",
+   "name": "Customer provides transitional housing agreement or organisation letter",
+   "description": "Transitional housing customers provide their agreement or a letter from the organisation showing who benefits from the rent.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B076"
+   ]
+  },
+  {
+   "id": "B078",
+   "subprocess": "eligibility",
+   "name": "Assess Defence Housing Authority rent net of DHA subsidy",
+   "description": "Defence force housing is not government rent; staff assess RA on rent (including a conditional water contribution) minus any ongoing DHA subsidy.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B079",
+   "subprocess": "eligibility",
+   "name": "Refer NDIS SDA customer to the provider for the Reasonable Rent Contribution amount",
+   "description": "RA is payable on the RRC dollar amount; customers who cannot state it are referred back to the accommodation provider and RA cannot be assessed until it is received.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B080",
+   "subprocess": "change",
+   "name": "Check details when the principal home exits NRAS",
+   "description": "If a customer notifies that their NRAS home is exiting the scheme, staff check whether details such as rent need updating and tell them RA is based on rent paid and to report changes.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B001"
+   ]
+  },
+  {
+   "id": "B081",
+   "subprocess": "payment",
+   "name": "Transition SHA tenants to community housing: cancel RDS and start RA/Centrepay",
+   "description": "Services Australia works with community housing organisations to cancel RDS government rent deductions and start RA and Centrepay deductions; transitioned customers receive cancellation and commencement letters.",
+   "actor": "unclear",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": []
+  },
+  {
+   "id": "B082",
+   "subprocess": "other",
+   "name": "Refer customer to the community housing organisation for tenancy queries",
+   "description": "If a transitioned customer contacts about the management of their tenancy, staff refer them to their community housing organisation.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B081"
+   ]
+  },
+  {
+   "id": "B083",
+   "subprocess": "accommodation_details",
+   "name": "Review customer and partner record before the AC update",
+   "description": "To prepare for the update staff review the customer and partner record to understand their circumstances.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B022",
+    "B027",
+    "B031",
+    "B046"
+   ]
+  },
+  {
+   "id": "B084",
+   "subprocess": "change",
+   "name": "Customer provides separation details",
+   "description": "Before records can be unlinked the customer provides separation details via the Separating Details (MOD S) form or the Relationship Update online service.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B083"
+   ]
+  },
+  {
+   "id": "B085",
+   "subprocess": "other",
+   "name": "Ensure the customer's personal details are safe where FDV is identified",
+   "description": "Where family and domestic violence is identified, records can be unlinked immediately and staff must protect personal details before progressing.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B083"
+   ]
+  },
+  {
+   "id": "B086",
+   "subprocess": "change",
+   "name": "Check and update the Marital Status (MS) screen before the AC update",
+   "description": "Marital status must be updated first if the couple is separated by illness, temporarily or by respite care, the partner is in prison, or they are separating.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B083",
+    "B084",
+    "B085"
+   ]
+  },
+  {
+   "id": "B087",
+   "subprocess": "accommodation_details",
+   "name": "Check AC screen, Activity List and Notes/DOCs for current details and failed online updates",
+   "description": "Staff check current AC details and date of effect, whether and with which payment RA is paid, outstanding AL activities, and Notes/DOCs for unapplied failed online updates or reviews.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B086",
+    "B083"
+   ]
+  },
+  {
+   "id": "B088",
+   "subprocess": "accommodation_details",
+   "name": "Decide whether all information needed for the AC update is available",
+   "description": "Staff decide whether all details are available, sharing information is missing (Living Arrangements question set), more information is needed (Q164 path), or earlier information was incorrect.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B087"
+   ]
+  },
+  {
+   "id": "B089",
+   "subprocess": "change",
+   "name": "Check whether a correction came with rent verification documents",
+   "description": "When the customer says earlier information was wrong, staff check whether the advice came with verification (e.g. a manually changed rent certificate), which is then processed as proof of rent.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B088"
+   ]
+  },
+  {
+   "id": "B090",
+   "subprocess": "change",
+   "name": "Correct the wrong fields on the Accommodation History (ACS) line",
+   "description": "Staff select the incorrect ACS line, correct only the wrong fields (Event Date only if wrong, deleting the unneeded entry) and use the date corrected details were received as the date of receipt.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B089"
+   ]
+  },
+  {
+   "id": "B091",
+   "subprocess": "eligibility",
+   "name": "Check whether the customer is DSP under 21, ABSTUDY under 22 or a YA student/job seeker",
+   "description": "Specific action is needed for these customers because the rate of their income support payment may need review.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B088",
+    "B090",
+    "B037",
+    "B046"
+   ]
+  },
+  {
+   "id": "B092",
+   "subprocess": "eligibility",
+   "name": "Trained officer reviews independence or away-from-home rate",
+   "description": "Because RA will not pay with a dependent or at-home rate, an officer trained in independence and away-from-home decisions completes the relevant YA, DSP or ABSTUDY review.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B091"
+   ]
+  },
+  {
+   "id": "B093",
+   "subprocess": "other",
+   "name": "Transfer a phone customer to the relevant payment queue",
+   "description": "An officer not trained in these decisions transfers a customer advising the change by phone to the relevant payment queue.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B091"
+   ]
+  },
+  {
+   "id": "B094",
+   "subprocess": "other",
+   "name": "Capability-adjust the work item to hand off for a rate review",
+   "description": "An untrained officer unassigns the work item with reason Capability adjusted and adds the YA, ABSTUDY or DSP skill tag so a trained officer assesses it.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B091"
+   ]
+  },
+  {
+   "id": "B095",
+   "subprocess": "accommodation_details",
+   "name": "Determine the address type for the update",
+   "description": "Staff decide whether the customer temporarily vacated the principal home, is a student returning home, moved to a new principal home (RAA location or not), is only changing accommodation details, or is homeless.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B091",
+    "B092"
+   ]
+  },
+  {
+   "id": "B096",
+   "subprocess": "accommodation_details",
+   "name": "Update the Address Type field with Home - HOM",
+   "description": "For a move to a new principal home without RAA, or a homeless customer not paying rent, staff code Address Type HOM.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B095"
+   ]
+  },
+  {
+   "id": "B097",
+   "subprocess": "eligibility",
+   "name": "Assess a student's continuing independent/AFH eligibility on return to the parental home",
+   "description": "For independent or away-from-home-rate YA and ABSTUDY students returning home in a break, staff assess continuing eligibility and code changes before returning to the AC update.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B095"
+   ]
+  },
+  {
+   "id": "B098",
+   "subprocess": "eligibility",
+   "name": "Check whether RA can be paid for the temporary address",
+   "description": "Staff check the customer can receive RA for the temporary address, as RA can be paid for only one address (an MS update may be needed if a couple lives apart temporarily).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B095"
+   ]
+  },
+  {
+   "id": "B099",
+   "subprocess": "accommodation_details",
+   "name": "Check Remote Area Allowance eligibility for the address and code HOM",
+   "description": "If the customer is eligible for RAA at the address staff always record Address Type HOM, because RAA will not pay for other address types; otherwise TER (student) or TEM.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B095",
+    "B097",
+    "B098"
+   ]
+  },
+  {
+   "id": "B100",
+   "subprocess": "accommodation_details",
+   "name": "Record Term/Semester address type (TER)",
+   "description": "For students moving to study where RAA is not payable, staff record Address Type TER.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B095",
+    "B097",
+    "B099"
+   ]
+  },
+  {
+   "id": "B101",
+   "subprocess": "accommodation_details",
+   "name": "Record Temporary address type (TEM)",
+   "description": "Where the customer is eligible for RA at the temporary address (and not RAA eligible there), staff code Address Type TEM.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B098",
+    "B099"
+   ]
+  },
+  {
+   "id": "B102",
+   "subprocess": "accommodation_details",
+   "name": "Determine the date of event (DOV) for a change",
+   "description": "For non-new-claim customers the DOV is the date of change: the later of the start of rent liability or the date the customer moved in.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B095",
+    "B096",
+    "B100",
+    "B101",
+    "B099"
+   ]
+  },
+  {
+   "id": "B103",
+   "subprocess": "accommodation_details",
+   "name": "Record matching AC entries for AD changes and each change date",
+   "description": "Where the AD screen changes there must be an AC entry with the same date of event, and a separate AC entry is made for each date on which accommodation details changed.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B102"
+   ]
+  },
+  {
+   "id": "B104",
+   "subprocess": "accommodation_details",
+   "name": "Code the DOV as the start of the prior financial year for late FTB verification",
+   "description": "When RA is paid with FTB and the change is verified late, the DOV may be coded as the start of the financial year before the year of verification.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B102"
+   ]
+  },
+  {
+   "id": "B105",
+   "subprocess": "accommodation_details",
+   "name": "Determine the DOV for a new claim",
+   "description": "For new claims staff review the DOV scenarios and claim-type processing information (grant/reject date, other RA-attracting assistance, early claim or backdating) to set the DOV.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B095",
+    "B096",
+    "B100",
+    "B101",
+    "B099"
+   ]
+  },
+  {
+   "id": "B106",
+   "subprocess": "accommodation_details",
+   "name": "Update the Event date field on the AC screen",
+   "description": "Staff record the determined date in the Event date field, deleting any unnecessary Event Date entry from ACS if the date was wrong.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B102",
+    "B103",
+    "B104",
+    "B105"
+   ]
+  },
+  {
+   "id": "B107",
+   "subprocess": "rate",
+   "name": "System calculates the date of effect (DOE) for income support payments",
+   "description": "When RA is paid with an income support payment the system calculates the DOE from the DOV, the date of receipt and the payment's rules.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B106"
+   ]
+  },
+  {
+   "id": "B108",
+   "subprocess": "accommodation_details",
+   "name": "Record who the accommodation details are for (C or B)",
+   "description": "There is one AC screen per couple unless a relationship qualifier code is on MS; staff code Customer (C) or Customer and partner (B) in the Accommodation Details for / Details for field.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B106"
+   ]
+  },
+  {
+   "id": "B109",
+   "subprocess": "accommodation_details",
+   "name": "Check and update the Home Ownership field",
+   "description": "Staff code the customer's ownership of the principal home and route homeowners and non-homeowners (temporary accommodation, LHO, NHH, GFH, GFN, caravan/boat with or without fees, living in own home).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B108"
+   ]
+  },
+  {
+   "id": "B110",
+   "subprocess": "accommodation_details",
+   "name": "Determine and update the Type of Rent field",
+   "description": "Staff determine the type of rent (e.g. PRI, GOV, OHO, BOA, LOD, DEF, SIT, MOO, NRP) and update the Type of Rent field.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B109"
+   ]
+  },
+  {
+   "id": "B111",
+   "subprocess": "accommodation_details",
+   "name": "Record NRP when accommodation is provided in return for work",
+   "description": "If a customer provides services in exchange for free accommodation, it is not rent and staff record No rent paid (NRP) in Type of Rent.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B110"
+   ]
+  },
+  {
+   "id": "B112",
+   "subprocess": "payment",
+   "name": "Cancel the Rent Deduction Scheme government rent deduction when leaving GOV",
+   "description": "If Type of Rent changes from GOV, staff check the PINS screen for an RDS RNT deduction and cancel it with the customer's consent.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B110"
+   ]
+  },
+  {
+   "id": "B113",
+   "subprocess": "accommodation_details",
+   "name": "Determine and update the Sharer Status/Accommodation Status field",
+   "description": "Staff select the sharer status code; customers who share can receive the reduced sharers rate (two-thirds of the single maximum).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B110",
+    "B112",
+    "B111"
+   ]
+  },
+  {
+   "id": "B114",
+   "subprocess": "accommodation_details",
+   "name": "Leave remaining fields blank for NRP or GOV type of rent",
+   "description": "If Type of Rent is NRP or GOV the remaining rent fields are left blank because there is no RA entitlement.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B113"
+   ]
+  },
+  {
+   "id": "B115",
+   "subprocess": "accommodation_details",
+   "name": "Decide whether household rent and frequency fields are needed for the type of rent",
+   "description": "The Total/Gross Household Rent and Frequency fields may be needed only for BOA, DEF, LOD, MOO, OHO, PRI or SIT.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B114"
+   ]
+  },
+  {
+   "id": "B116",
+   "subprocess": "accommodation_details",
+   "name": "Calculate rent paid for a customer operating a business from home",
+   "description": "If the customer claims part of the rent as a business expense, staff calculate the rent paid under Operating the business from home.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B115"
+   ]
+  },
+  {
+   "id": "B117",
+   "subprocess": "accommodation_details",
+   "name": "Complete Total/Gross Household Rent and Frequency fields",
+   "description": "Where sharer status is EXE, REC, SHR or LWP staff complete household rent and frequency (for EXE, and LWP where parents own the home, the same amount goes in Net Rent).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B115",
+    "B116"
+   ]
+  },
+  {
+   "id": "B118",
+   "subprocess": "eligibility",
+   "name": "Check Defence Force Housing net rent against the qualification rules",
+   "description": "For a Defence Force Housing customer, staff review the qualification rules so the correct Net Rent amount is recorded.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B115",
+    "B117"
+   ]
+  },
+  {
+   "id": "B119",
+   "subprocess": "accommodation_details",
+   "name": "Enter the Net Rent amount and frequency",
+   "description": "For customers not paying board or lodgings staff enter the amount paid in Net Rent (combined total for site/mooring plus hire) and the frequency in Freq.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B115",
+    "B117",
+    "B118"
+   ]
+  },
+  {
+   "id": "B120",
+   "subprocess": "accommodation_details",
+   "name": "Record the lodgings or full board and lodgings amount in Net Rent",
+   "description": "For LOD staff record the lodging amount (including conditional service fees); for BOA they record the full board and lodgings amount; plus the frequency.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B115",
+    "B117"
+   ]
+  },
+  {
+   "id": "B121",
+   "subprocess": "rate",
+   "name": "System applies the two-thirds rule to the board and lodgings amount",
+   "description": "The system automatically treats two-thirds of the recorded board and lodgings amount as rent.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B120"
+   ]
+  },
+  {
+   "id": "B122",
+   "subprocess": "verification",
+   "name": "Set the verification code after corrected information",
+   "description": "For corrections staff select VED where reduced verification now applies, determine a new code for exempt accommodation, a newly required SU523HD or an NCL line, or otherwise keep COA, RVR or RVE.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B117",
+    "B119",
+    "B118",
+    "B120"
+   ]
+  },
+  {
+   "id": "B123",
+   "subprocess": "verification",
+   "name": "Code the Rent Verification field with a verification-required or -received option",
+   "description": "Staff code the correct verification-required option (no verification yet for a change or new claim) or verification-received option, using Determining proof of rent.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B122"
+   ]
+  },
+  {
+   "id": "B124",
+   "subprocess": "accommodation_details",
+   "name": "Code the Gov Sub-tenant field for a primary government tenant at a temporary address",
+   "description": "For a primary government tenant assessed for RA at a temporary address, staff code PMR if government rent is deducted (preventing an unnecessary review) or NAP otherwise.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B123"
+   ]
+  },
+  {
+   "id": "B125",
+   "subprocess": "eligibility",
+   "name": "Determine whether the customer is a government sub-tenant (otherwise code NAP)",
+   "description": "A government sub-tenant shares SHA accommodation with the primary tenant and is not named on the lease; otherwise staff code NAP.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B124",
+    "B123"
+   ]
+  },
+  {
+   "id": "B126",
+   "subprocess": "eligibility",
+   "name": "Assess government sub-tenant eligibility for RA",
+   "description": "Sub-tenants may qualify if the primary tenant pays market rent or the SHA took the sub-tenant's income into account; otherwise Type of Rent must be GOV.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B125"
+   ]
+  },
+  {
+   "id": "B127",
+   "subprocess": "eligibility",
+   "name": "Tell the customer to contact the state/territory housing authority",
+   "description": "If sub-tenant status or the rental arrangement cannot be determined, staff tell the customer to contact the housing authority and to contact again once details are available.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B126"
+   ]
+  },
+  {
+   "id": "B128",
+   "subprocess": "accommodation_details",
+   "name": "Code FMR or NGF follow-up in the Gov Sub-tenant field",
+   "description": "Staff code Follow up of circumstances required (FMR) or New Grant follow up (NGF); RA continues for 28 days from finalisation.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B127"
+   ]
+  },
+  {
+   "id": "B129",
+   "subprocess": "eligibility",
+   "name": "Customer obtains sub-tenancy details from the housing authority and recontacts",
+   "description": "The customer contacts the SHA and comes back once details are available; RA (and possible arrears) continues for 28 days meanwhile.",
+   "actor": "customer",
+   "kind": "wait",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B128"
+   ]
+  },
+  {
+   "id": "B130",
+   "subprocess": "verification",
+   "name": "Gov Sub-tenant field auto-updates to not verified at day 28, stopping RA",
+   "description": "If there is no update by day 28 the sub-tenant status automatically changes to not verified, which stops RA.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B129"
+   ]
+  },
+  {
+   "id": "B131",
+   "subprocess": "accommodation_details",
+   "name": "Code PMR or NMR for a qualifying government sub-tenant",
+   "description": "For a qualifying sub-tenant who can give the rental details, staff code PMR (primary tenant pays market rent) or NMR (SHA has adjusted the rent for the sub-tenant).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B126",
+    "B129"
+   ]
+  },
+  {
+   "id": "B132",
+   "subprocess": "accommodation_details",
+   "name": "Determine whether the customer vacated a principal home they still own",
+   "description": "Staff check whether the customer left or sold a principal home they own and is claiming an asset exemption (care, caring, aged care, sale, travel, training, child schooling, uninhabitable, crisis, FDV refuge).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B109",
+    "B114",
+    "B124",
+    "B125",
+    "B126",
+    "B128",
+    "B131"
+   ]
+  },
+  {
+   "id": "B133",
+   "subprocess": "accommodation_details",
+   "name": "Code INH and date of admission for government funded aged care",
+   "description": "For GFH homeowners where the reason and date are needed (single, or neither partner living in the home), staff code Reason Home Vacated INH and the admission date (2-year exempt asset).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B132"
+   ]
+  },
+  {
+   "id": "B134",
+   "subprocess": "accommodation_details",
+   "name": "Code Reason Home Vacated and Date Home Vacated",
+   "description": "Staff select the reason code (INH, ONH, CRR, SAL, OTH, UNH) and date according to why the customer vacated the principal home.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B132"
+   ]
+  },
+  {
+   "id": "B135",
+   "subprocess": "accommodation_details",
+   "name": "Leave RA Savings Provision blank and remove saved rate codes",
+   "description": "There are no current RA savings provisions; staff leave the field blank and remove any saved rate code (overstriking it if it reappears).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B132",
+    "B134"
+   ]
+  },
+  {
+   "id": "B136",
+   "subprocess": "accommodation_details",
+   "name": "Bypass the Landlord Details screen",
+   "description": "The Landlord Details screen is not required; when it presents in the workflow staff select Continue.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B135"
+   ]
+  },
+  {
+   "id": "B137",
+   "subprocess": "other",
+   "name": "Complete the Living Arrangements question set where required",
+   "description": "If a single customer now lives with a non-family person aged 16 or older or has changed who they share with, staff complete the question set to check for a possible couple relationship and DOC any form issued.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B136"
+   ]
+  },
+  {
+   "id": "B138",
+   "subprocess": "verification",
+   "name": "Check RA status for a corrected-information update",
+   "description": "For corrections staff check whether RVR is already on the line (a new certificate issues automatically), RA is still paid, RA stopped through NVE, or RA was not paid.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B136",
+    "B137"
+   ]
+  },
+  {
+   "id": "B139",
+   "subprocess": "verification",
+   "name": "Delete the NVE line or duplicate updates and recode NVE to RVR",
+   "description": "Where RA stopped (NVE), staff select the NVE line in the same activity; they delete it if verification is no longer required, otherwise duplicate the updates and change NVE to RVR, which issues a rent certificate.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B138"
+   ]
+  },
+  {
+   "id": "B140",
+   "subprocess": "verification",
+   "name": "Check the COVID-19 rent verification waiver period",
+   "description": "For customer and partner, staff check whether the claim or update was received in the COVID-19 waiver period (before 25 September 2020), routing exceptions (no rent, below threshold, government rent, exempt accommodation).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B123",
+    "B019",
+    "B032"
+   ]
+  },
+  {
+   "id": "B141",
+   "subprocess": "verification",
+   "name": "Code VED under the COVID-19 waiver",
+   "description": "Where the waiver applies and no exception applies, written verification is not needed, the code is VED and RA can be paid.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B140"
+   ]
+  },
+  {
+   "id": "B142",
+   "subprocess": "review",
+   "name": "Check whether the contact concerns an RA Profile review or Location Intervention (SU657)",
+   "description": "RA Profile review and Accommodation Certificate (SU657) forms are actioned only by the Rent Review Processing team or the Location Intervention Compliance team.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B140"
+   ]
+  },
+  {
+   "id": "B143",
+   "subprocess": "review",
+   "name": "Refer an RA Profile review contact to the specialist team",
+   "description": "Staff outside those teams refer the contact using Rent Assistance (RA) Profile reviews and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B142"
+   ]
+  },
+  {
+   "id": "B144",
+   "subprocess": "verification",
+   "name": "System creates a customer task to upload the formal rental agreement",
+   "description": "When a customer updates accommodation online and says they have a formal rental agreement in their name, a task is created for them to upload it.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B003"
+   ]
+  },
+  {
+   "id": "B145",
+   "subprocess": "verification",
+   "name": "Online service sets rent verification code UPL or RVL on ACS",
+   "description": "The rent verification code determined by the online service (UPL: RA paying, verification to be uploaded; RVL: upload rent verification required) auto-populates on the ACS screen.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B003",
+    "B144"
+   ]
+  },
+  {
+   "id": "B146",
+   "subprocess": "verification",
+   "name": "Find the rent verification code set by the online service (UPL/RVL)",
+   "description": "Staff view the online update DOC in Customer First or the Change of Circumstance Note in Process Direct to see whether UPL or RVL was applied.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B142",
+    "B004",
+    "B145"
+   ]
+  },
+  {
+   "id": "B147",
+   "subprocess": "verification",
+   "name": "Confirm the UPL/RVL code is correct when finalising an online update",
+   "description": "Staff should not change UPL or RVL unless it is incorrect for the customer's circumstances.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B146"
+   ]
+  },
+  {
+   "id": "B148",
+   "subprocess": "eligibility",
+   "name": "Check whether the customer pays rent",
+   "description": "If no rent is paid verification is not needed, the Rent Verification field is left blank and RA will not pay; customers able to update online do so.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B142",
+    "B146",
+    "B147"
+   ]
+  },
+  {
+   "id": "B149",
+   "subprocess": "eligibility",
+   "name": "Check rent paid is above the applicable rent threshold",
+   "description": "If rent is not above the threshold the customer is not entitled to RA and verification is not needed; exempt and retirement village cases are routed on, otherwise COA is applied.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B148",
+    "B140"
+   ]
+  },
+  {
+   "id": "B150",
+   "subprocess": "verification",
+   "name": "Apply COA verification code for below-threshold claims and changes",
+   "description": "For new claims and change-in-circumstance updates below the threshold, staff apply verification code COA.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B149"
+   ]
+  },
+  {
+   "id": "B151",
+   "subprocess": "eligibility",
+   "name": "Check the customer's entitlement to RA using information and supporting documents",
+   "description": "Staff assess eligibility for RA from the information the customer provided and supporting documents such as the lease.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B149"
+   ]
+  },
+  {
+   "id": "B152",
+   "subprocess": "verification",
+   "name": "Code RVR and DOC on the child's record for parental rent in ABSTUDY/YA/AIC claims",
+   "description": "Where MOD JY shows the parents pay rent, staff record RVR (RA will not pay; an SU523HD issues) and DOC on the dependent child's record that rent verification was requested.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B151",
+    "B021"
+   ]
+  },
+  {
+   "id": "B153",
+   "subprocess": "verification",
+   "name": "Decide the verification code from likely near-future RA eligibility",
+   "description": "If the customer will not become eligible soon the code is NVE and no SU523HD issues; if eligibility is likely soon (e.g. reconciliation, independence, AFH rate, age), verification is required.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B151"
+   ]
+  },
+  {
+   "id": "B154",
+   "subprocess": "verification",
+   "name": "Encourage the customer to provide verification and code RVR",
+   "description": "For customers likely to become eligible soon, staff encourage them to provide verification and code RVR (RA will not pay; an SU523HD issues).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B153"
+   ]
+  },
+  {
+   "id": "B155",
+   "subprocess": "verification",
+   "name": "Check whether rent is paid to a state/territory housing authority",
+   "description": "Primary tenants and ineligible sub-tenants paying government rent need no verification (field left blank); eligible sub-tenants continue to verification.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B151",
+    "B140"
+   ]
+  },
+  {
+   "id": "B156",
+   "subprocess": "verification",
+   "name": "Community housing organisation verifies rent electronically (EVoR)",
+   "description": "Some community housing organisations use the Electronic Verification of Rent service to verify rent automatically, giving code VEE (or an exemption code).",
+   "actor": "landlord_or_agent",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": []
+  },
+  {
+   "id": "B157",
+   "subprocess": "verification",
+   "name": "Check whether EVoR verified the rent (VEE) and AC details are correct",
+   "description": "Staff check (AMR on ES or HAL screens, source AUTO, keyword EVoR) whether rent was verified electronically; if so VEE is not changed and RA can be paid.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B155",
+    "B156"
+   ]
+  },
+  {
+   "id": "B158",
+   "subprocess": "verification",
+   "name": "Check for a claim/transfer with unchanged, previously verified accommodation",
+   "description": "Staff check whether a new claim or payment transfer is processed with no AC change, accommodation previously verified, and RA previously or currently received.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B157"
+   ]
+  },
+  {
+   "id": "B159",
+   "subprocess": "verification",
+   "name": "Check whether accommodation was verified within 12 months of the claim/transfer",
+   "description": "Re-verification is not needed; if the last verification is older than 12 months the code is VED.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B158"
+   ]
+  },
+  {
+   "id": "B160",
+   "subprocess": "verification",
+   "name": "Restore the verification code after LNK/ULK or delete the NCL line",
+   "description": "Where verified within 12 months, staff restore the pre-LNK/ULK code (UPL to COA, RVL to NVE, VEE to VED) or delete an NCL line created by the new claim process.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B159"
+   ]
+  },
+  {
+   "id": "B161",
+   "subprocess": "verification",
+   "name": "Code EXR or EXC for non-boarding style exempt accommodation",
+   "description": "Customers in refuge/crisis accommodation (EXR) or eligible in a non-Commonwealth care facility (EXC) need no verification; Sharer Status must be EXE.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B158",
+    "B149",
+    "B140"
+   ]
+  },
+  {
+   "id": "B162",
+   "subprocess": "verification",
+   "name": "Code EXB for boarding style exempt accommodation",
+   "description": "Customers in boarding style exempt accommodation (including approved ABSTUDY boarders) need no verification; code EXB with Sharer Status XSH.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B161",
+    "B149",
+    "B153",
+    "B140"
+   ]
+  },
+  {
+   "id": "B163",
+   "subprocess": "verification",
+   "name": "Code EXV for a retirement village non-homeowner",
+   "description": "Customers in a retirement village who are non-homeowners because of the entry contribution need no verification; code EXV.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B162",
+    "B149"
+   ]
+  },
+  {
+   "id": "B164",
+   "subprocess": "verification",
+   "name": "Explain the exemption may end if the customer moves",
+   "description": "For exempt customers staff explain they may lose the exemption from rent verification if they move to another type of accommodation.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B161",
+    "B162",
+    "B163"
+   ]
+  },
+  {
+   "id": "B165",
+   "subprocess": "verification",
+   "name": "Check reduced verification for RA and code VED",
+   "description": "If the customer meets the reduced verification rules, verification is not needed and the code is VED.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B163"
+   ]
+  },
+  {
+   "id": "B166",
+   "subprocess": "verification",
+   "name": "Tell the customer the verification options and DOC why reduced verification is not met",
+   "description": "When verification is needed staff tell the customer the options and DOC the reason; available verification is processed, otherwise the field is coded under Verification not provided.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B165"
+   ]
+  },
+  {
+   "id": "B167",
+   "subprocess": "verification",
+   "name": "Tell the customer verification is not needed and complete the scanned image",
+   "description": "If verification is not needed staff tell a present or phoning customer, ask them to report changes, and complete any scanned verification that was not needed.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B141",
+    "B148",
+    "B150",
+    "B153",
+    "B155",
+    "B157",
+    "B159",
+    "B160",
+    "B164",
+    "B165"
+   ]
+  },
+  {
+   "id": "B168",
+   "subprocess": "verification",
+   "name": "Check for financial hardship or emergency/natural disaster",
+   "description": "When verification is not provided staff first check for hardship or emergency, then route by claim type (new FTB, new DSP, other new ISP/ABSTUDY, other customers).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B166"
+   ]
+  },
+  {
+   "id": "B169",
+   "subprocess": "verification",
+   "name": "Assess whether financial hardship rent verification provisions apply",
+   "description": "Hardship provisions can extend the verification due date or restart RA cancelled NVE (e.g. landlord refuses to sign) for customers coded COA or NCL, or affected by emergencies.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B168"
+   ]
+  },
+  {
+   "id": "B170",
+   "subprocess": "verification",
+   "name": "Check whether the customer still receives RA (not NVE)",
+   "description": "Staff check the Rent Verification field; NVE means RA has stopped.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B169"
+   ]
+  },
+  {
+   "id": "B171",
+   "subprocess": "verification",
+   "name": "Create a new activity with the contact date and code HAR",
+   "description": "If RA is still paid, staff create a new activity with the contact date as Date of Event and code HAR (Hardship-28 days to verify).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B170"
+   ]
+  },
+  {
+   "id": "B172",
+   "subprocess": "verification",
+   "name": "Restore RA by selecting the NVE line and coding HAR",
+   "description": "If RA has stopped, staff select the NVE line, update it to HAR and pay arrears (using ROA if needed).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B170"
+   ]
+  },
+  {
+   "id": "B173",
+   "subprocess": "verification",
+   "name": "Code verification for a new FTB claim",
+   "description": "For FTB claimants getting RA with an ISP who notify a change or have outstanding verification, staff code COA/NCL (pre-birth or rejected claims, DOC reason) or route post-birth grants; otherwise RVR (RA not paid).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B168"
+   ]
+  },
+  {
+   "id": "B174",
+   "subprocess": "verification",
+   "name": "Code NCL for a new ISP or ABSTUDY claim",
+   "description": "If RA will be paid with the ISP or ABSTUDY rather than FTB, staff code NCL within the provisional new claim activity; RA continues for 28 days.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B168"
+   ]
+  },
+  {
+   "id": "B175",
+   "subprocess": "verification",
+   "name": "Route a DSP claim by its streaming SAD status",
+   "description": "For DSP claims where RA is not paid with FTB, staff route by whether ACS was updated in a Selective Application of Data at streaming, the claim is being finalised, or only streamed.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B168"
+   ]
+  },
+  {
+   "id": "B176",
+   "subprocess": "verification",
+   "name": "Code verification for a DSP claim being granted, rejected or streamed",
+   "description": "Granted: NCL with SU523HD and arrears from claim start; rejected: no AC update, or recode NVE/NCL depending on rent changes and ACS age; SAD at streaming: COA without SU523HD.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B175"
+   ]
+  },
+  {
+   "id": "B177",
+   "subprocess": "verification",
+   "name": "Finalise a DSP claim after SAD: delete the automatic NVE line and recode COA to NCL",
+   "description": "For customers not on ISP/FTB at SAD, staff delete any NVE line auto-applied 28 days after COA and, when granting, change the original COA entry to NCL from the date of claim.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B175"
+   ]
+  },
+  {
+   "id": "B178",
+   "subprocess": "verification",
+   "name": "Determine which payment RA is paid with and code COA for ISP/ABSTUDY",
+   "description": "For other customers staff determine whether RA pays with FTB or ISP/ABSTUDY; for ISP/ABSTUDY the code is COA even if the last verification was COA.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B168"
+   ]
+  },
+  {
+   "id": "B179",
+   "subprocess": "verification",
+   "name": "Use RVR where fraud is suspected and record the decision in a DOC",
+   "description": "If there is reason to suspect fraud, staff can code RVR (instead of UPL or COA) for ISP customers and must record the decision in a DOC.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B147",
+    "B178"
+   ]
+  },
+  {
+   "id": "B180",
+   "subprocess": "verification",
+   "name": "Code COA or RVR when RA is paid with FTB",
+   "description": "If the change was notified within 14 days the code is COA (RA continues 28 days); if notified later, or RA is not paid with FTB, the code is RVR (RA not paid).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B173",
+    "B174",
+    "B175",
+    "B178"
+   ]
+  },
+  {
+   "id": "B181",
+   "subprocess": "verification",
+   "name": "Manually issue a rent certificate when the coded line is not the most recent DOV",
+   "description": "A rent certificate issues automatically only for the most recent DOV; otherwise staff issue it manually and do not delete later DOV entries unless wrong.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B173",
+    "B180"
+   ]
+  },
+  {
+   "id": "B182",
+   "subprocess": "verification",
+   "name": "System automatically creates and issues a Rent Certificate (SU523HD)",
+   "description": "When a verification-required code (COA, NCL, HAR or RVR) is applied on the most recent DOV, an SU523HD is automatically created and issued.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B123",
+    "B138",
+    "B139",
+    "B152",
+    "B154",
+    "B179",
+    "B171",
+    "B172",
+    "B173",
+    "B176",
+    "B178",
+    "B180",
+    "B006",
+    "B214",
+    "B224",
+    "B225"
+   ]
+  },
+  {
+   "id": "B183",
+   "subprocess": "payment",
+   "name": "RA continues for 28 days from finalisation while verification is awaited",
+   "description": "With COA, NCL or HAR coding, RA (and any arrears) continues to be paid for 28 days from the date the activity is finalised.",
+   "actor": "system_automatic",
+   "kind": "wait",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B182",
+    "B174"
+   ]
+  },
+  {
+   "id": "B184",
+   "subprocess": "verification",
+   "name": "Tell the customer to provide verification of accommodation type and rent",
+   "description": "Staff tell the customer what to provide and how to return it (online upload, reply paid envelope, or a service centre).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B171",
+    "B172",
+    "B173",
+    "B181",
+    "B174",
+    "B176",
+    "B177",
+    "B178",
+    "B180"
+   ]
+  },
+  {
+   "id": "B185",
+   "subprocess": "verification",
+   "name": "Consider providing a Renting Declaration (SU336M)",
+   "description": "If the customer has trouble contacting the landlord, the landlord refused to sign, or they travel and move regularly, staff consider providing an SU336M (not available online).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B184"
+   ]
+  },
+  {
+   "id": "B186",
+   "subprocess": "verification",
+   "name": "Issue the SU336M via the Mail Forms (MAIL) screen or a printed form",
+   "description": "Staff issue the SU336M from the MAIL screen in Process Direct (search SU336) or print it and send it to the customer.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B185",
+    "B203",
+    "B210",
+    "B215"
+   ]
+  },
+  {
+   "id": "B187",
+   "subprocess": "verification",
+   "name": "Customer approaches the landlord or agent to sign the Rent Certificate",
+   "description": "Customers are expected to approach their landlord or agent first to sign the SU523HD.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B182",
+    "B184",
+    "B181",
+    "B033",
+    "B212",
+    "B219",
+    "B204"
+   ]
+  },
+  {
+   "id": "B188",
+   "subprocess": "verification",
+   "name": "Landlord or person receiving rent signs the SU523HD",
+   "description": "The landlord or the person who receives the rent signs the SU523HD declaration, unless a current formal rental agreement is attached.",
+   "actor": "landlord_or_agent",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B187"
+   ]
+  },
+  {
+   "id": "B189",
+   "subprocess": "verification",
+   "name": "Customer signs the SU523HD",
+   "description": "The customer signs the Rent Certificate (electronic or digital signatures are accepted).",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B187"
+   ]
+  },
+  {
+   "id": "B190",
+   "subprocess": "verification",
+   "name": "State Housing Authority completes an advice of rent paid form",
+   "description": "As an alternative to the landlord honesty declaration on the SU523HD, the customer can include an advice of rent paid form completed by the SHA.",
+   "actor": "landlord_or_agent",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B187"
+   ]
+  },
+  {
+   "id": "B191",
+   "subprocess": "verification",
+   "name": "Customer views, prints or saves the SU523HD online",
+   "description": "Customers registered online can view, print and save their SU523HDs for up to 19 weeks from Request a document in their Centrelink online account.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B182"
+   ]
+  },
+  {
+   "id": "B192",
+   "subprocess": "verification",
+   "name": "Customer returns verification documents",
+   "description": "The customer supplies verification by Upload documents online, fax, in person or by mail (reply paid envelope).",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B188",
+    "B189",
+    "B190",
+    "B191",
+    "B186",
+    "B199",
+    "B222",
+    "B312"
+   ]
+  },
+  {
+   "id": "B193",
+   "subprocess": "verification",
+   "name": "System stops RA and codes NVE if verification is not provided within 28 days",
+   "description": "If verification is not provided within 28 days RA stops and the system automatically updates the AC verification code to Not Verified (NVE).",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B183"
+   ]
+  },
+  {
+   "id": "B194",
+   "subprocess": "verification",
+   "name": "RA coded UPL automatically stops (NVE) at day 29 without an ACS update",
+   "description": "If no ACS update is coded in the original review timeframe, RA paying under UPL automatically stops with NVE at day 29.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B145",
+    "B147"
+   ]
+  },
+  {
+   "id": "B195",
+   "subprocess": "verification",
+   "name": "Verification document is scanned and assigned to a processing Service Officer",
+   "description": "A lodged verification document is scanned and assigned to a processing Service Officer.",
+   "actor": "unclear",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B192"
+   ]
+  },
+  {
+   "id": "B196",
+   "subprocess": "verification",
+   "name": "Check for an RA profile review, review of decision or CAO assessment and refer if present",
+   "description": "Staff check whether an RA profile review, review of an RA decision or outstanding CAO assessment affecting RA is on file and, if so, refer the work item to the correct team.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B195"
+   ]
+  },
+  {
+   "id": "B197",
+   "subprocess": "verification",
+   "name": "Scan the document or record a verification Fast Note at a service centre",
+   "description": "When verification is handed in at a service centre staff scan it (closed DOC with reason) or use the Rent Assistance Verification Fast Note if it will not be scanned.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B192"
+   ]
+  },
+  {
+   "id": "B198",
+   "subprocess": "verification",
+   "name": "Check whether the customer operates a business from home (REBS/EANS)",
+   "description": "Staff check the REBS and EANS screens to see whether the customer runs a business from home and whether the lease is in their name or the business name.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B196",
+    "B197"
+   ]
+  },
+  {
+   "id": "B199",
+   "subprocess": "verification",
+   "name": "Customer provides business financials",
+   "description": "Verification for a home business must include business financials (tax return or profit and loss statement) and, for a business-name lease, the business rental agreement.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B198",
+    "B200"
+   ]
+  },
+  {
+   "id": "B200",
+   "subprocess": "verification",
+   "name": "Request business financials or required documents",
+   "description": "If the business documents are not available staff request them, and verification cannot be finalised.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B198"
+   ]
+  },
+  {
+   "id": "B201",
+   "subprocess": "rate",
+   "name": "Calculate RA rent for a business with the lease in the customer's name",
+   "description": "Staff take the total rent paid and subtract the amount claimed as a business tax deduction; the balance is entered on the AC screen.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B198",
+    "B199"
+   ]
+  },
+  {
+   "id": "B202",
+   "subprocess": "rate",
+   "name": "Calculate RA rent for a lease in the business name",
+   "description": "Staff identify the amount the customer pays the business as rent (generally business income) and enter it on the AC screen.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B198",
+    "B199"
+   ]
+  },
+  {
+   "id": "B203",
+   "subprocess": "verification",
+   "name": "Check the correct verification form for a business-name lease",
+   "description": "If only the customer/partner are in the business an SU336M must be provided instead of an SU523HD; with a business partner, an SU523HD signed by the partner in the landlord section is acceptable.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B202"
+   ]
+  },
+  {
+   "id": "B204",
+   "subprocess": "verification",
+   "name": "Re-issue the correct form with a Rent Certificate Re-Issued Fast Note",
+   "description": "Staff re-issue the SU523HD with the Rent Certificate Re-Issued Fast Note explaining why (no verbal contact required), or issue the SU336M with a closed DOC.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B203"
+   ]
+  },
+  {
+   "id": "B205",
+   "subprocess": "verification",
+   "name": "Identify the type of verification provided",
+   "description": "Staff determine whether a formal rental agreement, SU523HD, SU336M, COVID-19 waiver, or an obsolete/unacceptable document was provided.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B198",
+    "B201",
+    "B202",
+    "B203"
+   ]
+  },
+  {
+   "id": "B206",
+   "subprocess": "verification",
+   "name": "Assess whether the formal rental agreement is acceptable",
+   "description": "The agreement must name the tenant (customer or partner), the premises, landlord/agent contact details and the rent, and must support the notified change; signatures are not needed.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B205"
+   ]
+  },
+  {
+   "id": "B207",
+   "subprocess": "verification",
+   "name": "Assess whether the SU523HD is acceptable",
+   "description": "Accept when the correct pages for the version are provided, the customer (or nominee/POA) has signed, and it has an acceptable lease or at least a signed landlord/representative declaration.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B205",
+    "B206"
+   ]
+  },
+  {
+   "id": "B208",
+   "subprocess": "verification",
+   "name": "Assess whether the SU336M is acceptable with evidence of rent",
+   "description": "Accept when the customer cannot get the SU523HD signed, cannot approach the landlord or travels, the form is complete and signed, and evidence of rent (receipts, deposits, statements, Centrepay) is included.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B205"
+   ]
+  },
+  {
+   "id": "B209",
+   "subprocess": "verification",
+   "name": "DOC the reasons when an SU336M is accepted without evidence",
+   "description": "If the SU336M is accepted without evidence of rent (e.g. lost receipts while travelling, landlord unavailable), staff record the reasons in the DOC.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B208"
+   ]
+  },
+  {
+   "id": "B210",
+   "subprocess": "verification",
+   "name": "Contact the customer to request evidence for an unacceptable SU336M",
+   "description": "If the SU336M lacks evidence staff make genuine attempts to contact the customer; if unresolved they send another SU336M, DOC why verification is not acceptable and complete the scanned image.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B208"
+   ]
+  },
+  {
+   "id": "B211",
+   "subprocess": "verification",
+   "name": "Decide whether rent can be verified by the formal rental agreement alone",
+   "description": "A lease alone is accepted for new claims with accommodation questions, online updates coded UPL/RVL with the customer named on the lease, or other updates with enough information to apply the sharer and net rent rules.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B206"
+   ]
+  },
+  {
+   "id": "B212",
+   "subprocess": "verification",
+   "name": "Contact the customer, update AC and issue an SU523HD when the lease alone is insufficient",
+   "description": "Staff contact the customer to say an SU523HD is needed, update AC with new information, issue the SU523HD, record a Rent Certificate Re-Issued Fast Note and complete scanned images.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B211"
+   ]
+  },
+  {
+   "id": "B213",
+   "subprocess": "verification",
+   "name": "Check acceptable verification for potential fraud",
+   "description": "Staff check the documents support the update and look for fraud indicators such as handwriting/signature concerns or a lease with multiple tenants when the customer says they do not share.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B205",
+    "B207",
+    "B208",
+    "B209",
+    "B211"
+   ]
+  },
+  {
+   "id": "B214",
+   "subprocess": "verification",
+   "name": "Code RVR on the AC screen when fraud is suspected",
+   "description": "RA must not be paid until acceptable verification arrives: staff set Event Date to the processing date (or select the NVE line), code RVR so an SU523HD issues, DOC the decision and complete the activity.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B213"
+   ]
+  },
+  {
+   "id": "B215",
+   "subprocess": "verification",
+   "name": "Contact the customer when rent cannot be verified",
+   "description": "For unacceptable or unusable documents staff make genuine attempts to contact the customer, update new details and explain why verification failed and what to upload (considering an SU336M).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B205",
+    "B206",
+    "B207"
+   ]
+  },
+  {
+   "id": "B216",
+   "subprocess": "verification",
+   "name": "Customer immediately uploads an acceptable SU523HD or lease",
+   "description": "During the contact the customer may give the information verbally and/or immediately upload an acceptable SU523HD or formal rental agreement.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B215"
+   ]
+  },
+  {
+   "id": "B217",
+   "subprocess": "verification",
+   "name": "Place the work item on hold for one day pending upload",
+   "description": "If the customer cannot upload straight away staff hold the work item for one day, record a closed DOC of the discussion and outstanding documents, and complete the scanned image.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B215"
+   ]
+  },
+  {
+   "id": "B218",
+   "subprocess": "verification",
+   "name": "Check for manual changes on the SU523HD",
+   "description": "Staff check whether the accepted SU523HD has manual changes and route by whether RA is still being paid.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B213",
+    "B216"
+   ]
+  },
+  {
+   "id": "B219",
+   "subprocess": "verification",
+   "name": "Re-issue the SU523HD with a Fast Note when not previously re-issued",
+   "description": "If no SU523HD has been re-issued for this update, staff update AC, re-issue it if not auto-issued, record the Rent Certificate Re-Issued Fast Note (with contact attempts) and complete the scanned image.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B215"
+   ]
+  },
+  {
+   "id": "B220",
+   "subprocess": "verification",
+   "name": "Issue a Q164 letter when a re-issued SU523HD still cannot verify rent",
+   "description": "Staff issue a Q164 (not another SU523HD), Fast Note what the customer must provide and the failed contact, check the code (RA continues 28 days from COA/NCL/HAR/RVE) and complete the scanned image.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B215",
+    "B219"
+   ]
+  },
+  {
+   "id": "B221",
+   "subprocess": "verification",
+   "name": "Contact the customer to explain why the formal rental agreement is unacceptable",
+   "description": "Staff make genuine attempts to contact the customer to explain why the lease is unacceptable and what is needed to verify.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B206"
+   ]
+  },
+  {
+   "id": "B222",
+   "subprocess": "verification",
+   "name": "Customer re-uploads the formal rental agreement",
+   "description": "The customer can upload the agreement again to fix poor image quality, a wrong document or missing pages.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B221"
+   ]
+  },
+  {
+   "id": "B223",
+   "subprocess": "verification",
+   "name": "Check ACS and apply hardship coding when the lease will be provided again",
+   "description": "If RA is still paying under UPL no update is needed; if UPL has become NVE staff apply HAR from the NVE date of event where hardship applies; RVL needs no change.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B221"
+   ]
+  },
+  {
+   "id": "B224",
+   "subprocess": "verification",
+   "name": "Tell the customer an SU523HD is needed and code RVR or HAR",
+   "description": "Staff tell the customer an SU523HD is needed and code RVR (or HAR if hardship applies) with the DOV set by whether RA is paying or the line is RVL or UPL turned NVE.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B221"
+   ]
+  },
+  {
+   "id": "B225",
+   "subprocess": "verification",
+   "name": "Code RVR and DOC when contact about an unacceptable lease fails",
+   "description": "If contact attempts fail staff code RVR (Event Date the processing date, or from the RVL/NVE DOV), complete the scanned image and DOC why the lease was not acceptable.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B221"
+   ]
+  },
+  {
+   "id": "B226",
+   "subprocess": "verification",
+   "name": "Route processing by RA payment status and purpose of the document",
+   "description": "Staff route to online-update completion, verification processing (RA still paid) or RA verification processing (RA not paid or a new change notified).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B213",
+    "B211",
+    "B216"
+   ]
+  },
+  {
+   "id": "B227",
+   "subprocess": "verification",
+   "name": "Check whether a manual change on the SU523HD increases RA",
+   "description": "If the change does not increase RA the SU523HD is accepted and processing continues by payment status.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B218"
+   ]
+  },
+  {
+   "id": "B228",
+   "subprocess": "verification",
+   "name": "Check for additional verification of the manual change",
+   "description": "Staff check whether a formal rental agreement or the landlord's initials support the manual change.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B227"
+   ]
+  },
+  {
+   "id": "B229",
+   "subprocess": "verification",
+   "name": "Check which payment RA will be assessed with for an unverified manual change",
+   "description": "Staff route by whether RA is paid with ABSTUDY/FTB or with an income support payment.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B228"
+   ]
+  },
+  {
+   "id": "B230",
+   "subprocess": "verification",
+   "name": "ABSTUDY/FTB: update AC on the issuing DOV line and recode NCL to COA/RVR/HAR",
+   "description": "Staff select the DOV line that issued the certificate, update AC keeping the Event Date, change NCL to COA/RVR/HAR, and if RA is not paid update later NVE lines and code RVR.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B229"
+   ]
+  },
+  {
+   "id": "B231",
+   "subprocess": "verification",
+   "name": "ISP: set the Event Date to the date new information was received",
+   "description": "For income support payments staff set Event Date to the date of receipt, update AC, and code COA or HAR if RA is currently paid.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B229"
+   ]
+  },
+  {
+   "id": "B232",
+   "subprocess": "review",
+   "name": "Check whether the SU523HD came within 13 weeks of the RA cancellation notice",
+   "description": "If RA is not paid staff check whether the SU523HD came within 13 weeks of the cancellation notice and before or after RA stopped; otherwise code RVR.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B231"
+   ]
+  },
+  {
+   "id": "B233",
+   "subprocess": "verification",
+   "name": "Code COA/HAR, delete the cancelling NVE/RVR event and use ROA from the date of receipt",
+   "description": "RA can be paid on the new information for up to 28 days: staff code COA or HAR, delete the event that cancelled RA and complete ROA with the date of receipt as start date.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B232"
+   ]
+  },
+  {
+   "id": "B234",
+   "subprocess": "verification",
+   "name": "Code RVR, delete the cancelling event and pay lower-rate arrears via ROA",
+   "description": "New information must be verified before the higher rate is paid: staff code RVR, delete the cancelling NVE/RVR event and, for Social Security Act payments, use ROA from the date the code changed.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B232"
+   ]
+  },
+  {
+   "id": "B235",
+   "subprocess": "verification",
+   "name": "Complete the scanned image; another SU523HD issues for the changed details",
+   "description": "Staff complete the scanned image and finalise via the AC procedure; another SU523HD issues to verify the changed details.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B230",
+    "B231",
+    "B232",
+    "B233",
+    "B234"
+   ]
+  },
+  {
+   "id": "B236",
+   "subprocess": "verification",
+   "name": "Check whether the update is a claim/transfer with changed details",
+   "description": "On the ACS screen staff check whether the verification belongs to a new claim/transfer whose details changed since the previous verification.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B218",
+    "B227",
+    "B228",
+    "B226"
+   ]
+  },
+  {
+   "id": "B237",
+   "subprocess": "verification",
+   "name": "Update the Event Date for a claim/transfer with changed details",
+   "description": "Staff set the Event Date to the date of change (ABSTUDY/FTB) or the date the new information was received (ISP).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B236"
+   ]
+  },
+  {
+   "id": "B238",
+   "subprocess": "verification",
+   "name": "Select the DOV line that issued the Rent Certificate when there are no manual changes",
+   "description": "If the verification is not an SU523HD with manual changes, staff select the COA/HAR/NCL line that issued the certificate and leave the Event Date unchanged.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B236"
+   ]
+  },
+  {
+   "id": "B239",
+   "subprocess": "verification",
+   "name": "Check whether a verified manual change increases RA",
+   "description": "For an SU523HD with manual changes staff check if RA increases and route by payment type.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B238"
+   ]
+  },
+  {
+   "id": "B240",
+   "subprocess": "verification",
+   "name": "ABSTUDY/FTB increase: select the DOV line, update AC and keep the Event Date",
+   "description": "For ABSTUDY/FTB increases staff select the line that issued the certificate, update AC and leave the Event Date unless the verification changed it.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B239"
+   ]
+  },
+  {
+   "id": "B241",
+   "subprocess": "verification",
+   "name": "ISP increase: set the Event Date to the date information was received and update AC",
+   "description": "For ISP increases staff set the Event Date to the date the new information was received and update AC.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B239"
+   ]
+  },
+  {
+   "id": "B242",
+   "subprocess": "verification",
+   "name": "Determine which payment RA will pay with (verification processing)",
+   "description": "Staff determine whether RA pays with ABSTUDY, FTB or an ISP (checking the FTB versus primary payment rules) and open the ACS screen.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B226",
+    "B218",
+    "B227",
+    "B228"
+   ]
+  },
+  {
+   "id": "B243",
+   "subprocess": "accommodation_details",
+   "name": "Update the AC screen for a lease advising a new accommodation change",
+   "description": "When a lease supports or advises a new change in accommodation circumstances, staff update the AC screen with the new information.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B226"
+   ]
+  },
+  {
+   "id": "B244",
+   "subprocess": "verification",
+   "name": "ABSTUDY: select the RVR/NVE or issuing DOV line and keep the Event Date",
+   "description": "For ABSTUDY staff select the RVR/NVE line (updating AC for manual changes) or the line that issued the certificate; RA is assessable from that Event Date.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B242"
+   ]
+  },
+  {
+   "id": "B245",
+   "subprocess": "verification",
+   "name": "FTB: check verification was received within the allowable timeframe",
+   "description": "Staff check verification arrived by 30 June of the change year, 30 June of the lodgement year, the FTB claim extension end date or within 52 weeks of notification; past-period claimants must also claim ongoing FTB.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B242"
+   ]
+  },
+  {
+   "id": "B246",
+   "subprocess": "verification",
+   "name": "FTB late verification: set the Event Date to 1 July of the prior financial year",
+   "description": "If FTB verification was outside those periods, staff set the Event Date to 1 July of the full financial year before verification was received.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B245"
+   ]
+  },
+  {
+   "id": "B247",
+   "subprocess": "verification",
+   "name": "FTB: select the issuing DOV line and update AC for manual changes",
+   "description": "Staff select the line that issued the certificate, keep the Event Date, and update AC if there are manual changes.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B245"
+   ]
+  },
+  {
+   "id": "B248",
+   "subprocess": "review",
+   "name": "ISP: check verification came within 13 weeks of the RA cancellation notice",
+   "description": "For ISP customers whose RA was cancelled, staff check verification was provided within 13 weeks of the notice of decision.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B242"
+   ]
+  },
+  {
+   "id": "B249",
+   "subprocess": "review",
+   "name": "Check whether the customer requested a review within 13 weeks",
+   "description": "Allowing for notice delivery time, a customer who made contact within 13 weeks and provided all documents within the Review Officer's timeframe is deemed to have requested a review.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B248"
+   ]
+  },
+  {
+   "id": "B250",
+   "subprocess": "verification",
+   "name": "Set the Event Date to the date verification was received (no timely review)",
+   "description": "Without a timely review request RA is assessable from the date verification was received, and staff update AC using that date as Event Date.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B249"
+   ]
+  },
+  {
+   "id": "B251",
+   "subprocess": "verification",
+   "name": "ISP: check manual changes and select the RVR/NVE line",
+   "description": "Staff check whether ISP verification has manual changes (increase or decrease) or select the RVR/NVE line with the Event Date unchanged.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B242",
+    "B248",
+    "B249"
+   ]
+  },
+  {
+   "id": "B252",
+   "subprocess": "verification",
+   "name": "ISP increase received before RA stopped: set the Event Date to the date received",
+   "description": "If verification arrived before RA stopped (e.g. a processing delay), staff set the Event Date to the date new information was received and update AC.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B251"
+   ]
+  },
+  {
+   "id": "B253",
+   "subprocess": "verification",
+   "name": "ISP increase received after RA stopped: verify the old line then add a higher-rate line",
+   "description": "Staff code VEC/VEF on the RVR/NVE line (lower rate from that date), then go back to ACS and set the Event Date to the date received for the higher rate.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B251"
+   ]
+  },
+  {
+   "id": "B254",
+   "subprocess": "verification",
+   "name": "Decrease or no change: select the issuing DOV line and update AC",
+   "description": "For a decrease or no change, staff select the COA/HAR/NCL (or RVR/NVE) line that issued the certificate, update AC and keep the Event Date unless the verification changed it (Table 3 Step 7 and Table 4 Step 11).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B239",
+    "B251"
+   ]
+  },
+  {
+   "id": "B255",
+   "subprocess": "verification",
+   "name": "Code the verified option VEC, VED or VEF and the Receipt Date",
+   "description": "Staff code VEC for an SU523HD without a lease, VED for an SU336M or COVID waiver, and VEF for a formal rental agreement (with or without SU523HD), plus the Receipt Date (Table 3 Step 8 and Table 4 Step 12).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B237",
+    "B238",
+    "B240",
+    "B241",
+    "B254",
+    "B243",
+    "B244",
+    "B246",
+    "B247",
+    "B250",
+    "B251",
+    "B252"
+   ]
+  },
+  {
+   "id": "B256",
+   "subprocess": "verification",
+   "name": "Delete unnecessary ACS entries and complete the scanned image",
+   "description": "Staff delete unnecessary ACS lines (e.g. NVE or RVR other than the one updated) and complete the scanned image before finalising via the AC procedure.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B255",
+    "B253"
+   ]
+  },
+  {
+   "id": "B257",
+   "subprocess": "verification",
+   "name": "Check whether the customer is providing the formal rental agreement in person",
+   "description": "Staff route in-person provision to recording receipt of the documents, otherwise check for an open Process Direct transaction.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B145",
+    "B226"
+   ]
+  },
+  {
+   "id": "B258",
+   "subprocess": "verification",
+   "name": "Record receipt of in-person documents against the customer task",
+   "description": "In Process Direct staff set the task to Provided and the transaction to Cancelled (without updating AC there); in Customer First they mark the task document Accepted and the task Completed.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B257"
+   ]
+  },
+  {
+   "id": "B259",
+   "subprocess": "verification",
+   "name": "Check Process Direct for an outstanding Customer Update transaction",
+   "description": "Staff check the Transactions tab for an outstanding or allocated Customer Update - Address, Accommodation, Contact details transaction.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B257",
+    "B258"
+   ]
+  },
+  {
+   "id": "B260",
+   "subprocess": "verification",
+   "name": "Complete lease verification in Customer First (VEF on the UPL/RVL line)",
+   "description": "Staff select the UPL/RVL line on ACS, keep the Event Date, code VEF, delete unnecessary lines, complete Receipt Date and the scanned image, and use ROA for arrears.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B259"
+   ]
+  },
+  {
+   "id": "B261",
+   "subprocess": "verification",
+   "name": "Complete lease verification inside the Process Direct transaction (VEF)",
+   "description": "Staff select the transaction, select Process before coding, work through the SWE-flagged screens, code VEF on the UPL/RVL line and delete unnecessary ACS entries.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B259"
+   ]
+  },
+  {
+   "id": "B262",
+   "subprocess": "rate",
+   "name": "Use the Review of Assessment (ROA) screen to set the reassessment start date for arrears",
+   "description": "For Social Security Act payments where the system DOE is wrong, staff use ROA with start date the earlier of the date of receipt or the date the code changed to NVE/RVR.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B256",
+    "B260",
+    "B261",
+    "B172",
+    "B293"
+   ]
+  },
+  {
+   "id": "B263",
+   "subprocess": "rate",
+   "name": "Assess and confirm the RA amount on the ELD and Payment Summary (PS) screens",
+   "description": "Staff select Assess, check the Entitlements (ELD) outcome, key PS in the Super Key and Execute to view and confirm the RA amount.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B261",
+    "B262"
+   ]
+  },
+  {
+   "id": "B264",
+   "subprocess": "payment",
+   "name": "Finish and finalise the Process Direct transaction",
+   "description": "Once coding is complete staff recheck ELD, select Finish, add DOC notes if required and select Finalise and OK.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B263"
+   ]
+  },
+  {
+   "id": "B265",
+   "subprocess": "rate",
+   "name": "System calculates the RA rate (75c per $1 above the threshold, up to the maximum)",
+   "description": "RA is 75 cents for every dollar of rent above the rent threshold up to the maximum for the customer's circumstances; sharers and board-and-lodgings rules reduce it, and the rate is calculated by the system.",
+   "actor": "system_automatic",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B117",
+    "B119",
+    "B121",
+    "B107"
+   ]
+  },
+  {
+   "id": "B266",
+   "subprocess": "rate",
+   "name": "Apply the means-test hierarchy of reductions to an ISP including RA",
+   "description": "With an income support payment, means test reductions apply to the basic pension or benefit first and then to other components including RA.",
+   "actor": "unclear",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B265"
+   ]
+  },
+  {
+   "id": "B267",
+   "subprocess": "rate",
+   "name": "Apportion income/maintenance reductions across FTB Part A components including RA",
+   "description": "Income and maintenance income tests can reduce RA, the reduction is apportioned across FTB Part A components, and family size changes the maximum rate.",
+   "actor": "unclear",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B265"
+   ]
+  },
+  {
+   "id": "B268",
+   "subprocess": "rate",
+   "name": "Apply scholarship treatment to a student's rent",
+   "description": "If a scholarship is income or exempt income RA is on gross rent; if not treated as income, RA is on rent net of the scholarship amount above the exempt amount.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B119"
+   ]
+  },
+  {
+   "id": "B269",
+   "subprocess": "rate",
+   "name": "Assess RA net of rental relief subsidies and other tenants' payments",
+   "description": "Generally RA is assessed on rent net of subsidies or payments from other tenants; specified schemes are exceptions.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B119"
+   ]
+  },
+  {
+   "id": "B270",
+   "subprocess": "rate",
+   "name": "Assess RA on the full lease amount for specified relief schemes",
+   "description": "For NSW Private Rental Subsidy, NSW Rent Choice and Queensland Rental Security Subsidy, RA is on the total rent on the lease (net rent rules may apply if shared).",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B269"
+   ]
+  },
+  {
+   "id": "B271",
+   "subprocess": "rate",
+   "name": "Assess RA for FTB shared care and a regular care child",
+   "description": "Customers with under 35% care may get the RA-only rate of FTB Part A for a regular care child; shared-care customers get the higher of the shared and non-shared care RA rate.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B017"
+   ]
+  },
+  {
+   "id": "B272",
+   "subprocess": "payment",
+   "name": "Determine which member of a couple is paid RA",
+   "description": "RA goes with more-than-base FTB Part A; otherwise it is split between benefit or pension couples, paid wholly to a sole pensioner or sole benefit recipient, individually for separated couples, and at 150% for JTR couples.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B265",
+    "B108"
+   ]
+  },
+  {
+   "id": "B273",
+   "subprocess": "rate",
+   "name": "Customer chooses payment cancellation instead of an employment income nil rate period",
+   "description": "In an allowee/allowee couple receiving RA (not FTB), the customer may cancel their allowance so the partner receives 100% of the couple RA instead of 50%.",
+   "actor": "customer",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B272"
+   ]
+  },
+  {
+   "id": "B274",
+   "subprocess": "rate",
+   "name": "Check the ongoing RA rate and DOE on the Assessment Results (AR) screen",
+   "description": "Staff check the customer is eligible and the ongoing RA rate is correct and starts from the correct DOE (noting system issue KE10772).",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B138",
+    "B139",
+    "B019",
+    "B256",
+    "B235",
+    "B214",
+    "B262",
+    "B265",
+    "B266",
+    "B267"
+   ]
+  },
+  {
+   "id": "B275",
+   "subprocess": "rate",
+   "name": "System applies NOHL Rule 10, paying from the entitlement period start date (KE10772)",
+   "description": "Because of system issue KE10772, the system applies Notification Handler Rule 10 and pays a new or higher RA rate from the entitlement period start date rather than the notification date.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B107"
+   ]
+  },
+  {
+   "id": "B276",
+   "subprocess": "rate",
+   "name": "Check the NOHL rule via DOER for system issue KE10772",
+   "description": "When the ongoing rate or DOE is wrong, staff check the Notification Handler rule via NOHL Rule Explanation (DOER) in the Assessment Finalise Workflow.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B274",
+    "B275"
+   ]
+  },
+  {
+   "id": "B277",
+   "subprocess": "rate",
+   "name": "Complete a DVA clearance for DVA recipients claiming FTB",
+   "description": "As DVA pays an RA equivalent, staff complete a DVA clearance when the customer or partner receives DVA payments.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B274",
+    "B297",
+    "B298"
+   ]
+  },
+  {
+   "id": "B278",
+   "subprocess": "rate",
+   "name": "Check the result for a possible debt or arrears",
+   "description": "Staff check the $ Adj Amt result for the customer and partner/ex-partner for a possible debt and/or arrears.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B274",
+    "B297",
+    "B298",
+    "B277"
+   ]
+  },
+  {
+   "id": "B279",
+   "subprocess": "rate",
+   "name": "Review the debt amount/period and record the AMR number on a DOC",
+   "description": "Staff verify AC details, review negative adjustments, and record the Activity Management Record number from the AR screen on a DOC for Debt Staff.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B278"
+   ]
+  },
+  {
+   "id": "B280",
+   "subprocess": "rate",
+   "name": "System creates a debt activity on the Activity List",
+   "description": "When the activity is completed a debt activity may be created on the AL screen.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B279"
+   ]
+  },
+  {
+   "id": "B281",
+   "subprocess": "rate",
+   "name": "Transfer the debt activity using a Fast Note",
+   "description": "Staff transfer the debt activity using the relevant Fast Note.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B280"
+   ]
+  },
+  {
+   "id": "B282",
+   "subprocess": "rate",
+   "name": "Check for duplicate RA payments in the arrears",
+   "description": "Staff consider duplicate-payment situations (ISP to FTB arrears, allowee to pension transfer, partner paid by another agency, reassessed debt) using the FROS/FROD offset screens.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B278",
+    "B279",
+    "B281"
+   ]
+  },
+  {
+   "id": "B283",
+   "subprocess": "rate",
+   "name": "Do not offset RA received with ABSTUDY against FTB RA arrears",
+   "description": "Where FTB arrears include RA and RA was received with ABSTUDY, the arrears are not reduced by that ABSTUDY RA.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B282"
+   ]
+  },
+  {
+   "id": "B284",
+   "subprocess": "rate",
+   "name": "Compare the arrears period with RA payment history",
+   "description": "Staff note the arrears dates and compare them with the RA payment history of the customer and partner/ex-partner.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B282",
+    "B283"
+   ]
+  },
+  {
+   "id": "B285",
+   "subprocess": "rate",
+   "name": "Reduce FTB arrears by RA already received with an ISP",
+   "description": "For FTB claimants the arrears are reduced by RA already received with an income support payment (including the partner's) for the duplicate period.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B284"
+   ]
+  },
+  {
+   "id": "B286",
+   "subprocess": "rate",
+   "name": "Adjust arrears for RA already paid with an ISP or ABSTUDY (not claiming FTB)",
+   "description": "Staff adjust the arrears for RA already paid and check whether further arrears remain.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B284"
+   ]
+  },
+  {
+   "id": "B287",
+   "subprocess": "rate",
+   "name": "Compare one partner's arrears period with the other's debt period",
+   "description": "Where one member has arrears and the other a debt, staff check whether the periods match.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B284"
+   ]
+  },
+  {
+   "id": "B288",
+   "subprocess": "rate",
+   "name": "Check existing RA debts overlapping the arrears (Debt Information, ADEX)",
+   "description": "Before paying arrears staff check Workspace > Debts > Debt Information and the ADEX tool for determined or undetermined RA debts covering the arrears period.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B284",
+    "B285",
+    "B286",
+    "B287"
+   ]
+  },
+  {
+   "id": "B289",
+   "subprocess": "rate",
+   "name": "Zero arrears included in a determined debt and raise a Debt Raising ACTion DOC Request",
+   "description": "Staff adjust arrears to zero for monies in the determined debt and create an open work item via the Debt Raising ACTion DOC Request Fast Note with the AMR and reason.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B288"
+   ]
+  },
+  {
+   "id": "B290",
+   "subprocess": "rate",
+   "name": "Debt Staff zero the debt and/or refund repayments",
+   "description": "Debt Staff zero all or part of the determined debt and/or refund repayments made by the customer.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B289"
+   ]
+  },
+  {
+   "id": "B291",
+   "subprocess": "rate",
+   "name": "Manually zero arrears for an undetermined debt and notify Debt Staff",
+   "description": "Staff manually adjust the arrears, add a note to the DMIS debt activity on AL and notify Debt Staff through the Debt Raising ACTion DOC Request with the AMR and reason.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B288",
+    "B289"
+   ]
+  },
+  {
+   "id": "B292",
+   "subprocess": "rate",
+   "name": "Debt Staff set the undetermined debt to zero",
+   "description": "Debt Staff set all or part of the undetermined debt to zero.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B291"
+   ]
+  },
+  {
+   "id": "B293",
+   "subprocess": "rate",
+   "name": "Check the arrears are correct",
+   "description": "Staff check arrears start from the correct date, are not affected by KE10772, pay the right amount for past rate changes and fall within review and reassessment periods.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B278",
+    "B288",
+    "B289",
+    "B291"
+   ]
+  },
+  {
+   "id": "B294",
+   "subprocess": "payment",
+   "name": "Limit RA arrears to 1 July of the previous financial year unless extended",
+   "description": "RA arrears can be paid from 1 July of the previous financial year, or longer with an FTB claim extension or a formal review lodged within 52 weeks.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B293"
+   ]
+  },
+  {
+   "id": "B295",
+   "subprocess": "rate",
+   "name": "Adjust arrears that should not be paid",
+   "description": "Where arrears are paying that need to be stopped, staff adjust the arrears.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B293"
+   ]
+  },
+  {
+   "id": "B296",
+   "subprocess": "rate",
+   "name": "Identify an incorrect DOE caused by Notification Handler Rule 10 or 99",
+   "description": "Where arrears are wrong because of KE10772, staff identify whether NOHL Rule 10 or 99 applies to an NSS or PEN payment.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B293"
+   ]
+  },
+  {
+   "id": "B297",
+   "subprocess": "rate",
+   "name": "Code a Rate Component Override (RCO) for NSS payments (NOHL Rule 10/99)",
+   "description": "For NSS payments staff code RCO: start date the EPSD (or CPI/restoration/reassessment date for Rule 99), end date the correct RA DOE minus 1, Type VRM, Reason SYS, and the previous RA rate or 0 (Table 4 Steps 2 and 16).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B276",
+    "B296"
+   ]
+  },
+  {
+   "id": "B298",
+   "subprocess": "rate",
+   "name": "Set a daily manual RA rate for PEN system payments",
+   "description": "For PEN payments staff follow the Non NSS coding to set a daily manual RA rate for the affected period and return to an automatic rate from the next EPSD (Table 4 Steps 2 and 16).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B276",
+    "B296"
+   ]
+  },
+  {
+   "id": "B299",
+   "subprocess": "payment",
+   "name": "Finalise the RA activity, record a DOC, store documents and complete scanned images",
+   "description": "When the outcome is correct staff finalise the activity, record a DOC, store any customer documents, check for related or duplicate work items and complete relevant scanned images.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B274",
+    "B297",
+    "B298",
+    "B277",
+    "B281",
+    "B283",
+    "B285",
+    "B286",
+    "B287",
+    "B290",
+    "B292",
+    "B293",
+    "B295",
+    "B294"
+   ]
+  },
+  {
+   "id": "B300",
+   "subprocess": "other",
+   "name": "Complete follow-up actions arising from the accommodation update",
+   "description": "For example an ESAt request for a JSP customer entering residential aged care, a marital status review, a social work referral, REBS, business income/asset or Centrepay updates.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B299"
+   ]
+  },
+  {
+   "id": "B301",
+   "subprocess": "other",
+   "name": "Check for related or duplicate accommodation work items",
+   "description": "Staff look for started AC updates, open activities, incomplete Process Direct transactions or unapplied failed-online-update DOCs/Notes, and process only information not yet on the record.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B299",
+    "B026"
+   ]
+  },
+  {
+   "id": "B302",
+   "subprocess": "other",
+   "name": "Cancel a duplicate work item in Process Direct",
+   "description": "Staff cancel a duplicate work item via Status > Edit > Cancelled > Save.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B301"
+   ]
+  },
+  {
+   "id": "B303",
+   "subprocess": "other",
+   "name": "Quality check returns an activity with critical AC coding errors",
+   "description": "Wrong Home ownership or Net Rent coding (and payment-affecting errors in Accommodation details, Sharer Status, Type of rent or Rent verification) is a critical error and the activity is returned for correction.",
+   "actor": "unclear",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B299",
+    "B264"
+   ]
+  },
+  {
+   "id": "B304",
+   "subprocess": "other",
+   "name": "Cancel the QMA work item when the update was done in Process Direct outside an approved transaction",
+   "description": "The QMA work item cannot be finalised; it is cancelled and the QMO completes the accommodation update in Customer First.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B299",
+    "B264"
+   ]
+  },
+  {
+   "id": "B305",
+   "subprocess": "payment",
+   "name": "RA start day matches the primary payment for new claims",
+   "description": "RA is an add-on payment; for new claims its start day is generally the same as the primary payment start day.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B002"
+   ]
+  },
+  {
+   "id": "B306",
+   "subprocess": "payment",
+   "name": "Customer chooses fortnightly or lump-sum RA with FTB",
+   "description": "Customers on fortnightly FTB or with a regular care child can choose RA fortnightly or as a lump sum after the financial year.",
+   "actor": "customer",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B272"
+   ]
+  },
+  {
+   "id": "B307",
+   "subprocess": "payment",
+   "name": "Pay RA with the primary payment when FTB is precluded",
+   "description": "If FTB Part A is precluded for non-payment to zero-entitlement customers, an ISP customer can receive RA with their primary payment.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B272"
+   ]
+  },
+  {
+   "id": "B308",
+   "subprocess": "payment",
+   "name": "Families reconciliation assesses all FTB entitlements including RA",
+   "description": "At families reconciliation all FTB entitlements including RA are assessed and any balance due is paid (FTB RA is paid at a higher rate).",
+   "actor": "unclear",
+   "kind": "event",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B307"
+   ]
+  },
+  {
+   "id": "B309",
+   "subprocess": "payment",
+   "name": "No RA with the ISP during an FTB prohibition (PIP)",
+   "description": "When FTB Part A is prohibited, RA is not paid with the ISP; an ISP customer may get RA with the primary payment if FTB cancels under the Sunset Clause.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B272"
+   ]
+  },
+  {
+   "id": "B310",
+   "subprocess": "payment",
+   "name": "Pay RA with the ISP until the Maintenance Action Test is satisfied",
+   "description": "FTB customers who fail the MAT get base rate FTB Part A, so RA is paid with their income support payment until the MAT is satisfied.",
+   "actor": "unclear",
+   "kind": "decision",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B272"
+   ]
+  },
+  {
+   "id": "B311",
+   "subprocess": "review",
+   "name": "Customer may be selected for an RA Profile review",
+   "description": "In general any RA recipient may be selected for an RA Profile review.",
+   "actor": "unclear",
+   "kind": "event",
+   "granularity": "policy_level",
+   "predecessors": []
+  },
+  {
+   "id": "B312",
+   "subprocess": "review",
+   "name": "Customer selected for an RA Profile review provides verification",
+   "description": "Customers selected for an RA Profile review must provide verification regardless of any exemption.",
+   "actor": "customer",
+   "kind": "task",
+   "granularity": "policy_level",
+   "predecessors": [
+    "B311"
+   ]
+  },
+  {
+   "id": "B313",
+   "subprocess": "review",
+   "name": "Automatic rent verification review fails and work item ZCOC_SAARA_RENT_UPD is created",
+   "description": "When the program integrated review that automatically sets the verification code to NVE fails, a work item is created for manual processing in Process Direct.",
+   "actor": "system_automatic",
+   "kind": "event",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B194"
+   ]
+  },
+  {
+   "id": "B314",
+   "subprocess": "review",
+   "name": "Review the allocated Rent CAN review failed work item",
+   "description": "Staff review the allocated ZCOC_SAARA_RENT_UPD work item using the RA A-Z and Process Direct guidance.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B313"
+   ]
+  },
+  {
+   "id": "B315",
+   "subprocess": "review",
+   "name": "Check UPL is the current confirmed rent verification code on ACS",
+   "description": "Further processing is needed only if the most recent confirmed code is UPL.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B314"
+   ]
+  },
+  {
+   "id": "B316",
+   "subprocess": "review",
+   "name": "Cancel the work item when UPL is not the current code",
+   "description": "If UPL is not current staff set the work item status to Cancelled and the procedure ends.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B315"
+   ]
+  },
+  {
+   "id": "B317",
+   "subprocess": "review",
+   "name": "Check the record for acceptable rent verification",
+   "description": "Staff check the customer and partner documents for an acceptable formal rental agreement, SU523HD or SU336M.",
+   "actor": "staff",
+   "kind": "decision",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B315"
+   ]
+  },
+  {
+   "id": "B318",
+   "subprocess": "review",
+   "name": "Update ACS with the rent verification details in Process Direct",
+   "description": "Staff select Process before coding, step through the SWE-flagged screens, update ACS for the acceptable verification and fix any SWE errors.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B317"
+   ]
+  },
+  {
+   "id": "B319",
+   "subprocess": "review",
+   "name": "Assess, check ELD, record the finalisation DOC and finalise (RA continues)",
+   "description": "Staff select Assess, check ELD, Finish, replace the auto DOC text with the verification-received text and Finalise.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B318"
+   ]
+  },
+  {
+   "id": "B320",
+   "subprocess": "review",
+   "name": "Cancel RA: code the ACS Event Date as today and NVE",
+   "description": "Without acceptable verification staff select Process, step through SWE and code the ACS Event Date as the processing date and Rent Verification NVE.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B317"
+   ]
+  },
+  {
+   "id": "B321",
+   "subprocess": "review",
+   "name": "Assess, confirm RA ceased on ELD, record the DOC and finalise",
+   "description": "Staff assess, check ELD shows RA ceased, Finish, record a DOC explaining verification was not received or not acceptable, and Finalise.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B320"
+   ]
+  },
+  {
+   "id": "B322",
+   "subprocess": "other",
+   "name": "Support customers experiencing or at risk of homelessness",
+   "description": "All staff give extra support and information so these customers can lodge an income support claim and apply for a formal review of a decision.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": []
+  },
+  {
+   "id": "B323",
+   "subprocess": "other",
+   "name": "Code a Homelessness Indicator with the customer's consent",
+   "description": "Staff code a Homelessness Indicator on the record if the customer consents.",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "screen_or_field_level",
+   "predecessors": [
+    "B322"
+   ]
+  },
+  {
+   "id": "B324",
+   "subprocess": "other",
+   "name": "Consider an internal or external referral for a homeless customer",
+   "description": "Staff consider an internal referral to an agency specialist or an external referral (e.g. emergency accommodation or a welfare agency).",
+   "actor": "staff",
+   "kind": "task",
+   "granularity": "work_step_level",
+   "predecessors": [
+    "B322"
+   ]
+  }
+ ]
+}

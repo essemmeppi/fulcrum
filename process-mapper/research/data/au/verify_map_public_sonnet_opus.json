@@ -1,0 +1,1303 @@
+[
+ {
+  "node_id": "N01",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "RA is an add-on payment. Customers can only get RA when they receive another payment. The RA start day for new claims will generally be the same as the start day for the primary payment."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "The AC collection of details and update is mandatory within a claim for payment or benefit."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Is an update of the AC screen required? Yes, and the update is: a new claim, see Table 2 > Step 1"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer lodges the claim; staff then process it in a claim activity",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "No material correction. The Blueprint adds 2 things. RA can also attach where the customer would get FTB Part A except that they have a regular care child. And the claim is handled by staff in a claim activity, where coding the AC screen is mandatory.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N02",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "The AC collection of details and update is mandatory within a claim for payment or benefit."
+   },
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "The customer provides the agreement to support a new claim for payment that includes required accommodation questions, andThe claim/supporting documents contain enough information to assess RA"
+   },
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "lodges a new claim and a formal renting arrangement is not provided and/or the accommodation questions were not asked or completed, or"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer (answers accommodation questions in the claim)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Confirmed. The edge from this node straight to automatic assessment (N02->N13) leaves out a staff step: staff code the AC screen inside the claim activity, including the verification code NCL, which can only be applied within a provisional new claim activity. The customer can also attach a formal rental agreement to the claim as stand-alone verification. If the accommodation questions were not asked or not completed, a Rent Certificate is issued.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N03",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-ac-bg.txt",
+    "quote": "Update accommodation details when a customer on a qualifying payment tells Services Australia about a change in their circumstances, such as:"
+   },
+   {
+    "source_file": "obp-ac-bg.txt",
+    "quote": "their living arrangements (for example, people moving in or out of the principal home)"
+   },
+   {
+    "source_file": "obp-ac-bg.txt",
+    "quote": "separating from a partner, see Change in relationship status from partnered to single"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer (tells Services Australia)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Partly confirmed. The Blueprint's triggers are a change of principal home, rent amount or living arrangements, separating or partnering, and a change in a care relationship. Income, dependent children, travel plans and a move to government housing are not in its list of accommodation-update triggers. The Blueprint also counts these as entry points: a failed online update, a customer saying earlier information was wrong, and documents that notify a change.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N04",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "is able to update their accommodation details online, procedure ends here is unable to update their accommodation details online, use the Change in Contact Details workflow."
+   },
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "with an accommodation update (for example, change of address reported in person)"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Yes, and the accommodation change has been notified within 14 days:the correct verification code is Chg Address/Accom Circs-14 days to verify - COA."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer (online service, phone, in person, or documents)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The channels are confirmed: online service, phone, in person, and documents lodged as notice of a change. The Blueprint does not state 14 days as a general deadline for the customer. The 14-day split appears only for RA paid with FTB. A change reported within 14 days is coded COA, and RA keeps paying for 28 days while proof is outstanding. A change reported after 14 days is coded RVR, and RA does not pay until verified. Staff direct customers who can update online to do so.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N05",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Staff must start at Table 1 > Step 1. The following steps and tables are a step-by-step guide"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "is unable to update their accommodation details online, use the Change in Contact Details workflow. To update the record, see Table 2 > Step 1"
+   },
+   {
+    "source_file": "obp-ac-bg.txt",
+    "quote": "Incorrect coding of Home ownership status or Net Rent details is a critical error. The activity will be returned for correction where an error is identified."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "service officer (staff)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "In the Blueprint this is a long staff procedure (108-18092646, Tables 1-4), not one data-entry step. It covers: pre-checks (open reviews, income management, aged care, blind pension); qualifying-payment status; contacting the customer or sending a Q164 letter if details are missing; handing off rate reviews for DSP under 21, ABSTUDY under 22 and YA; address type and date of event; who the details are for; Home Ownership, Type of Rent, Sharer Status and Net Rent; the Rent Verification code; government sub-tenant. It ends with Assess, checks on the AR screen and of debts and arrears, and finalisation. The coding needs judgment and coding errors count as critical errors, so it is not deterministic agent-executable work. Staff also send customers who can update online back to the online service.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N06",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "does not have an existing postal address and has not supplied a new postal address. If the customer wants their mail to go to their: home address, there is no requirement to update the postal address as mail will default to the home address"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "the customer is advising they are homeless and not paying rent, update the Address Type field with Home - HOM."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "staff update the postal address when a customer supplies one (before a Q164 or cancellation letter)",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Not in the Blueprint. There is no customer step of giving a secure mailing address between homes, and no rule that mail goes to the last address held. The closest steps are staff checking or updating the postal address before sending a Q164 or suspension/cancellation letter (mail defaults to the home address), and coding a homeless customer who pays no rent with Address Type HOM.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "N07",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "non-homeowners can be assessed for RA for temporary accommodation. To be eligible:all normal eligibility requirements need to be met, except for ownership of the principal home, andthe reason for the temporary accommodation is acceptable"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "not recorded as a homeowner for their principal home and not eligible for RA for the temporary address, do not update AC with the details for the temporary address. RA will continue if they are paying rent for their principal home address."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "to receive care for an illness to provide care for another person to enter aged care or respite care"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "service officer (AC procedure Table 2 Steps 14-16)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "The check is confirmed, but the 'no qualifying reason -> stop RA' edge (N07->N37) is wrong for non-homeowners. They keep RA for their principal home if they still pay rent there; only the temporary address is left uncoded. Ineligibility applies to a homeowner who is temporarily absent and does not meet the temporary-accommodation rules. RA can only be paid for one address. The Blueprint also branches on homeowner status, whether the customer pays for the temporary accommodation, students' term addresses and Remote Area Allowance. Couples living apart may first need a Marital Status update.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N08",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "they pay rent to a community housing organisation and they have provided verification using the Electronic Verification of Rent (EVoR) service"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint mentions EVoR only as an automatic verification channel that some community housing organisations use. It has no customer consent form and no consent step.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N09",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "The Electronic Verification of Rent (EVoR) service is used by some community housing organisations to automatically verify rent paid. When done, the rent verification shows as Verified electronically - VEE"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "staff can view the AMR of the update on the ES or HAL screens, checking the source = AUTO and keywords = EVoR"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Has EVoR been used to verify the rent as Verified Electronically - VEE and are all details on the AC screen are correct?Yes, further verification is not needed:do not change VEE codeRA can be paid"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "community housing organisation (via EVoR)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The Blueprint describes EVoR as automatic electronic verification. Updates arrive with source AUTO and set VEE (or an exemption code) on the AC screen; if the AC details are correct, no further verification is needed and RA can be paid. The 15-50 day update window is not in the Blueprint. The Blueprint only says 'some community housing organisations' and does not name supported accommodation providers.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N10",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint has no EVoR update window and no rule that the job falls back to the customer if the provider does not update.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N11",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "the customer has Centrepay deductions for accommodation or utilities and updates are needed. See Starting, changing and cancelling a Centrepay deduction at the request of a customer"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "If the customer is present and can be asked about their circumstances, where possible, complete the follow-up action."
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "cancel existing deductions for government rent paid through the Rent Deduction Scheme (RDS), andstart RA and Centrepay deductions on behalf of affected recipients"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "staff complete the Centrepay change as a follow-up at the customer's request; in SHA-to-community-housing transitions SA starts deductions on recipients' behalf",
+  "automation_check": "same",
+  "order_check": "contradicted",
+  "granularity": "same",
+  "corrections": "The Blueprint treats the Centrepay change as a staff follow-up after the AC update is finalised (Table 4 Step 18). It is made at the customer's request and completed by staff where possible. It is not a customer self-service branch taken instead of reporting the change. When state housing tenancies move to community housing organisations, SA works with the organisation to start Centrepay deductions for recipients. Also, when Type of Rent changes from GOV, staff cancel any Rent Deduction Scheme rent deduction with the customer's consent.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "N12",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Single independent customers aged 16-17 yearsThese customers may be eligible for RA if they:are independent, andlive in the principal home of their parent(s)"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Single customers aged 18-20 yearsThese customers do not qualify for RA if they are living in the parental home with their parent(s), even if they are independent."
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "JobSeeker Payment (JSP), DSP and ABSTUDY customers become eligible for RA due to their age"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not stated who triggers the re-check",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The age rule behind this trigger is in the Blueprint: a single independent DSP customer aged 16-17 may get RA in the parental home, but at 18-20 cannot, even if independent. No step requires the customer to contact SA at 18. Instead, the AC procedure flags DSP customers under 21 for a possible independence or rate review by trained officers.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N13",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Check the ongoing rate of Rent Assistance (RA) is correct using the following: customer is eligible for RA rate of RA"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "When RA is paid with income support payments (ISP), the system will calculate the date of effect (DOE)"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "update did not automatically complete and has been allocated for finalisation"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system calculates from AC-screen data that staff (or the online service) entered; staff then check the AR screen",
+  "automation_check": "same",
+  "order_check": "contradicted",
+  "granularity": "same",
+  "corrections": "The system assessment runs on data in the AC screen. For online updates the online service can complete on its own; failed ones go to staff. For phone, in-person and claim updates, staff code the AC screen, select Assess, and then must check the AR screen. That check covers eligibility, rate and date of effect (with manual overrides for system issue KE10772) plus debts and arrears. The eligibility, accommodation-type and verification decisions the map places after this node (N14-N20) are made by staff while coding, before the assessment, not by the system afterwards.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N14",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Check the customer and/or partner payment status Qualifying payments for RA: Age Pension Carer Payment (CP) Disability Support Pension (DSP) ABSTUDY Living Allowance Austudy Youth Allowance (YA) Special Benefit (SpB)"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Has the customer and/or partner lodged a new claim or is current (CUR), suspended (SUS), assessed (ASS) or current zero rate (CZR) for any of the above qualifying payments?"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "They would receive FTB Part A except that they have care of a regular care childABSTUDY Schooling B and Tertiary Awards"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer (AC procedure Table 1 Step 4)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Staff do this check as Step 4 of the AC procedure, for the customer and/or partner. It counts lodged new claims and current, suspended, assessed and current zero-rate statuses. Add two cases: FTB Part A that would be paid except for care of a regular care child, and ABSTUDY only under Schooling B and Tertiary Awards. A 'no' does not create a refusal record. Staff usually do not update the AC screen (or update it only to calculate a notional FTB rate for the Parental Income Test), and the procedure ends.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N15",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Specific action for some customers There is specific action needed for customers receiving: Disability Support Pension (DSP) under 21 years ABSTUDY under 22 years Youth Allowance (YA) student YA job seeker"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "While the customer is receiving the dependent or at home rate of their income support payment, RA will not pay."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "the work item will require a capability adjustment so it can be assessed by a trained service officer"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "JSP customers aged under 25 years are not eligible for RA if they are:single, andliving in the parental home"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "staff; independence and away-from-home reviews go to trained service officers (work item hand-off or call transfer)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "Staff apply these rules using the NIH and PDI screen codes, not the system. Where circumstances have changed they may need to review the payment rate, and officers not trained for that must hand off the work item or transfer the call. The age bands are specific to each payment, not one 'under 25' test: DSP 16-17, 18-20 and 21+; ABSTUDY under 22 and 22 to under 25; YA dependency status; JSP under 25 and single. Other rules: couple rules, ABSTUDY course levels that rule out RA, and DSP Incentive Allowance excluding RA.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N16",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Type of Rent Determine the type of rent relevant to the customer circumstance. Update the Type of Rent field on the Accommodation Details (AC) screen with the determined option."
+   },
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "pay government rent to a state or territory housing authority. The exception is defence force housing."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Sub-tenants may still qualify for RA if the: primary tenant pays market rent, or sub-tenant's income has been taken into account by the SHA when calculating the rent liability"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer codes the Home Ownership, Type of Rent and Sharer Status fields",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "Staff code Home Ownership first (an ineligible homeowner gets no RA unless an exemption applies), then Type of Rent (PRI, OHO, DEF, BOA, LOD, SIT, MOO, NRP, GOV) and Sharer Status. GOV and NRP give no entitlement. Government sub-tenants are not automatically ineligible: they may qualify if the primary tenant pays market rent or the state housing authority counted their income, with a 28-day follow-up if their status is unclear. 'Lifestyle village' and 'housing for people younger than 25' are not Blueprint categories. Other exclusions apply: a subsidised aged-care bed, rent-to-buy, and services given in exchange for free accommodation.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N17",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Customers who rent their accommodation from community housing or disability housing organisation (community housing organisation) are not considered to be government tenants or sub-tenants."
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "collected by the community housing organisation but then passed on to the state housing authority. The customer is paying government rent and not eligible for RA"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Customers will need provide a copy of their agreement or a letter from the organisation. This will show which organisation is benefiting from the rent so that RA eligibility can be determined."
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "The determining factor is who receives the rent."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "service officer",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The Blueprint's test is who receives and keeps the rent, not whether the organisation owns or leases the house. Rent that a community housing organisation collects but passes on to the state housing authority counts as government rent. Staff may ask for the tenancy agreement or a letter from the organisation. In Victoria, THM properties owned or leased by Homes Victoria count as government housing (GOV); those under a funding agreement count as community housing (OHO). Government sub-tenants are not automatically excluded (the market-rent and income-counted exceptions apply).",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N18",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Retirement villageThe amount the customer paid as an entry contribution will decide if they are a homeowner or a non-homeowner."
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "non-homeowner, RA can be paid for fees and charges that must be paid as a condition of occupancy, for example, maintenance and service fees"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Verification is not needed when the customer is living in a retirement village and they are regarded as a non-homeowner due to the amount of the entry contribution."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer (Home Ownership field coding)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The retirement village rule is confirmed. Shared equity housing has a parallel rule based on the Extra Allowable Amount. Lifestyle villages are not mentioned in the Blueprint. Non-homeowners in retirement villages are exempt from rent verification (code EXV), so the 'yes' branch should skip the Rent Certificate path.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N19",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Exemptions where homeowners are eligible for RACustomer who owns their principal home which is a caravan, boat or other similar vehicle, or structure and they pay site or mooring fees"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "customer's principal home is a caravan, mobile home, tent, boat or similar and no site or mooring fees are paid, the remaining fields on the AC screen can be left blank."
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "TravellersIf the customer has vacated their principal home to travel, for example in a caravan or boat, see:Rent Assistance (RA) for travellers"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer (Home Ownership and Type of Rent SIT/MOO coding)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "unknown",
+  "corrections": "The Blueprint pages provided confirm only one rule: a homeowner whose principal home is a caravan or boat and who pays site or mooring fees can get RA (no fees means no RA fields are coded). Travellers are covered in a linked page that was not provided. The 12-month travel test, the asset conditions and the listed exclusions are not in the Blueprint pages provided. Travellers who move often may verify rent with a Rent Declaration (SU336M) and must report each change of address.",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "N20",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "This document outlines how to decide if verification of rent is needed. It also explains what to code in the Rent Verification field when verification is not needed, or if it is needed and has not yet been received."
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Reduced verification for rent assistanceDoes the customer meet reduced verification for rent assistance?Yes, verification is not needed:the correct verification code is Verified (Rent Declaration) - VED"
+   },
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Customers (unless exempt) must verify their accommodation details and amount of rent paid."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer via a 20-step decision table; the online service sets UPL/RVL for online updates",
+  "automation_check": "different",
+  "order_check": "contradicted",
+  "granularity": "blueprint_splits_it",
+  "corrections": "This is a staff decision table, not a system rule. It checks in order: COVID waiver, review referral, online UPL/RVL codes, whether rent is paid, the threshold, eligibility, government rent, EVoR (VEE), a claim or transfer already verified (12-month rule), exempt accommodation (EXR, EXC, EXB), retirement village (EXV) and reduced verification (VED). If none applies, verification is needed. The result is a Rent Verification code that also controls payment. COA, NCL and HAR pay RA for 28 days while proof is outstanding; RVR pays nothing until verified. So 'proof needed' does not hold back calculation and payment, as the map's branches imply. The threshold is checked before this decision, not after.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N21",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "lodges a new claim and a formal renting arrangement is not provided and/or the accommodation questions were not asked or completed, or"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "the correct verification code is Chg Address/Accom Circs-14 days to verify - COA. This is even if the last verification was COA. a SU523HD will be automatically created and issued"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "must be issued manually if the information is not the most recent DOV on the AC screen"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "needs another Rent Certificate (SU523HD) manually issue one, procedure ends here"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system auto-generates once staff (or the online service) set COA/NCL/HAR/RVR; staff issue manually in some cases",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Issue is triggered by the verification code staff set on the AC screen (COA, NCL, HAR, RVR), not by a decision of the system. Staff issue the certificate by hand when the record is not the most recent date of event or when the customer asks for another one, and re-issue it with a Fast Note. It is also issued when a Rent Deduction Scheme (OHO) deduction above the threshold arrives. Not every code issues one: for example, COA applied during DSP claim streaming for a customer not yet on a payment does not.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N22",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "If the SU523HD is not returned by the due date, the review will mature and RA will stop."
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "If the customer does not provide verification within 28 days:RA will stopthe system will automatically update the AC screen verification code to Not Verified - NVE"
+   },
+   {
+    "source_file": "obp-auto-fail.txt",
+    "quote": "This work item will create when the program integrated review that automatically updates the rent verification code to Not Verified - NVE has failed and requires manual staff processing."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system (automatic NVE update); staff only if the automatic review fails",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "Confirmed; the Blueprint adds details. The deadline is 28 days from when the activity is finalised (NVE at day 29). If the automatic review fails, staff get work item ZCOC_SAARA_RENT_UPD and either record acceptable verification or code NVE by hand. Hardship or emergency provisions can extend the deadline by 28 days (code HAR) or restore RA. Under code RVR, RA was never paid, so there is nothing to stop.",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "N23",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "view, print and save their SU523HDs for up to 19 weeks. This is done from the Request a document option in their Centrelink online account"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "not registered online, the customer can:use the reply paid envelope provided, ordeliver documents to a service centre"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "blueprint_merges_it",
+  "corrections": "'Available the next working day' is not in the Blueprint. It says certificates can be viewed and printed for up to 19 weeks through Request a document. Certificates also go out by post with a reply-paid envelope, or are issued by staff. The Blueprint handles getting and returning the certificate in one 'Advice to customer' step.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N24",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "If the SU523HD is needed for rent verification, it must be signed (electronic/digital signatures are acceptable) by:"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "the declaration is signed by the customer, their correspondence nominee or Power of Attorney (POA) if applicable"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer (or correspondence nominee / Power of Attorney)",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Add: the customer, a correspondence nominee or a Power of Attorney can sign, and electronic or digital signatures are accepted.",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "N25",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "the landlord or the person who receives rent payments unless a current formal rental agreement is attached"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "it has one of the following:an acceptable formal rental agreement, orthe landlord or authorised representative declaration is signed as the minimum"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "the Blueprint states this as an acceptance rule that staff apply when checking the SU523HD",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The rule is confirmed. A branch is missing: if the landlord will not or cannot sign, it is unreasonable to ask, or the customer travels and moves often, they can lodge a Rent Declaration (SU336M) with evidence of rent. A formal rental agreement alone, with no certificate, is accepted for new claims, qualifying online updates and other updates with enough information. If the lease is in the customer's own business name and no one else is in the business, an SU523HD is not accepted and an SU336M is required.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N26",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Customers are expected to first approach their landlord or agent, to sign a Rent Certificate (SU523HD). A Service Officer may decide it is unreasonable for the customer to approach their landlord."
+   },
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "If the customer is unable to provide a signed SU523HD, an SU336M may be lodged instead."
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "landlord, agent or the person who receives the rent",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Add the Rent Declaration (SU336M) alternative for when the landlord cannot be approached or refuses to sign. Where the lease is in a business name, a business partner can sign the landlord section. State housing authorities can complete an 'advice of rent paid' form instead of the landlord declaration.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N27",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Verification documents can be supplied using Upload documents online, faxed, presented in person or mailed to Services Australia."
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "not registered online, the customer can:use the reply paid envelope provided, ordeliver documents to a service centre"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Fax is also a channel. After an online update, the agreement upload is tracked as a customer task (codes UPL/RVL); an agreement brought in person is recorded against that task.",
+  "reviewer_confidence": 0.9
+ },
+ {
+  "node_id": "N28",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Review verification documentCustomer has provided a verification document as per Rent Assistance (RA) verification.The document is scanned and assigned to a processing Service Officer"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "All formal rental agreements must contain the:name of tenant(s) - including the customer (and/or partner) claiming RApremises the agreement relates to (that is, the rental address)name and contact details of the landlord/managing agent"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Service Officers need to review the acceptable verification documents ensuring it supports the update and detect any potential fraud."
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "When the verification document is a:Rent Certificate (SU523HD) without a formal rental agreement, the correct verification option is VEC - Verified (Rent Certificate)"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "processing service officer",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "The Blueprint splits this into several steps: refer to another team if an RA profile review, a review of decision or a CAO assessment is on file; checks for a business run from home (business financials; SU336M if the lease is in the customer's own business name); acceptability tests for each document type (lease contents, SU523HD version and signatures, SU336M evidence); a fraud check (suspected fraud means code RVR and RA is not paid); handling of hand-made changes (a rate increase needs extra verification); then coding VEC, VED or VEF, deleting NVE and RVR lines, and setting the date of effect and arrears (ROA screen). A lease does not need signatures.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N29",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "When a customer's verification document is deemed unacceptable or unable to be used as verification, make genuine attempts to contact the customer."
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Re-issued SU523HD returned and rent cannot be verifiedIssue a Q164 letterDo not re-issue the SU523HD."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "When details are needed to complete the AC screen update, make genuine attempts to contact the customer."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "Staff do this; it is not an automatic system notice. They first try to phone the customer. Then they re-issue the SU523HD (with a Fast Note) or send an SU336M, and hold the work item for one day if the customer can upload soon. If a re-issued certificate still cannot verify the rent, they issue a Q164 letter. If contact fails, staff code RVR (RA stops and an SU523HD is issued automatically). In the AC procedure, a Q164 left unanswered past the allowed time leads to the qualifying payment being suspended or cancelled (reason FRC).",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N30",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Board and Lodgings - BOA: record the full amount paid for board and lodgings. The system will automatically apply the two-thirds rule to the amount recorded in the Net Rent Amount field"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "RA is assessed on the net rent amount (rent minus any ongoing DHA subsidy)."
+   },
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "Generally, RA is payable only on the amount of rent paid or payable by the RA recipient (and/or their partner) net of any subsidies or payments from other tenants."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer enters Net Rent / Total Household Rent; the system applies the two-thirds rule for BOA",
+  "automation_check": "different",
+  "order_check": "contradicted",
+  "granularity": "blueprint_splits_it",
+  "corrections": "Staff enter Net Rent when the change is recorded, before verification and assessment, not after proof is checked. They apply the net-rent rules: subtract subsidies and other tenants' payments (with listed scheme exceptions), the share claimed as a business expense, the DHA subsidy, and scholarships where relevant; use the NDIS reasonable rent contribution; include compulsory service fees in exempt accommodation; combine site or mooring fees with hire costs. The system applies the two-thirds rule only for board and lodgings (BOA). The Blueprint calls the defence subsidy a DHA 'Rental Allowance subsidy', not a 'Temporary Rental Allowance'.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N31",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "RA is paid at the rate of 75 cents for every $1 of rent paid over the rent threshold, up to the maximum RA rate relevant to the customer's circumstances."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "The sharers rate of RA is two-thirds the maximum rate payable to a single customer living alone"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "The number of FTB children in care can also affect the maximum rate of RA payable. Higher thresholds and maximum rates apply for larger families."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described as a step; staff enter the inputs (who the details are for, Sharer Status, relationship qualifier codes) and the system calculates",
+  "automation_check": "same",
+  "order_check": "silent",
+  "granularity": "blueprint_merges_it",
+  "corrections": "Confirmed only as rules inside the system calculation, not as a separate step. Staff enter the inputs. The Blueprint adds rules on which partner gets the RA: half each when both get a benefit or both a pension; all of it to the partner on a pension; it is paid with FTB when FTB is above base rate; a JobSeeker transitional rate couple gets 150%. With shared care of a child, FTB customers get the higher of the shared-care and non-shared-care rates.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "N32",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Customers who pay rent less than the threshold amount for their family circumstances are not entitled to RA."
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Rent thresholdIs the rent paid above the applicable rent threshold?Yes, go to Step 7No, the customer is not entitled to RA and verification is not needed."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer (Step 6 of determining proof of rent); also part of the system's rate calculation",
+  "automation_check": "different",
+  "order_check": "contradicted",
+  "granularity": "same",
+  "corrections": "The Blueprint checks the threshold before deciding whether verification is needed, not after proof is checked. Below the threshold, no verification is needed: new claims and changes are coded COA, or with an exemption code. A rent below the threshold does not create a separate refusal: the AC screen is still coded and RA simply does not pay.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N33",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "That is, subtract the threshold from the rent amount and multiply by 0.75. Include cents. Round the total up to the nearest cent and compare with the maximum RA rate."
+   },
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "The income and assets test that applies to the primary payment also applies to RA."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Is the on-going rate correct and starting from the correct DOE?"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system calculates; service officer checks the AR screen",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "Add: the income and assets tests of the main payment apply (an order of reductions for income support; a proportional reduction for FTB), and the result is rounded up to the cent. Before finalising, staff must check the rate and date of effect on the AR screen. Where system issue KE10772 applies (NOHL Rule 10 or 99), they override it on the RCO screen or set a manual rate. They also check debts and arrears: duplicate RA, DVA clearance and existing RA debts.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N34",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "During the transition period, customers who are being transitioned will receive:an RDS cancellation letter, andCentrepay/RA commencement letters"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "If the customer is present or on the phone, tell the customer they:do not need to provide any verification documents, andshould tell the agency if their circumstances change"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint has no general step for notifying the outcome (by myGov Inbox or letter) when RA is granted or its rate changes. It mentions only RA commencement letters during transfers from state to community housing, staff telling a customer who is present that verification is not needed, and Rent Certificates issued when certain verification codes are set.",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "N35",
+  "verdict": "confirmed_step",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "RA is an add-on payment. Customers can only get RA when they receive another payment."
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "If more than base rate of Family Tax Benefit (FTB) Part A is received, RA is paid with the FTB payment, regardless of relationship status"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "Customers can choose to be paid RA fortnightly or as a lump sum after the end of the financial year when:they are receiving FTB as fortnightly instalments, orhave a regular care child"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system (paid with the primary payment or FTB)",
+  "automation_check": "same",
+  "order_check": "contradicted",
+  "granularity": "same",
+  "corrections": "Confirmed that RA is an add-on paid with another payment. The order is wrong: under codes COA, NCL and HAR, RA starts paying when the change is coded and keeps paying for 28 days while proof is outstanding, not only after proof is checked and the outcome is notified. Which payment carries RA follows rules: FTB when FTB Part A is above base rate, otherwise the income support payment. Couples split it under set rules. FTB customers may choose a lump sum after the financial year. Staff check arrears before finalising.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N36",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "When the outcome of the update is correct: Finalise the RA activity Record details on a DOC Store any documents provided by the customer Check the record for any related or duplicate work item/s"
+   },
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "In general, all customers who receive RA may now be selected for an RA Profile review."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer finalises the activity",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "In the Blueprint the process ends with staff finalising the RA activity: recording a DOC, storing documents, checking for related or duplicate work items, and doing follow-up actions. Those actions can include an ESAt request, a marital status review, a social work referral, a REBS update, business income or assets, and Centrepay changes. It is not an automatic end state. Ongoing payment remains open to RA Profile reviews.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N37",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-auto-fail.txt",
+    "quote": "Update the provisional data on the ACS screen as follows:Event Date: date of processing (i.e. today)Rent Verification: NVE - Not Verified"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Cease payment Suspend/cancel the customer's payment from today’s date, use the reason FRC (Failing to Respond to Correspondence)"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "When the Service Officer suspects the information provided is fraudulent, RA must not be paid until acceptable verification is received."
+   },
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "pay less than the rent threshold according to their family circumstances"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "system (automatic NVE) and staff (manual NVE, RVR, FRC suspension or cancellation of the payment)",
+  "automation_check": "different",
+  "order_check": "supported",
+  "granularity": "blueprint_splits_it",
+  "corrections": "The Blueprint has several separate ways RA stops: the system codes NVE automatically when verification is not returned in 28 days; staff code NVE by hand when that automatic review fails; staff code RVR when they suspect fraud or eligibility may start soon; codes GOV and NRP, or a blank verification code, give no entitlement. For an unanswered Q164 letter, staff suspend or cancel the whole qualifying payment (reason FRC), not just RA, after genuine attempts to contact the customer and a postal address check. 'Travel rules end entitlement' is not in the Blueprint pages provided.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N38",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Before ceasing the RA qualifying payment, make sure the suspension or cancellation letter will be issued to a current address."
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Was verification provided within 13 weeks of being given a notice of the decision to cancel the RA?"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "not have received advice of the RA cancellation due to a mail delay"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not stated; staff check the postal address before a suspension or cancellation letter",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "The Blueprint confirms that a notice of the decision to cancel RA exists, that it can be delayed in the mail, and that staff must make sure the postal address is current before a suspension or cancellation. It does not describe the channel (myGov Inbox or post). The date of the notice starts the 13-week window for a review or late verification.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "N39",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Financial hardship rent verification provisions can be used to extend the date verification is due:This includes re-starting RA if it has been cancelled Not Verified - NVE"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Was the SU523HD provided within 13 weeks of the customer receiving a notice of the decision to cancel RA?"
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Rent verification will be required to pay RA when eligibleEncourage the customer to provide verification of rent"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system codes; staff can restore",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "This is not a final end state; the decision does not simply stand. RA stopped under NVE can be restored: by the hardship code HAR (with arrears); by verification received within 13 weeks of the cancellation notice, which is treated as a review request (arrears via the ROA screen); or by later verification, paid from the date it is received. Where eligibility may start soon, staff code RVR so RA pays once rent is verified.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "N40",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "apply for a formal review a decision, if they disagree with it"
+   },
+   {
+    "source_file": "obp-qual-proc.txt",
+    "quote": "an application for a formal review of decision has been lodged within 52 weeks of being notified of a decision"
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "A customer is deemed to have requested a review within the timeframe when they:make contact within 13 weeks of being given a notice of the decision to cancel their RA"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer",
+  "automation_check": "same",
+  "order_check": "supported",
+  "granularity": "same",
+  "corrections": "Timeframes apply. For income support it is 13 weeks from the cancellation notice; contact plus the outstanding verification within that time counts as a review request. FTB arrears can go back further if a formal review is lodged within 52 weeks. Staff must help customers at risk of homelessness to apply for a review.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N41",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Does the customer or partner have an RA profile review, review of decision about RA or outstanding Complex Assessment Officer (CAO) assessment that will affect RA on file?Yes, refer the work item to the correct team for processing."
+   },
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "within the timeframe determined by the Review Officer"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "Review Officer / specialist team",
+  "automation_check": "same",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The review procedure itself is not in the pages provided. Processing staff must refer any work item with a pending review of decision to the correct team. A Review Officer sets the timeframe for providing outstanding verification.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N42",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "In general, all customers who receive RA may now be selected for an RA Profile review."
+   },
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Customers selected for an RA Profile review must provide verification regardless of their circumstances."
+   },
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Has the customer and/or partner contacted about a Rent Assistance (RA) Profile review or Location Intervention - Accommodation Certificate (SU657)?Yes, these forms are to be actioned only by the Rent Review Processing team"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "selection mechanism not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "same",
+  "corrections": "Confirmed as an 'RA Profile review'. Related compliance reviews are the Accommodation Circumstance Intervention (ACI) and Location Intervention (SU657). Only the Rent Review Processing team or the Location Intervention Compliance team handle responses; other staff refer them. How customers are selected is not described.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N43",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "Has the customer and/or partner contacted about a Rent Assistance (RA) Profile review or Location Intervention - Accommodation Certificate (SU657)?Yes, these forms are to be actioned only by the Rent Review Processing team"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The pages provided have no step for a review letter (channel, due date). They only imply that review forms (such as the SU657) exist. RA Profile review processing is in a separate procedure that was not provided.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N44",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Customers selected for an RA Profile review must provide verification regardless of their circumstances."
+   },
+   {
+    "source_file": "obp-ac-bg.txt",
+    "quote": "This procedure does not apply to customers responding to either a:"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer",
+  "automation_check": "same",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint requires people answering a review to provide rent verification even if they would normally be exempt. Only the Rent Review Processing team processes the responses, outside the standard AC procedure. The channels (online, phone self-service, one partner only) are not in the Blueprint.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N45",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-proof-determine.txt",
+    "quote": "due to return rent verification including documents for rent reviews, may be unable to do somay have had RA cancelled because they have not returned rent verification documents"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "system (automatic review), implied",
+  "automation_check": "unknown",
+  "order_check": "supported",
+  "granularity": "unknown",
+  "corrections": "The Blueprint's hardship and emergency provisions imply that RA is cancelled when rent verification documents for rent reviews are not returned. This supports the map's assumed consequence. Hardship or emergency provisions can extend the deadline or restore RA. The exact mechanism for profile reviews is in a procedure that was not provided.",
+  "reviewer_confidence": 0.55
+ },
+ {
+  "node_id": "N46",
+  "verdict": "contradicted",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Customers selected for an RA Profile review must provide verification regardless of their circumstances."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "Rent Review Processing team (procedure not provided)",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint requires every customer selected for an RA Profile review to provide verification, whatever their circumstances. So the branch where reviewed details go to assessment with no proof is contradicted. The decision after the review sits in a specialist team's procedure that was not provided.",
+  "reviewer_confidence": 0.55
+ },
+ {
+  "node_id": "N47",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "For NOHL Rule 99: Code the start date as the identified date (CPI, Restoration or Reassessment)"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Indexation on 20 March and 20 September is not stated. The only CPI reference is CPI as one of the dates used in a Notification Handler Rule 99 override.",
+  "reviewer_confidence": 0.65
+ },
+ {
+  "node_id": "N48",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Notification Handler (NOHL) Rule 10 or 99 have been identified for a NSS system payment Go to the Rate Component Override (RCO) screen."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "No procedure for automatic re-rating is described. Staff may have to override the rate (RCO screen or a manual rate) when NOHL Rule 99 wrongly applies a CPI date to arrears.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N49",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "Rent Assistance (RA) portability"
+   },
+   {
+    "source_file": "obp-qual-bg.txt",
+    "quote": "as a condition of occupying their principal home in Australia"
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "In the Blueprint pages provided, overseas travel and portability appear only as the title of a linked page, with no procedure. Rent must be for a principal home in Australia.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N50",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-verif-bg.txt",
+    "quote": "Customers travelling must notify Services Australia each time they change address."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint pages provided have no 14-day notice rule for overseas travel. The only travel notice rule is for travellers within Australia, who must report each change of address.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N51",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Department of Home Affairs appears only in relation to SRSS payments and refugee rental subsidies. There is no feed of departure and return data.",
+  "reviewer_confidence": 0.85
+ },
+ {
+  "node_id": "N52",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Not covered in the pages provided (portability is in a linked page that was not provided).",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N53",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Not covered in the pages provided.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N54",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The 26-week overseas limit is not in the pages provided.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N55",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Debts and arrears In most cases, the amount in the $ Adj Amt field is either all a debt or all arrears, not a combination of both."
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "record the AMR number on a DOC. Debt Staff will use it to review the activity When the activity is completed: a debt activity may be created and this will appear on the Activity List (AL) screen"
+   },
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Due to system issue KE10772 stimulus customers may be overpaid RA if they do not notify of a rent increase or the commencement of paying rent in the reporting period for the date of the change."
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "the system calculates a possible debt on assessment; the processing officer reviews it and transfers it to Debt Staff",
+  "automation_check": "different",
+  "order_check": "contradicted",
+  "granularity": "blueprint_splits_it",
+  "corrections": "The Blueprint does describe how an overpayment is found. When the late change is coded and assessed, the AR screen shows a negative adjustment or possible debt. Staff check the AC coding, record the AMR number on a DOC and transfer the debt activity to Debt Staff by Fast Note; Debt Staff then decide the debt. Existing RA debts are also checked against arrears, and Debt Staff adjust or zero them. This happens after the change is processed, not straight after the customer fails to report.",
+  "reviewer_confidence": 0.75
+ },
+ {
+  "node_id": "N56",
+  "verdict": "not_mentioned",
+  "evidence": [
+   {
+    "source_file": "obp-proof-process.txt",
+    "quote": "Service Officers need to review the acceptable verification documents ensuring it supports the update and detect any potential fraud."
+   }
+  ],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "The Blueprint has no decision on whether non-reporting was deliberate. Fraud appears only as a suspicion about verification documents: staff code RVR, so RA is held back until acceptable verification arrives, and record the decision on a DOC.",
+  "reviewer_confidence": 0.7
+ },
+ {
+  "node_id": "N57",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Fraud charges are not mentioned.",
+  "reviewer_confidence": 0.8
+ },
+ {
+  "node_id": "N58",
+  "verdict": "confirmed_rule_only",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "Debt Staff will either zero all or part of the debt, and/or refund repayments made to the customer"
+   }
+  ],
+  "actor_check": "same",
+  "actor_in_blueprint": "customer (implied); Debt Staff manage the debt",
+  "automation_check": "same",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "Repayment by the customer is only implied, through the mention of refunding repayments. The Blueprint adds a Debt Staff step (raising and deciding the debt) between the overpayment and the repayment. Debts may be zeroed if a reassessment shows the customer was entitled.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N59",
+  "verdict": "not_mentioned",
+  "evidence": [],
+  "actor_check": "unknown",
+  "actor_in_blueprint": "not described",
+  "automation_check": "unknown",
+  "order_check": "silent",
+  "granularity": "unknown",
+  "corrections": "This end state is not described. The Blueprint's alternative outcome is Debt Staff zeroing all or part of the debt, or refunding repayments, after a reassessment.",
+  "reviewer_confidence": 0.6
+ },
+ {
+  "node_id": "N60",
+  "verdict": "confirmed_with_corrections",
+  "evidence": [
+   {
+    "source_file": "obp-ac-proc.txt",
+    "quote": "the customer has Centrepay deductions for accommodation or utilities and updates are needed. See Starting, changing and cancelling a Centrepay deduction at the request of a customer"
+   }
+  ],
+  "actor_check": "different",
+  "actor_in_blueprint": "service officer as a follow-up action at the customer's request",
+  "automation_check": "same",
+  "order_check": "contradicted",
+  "granularity": "same",
+  "corrections": "Centrepay changes are a staff follow-up, done at the customer's request after the AC update is finalised. The outcome is part of finalising the accommodation update, not a separate end state reached only by the customer.",
+  "reviewer_confidence": 0.65
+ }
+]

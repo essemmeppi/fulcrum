@@ -1,0 +1,472 @@
+[
+  {
+    "node_id": "D_ELIGIBLE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 41",
+        "quote": "Jos ruokakuntaan kuuluvien henkilöiden tulojen yhteismäärä ylittää tulorajat, joilla asumistukea voidaan myöntää ruokakunnalle asumismenojen suuruudesta riippumatta, asumistukea ei myönnetä."
+      },
+      {
+        "page": "p. 59",
+        "quote": "Jos ruokakunnan omaisuus käyttövaravähennyksen ja velkojen vähentämisen jälkeen on vähintään 50 000 euroa, yleiseen asumistukeen ei ole oikeutta lainkaan."
+      },
+      {
+        "page": "p. 4",
+        "quote": "Kun käsittelet yleisen asumistuen hakemusta, sinun tulee aina ensimmäiseksi kartoittaa ruokakunnan kokonaistilanne."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "guideline_splits_it",
+    "corrections": "Income limit and 50 000 EUR asset ceiling are stated as rules, but the guideline has no single eligibility gate: conditions are spread over 1.2 (who qualifies), 1.5 (dwelling), 1.6-1.7 (income, assets), and the caseworker is told to first map the household's overall situation (1.1). It gives no municipality-specific income limit (municipality group only drives maximum housing costs), and many eligibility judgments (cohabitation, residence, temporary absence, ownership vs rental) are case-by-case discretion, so 'deterministic_rule / agent_can_execute' is optimistic.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "T_CALC",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 28",
+        "quote": "Yleinen asumistuki = 0,70 (31.3.2024 asti 0,80) x (hyväksyttävät, kuitenkin enintään enimmäisasumismenot - perusomavastuu)"
+      },
+      {
+        "page": "p. 28",
+        "quote": "1.4.2024 alkaen Perusomavastuu = 0,5 x (T – (667 + 94 x A + 296 x L)"
+      },
+      {
+        "page": "p. 28",
+        "quote": "Asumismenoina hyväksytään enintään YAL 10 §:n mukaiset ruokakunnan kokoa ja asunnon sijaintikunnan kuntaryhmää vastaavat enimmäisasumismenot."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Formula and parameters are confirmed and resolve the map's 70/80 % conflict (70 % and 50 % basic-deductible share from 1.4.2024; 80 %/42 % before). The guideline never says who performs the calculation (it only speaks of staff registering data in the system), so 'system' as actor is unsupported. Omitted by the map: basic deductible under 10 EUR is disregarded; Åland has its own formula (0.80 x ..., deductible 0.42 x (T - (667 + 111 A + 246 L)) from 1.9.2024) and own maximum costs; maximum housing costs are indexed to the cost-of-living index, other parameters to the national pension index, with no index adjustments in 2024-2027.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "D_MIN_AMOUNT",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 29",
+        "quote": "Pienin maksettava asumistuen määrä on 15,00 euroa kuukaudessa ( YAL 24 § 3 mom.)."
+      },
+      {
+        "page": "p. 77",
+        "quote": "Yleistä asumistukea ei makseta, jos asumistuen määrä on alle 15 euroa."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "The 15.00 EUR/month minimum is confirmed, but the guideline states it as a rule (listed in 1.4 and again under 1.11 Maksaminen as 'ei makseta'), not as a separate decision step. It does not say how a below-minimum result is decided or communicated (rejection vs mere non-payment), and the map checks the same minimum twice (here and in D_PAYABLE).",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "T_DECIDE",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Yleisen asumistuen hakijalla on annettava kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+      },
+      {
+        "page": "p. 64",
+        "quote": "päätös on annettava viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+      },
+      {
+        "page": "p. 65",
+        "quote": "Näissä tilanteissa hakemus on ratkaistava 14 kalenteripäivän kuluessa siitä, kun Kela on saanut käyttöönsä asian ratkaisemiseksi tarvittavat tiedot, tai määräaika selvitysten antamiselle on kulunut."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Decision types and both time limits are confirmed. Differences: the guideline also lists recovery (takaisinperintä) decisions and a separate interim decision (väliaikainen päätös) without appeal right; the 14-day clock also ends when the deadline for the requested clarification has passed (not only on receipt of the info); at annual review a non-returned renewal leads to programmatic termination plus a decision, so not every termination decision is a caseworker decision. The guideline refers to 'päätösesitys' and 'ratkaisun tekeminen' as separate topics but does not say who signs.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "T_NOTIFY",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 65",
+        "quote": "Yleisen asumistuen päätös annetaan hakijalle, joka edustaa koko ruokakuntaa."
+      },
+      {
+        "page": "p. 65",
+        "quote": "Hakijan lisäksi samansisältöinen asumistukipäätös lähetetään myös"
+      },
+      {
+        "page": "p. 65",
+        "quote": "Väliaikaisesta päätöksestä ei ole muutoksenhakuoikeutta."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "Delivery of the decision to the applicant is confirmed, but recipients are broader: a same-content decision also goes to a minor's guardian (sole minor household) and to edunvalvoja/edunvalvontavaltuutettu, and is not sent to the landlord even when paid to the landlord. The guideline does not describe OmaKela vs post, language, or appeal instructions (it points to the common Muutoksenhaku guideline), and some decisions (interim decision, landlord-payment decision) carry no right of appeal, so 'with appeal instructions' is not universal.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "D_PAYABLE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 77",
+        "quote": "Yleistä asumistukea ei makseta, jos asumistuen määrä on alle 15 euroa."
+      },
+      {
+        "page": "p. 73",
+        "quote": "Yleinen asumistuki lakkautetaan vuosi- tai välitarkistuksessa, jos asumistuen maksamisen edellytyksiä ei enää ole."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The guideline has no post-notification 'payable?' gateway; it only states the underlying rules (under 15 EUR not paid; termination when payment conditions cease). The minimum-amount rule is already applied upstream (D_MIN_AMOUNT) and the guideline does not place a payability check after delivery of the decision.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "node_id": "T_STATE_NOTICE",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Guideline is silent on State funding settlement or notifying the State of the month's total. The only related text is a payment-run cutoff (maksatusajo, at the latest five days before payment day) in the annual-review section, which concerns programmatic termination of an unreturned renewal application, not any State notice.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "node_id": "T_STATE_PAYS",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Guideline is silent on State transfers of funds to Kela; this is a funding-settlement step outside the staff guideline.",
+    "reviewer_confidence": 0.88
+  },
+  {
+    "node_id": "D_PAY_LANDLORD",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 77",
+        "quote": "Asumistuki voidaan maksaa hakijalle, vuokranantajalle tai tällä sivulla mainitulle muulle saajalle."
+      },
+      {
+        "page": "p. 78",
+        "quote": "Asumistuki voidaan maksaa vuokranantajalle joko hakijan valtuutuksen tai tuen saajan vuokranmaksun laiminlyönnin perusteella (YAL 25 §)."
+      },
+      {
+        "page": "p. 77",
+        "quote": "Edunvalvojalle maksaminen ei vaadi tuen saajan valtuutusta."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "Landlord payment by authorisation or on unpaid rent (YAL 25 §) is confirmed, but the payee choice is not binary: the guideline also lists asumisoikeusyhtiö (with applicant's authorisation), edunvalvoja/edunvalvontavaltuutettu (no authorisation needed), hyvinvointialue and its välitystili (with consent) and a prepaid card when no bank account, so 'otherwise pay to representative' is incomplete. Landlord payment is only for rental/part-ownership dwellings and only to the landlord named in the lease; authorisation (oral or written, revocable) is given at application/review and the unpaid-rent route needs the landlord's request, a hearing of the recipient and a separate decision, i.e. payee is fixed at decision stage, not after a State funding step.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "T_PAY_APPLICANT",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 76",
+        "quote": "Yleinen asumistuki maksetaan kuukausittain. Maksupäivä on kuukauden ensimmäinen arkipäivä. Takautuvat kuukausierät voidaan maksaa myös muuna pankkipäivänä."
+      },
+      {
+        "page": "p. 76",
+        "quote": "Yleinen asumistuki voidaan maksaa hakijan ulkomaiselle tilille (IBAN tai BBAN)."
+      },
+      {
+        "page": "p. 76",
+        "quote": "yleinen asumistuki voidaan maksaa prepaid-maksukortille."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "Monthly payment on the first weekday to the applicant's account is confirmed. Differences: the guideline says 'ensimmäinen arkipäivä' (no '1st or 2nd banking day') and allows retroactive instalments on other banking days; a foreign account is described as IBAN or BBAN with no EU-only wording; a prepaid card may be used if the customer has no bank account; payments cannot be cancelled at the bank; no tax withholding. Guideline does not say who runs the payment (a 'maksatusajo' exists but is not described).",
+    "reviewer_confidence": 0.72
+  },
+  {
+    "node_id": "T_PAY_LANDLORD",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 78",
+        "quote": "Asumistuki voidaan maksaa suoraan vain vuokrasopimuksen mukaiselle vuokranantajalle."
+      },
+      {
+        "page": "p. 79",
+        "quote": "Jos vuokralainen laiminlyö vuokran maksamisen kokonaan tai osittain kahden perättäisen kuukauden ajan, tuki voidaan vuokranantajan pyynnöstä maksaa suoraan vuokranantajalle ilman tuensaajan suostumusta (YAL 25 § 2 mom.)."
+      },
+      {
+        "page": "p. 78",
+        "quote": "Vuokranantajalle maksettava asumistuki voidaan ulosmitata vuokranantajan velasta."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "Payment to the landlord on authorisation or unpaid rent is confirmed. The 'reported reference number' is not mentioned in the guideline. Landlord payment is only for rental/part-ownership dwellings and only to the landlord in the lease (not the main landlord for a sub-tenant); allowance paid to the landlord can be distrained for the landlord's debts (so the map's blanket no-distraint rule does not hold for this path); misdirected payments after a move are recovered from the landlord in full without discretion.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "W_IN_PAYMENT",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 65",
+        "quote": "Yleinen asumistuki myönnetään toistaiseksi ja tarkistetaan viimeistään silloin, kun myönnöstä tai edellisestä tarkistuksesta on kulunut vuosi."
+      },
+      {
+        "page": "p. 76",
+        "quote": "Yleinen asumistuki maksetaan kuukausittain."
+      },
+      {
+        "page": "p. 66",
+        "quote": "Yleinen asumistuki tarkistetaan vähintään kerran vuodessa (vuositarkistus)."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Guideline gives the lifecycle rules (granted indefinitely, paid monthly, reviewed at least yearly, interim reviews possible) but no 'wait' step. It also provides fixed-term grants (e.g. fixed-term lease) and a programmatic exit from the waiting state at annual review (letter about two months before; termination if the renewal application is not returned by the payment run). The loop back to the State notice is not in the guideline.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "E_NOT_PAYABLE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 77",
+        "quote": "Yleistä asumistukea ei makseta, jos asumistuen määrä on alle 15 euroa."
+      },
+      {
+        "page": "p. 73",
+        "quote": "Yleinen asumistuki lakkautetaan vuosi- tai välitarkistuksessa, jos asumistuen maksamisen edellytyksiä ei enää ole."
+      },
+      {
+        "page": "p. 81",
+        "quote": "Jos yleistä asumistukea on maksettu aiheettomasti tai liian suurena, liikaa maksettu etuus on perittävä takaisin."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Rejection, below-minimum non-payment and termination are rule-confirmed, but the guideline does not treat them as the end of the case: overpayment recovery, appeal, rectification and re-examination on new evidence (1.12.3-1.12.5) follow rejections and terminations, and termination may be made retroactively.",
+    "reviewer_confidence": 0.5
+  },
+  {
+    "node_id": "S_CHANGE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 81",
+        "quote": "Lisäksi yleisen asumistuen saajan tulee ilmoittaa Kelalle, jos ruokakunnan olosuhteissa tapahtuu muutos, joka saattaa vaikuttaa yleisen asumistuen määrään tai maksamisen."
+      },
+      {
+        "page": "p. 81",
+        "quote": "ruokakunnan yhteenlaskettujen kuukausitulojen nouseminen vähintään 400 euroa kuukaudessa;"
+      },
+      {
+        "page": "p. 81",
+        "quote": "ruokakunnan asumismenojen alentuminen vähintään 50 euroa kuukaudessa"
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "The guideline's list of reportable changes (1.12.1) matches in kind but is narrower: income must be reported when it rises by at least 400 EUR and housing costs when they fall by at least 50 EUR; an income fall of 200 EUR or more or a cost rise is a revision trigger (1.9) but is not on the mandatory reporting list. Changes can also reach Kela from other sources ('Kelaan on tullut tieto', follow-up tasks), not only by citizen report.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "T_REPORT_CHANGE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 81",
+        "quote": "Lisäksi yleisen asumistuen saajan tulee ilmoittaa Kelalle, jos ruokakunnan olosuhteissa tapahtuu muutos, joka saattaa vaikuttaa yleisen asumistuen määrään tai maksamisen."
+      },
+      {
+        "page": "p. 21",
+        "quote": "Yksi ruokakunnan jäsen edustaa ruokakuntaa ja hakee yleistä asumistukea sekä tuen tarkistamista."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Muutto ulkomaille tai työskentely ulkomailla -lomake (Y38), jos kyseessä on muutto ulkomaille tai oleskelu ulkomailla"
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Guideline states the duty to report but does not describe how a change is reported: no mention of OmaKela 'Ilmoita muutoksista', form AT 1 for changes, phone or service point. Named channels exist only for applications (OmaKela, AT1, oral), account changes (Y 121, online, oral) and the Y38 attachment for moves abroad; revision is framed as the household representative 'applying for' a review. The map's channel list for change reports is therefore unsupported.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "node_id": "S_LANDLORD_MOVEOUT",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 79",
+        "quote": "Vuokranantajan on ilmoitettava Kelalle, jos"
+      },
+      {
+        "page": "p. 79",
+        "quote": "asumistuen saajan oikeus pitää huoneistoa hallinnassaan päättyy tai"
+      },
+      {
+        "page": "p. 79",
+        "quote": "asumistuen saaja muuttaa pois asunnosta."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "guideline_merges_it",
+    "corrections": "The guideline states the landlord's notification duty, not a separate triggering event: it is one rule (right to hold the dwelling ends, or the recipient moves out) in section 1.11.2. The condition 'while paid to the landlord' follows only from the section context.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_LANDLORD_NOTICE",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 79",
+        "quote": "Vuokranantajan on ilmoitettava Kelalle, jos"
+      },
+      {
+        "page": "p. 79",
+        "quote": "Ilmoituksessa on mainittava hallintaoikeuden päättymisajankohta ja asunnosta pois muuttamisen ajankohta."
+      },
+      {
+        "page": "p. 79",
+        "quote": "vuokranantaja ei ole ilmoittanut Kelaan tuensaajan poismuutosta tai asunnon hallintaoikeuden päättymisestä"
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Duty and content (end of right to hold the dwelling and move-out dates) match. The guideline adds the consequence: if the landlord fails to notify, or draws allowance while the tenant is not entitled, the allowance is recovered from the landlord in full (YAL 31 § 4 mom.), without discretion or a separate hearing, and the recipient may then be paid directly. It does not say that the notice itself triggers an 'assessment' step.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "T_ASSESS_CHANGE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 71",
+        "quote": "Yleinen asumistuki tarkistetaan, jos ruokakunnan yhteenlasketut tulot ovat nousseet vähintään 400 €/kk tai alentuneet vähintään 200 €/kk edellisessä päätöksessä huomioon otettuihin tuloihin verrattuna."
+      },
+      {
+        "page": "p. 68",
+        "quote": "Muuttuneita hyväksyttäviä asumismenoja verrataan aikaisemmassa asumistukipäätöksessä olevaan hyväksyttävien asumismenojen yhteissummaan."
+      },
+      {
+        "page": "p. 71",
+        "quote": "Jokaisen ruokakunnan jäsenen jatkuvat kuukausitulot tai keskiarvotulo selvitetään tarkistamisajankohdasta lukien tulevalle tukikaudelle ja lopuksi ruokakunnan tulot lasketaan yhteen."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "guideline_splits_it",
+    "corrections": "Thresholds (+400/-200 EUR income, 50 EUR housing costs) and termination/suspension grounds are confirmed but as rules spread over 1.9, 1.10 and 1.12.2, not as one assessment step. Details missing in the map: comparison is against the income and costs used in the previous decision (heating/water at norm values; change in maximum costs alone is no trigger); several triggers (household composition, tenure, dwelling, sub-tenant) have no threshold; once a trigger is met the whole decision is recalculated on all criteria; income per member needs case-by-case estimation (continuous vs average income), so 'deterministic_rule' understates judgment.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "D_CHANGE_EFFECT",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 68",
+        "quote": "Yleinen asumistuki tulee kuitenkin tarkistaa ja seuraavan vuositarkistuksen aika siirtyy 12 kk:n päähän."
+      },
+      {
+        "page": "p. 69",
+        "quote": "Asiasta annetaan päätös ja tuen maksamista jatketaan entisen suuruisena seuraavaan väli- tai vuositarkistukseen saakka."
+      },
+      {
+        "page": "p. 81",
+        "quote": "Asumistuen väliaikainen vähentäminen tai keskeyttäminen tulee kysymykseen silloin, kun Kelaan on tullut tieto tuensaajan olosuhteissa tapahtuneesta muutoksesta, jonka vuoksi tuki olisi lakkautettava tai tuen määrää olisi vähennettävä."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Revision, termination and temporary suspension branches exist in the guideline, but the 'no change' branch is wrong in two cases: when a cost rise would lower the allowance (safeguard, YAL 27 §) a decision is still issued and payment continues unchanged until the next review; and when housing costs change by 50 EUR or more but already exceed the maximum, the allowance must still be revised and the annual review date moves 12 months, so the outcome is not simply 'continues unchanged'.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "T_REVISION_DATE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 71",
+        "quote": "Välitarkistus tehdään tulojen huomattavan muutoksen vuoksi sitä seuraavan kuukauden alusta, josta tulon muutos on ollut voimassa kuukauden 1.päivästä lähtien."
+      },
+      {
+        "page": "p. 69",
+        "quote": "Jos muuttuneita asumismenoja maksetaan koko kuukaudelta, välitarkistus tehdään saman kuukauden alusta."
+      },
+      {
+        "page": "p. 66",
+        "quote": "Yleiseen asumistukeen tehdään korottava tarkistus yleensä aikaisintaan asumistukihakemuksen jättämistä edeltävän kuukauden alusta."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "supported",
+    "granularity": "same",
+    "corrections": "Effective-date rules are stated per revision cause (income: month after the one whose 1st day the change is in force, examples 1.1.->1.2. and 4.2.->1.4. match the map; housing costs, tenure, household size, sub-tenant, study housing supplement have their own dates, e.g. housing costs from the same month when paid for a full month). Increases are normally retroactive at most to the month before application (longer only for special reason), whereas reducing revisions run from the actual date of change and create overpayment. The guideline presents these as dating rules, not as a separate 'determine date' action.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "T_SUSPEND",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 65",
+        "quote": "rekisteröimällä tarkistus- tai lakkautusratkaisu, koska ruokakunnan olosuhteissa on tapahtunut muutos, jonka vuoksi asumistuki olisi tarkistettava tai lakkautettava eikä lopullista päätöstä voida vielä antaa."
+      },
+      {
+        "page": "p. 65",
+        "quote": "Väliaikaisesta päätöksestä ei ole muutoksenhakuoikeutta."
+      },
+      {
+        "page": "p. 81",
+        "quote": "Asumistuen väliaikainen vähentäminen tai keskeyttäminen tulee kysymykseen silloin, kun Kelaan on tullut tieto tuensaajan olosuhteissa tapahtuneesta muutoksesta, jonka vuoksi tuki olisi lakkautettava tai tuen määrää olisi vähennettävä."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "Interim reduction/suspension by interim decision pending a final decision is confirmed (staff register a revision or termination decision as the interim decision). Correction: the interim decision carries no right of appeal, so attaching the appeal route (R_PROC_APPEAL) to this node is wrong; the trigger is knowledge of a change that would lead to termination or reduction, not merely doubt about entitlement. The guideline does not describe the follow-on request for information as a fixed next step.",
+    "reviewer_confidence": 0.7
+  }
+]

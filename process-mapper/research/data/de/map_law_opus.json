@@ -1,0 +1,1810 @@
+{
+ "actors": [
+  {
+   "id": "ANT",
+   "name": "Antragsteller/in (Ausländer/in)"
+  },
+  {
+   "id": "ABH",
+   "name": "Ausländerbehörde"
+  },
+  {
+   "id": "AZR",
+   "name": "Ausländerzentralregister (Registerbehörde)"
+  },
+  {
+   "id": "AUSK",
+   "name": "Andere Behörden als Auskunftsstellen (z. B. Sicherheits-, Polizei- und Strafverfolgungsbehörden)"
+  },
+  {
+   "id": "HFK",
+   "name": "Härtefallkommission des Landes"
+  },
+  {
+   "id": "OLB",
+   "name": "Oberste Landesbehörde"
+  },
+  {
+   "id": "STA",
+   "name": "Staatsanwaltschaft / Strafgericht"
+  },
+  {
+   "id": "DH",
+   "name": "Dokumentenhersteller"
+  },
+  {
+   "id": "WB",
+   "name": "Widerspruchsbehörde"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "N01",
+   "name": "Antragsanlass entsteht",
+   "name_en": "Need for a humanitarian residence permit arises",
+   "description": "The foreigner needs a residence permit on international-law, humanitarian or political grounds, which as a rule is granted only on application.",
+   "actor_id": "ANT",
+   "type": "start_event",
+   "legal_basis": [
+    "§ 81 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Ein Aufenthaltstitel wird einem Ausländer nur auf seinen Antrag erteilt, soweit nichts anderes bestimmt ist."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N02",
+   "name": "Antrag stellen und Nachweise einreichen",
+   "name_en": "Submit application and supporting documents",
+   "description": "The foreigner applies for the residence permit without delay after entry (or within the prescribed period) and submits the evidence on his or her personal circumstances.",
+   "actor_id": "ANT",
+   "type": "citizen_task",
+   "legal_basis": [
+    "§ 81 Abs. 1 AufenthG",
+    "§ 81 Abs. 2 AufenthG",
+    "§ 82 Abs. 1 Satz 1 AufenthG",
+    "§ 26 Abs. 2 VwVfG"
+   ],
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "ist unverzüglich nach der Einreise oder innerhalb der in der Rechtsverordnung bestimmten Frist zu beantragen"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "die erforderlichen Nachweise über seine persönlichen Verhältnisse, sonstige erforderliche Bescheinigungen und Erlaubnisse sowie sonstige erforderliche Nachweise, die er erbringen kann, unverzüglich beizubringen"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N03",
+   "name": "Antrag entgegennehmen",
+   "name_en": "Receive the application",
+   "description": "The foreigners authority accepts the application and documents and may not refuse receipt because it considers the application inadmissible or unfounded.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 24 Abs. 3 VwVfG",
+    "§ 81 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Behörde darf die Entgegennahme von Erklärungen oder Anträgen, die in ihren Zuständigkeitsbereich fallen, nicht deshalb verweigern, weil sie die Erklärung oder den Antrag in der Sache für unzulässig oder unbegründet hält."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N04",
+   "name": "Zuständigkeit prüfen",
+   "name_en": "Check competence",
+   "description": "The authority checks whether it is the competent foreigners authority, taking into account Land rules that assign tasks to particular foreigners authorities.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 71 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Für aufenthalts- und passrechtliche Maßnahmen und Entscheidungen nach diesem Gesetz und nach ausländerrechtlichen Bestimmungen in anderen Gesetzen sind die Ausländerbehörden zuständig."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Landesregierung oder die von ihr bestimmte Stelle kann bestimmen, dass für einzelne Aufgaben nur eine oder mehrere bestimmte Ausländerbehörden zuständig sind."
+    }
+   ],
+   "inferred_reason": "§ 71 assigns competence to the foreigners authorities; an explicit check step is implied. Rules on local competence (e.g. place of residence) are not in the sources."
+  },
+  {
+   "id": "N05",
+   "name": "Antrag an zuständige Behörde abgeben",
+   "name_en": "Forward application to the competent authority",
+   "description": "If it is not competent, the authority passes the application on to the competent foreigners authority and informs the applicant.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 71 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.35,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Landesregierung oder die von ihr bestimmte Stelle kann bestimmen, dass für einzelne Aufgaben nur eine oder mehrere bestimmte Ausländerbehörden zuständig sind."
+    }
+   ],
+   "inferred_reason": "No provision in the sources says how an application filed with a non-competent authority is handled; forwarding is inferred."
+  },
+  {
+   "id": "N06",
+   "name": "Verfahren wegen Unzuständigkeit abgegeben",
+   "name_en": "Case handed over (authority not competent)",
+   "description": "Processing ends at this authority because another foreigners authority is competent.",
+   "actor_id": "ABH",
+   "type": "end_event",
+   "legal_basis": [
+    "§ 71 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.35,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Für aufenthalts- und passrechtliche Maßnahmen und Entscheidungen nach diesem Gesetz und nach ausländerrechtlichen Bestimmungen in anderen Gesetzen sind die Ausländerbehörden zuständig."
+    }
+   ],
+   "inferred_reason": "End event inferred from the competence rule; not stated in the sources."
+  },
+  {
+   "id": "N07",
+   "name": "Auf Mitwirkungspflichten hinweisen",
+   "name_en": "Inform applicant of duties to cooperate",
+   "description": "The applicant is told about the duty to present his or her circumstances and evidence and about essential rights and obligations under the Residence Act.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 82 Abs. 3 Satz 1 AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Der Ausländer soll auf seine Pflichten nach Absatz 1 sowie seine wesentlichen Rechte und Pflichten nach diesem Gesetz, insbesondere die Verpflichtungen aus den §§ 44a, 48, 49 und 81 hingewiesen werden."
+    }
+   ],
+   "inferred_reason": "The duty to inform is stated, but its timing at the start of the procedure is inferred."
+  },
+  {
+   "id": "N08",
+   "name": "Vollständigkeit prüfen",
+   "name_en": "Check completeness of the application",
+   "description": "The authority checks whether the information and evidence needed for the decision are complete.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 82 Abs. 1 Satz 3 AufenthG",
+    "§ 26 Abs. 2 VwVfG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Ausländerbehörde setzt ihm eine solche Frist, wenn sie die Bearbeitung eines Antrags auf Erteilung eines Aufenthaltstitels wegen fehlender oder unvollständiger Angaben aussetzt, und benennt dabei die nachzuholenden Angaben."
+    }
+   ],
+   "inferred_reason": "A completeness check is not named as such; it is implied by the rule on suspending processing for missing or incomplete information."
+  },
+  {
+   "id": "N09",
+   "name": "Fehlende Angaben nachfordern und Frist setzen",
+   "name_en": "Request missing information and set a deadline",
+   "description": "The authority suspends processing, names the missing information, sets a reasonable deadline and points out the consequences of missing it.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 82 Abs. 1 Satz 2 und 3 AufenthG",
+    "§ 82 Abs. 3 Satz 2 AufenthG"
+   ],
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die mit dem Vollzug des Aufenthaltsrechts betrauten Behörden können ihm dafür eine angemessene Frist setzen."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Im Falle der Fristsetzung ist er auf die Folgen der Fristversäumung hinzuweisen."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N10",
+   "name": "Fehlende Angaben und Nachweise nachreichen",
+   "name_en": "Submit missing information and evidence",
+   "description": "The applicant supplies the requested information and evidence within the deadline; later submissions may be disregarded.",
+   "actor_id": "ANT",
+   "type": "citizen_task",
+   "legal_basis": [
+    "§ 82 Abs. 1 Satz 1 und 4 AufenthG",
+    "§ 26 Abs. 2 VwVfG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Nach Ablauf der Frist geltend gemachte Umstände und beigebrachte Nachweise können unberücksichtigt bleiben."
+    },
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Beteiligten sollen bei der Ermittlung des Sachverhalts mitwirken. Sie sollen insbesondere ihnen bekannte Tatsachen und Beweismittel angeben."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N11",
+   "name": "Erfordernis erkennungsdienstlicher Behandlung prüfen",
+   "name_en": "Check whether identity must be secured by identification measures",
+   "description": "The authority checks whether the identity has to be secured by identification measures under § 49 AufenthG or § 16 AsylG before a certificate or title may be issued.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 81 Abs. 7 AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Ist die Identität durch erkennungsdienstliche Behandlung gemäß § 49 dieses Gesetzes oder § 16 des Asylgesetzes zu sichern, so darf eine Fiktionsbescheinigung nach Absatz 5 nur ausgestellt oder ein Aufenthaltstitel nur erteilt werden"
+    }
+   ],
+   "inferred_reason": "The conditions of § 49 AufenthG are not in the sources; only the consequence in § 81 Abs. 7 is."
+  },
+  {
+   "id": "N12",
+   "name": "Erkennungsdienstliche Behandlung durchführen",
+   "name_en": "Carry out identification measures",
+   "description": "The foreigners authority carries out the identification measures (e.g. taking fingerprints) needed to secure the applicant's identity.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 81 Abs. 7 AufenthG",
+    "§ 71 Abs. 4 Satz 1 AufenthG"
+   ],
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Für die erforderlichen Maßnahmen nach den §§ 48, 48a und 49 Absatz 2 bis 9 sind die Ausländerbehörden, die Polizeivollzugsbehörden der Länder"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "wenn die erkennungsdienstliche Behandlung durchgeführt worden ist"
+    }
+   ],
+   "inferred_reason": "What the measures consist of (§ 49) is not in the sources; the fingerprint example is inferred."
+  },
+  {
+   "id": "N13",
+   "name": "ED-Daten im Ausländerzentralregister speichern",
+   "name_en": "Store identification data in the Central Register of Foreigners",
+   "description": "The data from the identification measures are stored in the Central Register of Foreigners, which is a precondition for issuing the certificate or the title.",
+   "actor_id": "AZR",
+   "type": "system_task",
+   "legal_basis": [
+    "§ 81 Abs. 7 AufenthG"
+   ],
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "eine Speicherung der hierdurch gewonnenen Daten im Ausländerzentralregister erfolgt ist"
+    }
+   ],
+   "inferred_reason": "The storage is required; who performs it and how (automated transfer to the register) is inferred."
+  },
+  {
+   "id": "N14",
+   "name": "Fiktionswirkung des Antrags prüfen",
+   "name_en": "Determine the legal effect of the application",
+   "description": "The authority determines whether the application makes the stay count as permitted (§ 81 Abs. 3), keeps the previous title in force (§ 81 Abs. 4) or, if late, suspends deportation.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 81 Abs. 3 AufenthG",
+    "§ 81 Abs. 4 AufenthG",
+    "§ 25 Abs. 1 Satz 3 AufenthG"
+   ],
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Beantragt ein Ausländer, der sich rechtmäßig im Bundesgebiet aufhält, ohne einen Aufenthaltstitel zu besitzen, die Erteilung eines Aufenthaltstitels, gilt sein Aufenthalt bis zur Entscheidung der Ausländerbehörde als erlaubt."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "gilt der bisherige Aufenthaltstitel vom Zeitpunkt seines Ablaufs bis zur Entscheidung der Ausländerbehörde als fortbestehend"
+    }
+   ],
+   "inferred_reason": "The effects arise by law; an explicit determination step by the caseworker is inferred."
+  },
+  {
+   "id": "N15",
+   "name": "Fortgeltungswirkung anordnen",
+   "name_en": "Order continuation of the previous title (late application)",
+   "description": "If the application was filed late, the authority may order that the previous title continues in force to avoid undue hardship.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 81 Abs. 4 Satz 3 AufenthG"
+   ],
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Wurde der Antrag auf Erteilung oder Verlängerung eines Aufenthaltstitels verspätet gestellt, kann die Ausländerbehörde zur Vermeidung einer unbilligen Härte die Fortgeltungswirkung anordnen."
+    }
+   ],
+   "inferred_reason": "Optional discretionary step; how often it arises for humanitarian permits is not stated in the sources."
+  },
+  {
+   "id": "N16",
+   "name": "Fiktionsbescheinigung ausstellen",
+   "name_en": "Issue provisional certificate (Fiktionsbescheinigung)",
+   "description": "The authority issues a certificate on the effect of the application, after any required identification measures and storage in the register.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 81 Abs. 5 AufenthG",
+    "§ 81 Abs. 7 AufenthG"
+   ],
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Dem Ausländer ist eine Bescheinigung über die Wirkung seiner Antragstellung (Fiktionsbescheinigung) auszustellen."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N17",
+   "name": "Sachverhalt von Amts wegen ermitteln",
+   "name_en": "Investigate the facts ex officio",
+   "description": "The authority decides on the type and scope of the investigation, considers all relevant facts including those in the applicant's favour, and collects the evidence and personal data it needs.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 24 Abs. 1 und 2 VwVfG",
+    "§ 26 Abs. 1 VwVfG",
+    "§ 79 Abs. 1 AufenthG",
+    "§ 86 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Behörde ermittelt den Sachverhalt von Amts wegen. Sie bestimmt Art und Umfang der Ermittlungen; an das Vorbringen und an die Beweisanträge der Beteiligten ist sie nicht gebunden."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Über den Aufenthalt von Ausländern wird auf der Grundlage der im Bundesgebiet bekannten Umstände und zugänglichen Erkenntnisse entschieden."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N18",
+   "name": "Identität, Staatsangehörigkeit und Passpflicht prüfen",
+   "name_en": "Verify identity, nationality and passport obligation",
+   "description": "The authority checks whether identity and nationality are established and the passport obligation is met, and may order the foreigner to appear in person, also before the representation of the presumed home state.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 5 Abs. 1 Nr. 1a und 4 AufenthG",
+    "§ 82 Abs. 4 AufenthG",
+    "§ 25a Abs. 6 AufenthG",
+    "§ 25b Abs. 8 AufenthG"
+   ],
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "die Identität und, falls er nicht zur Rückkehr in einen anderen Staat berechtigt ist, die Staatsangehörigkeit des Ausländers geklärt ist"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "kann angeordnet werden, dass ein Ausländer bei der zuständigen Behörde sowie den Vertretungen oder ermächtigten Bediensteten des Staates, dessen Staatsangehörigkeit er vermutlich besitzt, persönlich erscheint"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N19",
+   "name": "Auskünfte anderer Behörden einholen (Sicherheitsabfrage)",
+   "name_en": "Request information from other authorities (security check)",
+   "description": "To check for expulsion interests, threats to the interests or security of Germany and exclusion grounds, the authority requests information and files from other authorities.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 26 Abs. 1 Satz 2 Nr. 1 und 3 VwVfG",
+    "§ 5 Abs. 1 Nr. 2 und 3 AufenthG",
+    "§ 5 Abs. 4 AufenthG",
+    "§ 86 AufenthG"
+   ],
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Sie kann insbesondere 1.Auskünfte jeder Art einholen"
+    },
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "3.Urkunden und Akten beiziehen"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Erteilung eines Aufenthaltstitels ist zu versagen, wenn ein Ausweisungsinteresse im Sinne von § 54 Absatz 1 Nummer 2 oder 4 besteht oder eine Abschiebungsanordnung nach § 58a erlassen wurde."
+    }
+   ],
+   "inferred_reason": "The sources contain no provision on a security consultation procedure (e.g. § 73 AufenthG is not included); querying other authorities is inferred from the general power to obtain information and from the security-related grounds for refusal."
+  },
+  {
+   "id": "N20",
+   "name": "Erkenntnisse übermitteln",
+   "name_en": "Report findings to the foreigners authority",
+   "description": "The authorities consulted report any findings on identity, security concerns or pending criminal proceedings.",
+   "actor_id": "AUSK",
+   "type": "third_party_task",
+   "legal_basis": [
+    "§ 26 Abs. 1 VwVfG",
+    "§ 79 Abs. 2 AufenthG"
+   ],
+   "confidence": 0.4,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Behörde bedient sich der Beweismittel, die sie nach pflichtgemäßem Ermessen zur Ermittlung des Sachverhalts für erforderlich hält."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Beantragt ein Ausländer, gegen den wegen des Verdachts einer Straftat oder einer Ordnungswidrigkeit ermittelt wird, die Erteilung oder Verlängerung eines Aufenthaltstitels"
+    }
+   ],
+   "inferred_reason": "The sources do not regulate how other authorities answer; this node is inferred as the counterpart of the information request."
+  },
+  {
+   "id": "N21",
+   "name": "Anhängiges Straf- oder Bußgeldverfahren prüfen",
+   "name_en": "Check for pending criminal or administrative-offence proceedings",
+   "description": "The authority checks whether the applicant is under investigation and whether the decision depends on the outcome of those proceedings.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 79 Abs. 2 AufenthG"
+   ],
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Beantragt ein Ausländer, gegen den wegen des Verdachts einer Straftat oder einer Ordnungswidrigkeit ermittelt wird, die Erteilung oder Verlängerung eines Aufenthaltstitels"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "es sei denn, über den Aufenthaltstitel kann ohne Rücksicht auf den Ausgang des Verfahrens entschieden werden."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N22",
+   "name": "Entscheidung aussetzen",
+   "name_en": "Suspend the decision until proceedings end",
+   "description": "The authority suspends the decision on the title until the proceedings end or a court decision becomes final.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 79 Abs. 2 AufenthG"
+   ],
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "ist die Entscheidung über den Aufenthaltstitel bis zum Abschluss des Verfahrens, im Falle einer gerichtlichen Entscheidung bis zu deren Rechtskraft auszusetzen"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N23",
+   "name": "Einschlägige Rechtsgrundlage bestimmen",
+   "name_en": "Determine the applicable legal basis (§§ 22-25b)",
+   "description": "From the application and the facts, the authority determines which ground of Chapter 2 Section 5 (§§ 22, 23, 23a, 24, 25, 25a or 25b) has to be examined.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§§ 22 bis 25b AufenthG",
+    "§ 5 Abs. 3 AufenthG"
+   ],
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "In den übrigen Fällen der Erteilung eines Aufenthaltstitels nach Kapitel 2 Abschnitt 5 kann von der Anwendung der Absätze 1 und 2 abgesehen werden."
+    }
+   ],
+   "inferred_reason": "The statute sets out alternative grounds with different requirements; a separate routing step is inferred."
+  },
+  {
+   "id": "N24",
+   "name": "Voraussetzungen nach § 22 prüfen",
+   "name_en": "Assess admission from abroad (§ 22)",
+   "description": "The authority checks whether admission from abroad is justified on international-law or urgent humanitarian grounds (discretion), or whether the Federal Ministry of the Interior has declared admission (entitlement).",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 22 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem Ausländer kann für die Aufnahme aus dem Ausland aus völkerrechtlichen oder dringenden humanitären Gründen eine Aufenthaltserlaubnis erteilt werden."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Eine Aufenthaltserlaubnis ist zu erteilen, wenn das Bundesministerium des Innern, für Bau und Heimat oder die von ihm bestimmte Stelle zur Wahrung politischer Interessen der Bundesrepublik Deutschland die Aufnahme erklärt hat."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N25",
+   "name": "Voraussetzungen nach § 23 prüfen",
+   "name_en": "Assess admission order or admission commitment (§ 23)",
+   "description": "The authority checks whether the applicant is covered by an admission order of the supreme Land authority, or by a BAMF admission commitment (including resettlement), and whether any required declaration of commitment (§ 68) has been made.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 23 Abs. 1 bis 4 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die oberste Landesbehörde kann aus völkerrechtlichen oder humanitären Gründen oder zur Wahrung politischer Interessen der Bundesrepublik Deutschland anordnen, dass Ausländern aus bestimmten Staaten"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Den betroffenen Ausländern ist entsprechend der Aufnahmezusage eine Aufenthaltserlaubnis oder Niederlassungserlaubnis zu erteilen."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N26",
+   "name": "Härtefallersuchen stellen",
+   "name_en": "Hardship commission submits a hardship request",
+   "description": "On its own initiative, the Land hardship commission finds urgent humanitarian or personal reasons for the person to stay and asks the supreme Land authority to order a residence permit.",
+   "actor_id": "HFK",
+   "type": "third_party_task",
+   "legal_basis": [
+    "§ 23a Abs. 1 Satz 1 AufenthG",
+    "§ 23a Abs. 2 AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Härtefallkommissionen werden ausschließlich im Wege der Selbstbefassung tätig."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Entscheidung für ein Härtefallersuchen setzt voraus, dass nach den Feststellungen der Härtefallkommission dringende humanitäre oder persönliche Gründe die weitere Anwesenheit des Ausländers im Bundesgebiet rechtfertigen."
+    }
+   ],
+   "inferred_reason": "The commission acts on its own initiative and not at the request of the foreigners authority; its place in the sequence is inferred."
+  },
+  {
+   "id": "N27",
+   "name": "Erteilung im Härtefall anordnen",
+   "name_en": "Supreme Land authority orders the permit in a hardship case",
+   "description": "The supreme Land authority (or a body it has delegated to) decides on the hardship request and may order the grant, taking into account subsistence or a declaration of commitment.",
+   "actor_id": "OLB",
+   "type": "third_party_task",
+   "legal_basis": [
+    "§ 23a Abs. 1 AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die oberste Landesbehörde darf anordnen, dass einem Ausländer, der vollziehbar ausreisepflichtig ist, abweichend von den in diesem Gesetz festgelegten Erteilungs- und Verlängerungsvoraussetzungen für einen Aufenthaltstitel"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Anordnung kann im Einzelfall unter Berücksichtigung des Umstandes erfolgen, ob der Lebensunterhalt des Ausländers gesichert ist oder eine Verpflichtungserklärung nach § 68 abgegeben wird."
+    }
+   ],
+   "inferred_reason": "The order is required by law; that it is passed to the foreigners authority for implementation is inferred."
+  },
+  {
+   "id": "N28",
+   "name": "Voraussetzungen nach § 23a prüfen",
+   "name_en": "Assess hardship order (§ 23a)",
+   "description": "The foreigners authority checks that an order covering the applicant exists and implements it, granting the permit in derogation from the usual requirements.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 23a Abs. 1 und 3 AufenthG"
+   ],
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "eine Aufenthaltserlaubnis erteilt wird, wenn eine von der Landesregierung durch Rechtsverordnung eingerichtete Härtefallkommission darum ersucht (Härtefallersuchen)"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "in dessen Zuständigkeitsbereich eine Ausländerbehörde die Aufenthaltserlaubnis erteilt hat"
+    }
+   ],
+   "inferred_reason": "That the foreigners authority implements the order is inferred from § 23a Abs. 3 (permit 'issued by a foreigners authority')."
+  },
+  {
+   "id": "N29",
+   "name": "Voraussetzungen nach § 24 prüfen",
+   "name_en": "Assess temporary protection (§ 24)",
+   "description": "The authority checks that temporary protection under a Council decision (Directive 2001/55/EC) applies, that the applicant has declared willingness to be admitted, the distribution or allocation to the Land and place, and that § 60 Abs. 8 does not exclude protection.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 24 Abs. 1 bis 5 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem Ausländer, dem auf Grund eines Beschlusses des Rates der Europäischen Union gemäß der Richtlinie 2001/55/EG vorübergehender Schutz gewährt wird und der seine Bereitschaft erklärt hat, im Bundesgebiet aufgenommen zu werden"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Gewährung von vorübergehendem Schutz ist ausgeschlossen, wenn die Voraussetzungen des § 60 Absatz 8 vorliegen; die Aufenthaltserlaubnis ist zu versagen."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N30",
+   "name": "Voraussetzungen nach § 25 Abs. 1 und 2 prüfen",
+   "name_en": "Assess permit after BAMF recognition (§ 25 Abs. 1, 2)",
+   "description": "The authority checks that BAMF has recognised the applicant as entitled to asylum, as a refugee or as a beneficiary of subsidiary protection (a bound decision), and that the applicant has not been expelled under § 53 Abs. 3a.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 25 Abs. 1 AufenthG",
+    "§ 25 Abs. 2 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem Ausländer ist eine Aufenthaltserlaubnis zu erteilen, wenn er als Asylberechtigter anerkannt ist"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Eine Aufenthaltserlaubnis ist auch zu erteilen, wenn das Bundesamt für Migration und Flüchtlinge einem Ausländer subsidiären Schutz im Sinne des Artikels 18 der Verordnung (EU) 2024/1347 zuerkannt hat"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Dies gilt nicht, wenn der Ausländer unter den Voraussetzungen des § 53 Absatz 3a ausgewiesen worden ist."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N31",
+   "name": "Abschiebungsverbot nach § 25 Abs. 3 prüfen",
+   "name_en": "Assess national deportation ban (§ 25 Abs. 3)",
+   "description": "The authority checks whether a deportation ban under § 60 Abs. 5 or 7 exists, whether departure to another state is possible and reasonable, compliance with duties to cooperate, and the exclusion grounds; it decides on the ban itself on the basis of the information available.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 25 Abs. 3 AufenthG",
+    "§ 79 Abs. 1 Satz 2 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem Ausländer soll eine Aufenthaltserlaubnis erteilt werden, wenn ein Abschiebungsverbot nach § 60 Absatz 5 oder 7 vorliegt."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Über das Vorliegen der Voraussetzungen des § 60 Absatz 5 und 7 entscheidet die Ausländerbehörde auf der Grundlage der ihr vorliegenden und im Bundesgebiet zugänglichen Erkenntnisse"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N32",
+   "name": "Voraussetzungen nach § 25 Abs. 4, 4a und 4b prüfen",
+   "name_en": "Assess temporary stay or victim-of-crime permit (§ 25 Abs. 4, 4a, 4b)",
+   "description": "The authority checks urgent humanitarian or personal reasons or public interests for a temporary stay, or for crime victims whether contact with the accused has been broken and willingness to testify has been declared.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 25 Abs. 4 AufenthG",
+    "§ 25 Abs. 4a AufenthG",
+    "§ 25 Abs. 4b AufenthG"
+   ],
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem nicht vollziehbar ausreisepflichtigen Ausländer kann für einen vorübergehenden Aufenthalt eine Aufenthaltserlaubnis erteilt werden, solange dringende humanitäre oder persönliche Gründe oder erhebliche öffentliche Interessen"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "er jede Verbindung zu den Personen, die beschuldigt werden, die Straftat begangen zu haben, abgebrochen hat und3.er seine Bereitschaft erklärt hat, in dem Strafverfahren wegen der Straftat als Zeuge auszusagen"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N33",
+   "name": "Anwesenheit für das Strafverfahren beurteilen",
+   "name_en": "Prosecutor or court assesses whether presence is needed for criminal proceedings",
+   "description": "The public prosecutor or criminal court assesses whether the victim's presence in Germany is appropriate for the criminal proceedings.",
+   "actor_id": "STA",
+   "type": "third_party_task",
+   "legal_basis": [
+    "§ 25 Abs. 4a Satz 2 Nr. 1 AufenthG",
+    "§ 25 Abs. 4b Satz 2 Nr. 1 AufenthG"
+   ],
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "seine Anwesenheit im Bundesgebiet für ein Strafverfahren wegen dieser Straftat von der Staatsanwaltschaft oder dem Strafgericht für sachgerecht erachtet wird, weil ohne seine Angaben die Erforschung des Sachverhalts erschwert wäre"
+    }
+   ],
+   "inferred_reason": "The statute requires the prosecutor's or court's assessment but does not say how it is obtained; a request from the foreigners authority is inferred."
+  },
+  {
+   "id": "N34",
+   "name": "Voraussetzungen nach § 25 Abs. 5 prüfen",
+   "name_en": "Assess impossibility of departure (§ 25 Abs. 5)",
+   "description": "For a foreigner who is enforceably obliged to leave, the authority checks whether departure is legally or factually impossible for the foreseeable future through no fault of the foreigner, and whether deportation has been suspended for 18 months.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 25 Abs. 5 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem Ausländer, der vollziehbar ausreisepflichtig ist, kann eine Aufenthaltserlaubnis erteilt werden, wenn seine Ausreise aus rechtlichen oder tatsächlichen Gründen unmöglich ist"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Eine Aufenthaltserlaubnis darf nur erteilt werden, wenn der Ausländer unverschuldet an der Ausreise gehindert ist."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N35",
+   "name": "Voraussetzungen nach § 25a prüfen",
+   "name_en": "Assess well-integrated young person (§ 25a)",
+   "description": "The authority checks prior Duldung or § 104c status, three years of stay and schooling, application before age 27, integration prognosis and absence of deception, and, for parents and family members, the extra requirements of Abs. 2 and 3.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 25a AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Einem jugendlichen oder jungen volljährigen Ausländer, der Inhaber einer Aufenthaltserlaubnis nach § 104c oder seit mindestens zwölf Monaten im Besitz einer Duldung ist, soll eine Aufenthaltserlaubnis erteilt werden"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "der Antrag auf Erteilung der Aufenthaltserlaubnis vor Vollendung des 27. Lebensjahres gestellt wird"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N36",
+   "name": "Voraussetzungen nach § 25b prüfen",
+   "name_en": "Assess sustainable integration (§ 25b)",
+   "description": "The authority checks sustainable integration: years of stay, commitment to the constitutional order, subsistence, A2 German, children's school attendance; it also checks the refusal grounds of Abs. 2 and the rules for family members.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 25b AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "soll abweichend von § 5 Absatz 1 Nummer 1 und Absatz 2 eine Aufenthaltserlaubnis erteilt werden, wenn er sich nachhaltig in die Lebensverhältnisse der Bundesrepublik Deutschland integriert hat."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "über hinreichende mündliche Deutschkenntnisse im Sinne des Niveaus A2 des Gemeinsamen Europäischen Referenzrahmens für Sprachen verfügt"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N37",
+   "name": "Allgemeine Erteilungsvoraussetzungen prüfen (§ 5)",
+   "name_en": "Assess general requirements for granting (§ 5)",
+   "description": "The authority checks subsistence, identity, expulsion interest, other interests of Germany, passport and visa entry, applying the mandatory and discretionary waivers of § 5 Abs. 3 and the mandatory refusal grounds of § 5 Abs. 4.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 5 Abs. 1 bis 4 AufenthG"
+   ],
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Erteilung eines Aufenthaltstitels setzt in der Regel voraus, dass 1.der Lebensunterhalt gesichert ist"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "In den Fällen der Erteilung eines Aufenthaltstitels nach § 24 oder § 25 Absatz 1 bis 3 ist von der Anwendung der Absätze 1 und 2, in den Fällen des § 25 Absatz 4a und 4b von der Anwendung des Absatzes 1 Nr. 1 bis 2 und 4"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Erteilung eines Aufenthaltstitels ist zu versagen, wenn ein Ausweisungsinteresse im Sinne von § 54 Absatz 1 Nummer 2 oder 4 besteht"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N38",
+   "name": "Ermessen ausüben",
+   "name_en": "Exercise discretion",
+   "description": "Where the ground is discretionary ('kann') or a 'soll' rule, the authority weighs all relevant circumstances, including those in the applicant's favour, and records the considerations.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 22 Satz 1 AufenthG",
+    "§ 25 Abs. 4 und 5 AufenthG",
+    "§ 5 Abs. 3 Satz 2 AufenthG",
+    "§ 24 Abs. 2 VwVfG",
+    "§ 39 Abs. 1 Satz 3 VwVfG"
+   ],
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Behörde hat alle für den Einzelfall bedeutsamen, auch die für die Beteiligten günstigen Umstände zu berücksichtigen."
+    },
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Begründung von Ermessensentscheidungen soll auch die Gesichtspunkte erkennen lassen, von denen die Behörde bei der Ausübung ihres Ermessens ausgegangen ist."
+    }
+   ],
+   "inferred_reason": "Discretion is a legal element of several grounds, not a named procedural step; it is modelled as a separate unit of work."
+  },
+  {
+   "id": "N39",
+   "name": "Über den Antrag entscheiden",
+   "name_en": "Decide on the application (grant or refuse)",
+   "description": "On the basis of the assessments, the authority decides whether to grant or refuse the residence permit; a title may be issued only after any required identification measures.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 79 Abs. 1 AufenthG",
+    "§ 81 Abs. 7 AufenthG",
+    "§ 35 VwVfG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Verwaltungsakt ist jede Verfügung, Entscheidung oder andere hoheitliche Maßnahme, die eine Behörde zur Regelung eines Einzelfalls auf dem Gebiet des öffentlichen Rechts trifft und die auf unmittelbare Rechtswirkung nach außen gerichtet ist."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "ein Aufenthaltstitel nur erteilt werden, wenn die erkennungsdienstliche Behandlung durchgeführt worden ist"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N40",
+   "name": "Anhörung vor Ablehnung durchführen",
+   "name_en": "Hear the applicant before refusal",
+   "description": "Before refusing, the authority gives the applicant the opportunity to comment on the facts that decide the case, unless a hearing is unnecessary or excluded.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 28 Abs. 1 bis 3 VwVfG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Bevor ein Verwaltungsakt erlassen wird, der in Rechte eines Beteiligten eingreift, ist diesem Gelegenheit zu geben, sich zu den für die Entscheidung erheblichen Tatsachen zu äußern."
+    }
+   ],
+   "inferred_reason": "§ 28 VwVfG applies to acts that interfere with rights; the sources do not say whether refusing a permit counts as one, so the hearing before refusal is modelled as the task requests."
+  },
+  {
+   "id": "N41",
+   "name": "Stellungnahme abgeben",
+   "name_en": "Submit comments",
+   "description": "The applicant comments on the decisive facts and presents circumstances in his or her favour.",
+   "actor_id": "ANT",
+   "type": "citizen_task",
+   "legal_basis": [
+    "§ 28 Abs. 1 VwVfG",
+    "§ 82 Abs. 1 Satz 1 AufenthG"
+   ],
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Der Ausländer ist verpflichtet, seine Belange und für ihn günstige Umstände, soweit sie nicht offenkundig oder bekannt sind, unter Angabe nachprüfbarer Umstände unverzüglich geltend zu machen"
+    }
+   ],
+   "inferred_reason": "The applicant may also stay silent; the comment is optional."
+  },
+  {
+   "id": "N42",
+   "name": "Stellungnahme würdigen",
+   "name_en": "Evaluate the comments",
+   "description": "The authority evaluates the comments and decides whether to maintain the refusal or to grant the permit.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 24 Abs. 2 VwVfG",
+    "§ 28 Abs. 1 VwVfG"
+   ],
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Die Behörde hat alle für den Einzelfall bedeutsamen, auch die für die Beteiligten günstigen Umstände zu berücksichtigen."
+    }
+   ],
+   "inferred_reason": "A duty to consider the hearing's result follows only indirectly from the duty to consider all relevant circumstances."
+  },
+  {
+   "id": "N43",
+   "name": "Ablehnungsbescheid erstellen",
+   "name_en": "Draft the refusal notice",
+   "description": "The authority drafts a written refusal that names the issuing authority, is signed, states the reasons (including any exercise of discretion) and contains instructions on legal remedies.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 37 Abs. 1, 3 und 6 VwVfG",
+    "§ 39 Abs. 1 VwVfG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Ein schriftlicher oder elektronischer sowie ein schriftlich oder elektronisch bestätigter Verwaltungsakt ist mit einer Begründung zu versehen."
+    },
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Einem schriftlichen oder elektronischen Verwaltungsakt, der der Anfechtung unterliegt, ist eine Erklärung beizufügen, durch die der Beteiligte über den Rechtsbehelf, der gegen den Verwaltungsakt gegeben ist"
+    }
+   ],
+   "inferred_reason": "Written form of the refusal is inferred (§ 37 Abs. 2 VwVfG allows other forms), but the requirements for reasons and remedy instructions assume it."
+  },
+  {
+   "id": "N44",
+   "name": "Bescheid bekanntgeben",
+   "name_en": "Notify the decision to the applicant",
+   "description": "The refusal is sent or handed to the applicant; this also ends the effects of § 81 Abs. 3 and 4, which last 'until the decision'.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 35 VwVfG",
+    "§ 37 Abs. 2 VwVfG",
+    "§ 81 Abs. 3 und 4 AufenthG"
+   ],
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Ein Verwaltungsakt kann schriftlich, elektronisch, mündlich oder in anderer Weise erlassen werden."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "bis zur Entscheidung der Ausländerbehörde als fortbestehend"
+    }
+   ],
+   "inferred_reason": "Rules on notification and service (e.g. § 41 VwVfG) are not in the sources; the step is inferred from the external effect of an administrative act."
+  },
+  {
+   "id": "N45",
+   "name": "Über Rechtsbehelf entscheiden",
+   "name_en": "Applicant decides whether to object",
+   "description": "The applicant decides whether to lodge an objection; for § 23 Abs. 2 and 4 admission commitments there are no preliminary proceedings.",
+   "actor_id": "ANT",
+   "type": "decision",
+   "legal_basis": [
+    "§ 79 VwVfG",
+    "§ 37 Abs. 6 VwVfG",
+    "§ 23 Abs. 2 Satz 2 AufenthG"
+   ],
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Für förmliche Rechtsbehelfe gegen Verwaltungsakte gelten die Verwaltungsgerichtsordnung und die zu ihrer Ausführung ergangenen Rechtsvorschriften, soweit nicht durch Gesetz etwas anderes bestimmt ist"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Ein Vorverfahren nach § 68 der Verwaltungsgerichtsordnung findet nicht statt."
+    }
+   ],
+   "inferred_reason": "Whether an objection is available depends on the VwGO and Land law, which are not in the sources."
+  },
+  {
+   "id": "N46",
+   "name": "Widerspruch einlegen",
+   "name_en": "Lodge an objection",
+   "description": "The applicant lodges an objection with the body named in the remedy instructions within the time limit; the duties to cooperate continue to apply and a fee may be charged.",
+   "actor_id": "ANT",
+   "type": "citizen_task",
+   "legal_basis": [
+    "§ 79 VwVfG",
+    "§ 37 Abs. 6 VwVfG",
+    "§ 82 Abs. 2 AufenthG",
+    "§ 69 Abs. 8 AufenthG"
+   ],
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Absatz 1 findet im Widerspruchsverfahren entsprechende Anwendung."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Rechtsverordnung nach Absatz 3 kann für die Einlegung eines Widerspruchs Gebühren vorsehen"
+    }
+   ],
+   "inferred_reason": "Form and time limit of the objection are in the VwGO, which § 79 VwVfG refers to but which is not in the sources."
+  },
+  {
+   "id": "N47",
+   "name": "Abhilfe prüfen",
+   "name_en": "Review the objection (remedial review)",
+   "description": "The foreigners authority re-examines its decision in the light of the objection and decides whether to remedy it.",
+   "actor_id": "ABH",
+   "type": "decision",
+   "legal_basis": [
+    "§ 79 VwVfG",
+    "§ 82 Abs. 2 AufenthG"
+   ],
+   "confidence": 0.45,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Soweit der Widerspruch Erfolg hat, ist die Gebühr auf die Gebühr für die vorzunehmende individuell zurechenbare öffentliche Leistung anzurechnen und im Übrigen zurückzuzahlen."
+    }
+   ],
+   "inferred_reason": "The remedial review is governed by the VwGO, which § 79 VwVfG refers to but which is not in the sources; inferred."
+  },
+  {
+   "id": "N48",
+   "name": "Widerspruchsbescheid erlassen",
+   "name_en": "Issue the objection decision",
+   "description": "If the objection is not remedied, the objection authority decides on it and issues an objection decision.",
+   "actor_id": "WB",
+   "type": "third_party_task",
+   "legal_basis": [
+    "§ 79 VwVfG"
+   ],
+   "confidence": 0.35,
+   "evidence": [
+    {
+     "source": "inputs_public/vwvfg_sections.txt",
+     "quote": "Für förmliche Rechtsbehelfe gegen Verwaltungsakte gelten die Verwaltungsgerichtsordnung und die zu ihrer Ausführung ergangenen Rechtsvorschriften"
+    }
+   ],
+   "inferred_reason": "Who the objection authority is and how it proceeds are regulated in the VwGO, which is not in the sources; inferred."
+  },
+  {
+   "id": "N49",
+   "name": "Widerspruch zurückgewiesen",
+   "name_en": "Objection rejected",
+   "description": "The objection proceedings end with the refusal confirmed.",
+   "actor_id": "WB",
+   "type": "end_event",
+   "legal_basis": [
+    "§ 79 VwVfG"
+   ],
+   "confidence": 0.4,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Absatz 1 findet im Widerspruchsverfahren entsprechende Anwendung."
+    }
+   ],
+   "inferred_reason": "Outcome of the objection proceedings inferred; a court action could follow, but it is outside this administrative process."
+  },
+  {
+   "id": "N50",
+   "name": "Antrag abgelehnt",
+   "name_en": "Application refused",
+   "description": "The procedure ends with the refusal of the residence permit becoming final.",
+   "actor_id": "ABH",
+   "type": "end_event",
+   "legal_basis": [
+    "§ 5 Abs. 4 AufenthG",
+    "§ 24 Abs. 2 AufenthG",
+    "§ 25b Abs. 2 AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Erteilung einer Aufenthaltserlaubnis nach Absatz 1 ist zu versagen, wenn"
+    }
+   ],
+   "inferred_reason": "That the refusal becomes final when no remedy is used is inferred."
+  },
+  {
+   "id": "N51",
+   "name": "Geltungsdauer festlegen",
+   "name_en": "Set the period of validity (§ 26)",
+   "description": "The authority sets the period of validity under § 26 Abs. 1: three years for § 25 Abs. 1 and 2, at least one year for § 25 Abs. 3, at most six months for § 25 Abs. 4 and 5 during the first 18 months, at most two years for § 25b, and the protection period for § 24.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 26 Abs. 1 AufenthG",
+    "§ 25b Abs. 5 AufenthG",
+    "§ 24 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.9,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Aufenthaltserlaubnis nach diesem Abschnitt kann für jeweils längstens drei Jahre erteilt und verlängert werden, in den Fällen des § 25 Abs. 4 Satz 1 und Abs. 5 jedoch für längstens sechs Monate"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "In den Fällen des § 25 Absatz 1 Satz 1 sowie Absatz 2 Satz 1 und 2 wird die Aufenthaltserlaubnis für drei Jahre erteilt."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Aufenthaltserlaubnis wird abweichend von § 26 Absatz 1 Satz 1 längstens für zwei Jahre erteilt und verlängert."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N52",
+   "name": "Nebenbestimmungen festlegen",
+   "name_en": "Determine ancillary provisions (employment, residence)",
+   "description": "The authority decides on ancillary provisions such as whether employment is permitted and any residence obligation, which are recorded on the document.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 23 Abs. 1 Satz 4 AufenthG",
+    "§ 24 Abs. 5 AufenthG",
+    "§ 25 Abs. 4 Satz 3 AufenthG",
+    "§ 78 Abs. 3 Satz 1 Nr. 3 AufenthG"
+   ],
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Aufenthaltserlaubnis berechtigt nicht zur Erwerbstätigkeit; die Anordnung kann vorsehen, dass die zu erteilende Aufenthaltserlaubnis die Erwerbstätigkeit erlaubt oder diese nach § 4a Absatz 1 erlaubt werden kann."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Er hat seine Wohnung und seinen gewöhnlichen Aufenthalt an dem Ort zu nehmen, dem er nach den Absätzen 3 und 4 zugewiesen wurde."
+    }
+   ],
+   "inferred_reason": "The general rules on ancillary provisions (e.g. § 12 AufenthG) are not in the sources; the step is inferred from the employment rules and from the 'Nebenbestimmungen' stored on the document."
+  },
+  {
+   "id": "N53",
+   "name": "Gebühr festsetzen",
+   "name_en": "Assess the fee",
+   "description": "The authority sets the fee for granting the permit (at most 140 EUR, half for minors), applying any exemptions or reductions; the assessment may be oral, and a processing fee charged at application is not refunded if the application is refused.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 69 Abs. 1 AufenthG",
+    "§ 69 Abs. 3 AufenthG",
+    "§ 69 Abs. 5 Nr. 1 und 7 AufenthG",
+    "§ 69 Abs. 7 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Für individuell zurechenbare öffentliche Leistungen nach diesem Gesetz und den zur Durchführung dieses Gesetzes erlassenen Rechtsverordnungen werden Gebühren und Auslagen erhoben."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "1.für die Erteilung einer Aufenthaltserlaubnis: 140 Euro"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Gebührenbefreiungen und -ermäßigungen, insbesondere für Fälle der Bedürftigkeit"
+    }
+   ],
+   "inferred_reason": "The actual fee amounts and exemptions are in the fee ordinance (§ 69 Abs. 3), which is not in the sources."
+  },
+  {
+   "id": "N54",
+   "name": "Gebühr entrichten",
+   "name_en": "Pay the fee",
+   "description": "The applicant pays the fee that has been set.",
+   "actor_id": "ANT",
+   "type": "citizen_task",
+   "legal_basis": [
+    "§ 69 Abs. 1 AufenthG",
+    "§ 69 Abs. 3 Satz 2 AufenthG"
+   ],
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Gebührenfestsetzung kann auch mündlich erfolgen."
+    }
+   ],
+   "inferred_reason": "The sources do not regulate payment (they refer to the Federal Fees Act); payment as a separate citizen step is inferred."
+  },
+  {
+   "id": "N55",
+   "name": "Lichtbild, Fingerabdrücke und Unterschrift erfassen",
+   "name_en": "Capture photo, fingerprints and signature",
+   "description": "For the document, the authority takes or receives a current photo, takes two fingerprints (from age six) and the signature (from age ten).",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 82 Abs. 5 AufenthG",
+    "§ 78 Abs. 1 Satz 3 und 5 AufenthG",
+    "§ 78 Abs. 3 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "hat auf Verlangen 1.ein aktuelles Lichtbild nach Maßgabe einer nach § 99 Abs. 1 Nr. 13 und 13a erlassenen Rechtsverordnung vorzulegen oder bei der Aufnahme eines solchen Lichtbildes mitzuwirken,2.bei der Abnahme seiner Fingerabdrücke"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Erfassung von Fingerabdrücken erfolgt ab Vollendung des sechsten Lebensjahres."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Unterschrift durch den Antragsteller nach Satz 3 Nummer 13 ist zu leisten, wenn er zum Zeitpunkt der Beantragung des Dokuments zehn Jahre oder älter ist."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N56",
+   "name": "Herstellung des elektronischen Aufenthaltstitels veranlassen",
+   "name_en": "Order production of the electronic residence permit card",
+   "description": "The authority sends the personal data, biometric data and ancillary provisions to have the permit produced as a separate document with an electronic storage medium.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 78 Abs. 1 bis 3 AufenthG",
+    "§ 81 Abs. 5a AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Aufenthaltstitel nach § 4 Absatz 1 Satz 2 Nummer 2 bis 4 werden als eigenständige Dokumente mit elektronischem Speicher- und Verarbeitungsmedium ausgestellt."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "ab Veranlassung der Ausstellung bis zur Ausgabe des Dokuments nach § 78 Absatz 1 Satz 1"
+    }
+   ],
+   "inferred_reason": "That the card is ordered from an outside producer is inferred from 'Veranlassung der Ausstellung' (§ 81 Abs. 5a) and 'Hersteller der Dokumente' (§ 78 Abs. 5)."
+  },
+  {
+   "id": "N57",
+   "name": "Elektronischen Aufenthaltstitel herstellen",
+   "name_en": "Produce the electronic residence permit card",
+   "description": "The document producer makes the card with its machine-readable zone, chip data and a new serial number.",
+   "actor_id": "DH",
+   "type": "third_party_task",
+   "legal_basis": [
+    "§ 78 Abs. 2 und 3 AufenthG",
+    "§ 78 Abs. 5 AufenthG"
+   ],
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "dass die Ausländerbehörde an die Stelle der Personalausweisbehörde und der Hersteller der Dokumente an die Stelle des Ausweisherstellers tritt"
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Jedes Dokument erhält eine neue Seriennummer."
+    }
+   ],
+   "inferred_reason": "The producer is named only indirectly (§ 78 Abs. 5, in connection with the eID function); its production role is inferred."
+  },
+  {
+   "id": "N58",
+   "name": "Aufenthaltstitel aushändigen",
+   "name_en": "Hand over the residence permit",
+   "description": "The authority hands the document to the holder, which makes the grant known, and in § 24 cases informs the holder in writing about the rights and obligations of temporary protection.",
+   "actor_id": "ABH",
+   "type": "caseworker_task",
+   "legal_basis": [
+    "§ 78 Abs. 1 AufenthG",
+    "§ 81 Abs. 5a AufenthG",
+    "§ 24 Abs. 7 AufenthG"
+   ],
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Der Ausländer wird über die mit dem vorübergehenden Schutz verbundenen Rechte und Pflichten schriftlich in einer ihm verständlichen Sprache unterrichtet."
+    },
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "bis zur Ausgabe des Dokuments nach § 78 Absatz 1 Satz 1 als erlaubt"
+    }
+   ],
+   "inferred_reason": "The sources mention only the 'Ausgabe des Dokuments'; treating the hand-over as the way the grant is made known is inferred."
+  },
+  {
+   "id": "N59",
+   "name": "Daten an das Ausländerzentralregister übermitteln",
+   "name_en": "Transmit data to the Central Register of Foreigners",
+   "description": "The foreigners authority's system sends the data on the issued title, and any data changes, to the register authority of the Central Register of Foreigners.",
+   "actor_id": "ABH",
+   "type": "system_task",
+   "legal_basis": [
+    "§ 90b Satz 4 AufenthG",
+    "§ 81 Abs. 7 AufenthG"
+   ],
+   "confidence": 0.45,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Die Ausländerbehörden übermitteln die im Rahmen des Datenabgleichs erfolgten Änderungen unverzüglich an die Registerbehörde des Ausländerzentralregisters."
+    }
+   ],
+   "inferred_reason": "§ 90b actually governs the annual data matching between foreigners authorities and registration offices and the forwarding of resulting changes to the register; a per-case transfer after the grant is not regulated in the sources (the AZR Act is not included) and is inferred."
+  },
+  {
+   "id": "N60",
+   "name": "Aufenthaltserlaubnis erteilt",
+   "name_en": "Residence permit granted",
+   "description": "The procedure ends with the residence permit granted and handed over.",
+   "actor_id": "ABH",
+   "type": "end_event",
+   "legal_basis": [
+    "§ 81 Abs. 1 AufenthG",
+    "§ 78 Abs. 1 AufenthG"
+   ],
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "inputs_public/aufenthg_sections.txt",
+     "quote": "Ein Aufenthaltstitel wird einem Ausländer nur auf seinen Antrag erteilt, soweit nichts anderes bestimmt ist."
+    }
+   ],
+   "inferred_reason": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "N01",
+   "target": "N02",
+   "condition": ""
+  },
+  {
+   "source": "N02",
+   "target": "N03",
+   "condition": ""
+  },
+  {
+   "source": "N03",
+   "target": "N04",
+   "condition": ""
+  },
+  {
+   "source": "N04",
+   "target": "N05",
+   "condition": "nicht zuständig"
+  },
+  {
+   "source": "N05",
+   "target": "N06",
+   "condition": ""
+  },
+  {
+   "source": "N04",
+   "target": "N07",
+   "condition": "zuständig"
+  },
+  {
+   "source": "N07",
+   "target": "N08",
+   "condition": ""
+  },
+  {
+   "source": "N08",
+   "target": "N09",
+   "condition": "Angaben oder Nachweise fehlen / unvollständig"
+  },
+  {
+   "source": "N09",
+   "target": "N10",
+   "condition": ""
+  },
+  {
+   "source": "N10",
+   "target": "N08",
+   "condition": "Nachweise eingereicht"
+  },
+  {
+   "source": "N08",
+   "target": "N11",
+   "condition": "vollständig (oder Frist abgelaufen, § 82 Abs. 1 Satz 4)"
+  },
+  {
+   "source": "N11",
+   "target": "N12",
+   "condition": "Identitätssicherung erforderlich und noch nicht erfolgt"
+  },
+  {
+   "source": "N12",
+   "target": "N13",
+   "condition": ""
+  },
+  {
+   "source": "N13",
+   "target": "N14",
+   "condition": ""
+  },
+  {
+   "source": "N11",
+   "target": "N14",
+   "condition": "nicht erforderlich oder bereits erfolgt"
+  },
+  {
+   "source": "N14",
+   "target": "N16",
+   "condition": "Fiktionswirkung nach § 81 Abs. 3 oder Abs. 4 Satz 1 (oder Aussetzung nach § 81 Abs. 3 Satz 2)"
+  },
+  {
+   "source": "N14",
+   "target": "N15",
+   "condition": "verspäteter Verlängerungsantrag, unbillige Härte"
+  },
+  {
+   "source": "N15",
+   "target": "N16",
+   "condition": ""
+  },
+  {
+   "source": "N14",
+   "target": "N17",
+   "condition": "keine Fiktionswirkung (z. B. vollziehbar ausreisepflichtig)"
+  },
+  {
+   "source": "N16",
+   "target": "N17",
+   "condition": ""
+  },
+  {
+   "source": "N17",
+   "target": "N18",
+   "condition": ""
+  },
+  {
+   "source": "N18",
+   "target": "N19",
+   "condition": ""
+  },
+  {
+   "source": "N19",
+   "target": "N20",
+   "condition": ""
+  },
+  {
+   "source": "N20",
+   "target": "N21",
+   "condition": ""
+  },
+  {
+   "source": "N21",
+   "target": "N22",
+   "condition": "Ermittlungsverfahren anhängig, Entscheidung vom Ausgang abhängig"
+  },
+  {
+   "source": "N22",
+   "target": "N23",
+   "condition": "Verfahren abgeschlossen / rechtskräftig"
+  },
+  {
+   "source": "N21",
+   "target": "N23",
+   "condition": "kein Verfahren anhängig oder Entscheidung unabhängig vom Ausgang"
+  },
+  {
+   "source": "N23",
+   "target": "N24",
+   "condition": "§ 22"
+  },
+  {
+   "source": "N23",
+   "target": "N25",
+   "condition": "§ 23"
+  },
+  {
+   "source": "N23",
+   "target": "N26",
+   "condition": "§ 23a (Härtefall)"
+  },
+  {
+   "source": "N26",
+   "target": "N27",
+   "condition": ""
+  },
+  {
+   "source": "N27",
+   "target": "N28",
+   "condition": "Anordnung erlassen"
+  },
+  {
+   "source": "N23",
+   "target": "N29",
+   "condition": "§ 24"
+  },
+  {
+   "source": "N23",
+   "target": "N30",
+   "condition": "§ 25 Abs. 1 oder 2"
+  },
+  {
+   "source": "N23",
+   "target": "N31",
+   "condition": "§ 25 Abs. 3"
+  },
+  {
+   "source": "N23",
+   "target": "N32",
+   "condition": "§ 25 Abs. 4, 4a oder 4b"
+  },
+  {
+   "source": "N32",
+   "target": "N33",
+   "condition": "§ 25 Abs. 4a oder 4b"
+  },
+  {
+   "source": "N23",
+   "target": "N34",
+   "condition": "§ 25 Abs. 5"
+  },
+  {
+   "source": "N23",
+   "target": "N35",
+   "condition": "§ 25a"
+  },
+  {
+   "source": "N23",
+   "target": "N36",
+   "condition": "§ 25b"
+  },
+  {
+   "source": "N24",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N25",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N28",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N29",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N30",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N31",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N33",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N34",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N35",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N36",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N32",
+   "target": "N37",
+   "condition": "§ 25 Abs. 4"
+  },
+  {
+   "source": "N37",
+   "target": "N38",
+   "condition": ""
+  },
+  {
+   "source": "N38",
+   "target": "N39",
+   "condition": ""
+  },
+  {
+   "source": "N39",
+   "target": "N51",
+   "condition": "Erteilung"
+  },
+  {
+   "source": "N39",
+   "target": "N40",
+   "condition": "Ablehnung beabsichtigt"
+  },
+  {
+   "source": "N39",
+   "target": "N43",
+   "condition": "Ablehnung; Anhörung nach § 28 Abs. 2 oder 3 VwVfG entbehrlich"
+  },
+  {
+   "source": "N40",
+   "target": "N41",
+   "condition": ""
+  },
+  {
+   "source": "N41",
+   "target": "N42",
+   "condition": ""
+  },
+  {
+   "source": "N42",
+   "target": "N43",
+   "condition": "Ablehnung aufrechterhalten"
+  },
+  {
+   "source": "N42",
+   "target": "N51",
+   "condition": "Einwände greifen durch: Erteilung"
+  },
+  {
+   "source": "N43",
+   "target": "N44",
+   "condition": ""
+  },
+  {
+   "source": "N44",
+   "target": "N45",
+   "condition": ""
+  },
+  {
+   "source": "N45",
+   "target": "N46",
+   "condition": "Widerspruch"
+  },
+  {
+   "source": "N45",
+   "target": "N50",
+   "condition": "kein Widerspruch oder Vorverfahren ausgeschlossen (§ 23 Abs. 2 Satz 2)"
+  },
+  {
+   "source": "N46",
+   "target": "N47",
+   "condition": ""
+  },
+  {
+   "source": "N47",
+   "target": "N51",
+   "condition": "Abhilfe"
+  },
+  {
+   "source": "N47",
+   "target": "N48",
+   "condition": "keine Abhilfe"
+  },
+  {
+   "source": "N48",
+   "target": "N51",
+   "condition": "Widerspruch begründet"
+  },
+  {
+   "source": "N48",
+   "target": "N49",
+   "condition": "Widerspruch unbegründet"
+  },
+  {
+   "source": "N51",
+   "target": "N52",
+   "condition": ""
+  },
+  {
+   "source": "N52",
+   "target": "N53",
+   "condition": ""
+  },
+  {
+   "source": "N53",
+   "target": "N54",
+   "condition": ""
+  },
+  {
+   "source": "N54",
+   "target": "N55",
+   "condition": ""
+  },
+  {
+   "source": "N55",
+   "target": "N56",
+   "condition": ""
+  },
+  {
+   "source": "N56",
+   "target": "N57",
+   "condition": ""
+  },
+  {
+   "source": "N57",
+   "target": "N58",
+   "condition": ""
+  },
+  {
+   "source": "N58",
+   "target": "N59",
+   "condition": ""
+  },
+  {
+   "source": "N59",
+   "target": "N60",
+   "condition": ""
+  }
+ ]
+}

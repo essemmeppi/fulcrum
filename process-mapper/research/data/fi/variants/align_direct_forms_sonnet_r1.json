@@ -1,0 +1,1444 @@
+{
+ "reference_to_generated": [
+  {
+   "ref_id": "G01",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G02",
+   "matched_node_ids": [
+    "N43"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G03",
+   "matched_node_ids": [
+    "N11"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G04",
+   "matched_node_ids": [
+    "N03",
+    "N18",
+    "N38",
+    "N39"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G05",
+   "matched_node_ids": [
+    "N07",
+    "N09",
+    "N10"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G06",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G07",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G08",
+   "matched_node_ids": [
+    "N44"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G09",
+   "matched_node_ids": [
+    "N53"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G10",
+   "matched_node_ids": [
+    "N50"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G11",
+   "matched_node_ids": [
+    "N52"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G12",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G13",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G14",
+   "matched_node_ids": [
+    "N48"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G15",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G16",
+   "matched_node_ids": [
+    "N48"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G17",
+   "matched_node_ids": [
+    "N49"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G18",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G19",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G20",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G21",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G22",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G23",
+   "matched_node_ids": [
+    "N59"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G24",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G25",
+   "matched_node_ids": [
+    "N57"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G26",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G27",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G28",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G29",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G30",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G31",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G32",
+   "matched_node_ids": [
+    "N55"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G33",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G34",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G35",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G36",
+   "matched_node_ids": [
+    "N56"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G37",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G38",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G39",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G40",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G41",
+   "matched_node_ids": [
+    "N56"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G42",
+   "matched_node_ids": [
+    "N58"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G43",
+   "matched_node_ids": [
+    "N45"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G44",
+   "matched_node_ids": [
+    "N60"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G45",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G46",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G47",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G48",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G49",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G50",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G51",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G52",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G53",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G54",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G55",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G56",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G57",
+   "matched_node_ids": [
+    "N61"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G58",
+   "matched_node_ids": [
+    "N63"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G59",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G60",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G61",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G62",
+   "matched_node_ids": [
+    "N65",
+    "N68"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G63",
+   "matched_node_ids": [
+    "N72"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G64",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G65",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G66",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G67",
+   "matched_node_ids": [
+    "N80"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G68",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G69",
+   "matched_node_ids": [
+    "N81",
+    "N82",
+    "N79"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G70",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G71",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G72",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G73",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G74",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G75",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G76",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G77",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G78",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G79",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G80",
+   "matched_node_ids": [
+    "N85"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G81",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G82",
+   "matched_node_ids": [
+    "N85",
+    "N14",
+    "N43"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G83",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G84",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G85",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G86",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G87",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G88",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G89",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G90",
+   "matched_node_ids": [
+    "N60"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G91",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G92",
+   "matched_node_ids": [
+    "N67"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G93",
+   "matched_node_ids": [
+    "N67"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G94",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G95",
+   "matched_node_ids": [
+    "N43"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G96",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G97",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G98",
+   "matched_node_ids": [
+    "N66"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G99",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G100",
+   "matched_node_ids": [
+    "N66",
+    "N69"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G101",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G102",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G103",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G104",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G105",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G106",
+   "matched_node_ids": [
+    "N69"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G107",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G108",
+   "matched_node_ids": [
+    "N70"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G109",
+   "matched_node_ids": [
+    "N71"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G110",
+   "matched_node_ids": [
+    "N71"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G111",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G112",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G113",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G114",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G115",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G116",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G117",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G118",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G119",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G120",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G121",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G122",
+   "matched_node_ids": [
+    "N74"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G123",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G124",
+   "matched_node_ids": [
+    "N75"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G125",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G126",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G127",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G128",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G129",
+   "matched_node_ids": [],
+   "match_type": "none"
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "node_id": "N01",
+   "reason": "no reference step: inferred start event; the guideline starts from the application itself (G02)"
+  },
+  {
+   "node_id": "N02",
+   "reason": "no reference step: form-guidance decision on which extra forms apply; the guideline only lists the attachments (G04), with no separate checking step"
+  },
+  {
+   "node_id": "N04",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N05",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N06",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N08",
+   "reason": "no reference step: plausible but absent from guideline (landlord supplies rent reference number to tenant)"
+  },
+  {
+   "node_id": "N12",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N13",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02) (start month requested; the start-date rule G43 is a Kela determination)"
+  },
+  {
+   "node_id": "N15",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N16",
+   "reason": "no reference step: citizen-side form decision on communal household; the guideline models this as a caseworker request for AT5 (G32), different actor"
+  },
+  {
+   "node_id": "N17",
+   "reason": "no reference step: plausible but absent from guideline (co-residents sign power of attorney; third-party step)"
+  },
+  {
+   "node_id": "N19",
+   "reason": "no reference step: out of scope (population-register address notification, not in the guideline)"
+  },
+  {
+   "node_id": "N20",
+   "reason": "no reference step: out of scope (notifying DVV of address change)"
+  },
+  {
+   "node_id": "N21",
+   "reason": "no reference step: out of scope (DVV updates its register)"
+  },
+  {
+   "node_id": "N22",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N23",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N24",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N25",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N26",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N27",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N28",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N29",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N30",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N31",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N32",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N33",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N34",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N35",
+   "reason": "no reference step: citizen checks Kela website; the guideline's lease-copy decision is a caseworker step (G13), different actor"
+  },
+  {
+   "node_id": "N36",
+   "reason": "no reference step: citizen-side counterpart of G13 (caseworker decides whether a lease copy is needed); different actor"
+  },
+  {
+   "node_id": "N37",
+   "reason": "no reference step: landlord-side counterpart of G11 (Kela receives lease data); different actor, Kela side is matched by N52"
+  },
+  {
+   "node_id": "N40",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02)"
+  },
+  {
+   "node_id": "N41",
+   "reason": "no reference step: form instruction to keep receipts, not a process step in the guideline"
+  },
+  {
+   "node_id": "N42",
+   "reason": "no reference step: form-completion detail (an AT 1e section/field); the guideline treats filling in and filing the application as one step (G02) (signature and declaration)"
+  },
+  {
+   "node_id": "N46",
+   "reason": "no reference step: inferred internal step (explicit completeness check); the guideline only states the obligation to request missing information (G16)"
+  },
+  {
+   "node_id": "N47",
+   "reason": "no reference step: inferred gateway (application complete?)"
+  },
+  {
+   "node_id": "N51",
+   "reason": "no reference step: plausible but absent as a step; tax data appear only as a source inside valuation rules (G47, G51, G52)"
+  },
+  {
+   "node_id": "N54",
+   "reason": "no reference step: plausible but absent from guideline (address/household check against population register as a separate step)"
+  },
+  {
+   "node_id": "N62",
+   "reason": "no reference step: inferred aggregate eligibility gateway; the guideline has specific exclusion checks (G20, G22, G23, G57) but no single overall entitlement decision"
+  },
+  {
+   "node_id": "N64",
+   "reason": "no reference step: inferred routing gateway by application type"
+  },
+  {
+   "node_id": "N73",
+   "reason": "no reference step: inferred gateway (accept vs contest); the guideline only references appeal (G122)"
+  },
+  {
+   "node_id": "N76",
+   "reason": "no reference step: inferred end event"
+  },
+  {
+   "node_id": "N77",
+   "reason": "no reference step: inferred end event"
+  },
+  {
+   "node_id": "N78",
+   "reason": "no reference step: inferred end event"
+  },
+  {
+   "node_id": "N83",
+   "reason": "no reference step: inferred wait state (allowance in payment)"
+  },
+  {
+   "node_id": "N84",
+   "reason": "no reference step: inferred one-year timer; the guideline triggers the annual review with a programmatic review letter (G94), a different step"
+  }
+ ],
+ "order_checks": [
+  {
+   "ref_pair": [
+    "G02",
+    "G03"
+   ],
+   "generated_pair": [
+    "N43",
+    "N11"
+   ],
+   "same_order": true,
+   "same_order_acyclic": false,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G04"
+   ],
+   "generated_pair": [
+    "N43",
+    "N03"
+   ],
+   "same_order": true,
+   "same_order_acyclic": false,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G05"
+   ],
+   "generated_pair": [
+    "N43",
+    "N07"
+   ],
+   "same_order": true,
+   "same_order_acyclic": false,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G08"
+   ],
+   "generated_pair": [
+    "N43",
+    "N44"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G09"
+   ],
+   "generated_pair": [
+    "N43",
+    "N53"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G10"
+   ],
+   "generated_pair": [
+    "N43",
+    "N50"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G11"
+   ],
+   "generated_pair": [
+    "N43",
+    "N52"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G16"
+   ],
+   "generated_pair": [
+    "N53",
+    "N48"
+   ],
+   "same_order": true,
+   "same_order_acyclic": "not_connected",
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G14",
+    "G17"
+   ],
+   "generated_pair": [
+    "N48",
+    "N49"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G16",
+    "G17"
+   ],
+   "generated_pair": [
+    "N48",
+    "N49"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G23"
+   ],
+   "generated_pair": [
+    "N53",
+    "N59"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G09",
+    "G25"
+   ],
+   "generated_pair": [
+    "N53",
+    "N57"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G32"
+   ],
+   "generated_pair": [
+    "N57",
+    "N55"
+   ],
+   "same_order": true,
+   "same_order_acyclic": false,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G04",
+    "G36"
+   ],
+   "generated_pair": [
+    "N39",
+    "N56"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G36",
+    "G41"
+   ],
+   "generated_pair": [
+    "N56",
+    "N56"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": true
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G42"
+   ],
+   "generated_pair": [
+    "N57",
+    "N58"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G36",
+    "G43"
+   ],
+   "generated_pair": [
+    "N56",
+    "N45"
+   ],
+   "same_order": true,
+   "same_order_acyclic": false,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G10",
+    "G44"
+   ],
+   "generated_pair": [
+    "N50",
+    "N60"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G44"
+   ],
+   "generated_pair": [
+    "N57",
+    "N60"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G41",
+    "G58"
+   ],
+   "generated_pair": [
+    "N56",
+    "N63"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G42",
+    "G58"
+   ],
+   "generated_pair": [
+    "N58",
+    "N63"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G44",
+    "G58"
+   ],
+   "generated_pair": [
+    "N60",
+    "N63"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G57",
+    "G58"
+   ],
+   "generated_pair": [
+    "N61",
+    "N63"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G62",
+    "G63"
+   ],
+   "generated_pair": [
+    "N65",
+    "N72"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G67"
+   ],
+   "generated_pair": [
+    "N72",
+    "N80"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G05",
+    "G67"
+   ],
+   "generated_pair": [
+    "N10",
+    "N80"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G67",
+    "G69"
+   ],
+   "generated_pair": [
+    "N80",
+    "N81"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G80"
+   ],
+   "generated_pair": [
+    "N72",
+    "N85"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G80",
+    "G82"
+   ],
+   "generated_pair": [
+    "N85",
+    "N85"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": true
+  },
+  {
+   "ref_pair": [
+    "G90",
+    "G92"
+   ],
+   "generated_pair": [
+    "N60",
+    "N67"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G92",
+    "G93"
+   ],
+   "generated_pair": [
+    "N67",
+    "N67"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": true
+  },
+  {
+   "ref_pair": [
+    "G98",
+    "G100"
+   ],
+   "generated_pair": [
+    "N66",
+    "N66"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": true
+  },
+  {
+   "ref_pair": [
+    "G93",
+    "G108"
+   ],
+   "generated_pair": [
+    "N67",
+    "N70"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G92",
+    "G108"
+   ],
+   "generated_pair": [
+    "N67",
+    "N70"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G108",
+    "G109"
+   ],
+   "generated_pair": [
+    "N70",
+    "N71"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G109",
+    "G110"
+   ],
+   "generated_pair": [
+    "N71",
+    "N71"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G122"
+   ],
+   "generated_pair": [
+    "N72",
+    "N74"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  },
+  {
+   "ref_pair": [
+    "G122",
+    "G124"
+   ],
+   "generated_pair": [
+    "N74",
+    "N75"
+   ],
+   "same_order": true,
+   "same_order_acyclic": true,
+   "shared_node": false
+  }
+ ],
+ "summary": {
+  "reference_matched": 39,
+  "reference_total": 129,
+  "match_types": {
+   "none": 90,
+   "merged": 17,
+   "exact": 13,
+   "partial": 9
+  },
+  "generated_matched": 40,
+  "generated_total": 85,
+  "order_same": 38,
+  "order_checked": 38,
+  "order_pairs_available": 38,
+  "order_false": 0,
+  "order_not_connected": 0,
+  "acyclic_back_edges_removed": [
+   "N49->N46",
+   "N84->N02",
+   "N85->N02"
+  ],
+  "order_acyclic": {
+   "False": 5,
+   "True": 32,
+   "not_connected": 1
+  }
+ },
+ "notes": "Matching per prompt_align.md (strict). Kela system vs Kela caseworker treated as compatible actors; citizen/landlord vs Kela counterparts of the same exchange are not matched. AT 1e form-section nodes are left unmatched (finer than any reference step) except where the guideline names the step (G03 bank account, G04 attachments, G05 payee authorisation). order_checks: (predecessor, step) pairs from the reference predecessor lists where both are matched, in reference order; the path test uses all matched nodes on each side, and a shared node counts as a zero-length path (shared_node true). same_order is the literal test on all generated edges; because the map has loop-back edges, nearly every node reaches every other, so same_order_acyclic repeats the test with the DFS back edges removed (listed in summary)."
+}

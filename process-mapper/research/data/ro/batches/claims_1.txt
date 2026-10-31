@@ -1,0 +1,251 @@
+CLAIM C01
+  name: Primăria trimite formularele furnizorilor de energie termică
+  what: For thermal-energy heating aid, the town halls send the application/self-declaration forms to the suppliers.
+  who: other (evidence: 'primăria/primăriile (town hall); the norms do not say which department'); automation: unknown
+  trigger: ajutor pentru energie termică; by 15 September each year
+  stated predecessors: none stated
+  stated successors: C02 (Furnizorul transmite formularele titularilor de contract); C02 (Furnizorul transmite formularele titularilor de contract)
+  sources (2): r1_hg-1073-2021-norms.txt: «Pentru ajutoarele pentru încălzire prevăzute la art. 6 alin. (2) lit. a) din lege, formularele de cerere şi declaraţie pe propria răspundere sunt transmise de c»; r2_law-226-2021.txt: «În cazul ajutorului pentru energie termică, formularele de cerere şi declaraţie pe propria răspundere sunt transmise furnizorilor de către primării, până la dat»
+
+CLAIM C02
+  name: Furnizorul transmite formularele titularilor de contract
+  what: Suppliers pass the forms on to contract holders (individual consumers and owners'/tenants' associations).
+  who: supplier (evidence: 'furnizorii'); automation: unknown
+  trigger: forms received from town hall; by 25 September each year
+  stated predecessors: C01 (Primăria trimite formularele furnizorilor de energie termică); C01 (Primăria trimite formularele furnizorilor de energie termică)
+  stated successors: C06 (Depunerea cererii şi declaraţiei pe propria răspundere)
+  sources (2): r1_hg-1073-2021-norms.txt: «Furnizorii prevăzuţi la alin. (2) transmit formularele titularilor de contract, şi anume consumatorilor individuali şi asociaţiilor de proprietari/locatari.»; r2_law-226-2021.txt: «transmit formularele către titularii de contract/convenţie individuală, respectiv consumatorilor individuali şi asociaţiilor de proprietari/locatari, până la da»
+
+CLAIM C03
+  name: Primăria pune formularele la dispoziţia solicitanţilor
+  what: For gas, electricity and solid/petroleum-fuel aid and for the energy supplement, the town hall makes the forms available directly to applicants.
+  who: das_staff (evidence: 'norms/law: primăria; Suceava: Direcţia de Asistenţă Socială at the town-hall office'); automation: unknown
+  trigger: ajutoare art. 6 alin. (2) lit. b)-d) şi supliment
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (6): r1_hg-1073-2021-norms.txt: «pentru ajutoarele prevăzute la art. 6 alin. (2) lit. b) - d), precum şi pentru suplimentul de energie, formularele de cerere şi declaraţie sunt puse la dispoziţ»; r2_law-226-2021.txt: «Pentru gaze naturale, energie electrică şi combustibili solizi şi/sau petrolieri, formularele de cerere şi declaraţie pe propria răspundere sunt puse la dispozi»
+
+CLAIM C04
+  name: Formularul publicat electronic pe site-uri
+  what: The application form is also made available electronically on the local authority's website and on the AJPIS websites.
+  who: unknown (evidence: "passive voice ('va fi pus la dispoziţia'); sites of the local authority and of the county AJPIS"); automation: unknown
+  trigger: 
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (6): r1_hg-1073-2021-norms.txt: «Formularul de cerere şi declaraţie pe propria răspundere prevăzut la art. 14 alin. (2) din lege va fi pus la dispoziţia solicitanţilor şi în format electronic, »; r2_law-226-2021.txt: «Solicitantul ajutorului pentru încălzirea locuinţei poate intra în posesia formularului de cerere şi declaraţie pe propria răspundere, care se publică pe site -»
+
+CLAIM C05
+  name: Consiliere pentru completarea formularelor
+  what: The local authority provides counselling and help to complete the application/self-declaration forms.
+  who: das_staff (evidence: "norms: local authority; Târgu Mureş guide: 'Asistentul social din cadrul primăriei'"); automation: unknown
+  trigger: solicitarea ajutorului/suplimentului
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (3): r1_hg-1073-2021-norms.txt: «autorităţile administraţiei publice locale vor asigura consilierea şi sprijinul necesar completării formularelor de cerere şi declaraţie pe propria răspundere.»; r3_pub-tirgumures-ghid.txt: «Asistentul social din cadrul primăriei»
+
+CLAIM C06
+  name: Depunerea cererii şi declaraţiei pe propria răspundere
+  what: The vulnerable consumer files the application and self-declaration, individually or via the owners'/tenants' association, at the town hall where the home is located.
+  who: citizen (evidence: "consumatorii vulnerabili de energie (individually or through the owners'/tenants' association)"); automation: unknown
+  trigger: wish to obtain heating aid; as a rule by 15 October each year (in-season filing also possible, art. 17(7))
+  stated predecessors: C02 (Furnizorul transmite formularele titularilor de contract); C78 (Asociaţia de proprietari eliberează adeverinţă/viză)
+  stated successors: C14 (Primarul stabileşte dreptul prin dispoziţie); C16 (Efectuarea anchetei sociale); C14 (Primarul stabileşte dreptul prin dispoziţie)
+  sources (13): r1_hg-1073-2021-norms.txt: «consumatorii vulnerabili de energie depun individual sau prin asociaţiile de proprietari/locatari cererile şi declaraţiile pe propria răspundere, prevăzute la a»; r1_hg-1073-2021-norms.txt: «Declar pe proprie răspundere şi sub sancţiunile Codului penal că»
+
+CLAIM C07
+  name: Depunere letrică sau electronică
+  what: Applications may be filed on paper or, where the local authority has an electronic intake system, sent electronically (e-mail or other means) with the supporting documents.
+  who: citizen (evidence: 'solicitanţii'); automation: unknown
+  trigger: local authority has developed electronic intake systems
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (4): r1_hg-1073-2021-norms.txt: «Cererile şi declaraţiile pe propria răspundere pot fi depuse letric sau, în situaţia în care autorităţile administraţiei publice locale au dezvoltate sisteme el»; r1_hg-1073-2021-norms.txt: «pot fi transmise electronic de către solicitanţi, prin poşta electronică sau alte mijloace puse la dispoziţie de autoritatea administraţiei publice locale»
+
+CLAIM C08
+  name: Beneficiarii VMG/ASF folosesc formularul anexa 1a
+  what: An applicant already receiving minimum-income aid and/or family allowance fills in the modification form (annex 1a to HG 50/2011) instead of a new full application.
+  who: citizen (evidence: 'solicitantul (beneficiar de ajutor social şi/sau alocaţie pentru susţinerea familiei)'); automation: unknown
+  trigger: applicant is in payment of VMG and/or ASF at filing date; filed per art. 16 (by 15 October as a rule)
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (2): r1_hg-1073-2021-norms.txt: «acesta completează formularul de cerere prevăzut în anexa nr. 1a) la Normele metodologice de aplicare a prevederilor Legii nr. 416/2001 privind venitul minim ga»; r2_law-226-2021.txt: «Cererea prevăzută la alin. (5) se depune potrivit prevederilor art. 16 , prevederile art. 17 aplicându-se în mod corespunzător.»
+
+CLAIM C09
+  name: Reutilizarea documentelor depuse pentru VMG/ASF
+  what: When deciding the right, the supporting documents already filed for VMG/ASF on family composition and income are taken into account.
+  who: unknown (evidence: "passive voice ('se iau în considerare')"); automation: unknown
+  trigger: applicant is a VMG/ASF beneficiary
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (3): r1_hg-1073-2021-norms.txt: «la stabilirea dreptului la ajutoarele prevăzute la art. 1 se iau în considerare documentele doveditoare privind componenţa familiei şi veniturile membrilor aces»; r2_law-226-2021.txt: «acesta se acordă luând în considerare documentele doveditoare privind componenţa familiei şi veniturile membrilor acesteia, depuse de titular pentru acordarea d»
+
+CLAIM C10
+  name: Primarul solicită documentele doveditoare
+  what: The mayor requests the main supporting documents (ID copies, an energy bill copy, proof of housing title if not on record, income documents).
+  who: mayor (evidence: 'primar'); automation: unknown
+  trigger: application filed (art. 14 alin. (4) din lege)
+  stated predecessors: none stated
+  stated successors: C14 (Primarul stabileşte dreptul prin dispoziţie); C14 (Primarul stabileşte dreptul prin dispoziţie)
+  sources (7): r1_hg-1073-2021-norms.txt: «În aplicarea dispoziţiilor art. 14 alin. (4) din lege, principalele documentele solicitate de primar sunt următoarele»; r2_law-226-2021.txt: «În vederea stabilirii dreptului la ajutor pentru încălzire, primarii solicită acte doveditoare care atestă identitatea şi veniturile realizate de membrii famili»
+
+CLAIM C11
+  name: Preluarea electronică a documentelor de la alte instituţii
+  what: As data-exchange protocols develop, the public social-assistance service may take family/income proofs directly from the competent institution, with the beneficiary's consent.
+  who: das_staff (evidence: 'serviciul public de asistenţă socială'); automation: unknown
+  trigger: protocols and technical capacity exist; beneficiary consents; documents carry an extended electronic signature
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «documentele doveditoare privind componenţa familiei şi veniturile membrilor acesteia vor putea fi preluate de către serviciul public de asistenţă socială direct»
+
+CLAIM C12
+  name: Afişarea listei documentelor
+  what: The list of documents that can be taken over electronically is displayed at the town hall and on its website.
+  who: unknown (evidence: "passive voice ('va fi adusă la cunoştinţa'); displayed at the town hall and on its website"); automation: unknown
+  trigger: 
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «Lista documentelor va fi adusă la cunoştinţa solicitanţilor prin afişare la sediul primăriei şi prin afişare pe pagina de internet a acesteia.»
+
+CLAIM C13
+  name: Protocoale pentru informaţii privind veniturile
+  what: The local authority may sign protocols with other authorities to obtain income information on the applicant's family.
+  who: other (evidence: 'autoritatea administraţiei publice locale'); automation: unknown
+  trigger: optional
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (1): r1_hg-1073-2021-norms.txt: «Pentru obţinerea informaţiilor privind veniturile realizate de persoana singură sau membrii familiei, autoritatea administraţiei publice locale poate încheia pr»
+
+CLAIM C14
+  name: Primarul stabileşte dreptul prin dispoziţie
+  what: Based on the application, documents and information obtained, the mayor establishes the right to heating aid and/or supplement by written disposition (several beneficiaries may be listed in an annex table).
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: application and supporting documents received
+  stated predecessors: C06 (Depunerea cererii şi declaraţiei pe propria răspundere); C10 (Primarul solicită documentele doveditoare); C16 (Efectuarea anchetei sociale); C10 (Primarul solicită documentele doveditoare); C73 (SPAS pregăteşte documentaţia şi proiectele de dispoziţie); C06 (Depunerea cererii şi declaraţiei pe propria răspundere); C77 (Verificarea în baze de date a veniturilor şi bunurilor)
+  stated successors: C19 (Comunicarea dispoziţiei către titular); C31 (SPAS întocmeşte situaţia centralizatoare pentru combustibili solizi); C19 (Comunicarea dispoziţiei către titular); C82 (Transmiterea cererilor către furnizorii de energie)
+  sources (6): r1_hg-1073-2021-norms.txt: «primarul stabileşte dreptul la ajutoarele pentru încălzire şi la suplimentul pentru energie prevăzute la art. 1, prin dispoziţie scrisă.»; r1_hg-1073-2021-norms.txt: «În cazul în care prin aceeaşi dispoziţie se stabilesc drepturi pentru mai multe persoane, acestea se cuprind într-un tabel în anexa la dispoziţia respectivă.»
+
+CLAIM C15
+  name: Primarul dispune ancheta socială (ajutor energie electrică)
+  what: For electricity heating aid the mayor must order a social inquiry at the holder's home to verify the heating system used.
+  who: mayor (evidence: 'primarul'); automation: unknown
+  trigger: establishing the right to electricity heating aid
+  stated predecessors: none stated
+  stated successors: C16 (Efectuarea anchetei sociale)
+  sources (1): r1_hg-1073-2021-norms.txt: «În cazul stabilirii dreptului la ajutorul pentru energie electrică, primarul dispune, în mod obligatoriu, efectuarea anchetei sociale la domiciliul sau reşedinţ»
+
+CLAIM C16
+  name: Efectuarea anchetei sociale
+  what: The public social-assistance service carries out the social inquiry, using the HG 50/2011 annex 2 model, within the deadline of art. 14(7) of the law.
+  who: das_staff (evidence: 'serviciul public de asistenţă socială organizat potrivit art. 113 din Legea nr. 292/2011'); automation: unknown
+  trigger: electricity heating aid application registered; within 15 working days of registration; not for VMG/ASF beneficiaries already inquired
+  stated predecessors: C15 (Primarul dispune ancheta socială (ajutor energie electrică)); C06 (Depunerea cererii şi declaraţiei pe propria răspundere)
+  stated successors: C14 (Primarul stabileşte dreptul prin dispoziţie)
+  sources (5): r1_hg-1073-2021-norms.txt: «Ancheta socială se realizează de către serviciul public de asistenţă socială organizat potrivit art. 113 din Legea asistenţei sociale nr. 292/2011»; r2_law-226-2021.txt: «În cazul solicitării ajutorului pentru energie electrică, anchetele sociale se efectuează obligatoriu, pentru toate situaţiile, în termen de 15 zile lucrătoare »
+
+CLAIM C17
+  name: Comunicarea dispoziţiei motivate de respingere
+  what: For applicants who do not meet the conditions, the mayor communicates a reasoned rejection disposition.
+  who: mayor (evidence: 'primarii'); automation: unknown
+  trigger: conditions not met; by 15 November for applications filed by 15 October
+  stated predecessors: none stated
+  stated successors: none stated
+  sources (2): r1_hg-1073-2021-norms.txt: «Pentru familiile şi persoanele singure care nu îndeplinesc condiţiile de acordare a ajutoarelor prevăzute la art. 1, primarii comunică solicitanţilor dispoziţia»; r2_law-226-2021.txt: «Pentru solicitanţii care nu îndeplinesc condiţiile de acordare a ajutorului pentru încălzire, în termenul prevăzut la alin. (2) primarii le comunică acestora di»
+
+CLAIM C18
+  name: Comunicarea dispoziţiilor către prefect
+  what: Before reaching the beneficiaries, the dispositions are communicated to the prefect (art. 199 Administrative Code).
+  who: unknown (evidence: "passive voice ('se comunică prefectului'); actor not named"); automation: unknown
+  trigger: disposition issued
+  stated predecessors: none stated
+  stated successors: C19 (Comunicarea dispoziţiei către titular)
+  sources (1): r1_hg-1073-2021-norms.txt: «Prealabil comunicării către persoanele cărora se adresează, dispoziţiile respective se comunică prefectului»
+
+CLAIM C19
+  name: Comunicarea dispoziţiei către titular
+  what: The mayor's dispositions are communicated to the holders within 5 days of issue, directly, via suppliers or via owners'/tenants' associations; e-mail from the official address is allowed.
+  who: unknown (evidence: "passive voice ('se comunică titularilor'); channels: direct, via suppliers or via owners' associations"); automation: unknown
+  trigger: disposition issued; initial wave by 15 November; in-season within 5 days of issue
+  stated predecessors: C14 (Primarul stabileşte dreptul prin dispoziţie); C18 (Comunicarea dispoziţiilor către prefect); C14 (Primarul stabileşte dreptul prin dispoziţie); C36 (Dispoziţie unică pentru ajutor şi supliment)
+  stated successors: none stated
+  sources (4): r1_hg-1073-2021-norms.txt: «Dispoziţiile primarului prevăzute la alin. (1) şi (5) se comunică titularilor ajutoarelor prevăzute la art. 1, în termen de maximum 5 zile de la data emiterii, »; r1_hg-1073-2021-norms.txt: «Comunicarea dispoziţiilor se poate face de pe adresa oficială de poştă electronică a unităţii/subdiviziunii administrativ- teritoriale.»
+
+CLAIM C20
+  name: Declararea modificărilor prin nouă declaraţie
+  what: A change in the situation (art. 19(1) of the law) is reported by filing a new self-declaration.
+  who: citizen (evidence: "Titularii ajutoarelor (Law 226/2021 art. 19(1)); filed individually or via the owners' association"); automation: unknown
+  trigger: change in family composition or income; within 5 days of the change
+  stated predecessors: none stated
+  stated successors: C21 (Primarul emite noi dispoziţii după modificări); C21 (Primarul emite noi dispoziţii după modificări)
+  sources (7): r1_hg-1073-2021-norms.txt: «În cazul modificărilor prevăzute la art. 19 alin. (1) din lege, comunicarea acestora se va face prin depunerea unei noi declaraţii pe propria răspundere»; r1_hg-1073-2021-norms.txt: «realităţii şi mă oblig să aduc la cunoştinţa autorităţilor, în scris»
+
+CLAIM C21
+  name: Primarul emite noi dispoziţii după modificări
+  what: After a reported change, the mayor issues a new disposition and sends it to the holder within 5 days of issue.
+  who: mayor (evidence: 'primarii'); automation: unknown
+  trigger: new self-declaration filed
+  stated predecessors: C20 (Declararea modificărilor prin nouă declaraţie); C20 (Declararea modificărilor prin nouă declaraţie)
+  stated successors: C60 (Primarul transmite situaţia modificărilor/încetărilor)
+  sources (3): r1_hg-1073-2021-norms.txt: «În situaţia prevăzută la alin. (1), primarii emit noi dispoziţii pe care le transmit titularilor ajutoarelor prevăzute la art. 1 în termen de 5 zile de la data »; r2_law-226-2021.txt: «În cazul modificărilor prevăzute la alin. (1), primarul va emite o nouă dispoziţie cu privire la modificarea valorii ajutorului pentru încălzire»
+
+CLAIM C22
+  name: Transmiterea situaţiilor centralizatoare către AJPIS, furnizori, asociaţii
+  what: The mayor sends monthly centralizing statements (holders, disposition no., income per member, aid value, supplier and client code), on paper and electronically, to AJPIS, the suppliers and the owners' associations.
+  who: mayor (evidence: 'primarii'); automation: unknown
+  trigger: initial statement in time for 15 November; then monthly updates (norms)
+  stated predecessors: none stated
+  stated successors: C26 (Furnizorul calculează ajutorul efectiv); C65 (AJPIS constituie baza de date a beneficiarilor)
+  sources (5): r1_hg-1073-2021-norms.txt: «primarii au obligaţia de a transmite agenţiilor teritoriale, furnizorilor de energie termică în sistem centralizat, de gaze naturale/energie electrică şi asocia»; r1_hg-1073-2021-norms.txt: «Situaţiile centralizatoare se transmit lunar, actualizate cu beneficiarii care îndeplinesc condiţiile de acordare a ajutorului pentru încălzire pe parcursul sez»
+
+CLAIM C23
+  name: Stabilirea consumului general şi proces-verbal
+  what: Each month the supplier's representative, with the owners' association representative where relevant, establishes the general metered consumption and signs a findings report (proces-verbal).
+  who: supplier (evidence: 'reprezentantul furnizorului împreună cu reprezentantul asociaţiei de proprietari/locatari, după caz'); automation: unknown
+  trigger: monthly, by the 3rd; PV only where metering is not individual; not for suppliers with >1,000 clients or with individual meters/heat-cost allocators
+  stated predecessors: none stated
+  stated successors: C24 (Asociaţia defalcă consumul pe consumatori individuali); C24 (Asociaţia defalcă consumul pe consumatori individuali)
+  sources (5): r1_hg-1073-2021-norms.txt: «Lunar, în termenul prevăzut la art. 20 alin. (1) din lege, reprezentantul furnizorului de energie termică împreună cu reprezentantul asociaţiei de proprietari/l»; r1_hg-1073-2021-norms.txt: «La stabilirea consumului general de energie termică prevăzut la alin. (1) se încheie un proces-verbal constatator»
+
+CLAIM C24
+  name: Asociaţia defalcă consumul pe consumatori individuali
+  what: The owners'/tenants' association splits the general consumption among the individual beneficiary consumers.
+  who: other (evidence: 'asociaţia de proprietari/locatari'); automation: unknown
+  trigger: proces-verbal signed
+  stated predecessors: C23 (Stabilirea consumului general şi proces-verbal); C23 (Stabilirea consumului general şi proces-verbal)
+  stated successors: C25 (Asociaţia transmite furnizorului consumurile defalcate)
+  sources (2): r1_hg-1073-2021-norms.txt: «Pe baza datelor cuprinse în procesul-verbal prevăzut la art. 12 alin. (4), asociaţia de proprietari/locatari defalcă consumul general de energie termică pe cons»; r2_law-226-2021.txt: «Pe baza datelor cuprinse în procesul -verbal constatator, asociaţia de proprietari/locatari defalcă consumul general pe consumatori individuali.»
+
+CLAIM C25
+  name: Asociaţia transmite furnizorului consumurile defalcate
+  what: The association sends the supplier a centralizing statement of the split consumption for aid beneficiaries.
+  who: other (evidence: 'asociaţia de proprietari/locatari'); automation: unknown
+  trigger: by the 5th of each month (where metering is not individual)
+  stated predecessors: C24 (Asociaţia defalcă consumul pe consumatori individuali)
+  stated successors: C26 (Furnizorul calculează ajutorul efectiv); C26 (Furnizorul calculează ajutorul efectiv)
+  sources (2): r1_hg-1073-2021-norms.txt: «În termenul prevăzut la art. 20 alin. (4) din lege, asociaţia de proprietari/locatari transmite furnizorilor de energie termică situaţia centralizatoare cuprinz»; r2_law-226-2021.txt: «până la data de 5 a fiecărei luni, asociaţia de proprietari/locatari transmite furnizorilor prevăzuţi la alin. (1) situaţia centralizatoare cuprinzând consumuri»
+
+CLAIM C26
+  name: Furnizorul calculează ajutorul efectiv
+  what: The supplier computes the actual monthly aid for each beneficiary from the split consumption, capped by the amount set by the mayor.
+  who: supplier (evidence: 'furnizorul'); automation: unknown
+  trigger: thermal: by the 10th of each month; gas/electricity: monthly
+  stated predecessors: C25 (Asociaţia transmite furnizorului consumurile defalcate); C25 (Asociaţia transmite furnizorului consumurile defalcate); C22 (Transmiterea situaţiilor centralizatoare către AJPIS, furnizori, asociaţii)
+  stated successors: C27 (Furnizorul emite factura cu ajutorul evidenţiat)
+  sources (4): r1_hg-1073-2021-norms.txt: «cuantumul efectiv al ajutorului pentru energie termică se calculează lunar de către furnizor»; r1_hg-1073-2021-norms.txt: «Pe baza consumului defalcat prevăzut la alin. (1), furnizorul stabileşte cuantumul ajutorului efectiv»
+
+CLAIM C27
+  name: Furnizorul emite factura cu ajutorul evidenţiat
+  what: The supplier sends the monthly invoice to associations and individual contract holders, showing the heating aid.
+  who: supplier (evidence: 'furnizorii'); automation: unknown
+  trigger: within 2 days after the aid calculation
+  stated predecessors: C26 (Furnizorul calculează ajutorul efectiv)
+  stated successors: C28 (Furnizorul întocmeşte borderoul centralizator); C28 (Furnizorul întocmeşte borderoul centralizator); C62 (Asociaţia defalcă cheltuielile ţinând cont de ajutor); C30 (AJPIS plăteşte furnizorii)
+  sources (7): r1_hg-1073-2021-norms.txt: «Furnizorii de gaze naturale transmit lunar asociaţiilor de proprietari/locatari, precum şi consumatorilor vulnerabili titulari de contracte individuale factura »; r2_law-226-2021.txt: «Contravaloarea ajutorului pentru încălzire prevăzut la alin. (2) lit. a)-c) se evidenţiază în facturile emise de furnizori.»
+
+CLAIM C28
+  name: Furnizorul întocmeşte borderoul centralizator
+  what: Based on the invoices, the supplier draws up the centralizing borderou (a payment document) in 3 copies and sends it to the mayor for certification.
+  who: supplier (evidence: 'furnizorul'); automation: unknown
+  trigger: invoices issued
+  stated predecessors: C27 (Furnizorul emite factura cu ajutorul evidenţiat); C27 (Furnizorul emite factura cu ajutorul evidenţiat)
+  stated successors: C29 (Primarul certifică borderoul şi îl trimite la AJPIS); C43 (AJPIS solicită credite bugetare de la ANPIS); C29 (Primarul certifică borderoul şi îl trimite la AJPIS)
+  sources (3): r1_hg-1073-2021-norms.txt: «Pe baza facturilor prevăzute la alin. (1), furnizorul de energie termică întocmeşte borderoul centralizator»; r1_hg-1073-2021-norms.txt: «Borderoul centralizator prevăzut la art. 15 alin. (2) reprezintă document de plată, se întocmeşte de furnizor în 3 exemplare şi se transmite primarilor pentru c»

@@ -1,0 +1,422 @@
+[
+  {
+    "question_id": "Q1",
+    "status": "answered",
+    "answer": "The guideline (dated 22.10.2026) applies the post-2024 regime: aid is 70 % (80 % until 31.3.2024) of the difference between eligible costs (capped at the maximum housing costs) and the basic deductible. From 1.4.2024 the basic deductible is 0.5 x (T - (667 + 94A + 296L)); the 0.42 x (T - (667 + 111A + 246L)) formula applied 1.1.-31.3.2024 and in 2023, and older years' constants are tabulated. An asset test applies (10,000 EUR for one adult, 20,000 EUR for two or more adults; 20 % of the excess is counted as income; assets of 50,000 EUR or more give no entitlement), and owner-occupied dwellings are excluded from 1.1.2025. So the 80 % / old-formula / owner-occupied version is the superseded one.",
+    "evidence": [
+      {
+        "page": "p. 27",
+        "quote": "Yleinen asumistuki on 70 % (31.3.2024 asti 80 %) hyväksyttävien asumismenojen ja perusomavastuun erotuksesta."
+      },
+      {
+        "page": "p. 28",
+        "quote": "1.4.2024 alkaen Perusomavastuu = 0,5 x (T – (667 + 94 x A + 296 x L)"
+      },
+      {
+        "page": "p. 30",
+        "quote": "Yleistä asumistukea ei myönnetä 1.1.2025 alkaen omistusasuntojen asumismenoihin."
+      },
+      {
+        "page": "p. 58",
+        "quote": "Jos omaisuus ylittää omaisuusrajat, ruokakunnan tulona otetaan huomioon mainitun määrän ylittävästä omaisuudesta 20 prosenttia."
+      },
+      {
+        "page": "p. 59",
+        "quote": "Jos ruokakunnan omaisuus käyttövaravähennyksen ja velkojen vähentämisen jälkeen on vähintään 50 000 euroa, yleiseen asumistukeen ei ole oikeutta lainkaan."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "The 2010-level parameters (555 + 92A + 205L) and a '§ 8 a' do not appear anywhere in the guideline (only YAL 8 § on pensioners and YAL 10 § on maximum costs are cited), so the guideline cannot confirm the internal note's '§ 8 a' reference. The cap tables are not reproduced (see Q2). Pointers to separate pages: 'Asumistuen määrän muutokset 1.4.2024 alkaen' (p. 27, p. 34) and 'Enimmäisasumismenojen määrät' (p. 33)."
+  },
+  {
+    "question_id": "Q2",
+    "status": "partially_answered",
+    "answer": "Since 1.4.2024 there are three municipality groups (I: Espoo, Helsinki, Kauniainen, Vantaa; II: a named list, 24 municipalities in the 1.1.2025 list versus 30 in the 1.4.2024 list; III: all other municipalities); until 31.3.2024 there were four (Helsinki / Espoo-Kauniainen-Vantaa / named list / others). Åland municipalities have separate maximum housing costs confirmed by the Åland provincial government, which matches the 'three mainland tables plus a separate table' picture. The group affects only the maximum housing costs; the municipality does not affect the basic deductible, so no separate income-limit table per group is described. The euro amounts of the cap tables are not in the guideline.",
+    "evidence": [
+      {
+        "page": "p. 33",
+        "quote": "Kuntaryhmät 1.1.2025 alkaen: • I kuntaryhmä: Espoo, Helsinki, Kauniainen ja Vantaa"
+      },
+      {
+        "page": "p. 33",
+        "quote": "• III kuntaryhmä: Muut kunnat"
+      },
+      {
+        "page": "p. 33",
+        "quote": "Kuntaryhmät 1.1.2017 - 31.3.2024: • I kuntaryhmä: Helsinki"
+      },
+      {
+        "page": "p. 33",
+        "quote": "Lisäksi Ahvenanmaan maakuntahallitus vahvistaa enimmäisasumismenot Ahvenanmaan kunnille."
+      },
+      {
+        "page": "p. 29",
+        "quote": "asunnon sijaintikunta ei vaikuta perusomavastuun määrään."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Municipality-to-group mapping and the number of groups are answered; the cap amounts per group (and per household size) are not. The guideline says 'Lue lisää Enimmäisasumismenojen määrät' (p. 33) and 'Lue lisää vuosittain vahvistettavista enimmäisasumismenoista' (p. 28). Six municipalities (Kajaani, Kouvola, Lappeenranta, Mikkeli, Pori, Vaasa) are in group II in the 1.4.2024 list but not in the 1.1.2025 list."
+  },
+  {
+    "question_id": "Q3",
+    "status": "answered",
+    "answer": "Yes for the rate and formula: for Åland residents, from 1.9.2024 the aid is 0.80 x (eligible costs up to the cap - basic deductible) and the basic deductible is 0.42 x (T - (667 + 111A + 246L)), i.e. the pre-April-2024 mainland structure. Åland municipalities have had their own maximum housing costs since 1.1.2017, confirmed by the Åland provincial government. Other Åland-specific rules: applications are processed by Kela's special unit Kela-Ahvenanmaa; students who rent in Åland, and Åland students renting on the mainland, have no right to general housing allowance (entitlement to a housing supplement under the Åland provincial study-aid act excludes them from the household and from YAL).",
+    "evidence": [
+      {
+        "page": "p. 25",
+        "quote": "Ahvenanmaan kunnille on 1.1.2017 alkaen määritelty omat, yleisessä asumistuessa käytettävät, enimmäisasumismenot."
+      },
+      {
+        "page": "p. 25",
+        "quote": "määrä on 0.80 x (hyväksyttävät, korkeintaan enimmäisasumismenot - perusomavastuu)"
+      },
+      {
+        "page": "p. 25",
+        "quote": "perusomavastuu lasketaan kaavalla = 0,42 x (Tulot - (667 + 111 x A + 246 x L)"
+      },
+      {
+        "page": "p. 25",
+        "quote": "Ahvenanmaalla asuvien yleisen asumistuen hakemukset käsitellään Kelassa (Erityisyksikkö Kela-Ahvenanmaa)."
+      },
+      {
+        "page": "p. 25",
+        "quote": "Ahvenanmaalla opiskelevilla ahvenanmaalaisilla vuokralla asuvilla opiskelijoilla ja Ahvenanmaalta Manner-Suomeen opiskelemaan tulevilla vuokralla asuvilla opiskelijoilla ei ole oikeutta yleiseen asumistukeen."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "The euro cap values 470/687/871/1,032 are not reproduced in the guideline, so the table itself is not verified here; the 80 % rate, the 0.42 formula and the separate Åland caps are confirmed as the Åland regime. Pointers: 'Lue lisää yleisen asumistuen prosessista kohdasta Ahvenanmaalla asuvat' (p. 25), 'Lue lisää enimmäisasumismenoista' (p. 25). Note the Åland rules start 1.9.2024 (mainland changes start 1.4.2024)."
+  },
+  {
+    "question_id": "Q4",
+    "status": "partially_answered",
+    "answer": "The guideline is written for case officers ('toimihenkilö', 'kun käsittelet hakemusta') and requires a written decision for granting, rejection, revision, termination and recovery. The only steps it expressly describes as automated are the annual-review letter (sent programmatically) and termination of the benefit 'ohjelmallisesti' (with a decision issued) when the renewal application is not returned in time. It does not say whether new applications or change-based revisions are decided by a caseworker or by automation, nor who signs decisions; it refers to separate pages on decision proposals/decision-making and responsible units.",
+    "evidence": [
+      {
+        "page": "p. 4",
+        "quote": "Yleisen asumistuen etuusohjetta käytetään apuna etuuksien ratkaisutyössä."
+      },
+      {
+        "page": "p. 64",
+        "quote": "Yleisen asumistuen hakijalla on annettava kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+      },
+      {
+        "page": "p. 64",
+        "quote": "Toimihenkilön velvollisuus on huolehtia siitä, että vireille pantu asia selvitetään huolellisesti"
+      },
+      {
+        "page": "p. 72",
+        "quote": "asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+      },
+      {
+        "page": "p. 64",
+        "quote": "Lue lisää päätösesityksestä ja ratkaisun tekemisestä. Lue lisää asumistuen vastuuyksiköistä."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "No mention of automated decision-making for new applications or revisions, of deployment decisions (käyttöönottopäätökset), or of sign-off rules. Pointers: 'päätösesityksestä ja ratkaisun tekemisestä' and 'asumistuen vastuuyksiköistä' (p. 64); 'yleisen asumistuen prosessista kohdasta Päätöksen antaminen' (p. 65)."
+  },
+  {
+    "question_id": "Q5",
+    "status": "partially_answered",
+    "answer": "Only data-retrieval automation is mentioned: Kela receives wage data from the Incomes Register and lease/rent-increase data electronically from landlords participating in the rent-contract query (vuokrasopimuskysely), so customers are not asked for data obtainable from the register or a copy of the lease for those landlords; business/new-property asset data come from a tax-data query; and the annual-review letter is sent programmatically. Registration, missing-attachment reminders and pre-calculation are not described; missing information is requested manually (phone, message service or customer letter) and Kela must request it within 30 days.",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "Yleisen asumistuen hakemuksen ratkaisemista varten Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä sekä vuokrasopimuksista vuokrasopimuskyselystä."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Asiakkaalta ei pyydetä sellaisia tietoja, jotka saadaan tulorekisteristä."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Kopiota vuokrasopimuksesta ei tarvita, jos vuokranantaja on mukana Kelan vuokrasopimuskyselyssä, koska Kela saa näiltä vuokranantajilta sähköisesti tiedot vuokrasopimuksista ja vuokrankorotuksista."
+      },
+      {
+        "page": "p. 25",
+        "quote": "Kela lähettää ohjelmallisesti ennen vuositarkistusajankohtaa kirjeen asumistuen saajalle."
+      },
+      {
+        "page": "p. 4",
+        "quote": "Täydennä epäselväksi jääneet asiat asiakkaalta ensisijaisesti puhelimitse. Käytä tarvittaessa viestipalvelua tai asiakaskirjettä."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Pointers to registration and process pages: 'Lue lisää hakemistietojen rekisteröinnistä' (p. 26), 'yleisen asumistuen prosessista kohdasta Lisäselvitysten pyytäminen' (p. 13, p. 50), 'Lue lisää vuokrasopimuskyselyn käytöstä' (p. 40). The case-system internals (auto-registration, auto-reminders, pre-calculation) are not documented in the guideline."
+  },
+  {
+    "question_id": "Q6",
+    "status": "partially_answered",
+    "answer": "The guideline defines the imputed 'minimum income' (= amount of the unemployment general support, formerly labour-market subsidy) and when it is applied: person has not registered as a jobseeker although possibly entitled, income-lessness has not been clarified, or it cannot be shown that the person has no possibility to earn such income (not applied e.g. during studies or childcare). For entrepreneurs without YEL a fixed order applies (Incomes Register wages, start-up grant, unemployment benefit, own estimate, minimum income), and for YEL/MYEL entrepreneurs actual income is used if register or tax data show at least double the YEL/MYEL income. Tax data (latest confirmed taxation) is expressly used for recurring capital gains, share-savings-account yield, dividends and assets. A general rule for resolving discrepancies between declared income and Incomes Register/tax data is not given.",
+    "evidence": [
+      {
+        "page": "p. 42",
+        "quote": "Vähimmäistulo on työttömyyden perusteella maksettavan yleistuen (30.4.2026 asti työmarkkinatuen) suuruinen tulo."
+      },
+      {
+        "page": "p. 42",
+        "quote": "henkilö ei ole hakeutunut työttömäksi työnhakijaksi, vaikka hänellä saattaisi olla oikeus työttömyysetuuteen"
+      },
+      {
+        "page": "p. 42",
+        "quote": "ei voida osoittaa, että henkilöllä ei ole mahdollisuutta hankkia vastaavan suuruista tuloa."
+      },
+      {
+        "page": "p. 45",
+        "quote": "Jos tulorekisterin tietojen, verotustietojen tai muiden rekisteritietojen perusteella ilmenee, että yrittäjän tulot ovat vähintään kaksinkertaiset YEL- tai MYEL-tuloon verrattuna, yrittäjän tulot voidaan ottaa huomioon todellisten tulojen suuruisena."
+      },
+      {
+        "page": "p. 51",
+        "quote": "Muut kuin osakesäästötilille saadut toistuvat luovutusvoitot otetaan tulona huomioon viimeisimmän vahvistetun verotuksen mukaisena."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Pointers: 'Lue lisää yleisen asumistuen prosessista kohdista Lisäselvitysten pyytäminen sekä Esimerkkejä valmistelun tilanteista' (p. 50), 'Lue lisää Verotustiedoista' (p. 47), 'Lue lisää palkkatulojen rekisteröinnistä' (p. 49), examples 'Virheellisen tuloarvion oikaiseminen' and 'Yrittäjän tuloarviot' (p. 42). No explicit 'taxation fallback' for wage income; the only tax-data-as-basis rules are for capital income, assets and the 2x YEL/MYEL test."
+  },
+  {
+    "question_id": "Q7",
+    "status": "answered",
+    "answer": "Spouses and close relatives living together are always one household regardless of leases. Cohabitation is judged case by case on an overall assessment where no single factor is decisive (dwelling size/privacy, other reason for sharing, leases and actual rent payment, children, shared housing history, conflicting address data), and it must be examined even if the persons are not registered at the same address. People with separate leases for parts of a dwelling are different households unless they are spouses/cohabitants/close relatives; a joint-liability or joint-termination clause does not merge households; cohabitation ends on moving apart (applicant's own declaration decides for cohabitants moving apart); for a disputed child the VTJ address decides.",
+    "evidence": [
+      {
+        "page": "p. 8",
+        "quote": "Suhteen tulkitseminen avoliitoksi tehdään kokonaisharkinnan perusteella tapauskohtaisesti eikä mikään yksittäinen seikka yksinään ole ratkaiseva."
+      },
+      {
+        "page": "p. 8",
+        "quote": "Avoliitto tulee siis selvittää, vaikka henkilöt eivät väestörekisteritietojen mukaan ole kirjoilla samassa asunnossa, jos meillä on tiedossa muita avoliittoa puoltavia seikkoja."
+      },
+      {
+        "page": "p. 9",
+        "quote": "Avoliiton katsotaan kuitenkin edelleen jatkuvan erilleen muutosta huolimatta, jos puolisot itse katsovat avoliiton edelleen jatkuvan."
+      },
+      {
+        "page": "p. 21",
+        "quote": "Samassa asunnossa asuvat kuuluvat eri ruokakuntiin, jos • henkilöillä on osasta asunnosta erillinen vuokrasopimus tai sitä vastaava hallintasopimus"
+      },
+      {
+        "page": "p. 11",
+        "quote": "Ehto, jonka mukaan asuntoon jäävät asukkaat vastaavat myös poismuuttaneiden vuokraosuudesta, ei yhdistä asukkaita samaan ruokakuntaan."
+      },
+      {
+        "page": "p. 21",
+        "quote": "Tilanteissa, joissa lapsen asumisesta on riitaa, lapsen katsotaan asuvan siinä asunnossa, jossa hänen vakinainen VTJ -osoitteensa on."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Case law (Social Security Appeal Board / Insurance Court) is not cited. Further detail is delegated to process sections: 'Lisäselvitysten pyytäminen/Avoliiton selvittäminen', 'Avopuolisoiden erilleen muutto', 'Päätöksen antaminen/Avoliittoharkinta ja päätöksen perusteleminen' (p. 9) and the toimintaohje 'Avopuolison opiskelu ja olosuhdemuutokset' (p. 8). Cohabitation-while-apart for married couples: they stay one household unless the separation is due to the relationship ending (p. 7, p. 23)."
+  },
+  {
+    "question_id": "Q8",
+    "status": "partially_answered",
+    "answer": "The guideline only restates the processing-time guarantee: a decision must be given at the latest on the 30th calendar day from receipt of the application. If the application is incomplete, Kela must request the missing information as soon as possible and at the latest by day 30, and must then decide within 14 calendar days of receiving the information or of the deadline for supplying it lapsing. No actual processing times, statistics or internal service-level targets are given.",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "päätös on annettava viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+      },
+      {
+        "page": "p. 64",
+        "quote": "Kelan tulee pyytää hakijalta hakemuksen ratkaisemiseen tarvittavat tiedot mahdollisimman pian, kuitenkin viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+      },
+      {
+        "page": "p. 65",
+        "quote": "Näissä tilanteissa hakemus on ratkaistava 14 kalenteripäivän kuluessa siitä, kun Kela on saanut käyttöönsä asian ratkaisemiseksi tarvittavat tiedot, tai määräaika selvitysten antamiselle on kulunut."
+      }
+    ],
+    "guideline_points_elsewhere": false,
+    "note": "Gives the 30-day guarantee and the 14-day-after-information rule (useful for timers) but not actual or target processing times; the length of the 'määräaika selvitysten antamiselle' is not stated."
+  },
+  {
+    "question_id": "Q9",
+    "status": "answered",
+    "answer": "The trigger is the landlord's request: if the tenant neglects to pay rent fully or partly for two consecutive months, the allowance can be paid directly to the landlord on the landlord's request without the recipient's consent (YAL 25 § 2 mom.). The recipient is heard before the payment is redirected and gets a decision, which is not appealable; if the recipient later asks for payment to herself, the landlord is heard first.",
+    "evidence": [
+      {
+        "page": "p. 79",
+        "quote": "Jos vuokralainen laiminlyö vuokran maksamisen kokonaan tai osittain kahden perättäisen kuukauden ajan, tuki voidaan vuokranantajan pyynnöstä maksaa suoraan vuokranantajalle ilman tuensaajan suostumusta (YAL 25 § 2 mom.)."
+      },
+      {
+        "page": "p. 79",
+        "quote": "Tuensaajalle annetaan päätös vuokranantajalle maksamisesta. Päätöksestä ei ole valitusoikeutta."
+      },
+      {
+        "page": "p. 79",
+        "quote": "Kuule tuensaajaa ennen maksun siirtämistä vuokranantajalle"
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "The concrete channel of the landlord's request (form, phone, letter) is not specified. Pointer: 'Lue lisää Vuokranantajalle maksaminen -prosessista kohdasta Maksaminen vuokranmaksun laiminlyönnin perusteella' (p. 79). Separately, landlords have a duty to notify Kela when the tenant's right of possession ends or the tenant moves out (p. 79)."
+  },
+  {
+    "question_id": "Q10",
+    "status": "partially_answered",
+    "answer": "The guideline gives the substantive rule, not the automation scope: general housing allowance ends from the start of the month when a household member becomes entitled to pensioner's housing allowance (single-person household or a two-person spouse/cohabitant household), even if no pensioner's allowance would actually be payable. Pensions that do not entitle to pensioner's housing allowance and therefore leave YAL in place include lump-sum pensions, abandonment support/pension, part-time pension, partial disability pension, partial early old-age pension, unregistered supplementary pension and partial rehabilitation allowances. Nothing is said about which of these cases are handled by automatic termination or which exclusion rules route a case to a caseworker.",
+    "evidence": [
+      {
+        "page": "p. 9",
+        "quote": "Yleistä asumistukea voivat saada myös eläkkeellä olevat henkilöt, jotka saavat pelkästään sellaista eläkettä, joka ei oikeuta eläkkeensaajan asumistukeen."
+      },
+      {
+        "page": "p. 9",
+        "quote": "• kertakorvauksena maksettu eläke tai korvaus • luopumistuki tai luopumiseläke • osa-aikaeläke • osatyökyvyttömyyseläke • osittainen varhennettu vanhuuseläke"
+      },
+      {
+        "page": "p. 74",
+        "quote": "Ruokakunnalla ei ole oikeutta yleiseen asumistukeen, jos ruokakunnalla on oikeus eläkkeensaajien asumistukeen."
+      },
+      {
+        "page": "p. 74",
+        "quote": "yleinen asumistuki lakkautetaan sen kuukauden alusta, jolloin oikeus eläkkeensaajan asumistukeen alkaa."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "No mention of automated/impulse terminations or of a käsittelysäännöt document. The list of pensions that DO entitle to pensioner's housing allowance is delegated: 'Lue lisää Eläkkeensaajan asumistukeen oikeuttavat eläkkeet' and 'Lue lisää yleisen asumistuen lakkauttamisesta, jos ruokakunnalle syntyy oikeus eläkkeensaajan asumistukeen' (p. 10). Rehabilitation allowance: students receiving it stay in YAL (p. 17-18); it is counted as income (p. 55)."
+  },
+  {
+    "question_id": "Q11",
+    "status": "partially_answered",
+    "answer": "The guideline gives a concrete cut-off for the annual review: Kela sends a letter about two months before the review date, and if the renewal application has not been returned by the payment run of the review date (at the latest five days before the payment day, which is the first banking day of the month) the benefit is terminated programmatically and a decision is issued. For other revision information the termination ground is that the household does not supply requested information 'kohtuullisessa ajassa' (within a reasonable time), but that period is not quantified; the termination date follows the revision ground.",
+    "evidence": [
+      {
+        "page": "p. 72",
+        "quote": "Kela lähettää asumistuen saajalle kirjeen noin kaksi kuukautta ennen vuositarkistusaikaa."
+      },
+      {
+        "page": "p. 72",
+        "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää), asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+      },
+      {
+        "page": "p. 72",
+        "quote": "ruokakunta ei toimita pyynnöstä huolimatta kohtuullisessa ajassa asumistuen tarkistuksessa tarvittavia tietoja."
+      },
+      {
+        "page": "p. 73",
+        "quote": "Puuttuvat tarpeelliset tiedot Tarkistamisperusteen mukaisesta ajankohdasta"
+      },
+      {
+        "page": "p. 76",
+        "quote": "Yleinen asumistuki maksetaan kuukausittain. Maksupäivä on kuukauden ensimmäinen arkipäivä."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "'Reasonable time' is not defined in the guideline; the common instruction 'Lisäselvitysten pyytäminen' (under Etuuksille yhteiset asiat, p. 64) is the likely place for deadline rules. Pointers also include 'Lue lisää Vuositarkistuksen ja välitarkistuksen suhteesta' (p. 72)."
+  },
+  {
+    "question_id": "Q12",
+    "status": "partially_answered",
+    "answer": "Electronic sources named: the Incomes Register (wages, and since 2021 also benefit and pension payment data, excluding sensitive benefits), the landlord rent-contract query (lease and rent-increase data from participating landlords), a tax-data query (business and agricultural assets, newly formed properties; tax data also used for dividends, capital gains and property values) and the population information system (VTJ addresses). Banks are queried only if the applicant does not supply sufficient or reliable data, insurance/investment companies are a secondary source after the applicant. No separate queries to pension insurers, employers or unemployment funds are described (their payment data come through the Incomes Register), and the guideline does not systematically separate 'routine' from 'on request' or mention data-exchange agreements/§ 46 access decisions.",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "Yleisen asumistuen hakemuksen ratkaisemista varten Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä sekä vuokrasopimuksista vuokrasopimuskyselystä."
+      },
+      {
+        "page": "p. 55",
+        "quote": "Vuoden 2021 alusta lähtien tulorekisteriin ilmoitetaan palkkatietojen lisäksi myös etuuksien ja eläkkeiden maksutiedot."
+      },
+      {
+        "page": "p. 61",
+        "quote": "Elinkeinotoiminnan ja maatalouden varat otetaan huomioon vasta sitten, kun niitä koskevat tiedot saadaan verotustietojen kyselyltä."
+      },
+      {
+        "page": "p. 63",
+        "quote": "Jos riittäviä tai luotettavia tietoja ei saada hakijalta, voidaan talletuksia yms. selvittää rahalaitoksilta."
+      },
+      {
+        "page": "p. 64",
+        "quote": "Selvitä tiedot tarvittaessa ensisijaisesti tuen hakijalta ja toissijaisesti kyseistä sijoitusta hoitavasta vakuutus- tai muusta yhtiöstä."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Pointers: 'Lue lisää vuokrasopimuskyselyn käytöstä' (p. 40), 'Lue lisää Verotustiedoista' (p. 47), 'Lue lisää verotustiedoista: Tiedot yritystoiminnan varallisuudesta' (p. 61), 'yleisen asumistuen prosessista kohdasta Esimerkkejä valmistelun tilanteista (Tiedustelut rahalaitoksilta)' (p. 51, p. 63). Unemployment data: Kela may estimate unemployment benefit as income before the TE-office statement ('työvoimapoliittinen lausunto') arrives (p. 57)."
+  },
+  {
+    "question_id": "Q13",
+    "status": "not_answered",
+    "answer": "",
+    "evidence": [
+      {
+        "page": "p. 83",
+        "quote": "Etuuksille yhteinen Muutoksenhaku -ohje."
+      },
+      {
+        "page": "p. 83",
+        "quote": "Lue lisää yleisen asumistuen prosessista kohdasta Päätöksen antaminen."
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Evidence items are only pointers to the common 'Muutoksenhaku' and 'Päätöksen oikaisu ja poistaminen' guidelines and the process section 'Päätöksen antaminen'; no appeal period, filing channel or rectification-of-automated-decision rule is given. Only two non-appealability statements appear: interim decisions (p. 65, 'Väliaikaisesta päätöksestä ei ole muutoksenhakuoikeutta') and the decision to pay the landlord for rent default (p. 79, 'Päätöksestä ei ole valitusoikeutta')."
+  },
+  {
+    "question_id": "Q14",
+    "status": "partially_answered",
+    "answer": "The guideline says overpayments arise in revision, correction or termination decisions (e.g. a retroactive reducing revision creates an overpayment equal to the difference), and relies on the recipient's duty to report changes and the landlord's duty to report tenancy end/move-out; it does not describe systematic data-matching or landlord-notice detection. Recovery is primarily from the applicant, from adult household members under joint liability if recovery fails, from the landlord under YAL 31 § 4 mom. conditions, or by regress set-off against pensioner's housing allowance. Who decides on waiver is not stated; for recovery from a landlord, mitigation is expressly not considered.",
+    "evidence": [
+      {
+        "page": "p. 81",
+        "quote": "Yleisen asumistuen liikamaksua voi syntyä tai liikamaksun määrä voi lisääntyä tarkistus-, oikaisu- tai lakkautusratkaisun yhteydessä."
+      },
+      {
+        "page": "p. 81",
+        "quote": "Lisäksi yleisen asumistuen saajan tulee ilmoittaa Kelalle, jos ruokakunnan olosuhteissa tapahtuu muutos"
+      },
+      {
+        "page": "p. 66",
+        "quote": "välitarkistus tehdään takautuen oikeasta ajankohdasta lukien ja liikamaksuksi muodostuu maksetun ja tarkistetun tuen välinen erotus."
+      },
+      {
+        "page": "p. 79",
+        "quote": "vuokranantaja ei ole ilmoittanut Kelaan tuensaajan poismuutosta tai asunnon hallintaoikeuden päättymisestä eli vuokranantaja on laiminlyönyt 25 §:n ilmoitusvelvollisuutensa"
+      },
+      {
+        "page": "p. 80",
+        "quote": "Perinnän kohtuullistamista ei harkita, koska kyse on perusteettoman edun palauttamisesta."
+      },
+      {
+        "page": "p. 82",
+        "quote": "• peritään takaisin ensisijaisesti hakijalta"
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "Pointers: 'Takaisinperinnän yleiset periaatteet on kerrottu etuuksille yhteisessä Takaisinperintä-ohjeessa' (p. 81), 'Lue lisää liikamaksun muodostumisesta ja takaisinperinnän valmistelusta' (p. 82), 'yleisen asumistuen prosessista kohdasta Liikamaksu' (p. 82-83), 'Etuusväärinkäytökset-ohje' (p. 83). The decision-maker for waiver/mitigation (control and recovery unit) is not named."
+  },
+  {
+    "question_id": "Q15",
+    "status": "not_answered",
+    "answer": "",
+    "evidence": [
+      {
+        "page": "p. 57",
+        "quote": "Lue siirtymävaiheen toimintaohjeet Yleistuki ja yleinen asumistuki"
+      },
+      {
+        "page": "p. 25",
+        "quote": "Yleisen asumistuen hakemuksen voi tehdä • asiointipalvelu OmaKelassa • kirjallisesti lomakkeella AT1"
+      }
+    ],
+    "guideline_points_elsewhere": true,
+    "note": "The guideline describes only the standalone application (OmaKela, form AT1, oral) and mentions yleistuki only as an income item and in the pointer 'siirtymävaiheen toimintaohjeet Yleistuki ja yleinen asumistuki' (p. 57, in the unemployed-income section). That pointer is the only candidate reference for the yleistuki/housing-allowance interplay (tentative - it sits in the income-assessment context); nothing on a combined application, intake, data reuse or decision timing."
+  },
+  {
+    "question_id": "Q16",
+    "status": "partially_answered",
+    "answer": "The guideline sets the minimum payable amount at 15.00 EUR per month and states that general housing allowance 'is not paid' if the amount is below 15 EUR; this is phrased as a payment rule (chapter 'Maksaminen'), which hints at 'granted but not paid' rather than rejection, but it does not say which decision type is issued. It requires written decisions on granting, rejection, revision, termination and recovery in general, and says nothing specific on appealability or on how a revision that drops the amount below 15 EUR is handled.",
+    "evidence": [
+      {
+        "page": "p. 29",
+        "quote": "Pienin maksettava asumistuen määrä on 15,00 euroa kuukaudessa ( YAL 24 § 3 mom.)."
+      },
+      {
+        "page": "p. 77",
+        "quote": "Yleistä asumistukea ei makseta, jos asumistuen määrä on alle 15 euroa."
+      },
+      {
+        "page": "p. 64",
+        "quote": "Yleisen asumistuen hakijalla on annettava kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+      }
+    ],
+    "guideline_points_elsewhere": false,
+    "note": "Status is borderline: the 15 EUR threshold is confirmed (YAL 24 § 3 mom.), but the decision type (reject vs granted-not-paid) and the revision case are not stated; the 'ei makseta' wording is only a hint."
+  }
+]

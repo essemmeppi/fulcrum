@@ -1,0 +1,1151 @@
+{
+  "steps": [
+    {
+      "id": "P01",
+      "subprocess": "intake",
+      "name": "Post information on the DAS notice board",
+      "description": "Information on the heating aid and energy supplement is displayed on the DAS Simeria notice board in a specially arranged place.",
+      "actor": "das_staff",
+      "actor_evidence": "afișierul DAS Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [],
+      "deadline": "",
+      "page": "p. 14",
+      "quote": "Informațiile se afișează la afișierul DAS Simeria într-un loc special amenajat"
+    },
+    {
+      "id": "P02",
+      "subprocess": "intake",
+      "name": "Publish information and standard forms on the town hall website",
+      "description": "Information and standard form templates are also posted on the Simeria town hall website (DAS section 'Formulare tip-Subvenție_căldură').",
+      "actor": "unclear",
+      "actor_evidence": "",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [],
+      "deadline": "",
+      "page": "p. 14",
+      "quote": "Informațiile și modelele tipizate se postează și pe site-ul Primăriei orașului Simeria."
+    },
+    {
+      "id": "P03",
+      "subprocess": "intake",
+      "name": "Applicant comes to DAS and asks for the standard application and document list",
+      "description": "The family's legal representative or the single person comes to the DAS Simeria office to get the information, the standard application and the list of documents to be filed (flow diagrams 1A-1C).",
+      "actor": "citizen",
+      "actor_evidence": "reprezentantul legal al familiei sau persoana singură; Beneficiarul",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [],
+      "deadline": "",
+      "page": "p. 14",
+      "quote": "reprezentantul legal al familiei sau persoana si ngură se prezintă la sediul Direcției de Asistență Socială Simeria, unde primește toate informațiile necesare acordării acestui beneficiu."
+    },
+    {
+      "id": "P04",
+      "subprocess": "intake",
+      "name": "Provide forms and inform applicants about conditions and amounts",
+      "description": "Heating-aid staff hand out the application and sworn-declaration forms and inform beneficiaries about the granting conditions and the amounts of the aid and supplement.",
+      "actor": "das_staff",
+      "actor_evidence": "Angajații cu atribuții referitoare la ajutorul de încălzire",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P03"
+      ],
+      "deadline": "",
+      "page": "p. 25",
+      "quote": "Pun la dispoziția beneficiarilor formularele de cerere pentru acordarea ajutorului de încălzire și a suplimentului de încălzire și declarația pe propria răspundere"
+    },
+    {
+      "id": "P05",
+      "subprocess": "intake",
+      "name": "Complete the standard application, attach documents and take it for endorsement",
+      "description": "The applicant fills in the standard application, attaches the required documents and takes it to the Taxes and Duties office and the Agricultural Register for their endorsement (viză).",
+      "actor": "citizen",
+      "actor_evidence": "Beneficiarul",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P04"
+      ],
+      "deadline": "",
+      "page": "p. 31",
+      "quote": "Beneficiarul completează cererea tip la care anexează actele necesare și o vizează la impozite și taxe și Registrul Agricol"
+    },
+    {
+      "id": "P06",
+      "subprocess": "intake",
+      "name": "Write name and requested aid type on the file cover",
+      "description": "On the file folder cover the applicant writes his/her full name and the type of heating aid requested (item 1 of the primary checklist).",
+      "actor": "citizen",
+      "actor_evidence": "solicitantul",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P05"
+      ],
+      "deadline": "",
+      "page": "p. 17",
+      "quote": "Pe coperta dos arului, solicitantul v a scrie NUMELE Ș I PRENUMELE Ș I TIPUL AJUTORULUI DE ÎNCĂLZIRE SOLICITAT"
+    },
+    {
+      "id": "P07",
+      "subprocess": "verification",
+      "name": "Taxes and Duties office endorses the application and records property",
+      "description": "The Taxes and Duties office endorses the application, checks the applicant's movable and immovable property, writes the assets on record on the back of the application, stamps it, signs and dates it.",
+      "actor": "other",
+      "actor_evidence": "Compartiment Taxe - Impozite",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P05"
+      ],
+      "deadline": "",
+      "page": "p. 27",
+      "quote": "imobile ale solicitanților si le retransmite menționând pe verso-ul cererii, bunurile cu care figurează în evidență, se aplică ștampila compartimentului și se semnează de către cel care face înscrierea, cu menționarea datei."
+    },
+    {
+      "id": "P08",
+      "subprocess": "verification",
+      "name": "Agricultural Register endorses the application and records agricultural land",
+      "description": "The Agricultural Register office endorses the application, checks the agricultural land held, writes the assets on record on the back of the application, stamps, signs and dates it.",
+      "actor": "other",
+      "actor_evidence": "Compartimentul Registrul Agricol",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P05"
+      ],
+      "deadline": "",
+      "page": "p. 27",
+      "quote": "Vizează cererile d e acordare, verifică situația suprafeț elor a gricole de ținute de solicitanți și le retransmite menționând pe verso-ul cererii"
+    },
+    {
+      "id": "P09",
+      "subprocess": "intake",
+      "name": "Submit the application-declaration and supporting documents at DAS",
+      "description": "The applicant files the application and sworn declaration individually at DAS Simeria, once per cold season, as a rule by 15 October, though filing is possible throughout the cold season.",
+      "actor": "citizen",
+      "actor_evidence": "solicitantul",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P06",
+        "P07",
+        "P08"
+      ],
+      "deadline": "o singură dată, de regulă până la 15 octombrie a fiecărui sezon rece; se poate solicita pe tot parcursul sezonului rece (dreptul din luna depunerii dacă cererea e depusă până la 20 ale lunii, altfel din luna următoare)",
+      "page": "p. 15",
+      "quote": "Depunerea cererilor -declarațiilor se fac e o singur ă dată, de regulă pană la d ata de 15 octombrie a fiecărui sezo n rece."
+    },
+    {
+      "id": "P10",
+      "subprocess": "intake",
+      "name": "VMG/ASF beneficiaries apply on the HG 50/2011 form",
+      "description": "An applicant already receiving social aid (VMG) and/or family support allowance (ASF) fills in the application form annexed to HG 50/2011, and the family-composition and income documents already on file are reused.",
+      "actor": "citizen",
+      "actor_evidence": "solicitantul",
+      "kind": "task",
+      "condition": "solicitantul este beneficiar sau primește ajutor social și/sau alocație pentru susținerea familiei",
+      "predecessors": [
+        "P04"
+      ],
+      "deadline": "",
+      "page": "p. 15",
+      "quote": "acesta completează formularul de cerere pr evăzut în anexa la la normele metodologice aprobate prin Hotărârea Guvernului României nr. 50/2011"
+    },
+    {
+      "id": "P11",
+      "subprocess": "intake",
+      "name": "Receive applications at the DAS office during intake hours",
+      "description": "DAS staff receive applications and supporting documents at the DAS office (Piața Unirii Bl. 5, ground floor) 8:00-14:00 Monday-Thursday and 8:00-13:00 Friday.",
+      "actor": "das_staff",
+      "actor_evidence": "Angajații ... Preiau cererile de acordare și documentele justificative",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P09",
+        "P10"
+      ],
+      "deadline": "Luni-Joi 8.00-14.00, vineri 8.00-13.00",
+      "page": "p. 15",
+      "quote": "Preluarea cererilor se face la Direcția de Asistență Socială Simeria, Piața Unirii, Bloc 5, Parter, telefon 0254 262 076, mobil 0726370342, între orele 8.00- 14.00 (Luni -Joi) și 8.00- 13.00 (vineri)."
+    },
+    {
+      "id": "P12",
+      "subprocess": "verification",
+      "name": "Check completeness of the application form (primary checklist, item 2)",
+      "description": "Staff designated by the DAS executive director check, on the primary checklist at filing, that holder data/phone and heating/supplement boxes (pp.1-2), members (pp.3-6), heating type, supplier and CLC/POD/client code (p.7), income and assets with totals per member (pp.2, 8-14), signature/date and annexed-document list (p.15) are filled in.",
+      "actor": "das_staff",
+      "actor_evidence": "personalul desemnat de Directorul Executiv al DAS Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P11"
+      ],
+      "deadline": "la depunerea de către solicitant",
+      "page": "p. 17",
+      "quote": "Se face de către personalul desemnat de Directorul Executiv al DAS Simeria, în baza următoarei liste de verificare: Listă de verificare primară a dosarelor de încălzire la depunerea de către solicitant"
+    },
+    {
+      "id": "P13",
+      "subprocess": "verification",
+      "name": "Check presence of supporting documents (primary checklist, item 3)",
+      "description": "Staff check that valid IDs of holder and members, property or use-right documents, vehicle registration if applicable, previous-month income documents for all members, and bills (original or copies of all pages with date and CLC/POD visible) are present.",
+      "actor": "das_staff",
+      "actor_evidence": "personalul desemnat de Directorul Executiv al DAS Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P12"
+      ],
+      "deadline": "",
+      "page": "p. 17",
+      "quote": "SE VERIFICĂ DACĂ EXISTĂ DOCUMENTELE JUSTIFICATIVE, RESPECTIV: a. ACTE DE IDENTITATE TITULAR ȘI MEMBRI (valabile) b. ACTE DE PROPRIETATE DUP Ă CAZ, sau TIPUL DE ACT (contract de închiriere, comodat etc.) c. TALON AUTO DUPĂ CAZ"
+    },
+    {
+      "id": "P14",
+      "subprocess": "verification",
+      "name": "Check the declaration and the (GDPR) notification are completed and signed",
+      "description": "Staff check that the declaration and the notification are completed and signed (checklist items 4 and 5).",
+      "actor": "das_staff",
+      "actor_evidence": "personalul desemnat de Directorul Executiv al DAS Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P13"
+      ],
+      "deadline": "",
+      "page": "p. 18",
+      "quote": "DACĂ ESTE COMPLETATĂ ȘI SEMNATĂ DECLARAȚIA 5. DACĂ ESTE COMPLETATĂ ȘI SEMNATĂ NOTIFICAREA"
+    },
+    {
+      "id": "P15",
+      "subprocess": "intake",
+      "name": "Register the application in the single social-assistance register",
+      "description": "Applications and sworn declarations are registered in the single register for social-assistance rights (VMG, ASF, AI).",
+      "actor": "das_staff",
+      "actor_evidence": "DAS verifică dosarul, îl înregistrează",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P14"
+      ],
+      "deadline": "",
+      "page": "p. 15",
+      "quote": "Cererile și declaraț iile pe propria r ăspundere se înreg istrează în registrul unic pentru acordarea unor drepturi de asistență socială( VMG, ASF, AI)."
+    },
+    {
+      "id": "P16",
+      "subprocess": "decision",
+      "name": "Mayor approves the application in the 'Certificare Primar' field",
+      "description": "Applications and sworn declarations are forwarded to the Mayor of Simeria for approval in the 'Certificare Primar' section of the form.",
+      "actor": "mayor",
+      "actor_evidence": "Primarul orașului Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P15"
+      ],
+      "deadline": "",
+      "page": "p. 15",
+      "quote": "Cererile și declarațiile pe propria răspundere se înaintează pentru a fi aprobate de către Primarul orașului Simeria la rubrica din formular Certificare Primar."
+    },
+    {
+      "id": "P17",
+      "subprocess": "intake",
+      "name": "Enter application data into the dedicated heating software",
+      "description": "Designated staff enter the data from the applications into the special computer program installed for heating aid.",
+      "actor": "das_staff",
+      "actor_evidence": "responsabilii desemnați în acest sens",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P15"
+      ],
+      "deadline": "",
+      "page": "p. 16",
+      "quote": "Introducerea datelor din cereri în programul informatic se face în programul special instalat pentru încălzire, de către responsabilii desemnați în acest sens."
+    },
+    {
+      "id": "P18",
+      "subprocess": "verification",
+      "name": "Verify income and assets in PatrimVen",
+      "description": "Authorised DAS staff check all incomes (and assets) of the applicants through the PatrimVen application of the Hunedoara tax administration (ANAF).",
+      "actor": "das_staff",
+      "actor_evidence": "personalul Direcției de Asistență Socială Simeria cu atribuții în acest sens",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P15"
+      ],
+      "deadline": "",
+      "page": "p. 15",
+      "quote": "se va uti liza aplicația PatrimVen a Agenției Naționale de Administrație Fiscală Hunedoara, de către personalul Direcției de Asistență Socială Simeria cu atribuții în acest sens."
+    },
+    {
+      "id": "P19",
+      "subprocess": "verification",
+      "name": "Carry out a social inquiry or request further information where needed",
+      "description": "Where clarification is required, DAS staff may carry out a social inquiry and request any other relevant data or information from the holders.",
+      "actor": "das_staff",
+      "actor_evidence": "personalul DAS Simeria",
+      "kind": "task",
+      "condition": "În cazul în care se impune, pentru clarificarea situației",
+      "predecessors": [
+        "P18"
+      ],
+      "deadline": "",
+      "page": "p. 15",
+      "quote": "În cazul în care se impune, pentru clarificarea situaț iei, personalul DAS Simeria este abilitat s ă efectueze anchete sociale, precum și să solicite titularilor orice alte date/informații relevante."
+    },
+    {
+      "id": "P20",
+      "subprocess": "verification",
+      "name": "Mandatory home inquiry for electricity heating aid",
+      "description": "For every electricity heating-aid application a social inquiry is carried out at the holder's home within 15 working days of registration to verify the heating system used (except VMG/ASF beneficiaries already inquired); diagram 1C: for each beneficiary.",
+      "actor": "das_staff",
+      "actor_evidence": "Angajații cu atribuții referitoare la ajutorul de încălzire; serviciul public de asistență socială",
+      "kind": "task",
+      "condition": "solicitarea ajutorului pentru energie electrică; excepție beneficiarii VMG (Legea 416/2001) și ASF (Legea 277/2010) pentru care s-au efectuat deja anchete",
+      "predecessors": [
+        "P15"
+      ],
+      "deadline": "15 zile lucrătoare de la data înregistrării cererii",
+      "page": "p. 21",
+      "quote": "În cazul solicitării ajutorului pentru energie electrică, anchetele sociale se efectuează obligatoriu, pentru toate situațiile, în termen de 15 zile lucrătoare de la data înregistrării cererii, în vederea verificării sistemului de încălzire utilizat."
+    },
+    {
+      "id": "P21",
+      "subprocess": "decision",
+      "name": "Calculate the heating aid and energy supplement amount",
+      "description": "The aid is set as a percentage (100% down to 10% across income bands) of the reference value (250 lei gas, 500 lei electricity, 320 lei solid/petroleum fuel) by net monthly income per member, plus a fixed supplement (10/30/20 lei, 70 lei if electricity is the only source).",
+      "actor": "das_staff",
+      "actor_evidence": "",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P18",
+        "P19",
+        "P20"
+      ],
+      "deadline": "",
+      "page": "p. 18",
+      "quote": "procent ual, prin raportare la o valoare de referi nță care nu poate fi m ai mică de 250 lei/lună (pentru gaze natu rale), 500 lei/lun ă (pentru energie electrică ) și 320 lei/lună"
+    },
+    {
+      "id": "P22",
+      "subprocess": "decision",
+      "name": "Draft the grant/rejection/modification/termination report and draft disposition",
+      "description": "DAS staff with this duty in their job description draft the referat (grant/modification/suspension/termination; rejection per the flow diagrams) and the draft mayoral disposition.",
+      "actor": "das_staff",
+      "actor_evidence": "personalul cu atribuții în fișa postului din cadrul DAS Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P21"
+      ],
+      "deadline": "",
+      "page": "p. 22",
+      "quote": "Întocmirea referatelor de acordare/modificarea/suspendarea/încetare și a proiectului de dispoziție se face de personalul cu atribuții în fișa postului din cadrul DAS Simeria"
+    },
+    {
+      "id": "P23",
+      "subprocess": "decision",
+      "name": "Secretary General endorses the draft disposition for legality",
+      "description": "Draft dispositions are sent to the Secretary General of Simeria for the legality endorsement, after which the dispositions are produced for the mayor's signature.",
+      "actor": "other",
+      "actor_evidence": "secretarul general al orașului Simeria",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P22"
+      ],
+      "deadline": "",
+      "page": "p. 22",
+      "quote": "Proiectele de dispoziție sunt înaintate spre a fi vizate de legalitate de către secretarul general al orașului Simeria și apoi se elaborează dispozițiile care sunt semnate de primar."
+    },
+    {
+      "id": "P24",
+      "subprocess": "decision",
+      "name": "CAPLJ drafts and registers the disposition",
+      "description": "The Local Public Administration and Legal office (CAPLJ) drafts the dispositions on granting, modifying or terminating the heating aid and registers them.",
+      "actor": "other",
+      "actor_evidence": "Compartiment Administrație Publică Locală, Juridic – CAPLJ",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P23"
+      ],
+      "deadline": "",
+      "page": "p. 27",
+      "quote": "Elaborează dispoziții privind acordare/ modificarea/încetarea dreptului de ajutor pentru încălzirea locuinței"
+    },
+    {
+      "id": "P25",
+      "subprocess": "decision",
+      "name": "Mayor establishes whether the right is granted",
+      "description": "The mayor establishes the right to heating aid, using information from other institutions or the social inquiry of the public social-assistance service.",
+      "actor": "mayor",
+      "actor_evidence": "Primarul",
+      "kind": "decision",
+      "condition": "eligibil dacă locuiește efectiv la adresă, venit până la 1.386 lei/membru (familie) sau 2.053 lei (persoană singură) și nu deține bunuri din Lista bunurilor ce conduc la excludere",
+      "predecessors": [
+        "P24"
+      ],
+      "deadline": "",
+      "page": "p. 21",
+      "quote": "Primarul stabilește dreptul la ajutor pentru încălzire, solicitând informații altor instituții/autorități sau, după caz, pe baza anchetei sociale efectuate de serviciul public de asistență socială."
+    },
+    {
+      "id": "P26",
+      "subprocess": "decision",
+      "name": "Mayor signs the granting disposition",
+      "description": "The mayor issues the disposition establishing the heating aid for the whole cold season, starting from the month of filing if documents were filed by the 20th, otherwise from the following month (VMG beneficiaries from the month their VMG starts).",
+      "actor": "mayor",
+      "actor_evidence": "dispoziție a primarului",
+      "kind": "task",
+      "condition": "eligibil",
+      "predecessors": [
+        "P25"
+      ],
+      "deadline": "până la 15 noiembrie pentru cererile depuse conform art.16 din Legea 226/2021",
+      "page": "p. 22",
+      "quote": "Stabilirea dreptului se face prin dispozi ție a primarului începând cu luna depunerii cererii, pentru cei care depun documentele până la data de 20 a lunii respective sau începând cu luna următoare pentru cei care depun documentele după aceasta dată."
+    },
+    {
+      "id": "P27",
+      "subprocess": "decision",
+      "name": "Mayor issues a reasoned rejection disposition",
+      "description": "For applicants not meeting the conditions, the mayor communicates a reasoned disposition rejecting the application.",
+      "actor": "mayor",
+      "actor_evidence": "primarii",
+      "kind": "task",
+      "condition": "solicitantul nu îndeplinește condițiile de acordare",
+      "predecessors": [
+        "P25"
+      ],
+      "deadline": "în termenul prevăzut la alin. (15) (trimitere nerezolvată în procedură)",
+      "page": "p. 22",
+      "quote": "Pentru solicitan ții care nu îndeplinesc condițiile de acordare a ajutor ului pentru înc ălzire, primarii le comunic ă acestora dispoziția motivată privind respingerea cererii."
+    },
+    {
+      "id": "P28",
+      "subprocess": "decision",
+      "name": "Mayor establishes the energy supplement by disposition",
+      "description": "The mayor establishes by disposition the right to the energy supplement under art. 26 of Law 226/2021.",
+      "actor": "mayor",
+      "actor_evidence": "Primar",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P25"
+      ],
+      "deadline": "",
+      "page": "p. 24",
+      "quote": "Stabilește prin Dispoziție dreptul la suplimentul de energie în condi țiile art.26 din Legea nr.226 /2021"
+    },
+    {
+      "id": "P29",
+      "subprocess": "other",
+      "name": "DAS Director signs outgoing documents",
+      "description": "The DAS director signs the outgoing documents relating to the heating aid and supplements.",
+      "actor": "das_staff",
+      "actor_evidence": "Director DAS",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [],
+      "deadline": "",
+      "page": "p. 25",
+      "quote": "Semnează documentele de ieșire referitoare la acordarea ajutorului și suplimentelor de încălzire."
+    },
+    {
+      "id": "P30",
+      "subprocess": "decision",
+      "name": "Communicate the disposition to the holder",
+      "description": "CAPLJ registers and communicates the mayor's disposition to the beneficiary: by 15 November for applications under art. 16, otherwise within 5 days of issue, individually or collectively, once for the whole cold season.",
+      "actor": "other",
+      "actor_evidence": "CAPLJ întocmește, înregistrează şi comunică dispoziţia beneficiarului",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P26",
+        "P27",
+        "P28"
+      ],
+      "deadline": "până la 15 noiembrie (cereri conform art.16); 5 zile de la emitere pentru cereri depuse în sezonul rece",
+      "page": "p. 22",
+      "quote": "comunicarea dispozițiilor către beneficiari se face în termen de 5 zile de la data emiterii lor , și pot fi emis e individual sau colecti v, o singur ă dată pentru toat ă perioada sezonului rece."
+    },
+    {
+      "id": "P31",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Draw up the monthly centralizing situations",
+      "description": "Social Benefits Service staff draw up monthly centralizing situations on aid holders, net income per family member and calculated aid, by heating type (six monthly situations: aid and supplement for gas, electricity, solid/liquid fuel).",
+      "actor": "das_staff",
+      "actor_evidence": "persoanele din cadrul Serviciului Beneficii Sociale",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P26",
+        "P28"
+      ],
+      "deadline": "lunar",
+      "page": "p. 23",
+      "quote": "Întocmirea situațiilor centralizatoare lunare privind titularii ajutoarelor, venitul net lunar pe membru de familie, valoarea ajutorului calculată, în condițiile stabilite de ordonanță, pe tipuri de încălzire."
+    },
+    {
+      "id": "P32",
+      "subprocess": "other",
+      "name": "Draw up monthly statistical reports and solid-fuel payment records",
+      "description": "Social Benefits Service staff draw up monthly statistical reports, the records for paying solid/petroleum fuel aid and related situations, and send the statistical reports to the competent institutions.",
+      "actor": "das_staff",
+      "actor_evidence": "persoanele din cadrul Serviciului Beneficii Sociale",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P31"
+      ],
+      "deadline": "lunar; la termenele prevăzute de lege",
+      "page": "p. 23",
+      "quote": "Întocmirea rapoartelor statistice lunare, a evidențelor pentru plata ajutoarelor pentru combustibili solizi sau petrolieri acordate pe perioada sezonului rece, precum și alte situații conexe, în condițiile legii în vigoare."
+    },
+    {
+      "id": "P33",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Draw up the borderou of gas and electricity aid beneficiaries",
+      "description": "Staff draw up the borderou listing gas (and, separately, electricity) heating-aid beneficiaries and the effective amount.",
+      "actor": "das_staff",
+      "actor_evidence": "Angajații cu atribuții referitoare la ajutorul de încălzire",
+      "kind": "task",
+      "condition": "gaze naturale / energie electrică",
+      "predecessors": [
+        "P31"
+      ],
+      "deadline": "",
+      "page": "p. 26",
+      "quote": "Întocmesc BORDEROUL cuprinzând beneficiar ii ajut orului pentru înc ălzirea locuinței cu gaze naturale și cuantumul efectiv al acestuia"
+    },
+    {
+      "id": "P34",
+      "subprocess": "payment",
+      "name": "Draw up the list of holders for whom settlement is requested in the month",
+      "description": "Staff draw up the situation of heating-aid/supplement holders on record for whom reimbursement (decontare) of the amounts is requested in a given month.",
+      "actor": "das_staff",
+      "actor_evidence": "Angajații cu atribuții referitoare la ajutorul de încălzire",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P31"
+      ],
+      "deadline": "lunar",
+      "page": "p. 26",
+      "quote": "Întocmesc situația cu titularii de ajutor pentru încălzirea locuinței/supliment pentru energie, în evidență, și pentru care se solicită decontarea sumelor în luna"
+    },
+    {
+      "id": "P35",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Mayor approves the centralizing situation",
+      "description": "The mayor approves the centralizing situation, which is sent to the territorial agency (AJPIS) and, for the thermal/gas/electricity supplement or where electricity is the only source, to the suppliers.",
+      "actor": "mayor",
+      "actor_evidence": "primar",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P31"
+      ],
+      "deadline": "",
+      "page": "p. 24",
+      "quote": "Situația centralizatoare se aprob ă de că tre primar și se transmite, agenției teritoriale iar în cazu l suplimentului pentru energ ie termică, gaze naturale și"
+    },
+    {
+      "id": "P36",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Mayor transmits the centralizing situation to AJPIS",
+      "description": "The mayor must send the territorial agency, in writing and electronically, the centralizing situation on aid holders, separately for each heating system.",
+      "actor": "mayor",
+      "actor_evidence": "primarii",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P35"
+      ],
+      "deadline": "",
+      "page": "p. 23",
+      "quote": "primarii au obliga ția de a transmite agen țiilor teritoriale în scris ș i format electronic, situa ția centralizatoare privind titularii ajutoarelor, separat pentru fiecare sistem de încălzire."
+    },
+    {
+      "id": "P37",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Send the situations to suppliers, AJPIS and the Economic Directorate",
+      "description": "Social Benefits Service staff send the situations/borderou (electronically or on paper) to the electricity and gas suppliers, AJPIS Hunedoara-Deva and the Economic Directorate so payments can be made.",
+      "actor": "das_staff",
+      "actor_evidence": "persoanele din cadrul Serviciului Beneficii Sociale; DAS Transmite electronic /letric borderoul",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P33",
+        "P35"
+      ],
+      "deadline": "",
+      "page": "p. 23",
+      "quote": "Transmiterea situațiilor către furnizorii de energie electrică, gaze naturale. Agenției Județene pentru Plăți și Inspecție Socială Hunedoara-Deva, precum și Direcției Economice"
+    },
+    {
+      "id": "P38",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Supplier draws up the centralizing borderou of the aid",
+      "description": "For gas and electricity heating, the supplier draws up the centralizing borderou of the aid granted (flow diagrams 1A, 1C).",
+      "actor": "supplier",
+      "actor_evidence": "Furnizorul",
+      "kind": "task",
+      "condition": "încălzire cu gaz / energie electrică",
+      "predecessors": [
+        "P37"
+      ],
+      "deadline": "",
+      "page": "p. 31",
+      "quote": "Furnizorul întocmește borderoul centralizator de acordare a ajutorului"
+    },
+    {
+      "id": "P39",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Mayor certifies the supplier borderou and sends it to AJPIS",
+      "description": "The mayor certifies the centralizing borderou (art. 20(2) Law 226/2021) and within 5 days of receipt sends a copy to the territorial agency, on which basis it pays the gas aid amounts to suppliers.",
+      "actor": "mayor",
+      "actor_evidence": "Primar",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P38"
+      ],
+      "deadline": "5 zile de la primire",
+      "page": "p. 25",
+      "quote": "În termen de 5 zile de la prim ire, certifică și transmit e un exemplar agen țiilor teritoriale, pe baza c ăruia acestea achit ă la furnizori sumele reprezentând ajutoarele pentru gaze naturale"
+    },
+    {
+      "id": "P40",
+      "subprocess": "payment",
+      "name": "AJPIS transfers the amounts to the supplier",
+      "description": "AJPIS transfers the established amounts of gas/electricity heating aid to the supplier.",
+      "actor": "ajpis",
+      "actor_evidence": "AJPIS",
+      "kind": "task",
+      "condition": "încălzire cu gaz / energie electrică",
+      "predecessors": [
+        "P39"
+      ],
+      "deadline": "",
+      "page": "p. 31",
+      "quote": "Virează sumele stabilite către furnizor"
+    },
+    {
+      "id": "P41",
+      "subprocess": "transmission_to_suppliers_or_ajpis",
+      "name": "Mayor sends AJPIS the solid/petroleum fuel situation, updated monthly",
+      "description": "For paying the solid/petroleum fuel aid, the mayor sends AJPIS the centralizing situation under art. 17(3) of Law 226/2021, updated monthly under art. 17(7).",
+      "actor": "mayor",
+      "actor_evidence": "primarii",
+      "kind": "task",
+      "condition": "încălzire cu combustibili solizi și/sau petrolieri",
+      "predecessors": [
+        "P35"
+      ],
+      "deadline": "actualizată lunar",
+      "page": "p. 25",
+      "quote": "primarii tra nsmit agen țiilor teritoriale situa ția centralizatoare prev ăzută la art. 17 alin. (3) din Legea nr.226/2021, actualizat ă lunar"
+    },
+    {
+      "id": "P42",
+      "subprocess": "payment",
+      "name": "Draw up the payroll for wood heating aid and supplement",
+      "description": "The economic-financial compartment draws up the payroll (stat de plată) for the wood heating aid and wood supplement (diagram 1B: 'DAS întocmește statele de plată').",
+      "actor": "das_staff",
+      "actor_evidence": "Compartiment Economico-financiar si achizitii publice; DAS întocmește statele de plată",
+      "kind": "task",
+      "condition": "încălzire cu lemne",
+      "predecessors": [
+        "P31"
+      ],
+      "deadline": "",
+      "page": "p. 27",
+      "quote": "Compartimentul întocmește statul d e plat ă pentru ajutorul de încălzire cu lemne ș i suplimentul de încălzire cu lemne."
+    },
+    {
+      "id": "P43",
+      "subprocess": "payment",
+      "name": "AJPIS transfers the funds for wood heating aid",
+      "description": "AJPIS transfers the necessary amounts for the wood heating aid (flow diagram 1B).",
+      "actor": "ajpis",
+      "actor_evidence": "AJPIS",
+      "kind": "task",
+      "condition": "încălzire cu lemne",
+      "predecessors": [
+        "P41",
+        "P42"
+      ],
+      "deadline": "",
+      "page": "p. 32",
+      "quote": "AJPIS virează sumele necesare"
+    },
+    {
+      "id": "P44",
+      "subprocess": "payment",
+      "name": "Economic Directorate pays the aid to beneficiaries",
+      "description": "The Economic Directorate (or other compartments of the mayor's specialist apparatus) makes the aid payments to beneficiaries based on the transmitted situations (diagram 1B ends at 'Direcția Economică').",
+      "actor": "other",
+      "actor_evidence": "Direcției Economice sau altor compartimente din cadrul aparatului de specialitate al primarului",
+      "kind": "task",
+      "condition": "încălzire cu lemne",
+      "predecessors": [
+        "P43"
+      ],
+      "deadline": "",
+      "page": "p. 23",
+      "quote": "Direcției Economice sau altor compartimente din cadrul aparatului de specialitate al primarului, în vederea efectuării plăților ajutoarelor către beneficiari"
+    },
+    {
+      "id": "P45",
+      "subprocess": "change_or_recalculation",
+      "name": "Holder reports changes in family composition or income",
+      "description": "Aid holders must notify the mayor of any change in family composition or income within 5 days, by filing a new sworn declaration.",
+      "actor": "citizen",
+      "actor_evidence": "Titularii ajutoarelor pentru încălzire",
+      "kind": "task",
+      "condition": "a intervenit o modificare în componența familiei sau a veniturilor",
+      "predecessors": [
+        "P30"
+      ],
+      "deadline": "5 zile de la data la care a intervenit modificarea",
+      "page": "p. 22",
+      "quote": "Titularii ajutoarelor pentru înc ălzire sunt obliga ți s ă comunice primarului orice modificare intervenită în componența familiei și a veniturilo r acesteia, în termen de 5 zile de la data la care a int ervenit modificarea."
+    },
+    {
+      "id": "P46",
+      "subprocess": "change_or_recalculation",
+      "name": "Mayor issues a new disposition after a reported change",
+      "description": "Following the new declaration, the mayor issues a new disposition; modification or termination applies from the month after the change.",
+      "actor": "mayor",
+      "actor_evidence": "primar",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P45"
+      ],
+      "deadline": "începând cu luna următoare celei în care au intervenit modificările",
+      "page": "p. 22",
+      "quote": "Comunica rea modific ărilor se face prin depunerea u nei noi declarații pe propria r ăspundere, urmând a se emite o nouă dispoziție de că tre primar."
+    },
+    {
+      "id": "P47",
+      "subprocess": "control_or_inquiry",
+      "name": "Mayor orders periodic social inquiries",
+      "description": "To monitor compliance with the granting conditions, the mayor orders social inquiries every 6 months or whenever needed.",
+      "actor": "mayor",
+      "actor_evidence": "Primar",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P26"
+      ],
+      "deadline": "la interval de 6 luni sau ori de câte ori este nevoie",
+      "page": "p. 24",
+      "quote": "dispune efectuarea de anchete sociale la interval de 6 luni sau ori de câte ori este nevoie."
+    },
+    {
+      "id": "P48",
+      "subprocess": "control_or_inquiry",
+      "name": "Carry out periodic social inquiries",
+      "description": "Heating-aid staff carry out social inquiries every 6 months or whenever needed; for VMG/ASF beneficiaries a single inquiry covers all benefits.",
+      "actor": "das_staff",
+      "actor_evidence": "Angajații cu atribuții referitoare la ajutorul de încălzire",
+      "kind": "task",
+      "condition": "",
+      "predecessors": [
+        "P47"
+      ],
+      "deadline": "la interval de 6 luni sau ori de câte ori este nevoie",
+      "page": "p. 25",
+      "quote": "efectuează de anchete sociale la interv al de 6 luni sau ori de câte o ri este nevoie."
+    },
+    {
+      "id": "P49",
+      "subprocess": "control_or_inquiry",
+      "name": "Inquire into reported cases of error and fraud",
+      "description": "During the cold season, on third-party reports, at AJPIS request or ex officio, the public social-assistance service carries out social inquiries to verify reported situations and detect error and fraud.",
+      "actor": "das_staff",
+      "actor_evidence": "serviciul public de asistență socială",
+      "kind": "task",
+      "condition": "la sesizarea terților, la solicitarea agențiilor pentru plăți și inspecție socială sau din oficiu",
+      "predecessors": [
+        "P26"
+      ],
+      "deadline": "pe parcursul sezonului rece",
+      "page": "p. 21",
+      "quote": "serviciul public de asistență socială efectuează anchete sociale pentru verificarea situațiilor semnalate și determinarea cazurilor de eroare și fraudă."
+    },
+    {
+      "id": "P50",
+      "subprocess": "change_or_recalculation",
+      "name": "Mayor issues a new disposition after an inquiry and notifies AJPIS",
+      "description": "If an inquiry finds grounds to change the amount, suspend or terminate the aid and supplement, the mayor issues a new written disposition and communicates it to the territorial agency within 5 days of issue.",
+      "actor": "mayor",
+      "actor_evidence": "primarul",
+      "kind": "task",
+      "condition": "ancheta constată situații ce conduc la modificarea cuantumului, suspendarea sau încetarea dreptului",
+      "predecessors": [
+        "P48",
+        "P49"
+      ],
+      "deadline": "5 zile de la emitere",
+      "page": "p. 24",
+      "quote": "modificarea cuantu mului, suspendarea sau încetarea dreptului la ajutorul pentru înc ălzire și la suplimentul pentru energie, pri marul emite o nouă dispoziție scrisă, pe care o comunic ă agenției teritoriale î n termen de 5 zile de la emitere."
+    }
+  ],
+  "forms_and_registers": [
+    {
+      "name": "List of supporting documents for the heating-aid file",
+      "page": "p. 12",
+      "quote": "Lista documentelor justificative necesare pentru întocmirea dosarului pentru acordarea ajutorului pentru încălzirea locuinței cu gaze naturale, energie electrică, combustibili solizi/petrolieri."
+    },
+    {
+      "name": "Application and sworn declaration for heating aid",
+      "page": "p. 12",
+      "quote": "Cerere și declarație pe propria răspundere pentru acordarea ajutorului pentru încălzirea locuinței"
+    },
+    {
+      "name": "Application-declaration to modify an application or obtain new rights",
+      "page": "p. 12",
+      "quote": "Cerere-declarație pe propria răspundere pentru modificarea cererii de acordare a unor drepturi de asistență socială sau pentru acordarea unor noi drepturi"
+    },
+    {
+      "name": "Application and sworn declaration for the energy supplement",
+      "page": "p. 12",
+      "quote": "Cerere și declarație pe propria răspundere pentru suplimentul pentru energie"
+    },
+    {
+      "name": "Social inquiry (model for heating aid and energy supplement)",
+      "page": "p. 29",
+      "quote": "Model anchetă socială pentru obținerea ajutorului de înc ălzire cu gaze naturale, energie electrică, combustibili solizi și sau petrolieri și a suplimentului de energie"
+    },
+    {
+      "name": "Single register for social-assistance rights (VMG, ASF, AI)",
+      "page": "p. 15",
+      "quote": "registrul unic pentru acordarea unor drepturi de asistență socială( VMG, ASF, AI)."
+    },
+    {
+      "name": "Register for granting social-assistance rights",
+      "page": "p. 12",
+      "quote": "Registrul pentru acordarea unor drepturi de asistenta socială"
+    },
+    {
+      "name": "Referat on granting/modifying/terminating heating aid and supplement",
+      "page": "p. 12",
+      "quote": "Referat acordare/modificare/încetare ajutor de încălzire și supliment de energie"
+    },
+    {
+      "name": "Mayor's dispositions on granting/modifying/terminating heating aid and supplement",
+      "page": "p. 12",
+      "quote": "Dispoziții de acordare/modificare/încetare ajutor de încălzire și supliment de energie"
+    },
+    {
+      "name": "Borderou of heating-aid beneficiaries and effective amount",
+      "page": "p. 12",
+      "quote": "Borderou cuprinzând beneficiarii ajutorului pentru încălzirea locuinței cu energie electrică/gaze naturale/combustibili solizi și cuantumul efectiv al acestuia"
+    },
+    {
+      "name": "Situation of beneficiaries and amounts of aid",
+      "page": "p. 12",
+      "quote": "Situația privind beneficiarii și cuantumul ajutoarelor pentru energie electrică/gaze naturale/combustibili solizi"
+    },
+    {
+      "name": "Situation of beneficiaries and amounts of the energy supplement",
+      "page": "p. 12",
+      "quote": "Situația privind beneficiarii și cuantumul suplimentului pentru energie electrică/gaze naturale/combustibili solizi"
+    },
+    {
+      "name": "Statistical reports",
+      "page": "p. 12",
+      "quote": "Rapoarte statistice"
+    },
+    {
+      "name": "Payroll (wood / solid and petroleum fuel aid and supplement)",
+      "page": "p. 12",
+      "quote": "Stat de plată (ajutor și supliment încălzire lemne-combustibili solizi și sau petrolieri)"
+    },
+    {
+      "name": "Primary checklist for heating-aid files at filing",
+      "page": "p. 17",
+      "quote": "Listă de verificare primară a dosarelor de încălzire la depunerea de către solicitant"
+    },
+    {
+      "name": "Application form under HG 50/2011 (for VMG/ASF beneficiaries)",
+      "page": "p. 15",
+      "quote": "acesta completează formularul de cerere pr evăzut în anexa la la normele metodologice aprobate prin Hotărârea Guvernului României nr. 50/2011"
+    },
+    {
+      "name": "Application-declaration for social-assistance rights (Annex 2)",
+      "page": "p. 29",
+      "quote": "Cerere/declarație pe propria răspundere pentru acordarea unor drepturi d e asis tență socială"
+    },
+    {
+      "name": "List of assets that exclude heating aid (Annex 2(4))",
+      "page": "p. 29",
+      "quote": "Lista bunurilor ce conduc la excluderea acordării ajutorului pentru încălzirea locuinței"
+    },
+    {
+      "name": "Monthly situation - gas aid",
+      "page": "p. 29",
+      "quote": "(5) Situația lunara privind beneficiarii si cuantumul ajutorului de gaze naturale"
+    },
+    {
+      "name": "Monthly situation - electricity aid",
+      "page": "p. 29",
+      "quote": "(6) Situația lunara privind beneficiarii si cuantumul ajutorului de energie electrică"
+    },
+    {
+      "name": "Monthly situation - solid/liquid fuel aid",
+      "page": "p. 29",
+      "quote": "(7) Situația lunara privind be neficiarii si cuantumul ajutorului pe ntru combustibili solizi sau lichizi"
+    },
+    {
+      "name": "Monthly situation - gas supplement",
+      "page": "p. 29",
+      "quote": "(8) Situația lunara privind beneficiarii si cuantum ul suplimentului pentru gaze naturale"
+    },
+    {
+      "name": "Monthly situation - electricity supplement",
+      "page": "p. 29",
+      "quote": "(9) Situația lunara privind beneficiarii si cuantumul suplimentului pe ntru energie electrică"
+    },
+    {
+      "name": "Monthly situation - solid/liquid fuel supplement",
+      "page": "p. 29",
+      "quote": "(10) Situația lunara privind beneficiarii si cuantumul suplimentului p entru combustibili solizi si /sau lichizi"
+    },
+    {
+      "name": "Borderou - gas heating-aid beneficiaries",
+      "page": "p. 29",
+      "quote": "(11) BORDEROUL cuprinzând benefi ciarii ajutorului pentru înc ălzirea locuin ței cu gaze naturale și cuantumul efectiv al acestuia"
+    },
+    {
+      "name": "Borderou - electricity heating-aid beneficiaries",
+      "page": "p. 29",
+      "quote": "(12) BORDEROUL cuprinzând beneficiarii ajutorului pe ntru înc ălzirea locuin ței cu energie electrică și cuantumul efectiv al acestuia"
+    },
+    {
+      "name": "Statistical reporting on gas, electricity and solid-fuel aid",
+      "page": "p. 30",
+      "quote": "Raportările sta tistice cu privire la ajutoarele de încălzire cu gaz, energie electrică, combustibili solizi pe care le transmi t instituțiilor abilitate la termenele prevăzute de lege."
+    },
+    {
+      "name": "Situation of holders for whom settlement is requested in a month",
+      "page": "p. 30",
+      "quote": "Situația cu titularii de aju tor pentru încălzirea locuin ței/supliment pentru energie, în eviden ță, și pentru care se sol icită decontarea su melor în luna"
+    },
+    {
+      "name": "GDPR notification",
+      "page": "p. 30",
+      "quote": "Notificare GDPR"
+    },
+    {
+      "name": "Centralizing situation for solid/petroleum fuel aid (art. 17(3) Law 226/2021)",
+      "page": "p. 25",
+      "quote": "situa ția centralizatoare prev ăzută la art. 17 alin. (3) din Legea nr.226/2021"
+    },
+    {
+      "name": "Centralizing borderou (art. 20(2) Law 226/2021), drawn up by the supplier",
+      "page": "p. 25",
+      "quote": "Certifică borderoul centralizator prevăzut la art. 20 alin 2 din Legea nr.226/2021"
+    },
+    {
+      "name": "Dedicated heating-aid software (data entry)",
+      "page": "p. 16",
+      "quote": "programul special instalat pentru încălzire"
+    },
+    {
+      "name": "PatrimVen (ANAF) income and asset check system",
+      "page": "p. 15",
+      "quote": "aplicația PatrimVen a Agenției Naționale de Administrație Fiscală Hunedoara"
+    },
+    {
+      "name": "Procedure change record form (procedure governance)",
+      "page": "p. 3",
+      "quote": "FORMULAR EVIDENȚĂ MODIFICĂRI"
+    },
+    {
+      "name": "Procedure review form (procedure governance)",
+      "page": "p. 28",
+      "quote": "FORMULAR ANALIZĂ PROCEDURĂ"
+    },
+    {
+      "name": "Procedure distribution list (procedure governance)",
+      "page": "p. 28",
+      "quote": "LISTA DE DIFUZARE A PROCEDURII"
+    }
+  ],
+  "responsibilities_table": [
+    {
+      "role": "Primar (Mayor)",
+      "does": "Issues dispositions establishing the heating-aid right for the whole cold season, whatever the heating system",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Establishes the right by disposition: by 15 Nov for art.16 filers; from month of filing if documents filed by the 20th, else next month; VMG beneficiaries from the month their VMG starts; disposition communicated within 5 days of issue",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Communicates a reasoned rejection disposition to ineligible applicants (within the term in 'alin. (15)')",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Issues dispositions modifying the aid value when changes occur",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Orders social inquiries every 6 months or whenever needed",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "After an inquiry, issues a new written disposition (amount change, suspension, termination) and communicates it to the territorial agency within 5 days",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Establishes by disposition the energy-supplement right (art. 26 Law 226/2021)",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Approves the centralizing situation and sends it to the territorial agency, and to suppliers for the thermal/gas/electricity supplement",
+      "page": "p. 24"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Certifies the centralizing borderou (art. 20(2) Law 226/2021)",
+      "page": "p. 25"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Within 5 days of receipt certifies and sends a copy to the territorial agencies, which pay the gas aid to suppliers",
+      "page": "p. 25"
+    },
+    {
+      "role": "Primar (Mayor)",
+      "does": "Sends the territorial agencies the solid/petroleum fuel centralizing situation (art. 17(3)), updated monthly (art. 17(7))",
+      "page": "p. 25"
+    },
+    {
+      "role": "Director DAS",
+      "does": "Signs outgoing documents on the heating aid and supplements",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Make application and sworn-declaration forms available to beneficiaries",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Inform beneficiaries of the granting conditions and amounts of aid and supplement",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Receive applications and supporting documents",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Draw up grant/modification/termination referats for aid and supplement",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Carry out mandatory social inquiries for electricity heating aid within 15 working days of registration",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Carry out social inquiries at the holder's home/residence to verify the heating system used",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Carry out social inquiries every 6 months or as needed; a single inquiry for VMG/ASF beneficiaries covering all benefits",
+      "page": "p. 25"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "During the cold season, on third-party reports, AJPIS request or ex officio, carry out inquiries to detect error and fraud",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Draw up six monthly situations of beneficiaries and amounts (aid and supplement for gas, electricity, solid/liquid fuel)",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Draw up the borderou of gas heating-aid beneficiaries and effective amount",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Draw up the borderou of electricity heating-aid beneficiaries and effective amount",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Draw up statistical reports on gas, electricity and solid-fuel aid and send them to the competent institutions by the legal deadlines",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Draw up the situation of holders for whom settlement of amounts is requested in a given month",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Responsible for drawing up documents per job description",
+      "page": "p. 26"
+    },
+    {
+      "role": "Angajații cu atribuții referitoare la ajutorul de încălzire (heating-aid staff)",
+      "does": "Responsible for complying with this procedure",
+      "page": "p. 27"
+    },
+    {
+      "role": "Secretar General",
+      "does": "Endorses for legality the dispositions approving the aid and supplement",
+      "page": "p. 27"
+    },
+    {
+      "role": "Compartiment Taxe - Impozite",
+      "does": "Endorses applications, checks movable/immovable property, notes assets on the back of the application, stamps, signs and dates",
+      "page": "p. 27"
+    },
+    {
+      "role": "Compartimentul Registrul Agricol",
+      "does": "Endorses applications, checks agricultural land, notes assets on the back of the application, stamps, signs and dates",
+      "page": "p. 27"
+    },
+    {
+      "role": "Compartiment Economico-financiar si achizitii publice",
+      "does": "Draws up the payroll for wood heating aid and wood supplement",
+      "page": "p. 27"
+    },
+    {
+      "role": "Compartiment Administrație Publică Locală, Juridic - CAPLJ",
+      "does": "Drafts dispositions on granting/modifying/terminating heating aid",
+      "page": "p. 27"
+    }
+  ]
+}

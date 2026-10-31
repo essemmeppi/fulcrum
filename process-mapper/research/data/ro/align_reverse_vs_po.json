@@ -1,0 +1,931 @@
+{
+ "reference_to_generated": [
+  {
+   "ref_id": "P01",
+   "matched_claim_ids": [
+    "C48"
+   ],
+   "match_type": "merged",
+   "match_type_note": "C48 (posting at the town hall and on its website) covers both P01 and P02; it names the list of documents rather than general information"
+  },
+  {
+   "ref_id": "P02",
+   "matched_claim_ids": [
+    "C48",
+    "C01"
+   ],
+   "match_type": "merged",
+   "match_type_note": "website posting is in C48 (list of documents) and C01 (forms on town-hall/ANPIS/ministry websites); both claims also cover other reference steps"
+  },
+  {
+   "ref_id": "P03",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "citizen visit to DAS to ask for forms is not a claim; C01 is the DAS-side counterpart (forms made available), different side"
+  },
+  {
+   "ref_id": "P04",
+   "matched_claim_ids": [
+    "C01",
+    "C46"
+   ],
+   "match_type": "partial",
+   "match_type_note": "C01 covers handing out forms (plus web and owners'-association channels); C46 covers counselling/help with the form; informing about conditions and amounts is not stated"
+  },
+  {
+   "ref_id": "P05",
+   "matched_claim_ids": [
+    "C03"
+   ],
+   "match_type": "partial",
+   "match_type_note": "completing and attaching documents is in C03; taking the form to the Taxes office and Agricultural Register for endorsement is not"
+  },
+  {
+   "ref_id": "P06",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "file-cover labelling not in ledger"
+  },
+  {
+   "ref_id": "P07",
+   "matched_claim_ids": [
+    "C43"
+   ],
+   "match_type": "merged",
+   "match_type_note": "low-rank-only C43 (town hall issues certificate of movable/immovable assets incl. agricultural land) covers both P07 and P08; form differs (certificate vs endorsement on back of application)"
+  },
+  {
+   "ref_id": "P08",
+   "matched_claim_ids": [
+    "C43"
+   ],
+   "match_type": "merged",
+   "match_type_note": "see P07; C43 includes agricultural land"
+  },
+  {
+   "ref_id": "P09",
+   "matched_claim_ids": [
+    "C02",
+    "C03"
+   ],
+   "match_type": "exact",
+   "match_type_note": "C02 filing of request/declaration (by 15 Oct, also during season); C03 the supporting documents filed with it"
+  },
+  {
+   "ref_id": "P10",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "VMG/ASF beneficiaries' HG 50/2011 form and reuse of documents on file not in ledger"
+  },
+  {
+   "ref_id": "P11",
+   "matched_claim_ids": [
+    "C42"
+   ],
+   "match_type": "exact",
+   "match_type_note": "low-rank-only C42: DAS compartment receives dossiers during announced hours"
+  },
+  {
+   "ref_id": "P12",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "completeness check of the form at filing not in ledger"
+  },
+  {
+   "ref_id": "P13",
+   "matched_claim_ids": [
+    "C12"
+   ],
+   "match_type": "partial",
+   "match_type_note": "C12 (mayor requires IDs, invoice, title document, income documents) is the document requirement; P13 is the staff check that they are present"
+  },
+  {
+   "ref_id": "P14",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "declaration/GDPR notification signature check not in ledger"
+  },
+  {
+   "ref_id": "P15",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "registration in the single social-assistance register not in ledger (only gap question on who registers)"
+  },
+  {
+   "ref_id": "P16",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "mayor's 'Certificare Primar' approval on the form not in ledger"
+  },
+  {
+   "ref_id": "P17",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "data entry into heating software not in ledger"
+  },
+  {
+   "ref_id": "P18",
+   "matched_claim_ids": [
+    "C41"
+   ],
+   "match_type": "exact",
+   "match_type_note": "check of income/assets against other institutions' data (PatrimVen/ANAF in the procedure)"
+  },
+  {
+   "ref_id": "P19",
+   "matched_claim_ids": [
+    "C13"
+   ],
+   "match_type": "merged",
+   "match_type_note": "C13 covers both the where-needed inquiry (P19) and the mandatory electricity inquiry (P20)"
+  },
+  {
+   "ref_id": "P20",
+   "matched_claim_ids": [
+    "C13"
+   ],
+   "match_type": "merged",
+   "match_type_note": "C13 states the 15-working-day mandatory inquiry for electricity and the VMG/ASF exception"
+  },
+  {
+   "ref_id": "P21",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "amount calculation by DAS is only in rules (reference values, percentages); C25 is the supplier's monthly calculation, different side"
+  },
+  {
+   "ref_id": "P22",
+   "matched_claim_ids": [
+    "C15"
+   ],
+   "match_type": "exact",
+   "match_type_note": "DAS staff prepare documentation and draft dispositions for the mayor's signature"
+  },
+  {
+   "ref_id": "P23",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "Secretary General legality endorsement not in ledger (C52 prefect communication is a different control)"
+  },
+  {
+   "ref_id": "P24",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "CAPLJ drafting/registering of the disposition not in ledger"
+  },
+  {
+   "ref_id": "P25",
+   "matched_claim_ids": [
+    "C04"
+   ],
+   "match_type": "exact",
+   "match_type_note": "same statutory sentence: mayor establishes the right using information from other institutions or the social inquiry"
+  },
+  {
+   "ref_id": "P26",
+   "matched_claim_ids": [
+    "C05"
+   ],
+   "match_type": "exact",
+   "match_type_note": "mayor's written granting disposition for the whole period"
+  },
+  {
+   "ref_id": "P27",
+   "matched_claim_ids": [
+    "C17"
+   ],
+   "match_type": "exact",
+   "match_type_note": "reasoned rejection disposition"
+  },
+  {
+   "ref_id": "P28",
+   "matched_claim_ids": [
+    "C32"
+   ],
+   "match_type": "exact",
+   "match_type_note": "energy-supplement disposition (single disposition when requested with heating aid)"
+  },
+  {
+   "ref_id": "P29",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "DAS director signing outgoing documents not in ledger"
+  },
+  {
+   "ref_id": "P30",
+   "matched_claim_ids": [
+    "C16"
+   ],
+   "match_type": "exact",
+   "match_type_note": "communication to holder within 5 days / by 15 November; ledger actor unknown, procedure names CAPLJ"
+  },
+  {
+   "ref_id": "P31",
+   "matched_claim_ids": [
+    "C47",
+    "C49"
+   ],
+   "match_type": "partial",
+   "match_type_note": "ledger splits by type: C47 solid-fuel aid statement, C49 supplement statements; drafting of the gas/electricity aid statement is not a separate claim"
+  },
+  {
+   "ref_id": "P32",
+   "matched_claim_ids": [
+    "C56"
+   ],
+   "match_type": "partial",
+   "match_type_note": "statistical reports covered (Dec/April/quarterly, not monthly); solid-fuel payment records not covered"
+  },
+  {
+   "ref_id": "P33",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "drafting the gas/electricity beneficiary borderou by DAS not a claim; C19 only covers sending the centralizing statement to suppliers"
+  },
+  {
+   "ref_id": "P34",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "C58 has the same list (holders for whom settlement is requested) but drawn up by the supplier, different side"
+  },
+  {
+   "ref_id": "P35",
+   "matched_claim_ids": [
+    "C50"
+   ],
+   "match_type": "exact",
+   "match_type_note": "mayor approves the centralizing statement and sends it to AJPIS and, for supplements, to suppliers"
+  },
+  {
+   "ref_id": "P36",
+   "matched_claim_ids": [
+    "C18"
+   ],
+   "match_type": "merged",
+   "match_type_note": "C18 also covers the monthly solid-fuel update (P41)"
+  },
+  {
+   "ref_id": "P37",
+   "matched_claim_ids": [
+    "C19",
+    "C18",
+    "C40"
+   ],
+   "match_type": "partial",
+   "match_type_note": "sending to suppliers (C19, low-rank-only C40) and AJPIS (C18) is mayor-side in the ledger; sending to the Economic Directorate not covered"
+  },
+  {
+   "ref_id": "P38",
+   "matched_claim_ids": [
+    "C28"
+   ],
+   "match_type": "exact",
+   "match_type_note": "supplier prepares the centralizing borderou"
+  },
+  {
+   "ref_id": "P39",
+   "matched_claim_ids": [
+    "C29",
+    "C30"
+   ],
+   "match_type": "exact",
+   "match_type_note": "ledger splits certification (C29) and forwarding to AJPIS within 5 days (C30)"
+  },
+  {
+   "ref_id": "P40",
+   "matched_claim_ids": [
+    "C06"
+   ],
+   "match_type": "exact",
+   "match_type_note": "AJPIS settles to suppliers on the certified borderou"
+  },
+  {
+   "ref_id": "P41",
+   "matched_claim_ids": [
+    "C47",
+    "C18"
+   ],
+   "match_type": "exact",
+   "match_type_note": "monthly solid-fuel centralizing statement to AJPIS (C47 drafting+sending by DAS; C18 mayor transmission, monthly update)"
+  },
+  {
+   "ref_id": "P42",
+   "matched_claim_ids": [],
+   "match_type": "none",
+   "match_type_note": "payroll (stat de plata) for wood aid not in ledger"
+  },
+  {
+   "ref_id": "P43",
+   "matched_claim_ids": [
+    "C45"
+   ],
+   "match_type": "exact",
+   "match_type_note": "AJPIS transfers solid-fuel funds to the town hall"
+  },
+  {
+   "ref_id": "P44",
+   "matched_claim_ids": [
+    "C08",
+    "C09"
+   ],
+   "match_type": "exact",
+   "match_type_note": "town hall pays solid-fuel aid (C08) and supplement (C09) directly to the holder; procedure names the Economic Directorate"
+  },
+  {
+   "ref_id": "P45",
+   "matched_claim_ids": [
+    "C20"
+   ],
+   "match_type": "exact",
+   "match_type_note": "holder reports changes within 5 days by new declaration"
+  },
+  {
+   "ref_id": "P46",
+   "matched_claim_ids": [
+    "C21"
+   ],
+   "match_type": "merged",
+   "match_type_note": "C21 covers new dispositions after a reported change (P46) and after an inquiry (P50)"
+  },
+  {
+   "ref_id": "P47",
+   "matched_claim_ids": [
+    "C38"
+   ],
+   "match_type": "exact",
+   "match_type_note": "mayor orders inquiries every 6 months or as needed"
+  },
+  {
+   "ref_id": "P48",
+   "matched_claim_ids": [
+    "C38"
+   ],
+   "match_type": "partial",
+   "match_type_note": "carrying out the periodic inquiries is only implied by C38 (ordering), incl. the single inquiry for VMG/ASF"
+  },
+  {
+   "ref_id": "P49",
+   "matched_claim_ids": [
+    "C14"
+   ],
+   "match_type": "exact",
+   "match_type_note": "in-season control inquiries on third-party notice, AJPIS request or ex officio"
+  },
+  {
+   "ref_id": "P50",
+   "matched_claim_ids": [
+    "C21",
+    "C22"
+   ],
+   "match_type": "merged",
+   "match_type_note": "C21 new disposition after inquiry (also covers P46); C22 communication within 5 days incl. to AJPIS"
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "claim_id": "C07",
+   "reason": "supplier-side step the procedure does not list (aid deducted on the energy bill)"
+  },
+  {
+   "claim_id": "C10",
+   "reason": "district-heating step the procedure does not list (town hall sends forms to heat suppliers by 15 Sept)"
+  },
+  {
+   "claim_id": "C11",
+   "reason": "supplier-side step the procedure does not list (heat suppliers distribute forms)"
+  },
+  {
+   "claim_id": "C23",
+   "reason": "supplier/owner-association step the procedure does not list (monthly collective-metering findings report)"
+  },
+  {
+   "claim_id": "C24",
+   "reason": "owner-association step the procedure does not list (split of general consumption per beneficiary)"
+  },
+  {
+   "claim_id": "C25",
+   "reason": "supplier-side step; the procedure has DAS computing the aid (P21), different side"
+  },
+  {
+   "claim_id": "C26",
+   "reason": "supplier-side step the procedure does not list (invoices showing aid and amount payable)"
+  },
+  {
+   "claim_id": "C27",
+   "reason": "owner-association step the procedure does not list (cost split, maintenance table)"
+  },
+  {
+   "claim_id": "C31",
+   "reason": "town-hall energy-efficiency programme (PIEE) step outside the directorate's procedure"
+  },
+  {
+   "claim_id": "C33",
+   "reason": "rule as step: end-of-season settlement deadlines (30 April / 31 July) and budget consequence; not in procedure"
+  },
+  {
+   "claim_id": "C34",
+   "reason": "AJPIS-side step outside the directorate (county beneficiary database)"
+  },
+  {
+   "claim_id": "C35",
+   "reason": "AJPIS-side control step outside the directorate"
+  },
+  {
+   "claim_id": "C36",
+   "reason": "AJPIS-side step outside the directorate (recovery decision of undue payments); procedure has no recovery step"
+  },
+  {
+   "claim_id": "C37",
+   "reason": "control-body step the procedure does not list (notifying criminal investigation bodies)"
+  },
+  {
+   "claim_id": "C39",
+   "reason": "multi-actor obligation to provide data/documents to AJPIS and control bodies; not a step in the procedure"
+  },
+  {
+   "claim_id": "C44",
+   "reason": "low-rank-only claim not in procedure (owners' association endorses gas requests, Suceava notice); owner-association side"
+  },
+  {
+   "claim_id": "C51",
+   "reason": "mayor-side step the procedure does not list (disposition establishing the undue amount)"
+  },
+  {
+   "claim_id": "C52",
+   "reason": "legal requirement the procedure does not list (communication of dispositions to the prefect); P23 Secretary General endorsement is a different check"
+  },
+  {
+   "claim_id": "C53",
+   "reason": "AJPIS-side financing step outside the directorate (budget-credit request to ANPIS)"
+  },
+  {
+   "claim_id": "C54",
+   "reason": "national-level step outside the directorate (ANPIS centralizes credit needs)"
+  },
+  {
+   "claim_id": "C55",
+   "reason": "national-level step outside the directorate (Labour Ministry to Finance Ministry)"
+  },
+  {
+   "claim_id": "C57",
+   "reason": "county/national-level step outside the directorate (statistical reports compiled by AJPIS/ANPIS)"
+  },
+  {
+   "claim_id": "C58",
+   "reason": "supplier-side step; the procedure assigns the monthly list of holders for whom settlement is requested (P34) to DAS staff, different side"
+  },
+  {
+   "claim_id": "C59",
+   "reason": "national-level step outside the directorate (Labour Ministry control bodies)"
+  },
+  {
+   "claim_id": "C60",
+   "reason": "rule as step: contraventions and fines (procedure cites contraventions only in its legal basis)"
+  },
+  {
+   "claim_id": "C61",
+   "reason": "citizen-side step the procedure does not list (court challenge under Law 554/2004)"
+  },
+  {
+   "claim_id": "C62",
+   "reason": "optional local-budget support (policy option, not a step in the procedure)"
+  }
+ ],
+ "order_checks": [
+  {
+   "ref_pair": [
+    "P04",
+    "P05"
+   ],
+   "generated_pair": [
+    "C01",
+    "C03"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P05",
+    "P07"
+   ],
+   "generated_pair": [
+    "C03",
+    "C43"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P05",
+    "P08"
+   ],
+   "generated_pair": [
+    "C03",
+    "C43"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P07",
+    "P09"
+   ],
+   "generated_pair": [
+    "C43",
+    "C02"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P08",
+    "P09"
+   ],
+   "generated_pair": [
+    "C43",
+    "C02"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P09",
+    "P11"
+   ],
+   "generated_pair": [
+    "C02",
+    "C42"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P18",
+    "P19"
+   ],
+   "generated_pair": [
+    "C41",
+    "C13"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P25",
+    "P26"
+   ],
+   "generated_pair": [
+    "C04",
+    "C05"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P25",
+    "P27"
+   ],
+   "generated_pair": [
+    "C04",
+    "C17"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P25",
+    "P28"
+   ],
+   "generated_pair": [
+    "C04",
+    "C32"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P26",
+    "P30"
+   ],
+   "generated_pair": [
+    "C05",
+    "C16"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P27",
+    "P30"
+   ],
+   "generated_pair": [
+    "C17",
+    "C16"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P28",
+    "P30"
+   ],
+   "generated_pair": [
+    "C32",
+    "C16"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P26",
+    "P31"
+   ],
+   "generated_pair": [
+    "C05",
+    "C47"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P28",
+    "P31"
+   ],
+   "generated_pair": [
+    "C32",
+    "C47"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P31",
+    "P32"
+   ],
+   "generated_pair": [
+    "C47",
+    "C56"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P31",
+    "P35"
+   ],
+   "generated_pair": [
+    "C49",
+    "C50"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P35",
+    "P36"
+   ],
+   "generated_pair": [
+    "C50",
+    "C18"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P35",
+    "P37"
+   ],
+   "generated_pair": [
+    "C50",
+    "C19"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P37",
+    "P38"
+   ],
+   "generated_pair": [
+    "C19",
+    "C28"
+   ],
+   "same_order": true,
+   "forward_len": 3,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P38",
+    "P39"
+   ],
+   "generated_pair": [
+    "C28",
+    "C29"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P39",
+    "P40"
+   ],
+   "generated_pair": [
+    "C30",
+    "C06"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P35",
+    "P41"
+   ],
+   "generated_pair": [
+    "C50",
+    "C47"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P41",
+    "P43"
+   ],
+   "generated_pair": [
+    "C47",
+    "C45"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P43",
+    "P44"
+   ],
+   "generated_pair": [
+    "C45",
+    "C08"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P30",
+    "P45"
+   ],
+   "generated_pair": [
+    "C16",
+    "C20"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P45",
+    "P46"
+   ],
+   "generated_pair": [
+    "C20",
+    "C21"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P26",
+    "P47"
+   ],
+   "generated_pair": [
+    "C05",
+    "C38"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P26",
+    "P49"
+   ],
+   "generated_pair": [
+    "C05",
+    "C14"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P48",
+    "P50"
+   ],
+   "generated_pair": [
+    "C38",
+    "C21"
+   ],
+   "same_order": true,
+   "forward_len": 1,
+   "reverse_len": null
+  },
+  {
+   "ref_pair": [
+    "P49",
+    "P50"
+   ],
+   "generated_pair": [
+    "C14",
+    "C21"
+   ],
+   "same_order": "not_connected",
+   "forward_len": null,
+   "reverse_len": null
+  }
+ ],
+ "summary": {
+  "ref_matched": 35,
+  "ref_total": 50,
+  "gen_matched": 35,
+  "gen_total": 62,
+  "order_same": 10,
+  "order_checked": 31,
+  "low_rank_only_claims_matched": 3,
+  "low_rank_only_claims_total": 4,
+  "match_types": {
+   "merged": 9,
+   "none": 15,
+   "partial": 7,
+   "exact": 19
+  },
+  "order_false": 0,
+  "order_not_connected": 21,
+  "order_pairs_available": 32,
+  "order_pairs_skipped_same_node": [
+   [
+    "P47",
+    "P48"
+   ]
+  ],
+  "low_rank_only_claim_ids": [
+   "C40",
+   "C42",
+   "C43",
+   "C44"
+  ]
+ },
+ "notes": "Matching per prompt_ro_align.md. A: outputs/reference_po_opus.json (50 steps from the Simeria procedure). B: outputs/ledger_public_reverse_opus.json (62 claims, 75 order statements). das_staff, mayor and das_system are one side; citizen, supplier, AJPIS and owners' association are separate sides; ledger 'unknown' may match any side; reference 'other' town-hall compartments (Taxes office, CAPLJ, Economic Directorate) are matched to town-hall/'other'/unknown claims. 'merged' = one ledger claim covers this and at least one other reference step; 'partial' = the claim(s) cover only part of the step or a material part is missing; a ledger split into claims that together equal the step is 'exact'. matched_claim_ids lists the primary claim first. order_checks: (predecessor, step) pairs from the reference predecessor lists, in reference order, where both are matched; all matched claims of each step are used; forward_len/reverse_len are shortest paths (edge count) over the ledger order statements; same_order is true when a forward path exists and is no longer than the reverse path, false when only a reverse path exists or it is shorter, 'not_connected' when neither exists; pairs whose only matched claim is the same claim are skipped."
+}

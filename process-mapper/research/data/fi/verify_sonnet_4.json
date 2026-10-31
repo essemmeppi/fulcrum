@@ -1,0 +1,325 @@
+[
+  {
+    "node_id": "T_RECOVERY_DECISION",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Yleisen asumistuen hakijalla on annettava kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+      },
+      {
+        "page": "p. 80",
+        "quote": "Jos vuokranantajalta perimisen edellytykset täyttyvät, anna vuokranantajalle takaisinperintäpäätös."
+      },
+      {
+        "page": "p. 82",
+        "quote": "peritään takaisin ensisijaisesti hakijalta"
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "The guideline requires a written decision on recovery (p. 64) and shows staff issuing one ('anna ... takaisinperintäpäätös') only for recovery from the landlord (p. 80); it does not describe a separate decision per liable household member, the 5-year limit or appealability here, and defers principles to the common Takaisinperintä-ohje. It treats recovery as mandatory ('on perittävä takaisin') rather than showing a recover/waive gate.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_NOTIFY_RECOVERY",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Yleisen asumistuen hakijalla on annettava kirjallinen päätös asumistuen myöntämisestä, hylkäämisestä, tarkistamisesta, lakkauttamisesta ja takaisinperinnästä."
+      },
+      {
+        "page": "p. 65",
+        "quote": "Yleisen asumistuen päätös annetaan hakijalle, joka edustaa koko ruokakuntaa."
+      },
+      {
+        "page": "p. 65",
+        "quote": "Hakijan lisäksi samansisältöinen asumistukipäätös lähetetään myös"
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "guideline_merges_it",
+    "corrections": "Guideline: the decision is given to the applicant who represents the whole household, with a copy to a minor's guardian or edunvalvoja; it does not describe delivery to each liable adult household member, an OmaKela/post channel, or system dispatch. Deciding and giving the decision are one 'Päätöksen antaminen' step, not a separate notification task.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "node_id": "T_COLLECT",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 82",
+        "quote": "Käytännössä tämä tarkoittaa sitä, että ulosotto ei saa velkaa perittyä hakijalta"
+      },
+      {
+        "page": "p. 83",
+        "quote": "Regressikuittausta käytetään silloin, kun molempien etuuksien hakijana on sama henkilö."
+      },
+      {
+        "page": "p. 80",
+        "quote": "Perintäasioita seurataan prosessiin kirjattujen ohjeiden mukaisesti."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "guideline_splits_it",
+    "corrections": "The guideline never names a Recovery Centre; the collection steps it does give are addressed to benefit staff (asking a landlord to return the benefit, 'Perintäasioita seurataan'). Offsetting appears only as regress offset against a retroactively granted pensioner's housing allowance for the same period (not against later general housing allowance), and recovery shifts to jointly liable household members only if collection from the applicant fails (e.g. ulosotto returns no funds).",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "node_id": "E_WAIVED",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The guideline gives no waiver on grounds of reasonableness, absence of fraud or minor amount: it says overpaid benefit 'on perittävä takaisin' (p. 81) and defers principles to the common Takaisinperintä-ohje. The only 'perinnästä luopuminen' (p. 80) is a decision to the recipient when recovery is redirected to the landlord, where the money is still recovered; kohtuullistaminen is mentioned only to exclude it for landlord recovery.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "E_RECOVERED",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "No end state, claim closure, expiry or 5-year limitation for recoveries is described; the only related line is that recovery matters are monitored per process instructions (p. 80, landlord context).",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "S_DISSATISFIED",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Appealing is not described: section 1.12.4 Muutoksenhaku is only a pointer to the common Muutoksenhaku-ohje. The guideline mentions appeal rights only negatively (no appeal against interim decisions, p. 65, or landlord-payment decisions, p. 79).",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "node_id": "D_APPEALABLE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 65",
+        "quote": "Väliaikaisesta päätöksestä ei ole muutoksenhakuoikeutta."
+      },
+      {
+        "page": "p. 79",
+        "quote": "Tuensaajalle annetaan päätös vuokranantajalle maksamisesta. Päätöksestä ei ole valitusoikeutta."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "The two non-appealable categories in the node are stated (interim decision, p. 65; payment to landlord under YAL 25 § 2 mom., p. 79), but as properties of the decision type, not as a branch evaluated by a caseworker after a party is dissatisfied; no other non-appealable types and no appeal-instruction mechanics are given (delegated to the common Muutoksenhaku-ohje).",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "T_APPEAL_SUBMIT",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Nothing on submitting an appeal, its form, recipient or the 30-day period; section 1.12.4 only points to the common Muutoksenhaku-ohje.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "node_id": "T_SELF_RECT_EXAMINE",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "No examination of an appeal for self-rectification (itseoikaisu) is described; 1.12.4 and 1.12.5 only point to the common Muutoksenhaku and Päätöksen oikaisu ja poistaminen guidelines.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "D_ACCEPT_ALL",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "No accept-all-demands branch is described; the guideline merely lists 'neutraali oikaisu' and 'osittainen oikaisu' as read-more topics on p. 83 without content, and does not tie them to appeals.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "T_RECTIFY_DECISION",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "No rectification decision issued in response to an appeal is described; oikaisu appears only as Kela-side correction topics (oikaisu eduksi, oikaisu kuulemalla vahingoksi YAL 38 §, kevennetty oikaisumenettely) delegated to the common Päätöksen oikaisu ja poistaminen -ohje.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "T_FORWARD_APPEAL",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Forwarding the appeal with Kela's statement and the 30/60-day deadlines are not described; the only related element is that an interim decision may be given in connection with an appeal ('muutoksenhaun ... yhteydessä') and carries no right of appeal (p. 65).",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "T_SSAB_DECIDE",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The Social Security Appeal Board is not described; the guideline refers only generically to a 'muutoksenhakuelin' that may remove a decision (p. 83), which is relevant to T_IMPLEMENT rather than to the Board's own decision step.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "D_FURTHER_APPEAL",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The further-appeal stage (Insurance Court) is not described anywhere in the guideline.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "node_id": "T_IC_APPEAL",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "Appealing to the Insurance Court is not described anywhere in the guideline.",
+    "reviewer_confidence": 0.85
+  },
+  {
+    "node_id": "T_IC_DECIDE",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The Insurance Court's decision step is not described anywhere in the guideline.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "T_IMPLEMENT",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 83",
+        "quote": "Yleisen asumistuen päätös, kun muutoksenhakuelin on poistanut päätöksen"
+      },
+      {
+        "page": "p. 65",
+        "quote": "Väliaikaisen päätöksen antaminen on mahdollista myös muutoksenhaun ja päätöksen poistamisen yhteydessä."
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "The guideline only names a situation in which Kela gives a new housing allowance decision after an appeal body has removed ('poistanut') its decision, handled under 'Päätöksen antaminen', with interim decisions possible; no separate implementation/payment step after a final appellate outcome is described, and nothing for a Board decision that is merely accepted. Content is delegated to the common Päätöksen oikaisu ja poistaminen -ohje.",
+    "reviewer_confidence": 0.45
+  },
+  {
+    "node_id": "E_NOT_APPEALABLE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 65",
+        "quote": "Väliaikaisesta päätöksestä ei ole muutoksenhakuoikeutta."
+      },
+      {
+        "page": "p. 79",
+        "quote": "Tuensaajalle annetaan päätös vuokranantajalle maksamisesta. Päätöksestä ei ole valitusoikeutta."
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "same",
+    "corrections": "Both non-appealable categories are stated, but as properties of the decision types rather than as an end event reached by a branch; the node's actor (a citizen) is not something the guideline addresses.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "E_APPEAL_CLOSED",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "No concluding end state of the appeal process is described in the guideline.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "S_NEW_EVIDENCE",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Oikaisu eduksi ja asian tutkiminen uudelleen uuden selvityksen perusteella"
+      },
+      {
+        "page": "p. 26",
+        "quote": "Katso esimerkki Asian uudelleen tutkiminen uuden selvityksen johdosta."
+      },
+      {
+        "page": "p. 27",
+        "quote": "Lue lisää esimerkistä Asian uudelleen tutkiminen uuden selvityksen johdosta"
+      }
+    ],
+    "actor_check": "unknown",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "granularity": "unknown",
+    "corrections": "The guideline names re-examination on the basis of new evidence (and correction of an erroneous income estimate) only as a topic/example pointer, not as an event or step. Its placement under Hakemuksen liitteet and Hakuaika (pp. 26-27) suggests new evidence typically comes from the customer rather than being identified by the caseworker as the node states.",
+    "reviewer_confidence": 0.5
+  },
+  {
+    "node_id": "T_REEXAMINE",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Oikaisu eduksi ja asian tutkiminen uudelleen uuden selvityksen perusteella"
+      },
+      {
+        "page": "p. 83",
+        "quote": "Yleisen asumistuen oikaiseminen, kun ruokakuntaan kuuluvalle on myönnetty takautuvasti estävä etuus eli kevennetty oikaisumenettely"
+      },
+      {
+        "page": "p. 83",
+        "quote": "Oikaisu kuulemalla vahingoksi (YAL 38 §)"
+      }
+    ],
+    "actor_check": "same",
+    "automation_check": "same",
+    "order_check": "silent",
+    "granularity": "guideline_splits_it",
+    "corrections": "Re-examination/correction exists in the guideline but is split into oikaisu eduksi, oikaisu kuulemalla vahingoksi (YAL 38 §, i.e. with a hearing), neutral and partial correction, and a lightened procedure when a precluding benefit is granted retroactively; the node lumps these together, omits the hearing, and the guideline's 'poistaminen' is by the appeal body, not an annulment request examined by the caseworker. Content is delegated to the common Päätöksen oikaisu ja poistaminen -ohje.",
+    "reviewer_confidence": 0.5
+  }
+]

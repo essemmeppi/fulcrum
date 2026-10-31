@@ -1,0 +1,6 @@
+# Task: align a public-page process map to the staff-procedure reference
+
+(A) REFERENCE: reference_blueprint_compact.json, 324 steps written from Services Australia's Operational Blueprint (staff procedures) for Rent Assistance, each with a granularity tag: "screen_or_field_level" (coding a screen or field), "work_step_level" (a unit of work), "policy_level" (a criterion). (B) GENERATED: a map built from public pages only.
+
+For every reference step with granularity "work_step_level" or "policy_level" (ignore screen_or_field_level), decide whether the generated map has a node that means the same unit of work (same action; staff and system count as the same actor; customer and landlord are their own). match_type: "exact" | "partial" | "merged" | "none". Then list generated nodes that match no reference step at any granularity, with a reason. Output JSON: {"reference_to_generated": [{"ref_id", "granularity", "matched_node_ids": [], "match_type"}], "generated_unmatched": [{"node_id", "reason"}], "summary": {"work_step_matched": n, "work_step_total": n, "policy_matched": n, "policy_total": n, "generated_matched": n, "generated_total": n}}
+Validate with python3 and reply with the summary numbers and the five largest groups of unmatched reference work steps (what kind of work the public pages never mention).

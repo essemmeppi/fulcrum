@@ -1,0 +1,1238 @@
+{
+ "source_document": "kela-guide-gha-en.txt",
+ "stage": "per-document",
+ "actors": [
+  {
+   "id": "citizen",
+   "name": "Applicant / recipient (household)",
+   "kind": "citizen"
+  },
+  {
+   "id": "kela",
+   "name": "Kela (the document does not distinguish caseworker from automated system)",
+   "kind": "caseworker"
+  }
+ ],
+ "nodes": [
+  {
+   "id": "N01",
+   "name": "Household with small income needs help with housing costs",
+   "description": "Trigger: a person or household on a small income with housing costs turns to Kela for general housing allowance (yleinen asumistuki).",
+   "type": "start_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you have a small income, Kela can grant you general housing allowance."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The purpose of the general housing allowance is to help you with your housing costs."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N02",
+   "name": "Estimate allowance with Kela calculator (optional)",
+   "description": "The applicant can use the housing allowance calculator on Kela's website to estimate the amount before applying.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can use the housing allowance calculator on Kela’s website to estimate how much housing allowance you can get."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N03",
+   "name": "Choose application channel",
+   "description": "The applicant chooses between applying online in OmaKela or on a paper application form.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Apply for general housing allowance online:"
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can also apply by filling in an application form that you can get from a service point or from Kela’s website:"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N04",
+   "name": "Log in to OmaKela",
+   "description": "The applicant logs in to the OmaKela e-service with online banking credentials or a mobile ID.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You must log in to OmaKela. You need online banking credentials or a mobile ID."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N05",
+   "name": "Complete online application and declare all income",
+   "description": "The applicant fills in and submits the online application and must declare all of their income.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Apply for general housing allowance online:"
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You must declare all of your income in the application for housing allowance."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N06",
+   "name": "Send supporting documents online",
+   "description": "The applicant sends the supporting documents listed in the application online.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Check the application for a list of the supporting documents you need to send with the application."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The supporting documents can also be sent online."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N07",
+   "name": "Obtain and fill in paper application form",
+   "description": "The applicant gets the application form from a service point or Kela's website and fills it in, with the supporting documents listed in it.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can also apply by filling in an application form that you can get from a service point or from Kela’s website:"
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Check the application for a list of the supporting documents you need to send with the application."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N08",
+   "name": "Post paper application to Kela",
+   "description": "The applicant sends the paper application to Kela by post (Kela, PL 10, 00056 KELA).",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you apply for a Kela benefit on an application form, send the application to Kela by post."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela’s address is: Kela PL 10 00056 KELA"
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N09",
+   "name": "Receive application",
+   "description": "Kela receives the application; the date of receipt matters for the retroactive start of the allowance.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "if you want to get the allowance from January onward, Kela must get your application before the end of February."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N10",
+   "name": "Limit start of allowance to one month before application",
+   "description": "Kela applies the rule that the allowance can be applied for retroactively for up to one month.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can apply for housing allowance retroactively for up to one month."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "if you want to get the allowance from January onward, Kela must get your application before the end of February."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N11",
+   "name": "Determine household",
+   "description": "Kela establishes who forms the household (people living permanently in the same house or apartment), which can be one person or many.",
+   "type": "caseworker_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "document_check",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "A household means people who live permanently in the same house or apartment."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela can pay general housing allowance to one person or to a household of many people."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N12",
+   "name": "Check dwelling type",
+   "description": "Kela checks that the home is a rented, right-of-occupancy or part-ownership home and not an apartment or single-family home owned by the applicant.",
+   "type": "decision",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You may qualify for general housing allowance if you live • in a rented house or apartment • in a right-of-occupancy home • in a part-ownership home."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You cannot get general housing allowance if you own the apartment or single-family home that you live in."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N13",
+   "name": "Check student status",
+   "description": "Kela checks whether a student applicant lives with their own child or their partner's child, which is required for students.",
+   "type": "decision",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you are a student, you can get general housing allowance only if you live with your own child or your partner’s child."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N14",
+   "name": "Check for another housing benefit",
+   "description": "Kela checks that no other kind of housing benefit (pensioners' housing allowance, students' housing supplement, conscripts' housing assistance) is paid at the same time.",
+   "type": "decision",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can usually be paid only one kind of housing benefit at a time."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can also get housing allowance for pensioners, housing supplement for students and housing assistance for conscripts from Kela."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N15",
+   "name": "Determine acceptable housing costs by dwelling type",
+   "description": "Kela takes rent (rented or part-ownership home) or residence charge (right-of-occupancy home) as housing costs, limited to costs defined as acceptable in law.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "a rented house or apartment: rent plus water and heating costs • a right-of-occupancy home: residence charge plus water and heating costs"
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "It only covers housing costs that are defined as acceptable in law."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N16",
+   "name": "Add separately paid water and heating costs within limits",
+   "description": "Water and heating costs count only if not included in rent or residence charge: water up to EUR 20 per person per month; heating up to EUR 46 per month for one person, plus EUR 16 per additional person.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Water and heating costs are accepted as housing costs if they are not included in your rent or residence charge and you have to pay them separately."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela accepts water charges of up to EUR 20 per person and per month."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you live alone in a single-person household, Kela accepts heating costs of up to EUR 46 per month."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "this limit for acceptable heating costs increases by EUR 16 for each additional person."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N17",
+   "name": "Determine legal maximum housing costs",
+   "description": "Kela determines the legal maximum housing costs from the number of adults and children in the home and the cost-of-living category of the municipality.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The maximum amount of housing costs depends on how many adults and children live in the same home and which municipality the home is located in."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Finnish municipalities are divided into categories according to the cost of living there."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N18",
+   "name": "Compare actual housing costs with legal maximum",
+   "description": "Kela checks whether the housing costs exceed the maximum housing costs defined in law.",
+   "type": "decision",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If your housing costs are higher than the maximum housing costs defined in law, Kela will use the maximum housing costs to calculate how much housing allowance you can get."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N19",
+   "name": "Use maximum housing costs",
+   "description": "When actual costs exceed the legal maximum, Kela calculates the allowance from the maximum housing costs.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela does not use Maija’s actual rent (EUR 800) when calculating her housing allowance because her rent is higher than the maximum housing costs accepted for a person living alone in Helsinki."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N20",
+   "name": "Use actual housing costs",
+   "description": "When actual costs are below the legal maximum, Kela calculates the allowance from the actual housing costs.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela calculates how much housing allowance Tommi can get based on his rent (EUR 291) because Tommi’s rent is lower than the maximum housing costs accepted for a person living alone in Kemi."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N21",
+   "name": "Retrieve wage data from Incomes Register",
+   "description": "Kela can fetch information on wages and salaries paid to the applicant from the Incomes Register.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "register_lookup",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela can also get information on wages and salaries paid to you from the Incomes Register."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N22",
+   "name": "Determine income and assets that count",
+   "description": "Kela takes into account earned income, assets, capital income and various benefits of the household.",
+   "type": "caseworker_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "document_check",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "earned income (for example wages or salary) • assets (for example shares and money in your bank account) • capital income (for example rental income or interest on deposits)"
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "various benefits (for example unemployment benefits, sickness allowance and daily allowances for parents)."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N23",
+   "name": "Disregard excluded benefits and child's income",
+   "description": "Kela leaves out certain benefits (e.g. social assistance, child benefit) and the income and assets of a child under 18 in the household.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "certain benefits (for example social assistance, child benefit, provider supplement to the study grant or informal care allowance)"
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "the income and assets of a child under the age of 18 who is a member of the household."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N24",
+   "name": "Check whether income is stable",
+   "description": "Kela decides whether the income stays the same or varies from month to month.",
+   "type": "decision",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Your income may be the same every month or it may be different from one month to the next."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N25",
+   "name": "Calculate continuous income",
+   "description": "If income will stay the same for 3 months after the grant or review, Kela calculates a continuous income.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela will calculate a continuous income for you in the following situation: your income will stay the same for 3 months after you have been granted housing allowance or after your housing allowance has been reviewed."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N26",
+   "name": "Calculate average income over next 12 months",
+   "description": "If income varies month to month, Kela calculates an average income based on the next 12 months.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If your income is different from one month to the next, Kela will calculate an average income for you based on your income for the next 12 months."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N27",
+   "name": "Determine basic deductible",
+   "description": "Kela sets the basic deductible from household size (adults and children) and gross monthly household income; higher income gives a larger deductible.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The amount of the basic deductible depends on • how many adults and children live in the household • the gross household income per month."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The bigger the income is, the larger the deductible."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N28",
+   "name": "Deduct basic deductible from housing costs",
+   "description": "Kela subtracts the basic deductible from the housing costs used in the calculation (maximum or actual).",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "First, Kela deducts the basic deductible from your housing costs."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela deducts a basic deductible from the housing costs when calculating the amount of housing allowance Kela can pay."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N29",
+   "name": "Calculate allowance as 70% of remainder",
+   "description": "The allowance equals 70% of the remaining acceptable housing costs (the applicant always pays at least 30%).",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The housing allowance you can get is equal to 70% of the remaining amount of acceptable housing costs."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Housing allowance can cover up to 70% of your housing costs."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N30",
+   "name": "Grant allowance",
+   "description": "Kela decides to grant the allowance, setting the benefit amount, the reasons and the payment date given in the decision notice.",
+   "type": "caseworker_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "human_signoff",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "The decision notice will tell you how much benefit you get, the reasons for granting it and when it will be paid to you."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N31",
+   "name": "Send decision notice on grant",
+   "description": "Once the application is processed, Kela sends the decision notice via OmaKela or by post to the home address.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "external",
+   "automation_class": "notification",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "As soon as Kela has processed your application, you will get a decision notice in the OmaKela e-service or by post to your home address."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N32",
+   "name": "Reject application",
+   "description": "Kela decides to reject the application (for example when eligibility conditions are not met).",
+   "type": "caseworker_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "human_signoff",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You will get a decision notice also if Kela rejects your application."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N33",
+   "name": "Send decision notice on rejection",
+   "description": "Kela sends a decision notice to the applicant also when the application is rejected.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "external",
+   "automation_class": "notification",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You will get a decision notice also if Kela rejects your application."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "As soon as Kela has processed your application, you will get a decision notice in the OmaKela e-service or by post to your home address."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N34",
+   "name": "Read decision notice and check it",
+   "description": "The applicant reads the decision notice and decides whether it is correct or wrong.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.6,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you think that the decision you got from Kela is wrong, you can appeal to have it changed."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N35",
+   "name": "Contact Kela first about questions",
+   "description": "If the applicant has questions about a decision, they are asked to contact Kela first.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you have questions, please contact Kela first."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N36",
+   "name": "Appeal the decision",
+   "description": "The applicant appeals the decision following the instructions that come with every decision notice.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You get instructions on how to appeal the decision with every decision notice you get from Kela."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you think that the decision you got from Kela is wrong, you can appeal to have it changed."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N37",
+   "name": "Appeal lodged (handling not described in this document)",
+   "description": "End of what this document covers on appeals; who handles the appeal and how is not described.",
+   "type": "end_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.5,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "If you think that the decision you got from Kela is wrong, you can appeal to have it changed."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N38",
+   "name": "Choose payee: own bank account or landlord",
+   "description": "The recipient can ask Kela to pay the allowance directly to the landlord instead of to their own bank account.",
+   "type": "decision",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can also ask Kela to pay your housing allowance directly to your landlord."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N39",
+   "name": "Pay allowance to recipient's bank account",
+   "description": "Kela pays the allowance to the recipient's bank account on the first banking day of the month.",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.85,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela pays the general housing allowance to your bank account on the first banking day of the month."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N40",
+   "name": "Pay allowance directly to landlord",
+   "description": "On the recipient's request, Kela pays the allowance directly to the landlord (timing not stated).",
+   "type": "system_task",
+   "actor_id": "kela",
+   "visibility": "external",
+   "automation_class": "deterministic_rule",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.7,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can also ask Kela to pay your housing allowance directly to your landlord."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N41",
+   "name": "Application rejected",
+   "description": "End state: application rejected and decision notice received.",
+   "type": "end_event",
+   "actor_id": "kela",
+   "visibility": "external",
+   "automation_class": "notification",
+   "agent_mode": "agent_can_execute",
+   "confidence": 0.55,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You will get a decision notice also if Kela rejects your application."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N42",
+   "name": "Annual review of allowance",
+   "description": "Kela reviews the housing allowance once a year.",
+   "type": "caseworker_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela reviews the housing allowance once a year."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N43",
+   "name": "Early review after change in circumstances",
+   "description": "Kela can review the allowance sooner if the recipient's circumstances change.",
+   "type": "caseworker_task",
+   "actor_id": "kela",
+   "visibility": "internal",
+   "automation_class": "judgment",
+   "agent_mode": "agent_prepares_human_decides",
+   "confidence": 0.75,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Kela can review the allowance sooner if your circumstances change."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N44",
+   "name": "Report change in circumstances to Kela",
+   "description": "The recipient reports changes in housing, income, work or family circumstances online in OmaKela, by phone or at a service point; it is their responsibility to keep Kela's information correct.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.8,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Remember to report such changes to Kela."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "You can do it online in the OmaKela e-service, by phone or by visiting a Kela service point."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "Remember to tell Kela if your income increases or decreases."
+    },
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "It is up to you to make sure that Kela has the correct information."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N45",
+   "name": "Request to stop payment of allowance",
+   "description": "The recipient can stop the payment of benefits in the OmaKela e-service.",
+   "type": "citizen_task",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.65,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "send messages • report changes • stop the payment of benefits."
+    }
+   ],
+   "inferred_reason": ""
+  },
+  {
+   "id": "N46",
+   "name": "Payment of allowance stopped",
+   "description": "End state: payment stopped at the recipient's initiative.",
+   "type": "end_event",
+   "actor_id": "citizen",
+   "visibility": "external",
+   "automation_class": "citizen_action",
+   "agent_mode": "human_only",
+   "confidence": 0.5,
+   "evidence": [
+    {
+     "source": "kela-guide-gha-en.txt",
+     "quote": "send messages • report changes • stop the payment of benefits."
+    }
+   ],
+   "inferred_reason": ""
+  }
+ ],
+ "edges": [
+  {
+   "source": "N01",
+   "target": "N02",
+   "condition": "optional: applicant wants an estimate first"
+  },
+  {
+   "source": "N01",
+   "target": "N03",
+   "condition": "applies directly"
+  },
+  {
+   "source": "N02",
+   "target": "N03",
+   "condition": ""
+  },
+  {
+   "source": "N03",
+   "target": "N04",
+   "condition": "online application"
+  },
+  {
+   "source": "N03",
+   "target": "N07",
+   "condition": "paper application"
+  },
+  {
+   "source": "N04",
+   "target": "N05",
+   "condition": ""
+  },
+  {
+   "source": "N05",
+   "target": "N06",
+   "condition": ""
+  },
+  {
+   "source": "N06",
+   "target": "N09",
+   "condition": ""
+  },
+  {
+   "source": "N07",
+   "target": "N08",
+   "condition": ""
+  },
+  {
+   "source": "N08",
+   "target": "N09",
+   "condition": ""
+  },
+  {
+   "source": "N09",
+   "target": "N10",
+   "condition": ""
+  },
+  {
+   "source": "N10",
+   "target": "N11",
+   "condition": ""
+  },
+  {
+   "source": "N11",
+   "target": "N12",
+   "condition": ""
+  },
+  {
+   "source": "N12",
+   "target": "N13",
+   "condition": "rented, right-of-occupancy or part-ownership home"
+  },
+  {
+   "source": "N12",
+   "target": "N32",
+   "condition": "applicant owns the apartment or single-family home"
+  },
+  {
+   "source": "N13",
+   "target": "N14",
+   "condition": "not a student, or student living with own or partner's child"
+  },
+  {
+   "source": "N13",
+   "target": "N32",
+   "condition": "student not living with own or partner's child"
+  },
+  {
+   "source": "N14",
+   "target": "N15",
+   "condition": "no other housing benefit paid (housing-cost branch)"
+  },
+  {
+   "source": "N14",
+   "target": "N21",
+   "condition": "no other housing benefit paid (income branch, in parallel)"
+  },
+  {
+   "source": "N14",
+   "target": "N32",
+   "condition": "another kind of housing benefit is already paid"
+  },
+  {
+   "source": "N15",
+   "target": "N16",
+   "condition": ""
+  },
+  {
+   "source": "N16",
+   "target": "N17",
+   "condition": ""
+  },
+  {
+   "source": "N17",
+   "target": "N18",
+   "condition": ""
+  },
+  {
+   "source": "N18",
+   "target": "N19",
+   "condition": "housing costs higher than legal maximum"
+  },
+  {
+   "source": "N18",
+   "target": "N20",
+   "condition": "housing costs not higher than legal maximum"
+  },
+  {
+   "source": "N19",
+   "target": "N28",
+   "condition": ""
+  },
+  {
+   "source": "N20",
+   "target": "N28",
+   "condition": ""
+  },
+  {
+   "source": "N21",
+   "target": "N22",
+   "condition": ""
+  },
+  {
+   "source": "N22",
+   "target": "N23",
+   "condition": ""
+  },
+  {
+   "source": "N23",
+   "target": "N24",
+   "condition": ""
+  },
+  {
+   "source": "N24",
+   "target": "N25",
+   "condition": "income stays the same for 3 months after grant or review"
+  },
+  {
+   "source": "N24",
+   "target": "N26",
+   "condition": "income differs from month to month"
+  },
+  {
+   "source": "N25",
+   "target": "N27",
+   "condition": ""
+  },
+  {
+   "source": "N26",
+   "target": "N27",
+   "condition": ""
+  },
+  {
+   "source": "N27",
+   "target": "N28",
+   "condition": ""
+  },
+  {
+   "source": "N28",
+   "target": "N29",
+   "condition": ""
+  },
+  {
+   "source": "N29",
+   "target": "N30",
+   "condition": ""
+  },
+  {
+   "source": "N30",
+   "target": "N31",
+   "condition": ""
+  },
+  {
+   "source": "N31",
+   "target": "N34",
+   "condition": ""
+  },
+  {
+   "source": "N32",
+   "target": "N33",
+   "condition": ""
+  },
+  {
+   "source": "N33",
+   "target": "N34",
+   "condition": ""
+  },
+  {
+   "source": "N34",
+   "target": "N38",
+   "condition": "decision correct and allowance granted"
+  },
+  {
+   "source": "N34",
+   "target": "N41",
+   "condition": "decision correct and application rejected"
+  },
+  {
+   "source": "N34",
+   "target": "N35",
+   "condition": "applicant thinks the decision is wrong"
+  },
+  {
+   "source": "N35",
+   "target": "N36",
+   "condition": ""
+  },
+  {
+   "source": "N36",
+   "target": "N37",
+   "condition": ""
+  },
+  {
+   "source": "N38",
+   "target": "N39",
+   "condition": "payment to own bank account"
+  },
+  {
+   "source": "N38",
+   "target": "N40",
+   "condition": "payment directly to landlord"
+  },
+  {
+   "source": "N39",
+   "target": "N42",
+   "condition": "one year after grant or last review"
+  },
+  {
+   "source": "N39",
+   "target": "N44",
+   "condition": "recipient's life situation changes"
+  },
+  {
+   "source": "N39",
+   "target": "N45",
+   "condition": "recipient wants to stop payment"
+  },
+  {
+   "source": "N40",
+   "target": "N42",
+   "condition": "one year after grant or last review"
+  },
+  {
+   "source": "N40",
+   "target": "N44",
+   "condition": "recipient's life situation changes"
+  },
+  {
+   "source": "N40",
+   "target": "N45",
+   "condition": "recipient wants to stop payment"
+  },
+  {
+   "source": "N44",
+   "target": "N43",
+   "condition": "reported change leads Kela to review sooner"
+  },
+  {
+   "source": "N42",
+   "target": "N11",
+   "condition": "re-assess household, housing costs and income"
+  },
+  {
+   "source": "N43",
+   "target": "N11",
+   "condition": "re-assess household, housing costs and income"
+  },
+  {
+   "source": "N45",
+   "target": "N46",
+   "condition": ""
+  }
+ ]
+}

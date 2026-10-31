@@ -1,0 +1,1442 @@
+{
+ "reference_to_generated": [
+  {
+   "ref_id": "G01",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G02",
+   "matched_node_ids": [
+    "T_SUBMIT_APP"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G03",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G04",
+   "matched_node_ids": [
+    "T_ATTACH"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G05",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G06",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G07",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G08",
+   "matched_node_ids": [
+    "T_REGISTER"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G09",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G10",
+   "matched_node_ids": [
+    "T_FETCH_INCOME"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G11",
+   "matched_node_ids": [
+    "T_FETCH_LEASE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G12",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G13",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G14",
+   "matched_node_ids": [
+    "T_REQUEST_INFO"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G15",
+   "matched_node_ids": [
+    "T_REQUEST_INFO"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G16",
+   "matched_node_ids": [
+    "T_REQUEST_INFO"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G17",
+   "matched_node_ids": [
+    "T_PROVIDE_INFO"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G18",
+   "matched_node_ids": [
+    "D_INFO_PROVIDED"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G19",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G20",
+   "matched_node_ids": [
+    "T_RESIDENCE",
+    "T_ELIG_CHECK"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G21",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G22",
+   "matched_node_ids": [
+    "T_ELIG_CHECK",
+    "D_ELIGIBLE"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G23",
+   "matched_node_ids": [
+    "T_ELIG_CHECK",
+    "D_ELIGIBLE"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G24",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G25",
+   "matched_node_ids": [
+    "T_HOUSEHOLD"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G26",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G27",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G28",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G29",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G30",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G31",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G32",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G33",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G34",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G35",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G36",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G37",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G38",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G39",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G40",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G41",
+   "matched_node_ids": [
+    "T_COSTS"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G42",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G43",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G44",
+   "matched_node_ids": [
+    "T_INCOME"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G45",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G46",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G47",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G48",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G49",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G50",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G51",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G52",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G53",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G54",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G55",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G56",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G57",
+   "matched_node_ids": [
+    "T_ASSETS"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G58",
+   "matched_node_ids": [
+    "T_CALC"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G59",
+   "matched_node_ids": [
+    "T_COMPLETENESS",
+    "D_COMPLETE"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G60",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G61",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G62",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G63",
+   "matched_node_ids": [
+    "T_DECIDE",
+    "T_NOTIFY"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G64",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G65",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G66",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G67",
+   "matched_node_ids": [
+    "D_PAY_LANDLORD"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G68",
+   "matched_node_ids": [
+    "D_MIN_AMOUNT"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G69",
+   "matched_node_ids": [
+    "T_PAY_APPLICANT",
+    "T_PAY_LANDLORD",
+    "W_IN_PAYMENT"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G70",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G71",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G72",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G73",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G74",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G75",
+   "matched_node_ids": [
+    "T_UNPAID_INFO"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G76",
+   "matched_node_ids": [
+    "T_CONTACT_RECIPIENT"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G77",
+   "matched_node_ids": [
+    "D_REDIRECT",
+    "T_ASSESS_UNPAID",
+    "T_DECIDE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G78",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G79",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G80",
+   "matched_node_ids": [
+    "T_REPORT_CHANGE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G81",
+   "matched_node_ids": [
+    "T_LANDLORD_NOTICE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G82",
+   "matched_node_ids": [
+    "T_SUBMIT_APP"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G83",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G84",
+   "matched_node_ids": [
+    "T_SUSPEND"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G85",
+   "matched_node_ids": [
+    "T_ASSESS_CHANGE",
+    "D_CHANGE_EFFECT"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G86",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G87",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G88",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G89",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G90",
+   "matched_node_ids": [
+    "T_INCOME"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G91",
+   "matched_node_ids": [
+    "D_CHANGE_EFFECT"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G92",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G93",
+   "matched_node_ids": [
+    "T_REVISION_DATE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G94",
+   "matched_node_ids": [
+    "T_REVIEW_INSTR"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G95",
+   "matched_node_ids": [
+    "T_REVIEW_APP"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G96",
+   "matched_node_ids": [
+    "D_REVIEW_ON_TIME"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G97",
+   "matched_node_ids": [
+    "T_TERMINATION_DATE",
+    "T_DECIDE"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G98",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G99",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G100",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G101",
+   "matched_node_ids": [
+    "T_TERMINATION_REQUEST"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G102",
+   "matched_node_ids": [
+    "T_TERMINATION_DATE"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G103",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G104",
+   "matched_node_ids": [
+    "T_TERMINATION_DATE",
+    "D_CHANGE_EFFECT"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G105",
+   "matched_node_ids": [
+    "T_TERMINATION_DATE",
+    "D_CHANGE_EFFECT"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G106",
+   "matched_node_ids": [
+    "T_TERMINATION_DATE",
+    "D_CHANGE_EFFECT"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G107",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G108",
+   "matched_node_ids": [
+    "S_OVERPAYMENT"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G109",
+   "matched_node_ids": [
+    "T_RECOVERY_DECISION",
+    "T_ASSESS_RECOVERY",
+    "D_RECOVER",
+    "T_NOTIFY_RECOVERY"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G110",
+   "matched_node_ids": [
+    "T_COLLECT"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G111",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G112",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G113",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G114",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G115",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G116",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G117",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G118",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G119",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G120",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G121",
+   "matched_node_ids": [
+    "T_COLLECT"
+   ],
+   "match_type": "merged"
+  },
+  {
+   "ref_id": "G122",
+   "matched_node_ids": [
+    "T_APPEAL_SUBMIT",
+    "D_APPEALABLE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G123",
+   "matched_node_ids": [
+    "T_FORWARD_APPEAL"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G124",
+   "matched_node_ids": [
+    "T_SSAB_DECIDE",
+    "T_IC_DECIDE",
+    "T_IMPLEMENT"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G125",
+   "matched_node_ids": [
+    "T_REEXAMINE"
+   ],
+   "match_type": "exact"
+  },
+  {
+   "ref_id": "G126",
+   "matched_node_ids": [
+    "T_AUTO_DECISION",
+    "T_ROBOT_CHECK",
+    "D_ROBOT_OUTCOME"
+   ],
+   "match_type": "partial"
+  },
+  {
+   "ref_id": "G127",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G128",
+   "matched_node_ids": [],
+   "match_type": "none"
+  },
+  {
+   "ref_id": "G129",
+   "matched_node_ids": [],
+   "match_type": "none"
+  }
+ ],
+ "generated_unmatched": [
+  {
+   "node_id": "S_APPLY",
+   "reason": "no reference step: start event (household's need for help) is a trigger, not a unit of work; the guideline starts at submission (G02)"
+  },
+  {
+   "node_id": "T_ESTIMATE",
+   "reason": "no reference step: out of scope - optional citizen pre-application use of the online calculator, not covered by the staff guideline"
+  },
+  {
+   "node_id": "T_HOUSEHOLD_REP",
+   "reason": "no reference step: citizen preparatory step; the guideline only defines who may apply inside G02 and treats AT5 as an attachment (G04) or a caseworker request (G32)"
+  },
+  {
+   "node_id": "T_FETCH_TAX",
+   "reason": "no reference step: inferred system retrieval; the guideline uses tax and YEL/MYEL data only inside rules on entrepreneur income and asset valuation (G47, G51, G52), not as a retrieval step"
+  },
+  {
+   "node_id": "T_FETCH_OTHER",
+   "reason": "no reference step: inferred system retrieval (population register, Criminal Sanctions Agency, Kela benefit data); the guideline's nearest step G09 is a caseworker mapping the household situation, a different unit of work"
+  },
+  {
+   "node_id": "D_PAYABLE",
+   "reason": "no reference step: inferred routing gateway after decision delivery"
+  },
+  {
+   "node_id": "T_STATE_NOTICE",
+   "reason": "no reference step: out of scope - aggregate State funding notification is not case processing and is absent from the guideline"
+  },
+  {
+   "node_id": "T_STATE_PAYS",
+   "reason": "no reference step: out of scope - State-to-Kela funding transfer, absent from the guideline"
+  },
+  {
+   "node_id": "E_NOT_PAYABLE",
+   "reason": "no reference step: end event"
+  },
+  {
+   "node_id": "S_CHANGE",
+   "reason": "no reference step: start event (trigger); the guideline's step is the report itself (G80)"
+  },
+  {
+   "node_id": "S_LANDLORD_MOVEOUT",
+   "reason": "no reference step: start event; corresponds to the condition of G81, not to a step"
+  },
+  {
+   "node_id": "E_NO_CHANGE",
+   "reason": "no reference step: end event; also conflicts with G91, where the guideline requires a decision even when payment continues at the previous amount"
+  },
+  {
+   "node_id": "S_ANNUAL",
+   "reason": "no reference step: start event (timer trigger for G94)"
+  },
+  {
+   "node_id": "S_NO_NEED",
+   "reason": "no reference step: start event (trigger for G101)"
+  },
+  {
+   "node_id": "S_IMPULSE",
+   "reason": "no reference step: start event (pension/rehabilitation benefit granted); the related guideline procedure is G126"
+  },
+  {
+   "node_id": "T_IMPULSE_TASK",
+   "reason": "no reference step: inferred internal step - work-queue impulse mechanics are not described in the guideline"
+  },
+  {
+   "node_id": "S_UNPAID_RENT",
+   "reason": "no reference step: start event; corresponds to the condition of G75, not to a step"
+  },
+  {
+   "node_id": "E_WAIVED",
+   "reason": "no reference step: end event; the guideline's only waiver step (G118) concerns directing recovery to a landlord after a move"
+  },
+  {
+   "node_id": "E_RECOVERED",
+   "reason": "no reference step: end event"
+  },
+  {
+   "node_id": "S_DISSATISFIED",
+   "reason": "no reference step: start event (trigger for appeal G122)"
+  },
+  {
+   "node_id": "T_SELF_RECT_EXAMINE",
+   "reason": "no reference step: plausible but absent from guideline - appeal handling is only referenced to Kela's common appeal guideline (G122)"
+  },
+  {
+   "node_id": "D_ACCEPT_ALL",
+   "reason": "no reference step: plausible but absent from guideline - self-rectification branch of the common appeal guideline only referenced in G122"
+  },
+  {
+   "node_id": "T_RECTIFY_DECISION",
+   "reason": "no reference step: plausible but absent from guideline - self-rectification on appeal belongs to the common appeal guideline referenced in G122 (G125 covers rectification outside an appeal)"
+  },
+  {
+   "node_id": "D_FURTHER_APPEAL",
+   "reason": "no reference step: plausible but absent from guideline - further appeal is not described (common appeal guideline only referenced)"
+  },
+  {
+   "node_id": "T_IC_APPEAL",
+   "reason": "no reference step: plausible but absent from guideline - appeal to the Insurance Court is not described (common appeal guideline only referenced)"
+  },
+  {
+   "node_id": "E_NOT_APPEALABLE",
+   "reason": "no reference step: end event; non-appealability appears only as a rule inside G77, G84 and G122"
+  },
+  {
+   "node_id": "E_APPEAL_CLOSED",
+   "reason": "no reference step: end event"
+  },
+  {
+   "node_id": "S_NEW_EVIDENCE",
+   "reason": "no reference step: start event (trigger for re-examination G125)"
+  }
+ ],
+ "order_checks": [
+  {
+   "ref_pair": [
+    "G02",
+    "G04"
+   ],
+   "generated_pair": [
+    "T_SUBMIT_APP",
+    "T_ATTACH"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G08"
+   ],
+   "generated_pair": [
+    "T_SUBMIT_APP",
+    "T_REGISTER"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G10"
+   ],
+   "generated_pair": [
+    "T_SUBMIT_APP",
+    "T_FETCH_INCOME"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G02",
+    "G11"
+   ],
+   "generated_pair": [
+    "T_SUBMIT_APP",
+    "T_FETCH_LEASE"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G14",
+    "G17"
+   ],
+   "generated_pair": [
+    "T_REQUEST_INFO",
+    "T_PROVIDE_INFO"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G15",
+    "G17"
+   ],
+   "generated_pair": [
+    "T_REQUEST_INFO",
+    "T_PROVIDE_INFO"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G16",
+    "G17"
+   ],
+   "generated_pair": [
+    "T_REQUEST_INFO",
+    "T_PROVIDE_INFO"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G16",
+    "G18"
+   ],
+   "generated_pair": [
+    "T_REQUEST_INFO",
+    "D_INFO_PROVIDED"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G10",
+    "G44"
+   ],
+   "generated_pair": [
+    "T_FETCH_INCOME",
+    "T_INCOME"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G25",
+    "G44"
+   ],
+   "generated_pair": [
+    "T_HOUSEHOLD",
+    "T_INCOME"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G41",
+    "G58"
+   ],
+   "generated_pair": [
+    "T_COSTS",
+    "T_CALC"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G44",
+    "G58"
+   ],
+   "generated_pair": [
+    "T_INCOME",
+    "T_CALC"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G57",
+    "G58"
+   ],
+   "generated_pair": [
+    "T_ASSETS",
+    "T_CALC"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G17",
+    "G59"
+   ],
+   "generated_pair": [
+    "T_PROVIDE_INFO",
+    "T_COMPLETENESS"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G18",
+    "G59"
+   ],
+   "generated_pair": [
+    "D_INFO_PROVIDED",
+    "T_COMPLETENESS"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G67"
+   ],
+   "generated_pair": [
+    "T_DECIDE",
+    "D_PAY_LANDLORD"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G58",
+    "G68"
+   ],
+   "generated_pair": [
+    "T_CALC",
+    "D_MIN_AMOUNT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G67",
+    "G69"
+   ],
+   "generated_pair": [
+    "D_PAY_LANDLORD",
+    "T_PAY_APPLICANT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G68",
+    "G69"
+   ],
+   "generated_pair": [
+    "D_MIN_AMOUNT",
+    "T_PAY_APPLICANT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G69",
+    "G75"
+   ],
+   "generated_pair": [
+    "T_PAY_APPLICANT",
+    "T_UNPAID_INFO"
+   ],
+   "same_order": false,
+   "note": "T_UNPAID_INFO sits in a separate subflow started by S_UNPAID_RENT that re-enters the main path upstream of/at T_PAY_APPLICANT, so only the reverse path exists; the map does not link T_PAY_APPLICANT to the triggering event"
+  },
+  {
+   "ref_pair": [
+    "G75",
+    "G76"
+   ],
+   "generated_pair": [
+    "T_UNPAID_INFO",
+    "T_CONTACT_RECIPIENT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G76",
+    "G77"
+   ],
+   "generated_pair": [
+    "T_CONTACT_RECIPIENT",
+    "D_REDIRECT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G80"
+   ],
+   "generated_pair": [
+    "T_DECIDE",
+    "T_REPORT_CHANGE"
+   ],
+   "same_order": false,
+   "note": "T_REPORT_CHANGE sits in a separate subflow started by S_CHANGE that re-enters the main path upstream of/at T_DECIDE, so only the reverse path exists; the map does not link T_DECIDE to the triggering event"
+  },
+  {
+   "ref_pair": [
+    "G69",
+    "G81"
+   ],
+   "generated_pair": [
+    "T_PAY_APPLICANT",
+    "T_LANDLORD_NOTICE"
+   ],
+   "same_order": false,
+   "note": "T_LANDLORD_NOTICE sits in a separate subflow started by S_LANDLORD_MOVEOUT that re-enters the main path upstream of/at T_PAY_APPLICANT, so only the reverse path exists; the map does not link T_PAY_APPLICANT to the triggering event"
+  },
+  {
+   "ref_pair": [
+    "G80",
+    "G82"
+   ],
+   "generated_pair": [
+    "T_REPORT_CHANGE",
+    "T_SUBMIT_APP"
+   ],
+   "same_order": "not_connected",
+   "note": "T_SUBMIT_APP is reachable only from S_APPLY and T_REPORT_CHANGE only from S_CHANGE; the map has no edge linking these subflows"
+  },
+  {
+   "ref_pair": [
+    "G82",
+    "G85"
+   ],
+   "generated_pair": [
+    "T_SUBMIT_APP",
+    "T_ASSESS_CHANGE"
+   ],
+   "same_order": "not_connected",
+   "note": "T_ASSESS_CHANGE is reachable only from S_CHANGE, S_LANDLORD_MOVEOUT and T_SUBMIT_APP only from S_APPLY; the map has no edge linking these subflows"
+  },
+  {
+   "ref_pair": [
+    "G85",
+    "G90"
+   ],
+   "generated_pair": [
+    "T_ASSESS_CHANGE",
+    "T_INCOME"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G85",
+    "G91"
+   ],
+   "generated_pair": [
+    "T_ASSESS_CHANGE",
+    "D_CHANGE_EFFECT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G94",
+    "G95"
+   ],
+   "generated_pair": [
+    "T_REVIEW_INSTR",
+    "T_REVIEW_APP"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G95",
+    "G96"
+   ],
+   "generated_pair": [
+    "T_REVIEW_APP",
+    "D_REVIEW_ON_TIME"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G96",
+    "G97"
+   ],
+   "generated_pair": [
+    "D_REVIEW_ON_TIME",
+    "T_TERMINATION_DATE"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G101"
+   ],
+   "generated_pair": [
+    "T_DECIDE",
+    "T_TERMINATION_REQUEST"
+   ],
+   "same_order": false,
+   "note": "T_TERMINATION_REQUEST sits in a separate subflow started by S_NO_NEED that re-enters the main path upstream of/at T_DECIDE, so only the reverse path exists; the map does not link T_DECIDE to the triggering event"
+  },
+  {
+   "ref_pair": [
+    "G101",
+    "G102"
+   ],
+   "generated_pair": [
+    "T_TERMINATION_REQUEST",
+    "T_TERMINATION_DATE"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G80",
+    "G104"
+   ],
+   "generated_pair": [
+    "T_REPORT_CHANGE",
+    "T_TERMINATION_DATE"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G81",
+    "G104"
+   ],
+   "generated_pair": [
+    "T_LANDLORD_NOTICE",
+    "T_TERMINATION_DATE"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G93",
+    "G108"
+   ],
+   "generated_pair": [
+    "T_REVISION_DATE",
+    "S_OVERPAYMENT"
+   ],
+   "same_order": "not_connected",
+   "note": "S_OVERPAYMENT is reachable only from S_OVERPAYMENT and T_REVISION_DATE only from S_CHANGE, S_LANDLORD_MOVEOUT; the map has no edge linking these subflows"
+  },
+  {
+   "ref_pair": [
+    "G104",
+    "G108"
+   ],
+   "generated_pair": [
+    "T_TERMINATION_DATE",
+    "S_OVERPAYMENT"
+   ],
+   "same_order": "not_connected",
+   "note": "S_OVERPAYMENT is reachable only from S_OVERPAYMENT and T_TERMINATION_DATE only from S_CHANGE, S_LANDLORD_MOVEOUT, S_ANNUAL, S_NO_NEED, S_IMPULSE; the map has no edge linking these subflows"
+  },
+  {
+   "ref_pair": [
+    "G102",
+    "G108"
+   ],
+   "generated_pair": [
+    "T_TERMINATION_DATE",
+    "S_OVERPAYMENT"
+   ],
+   "same_order": "not_connected",
+   "note": "S_OVERPAYMENT is reachable only from S_OVERPAYMENT and T_TERMINATION_DATE only from S_CHANGE, S_LANDLORD_MOVEOUT, S_ANNUAL, S_NO_NEED, S_IMPULSE; the map has no edge linking these subflows"
+  },
+  {
+   "ref_pair": [
+    "G105",
+    "G108"
+   ],
+   "generated_pair": [
+    "T_TERMINATION_DATE",
+    "S_OVERPAYMENT"
+   ],
+   "same_order": "not_connected",
+   "note": "S_OVERPAYMENT is reachable only from S_OVERPAYMENT and T_TERMINATION_DATE only from S_CHANGE, S_LANDLORD_MOVEOUT, S_ANNUAL, S_NO_NEED, S_IMPULSE; the map has no edge linking these subflows"
+  },
+  {
+   "ref_pair": [
+    "G108",
+    "G109"
+   ],
+   "generated_pair": [
+    "S_OVERPAYMENT",
+    "T_RECOVERY_DECISION"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G109",
+    "G110"
+   ],
+   "generated_pair": [
+    "T_RECOVERY_DECISION",
+    "T_COLLECT"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G122"
+   ],
+   "generated_pair": [
+    "T_NOTIFY",
+    "T_APPEAL_SUBMIT"
+   ],
+   "same_order": false,
+   "note": "T_APPEAL_SUBMIT sits in a separate subflow started by S_DISSATISFIED that re-enters the main path upstream of/at T_NOTIFY, so only the reverse path exists; the map does not link T_NOTIFY to the triggering event"
+  },
+  {
+   "ref_pair": [
+    "G122",
+    "G123"
+   ],
+   "generated_pair": [
+    "T_APPEAL_SUBMIT",
+    "T_FORWARD_APPEAL"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G122",
+    "G124"
+   ],
+   "generated_pair": [
+    "T_APPEAL_SUBMIT",
+    "T_SSAB_DECIDE"
+   ],
+   "same_order": true
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G125"
+   ],
+   "generated_pair": [
+    "T_DECIDE",
+    "T_REEXAMINE"
+   ],
+   "same_order": false,
+   "note": "T_REEXAMINE sits in a separate subflow started by S_NEW_EVIDENCE that re-enters the main path upstream of/at T_DECIDE, so only the reverse path exists; the map does not link T_DECIDE to the triggering event"
+  },
+  {
+   "ref_pair": [
+    "G63",
+    "G126"
+   ],
+   "generated_pair": [
+    "T_DECIDE",
+    "T_ROBOT_CHECK"
+   ],
+   "same_order": false,
+   "note": "T_ROBOT_CHECK sits in a separate subflow started by S_IMPULSE that re-enters the main path upstream of/at T_DECIDE, so only the reverse path exists; the map does not link T_DECIDE to the triggering event"
+  }
+ ],
+ "summary": {
+  "reference_matched": 52,
+  "reference_total": 129,
+  "reference_match_types": {
+   "none": 77,
+   "merged": 13,
+   "exact": 28,
+   "partial": 11
+  },
+  "generated_matched": 56,
+  "generated_total": 84,
+  "generated_matched_excluding_start_end_events": "55/68",
+  "order_same": 33,
+  "order_reverse": 7,
+  "order_not_connected": 6,
+  "order_checked": 46,
+  "order_pairs_available": 46,
+  "order_method": "pairs (predecessor, step) in reference order, both matched; a pair counts as same_order if any matched node of the predecessor reaches any matched node of the step via generated edges (identical nodes skipped); else false if the reverse path exists; else not_connected",
+  "reference_match_rate_by_subprocess": {
+   "other": "0/4",
+   "decision": "2/8",
+   "data_gathering": "7/27",
+   "overpayment_recovery": "4/13",
+   "intake": "3/9",
+   "assessment": "8/21",
+   "payment": "6/14",
+   "review_change": "8/14",
+   "annual_review": "4/7",
+   "termination": "5/7",
+   "appeal_rectification": "5/5"
+  }
+ }
+}

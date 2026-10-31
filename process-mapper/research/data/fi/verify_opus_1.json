@@ -1,0 +1,523 @@
+[
+  {
+    "node_id": "S_APPLY",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 4",
+        "quote": "Yleisen asumistuen tarkoituksena on alentaa ruokakunnan asumismenoja. Pienituloinen ruokakunta voi saada yleistä asumistukea Suomessa sijaitsevan vakinaisen vuokra-, asumisoikeus- tai osaomistusasuntonsa asumismenoihin."
+      },
+      {
+        "page": "p. 21",
+        "quote": "Yksi ruokakunnan jäsen edustaa ruokakuntaa ja hakee yleistä asumistukea sekä tuen tarkistamista."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "unknown",
+    "corrections": "The guideline states the purpose/target group (low-income household, rental, right-of-occupancy or part-ownership dwelling; not owner-occupied since 1.1.2025) and that the representative applies, but it does not describe a household 'decision to seek help' as a step, nor the calculator successor.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "node_id": "T_ESTIMATE",
+    "verdict": "not_mentioned",
+    "evidence": [],
+    "actor_check": "unknown",
+    "actor_in_guideline": "",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "unknown",
+    "corrections": "The guideline never mentions an online calculator (no 'laskuri'); the step is outside the staff guideline's scope.",
+    "reviewer_confidence": 0.95
+  },
+  {
+    "node_id": "T_HOUSEHOLD_REP",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 21",
+        "quote": "Yksi ruokakunnan jäsen edustaa ruokakuntaa ja hakee yleistä asumistukea sekä tuen tarkistamista."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Valtuutus tarvitaan, jos useampi henkilö (muu kuin perhe) on vuokrannut asunnon yhteisellä vuokrasopimuksella."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Voit jatkaa asian käsittelyä vasta, kun lomake AT5 on saatu."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "The guideline treats AT5 as an application attachment that the caseworker may also request after submission; processing is blocked until it arrives, a loop the map does not model.",
+    "granularity": "guideline_merges_it",
+    "corrections": "AT5 is handled as an attachment to the application, not a separate step before it. It is also required when a non-relative lives permanently in the dwelling without a lease, and the caseworker must request it and stop processing until it is received. Deciding who belongs to the household is Kela's job (see T_HOUSEHOLD), not the citizen's.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_SUBMIT_APP",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 25",
+        "quote": "Yleisen asumistuen hakemuksen voi tehdä • asiointipalvelu OmaKelassa • kirjallisesti lomakkeella AT1 (lomakkeen voi täyttää ja tulostaa paperisena www.kela.fi/lomakkeet) • suullisesti (Suullinen hakeminen)"
+      },
+      {
+        "page": "p. 25",
+        "quote": "Jos yleinen asumistuki on myönnetty määräaikaisena, asumistuen jatkamista haetaan Yleisen asumistuen jatkohakemus -lomakkeella AT13."
+      },
+      {
+        "page": "p. 27",
+        "quote": "Yleisessä asumistuessa on kuukauden takautuva hakuaika."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "Channels are incomplete: the guideline also accepts an oral application, and a fixed-term allowance is continued with form AT13. The applicant must give their own account number even if payment goes to the landlord. Annual-review applications are triggered by a letter Kela sends programmatically about two months before the review date. Retroactivity can exceed one month for a special reason, or when another housing benefit was rejected or terminated.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "T_ATTACH",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "Yleisen asumistuen hakemukseen tarvittavia liitteitä ovat: • selvitykset ruokakunnan bruttotuloista – Asiakkaalta ei pyydetä sellaisia tietoja, jotka saadaan tulorekisteristä."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Kopiota vuokrasopimuksesta ei tarvita, jos vuokranantaja on mukana Kelan vuokrasopimuskyselyssä, koska Kela saa näiltä vuokranantajilta sähköisesti tiedot vuokrasopimuksista ja vuokrankorotuksista."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Ilmoitus Suomeen muutosta (Y77), kun yleistä asumistukea haetaan ensimmäistä kertaa Suomeen muuton jälkeen eikä oikeutta Kelan etuuksiin ole vielä selvitetty."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "supported",
+    "order_note": "",
+    "granularity": "guideline_merges_it",
+    "corrections": "The attachment list matches (income statements, signed lease, AT5, Y77, Y38). However, income documents are not requested where the data is in the Incomes Register. A rent receipt may be requested on discretion, and a sub-lessee needs the original landlord's written consent. The guideline gives no upload or post channel for attachments.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "T_REGISTER",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Yleistä asumistukea koskevan ns. käsittelyaikatakuun mukaan päätös on annettava viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Lue lisää hakemistietojen rekisteröinnistä."
+      },
+      {
+        "page": "p. 72",
+        "quote": "Jos hakemusta ei ole palautettu vuositarkistuksen ajankohdan maksatusajoon mennessä (viimeistään viisi päivää ennen maksupäivää), asumistuki lakkautetaan ohjelmallisesti ja lakkautuksesta annetaan päätös."
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_guideline": "",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "order_note": "For the review path, timeliness is judged against the payment run for the review date (at latest five days before payment day), not the review date itself; a late annual-review application leads to programmatic termination.",
+    "granularity": "unknown",
+    "corrections": "Only the 30-day deadline counted from arrival is stated. The guideline points to a separate 'hakemistietojen rekisteröinti' (registration of application data) instruction, which suggests a handler entering data, but it never says the system registers the application automatically.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_FETCH_INCOME",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "Yleisen asumistuen hakemuksen ratkaisemista varten Kela saa tietoja esimerkiksi palkkatuloista tulorekisteristä sekä vuokrasopimuksista vuokrasopimuskyselystä."
+      },
+      {
+        "page": "p. 55",
+        "quote": "Vuoden 2021 alusta lähtien tulorekisteriin ilmoitetaan palkkatietojen lisäksi myös etuuksien ja eläkkeiden maksutiedot."
+      },
+      {
+        "page": "p. 55",
+        "quote": "Arkaluonteisia tulotietoja ei kuitenkaan ilmoiteta tulorekisteriin, joten esimerkiksi perustoimeentulotuki ja vammaisetuudet jäävät rekisterin tietosisällön ulkopuolelle."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "guideline_merges_it",
+    "corrections": "Confirmed that Kela gets wage, benefit and pension data from the Incomes Register. The guideline does not say whether a program or the handler retrieves it, and it notes that sensitive income (e.g. basic social assistance, disability benefits) is not in the register.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "T_FETCH_LEASE",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 26",
+        "quote": "Kopiota vuokrasopimuksesta ei tarvita, jos vuokranantaja on mukana Kelan vuokrasopimuskyselyssä, koska Kela saa näiltä vuokranantajilta sähköisesti tiedot vuokrasopimuksista ja vuokrankorotuksista."
+      },
+      {
+        "page": "p. 40",
+        "quote": "Lue lisää vuokrasopimuskyselyn käytöstä."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "The guideline calls this the 'vuokrasopimuskysely' (lease query), which also supplies rent increases. It points to a separate instruction on how the query is used, suggesting a lookup the handler runs rather than a fully automatic retrieval, though this is not explicit.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "T_FETCH_TAX",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 61",
+        "quote": "Elinkeinotoiminnan ja maatalouden varat otetaan huomioon vasta sitten, kun niitä koskevat tiedot saadaan verotustietojen kyselyltä."
+      },
+      {
+        "page": "p. 51",
+        "quote": "Muut kuin osakesäästötilille saadut toistuvat luovutusvoitot otetaan tulona huomioon viimeisimmän vahvistetun verotuksen mukaisena."
+      },
+      {
+        "page": "p. 45",
+        "quote": "Jos tulorekisterin tietojen, verotustietojen tai muiden rekisteritietojen perusteella ilmenee, että yrittäjän tulot ovat vähintään kaksinkertaiset YEL- tai MYEL-tuloon verrattuna, yrittäjän tulot voidaan ottaa huomioon todellisten tulojen suuruisena."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "unknown",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "unknown",
+    "corrections": "Taxation data ('verotustietojen kysely') is used mainly to value assets and to set capital income (capital gains, dividends, share-savings-account returns). It also checks whether an entrepreneur's real income is at least double their YEL/MYEL income. The guideline does not state the general fallback (latest taxation increased by Tax Administration percentages) applied in R_CALC_TAXATION_FALLBACK. It never says YEL/MYEL income is fetched from pension insurers.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_FETCH_OTHER",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 4",
+        "quote": "Kun käsittelet yleisen asumistuen hakemusta, sinun tulee aina ensimmäiseksi kartoittaa ruokakunnan kokonaistilanne."
+      },
+      {
+        "page": "p. 4",
+        "quote": "Tutustu jokaisen ruokakunnan jäsenen tilanteeseen ja muodosta käsitys ruokakunnan kokonaistilanteesta Kelassa olevien taustatietojen ja nyt käsiteltävänä olevien asiakirjojen avulla."
+      },
+      {
+        "page": "p. 8",
+        "quote": "Jos asiakas väestörekisteritietojen tai muiden tietojen mukaan tosiasiallisesti asuu samassa asunnossa toisen henkilön kanssa ja"
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_guideline": "Handler (käsittelijä, addressed as 'sinä') reviews Kela's existing background data and population-register data when first mapping the household's overall situation",
+    "automation_check": "different",
+    "order_check": "supported",
+    "order_note": "",
+    "granularity": "guideline_merges_it",
+    "corrections": "In the guideline this is the handler's mandatory first task: map the household's overall situation from Kela's background data and the documents. It is not a system lookup. Criminal Sanctions Agency data is never mentioned as a source; prison only appears as a payment and termination rule.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "T_COMPLETENESS",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Kela vastaa siitä, että asia tulee selvitetyksi. Toimihenkilön velvollisuus on huolehtia siitä, että vireille pantu asia selvitetään huolellisesti ja ratkaisun pohjaksi tulevat kaikki tarvittavat tiedot ja selvitykset, joilla arvioidaan olevan merkitystä asian ratkaisemiselle."
+      },
+      {
+        "page": "p. 4",
+        "quote": "Täydennä epäselväksi jääneet asiat asiakkaalta ensisijaisesti puhelimitse."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Voit jatkaa asian käsittelyä vasta, kun lomake AT5 on saatu."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "guideline_merges_it",
+    "corrections": "The guideline frames this as the staff member's general duty to investigate the case ('asian selvittäminen'), together with the first review of the household's overall situation, rather than a separate completeness check. One explicit hard gate is AT5: processing cannot continue until it is received.",
+    "reviewer_confidence": 0.65
+  },
+  {
+    "node_id": "D_COMPLETE",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 64",
+        "quote": "Jos yleistä asumistukea koskevaa hakemusta ei hakemuksen puutteellisuuden vuoksi voida käsitellä, Kelan tulee pyytää hakijalta hakemuksen ratkaisemiseen tarvittavat tiedot mahdollisimman pian, kuitenkin viimeistään 30. kalenteripäivänä hakemuksen saapumisesta."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Voit jatkaa asian käsittelyä vasta, kun lomake AT5 on saatu."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "The incomplete branch (request information by day 30) is confirmed. The guideline does not set residence determination as the next step after completeness; it only requires the insurance/residence decision to exist before the allowance decision.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_REQUEST_INFO",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 4",
+        "quote": "Täydennä epäselväksi jääneet asiat asiakkaalta ensisijaisesti puhelimitse. Käytä tarvittaessa viestipalvelua tai asiakaskirjettä."
+      },
+      {
+        "page": "p. 26",
+        "quote": "Yleisen asumistuen hakija edustaa ruokakuntaa, joten asumistukihakemuksen tarvittavat tiedot pyydetään hakijalta."
+      },
+      {
+        "page": "p. 63",
+        "quote": "Jos riittäviä tai luotettavia tietoja ei saada hakijalta, voidaan talletuksia yms. selvittää rahalaitoksilta."
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_guideline": "Handler (käsittelijä) completes missing information with the applicant",
+    "automation_check": "different",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "The guideline has the handler request missing information, primarily by phone, and only if needed by message service or customer letter. It is not an automated system notification. Requests go to the applicant as household representative, and financial institutions are asked only if the applicant's information is insufficient or unreliable.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "T_PROVIDE_INFO",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 4",
+        "quote": "Täydennä epäselväksi jääneet asiat asiakkaalta ensisijaisesti puhelimitse. Käytä tarvittaessa viestipalvelua tai asiakaskirjettä."
+      },
+      {
+        "page": "p. 32",
+        "quote": "Lisäselvitykset pyydetään asumistuen hakijalta."
+      },
+      {
+        "page": "p. 72",
+        "quote": "ruokakunta ei toimita pyynnöstä huolimatta kohtuullisessa ajassa asumistuen tarkistuksessa tarvittavia tietoja."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "supported",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "The applicant does supply the information, but the primary channel in the guideline is a phone call from the handler, then the message service or a letter; the map lists only OmaKela or post. In reviews, not supplying information within a reasonable time is a termination ground.",
+    "reviewer_confidence": 0.55
+  },
+  {
+    "node_id": "D_INFO_PROVIDED",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 65",
+        "quote": "Näissä tilanteissa hakemus on ratkaistava 14 kalenteripäivän kuluessa siitä, kun Kela on saanut käyttöönsä asian ratkaisemiseksi tarvittavat tiedot, tai määräaika selvitysten antamiselle on kulunut."
+      },
+      {
+        "page": "p. 72",
+        "quote": "ruokakunta ei toimita pyynnöstä huolimatta kohtuullisessa ajassa asumistuen tarkistuksessa tarvittavia tietoja."
+      },
+      {
+        "page": "p. 73",
+        "quote": "Puuttuvat tarpeelliset tiedot Tarkistamisperusteen mukaisesta ajankohdasta"
+      }
+    ],
+    "actor_check": "unknown",
+    "actor_in_guideline": "",
+    "automation_check": "unknown",
+    "order_check": "contradicted",
+    "order_note": "For a review or ongoing allowance, failing to supply requested information leads to termination (lakkautus) from the review-ground date; the map instead continues to residence and household assessment. For AT5, processing cannot continue at all without it.",
+    "granularity": "same",
+    "corrections": "The 14-day decision deadline is confirmed, counted from receiving the information or from the expiry of the deadline set for it. The guideline does not state a 'decide on available information' rule. For reviews, non-provision is a termination ground, so the failure branch should lead to termination there.",
+    "reviewer_confidence": 0.6
+  },
+  {
+    "node_id": "T_RESIDENCE",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 11",
+        "quote": "Ruokakuntaan kuuluvaksi katsotaan vain Suomessa asuvat henkilöt. Yleisen asumistuen saaminen edellyttää sitä, että hakija asuu vakinaisesti Suomessa."
+      },
+      {
+        "page": "p. 12",
+        "quote": "Kun käsittelet yleistä asumistukea, muista tarkistaa, onko henkilön katsottu asuvan Suomessa vakinaisesti. Tarkista myös mahdolliset etuusrajoitukset."
+      },
+      {
+        "page": "p. 12",
+        "quote": "Voit tehdä asumistukiratkaisun vasta vakuuttamisratkaisun jälkeen."
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_guideline": "Housing-allowance handler only checks residence; it is decided in a separate Kela insurance decision (vakuuttamisratkaisu) under AspSotuL",
+    "automation_check": "same",
+    "order_check": "supported",
+    "order_note": "",
+    "granularity": "guideline_splits_it",
+    "corrections": "The housing-allowance handler does not decide residence. They check whether a separate insurance decision has found the person permanently resident, and check any benefit restriction excluding the allowance. The allowance decision must wait for that insurance decision. The map also omits the Regulation 492/2011 route for EU/EEA workers and their family members, and the exclusion of students staying only to study.",
+    "reviewer_confidence": 0.75
+  },
+  {
+    "node_id": "T_HOUSEHOLD",
+    "verdict": "confirmed_step",
+    "evidence": [
+      {
+        "page": "p. 8",
+        "quote": "tee harkinta avoliitosta tapauskohtaisesti kokonaisharkinnan perusteella."
+      },
+      {
+        "page": "p. 21",
+        "quote": "Yleisessä asumistuessa henkilö voi kuulua vain yhteen ruokakuntaan kerrallaan. Ratkaisevaa yleisessä asumistuessa on yleensä tosiasiallinen asuminen."
+      },
+      {
+        "page": "p. 22",
+        "quote": "Poista puoliso ruokakunnasta seuraavan kuukauden alusta lukien, kun hänen on todettu tarvitsevan pysyvää laitoshoitoa."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "Confirmed as a handler judgment, including a case-by-case cohabitation assessment that may need extra information. Actual living arrangements decide, not the population register, except for a child in alternating or disputed residence, where the permanent VTJ address decides. A temporary occupant can stay up to six months without joining the household. When non-members live in the dwelling, costs are divided by head count.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "T_INCOME",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 41",
+        "quote": "Tulot arvioidaan erikseen jokaiselle ruokakunnan jäsenelle jokaiseen asumistuen myöntö- tai tarkistusratkaisuun joko jatkuvana tulona tai keskiarvotulona."
+      },
+      {
+        "page": "p. 42",
+        "quote": "Ansiotulovähennystä koskeva yleisen asumistuen pykälä oli voimassa 1.9.2015 - 31.3.2024."
+      },
+      {
+        "page": "p. 57",
+        "quote": "Arvioi työttömyysetuus tuloksi, vaikka työvoimapoliittista lausuntoa tai lomautustodistusta ei vielä ole Kelassa."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "The step is confirmed as a handler estimate per member. However, the applied rule R_CALC_EARNED_INCOME_DEDUCTION (300 EUR/month, 'in force') is obsolete: the deduction applied only 1.9.2015 to 31.3.2024. Also missing: the 2,000 EUR deposit allowance when estimating interest; minimum income now equals the general-support (yleistuki) amount, not the labour market subsidy, from 1.5.2026; and the rental-income cap at the section 9 maximum is not in the guideline.",
+    "reviewer_confidence": 0.8
+  },
+  {
+    "node_id": "T_ASSETS",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 58",
+        "quote": "Jos omaisuus ylittää omaisuusrajat, ruokakunnan tulona otetaan huomioon mainitun määrän ylittävästä omaisuudesta 20 prosenttia."
+      },
+      {
+        "page": "p. 59",
+        "quote": "Jos ruokakunnan omaisuus käyttövaravähennyksen ja velkojen vähentämisen jälkeen on vähintään 50 000 euroa, yleiseen asumistukeen ei ole oikeutta lainkaan."
+      },
+      {
+        "page": "p. 63",
+        "quote": "Voit selvittää rahastojen vuoden viimeisen pörssipäivän arvot Kauppalehden sivulta."
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_guideline": "Handler investigates and values assets ('Omaisuuden selvittäminen', 'Selvitä', 'Voit selvittää') and registers them in the system; only the arithmetic is plausibly automatic",
+    "automation_check": "different",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "guideline_splits_it",
+    "corrections": "Thresholds, the 20 % conversion (divided by 12) and the 50,000 EUR ceiling are confirmed. Before the system can compute anything, the handler must judge which assets count (ownership plus management right), value them per type, deduct the 2,000 EUR per-member deposit allowance and long-term debts, and ask the applicant or institutions if needed.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "T_COSTS",
+    "verdict": "confirmed_with_corrections",
+    "evidence": [
+      {
+        "page": "p. 38",
+        "quote": "Vuokra-asunnossa asumismenoiksi hyväksytään • vuokra, jonka ruokakunta itse maksaa"
+      },
+      {
+        "page": "p. 37",
+        "quote": "Tilantarve arvioidaan jokaisen ratkaisun yhteydessä ja asiakkaan tilanteesta tulee tehdä tapauskohtainen kokonaisharkinta."
+      },
+      {
+        "page": "p. 4",
+        "quote": "Yleistä asumistukea ei myönnetä 1.1.2025 alkaen omistusasuntojen asumismenoihin."
+      }
+    ],
+    "actor_check": "different",
+    "actor_in_guideline": "Handler judgment (e.g. disability extra space, rental vs owner-occupied classification, business-use share, cost sharing), with cost registration in the system",
+    "automation_check": "different",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "same",
+    "corrections": "Accepted costs are not purely deterministic: the handler judges the disability extra-space need in every decision, rental versus owner-occupied status, the business-use share, employer-paid rent, and cost division with non-members. Electricity included in rent and subtenant rent are deducted. Water and heating use norms. The rule R_CALC_LEGACY_OWNER_COSTS is obsolete: no allowance for owner-occupied dwellings since 1.1.2025, and right-of-occupancy loan interest is not accepted from 1.1.2025.",
+    "reviewer_confidence": 0.7
+  },
+  {
+    "node_id": "T_ELIG_CHECK",
+    "verdict": "confirmed_rule_only",
+    "evidence": [
+      {
+        "page": "p. 9",
+        "quote": "Yleistä asumistukea ei myönnetä (YAL 8 §) • yksin asuvalle henkilölle, jolla on oikeus eläkkeensaajan asumistukeen"
+      },
+      {
+        "page": "p. 41",
+        "quote": "Jos ruokakuntaan kuuluvien henkilöiden tulojen yhteismäärä ylittää tulorajat, joilla asumistukea voidaan myöntää ruokakunnalle asumismenojen suuruudesta riippumatta, asumistukea ei myönnetä."
+      },
+      {
+        "page": "p. 18",
+        "quote": "Yleistä asumistukea ei myönnetä • 1.8.2025 alkaen opiskelijalle, joka opintotukilain mukaan on oikeutettu opintotuen asumislisään."
+      }
+    ],
+    "actor_check": "same",
+    "actor_in_guideline": "",
+    "automation_check": "same",
+    "order_check": "silent",
+    "order_note": "",
+    "granularity": "guideline_splits_it",
+    "corrections": "Each condition is stated (dwelling, students, pensioners, residence, income limit, asset ceiling), but the guideline describes no consolidated check step. The map omits other exclusions: conscripts whose need arises from service (military allowance applies), civil-service housing, employer housing as a fringe benefit, municipal payment commitments in service housing, rent prepaid as social assistance, at least one full calendar month of living, and the 15 EUR minimum payable amount.",
+    "reviewer_confidence": 0.7
+  }
+]
