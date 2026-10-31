@@ -1,0 +1,1480 @@
+{
+  "country_id": "fr",
+  "country_name": "France",
+  "surveyed_at": "",
+  "model": "",
+  "government_structure": "Unitary, decentralised state. National social-security funds (Caf/Cnaf for family and housing benefits and RSA payment, Cpam/Cnam for health insurance, Carsat/Cnav for basic pensions, Urssaf for contributions, MSA for the agricultural regime) and national administrations (DGFiP for tax, DGDDI for customs, France Travail for employment and unemployment benefits, INPI guichet unique for business registration, prefectures/DGEF for residence permits and naturalisation, ANTS/France Titres with prefecture CERTs for identity documents, driving licences and vehicle registration) deliver the main services. Départements own the RSA decision, insertion and disability (MDPH) and elderly-care (APA) services; communes hold civil registration (état civil) and receive identity-document applications; the MEAE service central d'état civil handles civil status of French nationals abroad.",
+  "official_languages": [
+    "fr"
+  ],
+  "web_languages": [
+    "fr",
+    "en (machine-translated on service-public.gouv.fr)"
+  ],
+  "legal_information": [
+    {
+      "name": "Légifrance",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000031366350/",
+      "publisher": "DILA (Direction de l'information légale et administrative, Premier ministre)",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/dataservices/672cf648a474f2d73502b5cd",
+      "languages": [
+        "fr"
+      ],
+      "note": "Consolidated codes, laws, decrees and arrêtés with ChronoLégi point-in-time versions (CRPA shown 'En vigueur au 31/10/2026', data last updated 28 May 2026). API Légifrance (JSON) on PISTE after free registration, Licence Ouverte 2.0, per-token quotas; stable version since 4 April 2023. Fonds also cover JORF, circulaires et instructions (10,644 texts, filters by ministry/date/NOR/opposability), CNIL, administrative and judicial case law (CETAT: 573,087 decisions).",
+      "consolidated_texts": true,
+      "consolidation_lag": "Consolidation is continuous; CRPA page showed data update of 28 May 2026 against a view date of 31 Oct 2026; LEGI XML dump on data.gouv.fr updated 29 Oct 2026.",
+      "covers_regulations": true,
+      "format": "mixed"
+    },
+    {
+      "name": "LEGI, JORF, KALI, CIRCULAIRES open-data dumps (echanges.dila.gouv.fr)",
+      "url": "https://www.data.gouv.fr/fr/datasets/legi-codes-lois-et-reglements-consolides/",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://echanges.dila.gouv.fr/OPENDATA/",
+      "languages": [
+        "fr"
+      ],
+      "note": "LEGI: 73 codes in force + 29 repealed, exhaustive for laws, ordinances and decrees since 1945, every article version kept; XML with DILA DTDs, HTTPS and FTPS bulk download, Licence Ouverte. Most ministerial circulars are not in LEGI (separate CIRCULAIRES fonds).",
+      "consolidated_texts": true,
+      "consolidation_lag": "XML updated 'avant-hier' relative to 30 Oct 2026 view",
+      "covers_regulations": true,
+      "format": "xml"
+    },
+    {
+      "name": "Journal officiel de la République française (JORF, édition Lois et décrets)",
+      "url": "https://www.legifrance.gouv.fr/jorf/jo",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/datasets/jorf-les-donnees-de-l-edition-lois-et-decrets-du-journal-officiel",
+      "languages": [
+        "fr"
+      ],
+      "note": "Daily issues (n° 0255 of 31 Oct 2026 opened): decrees, arrêtés, circulars, nominations; authenticated PDF with ELI identifier plus HTML per text; digital archive from 2 June 2004, scanned 1869-2004; JORF XML dump on data.gouv.fr.",
+      "consolidated_texts": false,
+      "consolidation_lag": "",
+      "covers_regulations": true,
+      "format": "mixed"
+    },
+    {
+      "name": "BOFiP-Impôts (Bulletin officiel des finances publiques)",
+      "url": "https://bofip.impots.gouv.fr/",
+      "publisher": "DGFiP",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Official commentaries of tax provisions (opposable administrative doctrine, L80 A LPF per secondary sources). Plan de classement by series (IR, TVA, BIC, IS, CF...), archive site bofip-archives.impots.gouv.fr, RSS feeds, licence etalab-2.0. No API or bulk export found on the site; service-public fiches cite BOI references.",
+      "consolidated_texts": true,
+      "consolidation_lag": "updated continuously; entries labelled 'Mise à jour'",
+      "covers_regulations": false,
+      "format": "html"
+    },
+    {
+      "name": "BOSS (Bulletin officiel de la Sécurité sociale)",
+      "url": "https://boss.gouv.fr/",
+      "publisher": "Direction de la Sécurité sociale / Urssaf",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Opposable doctrine on social contributions; site returned HTTP 503 on three attempts during this survey, described only from a secondary source (cms.law: 'base documentaire unique, gratuite et opposable'). To be verified in the authority pass.",
+      "consolidated_texts": true,
+      "consolidation_lag": "unknown",
+      "covers_regulations": false,
+      "format": "unknown"
+    }
+  ],
+  "catalogues": [
+    {
+      "name": "Service-Public.gouv.fr (Vos droits et démarches, particuliers)",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-particuliers",
+      "languages": [
+        "fr",
+        "en (machine translation)"
+      ],
+      "note": "RSA fiche F19778 opened: situation questionnaire, 'La démarche par étapes' (12 steps, Caf and MSA variants), conditions, deadlines (3-month award, 2-year recovery), cerfa 15481/15482/14130, online services R50282/R50284, simulator R558, 'Textes de loi et références' linking CASF articles and a 2012 note d'information, responsible bodies (Caf/MSA, département, France Travail, Défenseur des droits, tribunal administratif), channels. Full XML dump (23.1 MB, schema v3.5, updated daily) on data.gouv.fr; English pages flagged as automatic translation.",
+      "scope": "national",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "conditions",
+        "steps",
+        "deadlines",
+        "forms (cerfa)",
+        "online services",
+        "simulators",
+        "legal basis",
+        "responsible unit",
+        "channels",
+        "où s'adresser",
+        "FAQ"
+      ]
+    },
+    {
+      "name": "Entreprendre.Service-Public.gouv.fr (entreprises)",
+      "url": "https://entreprendre.service-public.gouv.fr/",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-professionnels-entreprises",
+      "languages": [
+        "fr"
+      ],
+      "note": "Fiches pratiques by life stage and management topic, démarches en ligne, cerfa forms, simulators, templates; separate XML dataset on data.gouv.fr (listed on https://www.service-public.gouv.fr/P10004).",
+      "scope": "national",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "conditions",
+        "steps",
+        "forms",
+        "online procedures",
+        "legal basis",
+        "simulators"
+      ]
+    },
+    {
+      "name": "Annuaire de l'administration (API Annuaire)",
+      "url": "https://www.data.gouv.fr/dataservices/672cf645e35d4f6741f6bfa6",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://api-lannuaire.service-public.gouv.fr/api/explore/v2.1",
+      "languages": [
+        "fr"
+      ],
+      "note": "Directory of national bodies (Référentiel de l'organisation administrative de l'État) and local services (mairies, services de l'État, organismes sociaux) with addresses, hours, geolocation; JSON/CSV/Excel, open, updated daily on working days (OpenDataSoft).",
+      "scope": "national_and_subnational",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "organisation",
+        "address",
+        "contact",
+        "opening hours",
+        "responsible officials (national)"
+      ]
+    },
+    {
+      "name": "Observatoire de la qualité des démarches en ligne (Vos démarches essentielles)",
+      "url": "https://observatoire.numerique.gouv.fr/",
+      "publisher": "DINUM",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/fr/datasets/observatoire-de-la-qualite-des-demarches-en-ligne/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Quarterly quality scoreboard of the main online procedures by ministry/administration/démarche; 29 ODS files + 2 CSV on data.gouv.fr, last updated 20 Oct 2026. Page content is JS-rendered; indicator list not readable in this pass.",
+      "scope": "national",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "démarche",
+        "administration",
+        "quality indicators (quarterly)"
+      ]
+    },
+    {
+      "name": "demarche.numerique.gouv.fr (ex demarches-simplifiees.fr)",
+      "url": "https://www.demarches-simplifiees.fr/",
+      "publisher": "DINUM",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Platform on which 15,853 partner administrations build online procedures; 22,778,771 dossiers filed; open source. Not a catalogue of procedures but an index of forms built by national and local bodies.",
+      "scope": "national_and_subnational",
+      "record_count_estimate": null,
+      "fields_per_record": [
+        "form fields",
+        "pieces justificatives"
+      ]
+    }
+  ],
+  "foi": {
+    "law_exists": true,
+    "law_name": "Code des relations entre le public et l'administration, livre III (ex loi n° 78-753 du 17 juillet 1978), amended by loi n° 2016-1321 pour une République numérique",
+    "law_url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000031366350/LEGISCTA000031367735/",
+    "proactive_publication_duties": [
+      "L312-1-1: documents communicated following access requests (and updates), documents listed in the répertoire des informations publiques (L322-6), regularly updated databases, and data of economic, social, health or environmental interest (bodies above a staff threshold; communes under 3,500 exempt)",
+      "L312-1-3: rules defining the main algorithmic processing used to ground individual decisions (bodies of 50+ FTE); L311-3-1 gives individuals the right to the rules and main characteristics of such processing",
+      "R312-8 CRPA / décret 2018-1047: ministerial circulars and instructions must be published on Légifrance; unpublished ones are not opposable and are deemed repealed after four months (from secondary sources: landot-avocats, union-habitat)"
+    ],
+    "procedure_publication_duty": false,
+    "disclosure_platforms": [
+      {
+        "name": "Ma Dada",
+        "url": "https://madada.fr/",
+        "publisher": "Open Knowledge France",
+        "machine_readable": false,
+        "api_url": "",
+        "languages": [
+          "fr"
+        ],
+        "note": "Alaveteli instance run since 2019; 52,938 requests to 51,927 authorities; all exchanges and documents published."
+      },
+      {
+        "name": "CADA avis et conseils (open data)",
+        "url": "https://www.data.gouv.fr/fr/datasets/avis-et-conseils-de-la-cada/",
+        "publisher": "CADA",
+        "machine_readable": true,
+        "api_url": "https://www.data.gouv.fr/fr/datasets/avis-et-conseils-de-la-cada/",
+        "languages": [
+          "fr"
+        ],
+        "note": "All CADA opinions since end-2012 plus a 4,000-opinion panel 2000-2012; CSV (189 MB main file, updated 14 Aug 2026); searchable on cada.fr ('Rechercher un avis'). CADA referral is mandatory before litigation."
+      }
+    ]
+  },
+  "internal_guidance_practice": "Strong, by French standards unusual, practice of publishing regulatory instructions to the network, but not procedure manuals or case-system descriptions. Cnaf publishes its 'instructions au réseau' (types C = circulaire, LR = lettre réseau, IT = instruction technique) on caf.fr by year; the template opened (LR 2025-172) carries addressees (directeurs de Caf), issuing department, 'Processus de rattachement: M5 ...' (a reference to the branch's internal process map), 'Diffusion réseau / Diffusion caf.fr / Communicable loi CADA', texts abrogated and actions with deadlines. Cnav publishes numbered circulaires (e.g. 2025-10 of 14 March 2025) addressed to the directors of Carsat/CGSS with scope tables and numbered points on legislation.lassuranceretraite.fr. France Travail publishes a Bulletin officiel (bo.francetravail.org) with instructions DG, décisions, délibérations and notes d'information, searchable by theme/category/date with repealed texts; most entries are delegations of signature, but instructions DG (e.g. 2024-7 on mobility aid, updated June 2026) exist. DGFiP's BOFiP is the complete opposable tax doctrine and DGFiP publishes the source code of its tax calculators (M language, C, Java, Cobol) on GitLab Adullact. Unédic publishes the circulaires applying unemployment-insurance rules (2026-06). Ministerial circulars are on Légifrance (10,644 texts) under R312-8 CRPA. Cnaf published in January 2026 the variables and PySpark source code of its data-mining risk-scoring model (DMDE 2026) after litigation before the Conseil d'État. Not found: Cnaf's internal 'suivi législatif' and processing manuals for the Cristal case system, France Travail's operational procedure guides, CNAM lettres-réseau for the current years (circulaires.ameli.fr returned 503 on all attempts; only 1980s-2005 PDFs surfaced in search), Urssaf/Acoss lettres circulaires (urssaf.fr returned 503). caf.fr HTML pages are behind bot protection (Radware) although the PDFs download.",
+  "internal_guidance_examples": [
+    {
+      "name": "Cnaf instruction au réseau LR 2025-172 (template with process reference and CADA flag)",
+      "url": "https://www.caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/qui%20sommes%20nous/Textes%20de%20r%C3%A9f%C3%A9rence/Circulaires/2025/LR-2025-172.pdf",
+      "publisher": "Cnaf",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Header fields: type C/LR/IT, number, issuing direction and département, addressees (Mesdames et Messieurs les Directeurs), 'Processus de rattachement: M5 - Accompagner ... les partenaires d'action sociale', 'Diffusion réseau / Diffusion caf.fr / Communicable loi CADA', textes de référence, documents abrogés, actions à réaliser et échéances. Listing pages: https://caf.fr/nous-connaitre/circulaires (bot-protected)."
+    },
+    {
+      "name": "Cnav circulaires (legislation.lassuranceretraite.fr)",
+      "url": "https://legislation.lassuranceretraite.fr/Pdf/circulaire_cnav_2025_10_14032025.pdf",
+      "publisher": "Cnav, Direction juridique et de la réglementation nationale",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Circulaire 2025-10 of 14 March 2025 on contribution rates, addressed to directors of Carsat, CGSS and CSS Mayotte, with scope grid and numbered points; predictable file names circulaire_cnav_YYYY_NN_DDMMYYYY.pdf (2023-2026 seen in search). Site root not resolvable from this session."
+    },
+    {
+      "name": "Bulletin officiel de France Travail",
+      "url": "https://bo.francetravail.org/",
+      "publisher": "France Travail, Direction des affaires juridiques",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Searchable register (theme, category incl. Instruction and Note d'information, date, repealed texts); issues as PDF e.g. BO n° 42 of 28 July 2026 (https://bo.francetravail.org/files/live/sites/bope/files/pdf-files/2026/bo2026-42.pdf) with avis on a draft decree on jobseeker declarations and délibérations; ANPE archive 2000-2008."
+    },
+    {
+      "name": "BOFiP-Impôts",
+      "url": "https://bofip.impots.gouv.fr/",
+      "publisher": "DGFiP",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Full opposable doctrine with plan de classement and archive; cited from service-public fiches (BOI-RSA-BASE-20-20 etc.)."
+    },
+    {
+      "name": "DGFiP source code of tax calculators (IR 2010-2024, IFI, TH, TF, CFE, CVAE, IS)",
+      "url": "https://www.impots.gouv.fr/ouverture-des-donnees-publiques-de-la-dgfip",
+      "publisher": "DGFiP",
+      "machine_readable": true,
+      "api_url": "https://gitlab.adullact.net/dgfip",
+      "languages": [
+        "fr"
+      ],
+      "note": "M-language, C, Java, Cobol sources plus PDF algorithm descriptions; GitLab Adullact blocked the fetch (Anubis) in this session; 'Base documentaire de la DGFiP communicable au public' on data.gouv.fr."
+    },
+    {
+      "name": "Légifrance - Circulaires et instructions",
+      "url": "https://www.legifrance.gouv.fr/search/circ?tab_selection=circ&searchField=ALL&query=&page=1&init=true",
+      "publisher": "DILA / ministries",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/dataservices/672cf648a474f2d73502b5cd",
+      "languages": [
+        "fr"
+      ],
+      "note": "10,644 texts; filters by ministère déposant/concerné, date, opposability, domain, NOR; available through the Légifrance API."
+    },
+    {
+      "name": "Unédic - circulaires d'application de la réglementation d'assurance chômage",
+      "url": "https://www.unedic.org/la-reglementation",
+      "publisher": "Unédic",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Circulaire 2026-06 (rules from 1 Sept 2026), 2025-05 (contributions), thematic fiches; these are the rulebooks France Travail applies."
+    },
+    {
+      "name": "Cnaf publication of risk-scoring model criteria and PySpark source code (DMDE 2026)",
+      "url": "https://www.lemondeinformatique.fr/actualites/lireamp-la-cnaf-publie-le-code-source-de-ses-programmes-de-scoring-99258.html",
+      "publisher": "Cnaf (reported by Le Monde Informatique)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Published mid-January 2026 on caf.fr ('modèle de datamining données entrantes'); variables for two models and four programs; Conseil d'État challenge by LQDN coalition ongoing. caf.fr page not reachable from this session."
+    }
+  ],
+  "appeals_sources": [
+    {
+      "name": "ArianeWeb (Conseil d'État)",
+      "url": "https://www.conseil-etat.fr/ressources/decisions-contentieuses/arianeweb2",
+      "publisher": "Conseil d'État",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Nearly 300,000 CE and CAA decisions, analyses and rapporteur conclusions; important CE decisions online 24h after delivery; simple and expert search."
+    },
+    {
+      "name": "Open data des décisions de la justice administrative",
+      "url": "https://opendata.justice-administrative.fr/",
+      "publisher": "Conseil d'État",
+      "machine_readable": true,
+      "api_url": "https://opendata.justice-administrative.fr/",
+      "languages": [
+        "fr"
+      ],
+      "note": "CE since 30 Sept 2021, CAA since 31 March 2022, TA since 30 June 2022; XML in zip by court/year/month; search engine with court filter since 2024."
+    },
+    {
+      "name": "Légifrance - Jurisprudence administrative (fonds CETAT)",
+      "url": "https://www.legifrance.gouv.fr/search/cetat?tab_selection=cetat&searchField=ALL&query=&page=1&init=true",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/dataservices/672cf648a474f2d73502b5cd",
+      "languages": [
+        "fr"
+      ],
+      "note": "573,087 decisions (CE, CAA, TA filters), Recueil Lebon flag, available via API."
+    },
+    {
+      "name": "Judilibre (Cour de cassation) API",
+      "url": "https://www.data.gouv.fr/fr/dataservices/api-judilibre",
+      "publisher": "Cour de cassation",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/fr/dataservices/api-judilibre",
+      "languages": [
+        "fr"
+      ],
+      "note": "Judicial-order decisions (Cour de cassation since 2021, cours d'appel, first-instance by phased calendar); pseudonymised; PISTE registration; Licence Ouverte 2.0. Relevant for social-security disputes (pôle social of tribunaux judiciaires)."
+    },
+    {
+      "name": "CADA avis (ombudsman-type body for access to documents)",
+      "url": "https://www.cada.fr/",
+      "publisher": "CADA",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/fr/datasets/avis-et-conseils-de-la-cada/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Searchable on cada.fr and full CSV dump on data.gouv.fr."
+    },
+    {
+      "name": "Défenseur des droits - base documentaire juridique",
+      "url": "https://juridique.defenseurdesdroits.fr/",
+      "publisher": "Défenseur des droits",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Returned HTTP 503 on three attempts (also defenseurdesdroits.fr); not verified in this pass. The Défenseur is the mandatory mediator before RSA litigation (per service-public F19778)."
+    }
+  ],
+  "audit_office": [
+    {
+      "name": "Cour des comptes - publications",
+      "url": "https://www.ccomptes.fr/fr",
+      "publisher": "Cour des comptes",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Publications filterable by institution and document type, search engine recherche.ccomptes.fr; annual RALFSS on social security (2026 edition covers pension revaluation backlogs and fraud). Opened: 'L'Agence nationale des titres sécurisés, exercices 2018-2022' (observations définitives S2024-0271, https://www.ccomptes.fr/fr/documents/69308) which describes the mairie -> CERT -> ANTS -> Imprimerie nationale chain and delivery delays; also 'La délivrance des titres d'identité' (March 2024, https://www.ccomptes.fr/sites/default/files/2024-03/20240314-Delivrance-titres-identite-et-circulation.pdf)."
+    }
+  ],
+  "statistics_sources": [
+    {
+      "name": "France Travail - Statistiques & analyses / open data",
+      "url": "https://francetravail.org/statistiques-analyses/",
+      "publisher": "France Travail",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/datasets/demandeurs-demploi-inscrits-a-france-travail",
+      "languages": [
+        "fr"
+      ],
+      "note": "Jobseeker stocks/flows, indemnisation (quarterly), training, satisfaction; numbered releases; monthly series on data.gouv.fr; regional results pages publish 'taux de premier paiement dans les délais' by agency; francetravail.io API platform."
+    },
+    {
+      "name": "Cafdata (Cnaf open data)",
+      "url": "https://data.caf.fr/",
+      "publisher": "Cnaf",
+      "machine_readable": true,
+      "api_url": "https://data.caf.fr/api/explore/v2.1/console",
+      "languages": [
+        "fr"
+      ],
+      "note": "OpenDataSoft portal: Panorama des prestations légales, territorial explorer, API console; dataset count not rendered in this pass."
+    },
+    {
+      "name": "DATA.DREES",
+      "url": "https://data.drees.solidarites-sante.gouv.fr/",
+      "publisher": "DREES (ministères sociaux)",
+      "machine_readable": true,
+      "api_url": "https://data.drees.solidarites-sante.gouv.fr/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Themes: protection sociale, retraite, minima sociaux, handicap, enfance-famille."
+    },
+    {
+      "name": "Services Publics + : résultats des services publics près de chez moi",
+      "url": "https://www.plus.transformation.gouv.fr/resultats-des-services-publics-pres-de-chez-moi",
+      "publisher": "DITP",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Per-site quality results for Cnaf, Cnam, France Travail, préfectures, DGFiP, Urssaf, Carsat, CCMSA on common indicators; commitment 'Votre demande est traitée dans les délais annoncés'; no export seen."
+    },
+    {
+      "name": "Observatoire de la qualité des démarches en ligne (dataset)",
+      "url": "https://www.data.gouv.fr/fr/datasets/observatoire-de-la-qualite-des-demarches-en-ligne/",
+      "publisher": "DINUM",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Quarterly ODS files since 2019."
+    },
+    {
+      "name": "Data ameli",
+      "url": "https://data.ameli.fr/",
+      "publisher": "Cnam",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "OpenDataSoft portal: pathologies, professionnels de santé, accès aux soins, risques professionnels."
+    },
+    {
+      "name": "Open.urssaf",
+      "url": "https://open.urssaf.fr/",
+      "publisher": "Urssaf Caisse nationale",
+      "machine_readable": true,
+      "api_url": "https://portailapi.urssaf.fr/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Catalogue, dataviz, APIs."
+    },
+    {
+      "name": "DGFiP statistiques",
+      "url": "https://www.impots.gouv.fr/statistiques",
+      "publisher": "DGFiP",
+      "machine_readable": true,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Tax statistics by year 2000-2025 and territory; 'Études et statistiques' space; open data page lists datasets on data.gouv.fr."
+    }
+  ],
+  "procurement_portals": [
+    {
+      "name": "PLACE - Plateforme des achats de l'État",
+      "url": "https://www.marches-publics.gouv.fr/",
+      "publisher": "Ministère de l'Économie (DAE)",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Used by State services, public establishments, independent authorities, social security bodies and CDC; search without login; whether DCE download requires an account was not determinable from the home page."
+    },
+    {
+      "name": "BOAMP",
+      "url": "https://www.boamp.fr/",
+      "publisher": "DILA",
+      "machine_readable": true,
+      "api_url": "https://www.boamp.fr/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Official procurement notices with open data and API; notices link to buyer profiles for documents. France Travail, Cnav and Cnaf notices appear as BOAMP PDFs in search results."
+    }
+  ],
+  "rules_as_code": [
+    {
+      "name": "OpenFisca-France",
+      "url": "https://github.com/openfisca/openfisca-france",
+      "publisher": "OpenFisca community (originally Etalab/IPP)",
+      "machine_readable": true,
+      "api_url": "https://api.fr.openfisca.org/latest/parameters",
+      "languages": [
+        "fr",
+        "en"
+      ],
+      "note": "AGPL model of the French tax-benefit system; 16,705 commits; public Web API (parameters endpoint >1 MB JSON, hundreds of parameters e.g. chomage.allocations_assurance_chomage.ass.montant_plein); legislation explorer legislation.fr.openfisca.org returned 502 during the survey."
+    },
+    {
+      "name": "mon-entreprise.urssaf.fr / modele-social (publicodes)",
+      "url": "https://github.com/betagouv/mon-entreprise",
+      "publisher": "Urssaf / beta.gouv.fr",
+      "machine_readable": true,
+      "api_url": "https://mon-entreprise.urssaf.fr/",
+      "languages": [
+        "fr"
+      ],
+      "note": "MIT-licensed publicodes rules for contributions, taxes and social rights behind the Urssaf simulators."
+    },
+    {
+      "name": "DGFiP tax calculator source code (M language and others)",
+      "url": "https://www.impots.gouv.fr/ouverture-des-donnees-publiques-de-la-dgfip",
+      "publisher": "DGFiP",
+      "machine_readable": true,
+      "api_url": "https://gitlab.adullact.net/dgfip",
+      "languages": [
+        "fr"
+      ],
+      "note": "IR 2010-2024, ISF/IFI, TH, TF, CFE/IFER, CVAE, IS; PDF algorithms."
+    },
+    {
+      "name": "Cnaf DMDE 2026 scoring model code",
+      "url": "https://www.lemondeinformatique.fr/actualites/lireamp-la-cnaf-publie-le-code-source-de-ses-programmes-de-scoring-99258.html",
+      "publisher": "Cnaf",
+      "machine_readable": false,
+      "api_url": "",
+      "languages": [
+        "fr"
+      ],
+      "note": "Variables and four PySpark programs published on caf.fr in January 2026 (reported; caf.fr page not reachable here)."
+    }
+  ],
+  "open_data_portals": [
+    {
+      "name": "data.gouv.fr",
+      "url": "https://www.data.gouv.fr/fr/",
+      "publisher": "DINUM / Etalab",
+      "machine_readable": true,
+      "api_url": "https://www.data.gouv.fr/dataservices",
+      "languages": [
+        "fr",
+        "en"
+      ],
+      "note": "76K datasets and APIs, 384K files, 7K organisations; hosts DILA (service-public XML, LEGI/JORF/KALI), CADA, DINUM observatoire, France Travail series, DGFiP datasets."
+    },
+    {
+      "name": "code.gouv.fr",
+      "url": "https://code.gouv.fr/",
+      "publisher": "DINUM",
+      "machine_readable": true,
+      "api_url": "https://code.gouv.fr/sources/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Catalogue of public-sector source code repositories (SILL and sources)."
+    },
+    {
+      "name": "PISTE (API platform)",
+      "url": "https://piste.gouv.fr/",
+      "publisher": "AIFE",
+      "machine_readable": true,
+      "api_url": "https://piste.gouv.fr/",
+      "languages": [
+        "fr"
+      ],
+      "note": "Registration required; hosts Légifrance and Judilibre APIs."
+    }
+  ],
+  "authorities": [
+    {
+      "id": "dgfip",
+      "name": "Direction générale des Finances publiques",
+      "name_en": "Directorate General of Public Finances",
+      "url": "https://www.impots.gouv.fr/",
+      "domains": [
+        "tax",
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Income, local and business taxes; BOFiP doctrine; open-source calculators; also runs the Service des retraites de l'État."
+    },
+    {
+      "id": "dgddi",
+      "name": "Direction générale des douanes et droits indirects",
+      "name_en": "Customs and Indirect Taxes",
+      "url": "https://www.douane.gouv.fr/",
+      "domains": [
+        "customs",
+        "tax",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "EORI, excise, travel formalities, online procedures."
+    },
+    {
+      "id": "urssaf",
+      "name": "Urssaf Caisse nationale (ex-Acoss)",
+      "name_en": "Social contribution collection network",
+      "url": "https://www.urssaf.fr/",
+      "domains": [
+        "social_security",
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Contributions, auto-entrepreneur registration, CESU; site returned 503 in this session; open.urssaf.fr and mon-entreprise opened."
+    },
+    {
+      "id": "cnaf",
+      "name": "Caisse nationale des allocations familiales (réseau des Caf)",
+      "name_en": "National Family Allowance Fund",
+      "url": "https://www.caf.fr/",
+      "domains": [
+        "social_security",
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Family benefits, housing allowances, RSA and prime d'activité payment, AAH; caf.fr HTML behind bot protection, PDFs and data.caf.fr reachable."
+    },
+    {
+      "id": "cnav",
+      "name": "Caisse nationale d'assurance vieillesse (L'Assurance retraite, Carsat)",
+      "name_en": "National Old-Age Insurance Fund",
+      "url": "https://www.lassuranceretraite.fr/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Basic pensions, survivor pensions; circulaires on legislation.lassuranceretraite.fr."
+    },
+    {
+      "id": "cnam",
+      "name": "Caisse nationale de l'assurance maladie (Ameli, Cpam)",
+      "name_en": "National Health Insurance Fund",
+      "url": "https://www.ameli.fr/",
+      "domains": [
+        "health",
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Reimbursements, sick pay, complémentaire santé solidaire, occupational risks; ameli.fr returned 403 and circulaires.ameli.fr 503 in this session."
+    },
+    {
+      "id": "ccmsa",
+      "name": "Caisse centrale de la Mutualité sociale agricole",
+      "name_en": "Agricultural Social Security",
+      "url": "https://www.msa.fr/",
+      "domains": [
+        "social_security",
+        "health",
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Single fund for the agricultural regime: health, family, pensions, RSA."
+    },
+    {
+      "id": "france_travail",
+      "name": "France Travail (ex Pôle emploi)",
+      "name_en": "French public employment service",
+      "url": "https://www.francetravail.fr/",
+      "domains": [
+        "employment",
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Registration, unemployment benefits (ARE, ASS), aids, training; Bulletin officiel at bo.francetravail.org; statistics at francetravail.org."
+    },
+    {
+      "id": "unedic",
+      "name": "Unédic",
+      "name_en": "Unemployment insurance manager",
+      "url": "https://www.unedic.org/",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Sets and publishes unemployment-insurance rules and circulaires applied by France Travail."
+    },
+    {
+      "id": "agirc_arrco",
+      "name": "Agirc-Arrco",
+      "name_en": "Mandatory supplementary pension scheme (private sector)",
+      "url": "https://www.agirc-arrco.fr/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Paritarian body, not a state authority, but delivers mandatory pensions."
+    },
+    {
+      "id": "sre",
+      "name": "Service des retraites de l'État (DGFiP)",
+      "name_en": "State Pension Service",
+      "url": "https://retraitesdeletat.gouv.fr/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Civil servant and military pensions."
+    },
+    {
+      "id": "cdc_politiques_sociales",
+      "name": "Caisse des Dépôts - Direction des politiques sociales (CNRACL, Ircantec, RAFP)",
+      "name_en": "Caisse des Dépôts pension management",
+      "url": "https://politiques-sociales.caissedesdepots.fr/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Local-government and hospital staff pensions; site returned 503 in this session."
+    },
+    {
+      "id": "cdc_mon_compte_formation",
+      "name": "Mon compte formation (Caisse des Dépôts)",
+      "name_en": "Personal training account",
+      "url": "https://www.moncompteformation.gouv.fr/",
+      "domains": [
+        "employment",
+        "education"
+      ],
+      "delivers_services_to_public": true,
+      "note": "CPF training funding; page rendered title only."
+    },
+    {
+      "id": "union_retraite",
+      "name": "GIP Union Retraite (Info Retraite)",
+      "name_en": "Inter-scheme pension portal",
+      "url": "https://www.info-retraite.fr/",
+      "domains": [
+        "pensions"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Single pension application and career correction across schemes."
+    },
+    {
+      "id": "cnous",
+      "name": "Cnous / Crous",
+      "name_en": "Student services (grants and housing)",
+      "url": "https://www.messervices.etudiant.gouv.fr/",
+      "domains": [
+        "education",
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Dossier social étudiant: bourses sur critères sociaux and Crous housing."
+    },
+    {
+      "id": "mesr_parcoursup",
+      "name": "Ministère de l'Enseignement supérieur - Parcoursup",
+      "name_en": "Higher-education admission platform",
+      "url": "https://www.parcoursup.gouv.fr/",
+      "domains": [
+        "education"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Returned 403 in this session; algorithm-publication case law (CC 2020-834 QPC) concerns it."
+    },
+    {
+      "id": "men",
+      "name": "Ministère de l'Éducation nationale",
+      "name_en": "Ministry of National Education",
+      "url": "https://www.education.gouv.fr/",
+      "domains": [
+        "education",
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "School grants (bourses de collège/lycée), enrolment, exams; fetch rate-limited, not opened."
+    },
+    {
+      "id": "anah",
+      "name": "Agence nationale de l'habitat",
+      "name_en": "National Housing Agency",
+      "url": "https://www.anah.gouv.fr/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "MaPrimeRénov', adaptation aids, Loc'Avantages."
+    },
+    {
+      "id": "action_logement",
+      "name": "Action Logement",
+      "name_en": "Employer-funded housing body",
+      "url": "https://www.actionlogement.fr/",
+      "domains": [
+        "housing"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Visale guarantee, loans, social housing access; paritarian body."
+    },
+    {
+      "id": "justice",
+      "name": "Ministère de la Justice (justice.fr, monespace.justice.fr)",
+      "name_en": "Ministry of Justice",
+      "url": "https://www.justice.fr/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Aide juridictionnelle, procedures; justice.fr was in maintenance during the survey."
+    },
+    {
+      "id": "cjn",
+      "name": "Casier judiciaire national",
+      "name_en": "National Criminal Records Office",
+      "url": "https://casier-judiciaire.justice.gouv.fr/",
+      "domains": [
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Bulletin n°3 online with FranceConnect."
+    },
+    {
+      "id": "asp",
+      "name": "Agence de services et de paiement",
+      "name_en": "Services and Payment Agency",
+      "url": "https://www.asp.gouv.fr/",
+      "domains": [
+        "employment",
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Pays apprenticeship/hiring aids, activité partielle, agricultural aids; page rendered empty."
+    },
+    {
+      "id": "cnsa",
+      "name": "Caisse nationale de solidarité pour l'autonomie",
+      "name_en": "National Solidarity Fund for Autonomy",
+      "url": "https://www.cnsa.fr/",
+      "domains": [
+        "social_security",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Autonomy branch; MDPH (disability) and APA are departmental; site returned 503."
+    },
+    {
+      "id": "agefiph",
+      "name": "Agefiph",
+      "name_en": "Fund for employment of people with disabilities",
+      "url": "https://www.agefiph.fr/",
+      "domains": [
+        "employment"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Aids to disabled workers and employers; association with public mission."
+    },
+    {
+      "id": "banque_de_france",
+      "name": "Banque de France",
+      "name_en": "Bank of France",
+      "url": "https://www.banque-france.fr/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Surendettement commissions, droit au compte, FICP/FCC files."
+    },
+    {
+      "id": "insee",
+      "name": "INSEE (répertoire Sirene)",
+      "name_en": "National statistics institute, business register",
+      "url": "https://www.insee.fr/",
+      "domains": [
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "SIREN/SIRET attribution and Sirene API; not opened in this pass."
+    },
+    {
+      "id": "inpi",
+      "name": "INPI - Guichet unique des formalités d'entreprises",
+      "name_en": "National Industrial Property Institute / one-stop business formalities",
+      "url": "https://formalites.entreprises.gouv.fr/",
+      "domains": [
+        "business_registry",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Company creation/modification/closure filings, RNE, trademarks and patents (https://www.inpi.fr/)."
+    },
+    {
+      "id": "infogreffe",
+      "name": "Infogreffe / greffes des tribunaux de commerce",
+      "name_en": "Commercial court registries",
+      "url": "https://www.infogreffe.fr/",
+      "domains": [
+        "business_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "RCS, Kbis; returned 403."
+    },
+    {
+      "id": "dgef",
+      "name": "Direction générale des étrangers en France - ANEF",
+      "name_en": "Directorate for Foreign Nationals (digital administration for foreigners)",
+      "url": "https://administration-etrangers-en-france.interieur.gouv.fr/",
+      "domains": [
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Residence permits, naturalisation applications; prefectures decide."
+    },
+    {
+      "id": "ofii",
+      "name": "Office français de l'immigration et de l'intégration",
+      "name_en": "French Office for Immigration and Integration",
+      "url": "https://www.ofii.fr/",
+      "domains": [
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Integration contract, asylum reception allowance (ADA), family reunification; site returned 503."
+    },
+    {
+      "id": "ofpra",
+      "name": "Office français de protection des réfugiés et apatrides",
+      "name_en": "French Office for Refugees and Stateless Persons",
+      "url": "https://www.ofpra.gouv.fr/",
+      "domains": [
+        "immigration",
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Asylum decisions, civil-status documents for protected persons."
+    },
+    {
+      "id": "france_visas",
+      "name": "France-Visas (MEAE / Intérieur)",
+      "name_en": "Visa application portal",
+      "url": "https://france-visas.gouv.fr/",
+      "domains": [
+        "immigration"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Returned 403."
+    },
+    {
+      "id": "ants",
+      "name": "Agence nationale des titres sécurisés (France Titres)",
+      "name_en": "National Agency for Secure Documents",
+      "url": "https://ants.gouv.fr/",
+      "domains": [
+        "civil_registry",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Passports, ID cards, driving licences, vehicle registration portals; CERTs in prefectures instruct; page JS-rendered empty; Cour des comptes audit opened."
+    },
+    {
+      "id": "interieur_prefectures",
+      "name": "Ministère de l'Intérieur - préfectures",
+      "name_en": "Ministry of the Interior and prefectures",
+      "url": "https://www.interieur.gouv.fr/",
+      "domains": [
+        "immigration",
+        "licences",
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Naturalisation, residence permits, weapons (SIA), ICPE, associations; returned 403."
+    },
+    {
+      "id": "meae_scec",
+      "name": "Ministère de l'Europe et des Affaires étrangères - Service central d'état civil et consulats",
+      "name_en": "Foreign Ministry civil-status and consular services",
+      "url": "https://www.diplomatie.gouv.fr/fr/services-aux-francais/",
+      "domains": [
+        "civil_registry"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Civil status of French nationals abroad, consular registration, passports abroad."
+    },
+    {
+      "id": "onacvg",
+      "name": "Office national des combattants et des victimes de guerre",
+      "name_en": "National Office for Veterans",
+      "url": "https://www.onac-vg.fr/",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Veteran cards and aids; page rendered empty."
+    },
+    {
+      "id": "cnmss",
+      "name": "Caisse nationale militaire de sécurité sociale",
+      "name_en": "Military Social Security Fund",
+      "url": "https://www.cnmss.fr/",
+      "domains": [
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Page rendered empty."
+    },
+    {
+      "id": "enim",
+      "name": "Établissement national des invalides de la marine",
+      "name_en": "Seafarers' social security",
+      "url": "https://www.enim.eu/",
+      "domains": [
+        "social_security",
+        "pensions",
+        "health"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Redirects to a secure portal."
+    },
+    {
+      "id": "cpsti",
+      "name": "Conseil de la protection sociale des travailleurs indépendants",
+      "name_en": "Self-employed social protection council",
+      "url": "https://www.cpsti.fr/",
+      "domains": [
+        "social_security"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Social action for independents; host not resolvable from this session."
+    },
+    {
+      "id": "oniam",
+      "name": "Office national d'indemnisation des accidents médicaux",
+      "name_en": "National Office for Compensation of Medical Accidents",
+      "url": "https://www.oniam.fr/",
+      "domains": [
+        "health",
+        "justice"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Out-of-court compensation of medical accidents."
+    },
+    {
+      "id": "ars",
+      "name": "Agences régionales de santé (réseau)",
+      "name_en": "Regional Health Agencies",
+      "url": "https://www.ars.sante.fr/",
+      "domains": [
+        "health",
+        "licences"
+      ],
+      "delivers_services_to_public": true,
+      "note": "State agencies: authorisations (EHPAD, hospitals), calls for projects; regional but national network under the ministry."
+    },
+    {
+      "id": "bpifrance",
+      "name": "Bpifrance",
+      "name_en": "Public investment bank",
+      "url": "https://www.bpifrance.fr/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": true,
+      "note": "Loans, guarantees and innovation aids to firms; fetch rate-limited, not opened."
+    },
+    {
+      "id": "dila",
+      "name": "Direction de l'information légale et administrative",
+      "name_en": "Legal and Administrative Information Directorate",
+      "url": "https://www.service-public.gouv.fr/P10004",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Publishes Légifrance, service-public.fr, BOAMP, annuaire; information rather than case decisions."
+    },
+    {
+      "id": "dinum",
+      "name": "Direction interministérielle du numérique",
+      "name_en": "Interministerial Digital Directorate",
+      "url": "https://www.demarches-simplifiees.fr/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Runs demarche.numerique.gouv.fr, FranceConnect, data.gouv.fr, observatoire des démarches."
+    },
+    {
+      "id": "cada",
+      "name": "Commission d'accès aux documents administratifs",
+      "name_en": "Commission on Access to Administrative Documents",
+      "url": "https://www.cada.fr/",
+      "domains": [
+        "other"
+      ],
+      "delivers_services_to_public": false,
+      "note": "Pre-litigation opinions on document access; open data of all opinions."
+    }
+  ],
+  "layer_scores": [
+    {
+      "layer": "catalogue",
+      "score": 3,
+      "reason": "Service-public.gouv.fr fiches hold steps, conditions, deadlines, cerfa forms, online services, legal basis, responsible bodies and channels (RSA F19778 opened), and the whole corpus is a daily XML dump on data.gouv.fr (v3.5); the annuaire has an open JSON API; entreprendre.service-public.gouv.fr covers firms. Coverage is national; subnational services appear only through the annuaire.",
+      "evidence_urls": [
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+        "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-particuliers",
+        "https://www.service-public.gouv.fr/P10004",
+        "https://www.data.gouv.fr/dataservices/672cf645e35d4f6741f6bfa6",
+        "https://entreprendre.service-public.gouv.fr/"
+      ]
+    },
+    {
+      "layer": "legislation",
+      "score": 3,
+      "reason": "Légifrance serves consolidated codes, laws, decrees and arrêtés with point-in-time versions (CRPA opened 'En vigueur au 31/10/2026'), the LEGI/JORF/KALI fonds are bulk XML on echanges.dila.gouv.fr updated near-daily, and the Légifrance API (JSON, PISTE) exposes the same fonds including circulaires and case law.",
+      "evidence_urls": [
+        "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000031366350/",
+        "https://www.data.gouv.fr/fr/datasets/legi-codes-lois-et-reglements-consolides/",
+        "https://www.data.gouv.fr/dataservices/672cf648a474f2d73502b5cd",
+        "https://www.legifrance.gouv.fr/jorf/jo",
+        "https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api"
+      ]
+    },
+    {
+      "layer": "guidance",
+      "score": 3,
+      "reason": "Detailed per-service guidance for every main agency is centralised on service-public.gouv.fr (DILA), enumerable through the daily XML dump and offered in English as flagged machine translation; agencies add their own doctrine (BOFiP, Unédic circulaires). Agency sites (ameli.fr, caf.fr, urssaf.fr) could not be opened in this session (403/503/bot protection).",
+      "evidence_urls": [
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778?lang=en",
+        "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-particuliers",
+        "https://bofip.impots.gouv.fr/",
+        "https://www.unedic.org/la-reglementation"
+      ]
+    },
+    {
+      "layer": "forms",
+      "score": 2,
+      "reason": "Cerfa forms for the main agencies are catalogued as R-records on service-public.gouv.fr (cerfa 15481/15482/14130 for RSA) and included in the XML dump, and most procedures run as online forms on demarche.numerique.gouv.fr (22.8M dossiers); no field specifications or machine-readable form definitions were found.",
+      "evidence_urls": [
+        "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+        "https://entreprendre.service-public.gouv.fr/",
+        "https://www.demarches-simplifiees.fr/"
+      ]
+    },
+    {
+      "layer": "internal",
+      "score": 3,
+      "reason": "The main funds publish their instructions to the network systematically and in enumerable repositories: Cnaf instructions au réseau (C/LR/IT) by year on caf.fr with a template that names the internal process ('Processus de rattachement M5') and a CADA-communicability flag; Cnav numbered circulaires with predictable PDF names on legislation.lassuranceretraite.fr; France Travail's searchable Bulletin officiel (instructions DG, notes d'information, repealed texts); DGFiP's BOFiP and tax-calculator source code; Unédic circulaires; 10,644 ministerial circulaires on Légifrance via API; Cnaf's scoring-model code released in 2026. These are regulatory instructions, not procedure manuals or case-system descriptions, and CNAM/Urssaf repositories were unreachable in this pass.",
+      "evidence_urls": [
+        "https://www.caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/qui%20sommes%20nous/Textes%20de%20r%C3%A9f%C3%A9rence/Circulaires/2025/LR-2025-172.pdf",
+        "https://legislation.lassuranceretraite.fr/Pdf/circulaire_cnav_2025_10_14032025.pdf",
+        "https://bo.francetravail.org/",
+        "https://bo.francetravail.org/files/live/sites/bope/files/pdf-files/2026/bo2026-42.pdf",
+        "https://bofip.impots.gouv.fr/",
+        "https://www.impots.gouv.fr/ouverture-des-donnees-publiques-de-la-dgfip",
+        "https://www.legifrance.gouv.fr/search/circ?tab_selection=circ&searchField=ALL&query=&page=1&init=true",
+        "https://www.unedic.org/la-reglementation",
+        "https://www.lemondeinformatique.fr/actualites/lireamp-la-cnaf-publie-le-code-source-de-ses-programmes-de-scoring-99258.html"
+      ]
+    },
+    {
+      "layer": "statistics",
+      "score": 2,
+      "reason": "Per-service volumes and some processing-time indicators are published: France Travail statistics hub and data.gouv.fr series, 'taux de premier paiement dans les délais' by agency, Services Publics+ per-site results for Cnaf/Cnam/France Travail/prefectures/DGFiP/Urssaf/Carsat/MSA, DINUM quarterly observatoire dataset, Cnaf/Cnam/Urssaf/DREES open-data portals. No open data on decision outcomes or automation rates at case level was found.",
+      "evidence_urls": [
+        "https://francetravail.org/statistiques-analyses/",
+        "https://www.plus.transformation.gouv.fr/resultats-des-services-publics-pres-de-chez-moi",
+        "https://www.data.gouv.fr/fr/datasets/observatoire-de-la-qualite-des-demarches-en-ligne/",
+        "https://data.caf.fr/",
+        "https://data.drees.solidarites-sante.gouv.fr/",
+        "https://open.urssaf.fr/",
+        "https://data.ameli.fr/"
+      ]
+    },
+    {
+      "layer": "appeals",
+      "score": 3,
+      "reason": "Administrative court decisions (CE, CAA, TA) are searchable on ArianeWeb and Légifrance (573,087 CETAT decisions, API) and downloadable in bulk XML from opendata.justice-administrative.fr; judicial-order decisions via the Judilibre API; CADA opinions searchable and dumped as CSV. The Défenseur des droits database could not be opened (503).",
+      "evidence_urls": [
+        "https://www.conseil-etat.fr/ressources/decisions-contentieuses/arianeweb2",
+        "https://opendata.justice-administrative.fr/",
+        "https://www.legifrance.gouv.fr/search/cetat?tab_selection=cetat&searchField=ALL&query=&page=1&init=true",
+        "https://www.data.gouv.fr/fr/dataservices/api-judilibre",
+        "https://www.cada.fr/",
+        "https://www.data.gouv.fr/fr/datasets/avis-et-conseils-de-la-cada/"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "claim": "Légifrance shows the CRPA as a consolidated code in force at the viewing date with ChronoLégi point-in-time versions and PDF download",
+      "url": "https://www.legifrance.gouv.fr/codes/texte_lc/LEGITEXT000031366350/",
+      "layer": "legislation",
+      "note": "'En vigueur au 31/10/2026', data updated 28 May 2026"
+    },
+    {
+      "claim": "LEGI dataset: 73 codes in force, exhaustive laws/decrees since 1945, XML with DTD, bulk via echanges.dila.gouv.fr HTTPS/FTPS, Licence Ouverte",
+      "url": "https://www.data.gouv.fr/fr/datasets/legi-codes-lois-et-reglements-consolides/",
+      "layer": "legislation",
+      "note": "last update 29 Oct 2026"
+    },
+    {
+      "claim": "Légifrance API on PISTE returns JSON, free after registration, per-token quotas, Swagger docs",
+      "url": "https://www.data.gouv.fr/dataservices/672cf648a474f2d73502b5cd",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "Stable Légifrance API available since 4 April 2023; beta closed",
+      "url": "https://www.legifrance.gouv.fr/contenu/pied-de-page/open-data-et-api",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "PISTE requires registration to access APIs",
+      "url": "https://piste.gouv.fr/",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "JORF daily issues on Légifrance as authenticated PDF with ELI plus HTML texts; archive since 2 June 2004",
+      "url": "https://www.legifrance.gouv.fr/jorf/jo",
+      "layer": "legislation",
+      "note": ""
+    },
+    {
+      "claim": "Légifrance circulaires et instructions fonds holds 10,644 texts with ministry, date, opposability and NOR filters",
+      "url": "https://www.legifrance.gouv.fr/search/circ?tab_selection=circ&searchField=ALL&query=&page=1&init=true",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "Service-public RSA fiche lists 12 steps, deadlines, cerfa 15481/15482/14130, CASF articles, responsible bodies and channels",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778",
+      "layer": "catalogue",
+      "note": ""
+    },
+    {
+      "claim": "Service-public fiches particuliers are a 23.1 MB XML (schema v3.5) updated daily under Licence Ouverte 2.0",
+      "url": "https://www.data.gouv.fr/fr/datasets/service-public-fr-guide-vos-droits-et-demarches-particuliers",
+      "layer": "catalogue",
+      "note": ""
+    },
+    {
+      "claim": "Service-public lists five open datasets (fiches particuliers, entreprises, actualités, annuaire national and local) and an annuaire API",
+      "url": "https://www.service-public.gouv.fr/P10004",
+      "layer": "catalogue",
+      "note": ""
+    },
+    {
+      "claim": "Annuaire API returns JSON/CSV/Excel on national and local bodies, open, updated daily",
+      "url": "https://www.data.gouv.fr/dataservices/672cf645e35d4f6741f6bfa6",
+      "layer": "catalogue",
+      "note": ""
+    },
+    {
+      "claim": "English service-public pages are flagged as automatic translations",
+      "url": "https://www.service-public.gouv.fr/particuliers/vosdroits/F19778?lang=en",
+      "layer": "guidance",
+      "note": "quality poor (placeholders, wrong acronyms)"
+    },
+    {
+      "claim": "CRPA L312-1-1 obliges online publication of communicated documents, répertoire documents, databases and data of public interest",
+      "url": "https://www.legifrance.gouv.fr/codes/section_lc/LEGITEXT000031366350/LEGISCTA000031367735/",
+      "layer": null,
+      "note": ""
+    },
+    {
+      "claim": "CRPA L312-1-3 obliges publication of rules of main algorithmic processing grounding individual decisions",
+      "url": "https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000033205516",
+      "layer": "internal",
+      "note": "in force since 9 Oct 2016"
+    },
+    {
+      "claim": "CADA referral is mandatory before litigation and all avis since 2012 are on cada.data.gouv.fr",
+      "url": "https://www.cada.fr/",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "CADA dataset is CSV, main file 189 MB updated 14 Aug 2026",
+      "url": "https://www.data.gouv.fr/fr/datasets/avis-et-conseils-de-la-cada/",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Ma Dada is an Alaveteli instance by Open Knowledge France with 52,938 public requests",
+      "url": "https://madada.fr/",
+      "layer": null,
+      "note": "Alaveteli basis confirmed at https://doc.madada.fr/a_propos"
+    },
+    {
+      "claim": "Cnaf instruction au réseau template names type C/LR/IT, addressees, 'Processus de rattachement', diffusion on caf.fr and CADA communicability",
+      "url": "https://www.caf.fr/sites/default/files/medias/cnaf/Nous_connaitre/qui%20sommes%20nous/Textes%20de%20r%C3%A9f%C3%A9rence/Circulaires/2025/LR-2025-172.pdf",
+      "layer": "internal",
+      "note": "LR 2025-172 of 11 Sept 2025, process M5"
+    },
+    {
+      "claim": "Cnav circulaire 2025-10 is addressed to directors of Carsat/CGSS with scope grid and numbered points",
+      "url": "https://legislation.lassuranceretraite.fr/Pdf/circulaire_cnav_2025_10_14032025.pdf",
+      "layer": "internal",
+      "note": "site root unresolvable from session; PDFs reachable"
+    },
+    {
+      "claim": "France Travail BO is searchable by theme, category (incl. Instruction, Note d'information), date and repealed texts; ANPE archive 2000-2008",
+      "url": "https://bo.francetravail.org/",
+      "layer": "internal",
+      "note": "most recent entries are delegations of signature"
+    },
+    {
+      "claim": "BO France Travail n° 42 (28 July 2026) contains décisions, délibérations and an avis on a draft decree on jobseeker declarations",
+      "url": "https://bo.francetravail.org/files/live/sites/bope/files/pdf-files/2026/bo2026-42.pdf",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "BOFiP is DGFiP's official commentary site with plan de classement, archive and RSS, licence etalab-2.0",
+      "url": "https://bofip.impots.gouv.fr/",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "DGFiP publishes source code of IR, IFI, TH, TF, CFE, CVAE and IS calculators on GitLab Adullact plus PDF algorithms",
+      "url": "https://www.impots.gouv.fr/ouverture-des-donnees-publiques-de-la-dgfip",
+      "layer": "internal",
+      "note": "GitLab blocked by Anubis in session"
+    },
+    {
+      "claim": "Unédic publishes numbered circulaires applying unemployment-insurance rules (2026-06)",
+      "url": "https://www.unedic.org/la-reglementation",
+      "layer": "internal",
+      "note": ""
+    },
+    {
+      "claim": "Cnaf published variables and PySpark source of its DMDE 2026 scoring model in January 2026",
+      "url": "https://www.lemondeinformatique.fr/actualites/lireamp-la-cnaf-publie-le-code-source-de-ses-programmes-de-scoring-99258.html",
+      "layer": "internal",
+      "note": "press source; caf.fr page not reachable"
+    },
+    {
+      "claim": "ArianeWeb holds nearly 300,000 CE/CAA decisions, analyses and conclusions",
+      "url": "https://www.conseil-etat.fr/ressources/decisions-contentieuses/arianeweb2",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Administrative justice open data: CE since 2021, CAA since 2022, TA since June 2022, XML zip by month",
+      "url": "https://opendata.justice-administrative.fr/",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Légifrance CETAT fonds holds 573,087 administrative decisions with CAA/TA filters",
+      "url": "https://www.legifrance.gouv.fr/search/cetat?tab_selection=cetat&searchField=ALL&query=&page=1&init=true",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Judilibre API (PISTE) serves pseudonymised judicial decisions under Licence Ouverte 2.0",
+      "url": "https://www.data.gouv.fr/fr/dataservices/api-judilibre",
+      "layer": "appeals",
+      "note": ""
+    },
+    {
+      "claim": "Cour des comptes ANTS audit describes the mairie/CERT/ANTS/Imprimerie nationale chain and delivery delays",
+      "url": "https://www.ccomptes.fr/fr/documents/69308",
+      "layer": "statistics",
+      "note": "observations définitives S2024-0271"
+    },
+    {
+      "claim": "Cour des comptes site lists publications by type with a search engine; RALFSS 2026 published",
+      "url": "https://www.ccomptes.fr/fr",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "France Travail statistics hub publishes jobseeker, indemnisation and training series with open data",
+      "url": "https://francetravail.org/statistiques-analyses/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "Services Publics+ publishes per-site results for Cnaf, Cnam, France Travail, prefectures, DGFiP, Urssaf, Carsat, CCMSA",
+      "url": "https://www.plus.transformation.gouv.fr/resultats-des-services-publics-pres-de-chez-moi",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "DINUM observatoire dataset: quarterly ODS files, last updated 20 Oct 2026",
+      "url": "https://www.data.gouv.fr/fr/datasets/observatoire-de-la-qualite-des-demarches-en-ligne/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "Cafdata offers an OpenDataSoft API console and prestations légales panorama",
+      "url": "https://data.caf.fr/",
+      "layer": "statistics",
+      "note": ""
+    },
+    {
+      "claim": "data.gouv.fr lists 76K datasets/APIs and 7K organisations",
+      "url": "https://www.data.gouv.fr/fr/",
+      "layer": null,
+      "note": ""
+    },
+    {
+      "claim": "OpenFisca-France is an AGPL model with a public API (api.fr.openfisca.org)",
+      "url": "https://github.com/openfisca/openfisca-france",
+      "layer": null,
+      "note": "parameters endpoint opened"
+    },
+    {
+      "claim": "mon-entreprise holds MIT publicodes rules (modele-social) behind Urssaf simulators",
+      "url": "https://github.com/betagouv/mon-entreprise",
+      "layer": null,
+      "note": ""
+    },
+    {
+      "claim": "demarche.numerique.gouv.fr: 15,853 partner administrations, 22.8M dossiers, open source",
+      "url": "https://www.demarches-simplifiees.fr/",
+      "layer": "forms",
+      "note": ""
+    },
+    {
+      "claim": "PLACE serves State, public establishments, social security bodies; search without login",
+      "url": "https://www.marches-publics.gouv.fr/",
+      "layer": null,
+      "note": "DCE access conditions not determined"
+    },
+    {
+      "claim": "BOAMP offers open data and an API for procurement notices",
+      "url": "https://www.boamp.fr/",
+      "layer": null,
+      "note": ""
+    }
+  ],
+  "best_documented_domains": [
+    "tax",
+    "social_security",
+    "pensions",
+    "employment",
+    "justice"
+  ],
+  "notes": "France is tier-4 candidate on paper: law and catalogue are machine-readable and the funds publish their network instructions. Limits for a mapper: (1) the published instructions are regulatory (rates, eligibility interpretation), not operating procedures or case-system behaviour; the Cnaf 'Processus de rattachement' field shows an internal process map exists but it is not published; (2) several agency sites block automated access (caf.fr Radware, ameli.fr 403, urssaf.fr/boss.gouv.fr/cnsa.fr 503, interieur.gouv.fr 403, gitlab.adullact.net Anubis), so the authority pass needs a browser or allow-listing; (3) the Défenseur des droits decision database and CNAM circulaires.ameli.fr were unreachable. Web search budget was exhausted before CNAM, BOSS, Défenseur des droits and Cnav statistics could be searched further; findings on those rest on fetched pages or secondary sources as noted.",
+  "open_questions": [
+    "Does caf.fr list all C/LR/IT instructions back to earlier years and is the listing enumerable (page https://caf.fr/nous-connaitre/circulaires is bot-protected)? Is the 'suivi législatif' or any processing manual for Cristal published or obtainable via CADA?",
+    "What does circulaires.ameli.fr hold for 2010-2026 (lettres-réseau LR-DDO/DDGOS)? Site returned 503 throughout; only 1980-2005 PDFs seen in search.",
+    "BOSS (boss.gouv.fr): structure, versioning and any export; site returned 503.",
+    "Urssaf/Acoss lettres circulaires: are they published on urssaf.fr (503 in session)?",
+    "France Travail: beyond the BO, are operational guides ('fiches pratiques' for conseillers, indemnisation processing rules) published? Check francetravail.org and the Unédic circulaires as proxies.",
+    "Défenseur des droits database (juridique.defenseurdesdroits.fr): coverage and search; 503 in session.",
+    "Processing-time statistics: Services Publics+ per-site figures exist but no export was seen; check DITP organisation on data.gouv.fr and Cnaf/Cnam annual reports.",
+    "Whether PLACE allows DCE download without an account; check a live France Travail or Cnaf IT tender (BOAMP notices located).",
+    "Count of service-public.fr fiches and forms (not stated on data.gouv.fr; count from the XML dump).",
+    "Cnaf's inventory of algorithms under L312-1-3 and the DMDE 2026 page on caf.fr (reported by press, not opened).",
+    "Authorities not opened (403/503/empty/rate-limited): ameli.fr, urssaf.fr, interieur.gouv.fr, parcoursup.gouv.fr, france-visas.gouv.fr, infogreffe.fr, ofii.fr, cnsa.fr, ants.gouv.fr, asp.gouv.fr, onac-vg.fr, cnmss.fr, enim.eu, cpsti.fr, bpifrance.fr, education.gouv.fr, insee.fr."
+  ]
+}
