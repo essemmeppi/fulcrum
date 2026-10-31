@@ -1,0 +1,23 @@
+id,municipality,provisional_family,area,catalogue_entry_count,source_id,source_locator,status,owner,automation,current_legal_basis
+general-intake,Deta,General requests,government_operations,1,deta-catalogue,form link labels 14,catalogue_candidate,unknown,unknown,unverified
+fire-work,Deta,Fire-work permit,land_environment,1,deta-catalogue,form link labels 15,catalogue_candidate,unknown,unknown,unverified
+agricultural-role,Deta,Agricultural-register certificate,revenue_business,1,deta-catalogue,form link labels 16,catalogue_candidate,unknown,unknown,unverified
+apia,Deta,APIA certificates: individual and legal entity,revenue_business,2,deta-catalogue,"form link labels 17,18",catalogue_candidate,unknown,unknown,unverified
+agricultural-declaration,Deta,Agricultural-register declaration,revenue_business,1,deta-catalogue,form link labels 19,catalogue_candidate,unknown,unknown,unverified
+street-name,Deta,Street-nomenclature certificate,land_environment,1,deta-catalogue,form link labels 20,catalogue_candidate,unknown,unknown,unverified
+tax-certificate,Deta,Fiscal certificates: individual and legal entity,revenue_business,2,deta-catalogue,"form link labels 21,22",catalogue_candidate,unknown,unknown,unverified
+property-deregistration,Deta,Building/land tax deregistration,revenue_business,1,deta-catalogue,form link labels 23,catalogue_candidate,unknown,unknown,unverified
+vehicle-deregistration,Deta,Vehicle tax deregistration,revenue_business,1,deta-catalogue,form link labels 24,catalogue_candidate,unknown,unknown,unverified
+vehicle-tax,Deta,Vehicle tax declaration,revenue_business,1,deta-catalogue,form link labels 25,catalogue_candidate,unknown,unknown,unverified
+freight-tax,Deta,Heavy-goods-vehicle tax declaration,revenue_business,1,deta-catalogue,form link labels 26,catalogue_candidate,unknown,unknown,unverified
+watercraft-tax,Deta,Watercraft tax declaration,revenue_business,1,deta-catalogue,form link labels 27,catalogue_candidate,unknown,unknown,unverified
+land-tax,Deta,Land tax declaration: individual and legal entity,revenue_business,2,deta-catalogue,"form link labels 28,29",catalogue_candidate,unknown,unknown,unverified
+building-tax,Deta,Building tax declaration: individual and legal entity,revenue_business,2,deta-catalogue,"form link labels 30,31",catalogue_candidate,unknown,unknown,unverified
+urbanism-certificate,Deta,Urbanism certificate,land_environment,1,deta-catalogue,form link labels 32,catalogue_candidate,unknown,unknown,unverified
+urbanism-extension,Deta,Urbanism certificate extension,land_environment,1,deta-catalogue,form link labels 33,catalogue_candidate,unknown,unknown,unverified
+building-permit,Deta,Building authorisation,land_environment,1,deta-catalogue,form link labels 34,catalogue_candidate,unknown,unknown,unverified
+permit-extension,Deta,Building authorisation extension,land_environment,1,deta-catalogue,form link labels 35,catalogue_candidate,unknown,unknown,unverified
+construction-notification,Deta,Construction commencement and completion notices,land_environment,2,deta-catalogue,"form link labels 36,37",catalogue_candidate,unknown,unknown,unverified
+social-inquiry,Deta,Social inquiry request,social_services,1,deta-catalogue,form link labels 38,catalogue_candidate,unknown,unknown,unverified
+food-support,Deta,Electronic social meal vouchers,social_services,1,deta-catalogue,form link labels 39,catalogue_candidate,unknown,unknown,unverified
+information-access,Deta,Information requests and administrative complaints,government_operations,3,deta-catalogue,"form link labels 40,41,42",catalogue_candidate,unknown,unknown,unverified

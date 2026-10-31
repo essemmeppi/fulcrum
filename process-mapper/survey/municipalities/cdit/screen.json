@@ -1,0 +1,287 @@
+{
+  "scope": "CDIT member town halls; ADR Vest strategy",
+  "baseline_commit": "1e67353d1455dbedc5950ffe0fd3cfae5777c0ac",
+  "as_of": "2026-10-31",
+  "county_member": "Timiș",
+  "municipal_members": [
+    {
+      "name": "Beba Veche",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Cărpiniș",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Coșteiu",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Criciova",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Darova",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Deta",
+      "membership_source_id": "cdit",
+      "screen_status": "partial_public_facing"
+    },
+    {
+      "name": "Dudeștii Noi",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Dumbrava",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Dumbrăvița",
+      "membership_source_id": "cdit",
+      "screen_status": "blocked_document_lead"
+    },
+    {
+      "name": "Gătaia",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Găvojdia",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Ghizela",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Livezile",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Peciu Nou",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Pesac",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Pișchia",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Sacoșu Turcesc",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Sânmihaiu Român",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Șag",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Știuca",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    },
+    {
+      "name": "Traian Vuia",
+      "membership_source_id": "cdit",
+      "screen_status": "index_only"
+    },
+    {
+      "name": "Vălcani",
+      "membership_source_id": "cdit",
+      "screen_status": "not_screened"
+    }
+  ],
+  "excluded_as_unconfirmed_member": [
+    "Timișoara"
+  ],
+  "sources": [
+    {
+      "id": "cdit",
+      "url": "https://www.cdit.ro/",
+      "access_status": "read",
+      "findings": "Membership; maturity survey dates; no response data public",
+      "date_status": "2026 evaluation; membership effective date unspecified",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "adr-summary",
+      "url": "https://www.vest.ro/api/documents/d/b1e7b1db651b1737bee17b887471635c",
+      "access_status": "read",
+      "findings": "Indicative EUR 18.76m; replication/interoperability; not current call eligibility",
+      "date_status": "undated historical programme summary",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-org",
+      "url": "https://www.detatm.ro/primarie/structura-organizatorica/",
+      "access_status": "read",
+      "findings": "Organisational units; organigrams through 2024; ROF link",
+      "date_status": "ROF upload path 2022; adoption/current validity unchecked",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-rof",
+      "url": "https://www.detatm.ro/wp-content/uploads/2022/08/Regulamentul-de-organizare-si-functionare-al-Aparatului-de-specialitate-al-Primarului-orasului-Deta.doc",
+      "access_status": "reader_failed",
+      "findings": "Word attachment unreadable by web reader; download/conversion unperformed",
+      "date_status": "upload path 2022; document date unverified",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-catalogue",
+      "url": "https://deta.regista.ro/formulare",
+      "access_status": "read",
+      "findings": "29 listed form entries; titles only; field contents require separate acquisition",
+      "date_status": "undated; observed 2026-10-31",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-foi",
+      "url": "https://www.detatm.ro/info-interes-public/legea-544-2001/",
+      "access_status": "read",
+      "findings": "Request and complaint links; named responsible person; reports through 2023",
+      "date_status": "undated page; current designation unchecked",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-request-doc",
+      "url": "https://www.detatm.ro/wp-content/uploads/2022/01/Formular-tip-cerere-de-informatii-de-interes-public.doc",
+      "access_status": "reader_failed",
+      "findings": "Unsupported Word format; no claim about form fields",
+      "date_status": "upload path 2022",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-report",
+      "url": "https://www.detatm.ro/wp-content/uploads/2024/02/RAPORT-DE-EVALUARE-A-IMPLEMENTARII-LEGII-NR.-544-2001-IN-ANUL-2023.doc",
+      "access_status": "reader_failed",
+      "findings": "Unsupported Word format; no volumes extracted",
+      "date_status": "report title 2023; upload path 2024",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-heating",
+      "url": "https://www.detatm.ro/info-interes-public/formulare-si-acte-necesare/asistenta-sociala/",
+      "access_status": "read_historical",
+      "findings": "2021-22 local intake information; not asserted current",
+      "date_status": "explicit season 2021-22",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "deta-social-outputs",
+      "url": "https://www.detatm.ro/primarie/structura-organizatorica/compartiment-asistenta-sociala-si-relatii-cu-publicul/",
+      "access_status": "index_read",
+      "findings": "Historical energy-benefit output links; attachments not read",
+      "date_status": "2021-22 titles",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "dumbravita-rof",
+      "url": "https://primaria-dumbravita.ro/wp-content/uploads/2024/09/Regulament-de-organizare-%C8%99i-func%C8%9Bionare-UAT-Dumbravi%C8%9Ba.pdf",
+      "access_status": "access_challenge",
+      "findings": "No readable procedure obtained; not negative evidence",
+      "date_status": "upload path 2024; content unverified",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "traian-vuia-social",
+      "url": "https://primariatraianvuia.ro/asistenta-sociala/",
+      "access_status": "index_read",
+      "findings": "Output titles through 2026; linked content uninspected; no process reconstructed",
+      "date_status": "2025-26 index labels",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "law-544",
+      "url": "https://legislatie.just.ro/public/detaliidocument/31413",
+      "access_status": "partially_read_intermittent",
+      "findings": "Lowercase URL returned law and Art. 3-4; follow-up open failed. Portal displays consolidation 10 May 2024; complete current text not captured.",
+      "date_status": "portal consolidation label 2024-05-10; point-in-time completeness unverified",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    },
+    {
+      "id": "hg123-historical",
+      "url": "https://www.cncan.ro/assets/Informatii-Publice/Norma-metodologica-de-aplicare-a-L-544-din-2001.pdf",
+      "access_status": "read_historical",
+      "findings": "Readable national implementing norms contain internal receipt, registration, assessment, routing and reply steps. Art.16 uses working days; version reconciliation with later amendments required before current use.",
+      "date_status": "2002 act; copy has old wording and 2007/08 challenge annotation; not current consolidation",
+      "checked_at": "2026-10-31",
+      "document_current_validity": "unverified"
+    }
+  ],
+  "limitations": [
+    "No complete six-area municipal screen",
+    "No readable local operational procedure inspected",
+    "No current legal-version reconciliation",
+    "No CDIT questionnaire responses accessed",
+    "No process-owner review",
+    "No production mapper run"
+  ],
+  "search_log": [
+    {
+      "queries": [
+        "site.detatm.ro incalzire 2026 2025 ajutor",
+        "site.primaria-dumbravita.ro incalzire 2026 2025 ajutor",
+        "site.detatm.ro \"procedur\" \"opera\" sociala"
+      ],
+      "outcome": "Historical Deta guidance and mixed-jurisdiction results; only verified local pages retained"
+    },
+    {
+      "queries": [
+        "site.primariadumbravita.ro proceduri operationale regulament organizare functionare",
+        "site.primaria-deta.ro servicii regulament organizare functionare",
+        "site.cdit.ro membri Timișoara Dumbravita"
+      ],
+      "outcome": "Deta organisation/catalogue and Dumbravita ROF lead; corrected official domains from results"
+    },
+    {
+      "queries": [
+        "site.legislatie.just.ro \"LEGE 544\" \"10 zile\" \"30 de zile\""
+      ],
+      "outcome": "Official search excerpts found; full portal open failed, no deadline claims admitted"
+    },
+    {
+      "queries": [
+        "site.legislatie.just.ro \"HOTĂRÂRE 123\" \"07/02/2002\""
+      ],
+      "outcome": "Readable official-agency copy of national norms obtained; historical version explicitly separated from current local execution."
+    }
+  ]
+}
