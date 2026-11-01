@@ -134,6 +134,9 @@ class Runner:
             r.applied += m.applied; r.value = {"accepted_costs": r.value, "max_costs": m.value}
             return r, "rule", "done"
         if nid == "D_ELIGIBLE":
+            if state.get("household_unknown"):
+                state["decision"] = "question"
+                return Result("Any condition not met (income/asset limit exceeded, ineligible dwelling, student or pensioner exclusion, non-residence) – rejection or termination", [("R_HH_DEFINITION", "household composition is an open question; no decision proposed")]), "rule", "question"
             failed = state.get("eligibility_failed", [])
             if state.get("asset_ceiling"):
                 failed = failed + ["R_ELIG_ASSET_LIMIT"]
@@ -141,11 +144,16 @@ class Runner:
             state["eligibility_failed"] = failed
             return Result(label, [(f, "failed") for f in failed] or [("R_ELIG_DWELLING", "met")]), "rule", "done"
         if nid == "T_CALC":
+            if state.get("amount_unknown") or "income" not in state or "costs" not in state:
+                raise Unknown("amount: " + ", ".join(q.split(": ", 1)[1] for q in [s for s in state.get("_questions", [])]) if state.get("_questions") else "amount: costs or income unknown")
             d = gha.basic_deductible(case, p, state["income"]); state["deductible"] = d.value
             a = gha.allowance(case, p, state["costs"], state["cap"], d.value); state["amount"] = a.value
             d.applied += a.applied; d.value = {"basic_deductible": d.value, "monthly_allowance": a.value}
             return d, "rule", "done"
         if nid == "D_MIN_AMOUNT":
+            if state.get("amount_unknown"):
+                state["decision"] = "eligible_amount_unknown"
+                return Result("Amount ≥ 15 €/month – grant", [("R_CALC_MIN_PAYMENT", "amount not computable from the case; eligibility conditions met")]), "rule", "question"
             ok = state.get("amount", 0.0) >= p.min_payment
             return Result("Amount ≥ 15 €/month – grant" if ok else "Amount < 15 €/month – not paid", [("R_CALC_MIN_PAYMENT", f"amount {state.get('amount',0):.2f}")]), "rule", "done"
         if nid == "D_PAYABLE":
@@ -161,6 +169,8 @@ class Runner:
         if nid == "T_NOTIFY":
             if state.get("decision") == "granted":
                 return f"Decision: general housing allowance granted, {state['amount']:.2f} EUR per month from {case.decision_date}. Accepted housing costs {state['costs']:.2f} (maximum {state['cap']:.0f}), household income {state['income']:.2f}, basic deductible {state['deductible']:.2f}."
+            if state.get("decision") == "eligible_amount_unknown":
+                return "Proposal: eligibility conditions met; the amount cannot be computed because " + "; ".join(q.split(": ", 1)[1] for q in state.get("_questions", [])) + "."
             if state.get("decision") == "not_paid":
                 return f"Decision: the calculated allowance {state['amount_raw']:.2f} EUR is below the minimum of 15 EUR per month and is not paid."
             return "Decision: application rejected. Grounds: " + ", ".join(state.get("eligibility_failed", []))
@@ -194,16 +204,24 @@ class Runner:
                     state["eligibility_failed"] = list(res.value)
                 if nid == "D_ELIGIBLE" and state["eligibility_failed"]:
                     state["decision"] = "rejected"
-                if nid == "D_MIN_AMOUNT":
+                if nid == "D_MIN_AMOUNT" and not state.get("amount_unknown"):
                     state["amount_raw"] = state["amount"]
                     state["decision"] = "granted" if state["amount"] >= p.min_payment else "not_paid"
                 if status == "proposal":
                     outcome.proposals.append(f"{nid}: {self.draft('T_NOTIFY', case, state)}")
             except Unknown as u:
+                # A step that cannot be answered from the case becomes a question and the walk goes on:
+                # later steps that do not need the answer still run (eligibility needs no rent; the amount does).
                 step.executed_by, step.status, step.question = "judge", "question", str(u)
                 outcome.open_questions.append(f"{nid}: {u}")
-                steps.append(step)
-                break
+                state.setdefault("_questions", []).append(f"{nid}: {u}")
+                res = Result(None)
+                if nid == "T_ELIG_CHECK":
+                    state["eligibility_failed"] = []
+                if nid == "T_HOUSEHOLD":
+                    state["household_unknown"] = True
+                if nid in ("T_COSTS", "T_INCOME", "T_CALC"):
+                    state["amount_unknown"] = True
             steps.append(step)
             if nid == stop_at:
                 break
@@ -226,9 +244,10 @@ class Runner:
                 # scripted: no answer arrives in a replay; continue on available information
                 pass
             nid = nxt["target"]
-        if not outcome.open_questions:
-            outcome.decision = state.get("decision", "question")
-            outcome.monthly_allowance = state.get("amount", 0.0) if outcome.decision == "granted" else 0.0
-            outcome.grounds = state.get("eligibility_failed", [])
-        public_state = {k: v for k, v in state.items() if k != "params"}
+        outcome.decision = state.get("decision", "question")
+        if outcome.decision == "question":
+            outcome.proposals = [p for p in outcome.proposals if not p.startswith("T_DECIDE")]
+        outcome.monthly_allowance = state.get("amount", 0.0) if outcome.decision == "granted" else 0.0
+        outcome.grounds = state.get("eligibility_failed", [])
+        public_state = {k: v for k, v in state.items() if k not in ("params", "_questions")}
         return Run(case.case_id, datetime.now(timezone.utc).isoformat(timespec="seconds"), p.valid_from, steps, outcome, public_state)

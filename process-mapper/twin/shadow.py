@@ -31,7 +31,7 @@ def run_dir(intake: Path, out: Path, runner: Runner | None = None) -> list[tuple
 
 def report(results: list[tuple[Case, Verdict]], title: str) -> str:
     kinds = Counter(v.kind for _, v in results)
-    lines = [f"# {title}", "", f"Cases: {len(results)}. Agree: {kinds.get('agree',0)}. Amount differs: {kinds.get('amount',0)}. Decision differs: {kinds.get('decision',0)}. Twin asked a question: {kinds.get('twin_question',0)}. No real outcome yet: {kinds.get('no_expectation',0)}.", ""]
+    lines = [f"# {title}", "", f"Cases: {len(results)}. Agree on amount: {kinds.get('agree',0)}. Agree on decision, amount not computable: {kinds.get('agree_decision',0)}. Amount differs: {kinds.get('amount',0)}. Decision differs: {kinds.get('decision',0)}. Twin asked a question: {kinds.get('twin_question',0)}. Untestable from the stated facts: {kinds.get('untestable',0)}. No real outcome yet: {kinds.get('no_expectation',0)}.", ""]
     lines += ["| case | twin | amount | real | kind | detail |", "|---|---|---|---|---|---|"]
     for c, v in results:
         lines.append(f"| {c.case_id} | {v.twin_decision} | {v.twin_amount:.2f} | {v.expected_outcome or ''} {'' if v.expected_amount is None else f'{v.expected_amount:.2f}'} | {v.kind} | {v.detail.replace('|','/')} |")

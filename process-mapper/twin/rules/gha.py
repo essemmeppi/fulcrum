@@ -68,11 +68,30 @@ def region(case: Case) -> str:
 
 # --- Household ----------------------------------------------------------------------------
 
+def members_in_household(case: Case) -> tuple[list[Member], list[Member]]:
+    """Splits occupants into household members and excluded co-occupants (not resident in Finland,
+    or a student excluded under § 4(4)). Found by replay: SAMU 2017 counted only the covered occupant."""
+    inside, excluded = [], []
+    for m in case.members:
+        if m.resident_in_finland is False or (m.excluded_student and m.role != "applicant"):
+            excluded.append(m)
+        else:
+            inside.append(m)
+    return inside, excluded
+
+
 def household(case: Case) -> Result:
-    """Counts adults and children; applies the always-same-household rule as the case states it."""
-    adults, children = case.adults, case.children
+    """Counts adults and children among household members (non-residents and excluded students are not members)."""
+    inside, excluded = members_in_household(case)
+    adults = sum(1 for m in inside if m.role in ("applicant", "spouse", "parent", "other_adult"))
+    children = sum(1 for m in inside if m.role in ("child", "other_child"))
     res = Result((max(adults, 1), children))
     res.note("R_HH_DEFINITION", f"household of {adults} adult(s) and {children} child(ren)")
+    for m in excluded:
+        res.note("R_ELIG_RESIDENCE" if m.resident_in_finland is False else "R_ELIG_STUDENT", f"{m.id} lives in the dwelling but is not a household member")
+    applicant = next((m for m in case.members if m.role == "applicant"), None)
+    if applicant is not None and applicant.age is not None and applicant.age < 18 and not any(m.role in ("parent", "spouse") for m in case.members):
+        raise Unknown("applicant is a minor living apart from parents: whether they form an independent household depends on their own income (R_HH_ALWAYS_SAME; SAMU 2020)")
     if adults == 0:
         res.note("R_CALC_BASIC_DEDUCTIBLE", "no adult listed; at least one adult is always assumed")
     return res
@@ -82,7 +101,8 @@ def household(case: Case) -> Result:
 
 def accepted_costs(case: Case, p: ParamSet) -> Result:
     c, d = case.costs, case.dwelling
-    size = case.adults + case.children
+    inside_members, _ = members_in_household(case)
+    size = max(len(inside_members), 1)
     if d.tenure == "owner_occupied" and not p.owner_occupied_covered:
         res = Result(0.0)
         res.note("R_CALC_ACCEPTED_COSTS", "owner-occupied home: no housing costs accepted under current guidance")
@@ -112,18 +132,20 @@ def accepted_costs(case: Case, p: ParamSet) -> Result:
         extras += h
         res.note("R_CALC_WATER_HEATING_FLAT", f"heating {first} + {each} x {max(size-1,0)} = {h} (region {region(case)})")
     total = max(base, 0.0) + extras
-    if case.flags.excluded_student_in_dwelling:
-        n = case.flags.excluded_student_in_dwelling
-        share = size / (size + n)
-        total = total * share
-        res.note("R_CALC_STUDENT_SHARE", f"{n} excluded student(s) share the dwelling: costs x {size}/{size+n}")
+    inside, excluded = members_in_household(case)
+    n = case.flags.excluded_student_in_dwelling + len(excluded)
+    if n:
+        k = len(inside)
+        total = total * k / (k + n)
+        res.note("R_CALC_STUDENT_SHARE", f"{n} co-occupant(s) are not household members: costs x {k}/{k+n} (SAMU 2017: one quarter of the rent accepted for one covered occupant of four)")
     res.value = r2(total)
     return res
 
 
 def max_costs(case: Case, p: ParamSet) -> Result:
     g = municipality_group(case, p)
-    size = case.adults + case.children
+    adults, children = household(case).value
+    size = adults + children
     res = Result(0.0, list(g.applied))
     if case.flags.disabled_member_extra_space:
         size += 1
@@ -192,7 +214,8 @@ def asset_income(case: Case, p: ParamSet) -> Result:
 def household_income(case: Case, p: ParamSet) -> Result:
     res = Result(0.0)
     total = 0.0
-    for m in case.members:
+    inside, _ = members_in_household(case)
+    for m in inside:
         if m.role in ("child", "other_child") and m.age is not None and m.age < 18:
             if m.incomes:
                 res.note("R_CALC_INCOME_DEFINITION", f"{m.id}: minor's income not counted")
@@ -253,8 +276,10 @@ def eligibility(case: Case, p: ParamSet) -> Result:
     for m in case.members:
         if m.resident_in_finland is None:
             raise Unknown(f"members[{m.id}].resident_in_finland")
-        if not m.resident_in_finland:
+        if not m.resident_in_finland and m.role == "applicant":
             failed.append("R_ELIG_RESIDENCE"); res.note("R_ELIG_RESIDENCE", f"{m.id} not permanently resident in Finland")
+        elif not m.resident_in_finland:
+            res.note("R_ELIG_RESIDENCE", f"{m.id} not resident in Finland: not a household member (see household and costs)")
         if m.excluded_student and m.role == "applicant" and p.students_excluded_by_default:
             failed.append("R_ELIG_STUDENT"); res.note("R_ELIG_STUDENT", f"{m.id} is a student: study grant housing supplement applies instead")
         if m.receives_excluding_pension and case.adults == 1:

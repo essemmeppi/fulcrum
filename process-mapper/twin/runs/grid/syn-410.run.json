@@ -1,6 +1,6 @@
 {
   "case_id": "syn-410",
-  "started_at": "2026-11-01T16:19:03+00:00",
+  "started_at": "2026-11-01T16:34:11+00:00",
   "params_valid_from": "2025-08-01",
   "steps": [
     {
@@ -462,22 +462,187 @@
       "provenance": [],
       "chosen_edge": null,
       "question": "costs.rent"
+    },
+    {
+      "node_id": "T_ELIG_CHECK",
+      "name": "Assess eligibility conditions",
+      "actor": "kela_caseworker",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": []
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "explanation": "dwelling and tenure eligible"
+        },
+        {
+          "rule_id": "R_ELIG_RESIDENCE",
+          "explanation": "all members resident in Finland"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "source": "law-938-2014",
+          "locator": "7 § Asunto"
+        },
+        {
+          "rule_id": "R_ELIG_RESIDENCE",
+          "source": "law-938-2014",
+          "locator": "2 § Suomessa asuminen"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "D_ELIGIBLE",
+      "name": "Eligibility conditions met?",
+      "actor": "kela_caseworker",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": "All eligibility conditions met"
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "explanation": "met"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "source": "law-938-2014",
+          "locator": "7 § Asunto"
+        }
+      ],
+      "chosen_edge": "All eligibility conditions met",
+      "question": null
+    },
+    {
+      "node_id": "T_CALC",
+      "name": "Calculate allowance amount",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "judge",
+      "status": "question",
+      "inputs": {},
+      "outputs": {},
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": "amount: costs.rent"
+    },
+    {
+      "node_id": "D_MIN_AMOUNT",
+      "name": "Amount at least 15 € per month?",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "question",
+      "inputs": {},
+      "outputs": {
+        "value": "Amount ≥ 15 €/month – grant"
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_CALC_MIN_PAYMENT",
+          "explanation": "amount not computable from the case; eligibility conditions met"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_CALC_MIN_PAYMENT",
+          "source": "law-938-2014",
+          "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+        }
+      ],
+      "chosen_edge": "Amount ≥ 15 €/month – grant",
+      "question": null
+    },
+    {
+      "node_id": "T_DECIDE",
+      "name": "Make written decision",
+      "actor": "kela_caseworker",
+      "automation_class": "human_signoff",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "gate",
+      "status": "proposal",
+      "inputs": {},
+      "outputs": {
+        "value": "proposal"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_NOTIFY",
+      "name": "Deliver decision to applicant",
+      "actor": "kela_system",
+      "automation_class": "notification",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "draft",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "draft": "Proposal: eligibility conditions met; the amount cannot be computed because costs.rent; amount: costs.rent."
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "D_PAYABLE",
+      "name": "Allowance payable after this decision?",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": "Rejected, below minimum or terminated"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
     }
   ],
   "outcome": {
-    "decision": "question",
+    "decision": "eligible_amount_unknown",
     "monthly_allowance": 0.0,
     "grounds": [],
     "open_questions": [
-      "T_COSTS: costs.rent"
+      "T_COSTS: costs.rent",
+      "T_CALC: amount: costs.rent"
     ],
-    "proposals": []
+    "proposals": [
+      "T_DECIDE: Proposal: eligibility conditions met; the amount cannot be computed because costs.rent; amount: costs.rent."
+    ]
   },
   "state": {
     "complete": false,
     "missing": [
       "costs.rent not stated"
     ],
-    "income": 1200.0
+    "income": 1200.0,
+    "amount_unknown": true,
+    "eligibility_failed": [],
+    "decision": "eligible_amount_unknown"
   }
 }

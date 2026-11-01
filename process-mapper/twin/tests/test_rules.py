@@ -55,7 +55,7 @@ def test_unknown_rent_becomes_question():
     c = make_case("unk", 1, 0, "Helsinki", 0, [1200])
     c.unknowns = ["costs.rent not stated"]
     run = Runner().run(c)
-    assert run.outcome.decision == "question" and run.outcome.open_questions
+    assert run.outcome.decision == "eligible_amount_unknown" and run.outcome.open_questions
 
 
 def test_student_excluded_by_current_guidance():
@@ -63,3 +63,20 @@ def test_student_excluded_by_current_guidance():
     c.members[0].excluded_student = True
     run = Runner().run(c)
     assert run.outcome.decision == "rejected" and "R_ELIG_STUDENT" in run.outcome.grounds
+
+
+def test_non_resident_co_occupants_share_the_rent():
+    # SAMU 2017: four occupants, one covered; one quarter of the 828 EUR rent accepted
+    c = make_case("samu17", 1, 0, "Pori", 828, [0])
+    from twin.case import Member
+    for i in range(3):
+        c.members.append(Member(id=f"x{i}", role="other_adult", resident_in_finland=False))
+    assert gha.accepted_costs(c, P).value == 207
+    assert gha.household(c).value == (1, 0)
+
+
+def test_minor_alone_is_a_question():
+    c = make_case("minor", 1, 0, "Helsinki", 400, [0])
+    c.members[0].age = 15
+    run = Runner().run(c)
+    assert run.outcome.decision == "question"

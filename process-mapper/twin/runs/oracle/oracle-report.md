@@ -1,6 +1,6 @@
 # Stage 1: twin versus Kela calculator
 
-Cases: 28. Agree: 28. Amount differs: 0. Decision differs: 0. Twin asked a question: 0. No real outcome yet: 0.
+Cases: 28. Agree on amount: 28. Agree on decision, amount not computable: 0. Amount differs: 0. Decision differs: 0. Twin asked a question: 0. Untestable from the stated facts: 0. No real outcome yet: 0.
 
 | case | twin | amount | real | kind | detail |
 |---|---|---|---|---|---|

@@ -14,7 +14,7 @@ a register or a payment: in every mode it only produces proposals and a divergen
 | `params.py` | Dated parameter sets with a source and verbatim quote per number. The case's decision date selects the set. |
 | `rules/gha.py` | Rules as code, one function per rule family of the map. Each returns the value and the rule ids applied. Unknown facts raise, never guess. |
 | `adapters/` | One interface per register the map names; a fixture implementation answers from the case; a real one would be read-only. |
-| `runner.py` | Walks the map's nodes and edges. The automation class of each node decides who executes it: rule, registry, judge, gate, draft. Writes a step-by-step trace. |
+| `runner.py` | Walks the map's nodes and edges. The automation class of each node decides who executes it: rule, registry, judge, gate, draft. Writes a step-by-step trace. A step that cannot be answered from the case becomes a question and the walk continues; outcomes are granted, not_paid, rejected, eligible_amount_unknown or question. |
 | `synthetic.py` | A grid of synthetic households covering the rule branches. |
 | `compare.py` | Compares a run with the real outcome and classifies the divergence. |
 | `shadow.py` | Shadow mode: run a directory of mirrored cases, write a report for the process owner. |

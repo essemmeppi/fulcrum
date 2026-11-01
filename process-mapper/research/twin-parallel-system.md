@@ -23,7 +23,15 @@ Code: `process-mapper/twin/`. Everything below is reproducible from `python -m t
    adapters, 5 taken from the application, 1 drafted notice, 1 gate where the run stops with a
    proposal for a person. Outcomes: 323 granted, 82 below the 15 EUR minimum, 4 rejected on an
    eligibility ground (assets, student, pension, owner-occupied), 1 question (rent not stated).
-3. REPLAY_RESULT
+3. **Published appeal decisions replay, and they correct the twin.** 12 decisions of the Social
+   Security Appeal Board (9) and the Insurance Court (3), 2017 to 2025, each turned into a case
+   with verbatim quotes. On the facts as the appeal body stated them, the twin reaches the body's
+   eligibility outcome in 9, asks a question instead of deciding in 1 (a minor applying alone),
+   cannot test 1 (the rent is not stated and the dispute is about income), and differs on the amount
+   in 1 by exactly the 2021 index adjustment the twin does not carry. Two rules were wrong in the
+   first run and were corrected from the decisions: non-resident co-occupants leave the household
+   and share the rent instead of disqualifying the applicant; a minor living apart from parents is a
+   question, not a grant.
 4. **Shadow mode exists and has not run on real cases.** The runner never acts; the shadow command
    reads a directory of mirrored cases and writes a divergence report. What a partner agency must
    provide, and under what legal basis, is in `twin/SHADOW.md`. No agreement exists yet.
@@ -62,10 +70,14 @@ something open that code cannot leave open.
 | Basic deductible | current formula verified against two examples | 0.5 x [T - (667 + 94A + 296L)] | reproduces the 36 limits |
 | `D_MIN_AMOUNT` | both outgoing edges lead to `T_DECIDE` | | the runner needs the state, not the edge, to know the decision; edge conditions are labels, not logic |
 | `D_APPEALABLE` | caseworker decides appealability (contradicted in the validation study) | | not in the application path; left as mapped |
+| Non-resident co-occupants | `R_ELIG_RESIDENCE` phrased as a membership condition; no cost-share rule for excluded occupants other than students | SAMU 2017: only the covered occupant is a member, one quarter of the rent accepted | household and cost share corrected from the decision |
+| Minor applicant | `R_HH_ALWAYS_SAME` puts minor children with parents; nothing says what happens when a minor applies alone | SAMU 2020: remains in the parents' household unless own income suffices | twin asks instead of deciding |
+| Electricity in rent | "electricity included in rent is deducted", no amount | calculator: 0.86 EUR per m2 per month | parameter added, sourced to the calculator |
 
-Four of these are the map's stale-law problem from the validation study, now with a date on each
+Four of the first six are the map's stale-law problem from the validation study, now with a date on each
 value. The fifth (students) is a legal change after the corpus was fetched. A map that is executed
-finds its own staleness faster than a map that is read.
+finds its own staleness faster than a map that is read, and a map that is replayed against decided
+cases finds the rules it does not have.
 
 ## What the twin is and is not
 
@@ -81,7 +93,34 @@ same signature, which is the next piece of code and the first one that needs a m
 
 ## Stage 3 detail
 
-REPLAY_DETAIL
+Cases: `twin/cases/replay/`, report: `twin/runs/replay/replay-report.md`. Sources and limits in
+`twin/cases/replay/README.md`: the SAMU decision database holds 41 housing allowance decisions,
+29 of them under the old Act and 3 on the pensioners' allowance; Finlex lists 5 Insurance Court
+decisions since 2015, 2 of them pensioners'. The Ombudsman's site blocked automated access.
+
+| Case | Dispute | Real outcome | Twin, first run | Twin, after correction |
+|---|---|---|---|---|
+| SAMU 2017 | three co-residents outside Finnish social security; one quarter of the rent accepted | revision upheld | rejected (residence rule applied to every occupant) | eligible; household of one; 828 x 1/4 = 207 EUR accepted |
+| SAMU 2019 (3) | income averaging and revision threshold; summer job as continuous income; foster child | granted 30.96; revised; revised | eligible, amount unknown | same |
+| SAMU 2020 | 15-year-old applying alone | rejected: part of parents' household | eligible (no rule) | question: independent household depends on own income |
+| SAMU 2021 (3) | start date; entrepreneur at YEL income; alternating-residence child and extra space | granted; revised; granted 193.30 | eligible; eligible; 147.90 | same; the 45.40 EUR gap is the index |
+| SAMU 2024 | share savings account gains as recurring income; deductible exceeded costs | terminated | eligible, amount unknown | untestable: rent not stated |
+| VakO 2019 | correction to the applicant's detriment without consent | original 243.41 stands | eligible, amount unknown | same |
+| VakO 2020 | group-home room under a lease is a rental dwelling | returned to Kela | eligible, amount unknown | same |
+| VakO 2025 | five-year recovery limit per jointly liable member | recovery set aside | eligible, amount unknown | same |
+
+The one amount divergence is informative. The decision states the 2021 maximum housing costs for
+three persons in group IV (657 EUR) and the basic deductible (415.38 EUR on 2,143 EUR of counted
+income). The twin's Act-level set gives 641 and 456.12. Inverting the deductible gives a
+full-rate income threshold of 1,154 EUR for one adult and two children, against the Act's 1,057, which is the National Pension Index applied to the statutory constants. With the
+2021 constants the formula gives 193.30 exactly. The rule is right; the parameter table needs a
+row per year, which Kela's archived pages can supply.
+
+What the decisions do not state limits what replay can test. Three of twelve state the rent, one
+the municipality, none the ages, three an amount. Replay therefore tests the eligibility layer and
+the legal characterisation of facts (is a group-home room a rental dwelling, is a foster child a
+member, is a capital gain recurring income), not the arithmetic. The corrections it produced are of
+that kind: both were about who is in the household.
 
 ## Stage 4: what a shadow run needs
 

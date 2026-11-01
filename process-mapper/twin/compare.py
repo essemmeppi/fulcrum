@@ -30,6 +30,12 @@ def compare(case: Case, run: Run) -> Verdict:
     if o.decision == "question":
         return Verdict(case.case_id, False, "twin_question", "; ".join(o.open_questions), o.decision, 0.0, e.outcome, e.monthly_allowance)
     exp_dec = {"granted": "granted", "rejected": "rejected", "terminated": "rejected", "revised": "granted"}.get(e.outcome or "", None)
+    if o.decision == "eligible_amount_unknown":
+        if exp_dec == "granted":
+            return Verdict(case.case_id, True, "agree_decision", "eligible; amount not computable: " + "; ".join(o.open_questions), o.decision, 0.0, e.outcome, e.monthly_allowance)
+        if exp_dec == "rejected":
+            return Verdict(case.case_id, False, "untestable", f"twin finds the stated facts eligible but cannot compute the amount; real decision {e.outcome}: {e.reason}", o.decision, 0.0, e.outcome, e.monthly_allowance)
+        return Verdict(case.case_id, False, "no_expectation", f"expected outcome '{e.outcome}' is not a decision the application flow produces", o.decision, 0.0, e.outcome, None)
     if e.monthly_allowance is not None:
         if e.monthly_allowance == 0 and o.decision in ("rejected", "not_paid"):
             return Verdict(case.case_id, True, "agree", "both: nothing payable", o.decision, 0.0, e.outcome, e.monthly_allowance)
