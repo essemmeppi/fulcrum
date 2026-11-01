@@ -1,0 +1,80 @@
+{
+  "case_id": "replay-samu-2021-03",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=254",
+    "citation": "SAMU 26.8.2021, Dnro 10923/21/05 (Yrittäjän tulo ja soviteltu työmarkkinatuki asumistuessa)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 1.4.2021 päätöksen, jolla A:n asumistuen tarkistus oli hylätty 1.2.2021, koska tuloissa ei ollut tapahtunut huomattavaa muutosta ja asumistuki oli tarkistettu vuositarkistuksena 1.4.2021 lukien. Ruokakunnan tuloina 1.2.2021 ja 1.4.2021 lukien oli huomioitu ilmoitettu arvio elinkeinotoiminnan todellisista tuloista 1000 euroa kuukaudessa ja työmarkkinatuki 476,23 euroa kuukaudessa eli 300 euron ansiotulovähennyksen jälkeen 1 176,23 euroa kuukaudessa.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta muutti Kansaneläkelaitoksen päätöstä siten, että A:n elinkeinotoiminnan tulona 1.2.2021 alkaen tuli huomioida YEL-työtulo 8063,57 euroa vuodessa.",
+      "Esitetyn selvityksen mukaan A:n YEL-vakuutuksen mukainen vahvistettu työtulo oli 8063,57 euroa vuodessa 1.2.2021 alkaen. A:lle oli myönnetty työttömyysturvalain väliaikaisen muutoksen perusteella työmarkkinatuki ajalle 1.2.2021–30.6.2021.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, että A:n yrittäjänä saamana tulona tuli huomioida yleisestä asumistuesta annetun lain mukaisesti voimassa olevan YEL-vakuutuksen mukainen vahvistettu työtulo. Lisäksi muuna kuin yrittäjänä saatuna tulona tuli huomioida hänelle myönnetty työmarkkinatuki."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2021-02-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "entrepreneur",
+          "gross_monthly": 671.96,
+          "continuous": true,
+          "note": "Confirmed YEL earned income 8 063,57 EUR/year from 1.2.2021; 8 063,57 / 12 = 671,96 EUR/month (derived). Kela had instead counted A's own estimate of actual business income, 1 000 EUR/month."
+        },
+        {
+          "kind": "unemployment",
+          "gross_monthly": 476.23,
+          "continuous": true,
+          "note": "Labour market subsidy (työmarkkinatuki) granted under the temporary pandemic amendment for 1.2.2021-30.6.2021, 476,23 EUR/month as counted by Kela; also counted by SAMU as non-entrepreneur income."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "revised",
+    "monthly_allowance": null,
+    "reason": "Under Act 938/2014 s. 12 income earned as an entrepreneur is counted at the earned income confirmed under the Self-Employed Persons' Pensions Act (YEL), not at the entrepreneur's own estimate of actual business income; the labour market subsidy granted under the temporary pandemic rule is counted in addition as ordinary income. SAMU changed Kela's decision so that business income from 1.2.2021 is the YEL income of 8 063,57 EUR/year.",
+    "decided_by": "SAMU 10923/21/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "members[A].age not stated",
+    "household size not stated ('ruokakunnan tuloina' names only A's incomes)",
+    "resulting allowance amount not stated"
+  ],
+  "notes": "Kela refused to revise A's allowance from 1.2.2021 and at the annual review from 1.4.2021 counted A's self-estimated business income of 1 000 EUR/month plus 476,23 EUR/month labour market subsidy. A, a YEL-insured entrepreneur, argued that entrepreneur income must be counted at the YEL confirmed income and that the pandemic-era labour market subsidy should not affect the allowance. SAMU partly agreed: business income must be the confirmed YEL income (8 063,57 EUR/year), while the labour market subsidy is still counted as other income."
+}

@@ -1,0 +1,111 @@
+{
+  "case_id": "replay-samu-2017-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=228",
+    "citation": "SAMU 7.9.2017, Dnro 20610/17/05 (Asumistuessa ei huomioitu Suomessa vakuuttamattomien henkilöiden osuutta asumismenoista)",
+    "quotes": [
+      "Kansanelälaitos oli 7.9.2017 antanut yleistä asumistukea koskevan päätöksen. Asumismenoina 1.10.2017 lukien oli huomioitu vuokra 207 euroa.",
+      "A vaati koko vuokran huomioimista. Hän vetosi siihen, että vuokrasopimus on hänen nimellään ja hän joutuu maksamaan koko vuokran yksin, vaikka asunnossa asuukin hänen vanhempansa ja veljensä. Kukaan heistä ei ole oikeutettu sosiaaliturvaan.",
+      "Asiassa esitetyn selvityksen mukaan A:n asumistuki oli tarkistettu 1.10.2017 lukien tulojen muutoksen vuoksi. Vuokrasopimuksen mukaan vuokra oli 828 euroa kuukaudessa sisältäen neljän hengen vesimaksun. A:n lisäksi asunnossa asuvina oli huomioitu hänen vanhempansa ja veljensä eli yhteensä neljä henkilöä. Vanhemmat ja veli eivät kuitenkaan olleet kuuluneet Suomen sosiaaliturvajärjestelmän piiriin. A:n asumismenoina oli siten huomioitu vain neljännes koko asunnon asumismenoista eli 207 euroa.",
+      "Sosiaaliturvan muutoksenhakulautakunta totesi, että ruokakunnan jäsenenä voidaan ottaa huomioon vain Suomen sosiaaliturvaan kuuluva henkilö. A:n sukulaisia ei siten voitu lukea ruokakunnan jäseniksi ennen Suomen sosiaaliturvaan kuulumistaan.",
+      "Sosiaaliturvan muutoksenhakulautakunta totesi lisäksi, että ruokakuntaan kuulumattomien, mutta asunnossa asuvien henkilöiden osuutta asumismenoista ei voida ottaa huomioon asumistuen saajan asumismenoina. A:n asumismenoina voitiin siten ottaa huomioon vain hänen oma osuutensa asumismenoista.",
+      "Sosiaaliturvan muutoksenhakulautakunta hylkäsi valituksen."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2017-10-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "parent1",
+      "role": "parent",
+      "age": null,
+      "resident_in_finland": false,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "parent2",
+      "role": "parent",
+      "age": null,
+      "resident_in_finland": false,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "brother",
+      "role": "other_adult",
+      "age": null,
+      "resident_in_finland": false,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 828.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "revised",
+    "monthly_allowance": null,
+    "reason": "Only a person resident in Finland under the Act on residence-based social security is counted as a household member (Act 938/2014 s. 2), and the share of housing costs attributable to co-residents who are not household members is not an accepted housing cost. With four occupants of whom only A was covered, only one quarter of the 828 EUR rent (207 EUR) was accepted; Kela's revision from 1.10.2017 was upheld.",
+    "decided_by": "SAMU 20610/17/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "ages not stated",
+    "incomes not stated (the revision was triggered by an income change whose amounts are not given)",
+    "resulting allowance amount not stated",
+    "the co-residents' lack of coverage is described as not belonging to the Finnish social security system; resident_in_finland=false is the closest model field"
+  ],
+  "notes": "A rented a flat for 828 EUR/month (including water for four persons) and lived there with parents and a brother who were not covered by Finnish residence-based social security. When revising the allowance from 1.10.2017, Kela accepted only A's quarter of the rent, 207 EUR. A argued the lease was in her name and she paid the whole rent alone. SAMU rejected the appeal: relatives outside the Finnish social security system cannot be household members, and the share of housing costs of non-member co-residents is not accepted."
+}

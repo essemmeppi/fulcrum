@@ -1,0 +1,67 @@
+{
+  "case_id": "replay-samu-2021-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=255",
+    "citation": "SAMU 9.12.2021, Dnro 22454/21/05 (Asumistuen alkamisajankohta)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 15.7.2021 päätöksen, jolla A:lle oli myönnetty asumistuki 1.8.2021 alkaen.",
+      "A vaati asumistukea jo 1.7.2021. Hän perusteli vaatimustaan sillä, että oli muuttanut asuntoon jo heinäkuussa ja maksanut koko kuukauden vuokran.",
+      "Esitetyn vuokrasopimuksen mukaan vuokrasopimus oli voimassa 10.7.2021 alkaen.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, että A:n vuokrasopimus ei ollut ollut voimassa 1.7.2021 alkaen, joten kaikki asumistuen saamisen edellytykset eivät olleet täyttyneet vielä 1.7.2021. Oikeus asumistukeen alkoi näin ollen 1.8.2021."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2021-08-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "granted",
+    "monthly_allowance": null,
+    "reason": "Under Act 938/2014 s. 18 and established practice the allowance starts from the beginning of the month from whose first day the tenancy is in force; a lease in force only from 10.7.2021 gives entitlement from 1.8.2021, even if the tenant moved in and paid the whole July rent. Kela's grant from 1.8.2021 was upheld.",
+    "decided_by": "SAMU 22454/21/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "members[A].age and incomes not stated",
+    "household size not stated",
+    "expected.monthly_allowance not stated"
+  ],
+  "notes": "Kela granted A housing allowance from 1.8.2021. A appealed for a start on 1.7.2021 because she had moved in during July and paid the full month's rent. SAMU rejected the appeal: the lease was in force only from 10.7.2021, so the conditions were not all met on 1.7.2021 and entitlement began on 1.8.2021."
+}

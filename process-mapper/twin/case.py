@@ -63,7 +63,8 @@ class Costs(BaseModel):
     rent: float = Field(0.0, ge=0, description="Monthly rent or usage charge paid by household members")
     water_paid_separately: bool = False
     heating_paid_separately: bool = False
-    electricity_included_in_rent: float = 0.0  # deducted from rent (R_CALC_ACCEPTED_COSTS)
+    electricity_included_in_rent: float = 0.0  # deducted from rent (R_CALC_ACCEPTED_COSTS); if 0 and floor_area_m2 given, computed from the per-m2 in-kind value
+    floor_area_m2: float = 0.0                 # asked by Kela's calculator only when electricity is included in the rent
     excluded_fees_in_rent: float = 0.0         # sauna, parking, internet etc. included in the figure above
     subtenant_rent: float = 0.0                # R_CALC_SUBTENANT_DEDUCTION
     employer_paid_share: float = 0.0

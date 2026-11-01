@@ -1,0 +1,104 @@
+{
+  "case_id": "replay-samu-2021-02",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=253",
+    "citation": "SAMU 9.12.2021, Dnro 21008/21/05 (Vuoroviikkoasuminen ja vammaisen lisätilan tarve asumistuessa)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 27.5.2021 päätöksen, jolla A:lle oli myönnetty asumistuki yhden aikuisen ja kahden lapsen muodostamalle kolmen henkilön ruokakunnalle.",
+      "Lapua kuuluu neljänteen kuntaryhmään, jossa kolmen hengen ruokakunnan enimmäisasumismenot vuonna 2021 ovat 657 euroa kuukaudessa.",
+      "A:n ruokakunnalla täysimääräiseen tukeen oikeuttava tulo oli siten 1 154 euroa.",
+      "Saadun selvityksen mukaan A oli saanut palkkatuloa ajalla 1.1.2021–31.5.2021 yhteensä 12 216,51 euroa, jonka perusteella hänen kuukausitulonsa olivat 2 443,30 euroa. Ruokakunnan asumistukeen vaikuttavat kuukausitulot olivat 2 143,30 euroa ansiotulovähennyksen jälkeen. Perusomavastuu oli siten 0,42 x (tulot 2 143 – täysimääräiseen tukeen oikeuttavat tulot 1 154) = 415,38 euroa.",
+      "Saadun selvityksen mukaan A:n hyväksyttävät asumismenot 1.6.2021 lukien olivat 1 027 euroa kuukaudessa. Asumismenot ylittävät enimmäisasumismenot 657 euroa, joten asumistuki määräytyi enimmäisasumismenojen mukaan. Asumistuki oli 0,8 x (enimmäisasumismenot 657 - perusomavastuu 415,38) = 193,30 euroa.",
+      "Esitetyn selvityksen mukaan lapsen B vakinainen osoite ei ollut sama kuin A:n. Kyse oli vuoroasumisesta ja lapsi vietti joka toisen viikon A:n luona. Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, että B:tä ei voitu laskea kuuluvaksi A:n ruokakuntaan, koska hänen vakinainen osoitteensa ei ollut sama kuin A:n.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, ettei asiassa ollut esitetty selvitystä, jonka mukaan kyse olisi vaikeasta vammasta aiheutuvasta lisätilantarpeesta. Toimintaterapeutin käyntejä ei voida ottaa asumistuessa huomioon. Näin ollen muutoksenhakulautakunta totesi, että enimmäisasumismenoja ei voitu ottaa huomioon ruokakunnan todellista kokoa suurempina.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta hylkäsi valituksen."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2021-06-01",
+  "dwelling": {
+    "municipality": "Lapua",
+    "municipality_group": 4,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "wage",
+          "gross_monthly": 2443.3,
+          "continuous": true,
+          "note": "Wage income 1.1.2021-31.5.2021 totalling 12 216,51 EUR, i.e. 2 443,30 EUR/month as counted; 2 143,30 EUR after the 300 EUR earned-income deduction."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "child1",
+      "role": "child",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "child2",
+      "role": "child",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 1027.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "granted",
+    "monthly_allowance": 193.3,
+    "reason": "A child living with the applicant every other week but registered at the other parent's address is not a household member (Act 938/2014 s. 4; established practice follows the child's registered permanent address). Sensory hypersensitivity and planned occupational-therapist home visits are not a disability-related need for extra space under s. 10, so the maximum housing costs are those of a three-person household in municipality group 4 (657 EUR in 2021). Allowance 0,8 x (657 - 415,38) = 193,30 EUR/month confirmed.",
+    "decided_by": "SAMU 21008/21/05"
+  },
+  "unknowns": [
+    "children's ages not stated",
+    "whether the 1 027 EUR accepted housing costs include separately paid water or heating not stated",
+    "a third child B lives with A every other week but is registered elsewhere and is excluded from the household; the case model has no field for alternating residence, so B is omitted from members"
+  ],
+  "notes": "Kela granted A, a single parent in Lapua (municipality group 4), allowance for a three-person household (A and two children) of 193,30 EUR/month from 1.6.2021 with accepted housing costs of 1 027 EUR capped at 657 EUR. A claimed a larger allowance because a third child B lived with her every other week and because her children's sensory hypersensitivity required separate rooms. SAMU rejected the appeal: B's registered permanent address was elsewhere so B was not a household member, and no severe-disability need for extra space was shown; the calculation was correct and the act allows no discretion."
+}

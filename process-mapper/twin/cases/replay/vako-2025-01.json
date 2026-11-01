@@ -1,0 +1,97 @@
+{
+  "case_id": "replay-vako-2025-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.vakuutusoikeus.fi/ratkaisut/ratkaisujen-arkisto/vako-11682023/",
+    "citation": "VakO 27.5.2025/1168:2023 (Asumistukiasia, Asumistuen takaisinperiminen, Takaisinperittävän saatavan vanhentuminen); also on Finlex https://www.finlex.fi/fi/oikeuskaytanto/vakuutusoikeus/2025/1168-2023",
+    "quotes": [
+      "Kansaneläkelaitos määräsi 28.3.2019 antamallaan päätöksellä asumistukea hakeneelta A:lta perittäväksi takaisin osan ajalta 1.9.2013 – 30.9.2015 liikaa maksetusta asumistuesta. Liikamaksua ajalta 1.9.2013 – 31.3.2014 ei määrätty perittäväksi takaisin, koska asumistuen maksamisesta oli kulunut yli viisi vuotta. Ruokakuntaan kuuluivat asumistuen hakijan A:n lisäksi hänen puolisonsa B ja alaikäinen C.",
+      "Kansaneläkelaitos määräsi 10.5.2022 antamallaan päätöksellä A:n puolisolta B:ltä perittäväksi takaisin edellä tarkoitetun A:lta perittäväksi määrätyn liikamaksun, koska sitä ei saatu perittyä takaisin A:lta.",
+      "Jäljellä oleva liikamaksun määrä on 4 855,87 euroa.",
+      "Vakuutusoikeus hylkäsi valituksen.",
+      "Kyseisen säännöksen sekä yleisestä asumistuesta annetun lain 32 §:n ja 33 §:n nojalla takaisinperintävelan maksusta yhteisvastuussa olevalle ruokakunnan jäsenelle on tullut antaa erikseen takaisinperintäpäätös viiden vuoden kuluessa etuuden maksamisesta. Velan vanhentuminen ei ole ruokakunnan muun jäsenen osalta katkennut asumistuen hakijalle aiemmin annetun takaisinperintäpäätöksen perusteella.",
+      "Koska Kansaneläkelaitoksen päätös takaisinperinnästä on annettu B:lle vasta 10.5.2022, takaisinperintä on hänen osaltaan vanhentunut ajalla 1.4.2014 – 30.9.2015 maksetun asumistuen osalta."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2022-05-10",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "B",
+      "role": "spouse",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "C",
+      "role": "child",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "revised",
+    "monthly_allowance": null,
+    "reason": "Under Act 938/2014 ss. 32-33(1) each jointly liable adult household member must receive a separate recovery decision within five years of the payment; a recovery decision served on the applicant does not interrupt limitation for the spouse (Act on limitation of debts 19(1)). Kela's 10.5.2022 recovery decision against spouse B for 4 855,87 EUR (overpayment 1.4.2014-30.9.2015) was therefore time-barred; SAMU's annulment of it was upheld and Kela's appeal rejected.",
+    "decided_by": "Vakuutusoikeus 1168:2023"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "members' ages not stated (C described only as a minor)",
+    "members' incomes not stated",
+    "the cause of the original overpayment is described only as fraudulent conduct / failure to report by A"
+  ],
+  "notes": "Kela had in 2019 ordered applicant A to repay 4 855,87 EUR of housing allowance overpaid for 1.4.2014-30.9.2015 (the earlier part already time-barred). When recovery from A failed, Kela in May 2022 issued a separate recovery decision against A's spouse B as a jointly liable household member. SAMU (7-1) held the claim against B time-barred and waived recovery; Kela appealed. The Insurance Court rejected Kela's appeal: the general housing allowance act does not say that a decision served on the applicant interrupts limitation for other jointly liable members, so the general limitation act applies per debtor and B had to be served within five years of payment."
+}

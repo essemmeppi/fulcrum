@@ -1,0 +1,88 @@
+{
+  "case_id": "replay-samu-2019-03",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=231",
+    "citation": "SAMU 10.1.2019, Dnro 22828/18/05 (Asumistuessa huomioitiin jatkuvana tulona vähintään kolme kuukautta jatkuvat palkkatulot)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 18.7.2018 päätöksen, jolla asumistuki tarkistettiin 1.6.2018 lukien muuton vuoksi. Tuloina huomioitiin ansiotulovähennyksen jälkeen 2 200 euroa kuukaudessa",
+      "A:n mukaan hänellä oli kesätyötuloa ajalla 2.5. – 9.9.2018 2 449,62 euroa kuukaudessa. Lisäksi hänellä oli tuloa keikkatyöstä keskimäärin 50 euroa kuukaudessa ja palkkiota järjestötoiminnasta noin 75 euroa kuukaudessa. Näistä laskien keskiarvotulon pitäisi olla 992 euroa kuukaudessa.",
+      "Valituksenalaisessa päätöksessä A:n tulona 1.6.2018 alkaen oli huomioitu palkkatulo kesätyöstä 2449,62 euroa kuukaudessa ja keikkatyöstä 50 euroa kuukaudessa eli yhteensä 2499,62 euroa kuukaudessa. Ansiotulovähennyksen jälkeen ruokakunnan tulona oli huomioitu 2200 euroa kuukaudessa.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, että A:n työ kesätyö jatkui asumistuen tarkistusajankohdasta lukien vähintään kolmen kuukauden ajan, joten siitä saatava palkkatulo oli huomioitava jatkuvana tulona. Myös epäsäännöllisen mutta toistaiseksi jatkuvan keikkatyön palkka oli huomioitava jatkuvana tulona. Näin ollen A:n tuloja ei voitu huomioida keskiarvotulona vuoden pituiselta ajalta.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta hylkäsi valituksen."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2018-06-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "wage",
+          "gross_monthly": 2449.62,
+          "continuous": true,
+          "note": "Summer job wage 2.5.-9.9.2018, 2 449,62 EUR/month; continuous because it lasts at least three months from the revision date 1.6.2018."
+        },
+        {
+          "kind": "wage",
+          "gross_monthly": 50.0,
+          "continuous": true,
+          "note": "Irregular but open-ended gig work, about 50 EUR/month, counted as continuous."
+        },
+        {
+          "kind": "other",
+          "gross_monthly": 75.0,
+          "continuous": true,
+          "note": "Fee from organisational activity about 75 EUR/month, mentioned by A; the decision does not say whether Kela counted it (Kela's total was 2 499,62 = 2 449,62 + 50)."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "revised",
+    "monthly_allowance": null,
+    "reason": "Income that continues for at least three months from the grant or revision date is continuous income (Act 938/2014 s. 12), so a summer job running 2.5.-9.9.2018 is counted at its full monthly amount from the revision date 1.6.2018 rather than averaged over twelve months; irregular but open-ended gig pay is likewise continuous. Kela's revision counting 2 200 EUR/month after the 300 EUR earned-income deduction was upheld.",
+    "decided_by": "SAMU 22828/18/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "members[A].age not stated",
+    "household size not stated",
+    "revised allowance amount not stated",
+    "whether the 75 EUR/month organisational fee was counted by Kela is not stated"
+  ],
+  "notes": "After A moved, Kela revised the allowance from 1.6.2018 counting A's summer-job wage of 2 449,62 EUR/month plus 50 EUR gig income (2 200 EUR after the earned-income deduction). A argued the summer job was temporary and the income should be averaged over a year to about 992 EUR/month. SAMU rejected the appeal: a job lasting at least three months from the revision date is continuous income and is not averaged."
+}

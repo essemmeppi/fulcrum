@@ -58,6 +58,7 @@ class ParamSet:
     earned_income_deduction: float                # R_CALC_EARNED_INCOME_DEDUCTION (0 = abolished)
     students_excluded_by_default: bool            # kela.fi: "If you study, you cannot, as a rule, get general housing allowance"
     owner_occupied_covered: bool                  # kela.fi: "General housing allowance is not available for owner-occupied homes."
+    electricity_per_m2: float = 0.0               # in-kind value of electricity included in rent, EUR per m2 per month (not in the map)
     approximate: bool = False                     # True when amounts are at a statutory index level, not the year's indexed values
     sources: dict[str, str] = field(default_factory=dict)
     notes: list[str] = field(default_factory=list)
@@ -72,6 +73,7 @@ PARAMS_2026 = ParamSet(
     max_costs={1: [563, 808, 1019, 1188, 148], 3: [447, 652, 828, 981, 134], 4: [394, 574, 734, 875, 129]},
     max_costs_aland=[470, 687, 871, 1032, 141],
     water_per_person=20,
+    electricity_per_m2=0.86,
     heating={"default": (46, 16), "east": (48, 17), "north": (50, 17)},
     asset_threshold_one_adult=10_000, asset_threshold_two_adults=20_000, asset_income_share=0.20,
     asset_deposit_reserve=2_000, asset_ceiling=50_000,
@@ -91,6 +93,7 @@ PARAMS_2026 = ParamSet(
         "interest_dividend": f"{KELA_INCOME_PAGE}: 'interest and dividend income ... if it exceeds EUR 12.02 per month.'",
         "students": f"{KELA_MAIN_PAGE}: 'If you study, you cannot, as a rule, get general housing allowance. The majority of students can get the housing supplement for students'",
         "owner_occupied": f"{KELA_INCOME_PAGE}: 'General housing allowance is not available for owner-occupied homes.'",
+        "electricity_per_m2": "Kela calculator (laskurit.kela.fi/yleisen-asumistuen-laskuri) breakdown line 'Vuokraan sisältyvä käyttösähkö' at 0.86 EUR/m2/month; Etuusohje refers to the Tax Administration's 2026 in-kind value for unlimited electricity. Not stated on the kela.fi pages; absent from the map.",
         "min_deductible": "Act 938/2014 § 16 (consolidated text in corpus): a basic deductible under 10 euros is not taken into account",
     },
     notes=[

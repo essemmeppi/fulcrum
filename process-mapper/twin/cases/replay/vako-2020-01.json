@@ -1,0 +1,69 @@
+{
+  "case_id": "replay-vako-2020-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.finlex.fi/fi/oikeuskaytanto/vakuutusoikeus/2020/2361-2020",
+    "citation": "VakO 8.12.2020/2361:2020 (Asumistuki, Asumismeno, Asuntolapaikka, Palveluasuminen)",
+    "quotes": [
+      "Kansaneläkelaitos hylkäsi A:n asumistukihakemuksen, koska A ei itse maksanut asumismenojaan, vaan niistä vastasi kaupunki, joka oli myöntänyt A:lle palveluasumisen. Kansaneläkelaitoksen päätöksen mukaan asiakasmaksua ei huomioida vuokrana.",
+      "Valituksenalaisella päätöksellä Kansaneläkelaitos on hylännyt A:ta koskevan asumistukihakemuksen l.6.2019 alkaen",
+      "A oli 25.6.2019 allekirjoittanut kaupungin kanssa 1.6.2019 alkaen 31.8.2019 asti voimassaolleen vuokrasopimuksen, joka koski ryhmäkodissa olevaa pinta-alaltaan 14,2 neliömetrin suuruista huoneistoa. Vuokrasopimuksen mukaan 200 euron suuruinen vuokra laskutetaan kuukausittain jälkikäteen palveluasumismaksun yhteydessä.",
+      "Hänelle oli kunnallisen viranhaltijan päätöksellä myönnetty asumispalvelupaikka samassa yksikössä tämän jälkeenkin eli 1.9.2019 alkaen toistaiseksi.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunnan päätös kumottiin. Asia palautettiin Kansaneläkelaitokselle, jonka tulee käsitellä uudelleen kysymys A:n oikeudesta asumistukeen 1.6.2019 alkaen.",
+      "Kun otettiin huomioon A:n ja kaupungin välinen vuokrasopimus, selvityksenä vuokran perimisestä esitetyt laskut sekä A:n 1.6.2019 alkanut pysyväksi katsottava asuminen vuokraamassaan huoneistossa, hänellä katsottiin olevan yleisestä asumistuesta annetussa laissa tarkoitettuja asumismenoja, joista voitiin myöntää asumistukea."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2019-06-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 200.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "revised",
+    "monthly_allowance": null,
+    "reason": "A room in a municipal group home held under a residential lease (Act 481/1995), with rent of 200 EUR/month invoiced separately from service fees and permanent occupation, is a rental dwelling with eligible housing costs under Act 938/2014 ss. 7 and 9(1). Kela's rejection for lack of own housing costs was annulled and the application returned to Kela to decide the remaining conditions from 1.6.2019.",
+    "decided_by": "Vakuutusoikeus 2361:2020"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated (a city group home)",
+    "members[A].age not stated",
+    "members[A].incomes not stated",
+    "final allowance amount not decided (returned to Kela)",
+    "whether water or heating are paid separately not stated (invoice itemised rent and other service-housing fees)"
+  ],
+  "notes": "Kela rejected A's application from 1.6.2019 on the ground that A, placed in a municipal group home as service housing, paid a client fee rather than rent. A showed a written lease for a 14,2 m2 room at 200 EUR/month and monthly invoices itemising the rent. SAMU rejected the appeal (2-1), but the Insurance Court held that a supported-housing room qualifies as a rental dwelling when occupation rests on a residential lease, the arrangement is primarily permanent residence rather than care, and the resident is personally liable for the rent; it annulled the rejection and returned the case to Kela."
+}

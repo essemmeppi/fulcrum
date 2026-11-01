@@ -1,0 +1,68 @@
+{
+  "case_id": "replay-samu-2019-02",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=230",
+    "citation": "SAMU 10.1.2019, Dnro 24265/18/05 (Perhehoitoon sijoitettu lapsi ei kuulunut ruokakuntaan)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 26.6.2018 päätöksen, jolla asumistuki tarkistettiin 1.7.2018 lukien ruokakuntaan kuuluvien henkilöiden määrän muutoksen vuoksi.",
+      "A vaati, että poika C luetaan ruokakuntaan kuuluvaksi, koska hän ei asunut muualla. Hän oli tukiperheessä osa-aikaisesti ja kotona osa-aikaisesti.",
+      "Esitetyn selvityksen mukaan poika C oli ollut sijoitettuna perhehoitoon 12.6.2017 alkaen ja huostaanotto oli ollut vireillä.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, että ruokakuntaan kuuluviksi luetaan myös tilapäisesti muualla asuvat henkilöt. C:n perhehoitoon sijoituksen jatkuttua yli vuoden ajan hänen muualla asumistaan ei voitu pitää tilapäisenä eikä häntä sen myötä huomioitu A:n ruokakunnan jäsenenä 1.7.2018 alkaen.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta hylkäsi valituksen."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2018-07-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "revised",
+    "monthly_allowance": null,
+    "reason": "Persons temporarily living elsewhere still belong to the household (Act 938/2014 s. 4), but a child placed in foster care since 12.6.2017, with a care order pending, had been away for over a year by 1.7.2018, which is no longer temporary; the child was therefore excluded and Kela's revision of the allowance from 1.7.2018 for the reduced household size was upheld.",
+    "decided_by": "SAMU 24265/18/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "other household members, ages and incomes not stated (only applicant A and the excluded son C are named)",
+    "revised allowance amount not stated",
+    "son C is excluded from the household and so is not listed in members; his age is not stated"
+  ],
+  "notes": "Kela revised A's allowance from 1.7.2018 because the household had shrunk: A's son C had been placed in foster care from 12.6.2017 and a care order was pending. A argued C was only part-time in a support family and otherwise at home. SAMU rejected the appeal: absence of more than a year is not temporary, so C no longer counted as a household member."
+}

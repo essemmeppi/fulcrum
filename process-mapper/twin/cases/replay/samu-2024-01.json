@@ -1,0 +1,76 @@
+{
+  "case_id": "replay-samu-2024-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=269",
+    "citation": "SAMU 27.8.2024, Dnro 29667/23/05 (Osakesäästötilin luovutusvoittojen huomioiminen asumistuessa)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 8.8.2023 päätöksen, jolla A:n asumistuki tarkistettiin vuositarkistuksena 1.7.2023 lukien ja lakkautettiin vuositarkistuspäivästä, koska ruokakunnan hyväksyttävät asumismenot olivat pienemmät kuin tulojen perusteella laskettu omavastuu.",
+      "A:n tuloina huomioitiin muun muassa ajalle 17.2023 – 30.6.2023 pääomatuloa 12 047,04 euroa. Päätöksen perusteluiden mukaan korko- ja osinkotulot on otettu huomioon, koska niiden määrä on yli 12,02 euroa kuukaudessa. Luovutusvoittoina on otettu huomioon vuoden 2022 osakesäästötilin kautta saadut luovutusvoitot 10 569,48 euroa vuodessa. Luovutustappioita ei ole huomioitu, koska yleisessä asumistuessa luovutusvoitoista ei voi vähentää luovutustappioita.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta hylkäsi valituksen.",
+      "Nordnetin asiakirjoista oli käynyt ilmi, että luovutusvoittoja oli ollut ainakin vuosina 2022 ja 2023 ja kumpanakin vuonna useammalta kaupantekopäivältä. Lisäksi A oli itsekin ilmoittanut olevan mahdollista, että luovutusvoittoja tulisi myös jatkossa. Siten A:lle oli tullut huomioida asumistukeen vaikuttavana jatkuvana tai vuosittain toistuvana tulona osakkeiden luovutusvoittoja. Selvityksen perusteella kyse ei ollut ollut pelkästään satunnaisesta myyntivoitosta.",
+      "Osakkeiden luovutusvoitoista ei asumistukeen vaikuttavaa tuloa laskettaessa vähennetä osakkeiden luovutustappiota eikä hankinta- ja myyntikuluja."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2023-07-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "capital",
+          "gross_monthly": 1003.92,
+          "continuous": true,
+          "note": "Capital income counted by Kela: 12 047,04 EUR for the 12-month period from 1.7.2023 (the text prints the period as '17.2023 – 30.6.2023'); 12 047,04 / 12 = 1 003,92 EUR/month (derived). Of this, 10 569,48 EUR/year are share-savings-account (osakesäästötili) capital gains realised in 2022, counted gross without deducting losses or fees; the rest is interest and dividends, not itemised."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "terminated",
+    "monthly_allowance": 0.0,
+    "reason": "Capital gains from a share savings account realised in at least two consecutive calendar years are 'continuous or annually recurring' gross income under Act 938/2014 s. 12, not occasional sale profits excluded by s. 12(2); they are counted at the previous calendar year's realised amount (s. 14), gross, without deducting losses or trading costs. With that income the basic deductible exceeded the accepted housing costs, so Kela's termination from the annual review date 1.7.2023 was upheld.",
+    "decided_by": "SAMU 29667/23/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated (only that accepted costs were below the deductible)",
+    "household size not stated (only A named)",
+    "members[A].age not stated",
+    "other income of A (wages, benefits) not stated; 'muun muassa' indicates further items",
+    "split of the 12 047,04 EUR between gains and interest/dividends only partly stated"
+  ],
+  "notes": "At the annual review from 1.7.2023 Kela counted A's share-savings-account gains of 10 569,48 EUR (realised in 2022) plus interest and dividends as income, which pushed the basic deductible above the accepted housing costs, and terminated the allowance. A argued the gains were occasional sale profits excluded by s. 12 and that losses should be netted. SAMU rejected the appeal: gains realised in two consecutive years, with A admitting further sales were possible, are recurring income; they are counted gross at the last year's level, and losses and fees are not deducted."
+}

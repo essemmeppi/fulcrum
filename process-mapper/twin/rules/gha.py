@@ -93,9 +93,13 @@ def accepted_costs(case: Case, p: ParamSet) -> Result:
         raise Unknown("costs.rent")
     if "costs.rent not stated" in case.unknowns or (c.rent <= 0):
         raise Unknown("costs.rent")
-    base = c.rent - c.electricity_included_in_rent - c.excluded_fees_in_rent - c.employer_paid_share - c.subtenant_rent
+    elec = c.electricity_included_in_rent
     res = Result(0.0)
-    res.note("R_CALC_ACCEPTED_COSTS", f"rent {c.rent:.2f} minus electricity {c.electricity_included_in_rent:.2f}, excluded fees {c.excluded_fees_in_rent:.2f}, employer share {c.employer_paid_share:.2f}")
+    if not elec and c.floor_area_m2 and p.electricity_per_m2:
+        elec = r2(c.floor_area_m2 * p.electricity_per_m2)
+        res.note("R_CALC_ACCEPTED_COSTS", f"electricity included in rent valued at {p.electricity_per_m2} x {c.floor_area_m2} m2 = {elec:.2f} (parameter not in the map)")
+    base = c.rent - elec - c.excluded_fees_in_rent - c.employer_paid_share - c.subtenant_rent
+    res.note("R_CALC_ACCEPTED_COSTS", f"rent {c.rent:.2f} minus electricity {elec:.2f}, excluded fees {c.excluded_fees_in_rent:.2f}, employer share {c.employer_paid_share:.2f}")
     if c.subtenant_rent:
         res.note("R_CALC_SUBTENANT_DEDUCTION", f"subtenant rent {c.subtenant_rent:.2f} deducted")
     extras = 0.0

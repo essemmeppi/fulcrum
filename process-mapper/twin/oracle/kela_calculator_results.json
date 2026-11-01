@@ -1,0 +1,1400 @@
+[
+ {
+  "id": "oracle-01",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Ei huomioitavia tuloja": "valittu",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   0
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 394.1,
+  "result_headline": "394,10 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "0,00 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "700,00 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "0,00 e/kk",
+   "tulot_yhteensa": "0,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n394,10 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n0,00 e/kk\nYhteensä\n563,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n394,10 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n700,00 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n0,00 e/kk\nTulot yhteensä\n0,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n0,00 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:25:06.299Z"
+ },
+ {
+  "id": "oracle-02",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1200",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   1200
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 240.45,
+  "result_headline": "240,45 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "219,50 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "700,00 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "1200,00 e/kk",
+   "tulot_yhteensa": "1200,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n240,45 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n-219,50 e/kk\nYhteensä\n343,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n240,45 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n700,00 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1200,00 e/kk\nTulot yhteensä\n1200,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n219,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:25:16.859Z"
+ },
+ {
+  "id": "oracle-03",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1500",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "500",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 500,
+  "incomes": [
+   1500
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 91.35,
+  "result_headline": "91,35 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "500,00 e/kk",
+   "perusomavastuu": "369,50 e/kk",
+   "vuokra": "500,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "500,00 e/kk",
+   "enimmaisasumismenot": null,
+   "ruokakunnan_bruttotulot": "1500,00 e/kk",
+   "tulot_yhteensa": "1500,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n91,35 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n500,00 e/kk\nPerusomavastuu \n-369,50 e/kk\nYhteensä\n130,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n91,35 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nVuokra\n500,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n500,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1500,00 e/kk\nTulot yhteensä\n1500,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n369,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:25:27.164Z"
+ },
+ {
+  "id": "oracle-04",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "2000",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "900",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 900,
+  "incomes": [
+   2000
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 0,
+  "result_headline": "0,00 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "619,50 e/kk",
+   "vuokra": "900,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "900,00 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "2000,00 e/kk",
+   "tulot_yhteensa": "2000,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n0,00 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta. Asumistukea ei makseta, kun sen määrä on alle 15 e/kk.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n-619,50 e/kk\nYhteensä\n0,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n0,00 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n900,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n900,00 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2000,00 e/kk\nTulot yhteensä\n2000,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n619,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:25:37.447Z"
+ },
+ {
+  "id": "oracle-05",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "2600",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   2600
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 0,
+  "result_headline": "0,00 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "919,50 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "700,00 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "2600,00 e/kk",
+   "tulot_yhteensa": "2600,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n0,00 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta. Asumistukea ei makseta, kun sen määrä on alle 15 e/kk.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n-919,50 e/kk\nYhteensä\n0,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n0,00 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n700,00 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2600,00 e/kk\nTulot yhteensä\n2600,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n919,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:25:47.964Z"
+ },
+ {
+  "id": "oracle-06",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "TURKU",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1000",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "447",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Turku",
+  "rent": 447,
+  "incomes": [
+   1000
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 229.25,
+  "result_headline": "229,25 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "447,00 e/kk",
+   "perusomavastuu": "119,50 e/kk",
+   "vuokra": "447,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "447,00 e/kk",
+   "enimmaisasumismenot": null,
+   "ruokakunnan_bruttotulot": "1000,00 e/kk",
+   "tulot_yhteensa": "1000,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n229,25 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n447,00 e/kk\nPerusomavastuu \n-119,50 e/kk\nYhteensä\n327,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n229,25 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nTURKU\nAsumismuoto\nVuokra-asunto\nAsumismenot\nVuokra\n447,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n447,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1000,00 e/kk\nTulot yhteensä\n1000,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n119,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:25:58.265Z"
+ },
+ {
+  "id": "oracle-07",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "TURKU",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1800",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "600",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Turku",
+  "rent": 600,
+  "incomes": [
+   1800
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 0,
+  "result_headline": "0,00 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "447,00 e/kk",
+   "perusomavastuu": "519,50 e/kk",
+   "vuokra": "600,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "600,00 e/kk",
+   "enimmaisasumismenot": "447,00 e/kk",
+   "ruokakunnan_bruttotulot": "1800,00 e/kk",
+   "tulot_yhteensa": "1800,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n0,00 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta. Asumistukea ei makseta, kun sen määrä on alle 15 e/kk.\nMiten arvio on laskettu?\nAsumismenot\n447,00 e/kk\nPerusomavastuu \n-519,50 e/kk\nYhteensä\n0,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n0,00 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nTURKU\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 447.00 e/kk\nVuokra\n600,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n600,00 e/kk\nEnimmäisasumismenot\n447,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1800,00 e/kk\nTulot yhteensä\n1800,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n519,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:26:09.430Z"
+ },
+ {
+  "id": "oracle-08",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "TAMPERE",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "2200",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "650",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Tampere",
+  "rent": 650,
+  "incomes": [
+   2200
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 0,
+  "result_headline": "0,00 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "447,00 e/kk",
+   "perusomavastuu": "719,50 e/kk",
+   "vuokra": "650,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "650,00 e/kk",
+   "enimmaisasumismenot": "447,00 e/kk",
+   "ruokakunnan_bruttotulot": "2200,00 e/kk",
+   "tulot_yhteensa": "2200,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n0,00 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta. Asumistukea ei makseta, kun sen määrä on alle 15 e/kk.\nMiten arvio on laskettu?\nAsumismenot\n447,00 e/kk\nPerusomavastuu \n-719,50 e/kk\nYhteensä\n0,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n0,00 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nTAMPERE\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 447.00 e/kk\nVuokra\n650,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n650,00 e/kk\nEnimmäisasumismenot\n447,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2200,00 e/kk\nTulot yhteensä\n2200,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n719,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:26:19.981Z"
+ },
+ {
+  "id": "oracle-09",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "PORI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "800",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "394",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Pori",
+  "rent": 394,
+  "incomes": [
+   800
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 262.15,
+  "result_headline": "262,15 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "394,00 e/kk",
+   "perusomavastuu": "19,50 e/kk",
+   "vuokra": "394,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "394,00 e/kk",
+   "enimmaisasumismenot": null,
+   "ruokakunnan_bruttotulot": "800,00 e/kk",
+   "tulot_yhteensa": "800,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n262,15 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n394,00 e/kk\nPerusomavastuu \n-19,50 e/kk\nYhteensä\n374,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n262,15 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nPORI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nVuokra\n394,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n394,00 e/kk\nTulot\nRuokakunnan bruttotulot\n800,00 e/kk\nTulot yhteensä\n800,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n19,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:26:30.563Z"
+ },
+ {
+  "id": "oracle-10",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "KEMI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1400",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "450",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Kemi",
+  "rent": 450,
+  "incomes": [
+   1400
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 52.15,
+  "result_headline": "52,15 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "394,00 e/kk",
+   "perusomavastuu": "319,50 e/kk",
+   "vuokra": "450,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "450,00 e/kk",
+   "enimmaisasumismenot": "394,00 e/kk",
+   "ruokakunnan_bruttotulot": "1400,00 e/kk",
+   "tulot_yhteensa": "1400,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n52,15 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n394,00 e/kk\nPerusomavastuu \n-319,50 e/kk\nYhteensä\n74,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n52,15 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nKEMI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 394.00 e/kk\nVuokra\n450,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n450,00 e/kk\nEnimmäisasumismenot\n394,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1400,00 e/kk\nTulot yhteensä\n1400,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n319,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:26:41.112Z"
+ },
+ {
+  "id": "oracle-11",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "ROVANIEMI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1100",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "500",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Rovaniemi",
+  "rent": 500,
+  "incomes": [
+   1100
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 194.25,
+  "result_headline": "194,25 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "447,00 e/kk",
+   "perusomavastuu": "169,50 e/kk",
+   "vuokra": "500,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "500,00 e/kk",
+   "enimmaisasumismenot": "447,00 e/kk",
+   "ruokakunnan_bruttotulot": "1100,00 e/kk",
+   "tulot_yhteensa": "1100,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n194,25 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n447,00 e/kk\nPerusomavastuu \n-169,50 e/kk\nYhteensä\n277,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n194,25 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nROVANIEMI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 447.00 e/kk\nVuokra\n500,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n500,00 e/kk\nEnimmäisasumismenot\n447,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1100,00 e/kk\nTulot yhteensä\n1100,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n169,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:26:51.711Z"
+ },
+ {
+  "id": "oracle-12",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "ROVANIEMI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1100",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "500",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Kyllä",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Rovaniemi",
+  "rent": 500,
+  "incomes": [
+   1100
+  ],
+  "extras": {
+   "heating_paid_separately": true,
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 194.25,
+  "result_headline": "194,25 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "447,00 e/kk",
+   "perusomavastuu": "169,50 e/kk",
+   "vuokra": "500,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "50,00 e/kk",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "550,00 e/kk",
+   "enimmaisasumismenot": "447,00 e/kk",
+   "ruokakunnan_bruttotulot": "1100,00 e/kk",
+   "tulot_yhteensa": "1100,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n194,25 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n447,00 e/kk\nPerusomavastuu \n-169,50 e/kk\nYhteensä\n277,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n194,25 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nROVANIEMI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 447.00 e/kk\nVuokra\n500,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\n50,00 e/kk\nHyväksyttävät asumismenot yhteensä\n550,00 e/kk\nEnimmäisasumismenot\n447,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1100,00 e/kk\nTulot yhteensä\n1100,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n169,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:27:02.343Z"
+ },
+ {
+  "id": "oracle-13",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1200",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "800",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "900",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 2,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 900,
+  "incomes": [
+   1200,
+   800
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 164.85,
+  "result_headline": "164,85 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "808,00 e/kk",
+   "perusomavastuu": "572,50 e/kk",
+   "vuokra": "900,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "900,00 e/kk",
+   "enimmaisasumismenot": "808,00 e/kk",
+   "ruokakunnan_bruttotulot": "2000,00 e/kk",
+   "tulot_yhteensa": "2000,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n164,85 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n808,00 e/kk\nPerusomavastuu \n-572,50 e/kk\nYhteensä\n235,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n164,85 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 808.00 e/kk\nVuokra\n900,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n900,00 e/kk\nEnimmäisasumismenot\n808,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2000,00 e/kk\nTulot yhteensä\n2000,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n572,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:27:13.541Z"
+ },
+ {
+  "id": "oracle-14",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "TURKU",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1500",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Ei huomioitavia tuloja": "valittu",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "652",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 2,
+  "children": 0,
+  "municipality": "Turku",
+  "rent": 652,
+  "incomes": [
+   1500,
+   0
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 230.65,
+  "result_headline": "230,65 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "652,00 e/kk",
+   "perusomavastuu": "322,50 e/kk",
+   "vuokra": "652,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "652,00 e/kk",
+   "enimmaisasumismenot": null,
+   "ruokakunnan_bruttotulot": "1500,00 e/kk",
+   "tulot_yhteensa": "1500,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n230,65 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n652,00 e/kk\nPerusomavastuu \n-322,50 e/kk\nYhteensä\n329,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n230,65 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nTURKU\nAsumismuoto\nVuokra-asunto\nAsumismenot\nVuokra\n652,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n652,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1500,00 e/kk\nTulot yhteensä\n1500,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n322,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:27:25.024Z"
+ },
+ {
+  "id": "oracle-15",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "ESPOO",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "2200",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1100",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "850",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 2,
+  "children": 0,
+  "municipality": "Espoo",
+  "rent": 850,
+  "incomes": [
+   2200,
+   1100
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 0,
+  "result_headline": "0,00 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "808,00 e/kk",
+   "perusomavastuu": "1222,50 e/kk",
+   "vuokra": "850,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "850,00 e/kk",
+   "enimmaisasumismenot": "808,00 e/kk",
+   "ruokakunnan_bruttotulot": "3300,00 e/kk",
+   "tulot_yhteensa": "3300,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n0,00 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta. Asumistukea ei makseta, kun sen määrä on alle 15 e/kk.\nMiten arvio on laskettu?\nAsumismenot\n808,00 e/kk\nPerusomavastuu \n-1222,50 e/kk\nYhteensä\n0,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n0,00 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nESPOO\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 808.00 e/kk\nVuokra\n850,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n850,00 e/kk\nEnimmäisasumismenot\n808,00 e/kk\nTulot\nRuokakunnan bruttotulot\n3300,00 e/kk\nTulot yhteensä\n3300,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n1222,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:27:36.740Z"
+ },
+ {
+  "id": "oracle-16",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "1",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1500",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "900",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "1100",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 2,
+  "children": 1,
+  "municipality": "Helsinki",
+  "rent": 1100,
+  "incomes": [
+   1500,
+   900
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 276.15,
+  "result_headline": "276,15 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "1019,00 e/kk",
+   "perusomavastuu": "624,50 e/kk",
+   "vuokra": "1100,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "1100,00 e/kk",
+   "enimmaisasumismenot": "1019,00 e/kk",
+   "ruokakunnan_bruttotulot": "2400,00 e/kk",
+   "tulot_yhteensa": "2400,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n276,15 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n1019,00 e/kk\nPerusomavastuu \n-624,50 e/kk\nYhteensä\n394,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n276,15 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n1\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 1019.00 e/kk\nVuokra\n1100,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n1100,00 e/kk\nEnimmäisasumismenot\n1019,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2400,00 e/kk\nTulot yhteensä\n2400,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n624,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:27:48.425Z"
+ },
+ {
+  "id": "oracle-17",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "2",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1800",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1000",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "1300",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 2,
+  "children": 2,
+  "municipality": "Helsinki",
+  "rent": 1300,
+  "incomes": [
+   1800,
+   1000
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 358.05,
+  "result_headline": "358,05 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "1188,00 e/kk",
+   "perusomavastuu": "676,50 e/kk",
+   "vuokra": "1300,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "1300,00 e/kk",
+   "enimmaisasumismenot": "1188,00 e/kk",
+   "ruokakunnan_bruttotulot": "2800,00 e/kk",
+   "tulot_yhteensa": "2800,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n358,05 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n1188,00 e/kk\nPerusomavastuu \n-676,50 e/kk\nYhteensä\n511,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n358,05 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n2\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 1188.00 e/kk\nVuokra\n1300,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n1300,00 e/kk\nEnimmäisasumismenot\n1188,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2800,00 e/kk\nTulot yhteensä\n2800,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n676,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:28:00.175Z"
+ },
+ {
+  "id": "oracle-18",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "1",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1300",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "900",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 1,
+  "municipality": "Helsinki",
+  "rent": 900,
+  "incomes": [
+   1300
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 480.55,
+  "result_headline": "480,55 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "808,00 e/kk",
+   "perusomavastuu": "121,50 e/kk",
+   "vuokra": "900,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "900,00 e/kk",
+   "enimmaisasumismenot": "808,00 e/kk",
+   "ruokakunnan_bruttotulot": "1300,00 e/kk",
+   "tulot_yhteensa": "1300,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n480,55 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n808,00 e/kk\nPerusomavastuu \n-121,50 e/kk\nYhteensä\n686,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n480,55 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n1\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 808.00 e/kk\nVuokra\n900,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n900,00 e/kk\nEnimmäisasumismenot\n808,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1300,00 e/kk\nTulot yhteensä\n1300,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n121,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:28:11.372Z"
+ },
+ {
+  "id": "oracle-19",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "VANTAA",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "2",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1600",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "1000",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 2,
+  "municipality": "Vantaa",
+  "rent": 1000,
+  "incomes": [
+   1600
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 613.55,
+  "result_headline": "613,55 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "1000,00 e/kk",
+   "perusomavastuu": "123,50 e/kk",
+   "vuokra": "1000,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "1000,00 e/kk",
+   "enimmaisasumismenot": null,
+   "ruokakunnan_bruttotulot": "1600,00 e/kk",
+   "tulot_yhteensa": "1600,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n613,55 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n1000,00 e/kk\nPerusomavastuu \n-123,50 e/kk\nYhteensä\n876,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n613,55 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n2\nAsumistiedot\nAsunnon sijaintikunta\nVANTAA\nAsumismuoto\nVuokra-asunto\nAsumismenot\nVuokra\n1000,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n1000,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1600,00 e/kk\nTulot yhteensä\n1600,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n123,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:28:21.878Z"
+ },
+ {
+  "id": "oracle-20",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "OULU",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "3",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "2000",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "600",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "1200",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 2,
+  "children": 3,
+  "municipality": "Oulu",
+  "rent": 1200,
+  "incomes": [
+   2000,
+   600
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 480.55,
+  "result_headline": "480,55 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "1115,00 e/kk",
+   "perusomavastuu": "428,50 e/kk",
+   "vuokra": "1200,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "1200,00 e/kk",
+   "enimmaisasumismenot": "1115,00 e/kk",
+   "ruokakunnan_bruttotulot": "2600,00 e/kk",
+   "tulot_yhteensa": "2600,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n480,55 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n1115,00 e/kk\nPerusomavastuu \n-428,50 e/kk\nYhteensä\n686,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n480,55 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n3\nAsumistiedot\nAsunnon sijaintikunta\nOULU\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 1115.00 e/kk\nVuokra\n1200,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n1200,00 e/kk\nEnimmäisasumismenot\n1115,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2600,00 e/kk\nTulot yhteensä\n2600,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n428,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:28:33.154Z"
+ },
+ {
+  "id": "oracle-21",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "3",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1000",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1000",
+   "Henkilö 3: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Henkilö 3: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1000",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (3 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "1200",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 3,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 1200,
+  "incomes": [
+   1000,
+   1000,
+   1000
+  ],
+  "extras": {
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 0,
+  "result_headline": "0,00 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "1019,00 e/kk",
+   "perusomavastuu": "1025,50 e/kk",
+   "vuokra": "1200,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "1200,00 e/kk",
+   "enimmaisasumismenot": "1019,00 e/kk",
+   "ruokakunnan_bruttotulot": "3000,00 e/kk",
+   "tulot_yhteensa": "3000,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n0,00 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta. Asumistukea ei makseta, kun sen määrä on alle 15 e/kk.\nMiten arvio on laskettu?\nAsumismenot\n1019,00 e/kk\nPerusomavastuu \n-1025,50 e/kk\nYhteensä\n0,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n0,00 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n3\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 1019.00 e/kk\nVuokra\n1200,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n1200,00 e/kk\nEnimmäisasumismenot\n1019,00 e/kk\nTulot\nRuokakunnan bruttotulot\n3000,00 e/kk\nTulot yhteensä\n3000,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n1025,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:28:45.856Z"
+ },
+ {
+  "id": "oracle-22",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Ei huomioitavia tuloja": "valittu",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Kyllä",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   0
+  ],
+  "extras": {
+   "water_paid_separately": true,
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 394.1,
+  "result_headline": "394,10 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "0,00 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "20,00 e/kk",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "720,00 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "0,00 e/kk",
+   "tulot_yhteensa": "0,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n394,10 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n0,00 e/kk\nYhteensä\n563,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n394,10 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\n20,00 e/kk\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n720,00 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n0,00 e/kk\nTulot yhteensä\n0,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n0,00 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:28:56.305Z"
+ },
+ {
+  "id": "oracle-23",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1200",
+   "Oma omaisuus ja velat: Rahaa pankkitileillä (talletuksia) - Talletusten määrä (euroa)": "25000",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Kyllä"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   1200
+  ],
+  "extras": {
+   "bank_deposits_eur_entered": 25000,
+   "electricity_paid_separately": true
+  },
+  "result_monthly_allowance": 152.95,
+  "result_headline": "152,95 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "344,50 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": null,
+   "hyvaksyttavat_asumismenot_yhteensa": "700,00 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "1450,00 e/kk",
+   "tulot_yhteensa": "1450,00 e/kk",
+   "omaisuus_lines": [
+    "Bruttotuloihin on lisätty omaisuuden perusteella laskettua tuloa.\nTulot yhteensä",
+    "Omaisuus ja velat\nRuokakunnan omaisuus yhteensä"
+   ]
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n152,95 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n-344,50 e/kk\nYhteensä\n218,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n152,95 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nHyväksyttävät asumismenot yhteensä\n700,00 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1450,00 e/kk\nBruttotuloihin on lisätty omaisuuden perusteella laskettua tuloa.\nTulot yhteensä\n1450,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n344,50 e/kk\nOmaisuus ja velat\nRuokakunnan omaisuus yhteensä\n25000,00 euroa",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:29:07.490Z",
+  "note": "25000 was entered as-is in \"Talletusten määrä\" although the field help says to subtract the 2 000 € disregard first; the breakdown shows the calculator added 250,00 e/kk of income = 20% x (25000-10000) / 12, i.e. it did not apply the disregard itself."
+ },
+ {
+  "id": "oracle-E01",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1200",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Ei",
+   "Ruokakunnan käytössä oleva asuinpinta-ala (m²)": "35"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   1200
+  ],
+  "extras": {
+   "electricity_paid_separately": false,
+   "floor_area_m2_entered": 35
+  },
+  "result_monthly_allowance": 240.45,
+  "result_headline": "240,45 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "219,50 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": "-30,10 e/kk",
+   "hyvaksyttavat_asumismenot_yhteensa": "669,90 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "1200,00 e/kk",
+   "tulot_yhteensa": "1200,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n240,45 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n-219,50 e/kk\nYhteensä\n343,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n240,45 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsuinpinta-ala\n35 m²\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nVuokraan sisältyvä käyttösähkö\n-30,10 e/kk\nHyväksyttävät asumismenot yhteensä\n669,90 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1200,00 e/kk\nTulot yhteensä\n1200,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n219,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:29:18.833Z",
+  "note": "Variant: electricity included in rent (sähkölasku = Ei). The calculator then requires floor area and deducts 0,86 e/m2/kk as \"Vuokraan sisältyvä käyttösähkö\"."
+ },
+ {
+  "id": "oracle-E02",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1200",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "800",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "900",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Ei",
+   "Ruokakunnan käytössä oleva asuinpinta-ala (m²)": "50"
+  },
+  "adults": 2,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 900,
+  "incomes": [
+   1200,
+   800
+  ],
+  "extras": {
+   "electricity_paid_separately": false,
+   "floor_area_m2_entered": 50
+  },
+  "result_monthly_allowance": 164.85,
+  "result_headline": "164,85 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "808,00 e/kk",
+   "perusomavastuu": "572,50 e/kk",
+   "vuokra": "900,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": "-43,00 e/kk",
+   "hyvaksyttavat_asumismenot_yhteensa": "857,00 e/kk",
+   "enimmaisasumismenot": "808,00 e/kk",
+   "ruokakunnan_bruttotulot": "2000,00 e/kk",
+   "tulot_yhteensa": "2000,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n164,85 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n808,00 e/kk\nPerusomavastuu \n-572,50 e/kk\nYhteensä\n235,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n164,85 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsuinpinta-ala\n50 m²\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 808.00 e/kk\nVuokra\n900,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nVuokraan sisältyvä käyttösähkö\n-43,00 e/kk\nHyväksyttävät asumismenot yhteensä\n857,00 e/kk\nEnimmäisasumismenot\n808,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2000,00 e/kk\nTulot yhteensä\n2000,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n572,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:29:30.722Z",
+  "note": "Variant: electricity included in rent (sähkölasku = Ei). The calculator then requires floor area and deducts 0,86 e/m2/kk as \"Vuokraan sisältyvä käyttösähkö\"."
+ },
+ {
+  "id": "oracle-E03",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "ROVANIEMI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1100",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "500",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Kyllä",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Ei",
+   "Ruokakunnan käytössä oleva asuinpinta-ala (m²)": "35"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Rovaniemi",
+  "rent": 500,
+  "incomes": [
+   1100
+  ],
+  "extras": {
+   "heating_paid_separately": true,
+   "electricity_paid_separately": false,
+   "floor_area_m2_entered": 35
+  },
+  "result_monthly_allowance": 194.25,
+  "result_headline": "194,25 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "447,00 e/kk",
+   "perusomavastuu": "169,50 e/kk",
+   "vuokra": "500,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "50,00 e/kk",
+   "vuokraan_sisaltyva_kayttosahko": "-30,10 e/kk",
+   "hyvaksyttavat_asumismenot_yhteensa": "519,90 e/kk",
+   "enimmaisasumismenot": "447,00 e/kk",
+   "ruokakunnan_bruttotulot": "1100,00 e/kk",
+   "tulot_yhteensa": "1100,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n194,25 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n447,00 e/kk\nPerusomavastuu \n-169,50 e/kk\nYhteensä\n277,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n194,25 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nROVANIEMI\nAsumismuoto\nVuokra-asunto\nAsuinpinta-ala\n35 m²\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 447.00 e/kk\nVuokra\n500,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\n50,00 e/kk\nVuokraan sisältyvä käyttösähkö\n-30,10 e/kk\nHyväksyttävät asumismenot yhteensä\n519,90 e/kk\nEnimmäisasumismenot\n447,00 e/kk\nTulot\nRuokakunnan bruttotulot\n1100,00 e/kk\nTulot yhteensä\n1100,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n169,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:29:42.038Z",
+  "note": "Variant: electricity included in rent (sähkölasku = Ei). The calculator then requires floor area and deducts 0,86 e/m2/kk as \"Vuokraan sisältyvä käyttösähkö\"."
+ },
+ {
+  "id": "oracle-E04",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "2",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "2",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1800",
+   "Toisen ruokakunnan jäsenen tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Toisen ruokakunnan jäsenen tulot: Palkka lisineen - Palkan määrä lisien kanssa (euroa/kuukausi)": "1000",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (2 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "1300",
+   "Vuokran lisäksi erillinen vesimaksu": "Ei",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Ei",
+   "Ruokakunnan käytössä oleva asuinpinta-ala (m²)": "70"
+  },
+  "adults": 2,
+  "children": 2,
+  "municipality": "Helsinki",
+  "rent": 1300,
+  "incomes": [
+   1800,
+   1000
+  ],
+  "extras": {
+   "electricity_paid_separately": false,
+   "floor_area_m2_entered": 70
+  },
+  "result_monthly_allowance": 358.05,
+  "result_headline": "358,05 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "1188,00 e/kk",
+   "perusomavastuu": "676,50 e/kk",
+   "vuokra": "1300,00 e/kk",
+   "erillinen_vesimaksu": "Ei",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": "-60,20 e/kk",
+   "hyvaksyttavat_asumismenot_yhteensa": "1239,80 e/kk",
+   "enimmaisasumismenot": "1188,00 e/kk",
+   "ruokakunnan_bruttotulot": "2800,00 e/kk",
+   "tulot_yhteensa": "2800,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n358,05 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n1188,00 e/kk\nPerusomavastuu \n-676,50 e/kk\nYhteensä\n511,50 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n358,05 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n2\nLapsia\n2\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsuinpinta-ala\n70 m²\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 1188.00 e/kk\nVuokra\n1300,00 e/kk\nErillinen vesimaksu\nEi\nErilliset lämmityskustannukset\nEi\nVuokraan sisältyvä käyttösähkö\n-60,20 e/kk\nHyväksyttävät asumismenot yhteensä\n1239,80 e/kk\nEnimmäisasumismenot\n1188,00 e/kk\nTulot\nRuokakunnan bruttotulot\n2800,00 e/kk\nTulot yhteensä\n2800,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n676,50 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:29:53.853Z",
+  "note": "Variant: electricity included in rent (sähkölasku = Ei). The calculator then requires floor area and deducts 0,86 e/m2/kk as \"Vuokraan sisältyvä käyttösähkö\"."
+ },
+ {
+  "id": "oracle-E05",
+  "inputs": {
+   "Päivämäärä, josta alkaen asumistuki lasketaan": "1.11.2026",
+   "Kunta, jossa asunto sijaitsee": "HELSINKI",
+   "Ruokakuntaan kuuluu: Aikuisia": "1",
+   "Ruokakuntaan kuuluu: Lapsia (alle 18-v)": "0",
+   "Ruokakuntaan kuuluu vammainen henkilö, joka tarvitsee ... erityisen paljon tilaa": "ei valittu",
+   "Omat tulot: Tulot pysyvät samana vähintään 3 kuukautta": "Kyllä",
+   "Omat tulot: Ei huomioitavia tuloja": "valittu",
+   "Omaisuus ja velat: Asumistukeen vaikuttavaa omaisuutta tai velkaa ei ole": "valittu (1 henkilöä)",
+   "Asumismuoto": "Vuokra-asunto",
+   "Ruokakunnalla on alivuokralainen": "ei valittu",
+   "Vuokra (euroa/kuukausi)": "700",
+   "Vuokran lisäksi erillinen vesimaksu": "Kyllä",
+   "Vuokran lisäksi erilliset lämmityskustannukset": "Ei",
+   "Vuokran lisäksi erillinen sähkölasku tai -maksu": "Ei",
+   "Ruokakunnan käytössä oleva asuinpinta-ala (m²)": "35"
+  },
+  "adults": 1,
+  "children": 0,
+  "municipality": "Helsinki",
+  "rent": 700,
+  "incomes": [
+   0
+  ],
+  "extras": {
+   "water_paid_separately": true,
+   "electricity_paid_separately": false,
+   "floor_area_m2_entered": 35
+  },
+  "result_monthly_allowance": 394.1,
+  "result_headline": "394,10 e/kk",
+  "result_breakdown": {
+   "asumismenot_huomioitu": "563,00 e/kk",
+   "perusomavastuu": "0,00 e/kk",
+   "vuokra": "700,00 e/kk",
+   "erillinen_vesimaksu": "20,00 e/kk",
+   "erilliset_lammityskustannukset": "Ei",
+   "vuokraan_sisaltyva_kayttosahko": "-30,10 e/kk",
+   "hyvaksyttavat_asumismenot_yhteensa": "689,90 e/kk",
+   "enimmaisasumismenot": "563,00 e/kk",
+   "ruokakunnan_bruttotulot": "0,00 e/kk",
+   "tulot_yhteensa": "0,00 e/kk",
+   "omaisuus_lines": []
+  },
+  "result_text": "Vaihe 6/6\nArvio yleisen asumistuen määrästä\nYleisen asumistuen määrä on arvio. Laskemme tarkan määrän, kun toimitat hakemuksen Kelaan.\nArvio yleisen asumistuen määrästä 1.11.2026 alkaen\n394,10 e/kk\nMiten arvio on laskettu?\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\nMiten arvio on laskettu?\nAsumismenot\n563,00 e/kk\nPerusomavastuu \n0,00 e/kk\nYhteensä\n563,00 e/kk\nYleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\n394,10 e/kk\nRuokakuntaan kuuluvien määrä\nAikuisia\n1\nLapsia\n0\nAsumistiedot\nAsunnon sijaintikunta\nHELSINKI\nAsumismuoto\nVuokra-asunto\nAsuinpinta-ala\n35 m²\nAsumismenot\nHyväksyttävät asumismenot ylittävät asumismenojen enimmäismäärän. Asumismenoja huomioidaan enimmäisasumismenojen verran eli 563.00 e/kk\nVuokra\n700,00 e/kk\nErillinen vesimaksu\n20,00 e/kk\nErilliset lämmityskustannukset\nEi\nVuokraan sisältyvä käyttösähkö\n-30,10 e/kk\nHyväksyttävät asumismenot yhteensä\n689,90 e/kk\nEnimmäisasumismenot\n563,00 e/kk\nTulot\nRuokakunnan bruttotulot\n0,00 e/kk\nTulot yhteensä\n0,00 e/kk\nTuloista ja ruokakunnan koosta määräytyvä asumismenojen perusomavastuu\n0,00 e/kk",
+  "calculator_url": "https://laskurit.kela.fi/yleisen-asumistuen-laskuri",
+  "calculator_version_note": "Kela \"Yleisen asumistuen laskuri\" (React SPA at laskurit.kela.fi, 6-step wizard). The calculator states no explicit parameter year; its result is headed \"Arvio yleisen asumistuen määrästä 1.11.2026 alkaen\" and its breakdown states \"Yleinen asumistuki on 70 prosenttia asumismenojen ja perusomavastuun erotuksesta.\" Kela news (19.12.2025) says 2026 parameters equal 2025 ones (no index adjustment). Default date field value 1.11.2026 was left unchanged.",
+  "run_at": "2026-11-01T16:30:04.387Z",
+  "note": "Variant: electricity included in rent (sähkölasku = Ei). The calculator then requires floor area and deducts 0,86 e/m2/kk as \"Vuokraan sisältyvä käyttösähkö\"."
+ }
+]

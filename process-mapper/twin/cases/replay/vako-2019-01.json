@@ -1,0 +1,85 @@
+{
+  "case_id": "replay-vako-2019-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.finlex.fi/fi/oikeuskaytanto/vakuutusoikeus/2019/716-2019",
+    "citation": "VakO 15.11.2019/716:2019 (Asumistuki, Oikaisu vahingoksi, Takaisinperintä)",
+    "quotes": [
+      "Kansaneläkelaitos on 22.12.2016 antamallaan päätöksellä tarkistanut A:n asumistuen vuositarkistuksena 1.2.2017 alkaen. Tuen määrä 1.2.2017 alkaen on ollut 243,41 euroa kuukaudessa.",
+      "A:n tulona on otettu huomioon palkka X Oy:ltä 1 192,22 euroa kuukaudessa ja peruspäiväraha 11,65 euroa päivässä.",
+      "Kuukausipalkan 1.192,22 euron perusteella on arvioitu soviteltavan peruspäivärahan määräksi 250,48 euroa kuukaudessa.",
+      "A on kuitenkin 20.1.2017 aloittanut työt myös toisella työnantajalla Y Oy:llä.",
+      "A:n asumistuessa huomioitavat tulot 1.2.2017 alkaen ovat olleet todellisuudessa lähes 700 euroa suuremmat kuin Kansaneläkelaitoksen 22.12.2016 antamassa päätöksessä hänelle on huomioitu.",
+      "Kansaneläkelaitos on 7.2.2018 antamallaan päätöksellä oikaissut 22.12.2016 annettua päätöstä, koska tuloarvio on ollut virheellinen ja kaikkia työnantajia ei ole huomioitu päätöksessä. Asumistuki on lakkautettu 1.2.2017 alkaen.",
+      "A:lle on maksettu aiheetta asumistukea yhteensä 3 164,33 euroa ajalla 1.2.2017 - 28.2.2018.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunnan päätös kumottiin. Kansaneläkelaitoksen 7.2.2018 antama päätös poistettiin.",
+      "Vakuutusoikeus toteaa, että yleisestä asumistuesta annetun lain 38 §:n 2 momentin viimeisessä virkkeessä säädetyn edellytyksen ei voida asiassa esitetyn selvityksen perusteella katsoa täyttyvän. Kansaneläkelaitoksen ei olisi siten tullut ryhtyä 22.12.2016 annetun päätöksen korjaamiseen eikä lakkauttaa asumistukea takautuvasti 7.2.2018 annetulla päätöksellä ilman A:n suostumusta tai hakematta 22.12.2016 antamansa lainvoimaisen päätöksen poistamista."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2017-02-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "wage",
+          "gross_monthly": 1192.22,
+          "continuous": true,
+          "note": "Wage from employer X Oy as counted in Kela's 22.12.2016 annual-review decision (estimated from 1.2.-31.10.2016 earnings of 10 729,98 EUR because monthly income varied). Actual income from 1.2.2017 was later found to be almost 700 EUR/month higher (second employer Y Oy from 20.1.2017), amount not itemised."
+        },
+        {
+          "kind": "unemployment",
+          "gross_monthly": 250.48,
+          "continuous": true,
+          "note": "Adjusted basic unemployment daily allowance (peruspäiväraha 11,65 EUR/day) estimated at 250,48 EUR/month in the 22.12.2016 decision."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "granted",
+    "monthly_allowance": 243.41,
+    "reason": "Kela may correct a final decision to the recipient's detriment without consent only if the error is manifest and caused by the recipient (Act 938/2014 s. 38(2)). The Insurance Court held neither condition was shown, so the retroactive termination from 1.2.2017 and the resulting recovery of 3 164,33 EUR were set aside; the 22.12.2016 decision (243,41 EUR/month) stands.",
+    "decided_by": "Vakuutusoikeus 716:2019"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "members[A].age not stated",
+    "household size not stated (only applicant A named; the text speaks of 'ruokakunta')",
+    "actual total income from 1.2.2017 only described as 'almost 700 EUR higher' than counted"
+  ],
+  "notes": "Kela revised A's allowance to 243,41 EUR/month from 1.2.2017 on an income estimate, then in February 2018 corrected that decision to A's detriment, terminated the allowance retroactively from 1.2.2017 and ordered recovery of 3 164,33 EUR because A had started a second job in January 2017 that was not counted. A argued Kela needed her consent or an annulment of the final decision. SAMU rejected the appeal, but the Insurance Court annulled SAMU's decision and removed Kela's 7.2.2018 decision: the error was not manifest and A had not been shown to have given wrong information, so s. 38(2) did not permit correction without consent."
+}

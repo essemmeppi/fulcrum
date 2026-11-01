@@ -64,9 +64,16 @@ def cmd_oracle(path: Path, out: Path) -> int:
     results = []
     for rec in recs:
         incomes = rec.get("incomes", [])
+        ex = rec.get("extras", {})
+        # The calculator expects the user to subtract the 2,000 EUR per-person deposit disregard before entering deposits;
+        # the twin applies the disregard itself, so the entered figure is restored to a gross deposit here.
+        deposits = float(ex.get("bank_deposits_eur_entered", 0) or 0)
+        if deposits:
+            deposits += PARAMS_2026.asset_deposit_reserve
         case = make_case(rec["id"], rec["adults"], rec["children"], rec["municipality"], rec["rent"], incomes,
-                         water=bool(rec.get("extras", {}).get("water_paid_separately")), heating=bool(rec.get("extras", {}).get("heating_paid_separately")),
-                         deposits=float(rec.get("extras", {}).get("deposits", 0) or 0))
+                         water=bool(ex.get("water_paid_separately")), heating=bool(ex.get("heating_paid_separately")), deposits=deposits)
+        if ex.get("electricity_paid_separately") is False and ex.get("floor_area_m2_entered"):
+            case.costs.floor_area_m2 = float(ex["floor_area_m2_entered"])
         case.source.kind = "oracle"; case.source.url = rec.get("calculator_url", "")
         amt = rec.get("result_monthly_allowance")
         case.expected = Expected(outcome="granted" if amt else "rejected", monthly_allowance=float(amt or 0), decided_by="Kela calculator", reason=rec.get("result_text", "")[:200])

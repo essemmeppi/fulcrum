@@ -1,0 +1,73 @@
+{
+  "case_id": "replay-samu-2020-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=247",
+    "citation": "SAMU 1.4.2020, Dnro 31494/19/05 (Yksin asuvalla alaikäisellä ei ollut oikeutta asumistukeen itsenäisenä ruokakuntana)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 22.8.2019 päätöksen, jolla A:n asumistukihakemus hylättiin, koska A oli alaikäinen eikä hänellä ollut riittävästi tuloja asumismenojen maksamiseen. Tämän vuoksi hän kuului vanhempiensa ruokauntaan, vaikka asui eri asunnossa.",
+      "Asiassa esitetyn selvityksen mukaan lokakuussa 2003 syntynyt A oli hakenut asumistukea erillisenä ruokakuntana 1.7.2019 alkaen. Hakemuksessa hän oli ilmoittanut olevansa tuloton. Valituksen yhteydessä hän oli esittänyt selvityksen 3 500 euron tuloista vuonna 2018. Tulorekisterissä oli 9.10.2019 näkynyt 1.11.2018 lukien palkkatuloja vain ajalta 1. -31.6.2019 maksettu 672 euroa.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, että vakiintuneen oikeuskäytännön mukaan myös omassa asunnossa esimerkiksi opiskelun vuoksi asuva alaikäinen luetaan vanhempiensa ruokakuntaan, ellei hänellä ole riittävästi omia tuloja asumismenoistaan ja itsestään huolehtimiseen. A oli hakenut asumistukea alaikäisenä. Esitetyn selvityksen mukaan hänellä ei ollut riittäviä tuloja itsenäiseen itsestä ja asumismenoista huolehtimiseen. Näin ollen hänellä ei ollut oikeutta asumistukeen vanhemmistaan erillisenä ruokakuntana 1.7.2019 lukien.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta hylkäsi valituksen."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2019-07-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": 15,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "wage",
+          "gross_monthly": 0.0,
+          "continuous": false,
+          "note": "A declared no income. The income register showed only 672 EUR of wages paid for June 2019 (one-off); A also referred to 3 500 EUR earned in 2018 and a promised 3 500 EUR payment in November 2019 for work in the parents' farm partnership. No continuous monthly income is stated, so gross_monthly is left at 0."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "rejected",
+    "monthly_allowance": null,
+    "reason": "Under Act 938/2014 s. 4 and established case law a minor living in a separate dwelling (e.g. for study) remains part of the parents' household unless the minor has sufficient own income to support himself and pay the housing costs. A, aged 15 and without sufficient income, could not be an independent household and had no right to the allowance from 1.7.2019.",
+    "decided_by": "SAMU 31494/19/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "age derived: born October 2003, applied from 1.7.2019 (15 at that date)",
+    "parents' household and incomes not stated"
+  ],
+  "notes": "A, a minor born in October 2003 living alone, applied for housing allowance as a separate household from 1.7.2019, declaring no income. Kela rejected the application because a minor without sufficient income belongs to the parents' household even when living elsewhere. A appealed citing a 3 500 EUR payment expected from the parents' farm partnership. SAMU rejected the appeal: the only registered income was 672 EUR for June 2019, which is not enough for independent support, so A was not an independent household."
+}

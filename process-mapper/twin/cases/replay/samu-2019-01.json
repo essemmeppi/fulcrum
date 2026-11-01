@@ -1,0 +1,102 @@
+{
+  "case_id": "replay-samu-2019-01",
+  "source": {
+    "kind": "replay",
+    "url": "https://www.samu.fi/ratkaisut_somla/index.php?todo=4&id=232",
+    "citation": "SAMU 10.1.2019, Dnro 10959/18/05 (Asumistukea ei tarkistettu, koska keskiarvotulo ei ollut alentunut 200 eurolla)",
+    "quotes": [
+      "Kansaneläkelaitos antoi 5.3.2018 päätöksen, että asumistuen tarkistusedellytykset eivät täyty 1.5.2018 lukien ja asumistuki jatkuu entisen suuruisena.",
+      "A:lla oli ollut yleinen asumistuki 30,96 euroa kuukaudessa maksussa Kansaneläkelaitoksen 24.7.2017 annetun lainvoimaisen päätöksen perusteella. Ruokakunnan tuloina oli päätöksessä otettu huomioon 2 060,00 euroa kuukaudessa 1.9.2017 lukien.",
+      "A oli hakenut asumistuen tarkistusta 1.4.2018 tapahtuneen tulojen muutoksen vuoksi, koska hänen opintotukensa oli loppunut maaliskuussa 2018. A:n arvioitu valmistumisajankohta oli hakemuksen mukaan kesäkuussa 2018. Puolisolla oli palkkatuloa 2 110,00 euroa kuukaudessa.",
+      "Koska tulot vaihtelivat tarkistusajankohdasta 1.5.2018 lukien seuraavan kolmen kuukauden aikana, A:lle laskettiin keskiarvotulo siten, että ajalle 1.5.2018–30.6.2018 huomioitiin tuloa 0,00 euroa ja ajalle 1.7.2018–30.4.2019 työmarkkinatuki 6 966,00 euroa. Keskiarvotuloksi saatiin 6 966,00 €: 12 kk = 580,50 euroa kuukaudessa. Ruokakunnan tulot ansiotulovähennyksen jälkeen olivat 2 390,50 euroa kuukaudessa. Sosiaaliturva-asioiden muutoksenhakulautakunta totesi, ettei ruokakunnan jatkuvissa kuukausituloissa ollut tapahtunut tarkistuksen aiheuttavaa muutosta. Näin ollen Kansaneläkelaitos oli lain mukaan ja oikein jatkanut asumistuen maksamista entisen suuruisena 1.5.2018 lukien.",
+      "Sosiaaliturva-asioiden muutoksenhakulautakunta hylkäsi valituksen."
+    ],
+    "fetched_at": "2026-11-01"
+  },
+  "decision_date": "2018-05-01",
+  "dwelling": {
+    "municipality": "",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "A",
+      "role": "applicant",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "study_grant",
+          "gross_monthly": 0.0,
+          "continuous": false,
+          "note": "Study grant ended 31.3.2018; amount not stated."
+        },
+        {
+          "kind": "unemployment",
+          "gross_monthly": 580.5,
+          "continuous": true,
+          "note": "Average income over 12 months from the review date 1.5.2018: 0 EUR for 1.5.-30.6.2018 and labour market subsidy 6 966,00 EUR for 1.7.2018-30.4.2019 (student assumed to earn at least labour market subsidy after graduation), 6 966,00 / 12 = 580,50 EUR/month."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    },
+    {
+      "id": "B",
+      "role": "spouse",
+      "age": null,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "wage",
+          "gross_monthly": 2110.0,
+          "continuous": true,
+          "note": "Spouse's wage 2 110,00 EUR/month."
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 0.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "granted",
+    "monthly_allowance": 30.96,
+    "reason": "An interim revision for an income change requires that the household's continuous monthly income (after the earned-income deduction) has fallen by at least 200 EUR or risen by at least 400 EUR (Act 938/2014 s. 27). The change takes effect from the month after the one from whose first day it applies (1.5.2018); because the income-free period from then was shorter than three months, income was averaged over 12 months (s. 14), giving 2 390,50 EUR against 2 060,00 EUR previously counted, i.e. no qualifying decrease. The existing allowance of 30,96 EUR/month continued unchanged.",
+    "decided_by": "SAMU 10959/18/05"
+  },
+  "unknowns": [
+    "dwelling.municipality not stated",
+    "costs.rent not stated",
+    "ages not stated",
+    "the 2 060,00 EUR/month counted from 1.9.2017 is given only as a household total; the 30,96 EUR allowance was computed on it in the earlier decision, not on the incomes listed here",
+    "the earned-income deduction applied is inferred from the totals (2 110,00 + 580,50 - 300 = 2 390,50)"
+  ],
+  "notes": "A, whose study grant ended in March 2018 before graduation in June 2018, asked Kela to revise the household's allowance for 1.4.-30.6.2018 when A had no income; the spouse earned 2 110 EUR/month. Kela decided the revision conditions were not met from 1.5.2018 and continued the allowance at 30,96 EUR/month. SAMU rejected the appeal: the revision date would be 1.5.2018, the income-free period from then was under three months, so income was averaged over a year including labour market subsidy imputed from 1.7.2018, and the resulting 2 390,50 EUR was not at least 200 EUR below the 2 060 EUR previously counted."
+}

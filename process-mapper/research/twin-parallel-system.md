@@ -13,7 +13,11 @@ Code: `process-mapper/twin/`. Everything below is reproducible from `python -m t
    reproduces all 36 income limits Kela publishes (three municipality tables, one to three adults,
    zero to four children) from the formula, with no fitted parameter. Kela's three worked examples
    (Turku couple 125.65 EUR, Helsinki cap 563 EUR, asset conversion 83.33 EUR per month) pass as tests.
-   CALCULATOR_RESULT
+   Against Kela's online calculator (laskurit.kela.fi, 1 November 2026 parameters), 28 of 28
+   runs agree to the cent: 23 grid households across the three mainland tables, one to three adults,
+   zero to three children, incomes from 0 to 2,600 EUR, plus separate water, separate heating in
+   Lapland, 25,000 EUR of deposits, and five variants with electricity included in the rent. The
+   twin's inputs and the calculator's results are in `twin/oracle/`, with screenshots.
 2. **The whole application path runs.** 410 synthetic households walk 24 steps of the map from
    application to the payability decision. Per run: 7 steps by rules, 6 by the judge, 4 by register
    adapters, 5 taken from the application, 1 drafted notice, 1 gate where the run stops with a
@@ -23,6 +27,24 @@ Code: `process-mapper/twin/`. Everything below is reproducible from `python -m t
 4. **Shadow mode exists and has not run on real cases.** The runner never acts; the shadow command
    reads a directory of mirrored cases and writes a divergence report. What a partner agency must
    provide, and under what legal basis, is in `twin/SHADOW.md`. No agreement exists yet.
+
+## What the calculator added to the map
+
+Driving the calculator exposed three things the documents in the corpus do not state.
+
+- When electricity is included in the rent, the calculator asks for the floor area and deducts
+  0.86 EUR per square metre per month, the Tax Administration's in-kind value. No kela.fi page gives
+  the figure; the staff guideline refers to the tax decision. The map's rule says only "electricity
+  included in rent is deducted". The twin now carries the parameter, sourced to the calculator.
+  In the five runs the rent stayed above the municipal cap after the deduction, so the parameter
+  is recorded, not yet tested by a differing amount.
+- The calculator expects the applicant to subtract the 2,000 EUR per-person deposit disregard
+  before entering deposits; it does not apply it itself. The twin applies it. Entering 25,000 EUR
+  raw in the calculator and 27,000 EUR gross in the twin gives the same 152.95 EUR. A shadow run
+  that fed the calculator's input convention into the twin unchanged would show a divergence of
+  33.33 EUR per month on every case with deposits, caused by the interface, not the rule.
+- The published "income limits" already include the 15 EUR minimum payment, which is why the
+  formula reproduces them only when the minimum is part of the inversion.
 
 ## What encoding the map found in the map
 
