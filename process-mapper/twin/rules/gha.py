@@ -34,17 +34,20 @@ def r2(x: float) -> float:
 
 # --- Dwelling -----------------------------------------------------------------------------
 
-def municipality_group(case: Case) -> Result:
+def municipality_group(case: Case, p: ParamSet | None = None) -> Result:
     d = case.dwelling
     if d.municipality_group is not None:
-        return Result(d.municipality_group, [("R_CALC_MAX_COSTS", f"municipality group given as {d.municipality_group}")])
+        g = d.municipality_group
+        if p is not None and g not in p.max_costs:
+            g = 1 if g == 2 else g
+        return Result(g, [("R_CALC_MAX_COSTS", f"municipality group given as {d.municipality_group}")])
     name = d.municipality.strip().lower()
     if not name:
         raise Unknown("dwelling.municipality")
     if d.aland or name in ALAND:
         g = 0
     elif name in GROUP_1:
-        g = 1
+        g = 2 if (p is not None and 2 in p.max_costs and name != "helsinki") else 1
     elif name in GROUP_3:
         g = 3
     else:
@@ -84,6 +87,8 @@ def accepted_costs(case: Case, p: ParamSet) -> Result:
         res = Result(0.0)
         res.note("R_CALC_ACCEPTED_COSTS", "owner-occupied home: no housing costs accepted under current guidance")
         return res
+    if d.tenure == "owner_occupied":
+        raise Unknown("owner-occupier maintenance and financing costs (§ 9) are not encoded")
     if c.rent <= 0 and not case.unknowns:
         raise Unknown("costs.rent")
     if "costs.rent not stated" in case.unknowns or (c.rent <= 0):
@@ -113,7 +118,7 @@ def accepted_costs(case: Case, p: ParamSet) -> Result:
 
 
 def max_costs(case: Case, p: ParamSet) -> Result:
-    g = municipality_group(case)
+    g = municipality_group(case, p)
     size = case.adults + case.children
     res = Result(0.0, list(g.applied))
     if case.flags.disabled_member_extra_space:

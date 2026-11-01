@@ -58,6 +58,7 @@ class ParamSet:
     earned_income_deduction: float                # R_CALC_EARNED_INCOME_DEDUCTION (0 = abolished)
     students_excluded_by_default: bool            # kela.fi: "If you study, you cannot, as a rule, get general housing allowance"
     owner_occupied_covered: bool                  # kela.fi: "General housing allowance is not available for owner-occupied homes."
+    approximate: bool = False                     # True when amounts are at a statutory index level, not the year's indexed values
     sources: dict[str, str] = field(default_factory=dict)
     notes: list[str] = field(default_factory=list)
 
@@ -100,7 +101,39 @@ PARAMS_2026 = ParamSet(
     ],
 )
 
-PARAM_SETS = [PARAMS_2026]
+PARAMS_ACT_2015 = ParamSet(
+    valid_from="2015-01-01",
+    rate=0.80, rate_aland=0.80,
+    deductible_share=0.42, deductible_base=555, deductible_per_adult=92, deductible_per_child=205,
+    deductible_share_aland=0.42, deductible_base_aland=555, deductible_per_adult_aland=92, deductible_per_child_aland=205,
+    min_deductible=10.0, min_payment=15.0,
+    max_costs={1: [508, 735, 937, 1095, 137], 2: [492, 706, 890, 1038, 130], 3: [390, 570, 723, 856, 117], 4: [344, 501, 641, 764, 112]},
+    max_costs_aland=[344, 501, 641, 764, 112],
+    water_per_person=17,
+    heating={"default": (38, 13), "east": (40, 14), "north": (41, 14)},
+    asset_threshold_one_adult=10_000, asset_threshold_two_adults=20_000, asset_income_share=0.20,
+    asset_deposit_reserve=2_000, asset_ceiling=50_000,
+    interest_dividend_threshold=10.0,
+    earned_income_deduction=300.0,
+    students_excluded_by_default=False,
+    owner_occupied_covered=True,
+    approximate=True,
+    sources={
+        "rate": "Act 938/2014 § 8 (corpus law-938-2014.txt): 'oikeus saada asumistukea 80 prosenttia'",
+        "deductible": "Act § 16: 'Perusomavastuuosuus on 42 prosenttia ... 555 euroa lisättynä 92 eurolla jokaista ... aikuista ja 205 eurolla jokaista ... lasta kohden. Jos perusomavastuuosuus on vähemmän kuin 10 euroa, sitä ei oteta huomioon.'",
+        "max_costs": "Act § 10 table (2015 rent-index level): I 508/735/937/1095 +137; II 492/706/890/1038 +130; III 390/570/723/856 +117; IV 344/501/641/764 +112",
+        "earned_income_deduction": "Act § 13: '... vähennetään 300 euroa kuukaudessa'",
+        "min_payment": "Act § 19: 'Jos maksettava asumistuen määrä olisi pienempi kuin 15 euroa, tukea ei makseta.'",
+        "interest_dividend": "Act § 12: 'ylittävät 10 euroa kuukaudessa'",
+    },
+    notes=[
+        "Statutory base values. In each year Kela applied index-adjusted amounts (National Pension Index for § 16, rent index for § 10 from 2018), which this set does not carry. Amounts computed under it are approximate; decisions (granted or rejected, which ground) are not affected by the index.",
+        "The asset rules (10,000 / 20,000 / 50,000, 20 %) took effect 2015 per the map; the 2,000 deposit reserve and the owner-occupied exclusion are later changes carried here as the map records them. Owner-occupier cost computation (§ 9 maintenance and financing costs) is not encoded: such cases raise a question.",
+        "Rate 0.80 and deduction 300 were in force until 31 March 2024; from 1 April 2024 the rate is 0.70, the deductible share 0.5 and the deduction abolished. The 2024-04-01 to 2025-07-31 set is not encoded separately; PARAMS_2026 applies from 2025-08-01 (students moved to the study housing supplement on 1 August 2025).",
+    ],
+)
+
+PARAM_SETS = [PARAMS_ACT_2015, PARAMS_2026]
 
 
 def params_for(decision_date: str) -> ParamSet:
