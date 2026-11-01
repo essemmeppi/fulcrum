@@ -1,0 +1,64 @@
+{
+  "case_id": "mirror-06",
+  "source": {
+    "kind": "shadow",
+    "url": "",
+    "citation": "mirrored intake (demo: calculator inputs stand in for applications)",
+    "quotes": [],
+    "fetched_at": ""
+  },
+  "decision_date": "2026-11-01",
+  "dwelling": {
+    "municipality": "Turku",
+    "municipality_group": null,
+    "region": "default",
+    "tenure": "rental",
+    "in_finland": true,
+    "aland": false
+  },
+  "members": [
+    {
+      "id": "a1",
+      "role": "applicant",
+      "age": 35,
+      "resident_in_finland": true,
+      "excluded_student": false,
+      "receives_excluding_pension": false,
+      "incomes": [
+        {
+          "kind": "wage",
+          "gross_monthly": 1000.0,
+          "continuous": true,
+          "note": ""
+        }
+      ],
+      "assets": {
+        "deposits": 0.0,
+        "other": 0.0,
+        "long_term_debts": 0.0
+      }
+    }
+  ],
+  "costs": {
+    "rent": 447.0,
+    "water_paid_separately": false,
+    "heating_paid_separately": false,
+    "electricity_included_in_rent": 0.0,
+    "floor_area_m2": 0.0,
+    "excluded_fees_in_rent": 0.0,
+    "subtenant_rent": 0.0,
+    "employer_paid_share": 0.0
+  },
+  "flags": {
+    "disabled_member_extra_space": false,
+    "excluded_student_in_dwelling": 0
+  },
+  "expected": {
+    "outcome": "granted",
+    "monthly_allowance": 229.25,
+    "reason": "decision issued by the agency (demo values from the calculator; mirror-03 altered by +12.00 to show a divergence)",
+    "decided_by": "agency case system"
+  },
+  "unknowns": [],
+  "notes": ""
+}

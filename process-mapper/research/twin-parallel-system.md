@@ -33,7 +33,10 @@ Code: `process-mapper/twin/`. Everything below is reproducible from `python -m t
    and share the rent instead of disqualifying the applicant; a minor living apart from parents is a
    question, not a grant.
 4. **Shadow mode exists and has not run on real cases.** The runner never acts; the shadow command
-   reads a directory of mirrored cases and writes a divergence report. What a partner agency must
+   reads a directory of mirrored cases and writes a divergence report. A two-phase demonstration in
+   `twin/runs/shadow-demo/` shows the mechanics: week one, ten mirrored applications and no
+   outcomes (report: ten cases awaiting the real decision); week two, outcomes added, nine agree
+   and the one altered outcome is reported as an amount divergence of 12.00 EUR. What a partner agency must
    provide, and under what legal basis, is in `twin/SHADOW.md`. No agreement exists yet.
 
 ## What the calculator added to the map
@@ -140,7 +143,9 @@ that kind: both were about who is in the household.
   income averaging, subtenants, split households, or the timing rules, which the twin encodes from
   the map but has not checked against any outcome.
 - The Act-level parameter set carries statutory base amounts, not the index-adjusted values of each
-  year, so amounts for pre-2024 replay cases are approximate; decisions are not.
+  year, so amounts for pre-2024 replay cases are approximate; decisions are not. Kela's archived
+  pages on the Wayback Machine would supply the yearly values, but the environment's egress policy
+  blocks that host; this is the first thing to add.
 - The map's internal steps (completeness check, information request, routing) are executed by the
   scripted judge and never reach a human in these runs. Nothing here measures how often a real
   caseworker would have asked for information.
