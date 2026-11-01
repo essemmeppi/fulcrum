@@ -1,0 +1,650 @@
+{
+  "case_id": "syn-219",
+  "started_at": "2026-11-01T16:19:03+00:00",
+  "params_valid_from": "2025-08-01",
+  "steps": [
+    {
+      "node_id": "S_APPLY",
+      "name": "Household needs support for housing costs",
+      "actor": "citizen",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "executed_by": "case",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "from_case": true
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_ESTIMATE",
+      "name": "Estimate allowance with calculator (optional)",
+      "actor": "citizen",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "executed_by": "case",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "from_case": true
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_HOUSEHOLD_REP",
+      "name": "Identify household and representative",
+      "actor": "citizen",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "executed_by": "case",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "from_case": true
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_SUBMIT_APP",
+      "name": "Complete and submit application",
+      "actor": "citizen",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "executed_by": "case",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "from_case": true
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_ATTACH",
+      "name": "Submit supporting documents",
+      "actor": "citizen",
+      "automation_class": "citizen_action",
+      "agent_mode": "human_only",
+      "executed_by": "case",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "from_case": true
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_REGISTER",
+      "name": "Register application and record arrival date",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "arrival_date": "2026-10-01",
+        "case_id": "syn-219"
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_DL_PROCESSING_TIME",
+          "explanation": "arrival date recorded"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_DL_PROCESSING_TIME",
+          "source": "law-938-2014",
+          "locator": "23 § Asumistukihakemuksen käsittely"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_FETCH_INCOME",
+      "name": "Retrieve wage and benefit income from Incomes Register",
+      "actor": "kela_system",
+      "automation_class": "register_lookup",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "registry",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "source": "ds_incomes_register",
+        "found": true,
+        "data": {
+          "rows": [
+            {
+              "member": "a1",
+              "kind": "wage",
+              "gross_monthly": 1600.0
+            }
+          ]
+        },
+        "note": "fixture: incomes as stated in the case"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_FETCH_LEASE",
+      "name": "Retrieve electronic lease data from landlord",
+      "actor": "kela_system",
+      "automation_class": "register_lookup",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "registry",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "source": "ds_landlord_lease_service",
+        "found": true,
+        "data": {
+          "rent": 900.0,
+          "tenure": "rental"
+        },
+        "note": "fixture"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_FETCH_TAX",
+      "name": "Retrieve taxation and YEL/MYEL income data",
+      "actor": "kela_system",
+      "automation_class": "register_lookup",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "registry",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "source": "ds_tax_administration",
+        "found": false,
+        "data": {
+          "rows": []
+        },
+        "note": "fixture"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_FETCH_OTHER",
+      "name": "Retrieve dwelling, imprisonment and Kela benefit data",
+      "actor": "kela_system",
+      "automation_class": "register_lookup",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "registry",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "source": "ds_population_information_system",
+        "found": true,
+        "data": {
+          "municipality": "Rovaniemi",
+          "pensions": []
+        },
+        "note": "fixture"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_COMPLETENESS",
+      "name": "Check application completeness and documents",
+      "actor": "kela_caseworker",
+      "automation_class": "document_check",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "complete": true,
+        "missing": []
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_PROC_APPLICATION_CONTENT",
+          "explanation": "complete"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_PROC_APPLICATION_CONTENT",
+          "source": "law-938-2014",
+          "locator": "19 § Asumistuen hakijan ilmoitusvelvollisuus"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "D_COMPLETE",
+      "name": "Application complete?",
+      "actor": "kela_caseworker",
+      "automation_class": "document_check",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": "All information needed to decide is available"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": "All information needed to decide is available",
+      "question": null
+    },
+    {
+      "node_id": "T_RESIDENCE",
+      "name": "Determine permanent residence in Finland",
+      "actor": "kela_caseworker",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "a1": true,
+        "a2": true
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_ELIG_RESIDENCE",
+          "explanation": "residence as stated in the case"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_ELIG_RESIDENCE",
+          "source": "law-938-2014",
+          "locator": "2 § Suomessa asuminen"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_HOUSEHOLD",
+      "name": "Determine household composition",
+      "actor": "kela_caseworker",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": [
+          2,
+          0
+        ]
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_HH_DEFINITION",
+          "explanation": "household of 2 adult(s) and 0 child(ren)"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_HH_DEFINITION",
+          "source": "law-938-2014",
+          "locator": "4 § Ruokakunta"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_INCOME",
+      "name": "Determine monthly household income",
+      "actor": "kela_caseworker",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": 1600.0
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_CALC_INCOME_DEFINITION",
+          "explanation": "a1: wage 1600.00"
+        },
+        {
+          "rule_id": "R_CALC_ASSETS_AS_INCOME",
+          "explanation": "net counted assets 0.00 (deposits less 2000 per member, less long-term debts); threshold 20000"
+        },
+        {
+          "rule_id": "R_CALC_ROUNDING",
+          "explanation": "combined household income 1600.00, rounded to full euros 1600"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_CALC_INCOME_DEFINITION",
+          "source": "law-938-2014",
+          "locator": "12 § Asumistuessa huomioon otettavat tulot"
+        },
+        {
+          "rule_id": "R_CALC_ASSETS_AS_INCOME",
+          "source": "kela-fi-tulot-ja-menot",
+          "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+        },
+        {
+          "rule_id": "R_CALC_ROUNDING",
+          "source": "law-938-2014",
+          "locator": "52 § Rahamäärien pyöristäminen"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_ASSETS",
+      "name": "Compute asset-derived income and check asset ceiling",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": [
+          "income",
+          0.0
+        ]
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_CALC_ASSETS_AS_INCOME",
+          "explanation": "net counted assets 0.00 (deposits less 2000 per member, less long-term debts); threshold 20000"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_CALC_ASSETS_AS_INCOME",
+          "source": "kela-fi-tulot-ja-menot",
+          "locator": "H4: Esimerkiksi nämä tuet ja korvaukset eivät vaikuta asumistukeen:"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_COSTS",
+      "name": "Determine accepted housing costs",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "accepted_costs": 900.0,
+        "max_costs": 652.0
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_CALC_ACCEPTED_COSTS",
+          "explanation": "rent 900.00 minus electricity 0.00, excluded fees 0.00, employer share 0.00"
+        },
+        {
+          "rule_id": "R_CALC_MAX_COSTS",
+          "explanation": "Rovaniemi is in municipality group 3"
+        },
+        {
+          "rule_id": "R_CALC_MAX_COSTS",
+          "explanation": "maximum housing costs for 2 person(s) in group 3: 652"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_CALC_ACCEPTED_COSTS",
+          "source": "law-938-2014",
+          "locator": "9 § Hyväksyttävät asumismenot"
+        },
+        {
+          "rule_id": "R_CALC_MAX_COSTS",
+          "source": "law-938-2014",
+          "locator": "10 § Enimmäisasumismenot"
+        },
+        {
+          "rule_id": "R_CALC_MAX_COSTS",
+          "source": "law-938-2014",
+          "locator": "10 § Enimmäisasumismenot"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_ELIG_CHECK",
+      "name": "Assess eligibility conditions",
+      "actor": "kela_caseworker",
+      "automation_class": "judgment",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "judge",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": []
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "explanation": "dwelling and tenure eligible"
+        },
+        {
+          "rule_id": "R_ELIG_RESIDENCE",
+          "explanation": "all members resident in Finland"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "source": "law-938-2014",
+          "locator": "7 § Asunto"
+        },
+        {
+          "rule_id": "R_ELIG_RESIDENCE",
+          "source": "law-938-2014",
+          "locator": "2 § Suomessa asuminen"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "D_ELIGIBLE",
+      "name": "Eligibility conditions met?",
+      "actor": "kela_caseworker",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": "All eligibility conditions met"
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "explanation": "met"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_ELIG_DWELLING",
+          "source": "law-938-2014",
+          "locator": "7 § Asunto"
+        }
+      ],
+      "chosen_edge": "All eligibility conditions met",
+      "question": null
+    },
+    {
+      "node_id": "T_CALC",
+      "name": "Calculate allowance amount",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "basic_deductible": 372.5,
+        "monthly_allowance": 195.65
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_CALC_BASIC_DEDUCTIBLE",
+          "explanation": "0.5 x [1600 - (667 + 94 x 2 + 296 x 0)] = 372.50"
+        },
+        {
+          "rule_id": "R_CALC_FORMULA",
+          "explanation": "0.7 x (min(900.00, 652) - 372.50) = 195.65"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_CALC_BASIC_DEDUCTIBLE",
+          "source": "law-938-2014",
+          "locator": "16 § Perusomavastuuosuus"
+        },
+        {
+          "rule_id": "R_CALC_FORMULA",
+          "source": "law-938-2014",
+          "locator": "8 § Oikeus asumistukeen"
+        }
+      ],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "D_MIN_AMOUNT",
+      "name": "Amount at least 15 € per month?",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": "Amount ≥ 15 €/month – grant"
+      },
+      "rules_applied": [
+        {
+          "rule_id": "R_CALC_MIN_PAYMENT",
+          "explanation": "amount 195.65"
+        }
+      ],
+      "provenance": [
+        {
+          "rule_id": "R_CALC_MIN_PAYMENT",
+          "source": "law-938-2014",
+          "locator": "24 § Asumistuen myöntäminen ja maksaminen"
+        }
+      ],
+      "chosen_edge": "Amount ≥ 15 €/month – grant",
+      "question": null
+    },
+    {
+      "node_id": "T_DECIDE",
+      "name": "Make written decision",
+      "actor": "kela_caseworker",
+      "automation_class": "human_signoff",
+      "agent_mode": "agent_prepares_human_decides",
+      "executed_by": "gate",
+      "status": "proposal",
+      "inputs": {},
+      "outputs": {
+        "value": "proposal"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "T_NOTIFY",
+      "name": "Deliver decision to applicant",
+      "actor": "kela_system",
+      "automation_class": "notification",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "draft",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "draft": "Decision: general housing allowance granted, 195.65 EUR per month from 2026-10-01. Accepted housing costs 900.00 (maximum 652), household income 1600.00, basic deductible 372.50."
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    },
+    {
+      "node_id": "D_PAYABLE",
+      "name": "Allowance payable after this decision?",
+      "actor": "kela_system",
+      "automation_class": "deterministic_rule",
+      "agent_mode": "agent_can_execute",
+      "executed_by": "rule",
+      "status": "done",
+      "inputs": {},
+      "outputs": {
+        "value": "Allowance granted or continues in payment"
+      },
+      "rules_applied": [],
+      "provenance": [],
+      "chosen_edge": null,
+      "question": null
+    }
+  ],
+  "outcome": {
+    "decision": "granted",
+    "monthly_allowance": 195.65,
+    "grounds": [],
+    "open_questions": [],
+    "proposals": [
+      "T_DECIDE: Decision: general housing allowance granted, 195.65 EUR per month from 2026-10-01. Accepted housing costs 900.00 (maximum 652), household income 1600.00, basic deductible 372.50."
+    ]
+  },
+  "state": {
+    "complete": true,
+    "missing": [],
+    "income": 1600.0,
+    "costs": 900.0,
+    "cap": 652.0,
+    "eligibility_failed": [],
+    "deductible": 372.5,
+    "amount": 195.65,
+    "amount_raw": 195.65,
+    "decision": "granted"
+  }
+}
