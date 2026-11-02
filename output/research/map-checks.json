@@ -1,0 +1,43 @@
+{
+  "countries": 197,
+  "represented": 197,
+  "counts": {
+    "strong_evidence": 86,
+    "promising_evidence": 41,
+    "public_facing_only": 20,
+    "unknown": 50
+  },
+  "small_state_markers": [
+    "ad",
+    "ag",
+    "bh",
+    "bb",
+    "cv",
+    "km",
+    "dm",
+    "gd",
+    "ki",
+    "li",
+    "mv",
+    "mt",
+    "mh",
+    "mu",
+    "fm",
+    "mc",
+    "nr",
+    "pw",
+    "kn",
+    "lc",
+    "vc",
+    "ws",
+    "sm",
+    "sc",
+    "sg",
+    "st",
+    "to",
+    "tv",
+    "va"
+  ],
+  "source_date": "2026-10-31",
+  "prepared_at": "2026-11-01"
+}
