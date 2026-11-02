@@ -79,6 +79,7 @@ def main():
         "**Initial discovery covers all 197 registry countries. Verification is partial. This is an evidence-supported lower bound, not an estimate of the complete addressable market.**", "",
         f"- **{len(strong)} countries**: detailed government-authored operational material inspected for at least one named national function.",
         f"- **{len(promising)} countries**: inspected material is promising, but depth, adoption or applicability remains unresolved.",
+        f"- **{counts['public_facing_only']} countries**: public-facing evidence inspected only; internal-process evidence has not been established in this screen.",
         f"- **{counts['unknown']} countries**: unresolved. This includes unverified leads, access failures and weak search results; none is judged to lack useful data.",
         "",
         f"Of the strong group, **{len(direct)}** have an inspected citizen/business/community-facing or regulatory workflow. The other **{len(strong)-len(direct)}** currently qualify through enabling government operations such as procurement, personnel or document administration.",

@@ -6,6 +6,7 @@ Research date: 31 October 2026.
 
 - **86 countries**: detailed government-authored operational material inspected for at least one named national function.
 - **41 countries**: inspected material is promising, but depth, adoption or applicability remains unresolved.
+- **20 countries**: public-facing evidence inspected only; internal-process evidence has not been established in this screen.
 - **50 countries**: unresolved. This includes unverified leads, access failures and weak search results; none is judged to lack useful data.
 
 Of the strong group, **46** have an inspected citizen/business/community-facing or regulatory workflow. The other **40** currently qualify through enabling government operations such as procurement, personnel or document administration.
